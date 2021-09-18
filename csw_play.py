@@ -32,4 +32,6 @@ met_records = met_csw.getrecords2()
 # %%
 requests.post('https://csw.s-enda.k8s.met.no', data=open('test_query.xml').read()).text
 # %%
+from generated import record
 
+# %%
