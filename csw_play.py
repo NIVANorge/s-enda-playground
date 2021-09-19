@@ -34,3 +34,8 @@ requests.post('https://csw.s-enda.k8s.met.no', data=open('test_query.xml').read(
 # %%
 #http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd
 # %%
+from bindings.csw import Capabilities
+
+# %%
+Capabilities()
+# %%
