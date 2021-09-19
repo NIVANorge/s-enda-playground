@@ -34,7 +34,7 @@ met_csw = CatalogueServiceWeb(MET_HOST)
 # %%
 met_records = met_csw.getrecords2()
 # %%
-requests.post("https://csw.s-enda.k8s.met.no", data=open("test_query.xml").read()).text
+check_txt = requests.post("https://csw.s-enda.k8s.met.no", data=open("test_query.xml").read()).text
 # %%
 # http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd
 # %%
@@ -94,7 +94,7 @@ get_records = GetRecords(
 # %%
 serializer = XmlSerializer(config=SerializerConfig(pretty_print=True))
 # %%
-with open("check2.xml", "w") as f:
+with open("check.xml", "w") as f:
     f.write(serializer.render(get_records, ns_map={"csw": "http://www.opengis.net/cat/csw/2.0.2"}))
 
 # %%
@@ -113,4 +113,8 @@ records = parser.from_string(resp.text, GetRecordsResponse)
 
 # %%
 records.search_results.record[0].references[1].content
+# %%
+check_rec = parser.from_string(check_txt, GetRecordsResponse)
+# %%
+check_rec.search_results.record[0].references[1].content
 # %%
