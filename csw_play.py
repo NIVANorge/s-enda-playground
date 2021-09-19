@@ -34,8 +34,21 @@ requests.post('https://csw.s-enda.k8s.met.no', data=open('test_query.xml').read(
 # %%
 #http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd
 # %%
-from bindings.csw import Capabilities
-
+from bindings.csw import GetRecords, Query, Constraint
+from xsdata.formats.dataclass.serializers import XmlSerializer
+import requests
 # %%
-Capabilities()
+get_records = GetRecords()
+# %%
+constraint = Constraint()
+# %%
+q = Query(element_set_name='full')
+# %%
+q
+# %%
+serializer = XmlSerializer()
+# %%
+serializer.render(get_records)
+# %%
+requests.post(MET_HOST, serializer.render(get_records))
 # %%
