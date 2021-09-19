@@ -1,0 +1,28 @@
+from dataclasses import dataclass, field
+from typing import List
+from bindings.csw.grid_function_type import GridFunctionType
+
+__NAMESPACE__ = "http://www.opengis.net/gml"
+
+
+@dataclass
+class IndexMapType(GridFunctionType):
+    """Exends GridFunctionType with a lookUpTable.
+
+    This contains a list of indexes of members within the rangeSet
+    corresponding with the members of the domainSet.  The domainSet is
+    traversed in list order if it is enumerated explicitly, or in the
+    order specified by a SequenceRule if the domain is an implicit set.
+    The length of the lookUpTable corresponds with the length of the
+    subset of the domainSet for which the coverage is defined.
+    """
+    look_up_table: List[int] = field(
+        default_factory=list,
+        metadata={
+            "name": "lookUpTable",
+            "type": "Element",
+            "namespace": "http://www.opengis.net/gml",
+            "required": True,
+            "tokens": True,
+        }
+    )

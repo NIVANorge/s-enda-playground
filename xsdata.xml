@@ -3,7 +3,7 @@
   <Output maxLineLength="79">
     <Package>bindings.csw</Package>
     <Format repr="true" eq="true" order="false" unsafeHash="false" frozen="false" slots="false" kwOnly="false">dataclasses</Format>
-    <Structure>single-package</Structure>
+    <Structure>clusters</Structure>
     <DocstringStyle>reStructuredText</DocstringStyle>
     <RelativeImports>false</RelativeImports>
     <CompoundFields>false</CompoundFields>
