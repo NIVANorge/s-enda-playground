@@ -1,4 +1,5 @@
 #%%
+from bindings.csw.get_capabilities_2 import GetCapabilities2
 from owslib.csw import CatalogueServiceWeb
 from owslib.catalogue.csw2 import CswRecord
 from lxml import etree
@@ -34,7 +35,9 @@ met_csw = CatalogueServiceWeb(MET_HOST)
 # %%
 met_records = met_csw.getrecords2()
 # %%
-check_txt = requests.post("https://csw.s-enda.k8s.met.no", data=open("test_query.xml").read()).text
+check_txt = requests.post(
+    "https://csw.s-enda.k8s.met.no", data=open("test_query.xml").read()
+).text
 # %%
 # http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd
 # %%
@@ -48,7 +51,13 @@ from bindings.csw import (
     Exterior,
     LinearRing,
     PosList,
-    GetRecordsResponse
+    GetRecordsResponse,
+    Transaction,
+    Record,
+    References,
+    GetDomain,
+    GetCapabilities2,
+    AcceptVersionsType
 )
 from lxml.etree import QName
 from xsdata.formats.dataclass.serializers import XmlSerializer
@@ -58,6 +67,7 @@ from xsdata.formats.dataclass.parsers.config import ParserConfig
 import requests
 
 # %%
+MET_HOST = "https://csw.s-enda.k8s.met.no"
 # %%
 pos_values = [
     47.00,
@@ -94,10 +104,6 @@ get_records = GetRecords(
 # %%
 serializer = XmlSerializer(config=SerializerConfig(pretty_print=True))
 # %%
-with open("check.xml", "w") as f:
-    f.write(serializer.render(get_records, ns_map={"csw": "http://www.opengis.net/cat/csw/2.0.2"}))
-
-# %%
 resp = requests.post(
     MET_HOST,
     serializer.render(
@@ -108,13 +114,42 @@ resp = requests.post(
 config = ParserConfig(fail_on_unknown_properties=True)
 parser = XmlParser(config=config)
 # %%
-
 records = parser.from_string(resp.text, GetRecordsResponse)
 
 # %%
-records.search_results.record[0].references[1].content
+records.search_results.record[0]
 # %%
 check_rec = parser.from_string(check_txt, GetRecordsResponse)
 # %%
 check_rec.search_results.record[0].references[1].content
+# %%
+transaction = Transaction(insert=Record(references=References()))
+# %%
+transaction.version
+# %%
+requests.post(
+    MET_HOST, serializer.render(GetDomain(parameter_name="GetRecords.resultType"))
+).text
+# %%
+cap = GetCapabilities2(
+    service="CSW", accept_versions=AcceptVersionsType(version=["2.0.0"])
+)
+#%%
+requests.post(MET_HOST, serializer.render(cap)).text
+
+# %%
+
+get_records_small = GetRecords(
+    result_type="results",
+    query=Query(
+        type_names=["csw:Record"],
+        element_set_name="full"
+    ),
+)
+
+# %%
+#http://sjoa.niva.no/geonetwork/srv/eng/csw?SERVICE=CSW&VERSION=2.0.2&REQUEST=GetCapabilities
+CSW_HOST = "http://sjoa.niva.no/geonetwork/srv/eng/csw?SERVICE=CSW&VERSION=2.0.2"
+
+requests.post(CSW_HOST, serializer.render(get_records_small, ns_map={"csw": "http://www.opengis.net/cat/csw/2.0.2"})).text
 # %%
