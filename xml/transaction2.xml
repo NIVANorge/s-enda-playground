@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:Transaction xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" service="CSW" version="2.0.2" verboseResponse="false">
+  <csw:Insert>
+    <csw:Record>
+      <ns1:rights xmlns:ns1="http://purl.org/dc/elements/1.1/">otherRestrictions</ns1:rights>
+      <ns1:spatial xmlns:ns1="http://purl.org/dc/terms/" scheme="http://www.opengis.net/def/crs">EPSG:4326</ns1:spatial>
+      <ns1:references xmlns:ns1="http://purl.org/dc/terms/" scheme="WWW:DOWNLOAD-1.0-http--download">https://aquamonitor.niva.no/nmdc/archives/jmgwuvw/Iddefjorden_hydrografi.nc</ns1:references>
+      <ns1:identifier xmlns:ns1="http://purl.org/dc/elements/1.1/">1234567</ns1:identifier>
+      <ns1:modified xmlns:ns1="http://purl.org/dc/terms/">2020-06-09</ns1:modified>
+      <ns1:date xmlns:ns1="http://purl.org/dc/elements/1.1/">2018-11-14T15:26:54</ns1:date>
+      <ns1:abstract xmlns:ns1="http://purl.org/dc/terms/">Mock Iddefjorden, upward profiles, unprocessed raw data 2050</ns1:abstract>
+      <ns1:description xmlns:ns1="http://purl.org/dc/elements/1.1/">Mock Iddefjorden, upward profiles, unprocessed raw data 2050</ns1:description>
+      <ns1:subject xmlns:ns1="http://purl.org/dc/elements/1.1/">OCEANS &gt; OCEAN TEMPERATURE &gt; WATER TEMPERATURE</ns1:subject>
+      <ns1:title xmlns:ns1="http://purl.org/dc/elements/1.1/">Mock Iddefjorden 2050</ns1:title>
+      <ns1:date xmlns:ns1="http://purl.org/dc/elements/1.1/">2020-06-09</ns1:date>
+      <ns1:abstract xmlns:ns1="http://purl.org/dc/terms/">Mock Iddefjorden, upward profiles, unprocessed raw data 2050</ns1:abstract>
+      <ns1:subject xmlns:ns1="http://purl.org/dc/elements/1.1/">OCEANS &gt; SALINITY/DENSITY &gt; SALINITY</ns1:subject>
+      <ns1:subject xmlns:ns1="http://purl.org/dc/elements/1.1/"/>
+      <ns1:subject xmlns:ns1="http://purl.org/dc/elements/1.1/">oceans</ns1:subject>
+      <ns1:subject xmlns:ns1="http://purl.org/dc/elements/1.1/" scheme="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopicCategoryCode">climatologyMeteorologyAtmosphere</ns1:subject>
+      <ns1:BoundingBox xmlns:ns1="http://www.opengis.net/ows" crs="urn:x-ogc:def:crs:EPSG:6.11:4326" dimensions="2">
+        <ns1:LowerCorner>11.44666 59.01166</ns1:LowerCorner>
+        <ns1:UpperCorner>11.14666 59.11955993</ns1:UpperCorner>
+      </ns1:BoundingBox>
+    </csw:Record>
+  </csw:Insert>
+</csw:Transaction>

@@ -1,4 +1,5 @@
 #%%
+from bindings.csw.record import Record
 from bindings.csw.constraint import Constraint
 from bindings import csw
 from lxml.etree import QName
@@ -97,7 +98,7 @@ q_records_title = csw.GetRecords(
 CSW_HOST = "http://sjoa.niva.no/geonetwork/srv/eng/csw"
 
 resp = requests.post(
-    MET_HOST,
+    CSW_HOST,
     headers={"Content-Type": "application/xml"},
     data=serializer.render(
         q_records_title, ns_map={"csw": "http://www.opengis.net/cat/csw/2.0.2"}
@@ -111,3 +112,14 @@ open("xml/iddefjorden.xml", "wb").write(resp.content)
 transaction = csw.Transaction(insert=csw.Record(references=csw.References()))
 # %%
 transaction.version
+
+#https://aquamonitor.niva.no/nmdc/archives/jmgwuvw/Iddefjorden_hydrografi.nc
+
+with open("xml/transaction.xml", "r") as f:
+    mock = parser.from_string(f.read(), csw.GetRecordsResponse)
+# %%
+# %%
+transaction.insert = [csw.InsertType(other_element=[mock.search_results.record[0]])]
+# %%
+serializer.write(open("xml/transaction2.xml", "w"), transaction, ns_map=ns_map)
+# %%
