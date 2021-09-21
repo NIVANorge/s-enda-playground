@@ -1,4 +1,5 @@
 #%%
+from bindings.csw.constraint import Constraint
 from bindings import csw
 from lxml.etree import QName
 from xsdata.formats.dataclass.serializers import XmlSerializer
@@ -22,7 +23,7 @@ pos_values = [
     47.00,
     -5.00,
 ]
-get_records = csw.GetRecords(
+q_records = csw.GetRecords(
     result_type="results",
     query=csw.Query(
         type_names=["csw:Record"],
@@ -34,7 +35,9 @@ get_records = csw.GetRecords(
                     property_name="ows:BoundingBox",
                     polygon=csw.Polygon(
                         exterior=csw.Exterior(
-                            linear_ring=csw.LinearRing(pos_list=csw.PosList(value=pos_values))
+                            linear_ring=csw.LinearRing(
+                                pos_list=csw.PosList(value=pos_values)
+                            )
                         )
                     ),
                 )
@@ -44,26 +47,18 @@ get_records = csw.GetRecords(
 )
 # %%
 serializer = XmlSerializer(config=SerializerConfig(pretty_print=True))
+ns_map = {"csw": "http://www.opengis.net/cat/csw/2.0.2"}
 # %%
 resp = requests.post(
     MET_HOST,
-    serializer.render(
-        get_records, ns_map={"csw": "http://www.opengis.net/cat/csw/2.0.2"}
-    ),
+    serializer.render(q_records, ns_map=ns_map),
 )
 # %%
-config = ParserConfig(fail_on_unknown_properties=True)
-parser = XmlParser(config=config)
+parser = XmlParser(config=ParserConfig(fail_on_unknown_properties=True))
 # %%
 records = parser.from_string(resp.text, csw.GetRecordsResponse)
-
 # %%
 records.search_results.record[0]
-# %%
-# %%
-transaction = csw.Transaction(insert=csw.Record(references=csw.References()))
-# %%
-transaction.version
 # %%
 requests.post(
     MET_HOST, serializer.render(csw.GetDomain(parameter_name="GetRecords.resultType"))
@@ -76,18 +71,43 @@ cap = csw.GetCapabilities2(
 requests.post(MET_HOST, serializer.render(cap)).text
 
 # %%
-get_records_small = csw.GetRecords(
+q_records_title = csw.GetRecords(
     result_type="results",
     query=csw.Query(
         type_names=["csw:Record"],
-        element_set_name="full"
+        element_set_name="full",
+        constraint=csw.Constraint(
+            version="1.1.0",
+            filter=csw.Filter(
+                property_is_like=csw.PropertyIsLike(
+                    wild_card="*",
+                    single_char="?",
+                    escape_char="\\",
+                    match_case="false",
+                    property_name=csw.PropertyName(["dc:title"]),
+                    literal=csw.Literal(["*Iddefjorden*"]),
+                )
+            ),
+        ),
     ),
 )
 
 # %%
-#http://sjoa.niva.no/geonetwork/srv/eng/csw?SERVICE=CSW&VERSION=2.0.2&REQUEST=GetCapabilities
-CSW_HOST = "http://sjoa.niva.no/geonetwork/srv/eng/csw?SERVICE=CSW&VERSION=2.0.2"
+# http://sjoa.niva.no/geonetwork/srv/eng/csw?SERVICE=CSW&VERSION=2.0.2&REQUEST=GetCapabilities
+CSW_HOST = "http://sjoa.niva.no/geonetwork/srv/eng/csw"
 
-requests.post(CSW_HOST, serializer.render(get_records_small, ns_map={"csw": "http://www.opengis.net/cat/csw/2.0.2"})).text
+resp = requests.post(
+    MET_HOST,
+    headers={"Content-Type": "application/xml"},
+    data=serializer.render(
+        q_records_title, ns_map={"csw": "http://www.opengis.net/cat/csw/2.0.2"}
+    ),
+)
 # %%
-csw.Subject2
+resp.text
+# %%
+open("xml/iddefjorden.xml", "wb").write(resp.content)
+# %%
+transaction = csw.Transaction(insert=csw.Record(references=csw.References()))
+# %%
+transaction.version
