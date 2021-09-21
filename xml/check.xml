@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- pycsw 2.7.dev0 -->
+<csw:GetRecordsResponse xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml" xmlns:ows="http://www.opengis.net/ows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0.2" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd">
+    <csw:SearchStatus timestamp="2021-09-21T08:09:22Z" />
+    <csw:SearchResults numberOfRecordsMatched="41686" numberOfRecordsReturned="1" nextRecord="2" recordSchema="http://www.opengis.net/cat/csw/2.0.2" elementSet="full">
+        <csw:Record>
+            <dc:identifier>ba70aeee-3e74-4a4e-80e8-e015f0c4f417</dc:identifier>
+            <dc:title>Direct Broadcast data processed in satellite swath to L1C.</dc:title>
+            <dc:type>dataset</dc:type>
+            <dc:subject>Earth Science &gt; Atmosphere &gt; Atmospheric radiation</dc:subject>
+            <dc:subject>Government Agencies-non-US &gt; Norway &gt; NO/MET &gt; Norwegian Meteorological Institute</dc:subject>
+            <dc:subject>Geographic Region &gt; Northern Hemisphere</dc:subject>
+            <dc:subject>Meteorological geographical features</dc:subject>
+            <dc:subject>Atmospheric conditions</dc:subject>
+            <dc:subject>Oceanographic geographical features</dc:subject>
+            <dc:subject>Weather and climate</dc:subject>
+            <dc:subject scheme="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopicCategoryCode">climatologyMeteorologyAtmosphere</dc:subject>
+            <dct:references scheme="OPENDAP:OPENDAP">https://thredds.met.no/thredds/dodsC/remotesensingsatellite/polar-swath/2020/06/09/noaa20-viirs-iband-20200609030219-20200609031631.nc</dct:references>
+            <dct:references scheme="OGC:WMS">https://thredds.met.no/thredds/wms/remotesensingsatellite/polar-swath/2020/06/09/noaa20-viirs-iband-20200609030219-20200609031631.nc?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities?SERVICE=WMS&amp;REQUEST=GetCapabilities</dct:references>
+            <dct:references scheme="WWW:DOWNLOAD-1.0-http--download">https://thredds.met.no/thredds/fileServer/remotesensingsatellite/polar-swath/2020/06/09/noaa20-viirs-iband-20200609030219-20200609031631.nc</dct:references>
+            <dct:modified>2020-06-09</dct:modified>
+            <dct:abstract>Direct Broadcast data received at MET NORWAY Oslo. Processed by standard processing software to geolocated and calibrated values in satellite swath in received instrument resolution.</dct:abstract>
+            <dc:date>2020-06-09</dc:date>
+            <dc:rights>otherRestrictions</dc:rights>
+            <dct:spatial scheme="http://www.opengis.net/def/crs">EPSG:4326</dct:spatial>
+            <ows:BoundingBox crs="urn:x-ogc:def:crs:EPSG:6.11:4326" dimensions="2">
+                <ows:LowerCorner>34.52 -107.82</ows:LowerCorner>
+                <ows:UpperCorner>89.37 64.01</ows:UpperCorner>
+            </ows:BoundingBox>
+        </csw:Record>
+    </csw:SearchResults>
+</csw:GetRecordsResponse>
