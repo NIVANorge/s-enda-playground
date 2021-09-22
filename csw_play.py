@@ -109,17 +109,26 @@ resp.text
 # %%
 open("xml/iddefjorden.xml", "wb").write(resp.content)
 # %%
-transaction = csw.Transaction(insert=csw.Record(references=csw.References()))
+transaction = csw.Transaction(
+    insert=[
+        csw.InsertType(other_element=[csw.Metadata1(mock.search_results.record[0])])
+    ]
+)
 # %%
 transaction.version
 
-#https://aquamonitor.niva.no/nmdc/archives/jmgwuvw/Iddefjorden_hydrografi.nc
+# https://aquamonitor.niva.no/nmdc/archives/jmgwuvw/Iddefjorden_hydrografi.nc
 
 with open("xml/transaction.xml", "r") as f:
     mock = parser.from_string(f.read(), csw.GetRecordsResponse)
 # %%
 # %%
-transaction.insert = [csw.InsertType(other_element=[mock.search_results.record[0]])]
+transaction = csw.Transaction(
+    insert=[
+        csw.InsertType(other_element=[csw.Metadata2(title="Mock Iddefjorden_hydrografi", href="https://aquamonitor.niva.no/nmdc/archives/jmgwuvw/Iddefjorden_hydrografi.nc")])
+    ]
+)
+
 # %%
 serializer.write(open("xml/transaction2.xml", "w"), transaction, ns_map=ns_map)
 # %%
