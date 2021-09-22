@@ -1,0 +1,27 @@
+version: '3.5'
+networks:
+  internal:
+services:
+  postgis-db:
+    container_name: postgis
+    image: postgis/postgis
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DBNAME: pycsw
+      POSTGRES_USER: pycsw
+      POSTGRES_PASSWORD: pycsw
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - ./db-data:/var/lib/postgresql/data/pgdata
+  pycsw:
+    container_name: pycsw
+    image: geopython/pycsw:2.6.0
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./niva-default.cfg:/etc/pycsw/pycsw.cfg
+    restart: always
+    depends_on:
+      - postgis-db
