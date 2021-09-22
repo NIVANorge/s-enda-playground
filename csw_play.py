@@ -1,7 +1,9 @@
 #%%
+from bindings.csw.title_3 import Title3
 from bindings.csw.record import Record
 from bindings.csw.constraint import Constraint
 from bindings import csw
+from bindings import csw_publication
 from xsdata.formats.dataclass.serializers import XmlSerializer
 from xsdata.formats.dataclass.serializers.config import SerializerConfig
 from xsdata.formats.dataclass.parsers import XmlParser
@@ -55,7 +57,7 @@ resp = requests.post(
     serializer.render(q_records, ns_map=ns_map),
 )
 # %%
-parser = XmlParser(config=ParserConfig(fail_on_unknown_properties=True))
+parser = XmlParser(config=ParserConfig())
 # %%
 records = parser.from_string(resp.text, csw.GetRecordsResponse)
 # %%
@@ -105,17 +107,16 @@ resp = requests.post(
     ),
 )
 # %%
-resp.text
-# %%
-# https://aquamonitor.niva.no/nmdc/archives/jmgwuvw/Iddefjorden_hydrografi.nc
-with open("xml/transaction3.xml", "r") as f:
-    mock = parser.from_string(f.read(), csw.Transaction)
-# %%
 transaction = csw.Transaction(
     insert=[
         csw.InsertType(
             other_element=[
-                csw.Record(any_text=[csw.Title3(content=["Super Duper"]), csw.Abstract2("hello"), csw.Identifier2("123")])
+                csw.Record(
+                    identifier=["mock.1234567"],
+                    title=[csw.Title3("Iddefjorden_hydrografi")],
+                    abstract=[csw.Abstract2("My Long abstract")],
+                    references=[csw.References(content=["http://aquamonitor.niva.no/nmdc/archives/jmgwuvw/Iddefjorden_hydrografi.nc"])],
+                ),
             ],
             type_name=["csw:Record"],
         )
@@ -123,10 +124,14 @@ transaction = csw.Transaction(
 )
 
 # %%
-serializer.write(open("xml/transaction3.xml", "w"), transaction, ns_map=ns_map)
-
+resp = requests.post(
+    PYCSW_HOST,
+    headers={"Content-Type": "application/xml"},
+    data=serializer.render(
+        transaction, ns_map={"csw": "http://www.opengis.net/cat/csw/2.0.2"}
+    ),
+)
 # %%
-records.search_results.record[0].title
-
+resp.text
 
 # %%
