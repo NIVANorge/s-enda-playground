@@ -2,7 +2,6 @@
 from bindings.csw.record import Record
 from bindings.csw.constraint import Constraint
 from bindings import csw
-from lxml.etree import QName
 from xsdata.formats.dataclass.serializers import XmlSerializer
 from xsdata.formats.dataclass.serializers.config import SerializerConfig
 from xsdata.formats.dataclass.parsers import XmlParser
@@ -11,6 +10,7 @@ import requests
 
 # %%
 MET_HOST = "https://csw.s-enda.k8s.met.no"
+PYCSW_HOST = "http://localhost:8000"
 # %%
 pos_values = [
     47.00,
@@ -107,28 +107,26 @@ resp = requests.post(
 # %%
 resp.text
 # %%
-open("xml/iddefjorden.xml", "wb").write(resp.content)
-# %%
-transaction = csw.Transaction(
-    insert=[
-        csw.InsertType(other_element=[csw.Metadata1(mock.search_results.record[0])])
-    ]
-)
-# %%
-transaction.version
-
 # https://aquamonitor.niva.no/nmdc/archives/jmgwuvw/Iddefjorden_hydrografi.nc
-
-with open("xml/transaction.xml", "r") as f:
-    mock = parser.from_string(f.read(), csw.GetRecordsResponse)
-# %%
+with open("xml/transaction3.xml", "r") as f:
+    mock = parser.from_string(f.read(), csw.Transaction)
 # %%
 transaction = csw.Transaction(
     insert=[
-        csw.InsertType(other_element=[csw.Metadata2(title="Mock Iddefjorden_hydrografi", href="https://aquamonitor.niva.no/nmdc/archives/jmgwuvw/Iddefjorden_hydrografi.nc")])
+        csw.InsertType(
+            other_element=[
+                csw.Record(any_text=[csw.Title3(content=["Super Duper"]), csw.Abstract2("hello"), csw.Identifier2("123")])
+            ],
+            type_name=["csw:Record"],
+        )
     ]
 )
 
 # %%
-serializer.write(open("xml/transaction2.xml", "w"), transaction, ns_map=ns_map)
+serializer.write(open("xml/transaction3.xml", "w"), transaction, ns_map=ns_map)
+
+# %%
+records.search_results.record[0].title
+
+
 # %%
