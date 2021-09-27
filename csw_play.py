@@ -148,25 +148,25 @@ resp = requests.post(
 resp
 # %%
 with open("xml/gmd_sample.xml", "rb") as f:
-    gmd = parser.from_bytes(f.read(), csw.MetaData2)
+    gmd_metadata = parser.from_bytes(f.read(), csw.MetaData2)
 # %%
-gmd
+gmd_metadata
 # %%
 transaction_gmd = csw.Transaction(
     insert=[
         csw.InsertType(
-            other_element=[csw.MetaDataPropertyType()],
+            other_element=[gmd_metadata],
             type_name=["csw:Record"],
         )
     ]
 )
-
-
+#%%
+gmd.MdMetadata()
 #%%
 transaction_gmd = csw.Transaction(
     insert=[
         csw.InsertType(
-            other_element=[gmd],
+            other_element=[],
             type_name=["csw:Record"],
         )
     ]
