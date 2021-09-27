@@ -1,9 +1,11 @@
 #%%
-from bindings import csw
+from bindings.csw.feature_array_property_type import File
+from bindings import csw, gmd
 from xsdata.formats.dataclass.serializers import XmlSerializer
 from xsdata.formats.dataclass.serializers.config import SerializerConfig
 from xsdata.formats.dataclass.parsers import XmlParser
 from xsdata.formats.dataclass.parsers.config import ParserConfig
+from xsdata.formats.dataclass.models.generics import AnyElement
 import requests
 
 # %%
@@ -113,7 +115,13 @@ transaction = csw.Transaction(
                     identifier=["mock.1234567"],
                     title=[csw.Title3("Iddefjorden_hydrografi")],
                     abstract=[csw.Abstract2("My Long abstract")],
-                    references=[csw.References(content=["http://aquamonitor.niva.no/nmdc/archives/jmgwuvw/Iddefjorden_hydrografi.nc"])],
+                    references=[
+                        csw.References(
+                            content=[
+                                "http://aquamonitor.niva.no/nmdc/archives/jmgwuvw/Iddefjorden_hydrografi.nc"
+                            ]
+                        )
+                    ],
                 ),
             ],
             type_name=["csw:Record"],
@@ -133,7 +141,42 @@ resp = requests.post(
 resp.text
 
 # %%
-resp = requests.post(GEONORGE_BETA_HOST, serializer.render(cap), auth=('admin', 'admin')).text
+resp = requests.post(
+    GEONORGE_BETA_HOST, serializer.render(cap), auth=("admin", "admin")
+).text
 # %%
 resp
+# %%
+with open("xml/gmd_sample.xml", "rb") as f:
+    gmd = parser.from_bytes(f.read(), csw.MetaData2)
+# %%
+gmd
+# %%
+transaction_gmd = csw.Transaction(
+    insert=[
+        csw.InsertType(
+            other_element=[csw.MetaDataPropertyType()],
+            type_name=["csw:Record"],
+        )
+    ]
+)
+
+
+#%%
+transaction_gmd = csw.Transaction(
+    insert=[
+        csw.InsertType(
+            other_element=[gmd],
+            type_name=["csw:Record"],
+        )
+    ]
+)
+
+# %%
+serializer.render(
+    transaction_gmd, ns_map={"csw": "http://www.opengis.net/cat/csw/2.0.2"}
+)
+# %%
+
+gmd.content[3]
 # %%
