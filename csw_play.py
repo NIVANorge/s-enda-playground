@@ -1,9 +1,5 @@
 #%%
-from bindings.csw.title_3 import Title3
-from bindings.csw.record import Record
-from bindings.csw.constraint import Constraint
 from bindings import csw
-from bindings import csw_publication
 from xsdata.formats.dataclass.serializers import XmlSerializer
 from xsdata.formats.dataclass.serializers.config import SerializerConfig
 from xsdata.formats.dataclass.parsers import XmlParser
@@ -13,6 +9,8 @@ import requests
 # %%
 MET_HOST = "https://csw.s-enda.k8s.met.no"
 PYCSW_HOST = "http://localhost:8000"
+GEONORGE_BETA_HOST = "https://www.geonorge.no/geonetworkbeta/srv/nor/csw"
+GEONORGE_HOST = "https://www.geonorge.no/geonetwork/srv/nor/csw"
 # %%
 pos_values = [
     47.00,
@@ -134,4 +132,8 @@ resp = requests.post(
 # %%
 resp.text
 
+# %%
+resp = requests.post(GEONORGE_BETA_HOST, serializer.render(cap), auth=('admin', 'admin')).text
+# %%
+resp
 # %%
