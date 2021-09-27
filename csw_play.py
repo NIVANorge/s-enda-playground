@@ -166,7 +166,13 @@ gmd.MdMetadata()
 transaction_gmd = csw.Transaction(
     insert=[
         csw.InsertType(
-            other_element=[],
+            other_element=[
+                gmd.MdMetadata(
+                    file_identifier=gmd.CharacterStringPropertyType(
+                        character_string="mock.1234"
+                    )
+                )
+            ],
             type_name=["csw:Record"],
         )
     ]
