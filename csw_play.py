@@ -1,18 +1,26 @@
 #%%
-from bindings.csw.feature_array_property_type import File
-from bindings import csw, gmd
-from xsdata.formats.dataclass.serializers import XmlSerializer
-from xsdata.formats.dataclass.serializers.config import SerializerConfig
+import os
+from datetime import datetime
+
+import requests
+from xsdata.formats.dataclass.models.generics import AnyElement
 from xsdata.formats.dataclass.parsers import XmlParser
 from xsdata.formats.dataclass.parsers.config import ParserConfig
-from xsdata.formats.dataclass.models.generics import AnyElement
-import requests
+from xsdata.formats.dataclass.serializers import XmlSerializer
+from xsdata.formats.dataclass.serializers.config import SerializerConfig
+
+from bindings import csw, gmd
+from bindings.csw.feature_array_property_type import File
+from bindings.gmd import code_list_type
 
 # %%
 MET_HOST = "https://csw.s-enda.k8s.met.no"
 PYCSW_HOST = "http://localhost:8000"
+NIVA_HOST = "http://sjoa.niva.no/geonetwork/srv/eng"
 GEONORGE_BETA_HOST = "https://www.geonorge.no/geonetworkbeta/srv/nor/csw"
 GEONORGE_HOST = "https://www.geonorge.no/geonetwork/srv/nor/csw"
+#Found at https://kart.miljodirektoratet.no/geoserver/
+MILJO_HOST = "https://kart.miljodirektoratet.no/geoserver/"
 # %%
 pos_values = [
     47.00,
@@ -137,15 +145,11 @@ resp = requests.post(
         transaction, ns_map={"csw": "http://www.opengis.net/cat/csw/2.0.2"}
     ),
 )
-# %%
-resp.text
 
 # %%
 resp = requests.post(
     GEONORGE_BETA_HOST, serializer.render(cap), auth=("admin", "admin")
 ).text
-# %%
-resp
 # %%
 with open("xml/gmd_sample.xml", "rb") as f:
     gmd_metadata = parser.from_bytes(f.read(), csw.MetaData2)
@@ -160,29 +164,41 @@ transaction_gmd = csw.Transaction(
         )
     ]
 )
-#%%
-gmd.MdMetadata()
-#%%
+
+#%% Using gmd metadata from bindings, it is really long
 transaction_gmd = csw.Transaction(
     insert=[
         csw.InsertType(
             other_element=[
                 gmd.MdMetadata(
                     file_identifier=gmd.CharacterStringPropertyType(
-                        character_string="mock.1234"
-                    )
+                        character_string="mock.12345"
+                    ),
+                    language=gmd.CharacterStringPropertyType(character_string="eng"),
+                    character_set=gmd.MdCharacterSetCodePropertyType(),
+                    contact=[
+                        gmd.CiResponsiblePartyPropertyType(
+                            ci_responsible_party=gmd.CiResponsibleParty(
+                                individual_name="Kim",
+                                organisation_name="Norwegian Institute for Water Research",
+                            )
+                        )
+                    ],
+                    date_stamp=gmd.DatePropertyType(
+                        date_time=datetime.now().strftime("%Y-%m-%dT%H:%M:%S%z")
+                    ),
                 )
             ],
             type_name=["csw:Record"],
         )
     ]
 )
-
 # %%
-serializer.render(
-    transaction_gmd, ns_map={"csw": "http://www.opengis.net/cat/csw/2.0.2"}
+resp = requests.post(
+    NIVA_HOST+"/csw-publication",
+    headers={"Content-Type": "application/xml"},
+    auth=(os.environ["NIVA_USER"], os.environ["NIVA_PASSWORD"]),
+    data=serializer.render(
+        transaction_gmd, ns_map={"csw": "http://www.opengis.net/cat/csw/2.0.2"}
+    ),
 )
-# %%
-
-gmd.content[3]
-# %%
