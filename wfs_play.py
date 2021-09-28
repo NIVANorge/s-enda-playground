@@ -28,6 +28,7 @@ q_features = wfs.GetFeature(
     query=[
         wfs.Query(
             type_names=["forvaltningsplaner_havomrader_omrade"],
+            srs_name="EPSG:4326",
             filter=wfs.Filter(
                 resource_id=[
                     wfs.ResourceId(rid="forvaltningsplaner_havomrader_omrade.1")
@@ -42,7 +43,7 @@ resp = requests.post(
     serializer.render(q_features, ns_map=ns_map),
 )
 #%%
-json.loads(resp.text)
+#json.loads(resp.text)
 #%%
 feature_collection = parser.from_string(resp.text, wfs.FeatureCollection)
 # %%
