@@ -1,0 +1,26 @@
+from dataclasses import dataclass, field
+from typing import Optional
+from bindings.ows.http import Http
+
+__NAMESPACE__ = "http://www.opengis.net/ows/2.0"
+
+
+@dataclass
+class Dcp:
+    """Information for one distributed Computing Platform (DCP) supported for
+    this operation.
+
+    At present, only the HTTP DCP is defined, so this element only
+    includes the HTTP element.
+    """
+    class Meta:
+        name = "DCP"
+        namespace = "http://www.opengis.net/ows/2.0"
+
+    http: Optional[Http] = field(
+        default=None,
+        metadata={
+            "name": "HTTP",
+            "type": "Element",
+        }
+    )
