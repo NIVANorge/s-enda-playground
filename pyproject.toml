@@ -11,6 +11,8 @@ ipykernel = "^6.3.1"
 OWSLib = "^0.25.0"
 lxml = "^4.6.3"
 xsdata = {extras = ["lxml", "soap"], version = "^21.9"}
+geopandas = "^0.9.0"
+matplotlib = "^3.4.3"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.4"
