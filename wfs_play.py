@@ -62,7 +62,7 @@ polygon_node = feature_collection.xpath('//*[local-name()="Polygon"]')[0]
 csw_polygon = parser.from_bytes(etree.tostring(polygon_node), csw.Polygon)
 # %%
 q_records = csw.GetRecords(
-    result_type="results",
+    result_type="hits",
     query=csw.Query(
         type_names=["csw:Record"],
         element_set_name="full",
@@ -80,8 +80,12 @@ q_records = csw.GetRecords(
 resp = requests.post(
     GEONORGE_HOST,
     headers={"Content-Type": "application/xml"},
-    data=serializer.render(q_records, ns_map=ns_map),
+    data=serializer.render(q_records, ns_map={"csw": "http://www.opengis.net/cat/csw/2.0.2"}),
 )
+#%%
+records = parser.from_string(resp.text, csw.GetRecordsResponse)
+#%%
+records.search_results.number_of_records_matched
 #%%
 wfs_client = WebFeatureService(MILJO_HOST)
 #%%
