@@ -11,28 +11,40 @@ from owslib.wfs import WebFeatureService
 import geopandas
 import json
 import matplotlib.pyplot as plt
-from bindings import wfs, gmd
+from bindings import wfs, csw
+from lxml import etree
 
+# See http://docs.opengeospatial.org/is/09-026r2/09-026r2.html#37
 # %%
 MILJO_HOST = (
     "https://kart.miljodirektoratet.no/geoserver/forvaltningsplaner_havomrader/wfs"
 )
-
+MET_HOST = "https://csw.s-enda.k8s.met.no"
+GEONORGE_HOST = "https://www.geonorge.no/geonetwork/srv/nor/csw"
 # %%
 serializer = XmlSerializer(config=SerializerConfig(pretty_print=True))
 parser = XmlParser(config=ParserConfig())
-ns_map = {"wfs": "http://www.opengis.net/wfs", "gml": "http://www.opengis.net/gml"}
+ns_map = {
+    "wfs": "http://www.opengis.net/wfs",
+    "csw": "http://www.opengis.net/cat/csw/2.0.2",
+}
 # %%
 # can also be json
 q_features = wfs.GetFeature(
+    output_format="gml3",
     query=[
         wfs.Query(
             type_names=["forvaltningsplaner_havomrader_omrade"],
             srs_name="EPSG:4326",
             filter=wfs.Filter(
-                resource_id=[
-                    wfs.ResourceId(rid="forvaltningsplaner_havomrader_omrade.1")
-                ]
+                property_is_like=wfs.PropertyIsLike(
+                    wild_card="*",
+                    single_char="?",
+                    escape_char="\\",
+                    match_case="false",
+                    value_reference=wfs.ValueReference(value="navn_no"),
+                    literal=wfs.Literal(content=["*Barents*"]),
+                )
             ),
         )
     ],
@@ -43,22 +55,33 @@ resp = requests.post(
     serializer.render(q_features, ns_map=ns_map),
 )
 #%%
-#json.loads(resp.text)
+feature_collection = etree.XML(resp.content)
 #%%
-feature_collection = parser.from_string(resp.text, wfs.FeatureCollection)
+polygon_node = feature_collection.xpath('//*[local-name()="Polygon"]')[0]
+#%%
+csw_polygon = parser.from_bytes(etree.tostring(polygon_node), csw.Polygon)
 # %%
-feature_collection.member[0]
-# %%
-feature_collection
-
-# %%
-
-for m in feature_collection.member:
-    print(m.content[0].children[0].text)
-# %%
-feature_collection.member[0].content[0].children[0].text
-# %%
-feature_collection.member[0].content[0].children[3].children[0]
+q_records = csw.GetRecords(
+    result_type="results",
+    query=csw.Query(
+        type_names=["csw:Record"],
+        element_set_name="full",
+        constraint=csw.Constraint(
+            version="1.1.0",
+            filter=csw.Filter(
+                within=csw.Within(
+                    property_name=["ows:BoundingBox"], polygon=csw_polygon
+                )
+            ),
+        ),
+    ),
+)
+#%%
+resp = requests.post(
+    GEONORGE_HOST,
+    headers={"Content-Type": "application/xml"},
+    data=serializer.render(q_records, ns_map=ns_map),
+)
 #%%
 wfs_client = WebFeatureService(MILJO_HOST)
 #%%
@@ -70,10 +93,10 @@ wfs_client.contents.keys()
 bytes_stream = wfs_client.getfeature(
     typename=["forvaltningsplaner_havomrader:forvaltningsplaner_havomrader_omrade"],
     srsname="EPSG:4326",
-    outputFormat="json"
+    outputFormat="json",
 )
 #%%
-world = geopandas.read_file(geopandas.datasets.get_path('naturalearth_lowres'))
+world = geopandas.read_file(geopandas.datasets.get_path("naturalearth_lowres"))
 world.crs
 #%%
 
@@ -83,4 +106,33 @@ regions.crs
 fig, ax = plt.subplots(figsize=(15, 15))
 world.plot(ax=ax, alpha=0.7, color="pink")
 regions.plot(ax=ax)
-# %%
+#%%
+q_property = wfs.GetPropertyValue(
+    value_reference="geom",
+    query=wfs.Query(
+        type_names=["forvaltningsplaner_havomrader_omrade"],
+        srs_name="EPSG:4326",
+        filter=wfs.Filter(
+            property_is_like=wfs.PropertyIsLike(
+                wild_card="*",
+                single_char="?",
+                escape_char="\\",
+                match_case="false",
+                value_reference=wfs.ValueReference(value="navn_no"),
+                literal=wfs.Literal(content=["*Barents*"]),
+            )
+        ),
+    ),
+)
+#%%
+resp = requests.post(
+    MILJO_HOST,
+    serializer.render(q_property, ns_map=ns_map),
+)
+#%%
+value_collection = parser.from_string(resp.text, wfs.ValueCollection)
+#%%
+with open("xml/barents.xml", "w") as f:
+    serializer.write(
+        f, value_collection.member[0].content[0].children[0], ns_map=ns_map
+    )
