@@ -149,20 +149,6 @@ resp = requests.post(
 resp = requests.post(
     GEONORGE_BETA_HOST, serializer.render(cap), auth=("admin", "admin")
 ).text
-# %%
-with open("xml/gmd_sample.xml", "rb") as f:
-    gmd_metadata = parser.from_bytes(f.read(), csw.MetaData2)
-# %%
-gmd_metadata
-# %%
-transaction_gmd = csw.Transaction(
-    insert=[
-        csw.InsertType(
-            other_element=[gmd_metadata],
-            type_name=["csw:Record"],
-        )
-    ]
-)
 
 #%% Using gmd metadata from bindings, it is really long
 transaction_gmd = csw.Transaction(
