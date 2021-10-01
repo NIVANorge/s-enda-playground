@@ -9,7 +9,6 @@ from xsdata.formats.dataclass.serializers import XmlSerializer
 from xsdata.formats.dataclass.serializers.config import SerializerConfig
 from owslib.wfs import WebFeatureService
 import geopandas
-import json
 import matplotlib.pyplot as plt
 from bindings import wfs, csw
 from lxml import etree
@@ -23,7 +22,9 @@ MET_HOST = "https://csw.s-enda.k8s.met.no"
 GEONORGE_HOST = "https://www.geonorge.no/geonetwork/srv/nor/csw"
 # %%
 serializer = XmlSerializer(config=SerializerConfig(pretty_print=True))
-parser = XmlParser(config=ParserConfig())
+# CSW 2.0.2 ISO profil does not support dc:URI elements.
+# According to https://github.com/geonetwork/schema-plugins/blob/4afdd90521bf3a6858274a42564cda416f1135af/iso19139.rndt/src/main/plugin/iso19139.rndt/present/csw/ogc-full.xsl
+parser = XmlParser(config=ParserConfig(fail_on_unknown_properties=False))
 ns_map = {
     "wfs": "http://www.opengis.net/wfs",
     "csw": "http://www.opengis.net/cat/csw/2.0.2",
