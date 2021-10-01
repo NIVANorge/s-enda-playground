@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:GetRecordsResponse xmlns:wfs="http://www.opengis.net/wfs" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" version="2.0.2">
+  <csw:SearchStatus timestamp="2021-10-01T10:51:20Z"/>
+  <csw:SearchResults elementSet="full" recordSchema="http://www.opengis.net/cat/csw/2.0.2" numberOfRecordsMatched="12473" numberOfRecordsReturned="10" nextRecord="11">
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:spatial xmlns:ns2="http://purl.org/dc/terms/" scheme="http://www.opengis.net/def/crs">EPSG:4326</ns2:spatial>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="OPENDAP:OPENDAP">https://thredds.met.no/thredds/dodsC/remotesensingsatellite/polar-swath/2021/06/01/aqua-modis-hkm-20210601011121-20210601012455.nc</ns2:references>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">eca180be-02b3-4e5a-a362-83faabe0b9b4</ns2:identifier>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">dataset</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2021-06-01</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2021-06-01</ns2:date>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Direct Broadcast data received at MET NORWAY Oslo. Processed by standard processing software to geolocated and calibrated values in satellite swath in received instrument resolution.</ns2:abstract>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Earth Science &gt; Atmosphere &gt; Atmospheric radiation</ns2:subject>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Direct Broadcast data processed in satellite swath to L1C.</ns2:title>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="OGC:WMS">https://thredds.met.no/thredds/wms/remotesensingsatellite/polar-swath/2021/06/01/aqua-modis-hkm-20210601011121-20210601012455.nc?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities?SERVICE=WMS&amp;REQUEST=GetCapabilities</ns2:references>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Government Agencies-non-US &gt; Norway &gt; NO/MET &gt; Norwegian Meteorological Institute</ns2:subject>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="WWW:DOWNLOAD-1.0-http--download">https://thredds.met.no/thredds/fileServer/remotesensingsatellite/polar-swath/2021/06/01/aqua-modis-hkm-20210601011121-20210601012455.nc</ns2:references>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Geographic Region &gt; Northern Hemisphere</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Meteorological geographical features</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Atmospheric conditions</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Oceanographic geographical features</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Weather and climate</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/" scheme="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopicCategoryCode">climatologyMeteorologyAtmosphere</ns2:subject>
+      <ns2:BoundingBox xmlns:ns2="http://www.opengis.net/ows" crs="urn:x-ogc:def:crs:EPSG:6.11:4326" dimensions="2">
+        <ns2:LowerCorner>34.47 -13.1</ns2:LowerCorner>
+        <ns2:UpperCorner>82.66 74.36</ns2:UpperCorner>
+      </ns2:BoundingBox>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:spatial xmlns:ns2="http://purl.org/dc/terms/" scheme="http://www.opengis.net/def/crs">EPSG:4326</ns2:spatial>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="OPENDAP:OPENDAP">https://thredds.met.no/thredds/dodsC/remotesensingsatellite/polar-swath/2020/05/05/noaa19-avhrr-20200505060928-20200505062238.nc</ns2:references>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">c152959e-0b9e-42ff-9142-a12bc4c7c102</ns2:identifier>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">dataset</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2020-05-07</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2020-05-07</ns2:date>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Direct Broadcast data received at MET NORWAY Oslo. Processed by standard processing software to geolocated and calibrated values in satellite swath in received instrument resolution.</ns2:abstract>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Earth Science &gt; Atmosphere &gt; Atmospheric radiation</ns2:subject>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Direct Broadcast data processed in satellite swath to L1C.</ns2:title>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="OGC:WMS">https://thredds.met.no/thredds/wms/remotesensingsatellite/polar-swath/2020/05/05/noaa19-avhrr-20200505060928-20200505062238.nc?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities?SERVICE=WMS&amp;REQUEST=GetCapabilities</ns2:references>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Government Agencies-non-US &gt; Norway &gt; NO/MET &gt; Norwegian Meteorological Institute</ns2:subject>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="WWW:DOWNLOAD-1.0-http--download">https://thredds.met.no/thredds/fileServer/remotesensingsatellite/polar-swath/2020/05/05/noaa19-avhrr-20200505060928-20200505062238.nc</ns2:references>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Geographic Region &gt; Northern Hemisphere</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Meteorological geographical features</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Atmospheric conditions</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Oceanographic geographical features</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Weather and climate</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/" scheme="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopicCategoryCode">climatologyMeteorologyAtmosphere</ns2:subject>
+      <ns2:BoundingBox xmlns:ns2="http://www.opengis.net/ows" crs="urn:x-ogc:def:crs:EPSG:6.11:4326" dimensions="2">
+        <ns2:LowerCorner>34.04 -48.1</ns2:LowerCorner>
+        <ns2:UpperCorner>84.89 71.96</ns2:UpperCorner>
+      </ns2:BoundingBox>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:spatial xmlns:ns2="http://purl.org/dc/terms/" scheme="http://www.opengis.net/def/crs">EPSG:4326</ns2:spatial>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="OPENDAP:OPENDAP">https://thredds.met.no/thredds/dodsC/remotesensingsatellite/polar-swath/2020/05/12/metopb-avhrr-20200512190838-20200512192120.nc</ns2:references>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">8cc1b9ce-c427-4b64-9e49-2b0b076ee263</ns2:identifier>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">dataset</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2020-05-12</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2020-05-12</ns2:date>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Direct Broadcast data received at MET NORWAY Oslo. Processed by standard processing software to geolocated and calibrated values in satellite swath in received instrument resolution.</ns2:abstract>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Earth Science &gt; Atmosphere &gt; Atmospheric radiation</ns2:subject>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Direct Broadcast data processed in satellite swath to L1C.</ns2:title>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="OGC:WMS">https://thredds.met.no/thredds/wms/remotesensingsatellite/polar-swath/2020/05/12/metopb-avhrr-20200512190838-20200512192120.nc?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities?SERVICE=WMS&amp;REQUEST=GetCapabilities</ns2:references>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Government Agencies-non-US &gt; Norway &gt; NO/MET &gt; Norwegian Meteorological Institute</ns2:subject>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="WWW:DOWNLOAD-1.0-http--download">https://thredds.met.no/thredds/fileServer/remotesensingsatellite/polar-swath/2020/05/12/metopb-avhrr-20200512190838-20200512192120.nc</ns2:references>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Geographic Region &gt; Northern Hemisphere</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Meteorological geographical features</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Atmospheric conditions</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Oceanographic geographical features</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Weather and climate</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/" scheme="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopicCategoryCode">climatologyMeteorologyAtmosphere</ns2:subject>
+      <ns2:BoundingBox xmlns:ns2="http://www.opengis.net/ows" crs="urn:x-ogc:def:crs:EPSG:6.11:4326" dimensions="2">
+        <ns2:LowerCorner>35.37 -45.02</ns2:LowerCorner>
+        <ns2:UpperCorner>85.32 75.71</ns2:UpperCorner>
+      </ns2:BoundingBox>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:spatial xmlns:ns2="http://purl.org/dc/terms/" scheme="http://www.opengis.net/def/crs">EPSG:4326</ns2:spatial>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="OPENDAP:OPENDAP">https://thredds.met.no/thredds/dodsC/remotesensingsatellite/polar-swath/2021/06/02/metopb-avhrr-20210602192137-20210602193458.nc</ns2:references>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">c222f6bf-d2f3-474d-9a77-b551a2739e6e</ns2:identifier>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">dataset</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2021-06-02</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2021-06-02</ns2:date>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Direct Broadcast data received at MET NORWAY Oslo. Processed by standard processing software to geolocated and calibrated values in satellite swath in received instrument resolution.</ns2:abstract>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Earth Science &gt; Atmosphere &gt; Atmospheric radiation</ns2:subject>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Direct Broadcast data processed in satellite swath to L1C.</ns2:title>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="OGC:WMS">https://thredds.met.no/thredds/wms/remotesensingsatellite/polar-swath/2021/06/02/metopb-avhrr-20210602192137-20210602193458.nc?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities?SERVICE=WMS&amp;REQUEST=GetCapabilities</ns2:references>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Government Agencies-non-US &gt; Norway &gt; NO/MET &gt; Norwegian Meteorological Institute</ns2:subject>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="WWW:DOWNLOAD-1.0-http--download">https://thredds.met.no/thredds/fileServer/remotesensingsatellite/polar-swath/2021/06/02/metopb-avhrr-20210602192137-20210602193458.nc</ns2:references>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Geographic Region &gt; Northern Hemisphere</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Meteorological geographical features</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Atmospheric conditions</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Oceanographic geographical features</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Weather and climate</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/" scheme="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopicCategoryCode">climatologyMeteorologyAtmosphere</ns2:subject>
+      <ns2:BoundingBox xmlns:ns2="http://www.opengis.net/ows" crs="urn:x-ogc:def:crs:EPSG:6.11:4326" dimensions="2">
+        <ns2:LowerCorner>33.27 -48.55</ns2:LowerCorner>
+        <ns2:UpperCorner>85.37 72.87</ns2:UpperCorner>
+      </ns2:BoundingBox>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:spatial xmlns:ns2="http://purl.org/dc/terms/" scheme="http://www.opengis.net/def/crs">EPSG:4326</ns2:spatial>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="OPENDAP:OPENDAP">https://thredds.met.no/thredds/dodsC/remotesensingsatellite/polar-swath/2020/05/20/fy3d-mersi2-1k-20200520111233-20200520112557.nc</ns2:references>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">84131dce-9a84-4b96-8d28-7ec71055d9fd</ns2:identifier>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">dataset</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2020-05-20</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2020-05-20</ns2:date>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Direct Broadcast data received at MET NORWAY Oslo. Processed by standard processing software to geolocated and calibrated values in satellite swath in received instrument resolution.</ns2:abstract>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Earth Science &gt; Atmosphere &gt; Atmospheric radiation</ns2:subject>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Direct Broadcast data processed in satellite swath to L1C.</ns2:title>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="OGC:WMS">https://thredds.met.no/thredds/wms/remotesensingsatellite/polar-swath/2020/05/20/fy3d-mersi2-1k-20200520111233-20200520112557.nc?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities?SERVICE=WMS&amp;REQUEST=GetCapabilities</ns2:references>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Government Agencies-non-US &gt; Norway &gt; NO/MET &gt; Norwegian Meteorological Institute</ns2:subject>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="WWW:DOWNLOAD-1.0-http--download">https://thredds.met.no/thredds/fileServer/remotesensingsatellite/polar-swath/2020/05/20/fy3d-mersi2-1k-20200520111233-20200520112557.nc</ns2:references>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Geographic Region &gt; Northern Hemisphere</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Meteorological geographical features</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Atmospheric conditions</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Oceanographic geographical features</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Weather and climate</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/" scheme="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopicCategoryCode">climatologyMeteorologyAtmosphere</ns2:subject>
+      <ns2:BoundingBox xmlns:ns2="http://www.opengis.net/ows" crs="urn:x-ogc:def:crs:EPSG:6.11:4326" dimensions="2">
+        <ns2:LowerCorner>33.91 -47.1</ns2:LowerCorner>
+        <ns2:UpperCorner>85.48 75.14</ns2:UpperCorner>
+      </ns2:BoundingBox>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:spatial xmlns:ns2="http://purl.org/dc/terms/" scheme="http://www.opengis.net/def/crs">EPSG:4326</ns2:spatial>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="OPENDAP:OPENDAP">https://thredds.met.no/thredds/dodsC/remotesensingsatellite/polar-swath/2021/01/13/metopb-avhrr-20210113191814-20210113193138.nc</ns2:references>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">74e777af-516f-4dda-a1d9-324ac1be45de</ns2:identifier>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">dataset</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2021-01-13</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2021-01-13</ns2:date>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Direct Broadcast data received at MET NORWAY Oslo. Processed by standard processing software to geolocated and calibrated values in satellite swath in received instrument resolution.</ns2:abstract>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Earth Science &gt; Atmosphere &gt; Atmospheric radiation</ns2:subject>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Direct Broadcast data processed in satellite swath to L1C.</ns2:title>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="OGC:WMS">https://thredds.met.no/thredds/wms/remotesensingsatellite/polar-swath/2021/01/13/metopb-avhrr-20210113191814-20210113193138.nc?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities?SERVICE=WMS&amp;REQUEST=GetCapabilities</ns2:references>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Government Agencies-non-US &gt; Norway &gt; NO/MET &gt; Norwegian Meteorological Institute</ns2:subject>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="WWW:DOWNLOAD-1.0-http--download">https://thredds.met.no/thredds/fileServer/remotesensingsatellite/polar-swath/2021/01/13/metopb-avhrr-20210113191814-20210113193138.nc</ns2:references>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Geographic Region &gt; Northern Hemisphere</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Meteorological geographical features</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Atmospheric conditions</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Oceanographic geographical features</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Weather and climate</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/" scheme="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopicCategoryCode">climatologyMeteorologyAtmosphere</ns2:subject>
+      <ns2:BoundingBox xmlns:ns2="http://www.opengis.net/ows" crs="urn:x-ogc:def:crs:EPSG:6.11:4326" dimensions="2">
+        <ns2:LowerCorner>33.46 -48.58</ns2:LowerCorner>
+        <ns2:UpperCorner>85.69 75.55</ns2:UpperCorner>
+      </ns2:BoundingBox>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:spatial xmlns:ns2="http://purl.org/dc/terms/" scheme="http://www.opengis.net/def/crs">EPSG:4326</ns2:spatial>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="OPENDAP:OPENDAP">https://thredds.met.no/thredds/dodsC/remotesensingsatellite/polar-swath/2021/04/14/aqua-modis-1km-20210414011129-20210414012455.nc</ns2:references>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">33728316-8f97-4ae3-8a7f-06ae8b6cd674</ns2:identifier>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">dataset</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2021-04-14</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2021-04-14</ns2:date>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Direct Broadcast data received at MET NORWAY Oslo. Processed by standard processing software to geolocated and calibrated values in satellite swath in received instrument resolution.</ns2:abstract>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Earth Science &gt; Atmosphere &gt; Atmospheric radiation</ns2:subject>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Direct Broadcast data processed in satellite swath to L1C.</ns2:title>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="OGC:WMS">https://thredds.met.no/thredds/wms/remotesensingsatellite/polar-swath/2021/04/14/aqua-modis-1km-20210414011129-20210414012455.nc?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities?SERVICE=WMS&amp;REQUEST=GetCapabilities</ns2:references>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Government Agencies-non-US &gt; Norway &gt; NO/MET &gt; Norwegian Meteorological Institute</ns2:subject>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="WWW:DOWNLOAD-1.0-http--download">https://thredds.met.no/thredds/fileServer/remotesensingsatellite/polar-swath/2021/04/14/aqua-modis-1km-20210414011129-20210414012455.nc</ns2:references>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Geographic Region &gt; Northern Hemisphere</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Meteorological geographical features</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Atmospheric conditions</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Oceanographic geographical features</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Weather and climate</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/" scheme="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopicCategoryCode">climatologyMeteorologyAtmosphere</ns2:subject>
+      <ns2:BoundingBox xmlns:ns2="http://www.opengis.net/ows" crs="urn:x-ogc:def:crs:EPSG:6.11:4326" dimensions="2">
+        <ns2:LowerCorner>34.59 -12.66</ns2:LowerCorner>
+        <ns2:UpperCorner>82.51 73.89</ns2:UpperCorner>
+      </ns2:BoundingBox>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:spatial xmlns:ns2="http://purl.org/dc/terms/" scheme="http://www.opengis.net/def/crs">EPSG:4326</ns2:spatial>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="OPENDAP:OPENDAP">https://thredds.met.no/thredds/dodsC/remotesensingsatellite/polar-swath/2020/05/05/noaa18-avhrr-20200505093214-20200505094530.nc</ns2:references>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">710a843a-fabe-4fe2-bc8a-22afddf06118</ns2:identifier>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">dataset</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2020-05-07</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2020-05-07</ns2:date>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Direct Broadcast data received at MET NORWAY Oslo. Processed by standard processing software to geolocated and calibrated values in satellite swath in received instrument resolution.</ns2:abstract>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Earth Science &gt; Atmosphere &gt; Atmospheric radiation</ns2:subject>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Direct Broadcast data processed in satellite swath to L1C.</ns2:title>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="OGC:WMS">https://thredds.met.no/thredds/wms/remotesensingsatellite/polar-swath/2020/05/05/noaa18-avhrr-20200505093214-20200505094530.nc?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities?SERVICE=WMS&amp;REQUEST=GetCapabilities</ns2:references>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Government Agencies-non-US &gt; Norway &gt; NO/MET &gt; Norwegian Meteorological Institute</ns2:subject>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="WWW:DOWNLOAD-1.0-http--download">https://thredds.met.no/thredds/fileServer/remotesensingsatellite/polar-swath/2020/05/05/noaa18-avhrr-20200505093214-20200505094530.nc</ns2:references>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Geographic Region &gt; Northern Hemisphere</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Meteorological geographical features</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Atmospheric conditions</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Oceanographic geographical features</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Weather and climate</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/" scheme="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopicCategoryCode">climatologyMeteorologyAtmosphere</ns2:subject>
+      <ns2:BoundingBox xmlns:ns2="http://www.opengis.net/ows" crs="urn:x-ogc:def:crs:EPSG:6.11:4326" dimensions="2">
+        <ns2:LowerCorner>33.45 -48.05</ns2:LowerCorner>
+        <ns2:UpperCorner>84.82 72.06</ns2:UpperCorner>
+      </ns2:BoundingBox>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:spatial xmlns:ns2="http://purl.org/dc/terms/" scheme="http://www.opengis.net/def/crs">EPSG:4326</ns2:spatial>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="OPENDAP:OPENDAP">https://thredds.met.no/thredds/dodsC/remotesensingsatellite/polar-swath/2020/08/21/metopb-avhrr-20200821191750-20200821193111.nc</ns2:references>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">808f7754-c074-44ea-8ff2-1477260f3cd5</ns2:identifier>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">dataset</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2020-08-21</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2020-08-21</ns2:date>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Direct Broadcast data received at MET NORWAY Oslo. Processed by standard processing software to geolocated and calibrated values in satellite swath in received instrument resolution.</ns2:abstract>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Earth Science &gt; Atmosphere &gt; Atmospheric radiation</ns2:subject>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Direct Broadcast data processed in satellite swath to L1C.</ns2:title>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="OGC:WMS">https://thredds.met.no/thredds/wms/remotesensingsatellite/polar-swath/2020/08/21/metopb-avhrr-20200821191750-20200821193111.nc?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities?SERVICE=WMS&amp;REQUEST=GetCapabilities</ns2:references>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Government Agencies-non-US &gt; Norway &gt; NO/MET &gt; Norwegian Meteorological Institute</ns2:subject>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="WWW:DOWNLOAD-1.0-http--download">https://thredds.met.no/thredds/fileServer/remotesensingsatellite/polar-swath/2020/08/21/metopb-avhrr-20200821191750-20200821193111.nc</ns2:references>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Geographic Region &gt; Northern Hemisphere</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Meteorological geographical features</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Atmospheric conditions</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Oceanographic geographical features</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Weather and climate</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/" scheme="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopicCategoryCode">climatologyMeteorologyAtmosphere</ns2:subject>
+      <ns2:BoundingBox xmlns:ns2="http://www.opengis.net/ows" crs="urn:x-ogc:def:crs:EPSG:6.11:4326" dimensions="2">
+        <ns2:LowerCorner>33.5 -48.35</ns2:LowerCorner>
+        <ns2:UpperCorner>85.64 75.47</ns2:UpperCorner>
+      </ns2:BoundingBox>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:spatial xmlns:ns2="http://purl.org/dc/terms/" scheme="http://www.opengis.net/def/crs">EPSG:4326</ns2:spatial>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="OPENDAP:OPENDAP">https://thredds.met.no/thredds/dodsC/remotesensingsatellite/polar-swath/2020/11/28/noaa19-avhrr-20201128155451-20201128160718.nc</ns2:references>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">a38f0c64-eba2-438a-8392-cfa79d63f27a</ns2:identifier>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">dataset</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2020-11-28</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2020-11-28</ns2:date>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Direct Broadcast data received at MET NORWAY Oslo. Processed by standard processing software to geolocated and calibrated values in satellite swath in received instrument resolution.</ns2:abstract>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Earth Science &gt; Atmosphere &gt; Atmospheric radiation</ns2:subject>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Direct Broadcast data processed in satellite swath to L1C.</ns2:title>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="OGC:WMS">https://thredds.met.no/thredds/wms/remotesensingsatellite/polar-swath/2020/11/28/noaa19-avhrr-20201128155451-20201128160718.nc?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities?SERVICE=WMS&amp;REQUEST=GetCapabilities</ns2:references>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Government Agencies-non-US &gt; Norway &gt; NO/MET &gt; Norwegian Meteorological Institute</ns2:subject>
+      <ns2:references xmlns:ns2="http://purl.org/dc/terms/" scheme="WWW:DOWNLOAD-1.0-http--download">https://thredds.met.no/thredds/fileServer/remotesensingsatellite/polar-swath/2020/11/28/noaa19-avhrr-20201128155451-20201128160718.nc</ns2:references>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Geographic Region &gt; Northern Hemisphere</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Meteorological geographical features</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Atmospheric conditions</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Oceanographic geographical features</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Weather and climate</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/" scheme="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopicCategoryCode">climatologyMeteorologyAtmosphere</ns2:subject>
+      <ns2:BoundingBox xmlns:ns2="http://www.opengis.net/ows" crs="urn:x-ogc:def:crs:EPSG:6.11:4326" dimensions="2">
+        <ns2:LowerCorner>36.14 -43.38</ns2:LowerCorner>
+        <ns2:UpperCorner>84.72 75.13</ns2:UpperCorner>
+      </ns2:BoundingBox>
+    </csw:Record>
+  </csw:SearchResults>
+</csw:GetRecordsResponse>
