@@ -63,6 +63,7 @@ csw_polygon = parser.from_bytes(etree.tostring(polygon_node), csw.Polygon)
 # %%
 q_records = csw.GetRecords(
     result_type="results",
+    max_records=35,
     query=csw.Query(
         type_names=["csw:Record"],
         element_set_name="full",
@@ -78,14 +79,21 @@ q_records = csw.GetRecords(
 )
 #%%
 resp = requests.post(
-    MET_HOST,
+    GEONORGE_HOST,
     headers={"Content-Type": "application/xml"},
-    data=serializer.render(q_records, ns_map={"csw": "http://www.opengis.net/cat/csw/2.0.2"}),
+    data=serializer.render(
+        q_records, ns_map={"csw": "http://www.opengis.net/cat/csw/2.0.2"}
+    ),
 )
 #%%
 records = parser.from_string(resp.text, csw.GetRecordsResponse)
 #%%
-records.search_results
+records.search_results.number_of_records_returned
+#%%
+for rec in records.search_results.record:
+    print(rec.title)
+    print(rec.abstract)
+    print("")
 #%%
 wfs_client = WebFeatureService(MILJO_HOST)
 #%%
