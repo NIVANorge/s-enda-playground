@@ -1,0 +1,343 @@
+{
+	"info": {
+		"_postman_id": "bbcce956-9761-4774-942d-6d247b4b76fb",
+		"name": "WFS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "forvaltningsplaner_havomrader",
+			"item": [
+				{
+					"name": "Simple",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<wfs:GetFeature service=\"WFS\" version=\"1.0.0\"\n xmlns:wfs=\"http://www.opengis.net/wfs\"\n xmlns:topp=\"http://www.openplans.org/topp\"\n>\n  <wfs:Query typeName=\"forvaltningsplaner_havomrader_omrade\" srsName=\"EPSG:4326\"/>\n</wfs:GetFeature>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/forvaltningsplaner_havomrader/wfs",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"forvaltningsplaner_havomrader",
+								"wfs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetPropertyValue",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<wfs:GetPropertyValue service='WFS' version='2.0.0'\n xmlns:fes='http://www.opengis.net/fes/2.0'\n xmlns:wfs='http://www.opengis.net/wfs/2.0'\n valueReference='geom'>\n    <wfs:Query typeNames=\"forvaltningsplaner_havomrader_omrade\"/>\n</wfs:GetPropertyValue>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/forvaltningsplaner_havomrader/wfs",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"forvaltningsplaner_havomrader",
+								"wfs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DescribeStoredQueries",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<wfs:DescribeStoredQueries\n xmlns:wfs='http://www.opengis.net/wfs/2.0'\n service='WFS'>\n  <wfs:StoredQueryId>urn:ogc:def:query:OGC-WFS::GetFeatureById</wfs:StoredQueryId>\n</wfs:DescribeStoredQueries>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/forvaltningsplaner_havomrader/wfs",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"forvaltningsplaner_havomrader",
+								"wfs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCapabilities",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<GetCapabilities\n service=\"WFS\"\n xmlns=\"http://www.opengis.net/wfs\"\n xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n xsi:schemaLocation=\"http://www.opengis.net/wfs\n http://schemas.opengis.net/wfs/1.1.0/wfs.xsd\"/>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/forvaltningsplaner_havomrader/wfs",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"forvaltningsplaner_havomrader",
+								"wfs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListStoredQueries",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<wfs:ListStoredQueries service='WFS'\n version='2.0.0'\n xmlns:wfs='http://www.opengis.net/wfs/2.0'/>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/forvaltningsplaner_havomrader/wfs",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"forvaltningsplaner_havomrader",
+								"wfs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "XpathFilter",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\"?>\n<wfs:GetFeature xmlns:wfs=\"http://www.opengis.net/wfs/2.0\" xmlns:fes=\"http://www.opengis.net/fes/2.0\" xmlns:gml=\"http://www.opengis.net/gml/3.2\" xmlns:sf=\"http://www.openplans.org/spearfish\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" service=\"WFS\" version=\"2.0.0\" xsi:schemaLocation=\"http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd         http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd\">\n  <wfs:Query typeNames=\"forvaltningsplaner_havomrader_omrade\" srsName=\"EPSG:4326\">\n    <fes:Filter>\n      <PropertyIsEqualTo>\n        <ValueReference>navn_no</ValueReference>\n        <Literal>Barentshavet-Lofoten</Literal>\n      </PropertyIsEqualTo>\n    </fes:Filter>\n  </wfs:Query>\n</wfs:GetFeature>\n",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/forvaltningsplaner_havomrader/wfs",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"forvaltningsplaner_havomrader",
+								"wfs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ByID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ns2:GetFeature xmlns:wfs=\"http://www.opengis.net/wfs\" xmlns:gml=\"http://www.opengis.net/gml\" xmlns:ns2=\"http://www.opengis.net/wfs/2.0\" service=\"WFS\" startIndex=\"0\" resultType=\"results\" outputFormat=\"gml32\" resolve=\"none\" resolveDepth=\"*\" resolveTimeout=\"300\">\n  <ns2:Query typeNames=\"forvaltningsplaner_havomrader_omrade\" srsName=\"EPSG:4326\">\n    <ns3:Filter xmlns:ns3=\"http://www.opengis.net/fes/2.0\">\n      <ns3:ResourceId rid=\"forvaltningsplaner_havomrader_omrade.2\"/>\n    </ns3:Filter>\n  </ns2:Query>\n</ns2:GetFeature>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/forvaltningsplaner_havomrader/wfs",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"forvaltningsplaner_havomrader",
+								"wfs"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "fjordkatalogen",
+			"item": [
+				{
+					"name": "SimpleGrenser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<wfs:GetFeature service=\"WFS\" version=\"1.0.0\"\n xmlns:wfs=\"http://www.opengis.net/wfs\"\n xmlns:topp=\"http://www.openplans.org/topp\"\n resultType=\"results\" \n>\n  <wfs:Query typeName=\"fjordkatalogen_grenser\" srsName=\"EPSG:4326\"/>\n</wfs:GetFeature>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/fjordkatalogen/wfs",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"fjordkatalogen",
+								"wfs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SimpleOmrade",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<wfs:GetFeature service=\"WFS\" version=\"1.0.0\"\n xmlns:wfs=\"http://www.opengis.net/wfs\"\n xmlns:topp=\"http://www.openplans.org/topp\"\n resultType=\"hits\"\n resolveDepth=\"2\"\n count=\"1\"\n>\n  <wfs:Query typeName=\"fjordkatalogen_omrade\" srsName=\"EPSG:4326\"/>\n</wfs:GetFeature>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/fjordkatalogen/wfs",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"fjordkatalogen",
+								"wfs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "XpathFilter",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\"?>\n<wfs:GetFeature xmlns:wfs=\"http://www.opengis.net/wfs/2.0\" xmlns:fes=\"http://www.opengis.net/fes/2.0\" xmlns:gml=\"http://www.opengis.net/gml/3.2\" xmlns:sf=\"http://www.openplans.org/spearfish\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" service=\"WFS\" version=\"2.0.0\" xsi:schemaLocation=\"http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd         http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd\">\n  <wfs:Query typeNames=\"forvaltningsplaner_havomrader_omrade\" srsName=\"EPSG:4326\">\n    <fes:Filter>\n      <PropertyIsEqualTo>\n        <ValueReference>navn_no</ValueReference>\n        <Literal>Barentshavet-Lofoten</Literal>\n      </PropertyIsEqualTo>\n    </fes:Filter>\n  </wfs:Query>\n</wfs:GetFeature>\n",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/forvaltningsplaner_havomrader/wfs",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"forvaltningsplaner_havomrader",
+								"wfs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCapabilities",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<GetCapabilities\n service=\"WFS\"\n xmlns=\"http://www.opengis.net/wfs\"\n xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n xsi:schemaLocation=\"http://www.opengis.net/wfs\n http://schemas.opengis.net/wfs/1.1.0/wfs.xsd\"/>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/fjordkatalogen/wfs",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"fjordkatalogen",
+								"wfs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListStoredQueries",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<wfs:ListStoredQueries service='WFS'\n version='2.0.0'\n xmlns:wfs='http://www.opengis.net/wfs/2.0'/>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/fjordkatalogen/wfs",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"fjordkatalogen",
+								"wfs"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
