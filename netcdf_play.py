@@ -1,6 +1,7 @@
 #%%
 import os
 from datetime import datetime
+import re
 
 import requests
 from xsdata.formats.dataclass.parsers import XmlParser
@@ -8,16 +9,17 @@ from xsdata.formats.dataclass.parsers.config import ParserConfig
 from xsdata.formats.dataclass.serializers import XmlSerializer
 from xsdata.formats.dataclass.serializers.config import SerializerConfig
 
-from bindings import csw, gmd
+from bindings import csw
 from bindings.csw.feature_array_property_type import File
 
-from owslib.catalogue import csw2
-from owslib import fes2
+from netCDF4 import Dataset
 # %%
 MET_HOST = "https://csw.s-enda.k8s.met.no"
+GEONORGE_HOST = "https://www.geonorge.no/geonetwork/srv/nor/csw"
 # %%
 serializer = XmlSerializer(config=SerializerConfig(pretty_print=True))
 parser = XmlParser(config=ParserConfig())
+sloppy_parser = XmlParser(config=ParserConfig(fail_on_unknown_properties=False))
 ns_map = {"csw": "http://www.opengis.net/cat/csw/2.0.2", "dct":"http://purl.org/dc/terms/"}
 # %%
 q_records = csw.GetRecords(
@@ -33,8 +35,8 @@ q_records = csw.GetRecords(
                     single_char="?",
                     escape_char="\\",
                     match_case="false",
-                    property_name=csw.PropertyName(["dc:subject"]),
-                    literal=csw.Literal(["*Net*"]),
+                    property_name=csw.PropertyName(["csw:AnyText"]),
+                    literal=csw.Literal(["*OPENDAP*"]),
                 )
             ),
         ),
@@ -50,5 +52,19 @@ resp = requests.post(
     ),
 )
 # %%
-resp.text
+records = parser.from_string(resp.text, csw.GetRecordsResponse)
+# %%
+records.search_results.number_of_records_matched
+# %%
+open_dap_references = [r for r in records.search_results.record[0].references if r.scheme=="OPENDAP:OPENDAP"]
+# %%
+data_set = Dataset(open_dap_references[0].content[0])
+# %%
+for attr in data_set.ncattrs():
+    if "vocab" in attr:
+        print(f"{attr} = {data_set.getncattr(attr)}")
+# %%
+data_set.variables
+
+
 # %%
