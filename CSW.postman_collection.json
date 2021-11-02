@@ -38,7 +38,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<csw:GetRecordById xmlns:csw=\"http://www.opengis.net/cat/csw/2.0.2\" service=\"CSW\" version=\"2.0.2\">\n    <csw:Id>1234567</csw:Id>\n    <csw:ElementSetName>full</csw:ElementSetName>\n</csw:GetRecordById>",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<csw:GetRecordById xmlns:csw=\"http://www.opengis.net/cat/csw/2.0.2\" service=\"CSW\" version=\"2.0.2\">\n    <csw:Id>mock.1234</csw:Id>\n    <csw:ElementSetName>full</csw:ElementSetName>\n</csw:GetRecordById>",
 							"options": {
 								"raw": {
 									"language": "xml"
@@ -90,7 +90,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "<?xml version=\"1.0\"?>\n<csw:GetRecords xmlns:csw=\"http://www.opengis.net/cat/csw/2.0.2\"  xmlns:gmd=\"http://www.isotc211.org/2005/gmd\" xmlns:ogc=\"http://www.opengis.net/ogc\" xmlns:gml=\"http://www.opengis.net/gml\" service=\"CSW\" version=\"2.0.2\"\n    resultType=\"results\"  outputSchema=\"http://www.opengis.net/cat/csw/2.0.2\">\n    <csw:Query typeNames=\"csw:Record\">\n        <csw:ElementSetName>full</csw:ElementSetName>\n        <csw:Constraint version=\"1.1.0\">\n            <ogc:Filter>\n                <ogc:PropertyIsLike wildCard=\"*\" singleChar=\"?\" escapeChar=\"\\\" matchCase=\"false\">\n                    <ogc:PropertyName>csw:AnyText</ogc:PropertyName>\n                    <ogc:Literal>*Mock*</ogc:Literal>\n                </ogc:PropertyIsLike>\n            </ogc:Filter>\n        </csw:Constraint>\n    </csw:Query>\n</csw:GetRecords>",
+							"raw": "<?xml version=\"1.0\"?>\n<csw:GetRecords xmlns:csw=\"http://www.opengis.net/cat/csw/2.0.2\"  xmlns:gmd=\"http://www.isotc211.org/2005/gmd\" xmlns:ogc=\"http://www.opengis.net/ogc\" xmlns:gml=\"http://www.opengis.net/gml\" service=\"CSW\" version=\"2.0.2\"\n    resultType=\"results\"  outputSchema=\"http://www.opengis.net/cat/csw/2.0.2\">\n    <csw:Query typeNames=\"csw:Record\">\n        <csw:ElementSetName>full</csw:ElementSetName>\n        <csw:Constraint version=\"1.1.0\">\n            <ogc:Filter>\n                <ogc:PropertyIsLike wildCard=\"*\" singleChar=\"?\" escapeChar=\"\\\" matchCase=\"false\">\n                    <ogc:PropertyName>csw:AnyText</ogc:PropertyName>\n                    <ogc:Literal>**</ogc:Literal>\n                </ogc:PropertyIsLike>\n            </ogc:Filter>\n        </csw:Constraint>\n    </csw:Query>\n</csw:GetRecords>",
 							"options": {
 								"raw": {
 									"language": "xml"
@@ -116,7 +116,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "<?xml version=\"1.0\"?>\n<csw:GetRecords xmlns:csw=\"http://www.opengis.net/cat/csw/2.0.2\"  xmlns:gmd=\"http://www.isotc211.org/2005/gmd\" xmlns:ogc=\"http://www.opengis.net/ogc\" xmlns:gml=\"http://www.opengis.net/gml\" service=\"CSW\" version=\"2.0.2\"\n    resultType=\"results\"  outputSchema=\"http://www.opengis.net/cat/csw/2.0.2\">\n    <csw:Query typeNames=\"csw:Record\">\n        <csw:ElementSetName>full</csw:ElementSetName>\n        <csw:Constraint version=\"1.1.0\">\n            <ogc:Filter>\n                <ogc:PropertyIsLike wildCard=\"*\" singleChar=\"?\" escapeChar=\"\\\" matchCase=\"false\">\n                    <ogc:PropertyName>dc:format</ogc:PropertyName>\n                    <ogc:Literal>*csv*</ogc:Literal>\n                </ogc:PropertyIsLike>\n            </ogc:Filter>\n        </csw:Constraint>\n    </csw:Query>\n</csw:GetRecords>",
+							"raw": "<?xml version=\"1.0\"?>\n<csw:GetRecords xmlns:csw=\"http://www.opengis.net/cat/csw/2.0.2\"  xmlns:gmd=\"http://www.isotc211.org/2005/gmd\" xmlns:ogc=\"http://www.opengis.net/ogc\" xmlns:gml=\"http://www.opengis.net/gml\" service=\"CSW\" version=\"2.0.2\"\n    resultType=\"results\"  outputSchema=\"http://www.opengis.net/cat/csw/2.0.2\">\n    <csw:Query typeNames=\"csw:Record\">\n        <csw:ElementSetName>full</csw:ElementSetName>\n        <csw:Constraint version=\"1.1.0\">\n            <ogc:Filter>\n                <ogc:PropertyIsLike wildCard=\"*\" singleChar=\"?\" escapeChar=\"\\\" matchCase=\"false\">\n                    <ogc:PropertyName>dc:format</ogc:PropertyName>\n                    <ogc:Literal>*wfs*</ogc:Literal>\n                </ogc:PropertyIsLike>\n            </ogc:Filter>\n        </csw:Constraint>\n    </csw:Query>\n</csw:GetRecords>",
 							"options": {
 								"raw": {
 									"language": "xml"
@@ -130,6 +130,29 @@
 							],
 							"path": [
 								"csw"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hits",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\"?>\n<csw:GetRecords xmlns:csw=\"http://www.opengis.net/cat/csw/2.0.2\"  xmlns:gmd=\"http://www.isotc211.org/2005/gmd\" xmlns:ogc=\"http://www.opengis.net/ogc\" xmlns:gml=\"http://www.opengis.net/gml\" service=\"CSW\" version=\"2.0.2\"\n    resultType=\"hits\"  outputSchema=\"http://www.opengis.net/cat/csw/2.0.2\">\n    <csw:Query typeNames=\"csw:Record\">\n        <csw:ElementSetName>full</csw:ElementSetName>\n    </csw:Query>\n</csw:GetRecords>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}",
+							"host": [
+								"{{baseURL}}"
 							]
 						}
 					},
@@ -268,6 +291,34 @@
 			]
 		},
 		{
+			"name": "Harvest",
+			"item": [
+				{
+					"name": "Harvest data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<csw:Harvest xmlns:csw=\"http://www.opengis.net/cat/csw/2.0.2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n             service=\"CSW\"\n             version=\"2.0.2\"\n             xsi:schemaLocation=\"http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-publication.xsd\">\n  <csw:Source>http://sjoa.niva.no/geonetwork/srv/eng/csw?request=GetCapabilities&amp;service=CSW&amp;version=2.0.2</csw:Source>\n  <csw:ResourceType>http://www.opengis.net/cat/csw/2.0.2</csw:ResourceType>\n  <csw:ResourceFormat>application/xml</csw:ResourceFormat>\n</csw:Harvest>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}",
+							"host": [
+								"{{baseURL}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "GetCapabilities",
 			"request": {
 				"method": "POST",
@@ -314,6 +365,29 @@
 					],
 					"path": [
 						"csw"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetDomain",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<csw:GetDomain xmlns:csw=\"http://www.opengis.net/cat/csw/2.0.2\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd\" version=\"2.0.2\" service=\"CSW\">\n  <csw:PropertyName>dc:type</csw:PropertyName>\n</csw:GetDomain>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}",
+					"host": [
+						"{{baseURL}}"
 					]
 				}
 			},
