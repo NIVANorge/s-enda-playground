@@ -1,3 +1,8 @@
+[![fair-software.eu](https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8B-yellow)](https://fair-software.eu)
+
+Playground
+==========
+
 ```bash
 xsdata http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd --package bindings.csw --config xsdata.xml
 xsdata https://www.isotc211.org/2005/gmd/gmd.xsd --package bindings.gmd --config xsdata.xml
