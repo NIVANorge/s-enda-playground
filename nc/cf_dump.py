@@ -11,6 +11,6 @@ for s in samples:
 # %%
 # %%
 with open("testnc.py", "w") as f:
-    f.write(samples[0].creation_commands(indent=4))
+    f.write(samples[0].creation_commands())
 
 # %%
