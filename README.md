@@ -23,3 +23,8 @@ Units
 ```bash
 sudo apt-get install libudunits2-dev
 ```
+
+Collections
+===========
+
+In the [collection](./collections) folder a set of [Postman collections](https://www.postman.com/collection/) can be found.
