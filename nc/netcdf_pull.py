@@ -1,7 +1,5 @@
 #%%
-import os
 from datetime import datetime
-import re
 
 import requests
 from xsdata.formats.dataclass.parsers import XmlParser
