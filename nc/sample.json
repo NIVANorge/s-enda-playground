@@ -1,0 +1,570 @@
+{
+    "coords": {
+        "TIME": {
+            "dims": [
+                "TIME"
+            ],
+            "attrs": {
+                "long_name": "Time",
+                "standard_name": "time",
+                "valid_min": -90000.0,
+                "valid_max": 90000.0,
+                "axis": "T",
+                "QC_indicator": 1,
+                "uncertainty": "",
+                "comment": "",
+                "ancillary_variables": "TIME_QC",
+                "_ChunkSizes": 1266
+            },
+            "dtype": "datetime64[ns]",
+            "shape": [
+                1266
+            ]
+        },
+        "LATITUDE": {
+            "dims": [
+                "LATITUDE"
+            ],
+            "attrs": {
+                "axis": "Y",
+                "QC_indicator": 1,
+                "uncertainty": " ",
+                "comment": " ",
+                "ancillary_variables": "POSITION_QC",
+                "standard_name": "latitude",
+                "long_name": "Latitude of each location",
+                "units": "degree_north",
+                "valid_min": -90.0,
+                "valid_max": 90.0,
+                "_ChunkSizes": 1266
+            },
+            "dtype": "float32",
+            "shape": [
+                1266
+            ]
+        },
+        "LONGITUDE": {
+            "dims": [
+                "LONGITUDE"
+            ],
+            "attrs": {
+                "axis": "X",
+                "QC_indicator": 1,
+                "uncertainty": " ",
+                "comment": " ",
+                "ancillary_variables": "POSITION_QC",
+                "standard_name": "longitude",
+                "long_name": "Longitude of each location",
+                "units": "degree_east",
+                "valid_min": -180.0,
+                "valid_max": 180.0,
+                "_ChunkSizes": 1266
+            },
+            "dtype": "float32",
+            "shape": [
+                1266
+            ]
+        }
+    },
+    "attrs": {
+        "_NCProperties": "version=1|netcdflibversion=4.4.1|hdf5libversion=1.8.18",
+        "title": "Arctic Ocean - In Situ Observation Copernicus",
+        "qc_manual": "Recommendations for in-situ data Near Real Time Quality Control https://doi.org/10.13155/36230",
+        "contact": "cmems-service@imr.no",
+        "format_version": "1.4",
+        "distribution_statement": "These data follow Copernicus standards; they are public and free of charge. User assumes all risk for use of data. User must display citation in any publication or product using data. User must contact PI prior to any commercial use of data.",
+        "citation": "These data were collected and made freely available by the Copernicus project and the programs that contribute to it ",
+        "naming_authority": "Copernicus Marine In Situ",
+        "data_assembly_center": "IMR",
+        "update_interval": "void",
+        "area": "Arctic Ocean",
+        "author": "",
+        "Conventions": "CF-1.6 Copernicus-InSituTAC-FormatManual-1.41 Copernicus-InSituTAC-SRD-1.5 Copernicus-InSituTAC-ParametersList-3.2.0",
+        "data_mode": "M",
+        "comment": "",
+        "history": "",
+        "references": "http://marine.copernicus.eu http://www.marineinsitu.eu",
+        "netcdf_version": "netCDF-4 classic model",
+        "quality_index": "A",
+        "quality_control_indicator": "0",
+        "doi": "",
+        "summary": "",
+        "wmo_platform_code": "",
+        "ices_platform_code": "",
+        "site_code": "",
+        "bottom_depth": "",
+        "wmo_inst_type": "",
+        "platform_code": "58JH",
+        "platform_name": "Johan Hjort",
+        "institution": "Institute of Marine Research (Norway)",
+        "institution_edmo_code": "1351",
+        "source": "research vessel",
+        "institution_references": "http://www.imr.no",
+        "institution_country": "Norway",
+        "source_platform_category_code": "31",
+        "pi_name": "",
+        "data_type": "OceanSITES vertical profile",
+        "cdm_data_type": "profile",
+        "instrument": "CTD Seabird",
+        "id": "AR_PR_CT_58JH_2020",
+        "time_coverage_start": "2020-01-08T18:20:32Z",
+        "time_coverage_end": "2020-12-09T03:49:00Z",
+        "last_date_observation": "2020-12-09T03:49:00Z",
+        "date_update": "2021-01-19T14:48:30Z",
+        "geospatial_lat_min": "55.313",
+        "geospatial_lat_max": "79.750",
+        "last_latitude_observation": "70.499",
+        "geospatial_lon_min": "-2.508",
+        "geospatial_lon_max": "46.863",
+        "last_longitude_observation": "19.999",
+        "geospatial_vertical_min": "1.000",
+        "geospatial_vertical_max": "2950.000",
+        "DODS.strlen": 2949,
+        "DODS.dimName": "DEPTH"
+    },
+    "dims": {
+        "TIME": 1266,
+        "LATITUDE": 1266,
+        "LONGITUDE": 1266,
+        "POSITION": 1266,
+        "DEPTH": 2949
+    },
+    "data_vars": {
+        "TIME_QC": {
+            "dims": [
+                "TIME"
+            ],
+            "attrs": {
+                "conventions": "Copernicus Marine In Situ reference table 2",
+                "valid_min": 0,
+                "valid_max": 9,
+                "flag_values": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9
+                ],
+                "flag_meanings": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                "long_name": "Time quality flag",
+                "_ChunkSizes": 1266
+            },
+            "dtype": "float32",
+            "shape": [
+                1266
+            ]
+        },
+        "POSITION_QC": {
+            "dims": [
+                "POSITION"
+            ],
+            "attrs": {
+                "conventions": "Copernicus Marine In Situ reference table 2",
+                "valid_max": 9,
+                "flag_values": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9
+                ],
+                "flag_meanings": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                "long_name": "Position quality flag",
+                "valid_min": 0,
+                "_ChunkSizes": 1266
+            },
+            "dtype": "float32",
+            "shape": [
+                1266
+            ]
+        },
+        "DIRECTION": {
+            "dims": [],
+            "attrs": {
+                "long_name": "Direction of the profiles",
+                "conventions": "A: ascending profile, D: descending profile",
+                "_ChunkSizes": 1266
+            },
+            "dtype": "object",
+            "shape": []
+        },
+        "PRES": {
+            "dims": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attrs": {
+                "axis": "Z",
+                "uncertainty": " ",
+                "comment": " ",
+                "ancillary_variables": "PRES_QC",
+                "standard_name": "sea_water_pressure",
+                "long_name": "Sea pressure",
+                "units": "dbar",
+                "positive": "down",
+                "data_mode": "M",
+                "_ChunkSizes": [
+                    633,
+                    1475
+                ]
+            },
+            "dtype": "float32",
+            "shape": [
+                1266,
+                2949
+            ]
+        },
+        "PRES_QC": {
+            "dims": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attrs": {
+                "conventions": "Copernicus Marine In Situ reference table 2",
+                "valid_min": 0,
+                "valid_max": 9,
+                "flag_values": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9
+                ],
+                "flag_meanings": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                "long_name": "Sea pressure quality flag",
+                "_ChunkSizes": [
+                    1266,
+                    2949
+                ]
+            },
+            "dtype": "float32",
+            "shape": [
+                1266,
+                2949
+            ]
+        },
+        "PRES_DM": {
+            "dims": [
+                "TIME"
+            ],
+            "attrs": {
+                "conventions": "Copernicus Marine In Situ reference table 1",
+                "flag_values": "R, A, D",
+                "flag_meanings": "real-time adjusted-in-real-time delayed-mode",
+                "long_name": "Sea pressure method of data processing",
+                "_ChunkSizes": [
+                    1266,
+                    2949
+                ]
+            },
+            "dtype": "object",
+            "shape": [
+                1266
+            ]
+        },
+        "TEMP": {
+            "dims": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attrs": {
+                "standard_name": "sea_water_temperature",
+                "long_name": "Sea temperature",
+                "units": "degrees_C",
+                "valid_min": -2500,
+                "valid_max": 40000,
+                "ancillary_variables": "TEMP_QC TEMP_DM",
+                "data_mode": "M",
+                "_ChunkSizes": [
+                    633,
+                    1475
+                ]
+            },
+            "dtype": "float64",
+            "shape": [
+                1266,
+                2949
+            ]
+        },
+        "PSAL": {
+            "dims": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attrs": {
+                "standard_name": "sea_water_practical_salinity",
+                "long_name": "Practical salinity",
+                "units": "0.001",
+                "valid_min": 2000,
+                "valid_max": 41000,
+                "ancillary_variables": "PSAL_QC PSAL_DM",
+                "data_mode": "M",
+                "_ChunkSizes": [
+                    633,
+                    1475
+                ]
+            },
+            "dtype": "float64",
+            "shape": [
+                1266,
+                2949
+            ]
+        },
+        "SIGMA_T": {
+            "dims": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attrs": {
+                "standard_name": "sea_water_sigma_t",
+                "long_name": "Sea density (sigma-t)",
+                "units": "kg m-3",
+                "valid_min": 0,
+                "valid_max": 100000,
+                "ancillary_variables": "SIGMA_T_QC SIGMA_T_DM",
+                "data_mode": "R",
+                "_ChunkSizes": [
+                    633,
+                    1475
+                ]
+            },
+            "dtype": "float64",
+            "shape": [
+                1266,
+                2949
+            ]
+        },
+        "CNDC": {
+            "dims": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attrs": {
+                "standard_name": "sea_water_electrical_conductivity",
+                "long_name": "Electrical conductivity",
+                "units": "S m-1",
+                "valid_min": 0,
+                "valid_max": 50000,
+                "ancillary_variables": "CNDC_QC CNDC_DM",
+                "data_mode": "M",
+                "_ChunkSizes": [
+                    633,
+                    1475
+                ]
+            },
+            "dtype": "float64",
+            "shape": [
+                1266,
+                2949
+            ]
+        },
+        "TEMP_QC": {
+            "dims": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attrs": {
+                "flag_meanings": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                "long_name": "Sea temperature quality flag",
+                "valid_min": 0,
+                "valid_max": 9,
+                "flag_values": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9
+                ],
+                "conventions": "Copernicus Marine In Situ reference table 2",
+                "_ChunkSizes": [
+                    1266,
+                    2949
+                ]
+            },
+            "dtype": "float32",
+            "shape": [
+                1266,
+                2949
+            ]
+        },
+        "PSAL_QC": {
+            "dims": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attrs": {
+                "flag_values": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9
+                ],
+                "flag_meanings": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                "long_name": "Practical salinity quality flag",
+                "conventions": "Copernicus Marine In Situ reference table 2",
+                "valid_min": 0,
+                "valid_max": 9,
+                "_ChunkSizes": [
+                    1266,
+                    2949
+                ]
+            },
+            "dtype": "float32",
+            "shape": [
+                1266,
+                2949
+            ]
+        },
+        "SIGMA_T_QC": {
+            "dims": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attrs": {
+                "long_name": "Sea density (sigma-t) quality flag",
+                "flag_values": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9
+                ],
+                "flag_meanings": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                "conventions": "Copernicus Marine In Situ reference table 2",
+                "valid_min": 0,
+                "valid_max": 9,
+                "_ChunkSizes": [
+                    1266,
+                    2949
+                ]
+            },
+            "dtype": "float32",
+            "shape": [
+                1266,
+                2949
+            ]
+        },
+        "CNDC_QC": {
+            "dims": [
+                "TIME",
+                "DEPTH"
+            ],
+            "attrs": {
+                "flag_meanings": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used nominal_value interpolated_value missing_value",
+                "long_name": "Electrical conductivity quality flag",
+                "conventions": "Copernicus Marine In Situ reference table 2",
+                "valid_min": 0,
+                "valid_max": 9,
+                "flag_values": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9
+                ],
+                "_ChunkSizes": [
+                    1266,
+                    2949
+                ]
+            },
+            "dtype": "float32",
+            "shape": [
+                1266,
+                2949
+            ]
+        },
+        "TEMP_DM": {
+            "dims": [
+                "TIME"
+            ],
+            "attrs": {
+                "conventions": "Copernicus Marine In Situ reference table 1",
+                "flag_values": "R, A, D",
+                "flag_meanings": "real-time adjusted-in-real-time delayed-mode",
+                "long_name": "Sea temperature method of data processing",
+                "_ChunkSizes": [
+                    1266,
+                    2949
+                ]
+            },
+            "dtype": "object",
+            "shape": [
+                1266
+            ]
+        },
+        "PSAL_DM": {
+            "dims": [
+                "TIME"
+            ],
+            "attrs": {
+                "conventions": "Copernicus Marine In Situ reference table 1",
+                "flag_values": "R, A, D",
+                "flag_meanings": "real-time adjusted-in-real-time delayed-mode",
+                "long_name": "Practical salinity method of data processing",
+                "_ChunkSizes": [
+                    1266,
+                    2949
+                ]
+            },
+            "dtype": "object",
+            "shape": [
+                1266
+            ]
+        },
+        "CNDC_DM": {
+            "dims": [
+                "TIME"
+            ],
+            "attrs": {
+                "conventions": "Copernicus Marine In Situ reference table 1",
+                "flag_values": "R, A, D",
+                "flag_meanings": "real-time adjusted-in-real-time delayed-mode",
+                "long_name": "Electrical conductivity method of data processing",
+                "_ChunkSizes": [
+                    1266,
+                    2949
+                ]
+            },
+            "dtype": "object",
+            "shape": [
+                1266
+            ]
+        }
+    }
+}
