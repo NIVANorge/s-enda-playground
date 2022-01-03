@@ -37,8 +37,10 @@ ds.attrs = CTDDatasetAttributes("hei", datetime.now(), keywords=["hei"]).__dict_
 ds.sel(depth=8)["sea_water_temperature"].plot.line('o')
 
 # %%
-ds = xr.open_dataset('202112_E39_G_Halsafjorden_ctd.nc')
+ds_e39 = xr.open_dataset('https://thredds.met.no/thredds/dodsC/obs/buoy-svv-e39/2022/01/202201_E39_G_Halsafjorden_ctd.nc')
 # %%
 ds_sar = xr.open_dataset("http://opendap1.nodc.no/thredds/dodsC/physics/point/yearly/58JH_CTD_2020.nc")
 # %%
 ds_sar
+
+# %%
