@@ -17,8 +17,7 @@ class TimeAxis:
     standard_name: Attr[str] = "time"
     long_name: Attr[str] = "Time of measurement"
     axis: Attr[str] = "T"
-    comment: Attr[str] = "End of the 10 s sampling period"
-
+    # units is filled by xarray, based on time interval
 
 @dataclass
 class DepthAxis:
@@ -91,7 +90,7 @@ class WaterTemp(AsDataArray):
 @dataclass
 class CTDDatasetAttributes:
     title: str
-    date_created: datetime
+    date_created: Literal["datetime64[ns]"]
     keywords: List[str]
     geospatial_lat_min: float = 0
     geospatial_lat_max: float = 0
