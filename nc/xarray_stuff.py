@@ -14,7 +14,7 @@ import json
 #%%
 w_temp = WaterTemp.new(
     [[10, 15], [20, 25]],
-    time=["1970-01-01T00:00:00.000000000", "1970-01-01T10:00:00.000000000"],
+    time=["1970-01-01T00:00:00.000000000", "1970-01-01T01:00:00.000000000"],
     depth=[4, 8],
 )
 #%%
@@ -31,6 +31,8 @@ con = Conductivity.new(
 )
 #%%
 ds = xr.merge([w_temp, sal, con])
+#%%
+ds.to_netcdf('test.nc')
 #%%
 ds.attrs = CTDDatasetAttributes("hei", datetime.now(), keywords=["hei"]).__dict__
 #%%
