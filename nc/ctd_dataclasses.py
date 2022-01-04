@@ -8,7 +8,6 @@ DEPTH = Literal["depth"]
 TIME = Literal["time"]
 LATITUDE = Literal["latitude"]
 LONGITUDE = Literal["longitude"]
-WATERTEMP = Literal["WaterTemp"]
 
 @dataclass
 class TimeAxis:
@@ -32,7 +31,7 @@ class DepthAxis:
     coordinate_reference_frame: Attr[str] = "urn:ogc:def:crs:EPSG::CRF 5831"
     
 @dataclass
-class Latitude(AsDataArray):
+class Latitude:
     data: Data[TIME, np.float64]
     name: Name[str] = "latitude"
     time: Coordof[TimeAxis] = 0
@@ -42,7 +41,7 @@ class Latitude(AsDataArray):
     valid_max: Attr[float] = 90.0
 
 @dataclass
-class Longitude(AsDataArray):
+class Longitude:
     data: Data[TIME, np.float64]
     name: Name[str] = "longitude"
     time: Coordof[TimeAxis] = 0
@@ -52,7 +51,7 @@ class Longitude(AsDataArray):
     valid_max: Attr[float] = 180.0
 
 @dataclass
-class Salinity(AsDataArray):
+class Salinity:
     data: Data[Tuple[TIME, DEPTH], np.float32]
     name: Name[str] = "salinity"
     time: Coordof[TimeAxis] = 0
@@ -64,7 +63,7 @@ class Salinity(AsDataArray):
     valid_max: Attr[float]= 40.0
 
 @dataclass
-class Conductivity(AsDataArray):
+class Conductivity:
     data: Data[Tuple[TIME, DEPTH], np.float32]
     name: Name[str] = "conductivity"
     time: Coordof[TimeAxis] = 0
@@ -76,7 +75,7 @@ class Conductivity(AsDataArray):
     valid_max: Attr[float]= 50.0
 
 @dataclass
-class WaterTemp(AsDataArray):
+class WaterTemp:
     data: Data[Tuple[TIME, DEPTH], np.float32]
     name: Name[str] = "sea_water_temperature"
     time: Coordof[TimeAxis] = 0
@@ -88,26 +87,29 @@ class WaterTemp(AsDataArray):
     valid_max: Attr[float]= 25.0
 
 @dataclass
-class CTDDatasetAttributes:
-    title: str
-    date_created: Literal["datetime64[ns]"]
-    keywords: List[str]
-    geospatial_lat_min: float = 0
-    geospatial_lat_max: float = 0
-    geospatial_lon_min: float = 0
-    geospatial_lon_max: float = 0
-    keywords_vocabulary: str = "GCM:GCMD Keywords"
-    data_owner: str = "Norwegian Institute for Water Research"
-    summary: str = ""
-    geospatial_vertical_positive: str = "down"
-    processing_level: str = "Missing data has been filled with fillValue."
-    Conventions: str = "CF-1.6, ACDD-1.3"
-    netcdf_version: str ="4"
-    publisher_name: str ="NIVA"
-    publisher_email: str = "post[..]niva.no"
-    publisher_url: str = "niva.no"
-    licence: str = "Freely distributed. Must credit the source of data, e.g. \"Data fra Norsk Institut for Vannforskning\", \"Based on data from the Norwegian Institute for Water Research\". Data and products are licensed under Norwegian license for public data (NLOD) and Creative Commons Attribution 3.0 Norway. See http://met.no/English/Data_Policy_and_Data_Services/.",
-    position_ref: str = "ETRS 89"
+class CTDDataset:
+    salinity: Dataof[Salinity]
+    temperature: Dataof[WaterTemp]
+    conductivity: Dataof[Conductivity]
+    title: Attr[str]
+    date_created: Attr[Literal["datetime64[ns]"]]
+    keywords: Attr[List[str]]
+    geospatial_lat_min: Attr[float] = 0
+    geospatial_lat_max: Attr[float] = 0
+    geospatial_lon_min: Attr[float] = 0
+    geospatial_lon_max: Attr[float] = 0
+    keywords_vocabulary: Attr[str] = "GCM:GCMD Keywords"
+    data_owner: Attr[str] = "Norwegian Institute for Water Research"
+    summary: Attr[str] = ""
+    geospatial_vertical_positive: Attr[str] = "down"
+    processing_level: Attr[str] = "Missing data has been filled with fillValue."
+    Conventions: Attr[str] = "CF-1.6, ACDD-1.3"
+    netcdf_version: Attr[str] ="4"
+    publisher_name: Attr[str] ="NIVA"
+    publisher_email: Attr[str] = "post[..]niva.no"
+    publisher_url: Attr[str] = "niva.no"
+    licence: Attr[str] = "Freely distributed. Must credit the source of data, e.g. \"Data fra Norsk Institut for Vannforskning\", \"Based on data from the Norwegian Institute for Water Research\". Data and products are licensed under Norwegian license for public data (NLOD) and Creative Commons Attribution 3.0 Norway. See http://met.no/English/Data_Policy_and_Data_Services/."
+    position_ref: Attr[str] = "ETRS 89"
 
 @dataclass
 class BoyeHeader:
