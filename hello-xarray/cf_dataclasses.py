@@ -110,6 +110,7 @@ class CTDDataset:
     publisher_url: Attr[str] = "niva.no"
     licence: Attr[str] = "Freely distributed. Must credit the source of data, e.g. \"Data fra Norsk Institut for Vannforskning\", \"Based on data from the Norwegian Institute for Water Research\". Data and products are licensed under Norwegian license for public data (NLOD) and Creative Commons Attribution 3.0 Norway. See http://met.no/English/Data_Policy_and_Data_Services/."
     position_ref: Attr[str] = "ETRS 89"
+    history: Attr[str] = "I did something to this dataset"
 
 @dataclass
 class BoyeHeader:
