@@ -3,7 +3,7 @@ from matplotlib import markers
 import xarray as xr
 from xarray_dataclasses import asdataarray, asdataset
 from cf_dataclasses import (
-    CTDDataset,
+    CTDDatasetAttributes,
     Conductivity,
     Latitude,
     Longitude,
@@ -32,16 +32,15 @@ con = Conductivity(
     depth=[4, 8],
 )
 #%%
-ds = asdataset(
-    CTDDataset(
-        title="hei",
-        date_created=str(datetime.now()),
-        keywords=["hei"],
-        salinity=sal,
-        conductivity=con,
-        temperature=w_temp,
-    )
-)
+ds = xr.merge([asdataarray(d) for d in [w_temp, sal, con]])
 #%%
-ds.sel(depth=4).salinity.plot.line("o")
+ds.attrs = CTDDatasetAttributes(
+        title="hei", date_created=str(datetime.now()), keywords=["hei"]
+    ).__dict__
+# %%
+ds
+# %%
+ds.sel(depth=4)
+# %%
+ds.sel(depth=4).sea_water_temperature.plot.line('o')
 # %%
