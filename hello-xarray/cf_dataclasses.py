@@ -75,7 +75,7 @@ class Conductivity:
     valid_max: Attr[float]= 50.0
 
 @dataclass
-class WaterTemp:
+class WaterTemperature:
     data: Data[Tuple[TIME, DEPTH], np.float32]
     name: Name[str] = "sea_water_temperature"
     time: Coordof[TimeAxis] = 0
@@ -89,7 +89,7 @@ class WaterTemp:
 @dataclass
 class CTDDataset:
     salinity: Dataof[Salinity]
-    temperature: Dataof[WaterTemp]
+    temperature: Dataof[WaterTemperature]
     conductivity: Dataof[Conductivity]
     title: Attr[str]
     date_created: Attr[Literal["datetime64[ns]"]]
