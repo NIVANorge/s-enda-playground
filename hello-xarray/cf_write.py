@@ -32,14 +32,16 @@ con = Conductivity(
     depth=[4, 8],
 )
 #%%
-ds = asdataset(CTDDataset(
-    title = "hei",
-    date_created=str(datetime.now()),
-    keywords=["hei"],
-    salinity=sal,
-    conductivity=con,
-    temperature=w_temp,
-))
+ds = asdataset(
+    CTDDataset(
+        title="hei",
+        date_created=str(datetime.now()),
+        keywords=["hei"],
+        salinity=sal,
+        conductivity=con,
+        temperature=w_temp,
+    )
+)
 #%%
 ds.sel(depth=4).salinity.plot.line("o")
 # %%
