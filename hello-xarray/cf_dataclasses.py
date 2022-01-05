@@ -111,21 +111,18 @@ class CTDDataset:
     licence: Attr[str] = "Freely distributed. Must credit the source of data, e.g. \"Data fra Norsk Institut for Vannforskning\", \"Based on data from the Norwegian Institute for Water Research\". Data and products are licensed under Norwegian license for public data (NLOD) and Creative Commons Attribution 3.0 Norway. See http://met.no/English/Data_Policy_and_Data_Services/."
     position_ref: Attr[str] = "ETRS 89"
     history: Attr[str] = "I did something to this dataset"
+    featureType: str = "timeSeries"
 
 @dataclass
 class BoyeHeader:
     time_coverage_start: datetime
     time_coverage_end: datetime
-    buoy_type: str = "Wavescan"
-    buoy_manufacturer: str = "Fugro Norway AS"
-    buoy_serialno: str = "WS161"
+    buoy_type: str = "some type"
+    buoy_manufacturer: str = "some manufacture"
+    buoy_serialno: str = "number"
     water_depth: str = "495m"
-    station_name: str = "E39 G Halsafjorden"
-    sensor_type: str = "SBE37-SIP"
-    sensor_manufacturer: str = "Sea Bird Electronics Inc., 13431 NE 20th street, Bellevue, 98005 Washington, USA"
-    sensor_level: str = "b.s.l."
-    sensor_serialno: str = "37-15244,37-15416,37-15408,37-15401"
+    station_name: str = "Station name"
+    sensor_type: str = "some sensor type"
     measurement_update_period: str = "10 s"
     status: str = "in progress"
-    featureType: str = "timeSeries"
     #history: str
