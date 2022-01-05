@@ -6,7 +6,7 @@ Playground
 A bunch of scripts to play with technologies relevant for s-enda
 
 * [collection](./collections) folder a set of [Postman collections](https://www.postman.com/collection/). These can be used to interact with csw services.
-* [hello-xarray](./hello-xarray) some samples to work with [xarray](https://xarray.pydata.org/en/stable/user-guide/io.html)
+* [hello-xarray](./hello-xarray) some samples to work with [xarray](https://xarray.pydata.org/en/stable/user-guide/io.html) and trying to follow [cf-convention](https://cfconventions.org/)
 * [catalog](./catalog) some sample scripts to play with ogc(mostly csw) and xsdata
 
 Units
