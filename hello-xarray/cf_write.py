@@ -21,9 +21,9 @@ w_temp = WaterTemperature(
 )
 #%%
 sal = Salinity(
-    [(10, 1500), (15, 2000)],
+    [(10, 1500, 15000), (15, 2000, 20000)],
     time=["1970-01-01T00:00:00.000000000", "1970-01-01T10:00:00.000000000"],
-    depth=[4, 8],
+    depth=[4, 8, 16],
 )
 #%%
 con = Conductivity(
@@ -34,13 +34,16 @@ con = Conductivity(
 #%%
 ds = xr.merge([asdataarray(d) for d in [w_temp, sal, con]])
 #%%
-ds.attrs = CTDDatasetAttributes(
+ds.attrs = asdataset(
+    CTDDatasetAttributes(
         title="hei", date_created=str(datetime.now()), keywords=["hei"]
-    ).__dict__
+    )
+).attrs
+
 # %%
 ds
 # %%
 ds.sel(depth=4)
 # %%
-ds.sel(depth=4).sea_water_temperature.plot.line('o')
+ds.sel(depth=4).sea_water_temperature.plot.line("o")
 # %%
