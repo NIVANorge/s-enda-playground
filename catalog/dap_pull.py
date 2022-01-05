@@ -1,4 +1,4 @@
-#%%
+#%% pull a list of opendap records from a csw service
 from datetime import datetime
 
 import requests
@@ -7,10 +7,10 @@ from xsdata.formats.dataclass.parsers.config import ParserConfig
 from xsdata.formats.dataclass.serializers import XmlSerializer
 from xsdata.formats.dataclass.serializers.config import SerializerConfig
 
-from catalog.bindings import csw
-from catalog.bindings.csw.feature_array_property_type import File
+from bindings import csw
+from bindings.csw.feature_array_property_type import File
 
-from netCDF4 import Dataset
+import xarray as xr
 # %%
 MET_HOST = "https://csw.s-enda.k8s.met.no"
 GEONORGE_HOST = "https://www.geonorge.no/geonetwork/srv/nor/csw"
@@ -56,13 +56,8 @@ records.search_results.number_of_records_matched
 # %%
 open_dap_references = [r for r in records.search_results.record[0].references if r.scheme=="OPENDAP:OPENDAP"]
 # %%
-data_set = Dataset(open_dap_references[0].content[0])
+ds = xr.open_dataset(open_dap_references[0].content[0])
 # %%
-for attr in data_set.ncattrs():
-    if "vocab" in attr:
-        print(f"{attr} = {data_set.getncattr(attr)}")
-# %%
-data_set.variables
-
+ds
 
 # %%
