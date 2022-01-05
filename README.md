@@ -9,9 +9,11 @@ A bunch of scripts to play with technologies relevant for s-enda
 * [hello-xarray](./hello-xarray) some samples to work with [xarray](https://xarray.pydata.org/en/stable/user-guide/io.html) and trying to follow [cf-convention](https://cfconventions.org/)
 * [catalog](./catalog) some sample scripts to play with ogc(mostly csw) and xsdata
 
-Units
-=====
+Install
+-------
 
 ```bash
-sudo apt-get install libudunits2-dev
+poetry install
 ```
+
+it can be practical to use `poetry config virtualenvs.in-project true`.
