@@ -2,7 +2,7 @@
 name = "csw-playground"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = [""]
 
 [tool.poetry.dependencies]
 python = ">=3.8,<3.10"
@@ -14,7 +14,6 @@ xsdata = {extras = ["lxml", "soap"], version = "^21.9"}
 geopandas = "^0.9.0"
 matplotlib = "^3.4.3"
 pygeos = "^0.10.2"
-netCDF4 = "^1.5.7"
 xarray = "^0.20.1"
 dask = {extras = ["diagnostics"], version = "^2021.11.1"}
 zarr = "^2.10.2"
