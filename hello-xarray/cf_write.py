@@ -1,16 +1,13 @@
 #%%
+from dataclasses import asdict
+from datetime import datetime
+
 import xarray as xr
 from xarray_dataclasses import asdataarray, asdataset
-from cf_dataclasses import (
-    DatasetAttributes,
-    Conductivity,
-    Latitude,
-    Longitude,
-    Salinity,
-    WaterTemperature,
-)
-from datetime import datetime
-from dataclasses import asdict
+
+from cf_classes.attributes import DatasetAttributes
+from cf_classes.dataarrays import (Conductivity, Latitude, Longitude, Salinity,
+                                   WaterTemperature)
 
 #%%
 w_temp = WaterTemperature(

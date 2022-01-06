@@ -1,9 +1,11 @@
 from dataclasses import dataclass
 from typing import Tuple
-from xarray_dataclasses import Attr, Data, Name, Coordof
+
 import numpy as np
-from axes import TimeAxis, DepthAxis
-from cf_classes.literals import TIME, DEPTH
+from xarray_dataclasses import Attr, Coordof, Data, Name
+
+from cf_classes.axes import DepthAxis, TimeAxis
+from cf_classes.literals import DEPTH, TIME
 
 @dataclass
 class Latitude:
