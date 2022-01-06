@@ -4,8 +4,8 @@ from typing import Tuple
 import numpy as np
 from xarray_dataclasses import Attr, Coordof, Data, Name
 
-from cf_classes.axes import DepthAxis, TimeAxis
-from cf_classes.literals import DEPTH, TIME
+from cf_classes.coords import DepthAxis, TimeAxis, Trajectory, TimeTraj
+from cf_classes.literals import DEPTH, TIME, TRAJECTORY, OBS
 
 
 @dataclass
@@ -62,6 +62,18 @@ class WaterTemperature:
     name: Name[str] = "sea_water_temperature"
     time: Coordof[TimeAxis] = 0
     depth: Coordof[DepthAxis] = 0
+    standard_name: Attr[str] = "sea_water_temperature"
+    long_name: Attr[str] = "Water Temperature at depth"
+    units: Attr[str] = "degree_Celsius"
+    valid_min: Attr[float] = 0.0
+    valid_max: Attr[float] = 25.0
+
+@dataclass
+class TemperatureTraj:
+    data: Data[Tuple[TRAJECTORY, OBS], np.float32]
+    name: Name[str] = "sea_water_temperature"
+    time: Coordof[TimeTraj] = 0
+    trajectory: Coordof[Trajectory] = 0
     standard_name: Attr[str] = "sea_water_temperature"
     long_name: Attr[str] = "Water Temperature at depth"
     units: Attr[str] = "degree_Celsius"
