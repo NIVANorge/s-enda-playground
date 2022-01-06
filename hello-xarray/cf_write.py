@@ -51,3 +51,5 @@ ds.sel(depth=4)
 # %%
 ds.sel(depth=4).sea_water_temperature.plot.line("o")
 # %%
+ds.to_netcdf('test.nc')
+# %%
