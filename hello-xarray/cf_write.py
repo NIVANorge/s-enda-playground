@@ -1,9 +1,8 @@
 #%%
-from matplotlib import markers
 import xarray as xr
 from xarray_dataclasses import asdataarray, asdataset
 from cf_dataclasses import (
-    CTDDatasetAttributes,
+    DatasetAttributes,
     Conductivity,
     Latitude,
     Longitude,
@@ -11,6 +10,7 @@ from cf_dataclasses import (
     WaterTemperature,
 )
 from datetime import datetime
+from dataclasses import asdict
 
 #%%
 w_temp = WaterTemperature(
@@ -27,18 +27,22 @@ sal = Salinity(
 )
 #%%
 con = Conductivity(
-    [(10, 15), (15, 20)],
-    time=["1970-01-01T00:00:00.000000000", "1970-01-01T10:00:00.000000000"],
+    [(10, 15), (15, 20), (1.5, 2.0)],
+    time=[
+        "1970-01-01T00:00:00.000000000",
+        "1970-01-01T10:00:00.000000000",
+        "1980-01-01T10:00:00.000000000",
+    ],
     depth=[4, 8],
 )
 #%%
 ds = xr.merge([asdataarray(d) for d in [w_temp, sal, con]])
 #%%
-ds.attrs = asdataset(
-    CTDDatasetAttributes(
+ds.attrs = asdict(
+    DatasetAttributes(
         title="hei", date_created=str(datetime.now()), keywords=["hei"]
     )
-).attrs
+)
 
 # %%
 ds
