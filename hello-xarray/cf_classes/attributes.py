@@ -9,7 +9,7 @@ class DatasetAttributes:
     title: Attr[str]
     date_created: Attr[Literal["datetime64[ns]"]]
     keywords: Attr[List[str]]
-    featureType: Attr[str] = "timeSeries"
+    featureType: Attr[Literal["timeSeries", "trajectory"]]
     geospatial_lat_min: Attr[float] = 0
     geospatial_lat_max: Attr[float] = 0
     geospatial_lon_min: Attr[float] = 0

@@ -6,8 +6,13 @@ import xarray as xr
 from xarray_dataclasses import asdataarray, asdataset
 
 from cf_classes.attributes import DatasetAttributes
-from cf_classes.dataarrays import (Conductivity, Latitude, Longitude, Salinity,
-                                   WaterTemperature)
+from cf_classes.dataarrays import (
+    Conductivity,
+    Latitude,
+    Longitude,
+    Salinity,
+    WaterTemperature,
+)
 
 #%%
 w_temp = WaterTemperature(
@@ -37,7 +42,7 @@ ds = xr.merge([asdataarray(d) for d in [w_temp, sal, con]])
 #%%
 ds.attrs = asdict(
     DatasetAttributes(
-        title="hei", date_created=str(datetime.now()), keywords=["hei"]
+        title="hei", date_created=str(datetime.now()), keywords=["hei"], featureType="traectory"
     )
 )
 
@@ -48,5 +53,5 @@ ds.sel(depth=4)
 # %%
 ds.sel(depth=4).sea_water_temperature.plot.line("o")
 # %%
-ds.to_netcdf('test.nc')
+ds.to_netcdf("test.nc")
 # %%
