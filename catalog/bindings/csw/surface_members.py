@@ -11,6 +11,7 @@ class SurfaceMembers(SurfaceArrayPropertyType):
     The order of the elements is significant and shall be preserved when
     processing the array.
     """
+
     class Meta:
         name = "surfaceMembers"
         namespace = "http://www.opengis.net/gml"

@@ -14,7 +14,7 @@ class TemporalOperatorType:
             "name": "TemporalOperands",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     name: Optional[Union[str, TemporalOperatorNameTypeValue]] = field(
         default=None,
@@ -22,5 +22,5 @@ class TemporalOperatorType:
             "type": "Attribute",
             "required": True,
             "pattern": r"extension:\w{2,}",
-        }
+        },
     )

@@ -1,5 +1,7 @@
 from dataclasses import dataclass
-from bindings.gmd.abstract_ex_geographic_extent_type import AbstractExGeographicExtentType
+from bindings.gmd.abstract_ex_geographic_extent_type import (
+    AbstractExGeographicExtentType,
+)
 
 __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
 

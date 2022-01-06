@@ -19,7 +19,7 @@ class Bboxtype(SpatialOpsType):
             "name": "PropertyName",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     envelope_with_time_period: Optional[EnvelopeWithTimePeriod] = field(
         default=None,
@@ -27,7 +27,7 @@ class Bboxtype(SpatialOpsType):
             "name": "EnvelopeWithTimePeriod",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     envelope: Optional[Envelope] = field(
         default=None,
@@ -35,5 +35,5 @@ class Bboxtype(SpatialOpsType):
             "name": "Envelope",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

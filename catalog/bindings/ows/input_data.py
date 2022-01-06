@@ -13,5 +13,6 @@ class InputData(ManifestType):
     more-specific element name (TBR), shall be used whenever applicable
     within XML-encoded OWS operation requests.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/2.0"

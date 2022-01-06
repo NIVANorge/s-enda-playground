@@ -9,6 +9,7 @@ class UsesGeodeticDatum(GeodeticDatumRefType):
     """
     Association to the geodetic datum used by this CRS.
     """
+
     class Meta:
         name = "usesGeodeticDatum"
         namespace = "http://www.opengis.net/gml"

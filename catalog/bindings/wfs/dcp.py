@@ -13,6 +13,7 @@ class Dcp:
     At present, only the HTTP DCP is defined, so this element only
     includes the HTTP element.
     """
+
     class Meta:
         name = "DCP"
         namespace = "http://www.opengis.net/ows/1.1"
@@ -22,5 +23,5 @@ class Dcp:
         metadata={
             "name": "HTTP",
             "type": "Element",
-        }
+        },
     )

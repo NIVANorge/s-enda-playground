@@ -24,13 +24,14 @@ class CoordinateOperationRefType:
     Association to a coordinate operation, either referencing or containing the
     definition of that coordinate operation.
     """
+
     transformation: Optional[Transformation] = field(
         default=None,
         metadata={
             "name": "Transformation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     general_transformation: Optional[GeneralTransformation] = field(
         default=None,
@@ -38,7 +39,7 @@ class CoordinateOperationRefType:
             "name": "_GeneralTransformation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     conversion: Optional[Conversion] = field(
         default=None,
@@ -46,7 +47,7 @@ class CoordinateOperationRefType:
             "name": "Conversion",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     general_conversion: Optional[GeneralConversion] = field(
         default=None,
@@ -54,7 +55,7 @@ class CoordinateOperationRefType:
             "name": "_GeneralConversion",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     operation: Optional[Operation2] = field(
         default=None,
@@ -62,7 +63,7 @@ class CoordinateOperationRefType:
             "name": "_Operation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     pass_through_operation: Optional[PassThroughOperation] = field(
         default=None,
@@ -70,7 +71,7 @@ class CoordinateOperationRefType:
             "name": "PassThroughOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     single_operation: Optional[SingleOperation] = field(
         default=None,
@@ -78,7 +79,7 @@ class CoordinateOperationRefType:
             "name": "_SingleOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     concatenated_operation: Optional[ConcatenatedOperation] = field(
         default=None,
@@ -86,7 +87,7 @@ class CoordinateOperationRefType:
             "name": "ConcatenatedOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     coordinate_operation: Optional[CoordinateOperation] = field(
         default=None,
@@ -94,7 +95,7 @@ class CoordinateOperationRefType:
             "name": "_CoordinateOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: TypeType = field(
         init=False,
@@ -102,14 +103,14 @@ class CoordinateOperationRefType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
@@ -117,7 +118,7 @@ class CoordinateOperationRefType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
@@ -125,28 +126,28 @@ class CoordinateOperationRefType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -154,5 +155,5 @@ class CoordinateOperationRefType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

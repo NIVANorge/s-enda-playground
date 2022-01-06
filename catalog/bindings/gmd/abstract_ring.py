@@ -12,5 +12,6 @@ class AbstractRing(AbstractRingType):
     The AbstractRing element is the abstract head of the substituition
     group for all closed boundaries of a surface patch.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

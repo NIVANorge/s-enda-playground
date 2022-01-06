@@ -13,6 +13,7 @@ class QuantityType(StringOrRefType):
     "temperature". When the quantity is the result of an observation or
     measurement, this term is known as Observable Type or Measurand.
     """
+
     class Meta:
         name = "quantityType"
         namespace = "http://www.opengis.net/gml"

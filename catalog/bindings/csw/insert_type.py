@@ -12,23 +12,24 @@ class InsertType:
     attribute may be included to specify a local identifier for the
     action (it must be unique within the context of the transaction).
     """
+
     other_element: List[object] = field(
         default_factory=list,
         metadata={
             "type": "Wildcard",
             "namespace": "##other",
-        }
+        },
     )
     type_name: Optional[str] = field(
         default=None,
         metadata={
             "name": "typeName",
             "type": "Attribute",
-        }
+        },
     )
     handle: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

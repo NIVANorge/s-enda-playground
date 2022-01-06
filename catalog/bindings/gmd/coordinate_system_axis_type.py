@@ -17,7 +17,7 @@ class CoordinateSystemAxisType(IdentifiedObjectType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     axis_direction: Optional[AxisDirection] = field(
         default=None,
@@ -26,7 +26,7 @@ class CoordinateSystemAxisType(IdentifiedObjectType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     minimum_value: Optional[float] = field(
         default=None,
@@ -34,7 +34,7 @@ class CoordinateSystemAxisType(IdentifiedObjectType):
             "name": "minimumValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     maximum_value: Optional[float] = field(
         default=None,
@@ -42,7 +42,7 @@ class CoordinateSystemAxisType(IdentifiedObjectType):
             "name": "maximumValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     range_meaning: Optional[RangeMeaning] = field(
         default=None,
@@ -50,7 +50,7 @@ class CoordinateSystemAxisType(IdentifiedObjectType):
             "name": "rangeMeaning",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     uom: Optional[str] = field(
         default=None,
@@ -58,5 +58,5 @@ class CoordinateSystemAxisType(IdentifiedObjectType):
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

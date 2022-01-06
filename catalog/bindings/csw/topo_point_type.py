@@ -16,6 +16,7 @@ class TopoPointType(AbstractTopologyType):
     this context. It is preserved for symmetry with the types and
     elements which follow.
     """
+
     directed_node: Optional[DirectedNode] = field(
         default=None,
         metadata={
@@ -23,5 +24,5 @@ class TopoPointType(AbstractTopologyType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

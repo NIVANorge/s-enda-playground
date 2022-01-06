@@ -12,5 +12,5 @@ class ArcByBulgeType(ArcStringByBulgeType):
         metadata={
             "name": "numArc",
             "type": "Attribute",
-        }
+        },
     )

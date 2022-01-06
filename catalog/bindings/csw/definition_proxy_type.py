@@ -22,6 +22,7 @@ class DefinitionProxyType(DefinitionType):
         entry referenced can be in a dictionary in the same or different
         XML document.
     """
+
     definition_ref: Optional[DefinitionRef] = field(
         default=None,
         metadata={
@@ -29,5 +30,5 @@ class DefinitionProxyType(DefinitionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

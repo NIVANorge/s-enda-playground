@@ -17,19 +17,20 @@ class AbstractGeometryType(AbstractGmltype):
     -       Every geometry type shall derive from this abstract type.
     -       Every geometry element (i.e. an element of a geometry type) shall be directly or indirectly in the substitution group of AbstractGeometry.
     """
+
     srs_name: Optional[str] = field(
         default=None,
         metadata={
             "name": "srsName",
             "type": "Attribute",
-        }
+        },
     )
     srs_dimension: Optional[int] = field(
         default=None,
         metadata={
             "name": "srsDimension",
             "type": "Attribute",
-        }
+        },
     )
     axis_labels_attribute: List[str] = field(
         default_factory=list,
@@ -37,7 +38,7 @@ class AbstractGeometryType(AbstractGmltype):
             "name": "axisLabels",
             "type": "Attribute",
             "tokens": True,
-        }
+        },
     )
     uom_labels: List[str] = field(
         default_factory=list,
@@ -45,5 +46,5 @@ class AbstractGeometryType(AbstractGmltype):
             "name": "uomLabels",
             "type": "Attribute",
             "tokens": True,
-        }
+        },
     )

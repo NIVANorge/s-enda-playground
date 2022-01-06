@@ -13,6 +13,7 @@ class PolygonProperty(PolygonPropertyType):
     references a polygon via the XLink-attributes or contains the
     polygon element.
     """
+
     class Meta:
         name = "polygonProperty"
         namespace = "http://www.opengis.net/gml"

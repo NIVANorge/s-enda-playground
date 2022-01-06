@@ -1,6 +1,8 @@
 from dataclasses import dataclass, field
 from typing import List, Optional
-from bindings.csw.abstract_general_parameter_value_type import AbstractGeneralParameterValueType
+from bindings.csw.abstract_general_parameter_value_type import (
+    AbstractGeneralParameterValueType,
+)
 from bindings.csw.includes_value import IncludesValue
 from bindings.csw.values_of_group import ValuesOfGroup
 
@@ -26,6 +28,7 @@ class ParameterValueGroupType(AbstractGeneralParameterValueType):
         group.
     :ivar values_of_group:
     """
+
     includes_value: List[IncludesValue] = field(
         default_factory=list,
         metadata={
@@ -33,7 +36,7 @@ class ParameterValueGroupType(AbstractGeneralParameterValueType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 2,
-        }
+        },
     )
     values_of_group: Optional[ValuesOfGroup] = field(
         default=None,
@@ -42,5 +45,5 @@ class ParameterValueGroupType(AbstractGeneralParameterValueType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

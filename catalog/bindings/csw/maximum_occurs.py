@@ -11,6 +11,7 @@ class MaximumOccurs:
 
     If this attribute is omitted, the maximum number is one.
     """
+
     class Meta:
         name = "maximumOccurs"
         namespace = "http://www.opengis.net/gml"
@@ -19,5 +20,5 @@ class MaximumOccurs:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )

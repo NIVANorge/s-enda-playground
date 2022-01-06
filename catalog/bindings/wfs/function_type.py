@@ -14,7 +14,7 @@ class FunctionType:
             "name": "Literal",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     function: List["Function"] = field(
         default_factory=list,
@@ -22,7 +22,7 @@ class FunctionType:
             "name": "Function",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     value_reference: List[str] = field(
         default_factory=list,
@@ -30,21 +30,21 @@ class FunctionType:
             "name": "ValueReference",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     expression: List[Expression] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     name: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
 
 

@@ -35,6 +35,7 @@ class ServiceIdentification(DescriptionType):
         are imposed. When this element is omitted, no meaning is
         implied.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/2.0"
 
@@ -44,7 +45,7 @@ class ServiceIdentification(DescriptionType):
             "name": "ServiceType",
             "type": "Element",
             "required": True,
-        }
+        },
     )
     service_type_version: List[str] = field(
         default_factory=list,
@@ -53,26 +54,26 @@ class ServiceIdentification(DescriptionType):
             "type": "Element",
             "min_occurs": 1,
             "pattern": r"\d+\.\d?\d\.\d?\d",
-        }
+        },
     )
     profile: List[str] = field(
         default_factory=list,
         metadata={
             "name": "Profile",
             "type": "Element",
-        }
+        },
     )
     fees: Optional[str] = field(
         default=None,
         metadata={
             "name": "Fees",
             "type": "Element",
-        }
+        },
     )
     access_constraints: List[str] = field(
         default_factory=list,
         metadata={
             "name": "AccessConstraints",
             "type": "Element",
-        }
+        },
     )

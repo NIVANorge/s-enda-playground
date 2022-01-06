@@ -22,7 +22,7 @@ class ExGeographicExtentPropertyType:
             "name": "EX_GeographicDescription",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     ex_geographic_bounding_box: Optional[ExGeographicBoundingBox] = field(
         default=None,
@@ -30,7 +30,7 @@ class ExGeographicExtentPropertyType:
             "name": "EX_GeographicBoundingBox",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     ex_bounding_polygon: Optional[ExBoundingPolygon] = field(
         default=None,
@@ -38,7 +38,7 @@ class ExGeographicExtentPropertyType:
             "name": "EX_BoundingPolygon",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     abstract_ex_geographic_extent: Optional[AbstractExGeographicExtent] = field(
         default=None,
@@ -46,7 +46,7 @@ class ExGeographicExtentPropertyType:
             "name": "AbstractEX_GeographicExtent",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -54,55 +54,55 @@ class ExGeographicExtentPropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     uuidref: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -111,5 +111,5 @@ class ExGeographicExtentPropertyType:
             "type": "Attribute",
             "namespace": "http://www.isotc211.org/2005/gco",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )

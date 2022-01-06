@@ -38,13 +38,14 @@ class SphereType(AbstractGriddedSurfaceType):
     size), topologically unbounded (not having a boundary, a
     cycle) surface.
     """
+
     horizontal_curve_type: CurveInterpolationType = field(
         init=False,
         default=CurveInterpolationType.CIRCULAR_ARC3_POINTS,
         metadata={
             "name": "horizontalCurveType",
             "type": "Attribute",
-        }
+        },
     )
     vertical_curve_type: CurveInterpolationType = field(
         init=False,
@@ -52,5 +53,5 @@ class SphereType(AbstractGriddedSurfaceType):
         metadata={
             "name": "verticalCurveType",
             "type": "Attribute",
-        }
+        },
     )

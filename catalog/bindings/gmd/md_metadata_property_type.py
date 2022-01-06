@@ -3,21 +3,37 @@ from typing import List, Optional, Union
 from bindings.gmd.abstract_object_type import AbstractObjectType
 from bindings.gmd.actuate_value import ActuateValue
 from bindings.gmd.character_string_property_type import CharacterStringPropertyType
-from bindings.gmd.ci_responsible_party_property_type import CiResponsiblePartyPropertyType
+from bindings.gmd.ci_responsible_party_property_type import (
+    CiResponsiblePartyPropertyType,
+)
 from bindings.gmd.date_property_type import DatePropertyType
 from bindings.gmd.dq_data_quality_property_type import DqDataQualityPropertyType
-from bindings.gmd.md_application_schema_information_property_type import MdApplicationSchemaInformationPropertyType
-from bindings.gmd.md_character_set_code_property_type import MdCharacterSetCodePropertyType
+from bindings.gmd.md_application_schema_information_property_type import (
+    MdApplicationSchemaInformationPropertyType,
+)
+from bindings.gmd.md_character_set_code_property_type import (
+    MdCharacterSetCodePropertyType,
+)
 from bindings.gmd.md_constraints_property_type import MdConstraintsPropertyType
-from bindings.gmd.md_content_information_property_type import MdContentInformationPropertyType
+from bindings.gmd.md_content_information_property_type import (
+    MdContentInformationPropertyType,
+)
 from bindings.gmd.md_distribution_property_type import MdDistributionPropertyType
 from bindings.gmd.md_identification_property_type import MdIdentificationPropertyType
-from bindings.gmd.md_maintenance_information_property_type import MdMaintenanceInformationPropertyType
-from bindings.gmd.md_metadata_extension_information_property_type import MdMetadataExtensionInformationPropertyType
-from bindings.gmd.md_portrayal_catalogue_reference_property_type import MdPortrayalCatalogueReferencePropertyType
+from bindings.gmd.md_maintenance_information_property_type import (
+    MdMaintenanceInformationPropertyType,
+)
+from bindings.gmd.md_metadata_extension_information_property_type import (
+    MdMetadataExtensionInformationPropertyType,
+)
+from bindings.gmd.md_portrayal_catalogue_reference_property_type import (
+    MdPortrayalCatalogueReferencePropertyType,
+)
 from bindings.gmd.md_reference_system_property_type import MdReferenceSystemPropertyType
 from bindings.gmd.md_scope_code_property_type import MdScopeCodePropertyType
-from bindings.gmd.md_spatial_representation_property_type import MdSpatialRepresentationPropertyType
+from bindings.gmd.md_spatial_representation_property_type import (
+    MdSpatialRepresentationPropertyType,
+)
 from bindings.gmd.nil_reason_enumeration_value import NilReasonEnumerationValue
 from bindings.gmd.object_reference_property_type import ObjectReferencePropertyType
 from bindings.gmd.pt_locale_property_type import PtLocalePropertyType
@@ -37,7 +53,7 @@ class MdMetadataPropertyType:
             "name": "MD_Metadata",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -45,55 +61,55 @@ class MdMetadataPropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     uuidref: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -102,7 +118,7 @@ class MdMetadataPropertyType:
             "type": "Attribute",
             "namespace": "http://www.isotc211.org/2005/gco",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
 
 
@@ -111,6 +127,7 @@ class DsDataSetType(AbstractObjectType):
     """
     Identifiable collection of data.
     """
+
     class Meta:
         name = "DS_DataSet_Type"
 
@@ -120,7 +137,7 @@ class DsDataSetType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "min_occurs": 1,
-        }
+        },
     )
     part_of: List["DsAggregatePropertyType"] = field(
         default_factory=list,
@@ -128,7 +145,7 @@ class DsDataSetType(AbstractObjectType):
             "name": "partOf",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
 
 
@@ -150,7 +167,7 @@ class DsDataSetPropertyType:
             "name": "DS_DataSet",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -158,55 +175,55 @@ class DsDataSetPropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     uuidref: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -215,7 +232,7 @@ class DsDataSetPropertyType:
             "type": "Attribute",
             "namespace": "http://www.isotc211.org/2005/gco",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
 
 
@@ -224,6 +241,7 @@ class AbstractDsAggregateType(AbstractObjectType):
     """
     Identifiable collection of datasets.
     """
+
     class Meta:
         name = "AbstractDS_Aggregate_Type"
 
@@ -234,7 +252,7 @@ class AbstractDsAggregateType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "min_occurs": 1,
-        }
+        },
     )
     series_metadata: List[MdMetadataPropertyType] = field(
         default_factory=list,
@@ -243,21 +261,21 @@ class AbstractDsAggregateType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "min_occurs": 1,
-        }
+        },
     )
     subset: List["DsAggregatePropertyType"] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     superset: List["DsAggregatePropertyType"] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
 
 
@@ -370,7 +388,7 @@ class DsAggregatePropertyType:
             "name": "DS_Initiative",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     ds_production_series: Optional[DsProductionSeries] = field(
         default=None,
@@ -378,7 +396,7 @@ class DsAggregatePropertyType:
             "name": "DS_ProductionSeries",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     ds_sensor: Optional[DsSensor] = field(
         default=None,
@@ -386,7 +404,7 @@ class DsAggregatePropertyType:
             "name": "DS_Sensor",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     ds_platform: Optional[DsPlatform] = field(
         default=None,
@@ -394,7 +412,7 @@ class DsAggregatePropertyType:
             "name": "DS_Platform",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     ds_series: Optional[DsSeries] = field(
         default=None,
@@ -402,7 +420,7 @@ class DsAggregatePropertyType:
             "name": "DS_Series",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     ds_stereo_mate: Optional[DsStereoMate] = field(
         default=None,
@@ -410,7 +428,7 @@ class DsAggregatePropertyType:
             "name": "DS_StereoMate",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     ds_other_aggregate: Optional[DsOtherAggregate] = field(
         default=None,
@@ -418,7 +436,7 @@ class DsAggregatePropertyType:
             "name": "DS_OtherAggregate",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     abstract_ds_aggregate: Optional[AbstractDsAggregate] = field(
         default=None,
@@ -426,7 +444,7 @@ class DsAggregatePropertyType:
             "name": "AbstractDS_Aggregate",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -434,55 +452,55 @@ class DsAggregatePropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     uuidref: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -491,7 +509,7 @@ class DsAggregatePropertyType:
             "type": "Attribute",
             "namespace": "http://www.isotc211.org/2005/gco",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
 
 
@@ -500,6 +518,7 @@ class MdMetadataType(AbstractObjectType):
     """
     Information about the metadata.
     """
+
     class Meta:
         name = "MD_Metadata_Type"
 
@@ -509,14 +528,14 @@ class MdMetadataType(AbstractObjectType):
             "name": "fileIdentifier",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     language: Optional[CharacterStringPropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     character_set: Optional[MdCharacterSetCodePropertyType] = field(
         default=None,
@@ -524,7 +543,7 @@ class MdMetadataType(AbstractObjectType):
             "name": "characterSet",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     parent_identifier: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -532,7 +551,7 @@ class MdMetadataType(AbstractObjectType):
             "name": "parentIdentifier",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     hierarchy_level: List[MdScopeCodePropertyType] = field(
         default_factory=list,
@@ -540,7 +559,7 @@ class MdMetadataType(AbstractObjectType):
             "name": "hierarchyLevel",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     hierarchy_level_name: List[CharacterStringPropertyType] = field(
         default_factory=list,
@@ -548,7 +567,7 @@ class MdMetadataType(AbstractObjectType):
             "name": "hierarchyLevelName",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     contact: List[CiResponsiblePartyPropertyType] = field(
         default_factory=list,
@@ -556,7 +575,7 @@ class MdMetadataType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "min_occurs": 1,
-        }
+        },
     )
     date_stamp: Optional[DatePropertyType] = field(
         default=None,
@@ -565,7 +584,7 @@ class MdMetadataType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     metadata_standard_name: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -573,7 +592,7 @@ class MdMetadataType(AbstractObjectType):
             "name": "metadataStandardName",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     metadata_standard_version: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -581,7 +600,7 @@ class MdMetadataType(AbstractObjectType):
             "name": "metadataStandardVersion",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     data_set_uri: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -589,14 +608,14 @@ class MdMetadataType(AbstractObjectType):
             "name": "dataSetURI",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     locale: List[PtLocalePropertyType] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     spatial_representation_info: List[MdSpatialRepresentationPropertyType] = field(
         default_factory=list,
@@ -604,7 +623,7 @@ class MdMetadataType(AbstractObjectType):
             "name": "spatialRepresentationInfo",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     reference_system_info: List[MdReferenceSystemPropertyType] = field(
         default_factory=list,
@@ -612,7 +631,7 @@ class MdMetadataType(AbstractObjectType):
             "name": "referenceSystemInfo",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     metadata_extension_info: List[MdMetadataExtensionInformationPropertyType] = field(
         default_factory=list,
@@ -620,7 +639,7 @@ class MdMetadataType(AbstractObjectType):
             "name": "metadataExtensionInfo",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     identification_info: List[MdIdentificationPropertyType] = field(
         default_factory=list,
@@ -629,7 +648,7 @@ class MdMetadataType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "min_occurs": 1,
-        }
+        },
     )
     content_info: List[MdContentInformationPropertyType] = field(
         default_factory=list,
@@ -637,7 +656,7 @@ class MdMetadataType(AbstractObjectType):
             "name": "contentInfo",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     distribution_info: Optional[MdDistributionPropertyType] = field(
         default=None,
@@ -645,7 +664,7 @@ class MdMetadataType(AbstractObjectType):
             "name": "distributionInfo",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     data_quality_info: List[DqDataQualityPropertyType] = field(
         default_factory=list,
@@ -653,7 +672,7 @@ class MdMetadataType(AbstractObjectType):
             "name": "dataQualityInfo",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     portrayal_catalogue_info: List[MdPortrayalCatalogueReferencePropertyType] = field(
         default_factory=list,
@@ -661,7 +680,7 @@ class MdMetadataType(AbstractObjectType):
             "name": "portrayalCatalogueInfo",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     metadata_constraints: List[MdConstraintsPropertyType] = field(
         default_factory=list,
@@ -669,7 +688,7 @@ class MdMetadataType(AbstractObjectType):
             "name": "metadataConstraints",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     application_schema_info: List[MdApplicationSchemaInformationPropertyType] = field(
         default_factory=list,
@@ -677,7 +696,7 @@ class MdMetadataType(AbstractObjectType):
             "name": "applicationSchemaInfo",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     metadata_maintenance: Optional[MdMaintenanceInformationPropertyType] = field(
         default=None,
@@ -685,21 +704,21 @@ class MdMetadataType(AbstractObjectType):
             "name": "metadataMaintenance",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     series: List[DsAggregatePropertyType] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     describes: List[DsDataSetPropertyType] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     property_type: List[ObjectReferencePropertyType] = field(
         default_factory=list,
@@ -707,7 +726,7 @@ class MdMetadataType(AbstractObjectType):
             "name": "propertyType",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     feature_type: List[ObjectReferencePropertyType] = field(
         default_factory=list,
@@ -715,7 +734,7 @@ class MdMetadataType(AbstractObjectType):
             "name": "featureType",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     feature_attribute: List[ObjectReferencePropertyType] = field(
         default_factory=list,
@@ -723,7 +742,7 @@ class MdMetadataType(AbstractObjectType):
             "name": "featureAttribute",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
 
 

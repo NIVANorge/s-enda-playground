@@ -14,13 +14,14 @@ class ResponsiblePartyType:
     At least one of IndividualName, OrganisationName, or PositionName
     shall be included.
     """
+
     individual_name: Optional[str] = field(
         default=None,
         metadata={
             "name": "IndividualName",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     organisation_name: Optional[str] = field(
         default=None,
@@ -28,7 +29,7 @@ class ResponsiblePartyType:
             "name": "OrganisationName",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     position_name: Optional[str] = field(
         default=None,
@@ -36,7 +37,7 @@ class ResponsiblePartyType:
             "name": "PositionName",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     contact_info: Optional[ContactInfo] = field(
         default=None,
@@ -44,7 +45,7 @@ class ResponsiblePartyType:
             "name": "ContactInfo",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     role: Optional[Role] = field(
         default=None,
@@ -53,5 +54,5 @@ class ResponsiblePartyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
             "required": True,
-        }
+        },
     )

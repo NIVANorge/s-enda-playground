@@ -16,7 +16,7 @@ class SurfaceType(AbstractSurfaceType):
             "name": "trianglePatches",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     polygon_patches: Optional[PolygonPatches] = field(
         default=None,
@@ -24,12 +24,12 @@ class SurfaceType(AbstractSurfaceType):
             "name": "polygonPatches",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     patches: Optional[Patches] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

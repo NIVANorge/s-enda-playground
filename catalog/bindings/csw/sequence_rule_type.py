@@ -12,11 +12,11 @@ class SequenceRuleType:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )
     order: Optional[IncrementOrder] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

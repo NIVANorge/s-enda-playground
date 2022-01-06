@@ -12,7 +12,7 @@ class BezierType(BsplineType):
         default=CurveInterpolationType.POLYNOMIAL_SPLINE,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     is_polynomial: bool = field(
         init=False,
@@ -20,5 +20,5 @@ class BezierType(BsplineType):
         metadata={
             "name": "isPolynomial",
             "type": "Attribute",
-        }
+        },
     )

@@ -18,7 +18,7 @@ class SpatialCapabilitiesType:
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "required": True,
-        }
+        },
     )
     spatial_operators: Optional[SpatialOperatorsType] = field(
         default=None,
@@ -27,5 +27,5 @@ class SpatialCapabilitiesType:
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "required": True,
-        }
+        },
     )

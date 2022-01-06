@@ -39,13 +39,14 @@ class GeometricPrimitivePropertyType:
     Either the reference or the contained element must be given, but
     neither both nor none.
     """
+
     solid: Optional[Solid1] = field(
         default=None,
         metadata={
             "name": "Solid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     composite_solid: Optional[CompositeSolid] = field(
         default=None,
@@ -53,7 +54,7 @@ class GeometricPrimitivePropertyType:
             "name": "CompositeSolid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     opengis_net_gml_solid: Optional[Solid2] = field(
         default=None,
@@ -61,7 +62,7 @@ class GeometricPrimitivePropertyType:
             "name": "_Solid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     orientable_surface: Optional[OrientableSurface] = field(
         default=None,
@@ -69,7 +70,7 @@ class GeometricPrimitivePropertyType:
             "name": "OrientableSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     tin: Optional[Tin] = field(
         default=None,
@@ -77,7 +78,7 @@ class GeometricPrimitivePropertyType:
             "name": "Tin",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     triangulated_surface: Optional[TriangulatedSurface] = field(
         default=None,
@@ -85,7 +86,7 @@ class GeometricPrimitivePropertyType:
             "name": "TriangulatedSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     polyhedral_surface: Optional[PolyhedralSurface] = field(
         default=None,
@@ -93,7 +94,7 @@ class GeometricPrimitivePropertyType:
             "name": "PolyhedralSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     surface: Optional[Surface1] = field(
         default=None,
@@ -101,7 +102,7 @@ class GeometricPrimitivePropertyType:
             "name": "Surface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     composite_surface: Optional[CompositeSurface] = field(
         default=None,
@@ -109,7 +110,7 @@ class GeometricPrimitivePropertyType:
             "name": "CompositeSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     polygon: Optional[Polygon] = field(
         default=None,
@@ -117,7 +118,7 @@ class GeometricPrimitivePropertyType:
             "name": "Polygon",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     opengis_net_gml_surface: Optional[Surface2] = field(
         default=None,
@@ -125,7 +126,7 @@ class GeometricPrimitivePropertyType:
             "name": "_Surface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     orientable_curve: Optional[OrientableCurve] = field(
         default=None,
@@ -133,7 +134,7 @@ class GeometricPrimitivePropertyType:
             "name": "OrientableCurve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     curve: Optional[Curve1] = field(
         default=None,
@@ -141,7 +142,7 @@ class GeometricPrimitivePropertyType:
             "name": "Curve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     composite_curve: Optional[CompositeCurve] = field(
         default=None,
@@ -149,7 +150,7 @@ class GeometricPrimitivePropertyType:
             "name": "CompositeCurve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     line_string: Optional[LineString] = field(
         default=None,
@@ -157,7 +158,7 @@ class GeometricPrimitivePropertyType:
             "name": "LineString",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     opengis_net_gml_curve: Optional[Curve2] = field(
         default=None,
@@ -165,7 +166,7 @@ class GeometricPrimitivePropertyType:
             "name": "_Curve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     point: Optional[Point] = field(
         default=None,
@@ -173,7 +174,7 @@ class GeometricPrimitivePropertyType:
             "name": "Point",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     geometric_primitive: Optional[GeometricPrimitive] = field(
         default=None,
@@ -181,7 +182,7 @@ class GeometricPrimitivePropertyType:
             "name": "_GeometricPrimitive",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: TypeType = field(
         init=False,
@@ -189,14 +190,14 @@ class GeometricPrimitivePropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
@@ -204,7 +205,7 @@ class GeometricPrimitivePropertyType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
@@ -212,28 +213,28 @@ class GeometricPrimitivePropertyType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -241,5 +242,5 @@ class GeometricPrimitivePropertyType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

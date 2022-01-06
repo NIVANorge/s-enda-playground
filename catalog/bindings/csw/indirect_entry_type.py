@@ -18,6 +18,7 @@ class IndirectEntryType:
     application schema to allow only including specified types of
     definitions as valid entries in a dictionary.
     """
+
     definition_proxy: Optional[DefinitionProxy] = field(
         default=None,
         metadata={
@@ -25,5 +26,5 @@ class IndirectEntryType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

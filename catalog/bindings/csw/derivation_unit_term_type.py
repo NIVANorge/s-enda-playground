@@ -13,9 +13,10 @@ class DerivationUnitTermType(UnitOfMeasureType):
     an integer exponent applied to that unit in defining the compound
     unit. The exponent can be positive or negative, but not zero.
     """
+
     exponent: Optional[int] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

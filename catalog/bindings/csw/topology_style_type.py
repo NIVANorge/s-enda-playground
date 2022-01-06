@@ -20,19 +20,20 @@ class TopologyStyleType(BaseStyleDescriptorType):
     :ivar topology_property:
     :ivar topology_type:
     """
+
     symbol: Optional[Symbol] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     style: Optional[str] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     label_style: Optional[LabelStyle2] = field(
         default=None,
@@ -40,19 +41,19 @@ class TopologyStyleType(BaseStyleDescriptorType):
             "name": "labelStyle",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     topology_property: Optional[str] = field(
         default=None,
         metadata={
             "name": "topologyProperty",
             "type": "Attribute",
-        }
+        },
     )
     topology_type: Optional[str] = field(
         default=None,
         metadata={
             "name": "topologyType",
             "type": "Attribute",
-        }
+        },
     )

@@ -9,6 +9,7 @@ class UsesTemporalDatum(TemporalDatumRefType):
     """
     Association to the temporal datum used by this CRS.
     """
+
     class Meta:
         name = "usesTemporalDatum"
         namespace = "http://www.opengis.net/gml"

@@ -9,5 +9,6 @@ class MdServiceIdentificationType(AbstractMdIdentificationType):
     """
     See 19119 for further info.
     """
+
     class Meta:
         name = "MD_ServiceIdentification_Type"

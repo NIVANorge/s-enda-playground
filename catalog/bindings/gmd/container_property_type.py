@@ -22,7 +22,7 @@ class ContainerPropertyType:
             "name": "Face",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     topo_solid: Optional["TopoSolid"] = field(
         default=None,
@@ -30,7 +30,7 @@ class ContainerPropertyType:
             "name": "TopoSolid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -38,49 +38,49 @@ class ContainerPropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -88,7 +88,7 @@ class ContainerPropertyType:
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -96,13 +96,13 @@ class ContainerPropertyType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -114,13 +114,13 @@ class DirectedEdgePropertyType:
             "name": "Edge",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     orientation: SignType = field(
         default=SignType.VALUE,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -128,49 +128,49 @@ class DirectedEdgePropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -178,7 +178,7 @@ class DirectedEdgePropertyType:
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -186,13 +186,13 @@ class DirectedEdgePropertyType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -204,13 +204,13 @@ class DirectedFacePropertyType:
             "name": "Face",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     orientation: SignType = field(
         default=SignType.VALUE,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -218,49 +218,49 @@ class DirectedFacePropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -268,7 +268,7 @@ class DirectedFacePropertyType:
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -276,13 +276,13 @@ class DirectedFacePropertyType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -294,13 +294,13 @@ class DirectedNodePropertyType:
             "name": "Node",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     orientation: SignType = field(
         default=SignType.VALUE,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -308,49 +308,49 @@ class DirectedNodePropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -358,7 +358,7 @@ class DirectedNodePropertyType:
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -366,13 +366,13 @@ class DirectedNodePropertyType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -384,13 +384,13 @@ class DirectedTopoSolidPropertyType:
             "name": "TopoSolid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     orientation: SignType = field(
         default=SignType.VALUE,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -398,49 +398,49 @@ class DirectedTopoSolidPropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -448,7 +448,7 @@ class DirectedTopoSolidPropertyType:
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -456,13 +456,13 @@ class DirectedTopoSolidPropertyType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -474,7 +474,7 @@ class IsolatedPropertyType:
             "name": "Node",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     edge: Optional["Edge"] = field(
         default=None,
@@ -482,7 +482,7 @@ class IsolatedPropertyType:
             "name": "Edge",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -490,49 +490,49 @@ class IsolatedPropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -540,7 +540,7 @@ class IsolatedPropertyType:
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -548,13 +548,13 @@ class IsolatedPropertyType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -564,6 +564,7 @@ class Container(ContainerPropertyType):
     The gml:container property element implements the role of the same name of
     the ISO 19107 “Isolated In” association (see ISO 19107:2003, 7.3.10.4).
     """
+
     class Meta:
         name = "container"
         namespace = "http://www.opengis.net/gml"
@@ -578,6 +579,7 @@ class DirectedEdge(DirectedEdgePropertyType):
     The orientation attribute of type gml:SignType expresses the sense
     in which the included edge is used, i.e. forward or reverse.
     """
+
     class Meta:
         name = "directedEdge"
         namespace = "http://www.opengis.net/gml"
@@ -593,6 +595,7 @@ class DirectedFace(DirectedFacePropertyType):
     in which the included face is used i.e. inward or outward with
     respect to the surface normal in any geometric realisation.
     """
+
     class Meta:
         name = "directedFace"
         namespace = "http://www.opengis.net/gml"
@@ -607,6 +610,7 @@ class DirectedNode(DirectedNodePropertyType):
     The orientation attribute of type gml:SignType expresses the sense
     in which the included node is used: start (“-“) or end (“+”) node.
     """
+
     class Meta:
         name = "directedNode"
         namespace = "http://www.opengis.net/gml"
@@ -623,6 +627,7 @@ class DirectedTopoSolid(DirectedTopoSolidPropertyType):
     context of a gml:TopoVolume the orientation attribute has no
     meaning.
     """
+
     class Meta:
         name = "directedTopoSolid"
         namespace = "http://www.opengis.net/gml"
@@ -634,6 +639,7 @@ class Isolated(IsolatedPropertyType):
     The gml:isolated property element implements the role of the same name of
     the ISO 19107 “Isolated In” association (see ISO 19107:2003, 7.3.10.4).
     """
+
     class Meta:
         name = "isolated"
         namespace = "http://www.opengis.net/gml"
@@ -646,14 +652,14 @@ class AbstractTopoPrimitiveType(AbstractTopologyType):
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     container: Optional[Container] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
 
 
@@ -667,7 +673,7 @@ class EdgeType(AbstractTopoPrimitiveType):
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 2,
             "max_occurs": 2,
-        }
+        },
     )
     directed_face: List[DirectedFace] = field(
         default_factory=list,
@@ -675,7 +681,7 @@ class EdgeType(AbstractTopoPrimitiveType):
             "name": "directedFace",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     curve_property: Optional[CurveProperty] = field(
         default=None,
@@ -683,14 +689,14 @@ class EdgeType(AbstractTopoPrimitiveType):
             "name": "curveProperty",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     aggregation_type: Optional[AggregationType] = field(
         default=None,
         metadata={
             "name": "aggregationType",
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -703,7 +709,7 @@ class FaceType(AbstractTopoPrimitiveType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 1,
-        }
+        },
     )
     directed_topo_solid: List[DirectedTopoSolid] = field(
         default_factory=list,
@@ -712,7 +718,7 @@ class FaceType(AbstractTopoPrimitiveType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "max_occurs": 2,
-        }
+        },
     )
     surface_property: Optional[SurfaceProperty] = field(
         default=None,
@@ -720,14 +726,14 @@ class FaceType(AbstractTopoPrimitiveType):
             "name": "surfaceProperty",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     aggregation_type: Optional[AggregationType] = field(
         default=None,
         metadata={
             "name": "aggregationType",
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -739,7 +745,7 @@ class NodeType(AbstractTopoPrimitiveType):
             "name": "directedEdge",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     point_property: Optional[PointProperty] = field(
         default=None,
@@ -747,14 +753,14 @@ class NodeType(AbstractTopoPrimitiveType):
             "name": "pointProperty",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     aggregation_type: Optional[AggregationType] = field(
         default=None,
         metadata={
             "name": "aggregationType",
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -767,7 +773,7 @@ class TopoSolidType(AbstractTopoPrimitiveType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 1,
-        }
+        },
     )
     solid_property: Optional[SolidProperty] = field(
         default=None,
@@ -775,14 +781,14 @@ class TopoSolidType(AbstractTopoPrimitiveType):
             "name": "solidProperty",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     aggregation_type: Optional[AggregationType] = field(
         default=None,
         metadata={
             "name": "aggregationType",
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -800,6 +806,7 @@ class Edge(EdgeType):
     have the value “sequence”. An edge may optionally be realised by a
     1-dimensional geometric primitive (gml:curveProperty).
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"
 
@@ -818,6 +825,7 @@ class Face(FaceType):
     optionally be realised by a 2-dimensional geometric primitive
     (gml:surfaceProperty).
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"
 
@@ -833,6 +841,7 @@ class Node(NodeType):
     the value “sequence”. A node may optionally be realised by a
     0-dimensional geometric primitive (gml:pointProperty).
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"
 
@@ -845,5 +854,6 @@ class TopoSolid(TopoSolidType):
     set of directed faces. A solid may optionally be realised by a
     3-dimensional geometric primitive (gml:solidProperty).
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

@@ -18,7 +18,7 @@ class PropertyIsBetweenType(ComparisonOpsType):
             "name": "Literal",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     function: Optional[Function] = field(
         default=None,
@@ -26,7 +26,7 @@ class PropertyIsBetweenType(ComparisonOpsType):
             "name": "Function",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     value_reference: Optional[str] = field(
         default=None,
@@ -34,14 +34,14 @@ class PropertyIsBetweenType(ComparisonOpsType):
             "name": "ValueReference",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     expression: Optional[Expression] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     lower_boundary: Optional[LowerBoundaryType] = field(
         default=None,
@@ -50,7 +50,7 @@ class PropertyIsBetweenType(ComparisonOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "required": True,
-        }
+        },
     )
     upper_boundary: Optional[UpperBoundaryType] = field(
         default=None,
@@ -59,5 +59,5 @@ class PropertyIsBetweenType(ComparisonOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "required": True,
-        }
+        },
     )

@@ -11,5 +11,6 @@ class MultiLineString(MultiLineStringType):
 
     Use the "MultiCurve" element instead.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

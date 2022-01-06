@@ -18,7 +18,7 @@ PYCSW_HOST = "http://localhost:8000"
 NIVA_HOST = "http://sjoa.niva.no/geonetwork/srv/eng"
 GEONORGE_BETA_HOST = "https://www.geonorge.no/geonetworkbeta/srv/nor/csw"
 GEONORGE_HOST = "https://www.geonorge.no/geonetwork/srv/nor/csw"
-#Found at https://kart.miljodirektoratet.no/geoserver/
+# Found at https://kart.miljodirektoratet.no/geoserver/
 MILJO_HOST = "https://kart.miljodirektoratet.no/geoserver/"
 # %%
 pos_values = [
@@ -180,7 +180,7 @@ transaction_gmd = csw.Transaction(
 )
 # %%
 resp = requests.post(
-    NIVA_HOST+"/csw-publication",
+    NIVA_HOST + "/csw-publication",
     headers={"Content-Type": "application/xml"},
     auth=(os.environ["NIVA_USER"], os.environ["NIVA_PASSWORD"]),
     data=serializer.render(

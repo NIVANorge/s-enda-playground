@@ -15,7 +15,7 @@ class EnvelopeType:
             "name": "lowerCorner",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     upper_corner: Optional[DirectPositionType] = field(
         default=None,
@@ -23,7 +23,7 @@ class EnvelopeType:
             "name": "upperCorner",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     pos: List[Pos] = field(
         default_factory=list,
@@ -31,28 +31,28 @@ class EnvelopeType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "max_occurs": 2,
-        }
+        },
     )
     coordinates: Optional[Coordinates] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     srs_name: Optional[str] = field(
         default=None,
         metadata={
             "name": "srsName",
             "type": "Attribute",
-        }
+        },
     )
     srs_dimension: Optional[int] = field(
         default=None,
         metadata={
             "name": "srsDimension",
             "type": "Attribute",
-        }
+        },
     )
     axis_labels: List[str] = field(
         default_factory=list,
@@ -60,7 +60,7 @@ class EnvelopeType:
             "name": "axisLabels",
             "type": "Attribute",
             "tokens": True,
-        }
+        },
     )
     uom_labels: List[str] = field(
         default_factory=list,
@@ -68,5 +68,5 @@ class EnvelopeType:
             "name": "uomLabels",
             "type": "Attribute",
             "tokens": True,
-        }
+        },
     )

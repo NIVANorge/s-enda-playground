@@ -18,5 +18,6 @@ class BaseUnit(BaseUnitType):
     a reference to the units system to which this base unit is asserted
     to belong.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

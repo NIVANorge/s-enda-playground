@@ -18,21 +18,21 @@ class DynamicFeatureType(AbstractFeatureType):
             "name": "validTime",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     track: Optional[Track] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     history: Optional[History] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     data_source: Optional[DataSource] = field(
         default=None,
@@ -40,7 +40,7 @@ class DynamicFeatureType(AbstractFeatureType):
             "name": "dataSource",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     data_source_reference: Optional[DataSourceReference] = field(
         default=None,
@@ -48,5 +48,5 @@ class DynamicFeatureType(AbstractFeatureType):
             "name": "dataSourceReference",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

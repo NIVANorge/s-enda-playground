@@ -15,5 +15,5 @@ class TimeCalendarType(TimeReferenceSystemType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 1,
-        }
+        },
     )

@@ -13,6 +13,7 @@ class AbstractRsReferenceSystemType(AbstractObjectType):
     Description of the spatial and temporal reference systems used in the
     dataset.
     """
+
     class Meta:
         name = "AbstractRS_ReferenceSystem_Type"
 
@@ -22,7 +23,7 @@ class AbstractRsReferenceSystemType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     domain_of_validity: List[ExExtentPropertyType] = field(
         default_factory=list,
@@ -30,5 +31,5 @@ class AbstractRsReferenceSystemType(AbstractObjectType):
             "name": "domainOfValidity",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

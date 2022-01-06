@@ -5,7 +5,9 @@ from bindings.gmd.abstract_time_object_type import AbstractTimeObjectType
 from bindings.gmd.actuate_value import ActuateValue
 from bindings.gmd.nil_reason_enumeration_value import NilReasonEnumerationValue
 from bindings.gmd.reference_type import ReferenceType
-from bindings.gmd.related_time_type_relative_position import RelatedTimeTypeRelativePosition
+from bindings.gmd.related_time_type_relative_position import (
+    RelatedTimeTypeRelativePosition,
+)
 from bindings.gmd.show_value import ShowValue
 from bindings.gmd.time_interval import TimeInterval
 from bindings.gmd.time_position import TimePosition
@@ -20,13 +22,14 @@ class TimeEdgePropertyType:
     gml:TimeEdgePropertyType provides for associating a gml:TimeEdge with an
     object.
     """
+
     time_edge: Optional["TimeEdge"] = field(
         default=None,
         metadata={
             "name": "TimeEdge",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -34,49 +37,49 @@ class TimeEdgePropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -84,7 +87,7 @@ class TimeEdgePropertyType:
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -92,13 +95,13 @@ class TimeEdgePropertyType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -108,13 +111,14 @@ class TimeInstantPropertyType:
     gml:TimeInstantPropertyType provides for associating a gml:TimeInstant with
     an object.
     """
+
     time_instant: Optional["TimeInstant"] = field(
         default=None,
         metadata={
             "name": "TimeInstant",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -122,49 +126,49 @@ class TimeInstantPropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -172,7 +176,7 @@ class TimeInstantPropertyType:
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -180,13 +184,13 @@ class TimeInstantPropertyType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -197,13 +201,14 @@ class TimePrimitivePropertyType:
     associations between an arbitrary member of the substitution group whose
     head is gml:AbstractTimePrimitive and another object.
     """
+
     time_edge: Optional["TimeEdge"] = field(
         default=None,
         metadata={
             "name": "TimeEdge",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_node: Optional["TimeNode"] = field(
         default=None,
@@ -211,7 +216,7 @@ class TimePrimitivePropertyType:
             "name": "TimeNode",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_time_topology_primitive: Optional["AbstractTimeTopologyPrimitive"] = field(
         default=None,
@@ -219,7 +224,7 @@ class TimePrimitivePropertyType:
             "name": "AbstractTimeTopologyPrimitive",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_period: Optional["TimePeriod"] = field(
         default=None,
@@ -227,7 +232,7 @@ class TimePrimitivePropertyType:
             "name": "TimePeriod",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_instant: Optional["TimeInstant"] = field(
         default=None,
@@ -235,15 +240,17 @@ class TimePrimitivePropertyType:
             "name": "TimeInstant",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
-    abstract_time_geometric_primitive: Optional["AbstractTimeGeometricPrimitive"] = field(
+    abstract_time_geometric_primitive: Optional[
+        "AbstractTimeGeometricPrimitive"
+    ] = field(
         default=None,
         metadata={
             "name": "AbstractTimeGeometricPrimitive",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_time_primitive: Optional["AbstractTimePrimitive"] = field(
         default=None,
@@ -251,7 +258,7 @@ class TimePrimitivePropertyType:
             "name": "AbstractTimePrimitive",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -259,49 +266,49 @@ class TimePrimitivePropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -309,7 +316,7 @@ class TimePrimitivePropertyType:
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -317,13 +324,13 @@ class TimePrimitivePropertyType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -337,12 +344,13 @@ class RelatedTimeType(TimePrimitivePropertyType):
     attribute relativePosition, whose value is selected from the set of
     13 temporal relationships identified by Allen (1983)
     """
+
     relative_position: Optional[RelatedTimeTypeRelativePosition] = field(
         default=None,
         metadata={
             "name": "relativePosition",
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -354,7 +362,7 @@ class AbstractTimePrimitiveType(AbstractTimeObjectType):
             "name": "relatedTime",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
 
 
@@ -364,7 +372,7 @@ class AbstractTimeGeometricPrimitiveType(AbstractTimePrimitiveType):
         default="#ISO-8601",
         metadata={
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -374,6 +382,7 @@ class AbstractTimePrimitive(AbstractTimePrimitiveType):
     gml:AbstractTimePrimitive acts as the head of a substitution group for
     geometric and topological temporal primitives.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"
 
@@ -385,7 +394,7 @@ class AbstractTimeTopologyPrimitiveType(AbstractTimePrimitiveType):
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
 
 
@@ -403,6 +412,7 @@ class AbstractTimeGeometricPrimitive(AbstractTimeGeometricPrimitiveType):
     primitives in the temporal dimension are the instant and the period.
     GML components are defined to support these as follows.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"
 
@@ -428,6 +438,7 @@ class AbstractTimeTopologyPrimitive(AbstractTimeTopologyPrimitiveType):
     context, the optional complex property is provided, which carries a
     reference to the parent temporal topological complex.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"
 
@@ -441,7 +452,7 @@ class TimeInstantType(AbstractTimeGeometricPrimitiveType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
 
 
@@ -453,7 +464,7 @@ class TimeNodeType(AbstractTimeTopologyPrimitiveType):
             "name": "previousEdge",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     next_edge: List[TimeEdgePropertyType] = field(
         default_factory=list,
@@ -461,14 +472,14 @@ class TimeNodeType(AbstractTimeTopologyPrimitiveType):
             "name": "nextEdge",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     position: Optional[TimeInstantPropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
 
 
@@ -480,14 +491,14 @@ class TimePeriodType(AbstractTimeGeometricPrimitiveType):
             "name": "beginPosition",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     begin: Optional[TimeInstantPropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     end_position: Optional[TimePositionType] = field(
         default=None,
@@ -495,21 +506,21 @@ class TimePeriodType(AbstractTimeGeometricPrimitiveType):
             "name": "endPosition",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     end: Optional[TimeInstantPropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     duration: Optional[XmlDuration] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_interval: Optional[TimeInterval] = field(
         default=None,
@@ -517,7 +528,7 @@ class TimePeriodType(AbstractTimeGeometricPrimitiveType):
             "name": "timeInterval",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
 
 
@@ -527,6 +538,7 @@ class TimeInstant(TimeInstantType):
     gml:TimeInstant acts as a zero-dimensional geometric primitive that
     represents an identifiable position in time.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"
 
@@ -540,6 +552,7 @@ class TimeNode(TimeNodeType):
     time edges. A time node may be realised as a geometry, its position,
     whose value is a time instant.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"
 
@@ -560,6 +573,7 @@ class TimePeriod(TimePeriodType):
     GML property model to make a reference to a time instant described
     elsewhere, or a limit may be indicated as a direct position.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"
 
@@ -570,13 +584,14 @@ class TimeNodePropertyType:
     gml:TimeNodePropertyType provides for associating a gml:TimeNode with an
     object.
     """
+
     time_node: Optional[TimeNode] = field(
         default=None,
         metadata={
             "name": "TimeNode",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -584,49 +599,49 @@ class TimeNodePropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -634,7 +649,7 @@ class TimeNodePropertyType:
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -642,13 +657,13 @@ class TimeNodePropertyType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -658,13 +673,14 @@ class TimePeriodPropertyType:
     gml:TimePeriodPropertyType provides for associating a gml:TimePeriod with
     an object.
     """
+
     time_period: Optional[TimePeriod] = field(
         default=None,
         metadata={
             "name": "TimePeriod",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -672,49 +688,49 @@ class TimePeriodPropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -722,7 +738,7 @@ class TimePeriodPropertyType:
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -730,13 +746,13 @@ class TimePeriodPropertyType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -748,7 +764,7 @@ class TimeEdgeType(AbstractTimeTopologyPrimitiveType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     end: Optional[TimeNodePropertyType] = field(
         default=None,
@@ -756,14 +772,14 @@ class TimeEdgeType(AbstractTimeTopologyPrimitiveType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     extent: Optional[TimePeriodPropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
 
 
@@ -774,5 +790,6 @@ class TimeEdge(TimeEdgeType):
     It is an open interval that starts and ends at a node. The edge may
     be realised as a geometry whose value is a time period.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

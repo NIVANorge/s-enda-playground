@@ -1,7 +1,11 @@
 from dataclasses import dataclass, field
 from typing import List, Optional, Union
-from bindings.gmd.abstract_general_operation_parameter import AbstractGeneralOperationParameter
-from bindings.gmd.abstract_general_operation_parameter_type import AbstractGeneralOperationParameterType
+from bindings.gmd.abstract_general_operation_parameter import (
+    AbstractGeneralOperationParameter,
+)
+from bindings.gmd.abstract_general_operation_parameter_type import (
+    AbstractGeneralOperationParameterType,
+)
 from bindings.gmd.actuate_value import ActuateValue
 from bindings.gmd.nil_reason_enumeration_value import NilReasonEnumerationValue
 from bindings.gmd.operation_parameter_1 import OperationParameter1
@@ -17,13 +21,14 @@ class AbstractGeneralOperationParameterPropertyType:
     association roles to an operation parameter or group, either referencing or
     containing the definition of that parameter or group.
     """
+
     operation_parameter_group: Optional["OperationParameterGroup"] = field(
         default=None,
         metadata={
             "name": "OperationParameterGroup",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     operation_parameter: Optional[OperationParameter1] = field(
         default=None,
@@ -31,15 +36,17 @@ class AbstractGeneralOperationParameterPropertyType:
             "name": "OperationParameter",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
-    abstract_general_operation_parameter: Optional[AbstractGeneralOperationParameter] = field(
+    abstract_general_operation_parameter: Optional[
+        AbstractGeneralOperationParameter
+    ] = field(
         default=None,
         metadata={
             "name": "AbstractGeneralOperationParameter",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -47,49 +54,49 @@ class AbstractGeneralOperationParameterPropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -97,7 +104,7 @@ class AbstractGeneralOperationParameterPropertyType:
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -105,7 +112,7 @@ class AbstractGeneralOperationParameterPropertyType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
 
 
@@ -115,6 +122,7 @@ class GeneralOperationParameter(AbstractGeneralOperationParameterPropertyType):
     gml:generalOperationParameter is an association to an operation parameter
     or parameter group.
     """
+
     class Meta:
         name = "generalOperationParameter"
         namespace = "http://www.opengis.net/gml"
@@ -135,7 +143,7 @@ class OperationParameterGroupType(AbstractGeneralOperationParameterType):
             "name": "maximumOccurs",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     uses_parameter: List[UsesParameter] = field(
         default_factory=list,
@@ -143,7 +151,7 @@ class OperationParameterGroupType(AbstractGeneralOperationParameterType):
             "name": "usesParameter",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     general_operation_parameter: List[GeneralOperationParameter] = field(
         default_factory=list,
@@ -151,7 +159,7 @@ class OperationParameterGroupType(AbstractGeneralOperationParameterType):
             "name": "generalOperationParameter",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
 
 
@@ -166,5 +174,6 @@ class OperationParameterGroup(OperationParameterGroupType):
     are an unordered list of associations to the set of operation
     parameters that are members of this group.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

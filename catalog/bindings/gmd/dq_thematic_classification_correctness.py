@@ -1,5 +1,7 @@
 from dataclasses import dataclass
-from bindings.gmd.dq_thematic_classification_correctness_type import DqThematicClassificationCorrectnessType
+from bindings.gmd.dq_thematic_classification_correctness_type import (
+    DqThematicClassificationCorrectnessType,
+)
 
 __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
 

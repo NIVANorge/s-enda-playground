@@ -1,6 +1,8 @@
 from dataclasses import dataclass, field
 from typing import List, Optional
-from bindings.gmd.abstract_general_parameter_value_type import AbstractGeneralParameterValueType
+from bindings.gmd.abstract_general_parameter_value_type import (
+    AbstractGeneralParameterValueType,
+)
 from bindings.gmd.dms_angle_value import DmsAngleValue
 from bindings.gmd.operation_parameter_2 import OperationParameter2
 from bindings.gmd.value import Value
@@ -17,7 +19,7 @@ class ParameterValueType(AbstractGeneralParameterValueType):
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     dms_angle_value: Optional[DmsAngleValue] = field(
         default=None,
@@ -25,7 +27,7 @@ class ParameterValueType(AbstractGeneralParameterValueType):
             "name": "dmsAngleValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     string_value: Optional[str] = field(
         default=None,
@@ -33,7 +35,7 @@ class ParameterValueType(AbstractGeneralParameterValueType):
             "name": "stringValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     integer_value: Optional[int] = field(
         default=None,
@@ -41,7 +43,7 @@ class ParameterValueType(AbstractGeneralParameterValueType):
             "name": "integerValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     boolean_value: Optional[bool] = field(
         default=None,
@@ -49,7 +51,7 @@ class ParameterValueType(AbstractGeneralParameterValueType):
             "name": "booleanValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     value_list: Optional[ValueList] = field(
         default=None,
@@ -57,7 +59,7 @@ class ParameterValueType(AbstractGeneralParameterValueType):
             "name": "valueList",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     integer_value_list: List[int] = field(
         default_factory=list,
@@ -66,7 +68,7 @@ class ParameterValueType(AbstractGeneralParameterValueType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "tokens": True,
-        }
+        },
     )
     value_file: Optional[str] = field(
         default=None,
@@ -74,7 +76,7 @@ class ParameterValueType(AbstractGeneralParameterValueType):
             "name": "valueFile",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     value_of_parameter: Optional[ValueOfParameter] = field(
         default=None,
@@ -82,7 +84,7 @@ class ParameterValueType(AbstractGeneralParameterValueType):
             "name": "valueOfParameter",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     operation_parameter: Optional[OperationParameter2] = field(
         default=None,
@@ -90,5 +92,5 @@ class ParameterValueType(AbstractGeneralParameterValueType):
             "name": "operationParameter",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

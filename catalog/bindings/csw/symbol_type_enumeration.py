@@ -7,6 +7,7 @@ class SymbolTypeEnumeration(Enum):
     """
     Used to specify the type of the symbol used.
     """
+
     SVG = "svg"
     XPATH = "xpath"
     OTHER = "other"

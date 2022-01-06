@@ -14,5 +14,6 @@ class ReferenceSystem(DomainMetadataType):
     system (CRS). For example, such a URN could be a CRS identification
     URN defined in the "ogc" URN namespace.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/1.1"

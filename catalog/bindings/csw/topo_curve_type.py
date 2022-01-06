@@ -18,6 +18,7 @@ class TopoCurveType(AbstractTopologyType):
     structural and geometric relationships of this line to other
     features via the shared edge definitions.
     """
+
     directed_edge: List[DirectedEdge] = field(
         default_factory=list,
         metadata={
@@ -25,5 +26,5 @@ class TopoCurveType(AbstractTopologyType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 1,
-        }
+        },
     )

@@ -20,7 +20,7 @@ class ArcByCenterPointType(AbstractCurveSegmentType):
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     point_property: Optional[PointProperty] = field(
         default=None,
@@ -28,7 +28,7 @@ class ArcByCenterPointType(AbstractCurveSegmentType):
             "name": "pointProperty",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     point_rep: Optional[PointRep] = field(
         default=None,
@@ -36,7 +36,7 @@ class ArcByCenterPointType(AbstractCurveSegmentType):
             "name": "pointRep",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     pos_list: Optional[PosList] = field(
         default=None,
@@ -44,14 +44,14 @@ class ArcByCenterPointType(AbstractCurveSegmentType):
             "name": "posList",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     coordinates: Optional[Coordinates] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     radius: Optional[LengthType] = field(
         default=None,
@@ -59,7 +59,7 @@ class ArcByCenterPointType(AbstractCurveSegmentType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     start_angle: Optional[AngleType] = field(
         default=None,
@@ -67,7 +67,7 @@ class ArcByCenterPointType(AbstractCurveSegmentType):
             "name": "startAngle",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     end_angle: Optional[AngleType] = field(
         default=None,
@@ -75,14 +75,14 @@ class ArcByCenterPointType(AbstractCurveSegmentType):
             "name": "endAngle",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     interpolation: CurveInterpolationType = field(
         init=False,
         default=CurveInterpolationType.CIRCULAR_ARC_CENTER_POINT_WITH_RADIUS,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     num_arc: int = field(
         init=False,
@@ -91,5 +91,5 @@ class ArcByCenterPointType(AbstractCurveSegmentType):
             "name": "numArc",
             "type": "Attribute",
             "required": True,
-        }
+        },
     )

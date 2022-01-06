@@ -15,13 +15,14 @@ class TelephoneType:
     :ivar facsimile: Telephone number of a facsimile machine for the
         responsible organization or individual.
     """
+
     voice: List[str] = field(
         default_factory=list,
         metadata={
             "name": "Voice",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )
     facsimile: List[str] = field(
         default_factory=list,
@@ -29,5 +30,5 @@ class TelephoneType:
             "name": "Facsimile",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )

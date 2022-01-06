@@ -1,6 +1,8 @@
 from dataclasses import dataclass, field
 from typing import Optional
-from bindings.csw.abstract_geometric_primitive_type import AbstractGeometricPrimitiveType
+from bindings.csw.abstract_geometric_primitive_type import (
+    AbstractGeometricPrimitiveType,
+)
 from bindings.csw.coord import Coord
 from bindings.csw.coordinates import Coordinates
 from bindings.csw.pos import Pos
@@ -23,24 +25,25 @@ class PointType(AbstractGeometricPrimitiveType):
         "coord" element is included for backwards compatibility with GML
         2.
     """
+
     pos: Optional[Pos] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     coordinates: Optional[Coordinates] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     coord: Optional[Coord] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

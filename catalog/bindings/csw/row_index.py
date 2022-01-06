@@ -9,6 +9,7 @@ class RowIndex:
     """
     Row number of this covariance element value.
     """
+
     class Meta:
         name = "rowIndex"
         namespace = "http://www.opengis.net/gml"
@@ -17,5 +18,5 @@ class RowIndex:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )

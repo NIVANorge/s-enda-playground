@@ -9,5 +9,6 @@ class AdditionalParameters(AdditionalParametersType):
     """
     Unordered list of one or more AdditionalParameters.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/2.0"

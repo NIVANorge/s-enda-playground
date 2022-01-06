@@ -1,7 +1,9 @@
 from bindings.wfs.abstract_1 import Abstract1
 from bindings.wfs.abstract_2 import Abstract2
 from bindings.wfs.abstract_adhoc_query_expression import AbstractAdhocQueryExpression
-from bindings.wfs.abstract_adhoc_query_expression_type import AbstractAdhocQueryExpressionType
+from bindings.wfs.abstract_adhoc_query_expression_type import (
+    AbstractAdhocQueryExpressionType,
+)
 from bindings.wfs.abstract_id_type import AbstractIdType
 from bindings.wfs.abstract_meta_data import AbstractMetaData
 from bindings.wfs.abstract_projection_clause import AbstractProjectionClause
@@ -58,7 +60,9 @@ from bindings.wfs.bounding_box import BoundingBox
 from bindings.wfs.bounding_box_type import BoundingBoxType
 from bindings.wfs.capabilities_base_type import CapabilitiesBaseType
 from bindings.wfs.code_type import CodeType
-from bindings.wfs.comparison_operator_name_type_value import ComparisonOperatorNameTypeValue
+from bindings.wfs.comparison_operator_name_type_value import (
+    ComparisonOperatorNameTypeValue,
+)
 from bindings.wfs.comparison_operator_type import ComparisonOperatorType
 from bindings.wfs.comparison_operators_type import ComparisonOperatorsType
 from bindings.wfs.comparison_ops import ComparisonOps
@@ -87,7 +91,9 @@ from bindings.wfs.describe_feature_type import DescribeFeatureType
 from bindings.wfs.describe_feature_type_type import DescribeFeatureTypeType
 from bindings.wfs.describe_stored_queries import DescribeStoredQueries
 from bindings.wfs.describe_stored_queries_response import DescribeStoredQueriesResponse
-from bindings.wfs.describe_stored_queries_response_type import DescribeStoredQueriesResponseType
+from bindings.wfs.describe_stored_queries_response_type import (
+    DescribeStoredQueriesResponseType,
+)
 from bindings.wfs.describe_stored_queries_type import DescribeStoredQueriesType
 from bindings.wfs.description_type import DescriptionType
 from bindings.wfs.disjoint import Disjoint
@@ -189,7 +195,9 @@ from bindings.wfs.minimum_value import MinimumValue
 from bindings.wfs.native import Native
 from bindings.wfs.native_type import NativeType
 from bindings.wfs.no_values import NoValues
-from bindings.wfs.non_negative_integer_or_unknown_value import NonNegativeIntegerOrUnknownValue
+from bindings.wfs.non_negative_integer_or_unknown_value import (
+    NonNegativeIntegerOrUnknownValue,
+)
 from bindings.wfs.online_resource_type import OnlineResourceType
 from bindings.wfs.operation import Operation
 from bindings.wfs.operation_response import OperationResponse
@@ -209,7 +217,9 @@ from bindings.wfs.property_is_between import PropertyIsBetween
 from bindings.wfs.property_is_between_type import PropertyIsBetweenType
 from bindings.wfs.property_is_equal_to import PropertyIsEqualTo
 from bindings.wfs.property_is_greater_than import PropertyIsGreaterThan
-from bindings.wfs.property_is_greater_than_or_equal_to import PropertyIsGreaterThanOrEqualTo
+from bindings.wfs.property_is_greater_than_or_equal_to import (
+    PropertyIsGreaterThanOrEqualTo,
+)
 from bindings.wfs.property_is_less_than import PropertyIsLessThan
 from bindings.wfs.property_is_less_than_or_equal_to import PropertyIsLessThanOrEqualTo
 from bindings.wfs.property_is_like import PropertyIsLike

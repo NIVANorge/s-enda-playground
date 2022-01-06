@@ -16,7 +16,9 @@ from bindings.csw.overlaps import Overlaps
 from bindings.csw.property_is_between import PropertyIsBetween
 from bindings.csw.property_is_equal_to import PropertyIsEqualTo
 from bindings.csw.property_is_greater_than import PropertyIsGreaterThan
-from bindings.csw.property_is_greater_than_or_equal_to import PropertyIsGreaterThanOrEqualTo
+from bindings.csw.property_is_greater_than_or_equal_to import (
+    PropertyIsGreaterThanOrEqualTo,
+)
 from bindings.csw.property_is_less_than import PropertyIsLessThan
 from bindings.csw.property_is_less_than_or_equal_to import PropertyIsLessThanOrEqualTo
 from bindings.csw.property_is_like import PropertyIsLike
@@ -37,7 +39,7 @@ class BinaryLogicOpType(LogicOpsType):
             "name": "PropertyIsBetween",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     property_is_null: List[PropertyIsNull] = field(
         default_factory=list,
@@ -45,7 +47,7 @@ class BinaryLogicOpType(LogicOpsType):
             "name": "PropertyIsNull",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     property_is_like: List[PropertyIsLike] = field(
         default_factory=list,
@@ -53,7 +55,7 @@ class BinaryLogicOpType(LogicOpsType):
             "name": "PropertyIsLike",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     property_is_greater_than_or_equal_to: List[PropertyIsGreaterThanOrEqualTo] = field(
         default_factory=list,
@@ -61,7 +63,7 @@ class BinaryLogicOpType(LogicOpsType):
             "name": "PropertyIsGreaterThanOrEqualTo",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     property_is_less_than_or_equal_to: List[PropertyIsLessThanOrEqualTo] = field(
         default_factory=list,
@@ -69,7 +71,7 @@ class BinaryLogicOpType(LogicOpsType):
             "name": "PropertyIsLessThanOrEqualTo",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     property_is_greater_than: List[PropertyIsGreaterThan] = field(
         default_factory=list,
@@ -77,7 +79,7 @@ class BinaryLogicOpType(LogicOpsType):
             "name": "PropertyIsGreaterThan",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     property_is_less_than: List[PropertyIsLessThan] = field(
         default_factory=list,
@@ -85,7 +87,7 @@ class BinaryLogicOpType(LogicOpsType):
             "name": "PropertyIsLessThan",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     property_is_not_equal_to: List[PropertyIsNotEqualTo] = field(
         default_factory=list,
@@ -93,7 +95,7 @@ class BinaryLogicOpType(LogicOpsType):
             "name": "PropertyIsNotEqualTo",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     property_is_equal_to: List[PropertyIsEqualTo] = field(
         default_factory=list,
@@ -101,7 +103,7 @@ class BinaryLogicOpType(LogicOpsType):
             "name": "PropertyIsEqualTo",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     comparison_ops: List[ComparisonOps] = field(
         default_factory=list,
@@ -109,7 +111,7 @@ class BinaryLogicOpType(LogicOpsType):
             "name": "comparisonOps",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     bbox: List[Bbox] = field(
         default_factory=list,
@@ -117,7 +119,7 @@ class BinaryLogicOpType(LogicOpsType):
             "name": "BBOX",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     beyond: List[Beyond] = field(
         default_factory=list,
@@ -125,7 +127,7 @@ class BinaryLogicOpType(LogicOpsType):
             "name": "Beyond",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     dwithin: List[Dwithin] = field(
         default_factory=list,
@@ -133,7 +135,7 @@ class BinaryLogicOpType(LogicOpsType):
             "name": "DWithin",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     contains: List[Contains] = field(
         default_factory=list,
@@ -141,7 +143,7 @@ class BinaryLogicOpType(LogicOpsType):
             "name": "Contains",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     intersects: List[Intersects] = field(
         default_factory=list,
@@ -149,7 +151,7 @@ class BinaryLogicOpType(LogicOpsType):
             "name": "Intersects",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     crosses: List[Crosses] = field(
         default_factory=list,
@@ -157,7 +159,7 @@ class BinaryLogicOpType(LogicOpsType):
             "name": "Crosses",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     overlaps: List[Overlaps] = field(
         default_factory=list,
@@ -165,7 +167,7 @@ class BinaryLogicOpType(LogicOpsType):
             "name": "Overlaps",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     within: List[Within] = field(
         default_factory=list,
@@ -173,7 +175,7 @@ class BinaryLogicOpType(LogicOpsType):
             "name": "Within",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     touches: List[Touches] = field(
         default_factory=list,
@@ -181,7 +183,7 @@ class BinaryLogicOpType(LogicOpsType):
             "name": "Touches",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     disjoint: List[Disjoint] = field(
         default_factory=list,
@@ -189,7 +191,7 @@ class BinaryLogicOpType(LogicOpsType):
             "name": "Disjoint",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     equals: List[Equals] = field(
         default_factory=list,
@@ -197,7 +199,7 @@ class BinaryLogicOpType(LogicOpsType):
             "name": "Equals",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     spatial_ops: List[SpatialOps] = field(
         default_factory=list,
@@ -205,7 +207,7 @@ class BinaryLogicOpType(LogicOpsType):
             "name": "spatialOps",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     not_value: List["Not"] = field(
         default_factory=list,
@@ -213,7 +215,7 @@ class BinaryLogicOpType(LogicOpsType):
             "name": "Not",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     or_value: List["Or"] = field(
         default_factory=list,
@@ -221,7 +223,7 @@ class BinaryLogicOpType(LogicOpsType):
             "name": "Or",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     and_value: List["And"] = field(
         default_factory=list,
@@ -229,7 +231,7 @@ class BinaryLogicOpType(LogicOpsType):
             "name": "And",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     logic_ops: List[LogicOps] = field(
         default_factory=list,
@@ -237,7 +239,7 @@ class BinaryLogicOpType(LogicOpsType):
             "name": "logicOps",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     function: List[Function] = field(
         default_factory=list,
@@ -246,7 +248,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "min_occurs": 2,
-        }
+        },
     )
 
 
@@ -270,7 +272,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "PropertyIsBetween",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     property_is_null: Optional[PropertyIsNull] = field(
         default=None,
@@ -278,7 +280,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "PropertyIsNull",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     property_is_like: Optional[PropertyIsLike] = field(
         default=None,
@@ -286,15 +288,17 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "PropertyIsLike",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
-    property_is_greater_than_or_equal_to: Optional[PropertyIsGreaterThanOrEqualTo] = field(
+    property_is_greater_than_or_equal_to: Optional[
+        PropertyIsGreaterThanOrEqualTo
+    ] = field(
         default=None,
         metadata={
             "name": "PropertyIsGreaterThanOrEqualTo",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     property_is_less_than_or_equal_to: Optional[PropertyIsLessThanOrEqualTo] = field(
         default=None,
@@ -302,7 +306,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "PropertyIsLessThanOrEqualTo",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     property_is_greater_than: Optional[PropertyIsGreaterThan] = field(
         default=None,
@@ -310,7 +314,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "PropertyIsGreaterThan",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     property_is_less_than: Optional[PropertyIsLessThan] = field(
         default=None,
@@ -318,7 +322,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "PropertyIsLessThan",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     property_is_not_equal_to: Optional[PropertyIsNotEqualTo] = field(
         default=None,
@@ -326,7 +330,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "PropertyIsNotEqualTo",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     property_is_equal_to: Optional[PropertyIsEqualTo] = field(
         default=None,
@@ -334,7 +338,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "PropertyIsEqualTo",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     comparison_ops: Optional[ComparisonOps] = field(
         default=None,
@@ -342,7 +346,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "comparisonOps",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     bbox: Optional[Bbox] = field(
         default=None,
@@ -350,7 +354,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "BBOX",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     beyond: Optional[Beyond] = field(
         default=None,
@@ -358,7 +362,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Beyond",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     dwithin: Optional[Dwithin] = field(
         default=None,
@@ -366,7 +370,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "DWithin",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     contains: Optional[Contains] = field(
         default=None,
@@ -374,7 +378,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Contains",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     intersects: Optional[Intersects] = field(
         default=None,
@@ -382,7 +386,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Intersects",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     crosses: Optional[Crosses] = field(
         default=None,
@@ -390,7 +394,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Crosses",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     overlaps: Optional[Overlaps] = field(
         default=None,
@@ -398,7 +402,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Overlaps",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     within: Optional[Within] = field(
         default=None,
@@ -406,7 +410,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Within",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     touches: Optional[Touches] = field(
         default=None,
@@ -414,7 +418,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Touches",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     disjoint: Optional[Disjoint] = field(
         default=None,
@@ -422,7 +426,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Disjoint",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     equals: Optional[Equals] = field(
         default=None,
@@ -430,7 +434,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Equals",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     spatial_ops: Optional[SpatialOps] = field(
         default=None,
@@ -438,7 +442,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "spatialOps",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     not_value: Optional["Not"] = field(
         default=None,
@@ -446,7 +450,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Not",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     or_value: Optional[Or] = field(
         default=None,
@@ -454,7 +458,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Or",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     and_value: Optional[And] = field(
         default=None,
@@ -462,7 +466,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "And",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     logic_ops: Optional[LogicOps] = field(
         default=None,
@@ -470,7 +474,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "logicOps",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     function: Optional[Function] = field(
         default=None,
@@ -478,7 +482,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Function",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
 
 

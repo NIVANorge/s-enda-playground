@@ -16,7 +16,7 @@ class PropertyIsNilType(ComparisonOpsType):
             "name": "Literal",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     function: Optional[Function] = field(
         default=None,
@@ -24,7 +24,7 @@ class PropertyIsNilType(ComparisonOpsType):
             "name": "Function",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     value_reference: Optional[str] = field(
         default=None,
@@ -32,19 +32,19 @@ class PropertyIsNilType(ComparisonOpsType):
             "name": "ValueReference",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     expression: Optional[Expression] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     nil_reason: Optional[str] = field(
         default=None,
         metadata={
             "name": "nilReason",
             "type": "Attribute",
-        }
+        },
     )

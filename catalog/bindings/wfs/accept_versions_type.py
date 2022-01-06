@@ -11,6 +11,7 @@ class AcceptVersionsType:
 
     See Version negotiation subclause for more information.
     """
+
     version: List[str] = field(
         default_factory=list,
         metadata={
@@ -19,5 +20,5 @@ class AcceptVersionsType:
             "namespace": "http://www.opengis.net/ows/1.1",
             "min_occurs": 1,
             "pattern": r"\d+\.\d?\d\.\d?\d",
-        }
+        },
     )

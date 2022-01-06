@@ -22,6 +22,7 @@ class SurfaceArrayPropertyType:
     geometry elements or arrays of geometry elements via XLinks is not
     supported.
     """
+
     composite_surface: List[CompositeSurface] = field(
         default_factory=list,
         metadata={
@@ -29,7 +30,7 @@ class SurfaceArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     orientable_surface: List[OrientableSurface] = field(
         default_factory=list,
@@ -38,7 +39,7 @@ class SurfaceArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     tin: List[Tin] = field(
         default_factory=list,
@@ -47,7 +48,7 @@ class SurfaceArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     triangulated_surface: List[TriangulatedSurface] = field(
         default_factory=list,
@@ -56,7 +57,7 @@ class SurfaceArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     polyhedral_surface: List[PolyhedralSurface] = field(
         default_factory=list,
@@ -65,7 +66,7 @@ class SurfaceArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     surface: List[Surface] = field(
         default_factory=list,
@@ -74,7 +75,7 @@ class SurfaceArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     polygon: List[Polygon] = field(
         default_factory=list,
@@ -83,7 +84,7 @@ class SurfaceArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     abstract_surface: List[AbstractSurface] = field(
         default_factory=list,
@@ -92,11 +93,11 @@ class SurfaceArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

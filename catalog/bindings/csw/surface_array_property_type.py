@@ -21,13 +21,14 @@ class SurfaceArrayPropertyType:
     The elements are always contained in the array property, referencing
     geometry elements or arrays of geometry elements is not supported.
     """
+
     orientable_surface: List[OrientableSurface] = field(
         default_factory=list,
         metadata={
             "name": "OrientableSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     tin: List[Tin] = field(
         default_factory=list,
@@ -35,7 +36,7 @@ class SurfaceArrayPropertyType:
             "name": "Tin",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     triangulated_surface: List[TriangulatedSurface] = field(
         default_factory=list,
@@ -43,7 +44,7 @@ class SurfaceArrayPropertyType:
             "name": "TriangulatedSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     polyhedral_surface: List[PolyhedralSurface] = field(
         default_factory=list,
@@ -51,7 +52,7 @@ class SurfaceArrayPropertyType:
             "name": "PolyhedralSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     surface: List[Surface1] = field(
         default_factory=list,
@@ -59,7 +60,7 @@ class SurfaceArrayPropertyType:
             "name": "Surface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     composite_surface: List[CompositeSurface] = field(
         default_factory=list,
@@ -67,7 +68,7 @@ class SurfaceArrayPropertyType:
             "name": "CompositeSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     polygon: List[Polygon] = field(
         default_factory=list,
@@ -75,7 +76,7 @@ class SurfaceArrayPropertyType:
             "name": "Polygon",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     opengis_net_gml_surface: List[Surface2] = field(
         default_factory=list,
@@ -83,5 +84,5 @@ class SurfaceArrayPropertyType:
             "name": "_Surface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

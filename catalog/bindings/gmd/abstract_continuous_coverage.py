@@ -1,5 +1,7 @@
 from dataclasses import dataclass
-from bindings.gmd.abstract_continuous_coverage_type import AbstractContinuousCoverageType
+from bindings.gmd.abstract_continuous_coverage_type import (
+    AbstractContinuousCoverageType,
+)
 
 __NAMESPACE__ = "http://www.opengis.net/gml"
 
@@ -18,5 +20,6 @@ class AbstractContinuousCoverage(AbstractContinuousCoverageType):
     group which may contain any continuous coverage whose type is
     derived from gml:AbstractContinuousCoverageType.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

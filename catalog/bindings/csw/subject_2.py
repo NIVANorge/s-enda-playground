@@ -13,6 +13,7 @@ class Subject2(SimpleLiteral):
     Recommended best practice is to select a value from a controlled
     vocabulary or formal classification scheme.
     """
+
     class Meta:
         name = "subject"
         namespace = "http://purl.org/dc/elements/1.1/"

@@ -16,7 +16,7 @@ class DataBlockType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     tuple_list: Optional[TupleList] = field(
         default=None,
@@ -24,9 +24,11 @@ class DataBlockType:
             "name": "tupleList",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
-    double_or_nil_reason_tuple_list: List[Union[str, NilReasonEnumerationValue]] = field(
+    double_or_nil_reason_tuple_list: List[
+        Union[str, NilReasonEnumerationValue]
+    ] = field(
         default_factory=list,
         metadata={
             "name": "doubleOrNilReasonTupleList",
@@ -34,5 +36,5 @@ class DataBlockType:
             "namespace": "http://www.opengis.net/gml",
             "pattern": r"other:\w{2,}",
             "tokens": True,
-        }
+        },
     )

@@ -12,6 +12,7 @@ class TimeCs1(TimeCstype):
 
     A TimeCS shall have one gml:axis property element.
     """
+
     class Meta:
         name = "TimeCS"
         namespace = "http://www.opengis.net/gml"

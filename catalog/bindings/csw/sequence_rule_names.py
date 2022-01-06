@@ -9,6 +9,7 @@ class SequenceRuleNames(Enum):
     traversing a grid to correspond with the sequence of members of the
     rangeSet.
     """
+
     LINEAR = "Linear"
     BOUSTROPHEDONIC = "Boustrophedonic"
     CANTOR_DIAGONAL = "Cantor-diagonal"

@@ -12,6 +12,7 @@ class AffineCs1(AffineCstype):
     An AffineCS shall have two or three gml:axis property elements; the
     number of property elements shall equal the dimension of the CS.
     """
+
     class Meta:
         name = "AffineCS"
         namespace = "http://www.opengis.net/gml"

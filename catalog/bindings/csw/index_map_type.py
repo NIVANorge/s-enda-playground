@@ -16,6 +16,7 @@ class IndexMapType(GridFunctionType):
     The length of the lookUpTable corresponds with the length of the
     subset of the domainSet for which the coverage is defined.
     """
+
     look_up_table: List[int] = field(
         default_factory=list,
         metadata={
@@ -24,5 +25,5 @@ class IndexMapType(GridFunctionType):
             "namespace": "http://www.opengis.net/gml",
             "required": True,
             "tokens": True,
-        }
+        },
     )

@@ -12,5 +12,6 @@ class Surface(SurfaceType):
     The surface patches are connected to one another. patches
     encapsulates the patches of the surface.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

@@ -15,12 +15,12 @@ class RectangleType(AbstractSurfacePatchType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     interpolation: SurfaceInterpolationType = field(
         init=False,
         default=SurfaceInterpolationType.PLANAR,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

@@ -1,7 +1,9 @@
 from dataclasses import dataclass, field
 from typing import List, Optional
 from bindings.gmd.abstract_general_parameter_value import AbstractGeneralParameterValue
-from bindings.gmd.abstract_general_parameter_value_type import AbstractGeneralParameterValueType
+from bindings.gmd.abstract_general_parameter_value_type import (
+    AbstractGeneralParameterValueType,
+)
 from bindings.gmd.group import Group
 from bindings.gmd.parameter_value_1 import ParameterValue1
 from bindings.gmd.values_of_group import ValuesOfGroup
@@ -16,13 +18,14 @@ class AbstractGeneralParameterValuePropertyType:
     inline association roles to a parameter value or group of parameter values,
     always containing the values.
     """
+
     parameter_value_group: Optional["ParameterValueGroup"] = field(
         default=None,
         metadata={
             "name": "ParameterValueGroup",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     parameter_value: Optional[ParameterValue1] = field(
         default=None,
@@ -30,7 +33,7 @@ class AbstractGeneralParameterValuePropertyType:
             "name": "ParameterValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_general_parameter_value: Optional[AbstractGeneralParameterValue] = field(
         default=None,
@@ -38,7 +41,7 @@ class AbstractGeneralParameterValuePropertyType:
             "name": "AbstractGeneralParameterValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
 
 
@@ -55,6 +58,7 @@ class ParameterValue2(AbstractGeneralParameterValuePropertyType):
     gml:parameterValue is a composition association to a parameter value or
     group of parameter values used by a coordinate operation.
     """
+
     class Meta:
         name = "parameterValue"
         namespace = "http://www.opengis.net/gml"
@@ -75,7 +79,7 @@ class ParameterValueGroupType(AbstractGeneralParameterValueType):
             "name": "includesValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     uses_value: List[UsesValue] = field(
         default_factory=list,
@@ -83,7 +87,7 @@ class ParameterValueGroupType(AbstractGeneralParameterValueType):
             "name": "usesValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     parameter_value: List[ParameterValue2] = field(
         default_factory=list,
@@ -91,7 +95,7 @@ class ParameterValueGroupType(AbstractGeneralParameterValueType):
             "name": "parameterValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     values_of_group: Optional[ValuesOfGroup] = field(
         default=None,
@@ -99,14 +103,14 @@ class ParameterValueGroupType(AbstractGeneralParameterValueType):
             "name": "valuesOfGroup",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     group: Optional[Group] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
 
 
@@ -126,5 +130,6 @@ class ParameterValueGroup(ParameterValueGroupType):
     composition association roles to the parameter values and groups of
     values included in this group.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

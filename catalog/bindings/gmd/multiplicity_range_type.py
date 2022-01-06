@@ -13,6 +13,7 @@ class MultiplicityRangeType(AbstractObjectType):
     A component of a multiplicity, consisting of an non-negative lower bound,
     and a potentially infinite upper bound.
     """
+
     class Meta:
         name = "MultiplicityRange_Type"
 
@@ -22,7 +23,7 @@ class MultiplicityRangeType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gco",
             "required": True,
-        }
+        },
     )
     upper: Optional[UnlimitedIntegerPropertyType] = field(
         default=None,
@@ -30,5 +31,5 @@ class MultiplicityRangeType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gco",
             "required": True,
-        }
+        },
     )

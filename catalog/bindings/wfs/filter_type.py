@@ -34,7 +34,9 @@ from bindings.wfs.overlaps import Overlaps
 from bindings.wfs.property_is_between import PropertyIsBetween
 from bindings.wfs.property_is_equal_to import PropertyIsEqualTo
 from bindings.wfs.property_is_greater_than import PropertyIsGreaterThan
-from bindings.wfs.property_is_greater_than_or_equal_to import PropertyIsGreaterThanOrEqualTo
+from bindings.wfs.property_is_greater_than_or_equal_to import (
+    PropertyIsGreaterThanOrEqualTo,
+)
 from bindings.wfs.property_is_less_than import PropertyIsLessThan
 from bindings.wfs.property_is_less_than_or_equal_to import PropertyIsLessThanOrEqualTo
 from bindings.wfs.property_is_like import PropertyIsLike
@@ -61,7 +63,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "PropertyIsBetween",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     property_is_nil: Optional[PropertyIsNil] = field(
         default=None,
@@ -69,7 +71,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "PropertyIsNil",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     property_is_null: Optional[PropertyIsNull] = field(
         default=None,
@@ -77,7 +79,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "PropertyIsNull",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     property_is_like: Optional[PropertyIsLike] = field(
         default=None,
@@ -85,15 +87,17 @@ class FilterType(AbstractSelectionClauseType):
             "name": "PropertyIsLike",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
-    property_is_greater_than_or_equal_to: Optional[PropertyIsGreaterThanOrEqualTo] = field(
+    property_is_greater_than_or_equal_to: Optional[
+        PropertyIsGreaterThanOrEqualTo
+    ] = field(
         default=None,
         metadata={
             "name": "PropertyIsGreaterThanOrEqualTo",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     property_is_less_than_or_equal_to: Optional[PropertyIsLessThanOrEqualTo] = field(
         default=None,
@@ -101,7 +105,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "PropertyIsLessThanOrEqualTo",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     property_is_greater_than: Optional[PropertyIsGreaterThan] = field(
         default=None,
@@ -109,7 +113,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "PropertyIsGreaterThan",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     property_is_less_than: Optional[PropertyIsLessThan] = field(
         default=None,
@@ -117,7 +121,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "PropertyIsLessThan",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     property_is_not_equal_to: Optional[PropertyIsNotEqualTo] = field(
         default=None,
@@ -125,7 +129,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "PropertyIsNotEqualTo",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     property_is_equal_to: Optional[PropertyIsEqualTo] = field(
         default=None,
@@ -133,7 +137,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "PropertyIsEqualTo",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     comparison_ops: Optional[ComparisonOps] = field(
         default=None,
@@ -141,7 +145,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "comparisonOps",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     bbox: Optional[Bbox] = field(
         default=None,
@@ -149,7 +153,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "BBOX",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     beyond: Optional[Beyond] = field(
         default=None,
@@ -157,7 +161,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "Beyond",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     dwithin: Optional[Dwithin] = field(
         default=None,
@@ -165,7 +169,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "DWithin",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     contains: Optional[Contains] = field(
         default=None,
@@ -173,7 +177,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "Contains",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     intersects: Optional[Intersects] = field(
         default=None,
@@ -181,7 +185,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "Intersects",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     crosses: Optional[Crosses] = field(
         default=None,
@@ -189,7 +193,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "Crosses",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     overlaps: Optional[Overlaps] = field(
         default=None,
@@ -197,7 +201,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "Overlaps",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     within: Optional[Within] = field(
         default=None,
@@ -205,7 +209,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "Within",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     touches: Optional[Touches] = field(
         default=None,
@@ -213,7 +217,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "Touches",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     disjoint: Optional[Disjoint] = field(
         default=None,
@@ -221,7 +225,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "Disjoint",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     equals: Optional[Equals] = field(
         default=None,
@@ -229,7 +233,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "Equals",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     spatial_ops: Optional[SpatialOps] = field(
         default=None,
@@ -237,7 +241,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "spatialOps",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     any_interacts: Optional[AnyInteracts] = field(
         default=None,
@@ -245,7 +249,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "AnyInteracts",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     overlapped_by: Optional[OverlappedBy] = field(
         default=None,
@@ -253,7 +257,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "OverlappedBy",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     toverlaps: Optional[Toverlaps] = field(
         default=None,
@@ -261,7 +265,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "TOverlaps",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     met_by: Optional[MetBy] = field(
         default=None,
@@ -269,7 +273,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "MetBy",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     meets: Optional[Meets] = field(
         default=None,
@@ -277,7 +281,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "Meets",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     tequals: Optional[Tequals] = field(
         default=None,
@@ -285,7 +289,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "TEquals",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     ends: Optional[Ends] = field(
         default=None,
@@ -293,7 +297,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "Ends",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     ended_by: Optional[EndedBy] = field(
         default=None,
@@ -301,7 +305,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "EndedBy",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     during: Optional[During] = field(
         default=None,
@@ -309,7 +313,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "During",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     tcontains: Optional[Tcontains] = field(
         default=None,
@@ -317,7 +321,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "TContains",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     begun_by: Optional[BegunBy] = field(
         default=None,
@@ -325,7 +329,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "BegunBy",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     begins: Optional[Begins] = field(
         default=None,
@@ -333,7 +337,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "Begins",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     before: Optional[Before] = field(
         default=None,
@@ -341,7 +345,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "Before",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     after: Optional[After] = field(
         default=None,
@@ -349,7 +353,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "After",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     temporal_ops: Optional[TemporalOps] = field(
         default=None,
@@ -357,7 +361,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "temporalOps",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     not_value: Optional[Not] = field(
         default=None,
@@ -365,7 +369,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "Not",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     or_value: Optional[Or] = field(
         default=None,
@@ -373,7 +377,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "Or",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     and_value: Optional[And] = field(
         default=None,
@@ -381,7 +385,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "And",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     logic_ops: Optional[LogicOps] = field(
         default=None,
@@ -389,7 +393,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "logicOps",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     extension_ops: Optional[ExtensionOps] = field(
         default=None,
@@ -397,7 +401,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "extensionOps",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     function: Optional[Function] = field(
         default=None,
@@ -405,7 +409,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "Function",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     resource_id: List[ResourceId] = field(
         default_factory=list,
@@ -413,7 +417,7 @@ class FilterType(AbstractSelectionClauseType):
             "name": "ResourceId",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     id: List[Id] = field(
         default_factory=list,
@@ -421,5 +425,5 @@ class FilterType(AbstractSelectionClauseType):
             "name": "_Id",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )

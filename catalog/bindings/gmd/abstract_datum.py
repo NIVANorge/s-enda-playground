@@ -17,5 +17,6 @@ class AbstractDatum(AbstractDatumType):
     concrete subtype with a meaning equivalent to a concrete subtype
     specified in this document.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

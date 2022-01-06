@@ -22,7 +22,7 @@ class OperationPropertyType:
             "name": "Transformation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_general_transformation: Optional[AbstractGeneralTransformation] = field(
         default=None,
@@ -30,7 +30,7 @@ class OperationPropertyType:
             "name": "AbstractGeneralTransformation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     conversion: Optional[Conversion1] = field(
         default=None,
@@ -38,7 +38,7 @@ class OperationPropertyType:
             "name": "Conversion",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_general_conversion: Optional[AbstractGeneralConversion] = field(
         default=None,
@@ -46,7 +46,7 @@ class OperationPropertyType:
             "name": "AbstractGeneralConversion",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_operation: Optional[AbstractOperation] = field(
         default=None,
@@ -54,7 +54,7 @@ class OperationPropertyType:
             "name": "AbstractOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -62,49 +62,49 @@ class OperationPropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -112,7 +112,7 @@ class OperationPropertyType:
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -120,5 +120,5 @@ class OperationPropertyType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

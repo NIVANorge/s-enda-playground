@@ -39,90 +39,91 @@ class SummaryRecordType(AbstractRecordType):
 
     It extends AbstractRecordType to include the core properties.
     """
+
     bibliographic_citation: List[BibliographicCitation] = field(
         default_factory=list,
         metadata={
             "name": "bibliographicCitation",
             "type": "Element",
             "namespace": "http://purl.org/dc/terms/",
-        }
+        },
     )
     identifier: List[Identifier2] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://purl.org/dc/elements/1.1/",
-        }
+        },
     )
     alternative: List[Alternative] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://purl.org/dc/terms/",
-        }
+        },
     )
     title: List[Title3] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://purl.org/dc/elements/1.1/",
-        }
+        },
     )
     type: Optional[TypeType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://purl.org/dc/elements/1.1/",
-        }
+        },
     )
     subject: List[Subject2] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://purl.org/dc/elements/1.1/",
-        }
+        },
     )
     medium: List[Medium] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://purl.org/dc/terms/",
-        }
+        },
     )
     extent: List[Extent] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://purl.org/dc/terms/",
-        }
+        },
     )
     format: List[Format] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://purl.org/dc/elements/1.1/",
-        }
+        },
     )
     requires: List[Requires] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://purl.org/dc/terms/",
-        }
+        },
     )
     replaces: List[Replaces] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://purl.org/dc/terms/",
-        }
+        },
     )
     references: List[References] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://purl.org/dc/terms/",
-        }
+        },
     )
     is_version_of: List[IsVersionOf] = field(
         default_factory=list,
@@ -130,7 +131,7 @@ class SummaryRecordType(AbstractRecordType):
             "name": "isVersionOf",
             "type": "Element",
             "namespace": "http://purl.org/dc/terms/",
-        }
+        },
     )
     is_required_by: List[IsRequiredBy] = field(
         default_factory=list,
@@ -138,7 +139,7 @@ class SummaryRecordType(AbstractRecordType):
             "name": "isRequiredBy",
             "type": "Element",
             "namespace": "http://purl.org/dc/terms/",
-        }
+        },
     )
     is_replaced_by: List[IsReplacedBy] = field(
         default_factory=list,
@@ -146,7 +147,7 @@ class SummaryRecordType(AbstractRecordType):
             "name": "isReplacedBy",
             "type": "Element",
             "namespace": "http://purl.org/dc/terms/",
-        }
+        },
     )
     is_referenced_by: List[IsReferencedBy] = field(
         default_factory=list,
@@ -154,7 +155,7 @@ class SummaryRecordType(AbstractRecordType):
             "name": "isReferencedBy",
             "type": "Element",
             "namespace": "http://purl.org/dc/terms/",
-        }
+        },
     )
     is_part_of: List[IsPartOf] = field(
         default_factory=list,
@@ -162,7 +163,7 @@ class SummaryRecordType(AbstractRecordType):
             "name": "isPartOf",
             "type": "Element",
             "namespace": "http://purl.org/dc/terms/",
-        }
+        },
     )
     is_format_of: List[IsFormatOf] = field(
         default_factory=list,
@@ -170,7 +171,7 @@ class SummaryRecordType(AbstractRecordType):
             "name": "isFormatOf",
             "type": "Element",
             "namespace": "http://purl.org/dc/terms/",
-        }
+        },
     )
     has_version: List[HasVersion] = field(
         default_factory=list,
@@ -178,7 +179,7 @@ class SummaryRecordType(AbstractRecordType):
             "name": "hasVersion",
             "type": "Element",
             "namespace": "http://purl.org/dc/terms/",
-        }
+        },
     )
     has_part: List[HasPart] = field(
         default_factory=list,
@@ -186,7 +187,7 @@ class SummaryRecordType(AbstractRecordType):
             "name": "hasPart",
             "type": "Element",
             "namespace": "http://purl.org/dc/terms/",
-        }
+        },
     )
     has_format: List[HasFormat] = field(
         default_factory=list,
@@ -194,7 +195,7 @@ class SummaryRecordType(AbstractRecordType):
             "name": "hasFormat",
             "type": "Element",
             "namespace": "http://purl.org/dc/terms/",
-        }
+        },
     )
     conforms_to: List[ConformsTo] = field(
         default_factory=list,
@@ -202,35 +203,35 @@ class SummaryRecordType(AbstractRecordType):
             "name": "conformsTo",
             "type": "Element",
             "namespace": "http://purl.org/dc/terms/",
-        }
+        },
     )
     relation: List[Relation] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://purl.org/dc/elements/1.1/",
-        }
+        },
     )
     modified: List[Modified] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://purl.org/dc/terms/",
-        }
+        },
     )
     abstract: List[Abstract2] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://purl.org/dc/terms/",
-        }
+        },
     )
     spatial: List[Spatial] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://purl.org/dc/terms/",
-        }
+        },
     )
     wgs84_bounding_box: List[Wgs84BoundingBox] = field(
         default_factory=list,
@@ -238,7 +239,7 @@ class SummaryRecordType(AbstractRecordType):
             "name": "WGS84BoundingBox",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows",
-        }
+        },
     )
     bounding_box: List[BoundingBox1] = field(
         default_factory=list,
@@ -246,5 +247,5 @@ class SummaryRecordType(AbstractRecordType):
             "name": "BoundingBox",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows",
-        }
+        },
     )

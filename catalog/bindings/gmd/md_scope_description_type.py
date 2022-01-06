@@ -11,6 +11,7 @@ class MdScopeDescriptionType:
     """
     Description of the class of information covered by the information.
     """
+
     class Meta:
         name = "MD_ScopeDescription_Type"
 
@@ -19,14 +20,14 @@ class MdScopeDescriptionType:
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     features: List[ObjectReferencePropertyType] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     feature_instances: List[ObjectReferencePropertyType] = field(
         default_factory=list,
@@ -34,7 +35,7 @@ class MdScopeDescriptionType:
             "name": "featureInstances",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     attribute_instances: List[ObjectReferencePropertyType] = field(
         default_factory=list,
@@ -42,19 +43,19 @@ class MdScopeDescriptionType:
             "name": "attributeInstances",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     dataset: Optional[CharacterStringPropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     other: Optional[CharacterStringPropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

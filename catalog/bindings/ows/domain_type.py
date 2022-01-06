@@ -13,10 +13,11 @@ class DomainType(UnNamedDomainType):
 
     :ivar name: Name or identifier of this quantity.
     """
+
     name: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )

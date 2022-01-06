@@ -12,5 +12,6 @@ class DataBlock(DataBlockType):
     The range set parameterization is described by the property
     gml:rangeParameters.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

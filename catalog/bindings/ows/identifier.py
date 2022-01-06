@@ -9,5 +9,6 @@ class Identifier(CodeType):
     """
     Unique identifier or name of this dataset.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/2.0"

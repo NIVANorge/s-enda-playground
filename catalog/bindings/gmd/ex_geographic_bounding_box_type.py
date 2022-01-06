@@ -1,6 +1,8 @@
 from dataclasses import dataclass, field
 from typing import Optional
-from bindings.gmd.abstract_ex_geographic_extent_type import AbstractExGeographicExtentType
+from bindings.gmd.abstract_ex_geographic_extent_type import (
+    AbstractExGeographicExtentType,
+)
 from bindings.gmd.decimal_property_type import DecimalPropertyType
 
 __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
@@ -11,6 +13,7 @@ class ExGeographicBoundingBoxType(AbstractExGeographicExtentType):
     """
     Geographic area of the entire dataset referenced to WGS 84.
     """
+
     class Meta:
         name = "EX_GeographicBoundingBox_Type"
 
@@ -21,7 +24,7 @@ class ExGeographicBoundingBoxType(AbstractExGeographicExtentType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     east_bound_longitude: Optional[DecimalPropertyType] = field(
         default=None,
@@ -30,7 +33,7 @@ class ExGeographicBoundingBoxType(AbstractExGeographicExtentType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     south_bound_latitude: Optional[DecimalPropertyType] = field(
         default=None,
@@ -39,7 +42,7 @@ class ExGeographicBoundingBoxType(AbstractExGeographicExtentType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     north_bound_latitude: Optional[DecimalPropertyType] = field(
         default=None,
@@ -48,5 +51,5 @@ class ExGeographicBoundingBoxType(AbstractExGeographicExtentType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )

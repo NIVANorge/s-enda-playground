@@ -13,5 +13,5 @@ class AbstractGeneralOperationParameterType(IdentifiedObjectType):
             "name": "minimumOccurs",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

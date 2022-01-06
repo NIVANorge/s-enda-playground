@@ -1,5 +1,7 @@
 from dataclasses import dataclass
-from bindings.csw.abstract_parametric_curve_surface_type import AbstractParametricCurveSurfaceType
+from bindings.csw.abstract_parametric_curve_surface_type import (
+    AbstractParametricCurveSurfaceType,
+)
 
 __NAMESPACE__ = "http://www.opengis.net/gml"
 

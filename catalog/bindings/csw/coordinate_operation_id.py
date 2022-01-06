@@ -9,6 +9,7 @@ class CoordinateOperationId(IdentifierType):
     """
     An identification of a coordinate operation.
     """
+
     class Meta:
         name = "coordinateOperationID"
         namespace = "http://www.opengis.net/gml"

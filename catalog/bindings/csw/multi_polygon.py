@@ -11,5 +11,6 @@ class MultiPolygon(MultiPolygonType):
 
     Use the "MultiSurface" element instead.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

@@ -17,5 +17,5 @@ class Seconds:
             "required": True,
             "min_inclusive": Decimal("0.00"),
             "max_exclusive": Decimal("60.00"),
-        }
+        },
     )

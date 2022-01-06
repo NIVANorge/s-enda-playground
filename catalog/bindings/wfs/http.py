@@ -18,6 +18,7 @@ class Http:
     :ivar post: Connect point URL and any constraints for the HTTP
         "Post" request method for this operation request.
     """
+
     class Meta:
         name = "HTTP"
         namespace = "http://www.opengis.net/ows/1.1"
@@ -27,12 +28,12 @@ class Http:
         metadata={
             "name": "Get",
             "type": "Element",
-        }
+        },
     )
     post: List[RequestMethodType] = field(
         default_factory=list,
         metadata={
             "name": "Post",
             "type": "Element",
-        }
+        },
     )

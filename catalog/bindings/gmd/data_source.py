@@ -13,6 +13,7 @@ class DataSource(StringOrRefType):
     The remote link attributes of the gml:dataSource element have been
     deprecated along with its current type.
     """
+
     class Meta:
         name = "dataSource"
         namespace = "http://www.opengis.net/gml"

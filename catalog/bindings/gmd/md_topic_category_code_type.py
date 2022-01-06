@@ -8,6 +8,7 @@ class MdTopicCategoryCodeType(Enum):
     High-level geospatial data thematic classification to assist in the
     grouping and search of available geospatial datasets.
     """
+
     FARMING = "farming"
     BIOTA = "biota"
     BOUNDARIES = "boundaries"

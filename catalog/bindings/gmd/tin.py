@@ -14,5 +14,6 @@ class Tin(TinType):
     used as posts for this TIN (corners of the triangles in the TIN).
     See ISO 19107:2003, 6.4.39 for details.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

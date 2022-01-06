@@ -12,5 +12,5 @@ class ArcType(ArcStringType):
         metadata={
             "name": "numArc",
             "type": "Attribute",
-        }
+        },
     )

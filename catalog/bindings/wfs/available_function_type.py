@@ -15,7 +15,7 @@ class AvailableFunctionType:
             "name": "Metadata",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )
     returns: Optional[QName] = field(
         default=None,
@@ -24,7 +24,7 @@ class AvailableFunctionType:
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "required": True,
-        }
+        },
     )
     arguments: Optional[ArgumentsType] = field(
         default=None,
@@ -32,12 +32,12 @@ class AvailableFunctionType:
             "name": "Arguments",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     name: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )

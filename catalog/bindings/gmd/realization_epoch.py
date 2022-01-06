@@ -12,6 +12,7 @@ class RealizationEpoch:
 
     See ISO 19111 Table 32 for details.
     """
+
     class Meta:
         name = "realizationEpoch"
         namespace = "http://www.opengis.net/gml"
@@ -20,5 +21,5 @@ class RealizationEpoch:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )

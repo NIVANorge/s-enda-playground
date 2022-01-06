@@ -24,17 +24,18 @@ class ConversionToPreferredUnitType(UnitOfMeasureType):
         this unit of measure can be converted to obtain the
         corresponding value using the preferred unit of measure.
     """
+
     factor: Optional[float] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     formula: Optional[FormulaType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

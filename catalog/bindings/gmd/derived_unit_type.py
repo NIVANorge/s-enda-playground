@@ -15,5 +15,5 @@ class DerivedUnitType(UnitDefinitionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 1,
-        }
+        },
     )

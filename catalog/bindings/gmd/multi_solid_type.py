@@ -1,6 +1,8 @@
 from dataclasses import dataclass, field
 from typing import List, Optional
-from bindings.gmd.abstract_geometric_aggregate_type import AbstractGeometricAggregateType
+from bindings.gmd.abstract_geometric_aggregate_type import (
+    AbstractGeometricAggregateType,
+)
 from bindings.gmd.solid_members import SolidMembers
 from bindings.gmd.solid_property_type import SolidMember
 
@@ -15,7 +17,7 @@ class MultiSolidType(AbstractGeometricAggregateType):
             "name": "solidMember",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     solid_members: Optional[SolidMembers] = field(
         default=None,
@@ -23,5 +25,5 @@ class MultiSolidType(AbstractGeometricAggregateType):
             "name": "solidMembers",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

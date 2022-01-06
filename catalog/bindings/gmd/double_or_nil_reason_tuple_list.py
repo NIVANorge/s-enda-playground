@@ -14,6 +14,7 @@ class DoubleOrNilReasonTupleList:
     dimension of each tuple in the list is equal to the number of range
     parameters.
     """
+
     class Meta:
         name = "doubleOrNilReasonTupleList"
         namespace = "http://www.opengis.net/gml"
@@ -23,5 +24,5 @@ class DoubleOrNilReasonTupleList:
         metadata={
             "pattern": r"other:\w{2,}",
             "tokens": True,
-        }
+        },
     )

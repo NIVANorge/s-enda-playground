@@ -12,5 +12,6 @@ class ArcByBulge(ArcByBulgeType):
     As arc is an arc string consisting of a single arc, the attribute
     “numArc” is fixed to "1".
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

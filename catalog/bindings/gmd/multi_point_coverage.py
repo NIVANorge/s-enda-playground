@@ -18,5 +18,6 @@ class MultiPointCoverage(MultiPointCoverageType):
     -       For gml:CompositeValue encodings the points of the gml:MultiPoint are mapped to the members of the composite value in document order.
     -       For gml:File encodings the points of the gml:MultiPoint are mapped to the records of the file in sequential order.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

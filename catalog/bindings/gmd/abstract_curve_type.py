@@ -1,5 +1,7 @@
 from dataclasses import dataclass
-from bindings.gmd.abstract_geometric_primitive_type import AbstractGeometricPrimitiveType
+from bindings.gmd.abstract_geometric_primitive_type import (
+    AbstractGeometricPrimitiveType,
+)
 
 __NAMESPACE__ = "http://www.opengis.net/gml"
 

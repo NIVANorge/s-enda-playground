@@ -12,5 +12,5 @@ class DefinitionType(DefinitionBaseType):
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

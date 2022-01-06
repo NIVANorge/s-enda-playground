@@ -12,10 +12,9 @@ class IsSphere:
     The sphere is completely defined by the semi-major axis, which is
     the radius of the sphere.
     """
+
     class Meta:
         name = "isSphere"
         namespace = "http://www.opengis.net/gml"
 
-    value: Optional[IsSphereValue] = field(
-        default=None
-    )
+    value: Optional[IsSphereValue] = field(default=None)

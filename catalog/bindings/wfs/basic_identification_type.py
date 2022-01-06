@@ -19,13 +19,14 @@ class BasicIdentificationType(DescriptionType):
         data identification could be specified in the Implementation
         Specification for this service.
     """
+
     identifier: Optional[Identifier] = field(
         default=None,
         metadata={
             "name": "Identifier",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )
     metadata: List[Metadata] = field(
         default_factory=list,
@@ -33,5 +34,5 @@ class BasicIdentificationType(DescriptionType):
             "name": "Metadata",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )

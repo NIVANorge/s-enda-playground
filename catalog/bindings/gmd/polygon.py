@@ -13,5 +13,6 @@ class Polygon(PolygonType):
     interpolation in its interior. The elements exterior and interior
     describe the surface boundary of the polygon.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

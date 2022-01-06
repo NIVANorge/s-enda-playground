@@ -8,6 +8,7 @@ class Title1:
     """
     Title of this resource, normally used for display to a human.
     """
+
     class Meta:
         name = "Title"
         namespace = "http://www.opengis.net/ows"
@@ -16,5 +17,5 @@ class Title1:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )

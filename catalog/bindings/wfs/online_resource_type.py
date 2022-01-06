@@ -15,20 +15,21 @@ class OnlineResourceType:
     class was XML encoded as the attributeGroup "xlink:simpleAttrs", as
     used in GML.
     """
+
     type: TypeType = field(
         init=False,
         default=TypeType.SIMPLE,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
@@ -36,7 +37,7 @@ class OnlineResourceType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
@@ -44,26 +45,26 @@ class OnlineResourceType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )

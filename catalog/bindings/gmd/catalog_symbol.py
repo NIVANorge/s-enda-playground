@@ -16,6 +16,7 @@ class CatalogSymbol(CodeType):
     appears explicitly in the catalog, but it could be a combination of
     symbols using a specified algebra of units.
     """
+
     class Meta:
         name = "catalogSymbol"
         namespace = "http://www.opengis.net/gml"

@@ -11,6 +11,7 @@ class CiAddressType(AbstractObjectType):
     """
     Location of the responsible individual or organisation.
     """
+
     class Meta:
         name = "CI_Address_Type"
 
@@ -20,14 +21,14 @@ class CiAddressType(AbstractObjectType):
             "name": "deliveryPoint",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     city: Optional[CharacterStringPropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     administrative_area: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -35,7 +36,7 @@ class CiAddressType(AbstractObjectType):
             "name": "administrativeArea",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     postal_code: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -43,14 +44,14 @@ class CiAddressType(AbstractObjectType):
             "name": "postalCode",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     country: Optional[CharacterStringPropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     electronic_mail_address: List[CharacterStringPropertyType] = field(
         default_factory=list,
@@ -58,5 +59,5 @@ class CiAddressType(AbstractObjectType):
             "name": "electronicMailAddress",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

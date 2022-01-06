@@ -12,6 +12,7 @@ class ArcType1(ArcStringType):
     :ivar num_arc: An arc is an arc string consiting of a single arc,
         the attribute is fixed to "1".
     """
+
     class Meta:
         name = "ArcType"
 
@@ -21,5 +22,5 @@ class ArcType1(ArcStringType):
         metadata={
             "name": "numArc",
             "type": "Attribute",
-        }
+        },
     )

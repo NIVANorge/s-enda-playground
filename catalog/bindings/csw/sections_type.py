@@ -13,11 +13,12 @@ class SectionsType:
     specified by each OWS specification. See Sections parameter
     subclause for more information.
     """
+
     section: List[str] = field(
         default_factory=list,
         metadata={
             "name": "Section",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows",
-        }
+        },
     )

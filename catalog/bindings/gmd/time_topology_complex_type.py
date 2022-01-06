@@ -1,7 +1,9 @@
 from dataclasses import dataclass, field
 from typing import List
 from bindings.gmd.abstract_time_complex_type import AbstractTimeComplexType
-from bindings.gmd.time_topology_primitive_property_type import TimeTopologyPrimitivePropertyType
+from bindings.gmd.time_topology_primitive_property_type import (
+    TimeTopologyPrimitivePropertyType,
+)
 
 __NAMESPACE__ = "http://www.opengis.net/gml"
 
@@ -14,5 +16,5 @@ class TimeTopologyComplexType(AbstractTimeComplexType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 1,
-        }
+        },
     )

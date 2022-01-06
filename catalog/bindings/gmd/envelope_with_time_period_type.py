@@ -15,7 +15,7 @@ class EnvelopeWithTimePeriodType(EnvelopeType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     end_position: Optional[TimePositionType] = field(
         default=None,
@@ -24,11 +24,11 @@ class EnvelopeWithTimePeriodType(EnvelopeType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     frame: str = field(
         default="#ISO-8601",
         metadata={
             "type": "Attribute",
-        }
+        },
     )

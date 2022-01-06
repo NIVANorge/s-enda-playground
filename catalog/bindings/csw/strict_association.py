@@ -9,6 +9,7 @@ class StrictAssociation(AssociationType):
     """
     must carry a reference to an object or contain an object but not both.
     """
+
     class Meta:
         name = "_strictAssociation"
         namespace = "http://www.opengis.net/gml"

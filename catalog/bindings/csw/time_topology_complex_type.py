@@ -1,7 +1,9 @@
 from dataclasses import dataclass, field
 from typing import List
 from bindings.csw.abstract_time_complex_type import AbstractTimeComplexType
-from bindings.csw.time_topology_primitive_property_type import TimeTopologyPrimitivePropertyType
+from bindings.csw.time_topology_primitive_property_type import (
+    TimeTopologyPrimitivePropertyType,
+)
 
 __NAMESPACE__ = "http://www.opengis.net/gml"
 
@@ -11,11 +13,12 @@ class TimeTopologyComplexType(AbstractTimeComplexType):
     """
     A temporal topology complex.
     """
+
     primitive: List[TimeTopologyPrimitivePropertyType] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 1,
-        }
+        },
     )

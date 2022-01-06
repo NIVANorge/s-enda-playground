@@ -17,7 +17,7 @@ class TmPeriodDurationPropertyType:
             "name": "TM_PeriodDuration",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gts",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -26,5 +26,5 @@ class TmPeriodDurationPropertyType:
             "type": "Attribute",
             "namespace": "http://www.isotc211.org/2005/gco",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )

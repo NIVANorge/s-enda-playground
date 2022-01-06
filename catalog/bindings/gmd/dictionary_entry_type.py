@@ -25,8 +25,12 @@ from bindings.gmd.abstract_crstype import (
     VerticalDatum1,
 )
 from bindings.gmd.abstract_datum import AbstractDatum
-from bindings.gmd.abstract_general_operation_parameter import AbstractGeneralOperationParameter
-from bindings.gmd.abstract_general_operation_parameter_property_type import OperationParameterGroup
+from bindings.gmd.abstract_general_operation_parameter import (
+    AbstractGeneralOperationParameter,
+)
+from bindings.gmd.abstract_general_operation_parameter_property_type import (
+    OperationParameterGroup,
+)
 from bindings.gmd.abstract_general_transformation import AbstractGeneralTransformation
 from bindings.gmd.abstract_member_type import AbstractMemberType
 from bindings.gmd.abstract_operation import AbstractOperation
@@ -82,7 +86,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "TimeOrdinalReferenceSystem",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_clock: Optional[TimeClock] = field(
         default=None,
@@ -90,7 +94,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "TimeClock",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_calendar: Optional[TimeCalendar] = field(
         default=None,
@@ -98,7 +102,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "TimeCalendar",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_coordinate_system: Optional[TimeCoordinateSystem] = field(
         default=None,
@@ -106,7 +110,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "TimeCoordinateSystem",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_reference_system: Optional[TimeReferenceSystem] = field(
         default=None,
@@ -114,7 +118,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "TimeReferenceSystem",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     operation_parameter_group: Optional[OperationParameterGroup] = field(
         default=None,
@@ -122,7 +126,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "OperationParameterGroup",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     operation_parameter: Optional[OperationParameter1] = field(
         default=None,
@@ -130,15 +134,17 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "OperationParameter",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
-    abstract_general_operation_parameter: Optional[AbstractGeneralOperationParameter] = field(
+    abstract_general_operation_parameter: Optional[
+        AbstractGeneralOperationParameter
+    ] = field(
         default=None,
         metadata={
             "name": "AbstractGeneralOperationParameter",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     operation_method: Optional[OperationMethod] = field(
         default=None,
@@ -146,7 +152,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "OperationMethod",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     concatenated_operation: Optional[ConcatenatedOperation] = field(
         default=None,
@@ -154,7 +160,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "ConcatenatedOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     pass_through_operation: Optional[PassThroughOperation] = field(
         default=None,
@@ -162,7 +168,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "PassThroughOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     transformation: Optional[Transformation] = field(
         default=None,
@@ -170,7 +176,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "Transformation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_general_transformation: Optional[AbstractGeneralTransformation] = field(
         default=None,
@@ -178,7 +184,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "AbstractGeneralTransformation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     conversion: Optional[Conversion1] = field(
         default=None,
@@ -186,7 +192,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "Conversion",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_general_conversion: Optional[AbstractGeneralConversion] = field(
         default=None,
@@ -194,7 +200,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "AbstractGeneralConversion",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_operation: Optional[AbstractOperation] = field(
         default=None,
@@ -202,7 +208,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "AbstractOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_single_operation: Optional[AbstractSingleOperation] = field(
         default=None,
@@ -210,7 +216,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "AbstractSingleOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_coordinate_operation: Optional[AbstractCoordinateOperation] = field(
         default=None,
@@ -218,7 +224,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "AbstractCoordinateOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     prime_meridian: Optional[PrimeMeridian1] = field(
         default=None,
@@ -226,7 +232,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "PrimeMeridian",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     ellipsoid: Optional[Ellipsoid1] = field(
         default=None,
@@ -234,7 +240,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "Ellipsoid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     temporal_datum: Optional[TemporalDatum1] = field(
         default=None,
@@ -242,7 +248,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "TemporalDatum",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     vertical_datum: Optional[VerticalDatum1] = field(
         default=None,
@@ -250,7 +256,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "VerticalDatum",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     image_datum: Optional[ImageDatum1] = field(
         default=None,
@@ -258,7 +264,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "ImageDatum",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     engineering_datum: Optional[EngineeringDatum1] = field(
         default=None,
@@ -266,7 +272,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "EngineeringDatum",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     geodetic_datum: Optional[GeodeticDatum1] = field(
         default=None,
@@ -274,7 +280,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "GeodeticDatum",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_datum: Optional[AbstractDatum] = field(
         default=None,
@@ -282,7 +288,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "AbstractDatum",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     oblique_cartesian_cs: Optional[ObliqueCartesianCs] = field(
         default=None,
@@ -290,7 +296,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "ObliqueCartesianCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     affine_cs: Optional[AffineCs1] = field(
         default=None,
@@ -298,7 +304,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "AffineCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     cylindrical_cs: Optional[CylindricalCs] = field(
         default=None,
@@ -306,7 +312,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "CylindricalCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     polar_cs: Optional[PolarCs] = field(
         default=None,
@@ -314,7 +320,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "PolarCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     spherical_cs: Optional[SphericalCs1] = field(
         default=None,
@@ -322,7 +328,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "SphericalCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     user_defined_cs: Optional[UserDefinedCs] = field(
         default=None,
@@ -330,7 +336,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "UserDefinedCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     linear_cs: Optional[LinearCs] = field(
         default=None,
@@ -338,7 +344,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "LinearCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     temporal_cs: Optional[TemporalCs] = field(
         default=None,
@@ -346,7 +352,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "TemporalCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_cs: Optional[TimeCs1] = field(
         default=None,
@@ -354,7 +360,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "TimeCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     vertical_cs: Optional[VerticalCs1] = field(
         default=None,
@@ -362,7 +368,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "VerticalCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     cartesian_cs: Optional[CartesianCs1] = field(
         default=None,
@@ -370,7 +376,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "CartesianCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     ellipsoidal_cs: Optional[EllipsoidalCs1] = field(
         default=None,
@@ -378,7 +384,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "EllipsoidalCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_coordinate_system: Optional[AbstractCoordinateSystem] = field(
         default=None,
@@ -386,7 +392,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "AbstractCoordinateSystem",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     coordinate_system_axis: Optional[CoordinateSystemAxis] = field(
         default=None,
@@ -394,7 +400,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "CoordinateSystemAxis",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     compound_crs: Optional[CompoundCrs] = field(
         default=None,
@@ -402,7 +408,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "CompoundCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     geocentric_crs: Optional[GeocentricCrs] = field(
         default=None,
@@ -410,7 +416,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "GeocentricCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     geographic_crs: Optional[GeographicCrs] = field(
         default=None,
@@ -418,7 +424,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "GeographicCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     temporal_crs: Optional[TemporalCrs] = field(
         default=None,
@@ -426,7 +432,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "TemporalCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     image_crs: Optional[ImageCrs] = field(
         default=None,
@@ -434,7 +440,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "ImageCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     engineering_crs: Optional[EngineeringCrs] = field(
         default=None,
@@ -442,7 +448,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "EngineeringCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     vertical_crs: Optional[VerticalCrs] = field(
         default=None,
@@ -450,7 +456,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "VerticalCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     geodetic_crs: Optional[GeodeticCrs] = field(
         default=None,
@@ -458,7 +464,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "GeodeticCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     derived_crs: Optional[DerivedCrs] = field(
         default=None,
@@ -466,7 +472,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "DerivedCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     projected_crs: Optional[ProjectedCrs] = field(
         default=None,
@@ -474,7 +480,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "ProjectedCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_general_derived_crs: Optional[AbstractGeneralDerivedCrs] = field(
         default=None,
@@ -482,7 +488,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "AbstractGeneralDerivedCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_single_crs: Optional[AbstractSingleCrs] = field(
         default=None,
@@ -490,7 +496,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "AbstractSingleCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_crs: Optional[AbstractCrs] = field(
         default=None,
@@ -498,7 +504,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "AbstractCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     conventional_unit: Optional[ConventionalUnit] = field(
         default=None,
@@ -506,7 +512,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "ConventionalUnit",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     derived_unit: Optional[DerivedUnit] = field(
         default=None,
@@ -514,7 +520,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "DerivedUnit",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     base_unit: Optional[BaseUnit] = field(
         default=None,
@@ -522,7 +528,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "BaseUnit",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     unit_definition: Optional[UnitDefinition] = field(
         default=None,
@@ -530,7 +536,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "UnitDefinition",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     definition_proxy: Optional[DefinitionProxy] = field(
         default=None,
@@ -538,7 +544,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "DefinitionProxy",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     definition_collection: Optional["DefinitionCollection"] = field(
         default=None,
@@ -546,7 +552,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "DefinitionCollection",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     dictionary: Optional["Dictionary"] = field(
         default=None,
@@ -554,7 +560,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "Dictionary",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     definition: Optional[Definition] = field(
         default=None,
@@ -562,7 +568,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "Definition",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -570,49 +576,49 @@ class DictionaryEntryType(AbstractMemberType):
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -620,7 +626,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -628,7 +634,7 @@ class DictionaryEntryType(AbstractMemberType):
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
 
 
@@ -654,6 +660,7 @@ class DictionaryEntry(DictionaryEntryType):
     context.  When used in this way the referenced definition will
     usually be in a dictionary in the same XML document.
     """
+
     class Meta:
         name = "dictionaryEntry"
         namespace = "http://www.opengis.net/gml"
@@ -667,7 +674,7 @@ class DictionaryType(DefinitionType):
             "name": "definitionMember",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     dictionary_entry: List[DictionaryEntry] = field(
         default_factory=list,
@@ -675,7 +682,7 @@ class DictionaryType(DefinitionType):
             "name": "dictionaryEntry",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     indirect_entry: List[IndirectEntry] = field(
         default_factory=list,
@@ -683,14 +690,14 @@ class DictionaryType(DefinitionType):
             "name": "indirectEntry",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     aggregation_type: Optional[AggregationType] = field(
         default=None,
         metadata={
             "name": "aggregationType",
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -721,5 +728,6 @@ class Dictionary(DictionaryType):
     in a local dictionary, giving a handle and identifier in the context
     of the local dictionary.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

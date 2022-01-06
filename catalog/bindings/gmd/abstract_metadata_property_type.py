@@ -20,9 +20,10 @@ class AbstractMetadataPropertyType:
     Specification specified in ISO/TS 19139 shall be used to encode the
     metadata information.
     """
+
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

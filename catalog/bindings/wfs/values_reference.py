@@ -11,6 +11,7 @@ class ValuesReference:
 
     (Informative: This element was simplified from the metaDataProperty element in GML 3.0.)
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/1.1"
 
@@ -18,7 +19,7 @@ class ValuesReference:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )
     reference: Optional[str] = field(
         default=None,
@@ -26,5 +27,5 @@ class ValuesReference:
             "type": "Attribute",
             "namespace": "http://www.opengis.net/ows/1.1",
             "required": True,
-        }
+        },
     )

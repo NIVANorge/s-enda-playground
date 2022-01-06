@@ -11,6 +11,7 @@ class Object:
     It is used to assert the model position of "class" elements declared
     in other GML schemas.
     """
+
     class Meta:
         name = "_Object"
         namespace = "http://www.opengis.net/gml"

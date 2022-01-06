@@ -9,6 +9,7 @@ class IndividualName:
     Name of the responsible person: surname, given name, title separated by a
     delimiter.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/1.1"
 
@@ -16,5 +17,5 @@ class IndividualName:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )

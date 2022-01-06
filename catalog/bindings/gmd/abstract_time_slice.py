@@ -24,5 +24,6 @@ class AbstractTimeSlice(AbstractTimeSliceType):
     timeslice has richer causality, whereas a snapshot merely portrays
     the status of the whole.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

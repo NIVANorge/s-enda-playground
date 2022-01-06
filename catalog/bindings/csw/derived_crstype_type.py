@@ -9,5 +9,6 @@ class DerivedCrstypeType(CodeType2):
     """
     Type of a derived coordinate reference system.
     """
+
     class Meta:
         name = "DerivedCRSTypeType"

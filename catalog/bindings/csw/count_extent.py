@@ -11,6 +11,7 @@ class CountExtent:
 
     If one member is a null, then this is a single ended interval.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"
 
@@ -20,5 +21,5 @@ class CountExtent:
             "length": 2,
             "pattern": r"other:\w{2,}",
             "tokens": True,
-        }
+        },
     )

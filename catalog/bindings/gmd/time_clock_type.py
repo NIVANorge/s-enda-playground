@@ -17,7 +17,7 @@ class TimeClockType(TimeReferenceSystemType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     reference_time: Optional[XmlTime] = field(
         default=None,
@@ -26,7 +26,7 @@ class TimeClockType(TimeReferenceSystemType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     utc_reference: Optional[XmlTime] = field(
         default=None,
@@ -35,7 +35,7 @@ class TimeClockType(TimeReferenceSystemType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     date_basis: List[TimeCalendarPropertyType] = field(
         default_factory=list,
@@ -43,5 +43,5 @@ class TimeClockType(TimeReferenceSystemType):
             "name": "dateBasis",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

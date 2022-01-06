@@ -19,6 +19,7 @@ class TopoVolumeType(AbstractTopologyType):
     directedSolid has no meaning in three dimensions. It is preserved
     for symmetry with the preceding types and elements.
     """
+
     directed_topo_solid: List[DirectedTopoSolid] = field(
         default_factory=list,
         metadata={
@@ -26,5 +27,5 @@ class TopoVolumeType(AbstractTopologyType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 1,
-        }
+        },
     )

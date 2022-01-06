@@ -10,6 +10,7 @@ class ConversionToPreferredUnit(ConversionToPreferredUnitType):
     This element is included when this unit has an accurate conversion to the
     preferred unit for this quantity type.
     """
+
     class Meta:
         name = "conversionToPreferredUnit"
         namespace = "http://www.opengis.net/gml"

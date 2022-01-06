@@ -17,7 +17,7 @@ class IdCapabilitiesType:
             "name": "EID",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     fid: List[Fid] = field(
         default_factory=list,
@@ -25,5 +25,5 @@ class IdCapabilitiesType:
             "name": "FID",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )

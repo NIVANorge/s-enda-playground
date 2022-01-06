@@ -12,5 +12,6 @@ class CylindricalCstype(AbstractCoordinateSystemType):
 
     A CylindricalCS shall have three usesAxis associations.
     """
+
     class Meta:
         name = "CylindricalCSType"

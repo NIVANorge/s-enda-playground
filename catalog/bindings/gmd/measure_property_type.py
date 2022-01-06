@@ -21,7 +21,7 @@ class MeasurePropertyType:
             "name": "Scale",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gco",
-        }
+        },
     )
     angle: Optional[Angle1] = field(
         default=None,
@@ -29,7 +29,7 @@ class MeasurePropertyType:
             "name": "Angle",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gco",
-        }
+        },
     )
     distance: Optional[Distance] = field(
         default=None,
@@ -37,7 +37,7 @@ class MeasurePropertyType:
             "name": "Distance",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gco",
-        }
+        },
     )
     length: Optional[Length] = field(
         default=None,
@@ -45,7 +45,7 @@ class MeasurePropertyType:
             "name": "Length",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gco",
-        }
+        },
     )
     measure: Optional[Measure1] = field(
         default=None,
@@ -53,7 +53,7 @@ class MeasurePropertyType:
             "name": "Measure",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gco",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -62,5 +62,5 @@ class MeasurePropertyType:
             "type": "Attribute",
             "namespace": "http://www.isotc211.org/2005/gco",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )

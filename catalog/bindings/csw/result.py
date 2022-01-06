@@ -10,6 +10,7 @@ class Result(MeasureType):
     A quantitative result defined by the evaluation procedure used, and
     identified by the measureDescription.
     """
+
     class Meta:
         name = "result"
         namespace = "http://www.opengis.net/gml"

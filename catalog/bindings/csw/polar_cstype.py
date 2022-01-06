@@ -12,5 +12,6 @@ class PolarCstype(AbstractCoordinateSystemType):
 
     A PolarCS shall have two usesAxis associations.
     """
+
     class Meta:
         name = "PolarCSType"

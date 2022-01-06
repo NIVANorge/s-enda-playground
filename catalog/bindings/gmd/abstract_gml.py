@@ -15,6 +15,7 @@ class AbstractGml(AbstractGmltype):
     and application schemas.  It is effectively an abstract superclass
     for all GML objects.
     """
+
     class Meta:
         name = "AbstractGML"
         namespace = "http://www.opengis.net/gml"

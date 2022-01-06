@@ -12,6 +12,7 @@ class MultiplicityType(AbstractObjectType):
 
     Represented by a set of simple multiplicity ranges.
     """
+
     class Meta:
         name = "Multiplicity_Type"
 
@@ -21,5 +22,5 @@ class MultiplicityType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gco",
             "min_occurs": 1,
-        }
+        },
     )

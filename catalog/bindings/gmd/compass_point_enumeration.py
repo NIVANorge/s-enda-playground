@@ -11,6 +11,7 @@ class CompassPointEnumeration(Enum):
     though this may be detailed in the definition of a GML application
     language.
     """
+
     N = "N"
     NNE = "NNE"
     NE = "NE"

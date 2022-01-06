@@ -11,6 +11,7 @@ class SphericalCs1(SphericalCstype):
 
     A SphericalCS shall have three gml:axis property elements.
     """
+
     class Meta:
         name = "SphericalCS"
         namespace = "http://www.opengis.net/gml"

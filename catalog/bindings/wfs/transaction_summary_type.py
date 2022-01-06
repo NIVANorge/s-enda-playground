@@ -12,7 +12,7 @@ class TransactionSummaryType:
             "name": "totalInserted",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     total_updated: Optional[int] = field(
         default=None,
@@ -20,7 +20,7 @@ class TransactionSummaryType:
             "name": "totalUpdated",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     total_replaced: Optional[int] = field(
         default=None,
@@ -28,7 +28,7 @@ class TransactionSummaryType:
             "name": "totalReplaced",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     total_deleted: Optional[int] = field(
         default=None,
@@ -36,5 +36,5 @@ class TransactionSummaryType:
             "name": "totalDeleted",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )

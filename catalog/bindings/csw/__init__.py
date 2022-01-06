@@ -1,40 +1,66 @@
-from bindings.csw.absolute_external_positional_accuracy import AbsoluteExternalPositionalAccuracy
-from bindings.csw.absolute_external_positional_accuracy_type import AbsoluteExternalPositionalAccuracyType
+from bindings.csw.absolute_external_positional_accuracy import (
+    AbsoluteExternalPositionalAccuracy,
+)
+from bindings.csw.absolute_external_positional_accuracy_type import (
+    AbsoluteExternalPositionalAccuracyType,
+)
 from bindings.csw.abstract_1 import Abstract1
 from bindings.csw.abstract_2 import Abstract2
-from bindings.csw.abstract_coordinate_operation_base_type import AbstractCoordinateOperationBaseType
-from bindings.csw.abstract_coordinate_system_base_type import AbstractCoordinateSystemBaseType
+from bindings.csw.abstract_coordinate_operation_base_type import (
+    AbstractCoordinateOperationBaseType,
+)
+from bindings.csw.abstract_coordinate_system_base_type import (
+    AbstractCoordinateSystemBaseType,
+)
 from bindings.csw.abstract_coordinate_system_type import AbstractCoordinateSystemType
 from bindings.csw.abstract_curve_segment_type import AbstractCurveSegmentType
 from bindings.csw.abstract_curve_type import AbstractCurveType
 from bindings.csw.abstract_datum_base_type import AbstractDatumBaseType
 from bindings.csw.abstract_datum_type import AbstractDatumType
 from bindings.csw.abstract_feature_type import AbstractFeatureType
-from bindings.csw.abstract_general_operation_parameter_ref import AbstractGeneralOperationParameterRef
+from bindings.csw.abstract_general_operation_parameter_ref import (
+    AbstractGeneralOperationParameterRef,
+)
 from bindings.csw.abstract_general_operation_parameter_ref_type import (
     AbstractGeneralOperationParameterRefType,
     OperationParameterGroup,
     OperationParameterGroupType,
     IncludesParameter,
 )
-from bindings.csw.abstract_general_operation_parameter_type import AbstractGeneralOperationParameterType
-from bindings.csw.abstract_general_parameter_value_type import AbstractGeneralParameterValueType
-from bindings.csw.abstract_general_transformation_type import AbstractGeneralTransformationType
-from bindings.csw.abstract_geometric_aggregate_type import AbstractGeometricAggregateType
-from bindings.csw.abstract_geometric_primitive_type import AbstractGeometricPrimitiveType
+from bindings.csw.abstract_general_operation_parameter_type import (
+    AbstractGeneralOperationParameterType,
+)
+from bindings.csw.abstract_general_parameter_value_type import (
+    AbstractGeneralParameterValueType,
+)
+from bindings.csw.abstract_general_transformation_type import (
+    AbstractGeneralTransformationType,
+)
+from bindings.csw.abstract_geometric_aggregate_type import (
+    AbstractGeometricAggregateType,
+)
+from bindings.csw.abstract_geometric_primitive_type import (
+    AbstractGeometricPrimitiveType,
+)
 from bindings.csw.abstract_geometry_type import AbstractGeometryType
 from bindings.csw.abstract_gmltype import AbstractGmltype
 from bindings.csw.abstract_gridded_surface_type import AbstractGriddedSurfaceType
 from bindings.csw.abstract_id_type import AbstractIdType
 from bindings.csw.abstract_meta_data import AbstractMetaData
 from bindings.csw.abstract_meta_data_type import AbstractMetaDataType
-from bindings.csw.abstract_parametric_curve_surface_type import AbstractParametricCurveSurfaceType
-from bindings.csw.abstract_positional_accuracy_type import AbstractPositionalAccuracyType
+from bindings.csw.abstract_parametric_curve_surface_type import (
+    AbstractParametricCurveSurfaceType,
+)
+from bindings.csw.abstract_positional_accuracy_type import (
+    AbstractPositionalAccuracyType,
+)
 from bindings.csw.abstract_query import AbstractQuery
 from bindings.csw.abstract_query_type import AbstractQueryType
 from bindings.csw.abstract_record import AbstractRecord
 from bindings.csw.abstract_record_type import AbstractRecordType
-from bindings.csw.abstract_reference_system_base_type import AbstractReferenceSystemBaseType
+from bindings.csw.abstract_reference_system_base_type import (
+    AbstractReferenceSystemBaseType,
+)
 from bindings.csw.abstract_reference_system_type import AbstractReferenceSystemType
 from bindings.csw.abstract_ring_property_type import AbstractRingPropertyType
 from bindings.csw.abstract_ring_type import AbstractRingType
@@ -66,7 +92,9 @@ from bindings.csw.abstract_time_primitive_type import (
     TimePrimitive,
     TimeTopologyPrimitive,
 )
-from bindings.csw.abstract_time_reference_system_type import AbstractTimeReferenceSystemType
+from bindings.csw.abstract_time_reference_system_type import (
+    AbstractTimeReferenceSystemType,
+)
 from bindings.csw.abstract_time_slice_type import AbstractTimeSliceType
 from bindings.csw.abstract_topology_type import AbstractTopologyType
 from bindings.csw.accept_formats_type import AcceptFormatsType
@@ -88,7 +116,9 @@ from bindings.csw.angle_type import AngleType
 from bindings.csw.anim_add_accum_attrs_accumulate import AnimAddAccumAttrsAccumulate
 from bindings.csw.anim_add_accum_attrs_additive import AnimAddAccumAttrsAdditive
 from bindings.csw.anim_mode_attrs_calc_mode import AnimModeAttrsCalcMode
-from bindings.csw.anim_named_target_attrs_attribute_type import AnimNamedTargetAttrsAttributeType
+from bindings.csw.anim_named_target_attrs_attribute_type import (
+    AnimNamedTargetAttrsAttributeType,
+)
 from bindings.csw.animate_1 import Animate1
 from bindings.csw.animate_2 import Animate2
 from bindings.csw.animate_color_1 import AnimateColor1
@@ -577,7 +607,9 @@ from bindings.csw.geometric_complex import GeometricComplex
 from bindings.csw.geometric_complex_property_type import GeometricComplexPropertyType
 from bindings.csw.geometric_complex_type import GeometricComplexType
 from bindings.csw.geometric_primitive import GeometricPrimitive
-from bindings.csw.geometric_primitive_property_type import GeometricPrimitivePropertyType
+from bindings.csw.geometric_primitive_property_type import (
+    GeometricPrimitivePropertyType,
+)
 from bindings.csw.geometry import Geometry
 from bindings.csw.geometry_array_property_type import (
     GeometryArrayPropertyType,
@@ -700,7 +732,9 @@ from bindings.csw.line_string_member import LineStringMember
 from bindings.csw.line_string_property import LineStringProperty
 from bindings.csw.line_string_property_type import LineStringPropertyType
 from bindings.csw.line_string_segment import LineStringSegment
-from bindings.csw.line_string_segment_array_property_type import LineStringSegmentArrayPropertyType
+from bindings.csw.line_string_segment_array_property_type import (
+    LineStringSegmentArrayPropertyType,
+)
 from bindings.csw.line_string_segment_type import LineStringSegmentType
 from bindings.csw.line_string_type import LineStringType
 from bindings.csw.line_type_type import LineTypeType
@@ -806,9 +840,13 @@ from bindings.csw.operation_method_ref_type import OperationMethodRefType
 from bindings.csw.operation_method_type import OperationMethodType
 from bindings.csw.operation_parameter import OperationParameter
 from bindings.csw.operation_parameter_base_type import OperationParameterBaseType
-from bindings.csw.operation_parameter_group_base_type import OperationParameterGroupBaseType
+from bindings.csw.operation_parameter_group_base_type import (
+    OperationParameterGroupBaseType,
+)
 from bindings.csw.operation_parameter_group_ref import OperationParameterGroupRef
-from bindings.csw.operation_parameter_group_ref_type import OperationParameterGroupRefType
+from bindings.csw.operation_parameter_group_ref_type import (
+    OperationParameterGroupRefType,
+)
 from bindings.csw.operation_parameter_ref import OperationParameterRef
 from bindings.csw.operation_parameter_ref_type import OperationParameterRefType
 from bindings.csw.operation_parameter_type import OperationParameterType
@@ -878,7 +916,9 @@ from bindings.csw.property_is_between import PropertyIsBetween
 from bindings.csw.property_is_between_type import PropertyIsBetweenType
 from bindings.csw.property_is_equal_to import PropertyIsEqualTo
 from bindings.csw.property_is_greater_than import PropertyIsGreaterThan
-from bindings.csw.property_is_greater_than_or_equal_to import PropertyIsGreaterThanOrEqualTo
+from bindings.csw.property_is_greater_than_or_equal_to import (
+    PropertyIsGreaterThanOrEqualTo,
+)
 from bindings.csw.property_is_less_than import PropertyIsLessThan
 from bindings.csw.property_is_less_than_or_equal_to import PropertyIsLessThanOrEqualTo
 from bindings.csw.property_is_like import PropertyIsLike
@@ -918,10 +958,16 @@ from bindings.csw.reference_system_ref import ReferenceSystemRef
 from bindings.csw.reference_system_ref_type import ReferenceSystemRefType
 from bindings.csw.reference_type import ReferenceType
 from bindings.csw.references import References
-from bindings.csw.related_time_type_relative_position import RelatedTimeTypeRelativePosition
+from bindings.csw.related_time_type_relative_position import (
+    RelatedTimeTypeRelativePosition,
+)
 from bindings.csw.relation import Relation
-from bindings.csw.relative_internal_positional_accuracy import RelativeInternalPositionalAccuracy
-from bindings.csw.relative_internal_positional_accuracy_type import RelativeInternalPositionalAccuracyType
+from bindings.csw.relative_internal_positional_accuracy import (
+    RelativeInternalPositionalAccuracy,
+)
+from bindings.csw.relative_internal_positional_accuracy_type import (
+    RelativeInternalPositionalAccuracyType,
+)
 from bindings.csw.remarks import Remarks
 from bindings.csw.replaces import Replaces
 from bindings.csw.request_base_type import RequestBaseType
@@ -943,7 +989,9 @@ from bindings.csw.ring_2 import Ring2
 from bindings.csw.ring_property_type import RingPropertyType
 from bindings.csw.ring_type import RingType
 from bindings.csw.role import Role
-from bindings.csw.rough_conversion_to_preferred_unit import RoughConversionToPreferredUnit
+from bindings.csw.rough_conversion_to_preferred_unit import (
+    RoughConversionToPreferredUnit,
+)
 from bindings.csw.row_index import RowIndex
 from bindings.csw.scalar_capabilities_type import ScalarCapabilitiesType
 from bindings.csw.scalar_value_property_type import ScalarValuePropertyType
@@ -1061,7 +1109,9 @@ from bindings.csw.time_clock_type import TimeClockType
 from bindings.csw.time_complex import TimeComplex
 from bindings.csw.time_coordinate_system import TimeCoordinateSystem
 from bindings.csw.time_coordinate_system_type import TimeCoordinateSystemType
-from bindings.csw.time_geometric_primitive_property_type import TimeGeometricPrimitivePropertyType
+from bindings.csw.time_geometric_primitive_property_type import (
+    TimeGeometricPrimitivePropertyType,
+)
 from bindings.csw.time_indeterminate_value_type import TimeIndeterminateValueType
 from bindings.csw.time_interval import TimeInterval
 from bindings.csw.time_interval_length_type import TimeIntervalLengthType
@@ -1072,15 +1122,21 @@ from bindings.csw.time_ordinal_era_type import (
     TimeOrdinalEraType,
 )
 from bindings.csw.time_ordinal_reference_system import TimeOrdinalReferenceSystem
-from bindings.csw.time_ordinal_reference_system_type import TimeOrdinalReferenceSystemType
+from bindings.csw.time_ordinal_reference_system_type import (
+    TimeOrdinalReferenceSystemType,
+)
 from bindings.csw.time_position import TimePosition
 from bindings.csw.time_position_type import TimePositionType
 from bindings.csw.time_reference_system import TimeReferenceSystem
 from bindings.csw.time_slice import TimeSlice
 from bindings.csw.time_topology_complex import TimeTopologyComplex
-from bindings.csw.time_topology_complex_property_type import TimeTopologyComplexPropertyType
+from bindings.csw.time_topology_complex_property_type import (
+    TimeTopologyComplexPropertyType,
+)
 from bindings.csw.time_topology_complex_type import TimeTopologyComplexType
-from bindings.csw.time_topology_primitive_property_type import TimeTopologyPrimitivePropertyType
+from bindings.csw.time_topology_primitive_property_type import (
+    TimeTopologyPrimitivePropertyType,
+)
 from bindings.csw.time_type import TimeType
 from bindings.csw.time_unit_type_value import TimeUnitTypeValue
 from bindings.csw.tin import Tin
@@ -1107,7 +1163,9 @@ from bindings.csw.topo_point_property import TopoPointProperty
 from bindings.csw.topo_point_property_type import TopoPointPropertyType
 from bindings.csw.topo_point_type import TopoPointType
 from bindings.csw.topo_primitive import TopoPrimitive
-from bindings.csw.topo_primitive_array_association_type import TopoPrimitiveArrayAssociationType
+from bindings.csw.topo_primitive_array_association_type import (
+    TopoPrimitiveArrayAssociationType,
+)
 from bindings.csw.topo_primitive_member import TopoPrimitiveMember
 from bindings.csw.topo_primitive_member_type import TopoPrimitiveMemberType
 from bindings.csw.topo_primitive_members import TopoPrimitiveMembers
@@ -1137,7 +1195,9 @@ from bindings.csw.transformation_ref import TransformationRef
 from bindings.csw.transformation_ref_type import TransformationRefType
 from bindings.csw.transformation_type import TransformationType
 from bindings.csw.triangle import Triangle
-from bindings.csw.triangle_patch_array_property_type import TrianglePatchArrayPropertyType
+from bindings.csw.triangle_patch_array_property_type import (
+    TrianglePatchArrayPropertyType,
+)
 from bindings.csw.triangle_patches import TrianglePatches
 from bindings.csw.triangle_type import TriangleType
 from bindings.csw.triangulated_surface import TriangulatedSurface

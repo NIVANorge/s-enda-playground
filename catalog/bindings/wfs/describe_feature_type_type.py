@@ -14,12 +14,12 @@ class DescribeFeatureTypeType(BaseRequestType):
             "name": "TypeName",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     output_format: str = field(
         default="application/gml+xml; version=3.2",
         metadata={
             "name": "outputFormat",
             "type": "Attribute",
-        }
+        },
     )

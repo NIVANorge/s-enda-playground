@@ -12,6 +12,7 @@ class PolarCs(PolarCstype):
 
     A PolarCS shall have two gml:axis property elements.
     """
+
     class Meta:
         name = "PolarCS"
         namespace = "http://www.opengis.net/gml"

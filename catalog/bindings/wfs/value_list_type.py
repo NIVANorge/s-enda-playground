@@ -14,5 +14,5 @@ class ValueListType:
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
             "min_occurs": 1,
-        }
+        },
     )

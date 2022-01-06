@@ -19,5 +19,6 @@ class MultiSolidCoverage(MultiSolidCoverageType):
     -       For gml:CompositeValue encodings the solids of the gml:MultiSolid are mapped to the members of the composite value in document order.
     -       For gml:File encodings the solids of the gml:MultiSolid are mapped to the records of the file in sequential order.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

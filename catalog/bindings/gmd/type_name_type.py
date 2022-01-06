@@ -13,6 +13,7 @@ class TypeNameType(AbstractObjectType):
 
     The stored value "aName" is the returned value for the "aName()" operation. This is the types name.  - For parsing from types (or objects) the parsible name normally uses a "." navigation separator, so that it is of the form  [class].[member].[memberOfMember]. ...)
     """
+
     class Meta:
         name = "TypeName_Type"
 
@@ -23,5 +24,5 @@ class TypeNameType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gco",
             "required": True,
-        }
+        },
     )

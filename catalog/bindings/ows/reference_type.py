@@ -27,13 +27,14 @@ class ReferenceType(AbstractReferenceBaseType):
         ReferenceType could be specified in the Implementation
         Specification for each use of this type in a specific OWS.
     """
+
     identifier: Optional[Identifier] = field(
         default=None,
         metadata={
             "name": "Identifier",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     abstract: List[Abstract] = field(
         default_factory=list,
@@ -41,7 +42,7 @@ class ReferenceType(AbstractReferenceBaseType):
             "name": "Abstract",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     format: Optional[str] = field(
         default=None,
@@ -50,7 +51,7 @@ class ReferenceType(AbstractReferenceBaseType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
             "pattern": r"(application|audio|image|text|video|message|multipart|model)/.+(;\s*.+=.+)*",
-        }
+        },
     )
     additional_parameters: List[AdditionalParameters] = field(
         default_factory=list,
@@ -58,7 +59,7 @@ class ReferenceType(AbstractReferenceBaseType):
             "name": "AdditionalParameters",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     metadata: List[Metadata] = field(
         default_factory=list,
@@ -66,5 +67,5 @@ class ReferenceType(AbstractReferenceBaseType):
             "name": "Metadata",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )

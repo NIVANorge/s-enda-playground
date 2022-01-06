@@ -13,6 +13,7 @@ class LineStringProperty(LineStringPropertyType):
     a line string via the XLink-attributes or contains the line string
     element.
     """
+
     class Meta:
         name = "lineStringProperty"
         namespace = "http://www.opengis.net/gml"

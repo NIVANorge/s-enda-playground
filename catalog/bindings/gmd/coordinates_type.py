@@ -23,27 +23,28 @@ class CoordinatesType:
     or arrays of tuples, including ones that contain mixed text and
     numeric values.
     """
+
     value: str = field(
         default="",
         metadata={
             "required": True,
-        }
+        },
     )
     decimal: str = field(
         default=".",
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     cs: str = field(
         default=",",
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     ts: str = field(
         default=" ",
         metadata={
             "type": "Attribute",
-        }
+        },
     )

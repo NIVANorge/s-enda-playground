@@ -11,6 +11,7 @@ class CoordType:
 
     Deprecated with GML 3.0 and replaced by DirectPositionType.
     """
+
     x: Optional[Decimal] = field(
         default=None,
         metadata={
@@ -18,7 +19,7 @@ class CoordType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     y: Optional[Decimal] = field(
         default=None,
@@ -26,7 +27,7 @@ class CoordType:
             "name": "Y",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     z: Optional[Decimal] = field(
         default=None,
@@ -34,5 +35,5 @@ class CoordType:
             "name": "Z",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

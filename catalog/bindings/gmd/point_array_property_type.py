@@ -13,17 +13,18 @@ class PointArrayPropertyType:
     referencing geometry elements or arrays of geometry elements via
     XLinks is not supported.
     """
+
     point: List[Point] = field(
         default_factory=list,
         metadata={
             "name": "Point",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

@@ -27,12 +27,13 @@ class ExtentType:
     :ivar temporal_extent: Unordered list of time periods whose union
         describes the spatial domain of this object.
     """
+
     description: Optional[Description1] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     bounding_box: List[BoundingBox2] = field(
         default_factory=list,
@@ -40,7 +41,7 @@ class ExtentType:
             "name": "boundingBox",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     bounding_polygon: List[BoundingPolygon] = field(
         default_factory=list,
@@ -48,7 +49,7 @@ class ExtentType:
             "name": "boundingPolygon",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     vertical_extent: List[VerticalExtent] = field(
         default_factory=list,
@@ -56,7 +57,7 @@ class ExtentType:
             "name": "verticalExtent",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     temporal_extent: List[TemporalExtent] = field(
         default_factory=list,
@@ -64,5 +65,5 @@ class ExtentType:
             "name": "temporalExtent",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

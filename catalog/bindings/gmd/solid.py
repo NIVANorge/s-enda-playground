@@ -12,5 +12,6 @@ class Solid(SolidType):
     specified in ISO 19107:2003, 6.3.18. exterior specifies the outer
     boundary, interior the inner boundary of the solid.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

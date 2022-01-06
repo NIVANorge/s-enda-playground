@@ -11,6 +11,7 @@ class PolygonPatches(PolygonPatchArrayPropertyType):
     The order of the patches is significant and shall be preserved when
     processing the list.
     """
+
     class Meta:
         name = "polygonPatches"
         namespace = "http://www.opengis.net/gml"

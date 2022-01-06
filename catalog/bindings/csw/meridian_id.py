@@ -9,6 +9,7 @@ class MeridianId(IdentifierType):
     """
     An identification of a prime meridian.
     """
+
     class Meta:
         name = "meridianID"
         namespace = "http://www.opengis.net/gml"

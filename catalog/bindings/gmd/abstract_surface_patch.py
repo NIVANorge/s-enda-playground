@@ -15,5 +15,6 @@ class AbstractSurfacePatch(AbstractSurfacePatchType):
     gml:AbstractSurfacePatchType) specifying the interpolation mechanism
     used for the patch using gml:SurfaceInterpolationType.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

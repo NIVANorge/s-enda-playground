@@ -17,6 +17,7 @@ class KeywordsType:
     thesaurusName element was omitted as being complex information that
     could be referenced by the codeSpace attribute of the Type element.
     """
+
     keyword: List[str] = field(
         default_factory=list,
         metadata={
@@ -24,7 +25,7 @@ class KeywordsType:
             "type": "Element",
             "namespace": "http://www.opengis.net/ows",
             "min_occurs": 1,
-        }
+        },
     )
     type: Optional[CodeType1] = field(
         default=None,
@@ -32,5 +33,5 @@ class KeywordsType:
             "name": "Type",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows",
-        }
+        },
     )

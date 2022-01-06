@@ -10,6 +10,7 @@ class Angle2(AngleType):
     The gml:angle property element is used to record the value of an angle
     quantity as a single number, with its units.
     """
+
     class Meta:
         name = "angle"
         namespace = "http://www.opengis.net/gml"

@@ -13,6 +13,7 @@ class AxisAbbrev(CodeType2):
     reference a source of more information on a set of standardized
     abbreviations, or on this abbreviation.
     """
+
     class Meta:
         name = "axisAbbrev"
         namespace = "http://www.opengis.net/gml"

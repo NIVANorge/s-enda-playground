@@ -13,6 +13,7 @@ class MultiPointProperty(MultiPointPropertyType):
     GML Application Schemas whenever a GML feature has a property with a
     value that is substitutable for MultiPoint.
     """
+
     class Meta:
         name = "multiPointProperty"
         namespace = "http://www.opengis.net/gml"

@@ -18,6 +18,7 @@ class SurfacePatchArrayPropertyType:
     """
     A container for an array of surface patches.
     """
+
     sphere: List[Sphere] = field(
         default_factory=list,
         metadata={
@@ -25,7 +26,7 @@ class SurfacePatchArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     cylinder: List[Cylinder] = field(
         default_factory=list,
@@ -34,7 +35,7 @@ class SurfacePatchArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     cone: List[Cone] = field(
         default_factory=list,
@@ -43,7 +44,7 @@ class SurfacePatchArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     gridded_surface: List[GriddedSurface] = field(
         default_factory=list,
@@ -52,7 +53,7 @@ class SurfacePatchArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     parametric_curve_surface: List[ParametricCurveSurface] = field(
         default_factory=list,
@@ -61,7 +62,7 @@ class SurfacePatchArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     rectangle: List[Rectangle] = field(
         default_factory=list,
@@ -70,7 +71,7 @@ class SurfacePatchArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     triangle: List[Triangle] = field(
         default_factory=list,
@@ -79,7 +80,7 @@ class SurfacePatchArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     polygon_patch: List[PolygonPatch] = field(
         default_factory=list,
@@ -88,7 +89,7 @@ class SurfacePatchArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     surface_patch: List[SurfacePatch] = field(
         default_factory=list,
@@ -97,5 +98,5 @@ class SurfacePatchArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )

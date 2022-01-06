@@ -11,5 +11,6 @@ class CircleByCenterPoint(CircleByCenterPointType):
 
     Again, this representation can be used only in 2D.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

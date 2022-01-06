@@ -9,6 +9,7 @@ class MethodId(IdentifierType):
     """
     An identification of an operation method.
     """
+
     class Meta:
         name = "methodID"
         namespace = "http://www.opengis.net/gml"

@@ -10,6 +10,7 @@ class TimeObject(AbstractTimeObjectType):
     This abstract element acts as the head of the substitution group for
     temporal primitives and complexes.
     """
+
     class Meta:
         name = "_TimeObject"
         namespace = "http://www.opengis.net/gml"

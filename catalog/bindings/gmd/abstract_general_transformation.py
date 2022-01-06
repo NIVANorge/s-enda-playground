@@ -1,5 +1,7 @@
 from dataclasses import dataclass
-from bindings.gmd.abstract_general_transformation_type import AbstractGeneralTransformationType
+from bindings.gmd.abstract_general_transformation_type import (
+    AbstractGeneralTransformationType,
+)
 
 __NAMESPACE__ = "http://www.opengis.net/gml"
 
@@ -31,5 +33,6 @@ class AbstractGeneralTransformation(AbstractGeneralTransformationType):
     "uses...Value" that each use the type of an element substitutable
     for the "AbstractGeneralParameterValue" element.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

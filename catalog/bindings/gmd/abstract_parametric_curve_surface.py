@@ -1,5 +1,7 @@
 from dataclasses import dataclass
-from bindings.gmd.abstract_parametric_curve_surface_type import AbstractParametricCurveSurfaceType
+from bindings.gmd.abstract_parametric_curve_surface_type import (
+    AbstractParametricCurveSurfaceType,
+)
 
 __NAMESPACE__ = "http://www.opengis.net/gml"
 
@@ -14,5 +16,6 @@ class AbstractParametricCurveSurface(AbstractParametricCurveSurfaceType):
     19107:2003, 6.4.40. If provided, the aggregationType attribute shall
     have the value “set”.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

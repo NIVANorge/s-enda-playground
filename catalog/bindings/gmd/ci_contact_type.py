@@ -15,6 +15,7 @@ class CiContactType(AbstractObjectType):
     Information required enabling contact with the  responsible person and/or
     organisation.
     """
+
     class Meta:
         name = "CI_Contact_Type"
 
@@ -23,14 +24,14 @@ class CiContactType(AbstractObjectType):
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     address: Optional[CiAddressPropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     online_resource: Optional[CiOnlineResourcePropertyType] = field(
         default=None,
@@ -38,7 +39,7 @@ class CiContactType(AbstractObjectType):
             "name": "onlineResource",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     hours_of_service: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -46,7 +47,7 @@ class CiContactType(AbstractObjectType):
             "name": "hoursOfService",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     contact_instructions: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -54,5 +55,5 @@ class CiContactType(AbstractObjectType):
             "name": "contactInstructions",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

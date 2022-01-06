@@ -9,6 +9,7 @@ class UsesTemporalCs(TemporalCsrefType):
     """
     Association to the temporal coordinate system used by this CRS.
     """
+
     class Meta:
         name = "usesTemporalCS"
         namespace = "http://www.opengis.net/gml"

@@ -15,6 +15,7 @@ class History(HistoryPropertyType):
     feature instance with a sequence of time slices (i.e. change events)
     that encapsulate the evolution of the feature.
     """
+
     class Meta:
         name = "history"
         namespace = "http://www.opengis.net/gml"

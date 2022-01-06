@@ -12,6 +12,7 @@ class SupportedCrs:
     specifications wherever applicable. More than one such parameter can
     be included for different purposes.
     """
+
     class Meta:
         name = "SupportedCRS"
         namespace = "http://www.opengis.net/ows/2.0"
@@ -20,5 +21,5 @@ class SupportedCrs:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )

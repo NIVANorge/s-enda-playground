@@ -16,7 +16,7 @@ class ElementType:
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
             "required": True,
-        }
+        },
     )
     value_list: Optional[ValueList] = field(
         default=None,
@@ -25,19 +25,19 @@ class ElementType:
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
             "required": True,
-        }
+        },
     )
     name: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
     type: Optional[QName] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )

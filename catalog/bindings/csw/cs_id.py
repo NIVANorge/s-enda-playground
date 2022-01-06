@@ -9,6 +9,7 @@ class CsId(IdentifierType):
     """
     An identification of a coordinate system.
     """
+
     class Meta:
         name = "csID"
         namespace = "http://www.opengis.net/gml"

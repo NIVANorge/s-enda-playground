@@ -11,6 +11,7 @@ class ShellPropertyType:
     A property with the content model of gml:ShellPropertyType encapsulates a
     shell to represent a component of a solid boundary.
     """
+
     shell: Optional[Shell] = field(
         default=None,
         metadata={
@@ -18,5 +19,5 @@ class ShellPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

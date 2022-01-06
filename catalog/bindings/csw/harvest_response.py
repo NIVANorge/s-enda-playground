@@ -21,5 +21,6 @@ class HarvestResponse(HarvestResponseType):
     include summary representations of the newly created catalogue
     item(s).
     """
+
     class Meta:
         namespace = "http://www.opengis.net/cat/csw/2.0.2"

@@ -14,6 +14,7 @@ class CodeType2:
     from which it is taken. A text string with an optional codeSpace
     attribute.
     """
+
     class Meta:
         name = "CodeType"
 
@@ -21,12 +22,12 @@ class CodeType2:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )
     code_space: Optional[str] = field(
         default=None,
         metadata={
             "name": "codeSpace",
             "type": "Attribute",
-        }
+        },
     )

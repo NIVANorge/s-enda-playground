@@ -11,6 +11,7 @@ class AbstractScalarValue:
     substitution group which contains gml:Boolean, gml:Category, gml:Count and
     gml:Quantity, and (transitively) the elements in their substitution groups.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"
 
@@ -19,5 +20,5 @@ class AbstractScalarValue:
         metadata={
             "type": "Wildcard",
             "namespace": "##any",
-        }
+        },
     )

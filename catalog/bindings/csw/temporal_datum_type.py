@@ -13,11 +13,12 @@ class TemporalDatumType(TemporalDatumBaseType):
     This type extends the TemporalDatumRestrictionType to add the
     "origin" element with the dateTime type.
     """
+
     origin: Optional[XmlDateTime] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

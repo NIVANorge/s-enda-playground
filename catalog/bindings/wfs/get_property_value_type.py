@@ -20,7 +20,7 @@ class GetPropertyValueType(BaseRequestType):
             "name": "StoredQuery",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     query: Optional[Query] = field(
         default=None,
@@ -28,7 +28,7 @@ class GetPropertyValueType(BaseRequestType):
             "name": "Query",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     abstract_adhoc_query_expression: Optional[AbstractAdhocQueryExpression] = field(
         default=None,
@@ -36,7 +36,7 @@ class GetPropertyValueType(BaseRequestType):
             "name": "AbstractAdhocQueryExpression",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     abstract_query_expression: Optional[AbstractQueryExpression] = field(
         default=None,
@@ -44,7 +44,7 @@ class GetPropertyValueType(BaseRequestType):
             "name": "AbstractQueryExpression",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     value_reference: Optional[str] = field(
         default=None,
@@ -52,59 +52,59 @@ class GetPropertyValueType(BaseRequestType):
             "name": "valueReference",
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
     resolve_path: Optional[str] = field(
         default=None,
         metadata={
             "name": "resolvePath",
             "type": "Attribute",
-        }
+        },
     )
     start_index: int = field(
         default=0,
         metadata={
             "name": "startIndex",
             "type": "Attribute",
-        }
+        },
     )
     count: Optional[int] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     result_type: ResultTypeType = field(
         default=ResultTypeType.RESULTS,
         metadata={
             "name": "resultType",
             "type": "Attribute",
-        }
+        },
     )
     output_format: str = field(
         default="application/gml+xml; version=3.2",
         metadata={
             "name": "outputFormat",
             "type": "Attribute",
-        }
+        },
     )
     resolve: ResolveValueType = field(
         default=ResolveValueType.NONE,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     resolve_depth: Union[int, StarStringType] = field(
         default=StarStringType.VALUE,
         metadata={
             "name": "resolveDepth",
             "type": "Attribute",
-        }
+        },
     )
     resolve_timeout: int = field(
         default=300,
         metadata={
             "name": "resolveTimeout",
             "type": "Attribute",
-        }
+        },
     )

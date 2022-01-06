@@ -18,13 +18,14 @@ class CurveArrayPropertyType:
     The elements are always contained in the array property, referencing
     geometry elements or arrays of geometry elements is not supported.
     """
+
     orientable_curve: List[OrientableCurve] = field(
         default_factory=list,
         metadata={
             "name": "OrientableCurve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     curve: List[Curve1] = field(
         default_factory=list,
@@ -32,7 +33,7 @@ class CurveArrayPropertyType:
             "name": "Curve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     composite_curve: List[CompositeCurve] = field(
         default_factory=list,
@@ -40,7 +41,7 @@ class CurveArrayPropertyType:
             "name": "CompositeCurve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     line_string: List[LineString] = field(
         default_factory=list,
@@ -48,7 +49,7 @@ class CurveArrayPropertyType:
             "name": "LineString",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     opengis_net_gml_curve: List[Curve2] = field(
         default_factory=list,
@@ -56,5 +57,5 @@ class CurveArrayPropertyType:
             "name": "_Curve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

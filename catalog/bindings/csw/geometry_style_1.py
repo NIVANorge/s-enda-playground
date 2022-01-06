@@ -9,6 +9,7 @@ class GeometryStyle1(GeometryStyleType):
     """
     The style descriptor for geometries of a feature.
     """
+
     class Meta:
         name = "GeometryStyle"
         namespace = "http://www.opengis.net/gml"

@@ -11,5 +11,6 @@ class CategoryList(CodeOrNullListType):
     A single XML attribute codeSpace may be provided, which authorises
     all the terms in the list.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

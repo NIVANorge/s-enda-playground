@@ -15,5 +15,5 @@ class GetCapabilitiesType2(GetCapabilitiesType1):
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )

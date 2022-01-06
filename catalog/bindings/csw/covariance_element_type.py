@@ -9,6 +9,7 @@ class CovarianceElementType:
     """
     An element of a covariance matrix.
     """
+
     row_index: Optional[int] = field(
         default=None,
         metadata={
@@ -16,7 +17,7 @@ class CovarianceElementType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     column_index: Optional[int] = field(
         default=None,
@@ -25,7 +26,7 @@ class CovarianceElementType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     covariance: Optional[float] = field(
         default=None,
@@ -33,5 +34,5 @@ class CovarianceElementType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

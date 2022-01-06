@@ -20,6 +20,7 @@ class DomainSet(DomainSetType):
     alternative to describing the domain inline. Ownership semantics may
     be provided using the gml:OwnershipAttributeGroup.
     """
+
     class Meta:
         name = "domainSet"
         namespace = "http://www.opengis.net/gml"

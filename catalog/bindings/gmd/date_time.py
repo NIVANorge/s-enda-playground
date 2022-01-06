@@ -14,5 +14,5 @@ class DateTime:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )

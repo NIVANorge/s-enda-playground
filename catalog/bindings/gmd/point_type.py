@@ -1,6 +1,8 @@
 from dataclasses import dataclass, field
 from typing import Optional
-from bindings.gmd.abstract_geometric_primitive_type import AbstractGeometricPrimitiveType
+from bindings.gmd.abstract_geometric_primitive_type import (
+    AbstractGeometricPrimitiveType,
+)
 from bindings.gmd.coordinates import Coordinates
 from bindings.gmd.pos import Pos
 
@@ -14,12 +16,12 @@ class PointType(AbstractGeometricPrimitiveType):
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     coordinates: Optional[Coordinates] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

@@ -15,6 +15,7 @@ class DqQuantitativeResultType(AbstractDqResultType):
 
     -  - Renamed to remove implied use limitation -  - OCL - -- result is type specified by valueDomain - result.tupleType = valueDomain
     """
+
     class Meta:
         name = "DQ_QuantitativeResult_Type"
 
@@ -24,7 +25,7 @@ class DqQuantitativeResultType(AbstractDqResultType):
             "name": "valueType",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     value_unit: Optional[UnitOfMeasurePropertyType] = field(
         default=None,
@@ -33,7 +34,7 @@ class DqQuantitativeResultType(AbstractDqResultType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     error_statistic: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -41,7 +42,7 @@ class DqQuantitativeResultType(AbstractDqResultType):
             "name": "errorStatistic",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     value: List[RecordPropertyType] = field(
         default_factory=list,
@@ -49,5 +50,5 @@ class DqQuantitativeResultType(AbstractDqResultType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "min_occurs": 1,
-        }
+        },
     )

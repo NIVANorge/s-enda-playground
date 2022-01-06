@@ -12,5 +12,5 @@ class ExtensionOperatorType:
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )

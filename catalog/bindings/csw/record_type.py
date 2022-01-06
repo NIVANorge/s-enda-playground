@@ -14,13 +14,14 @@ class RecordType(DcmirecordType):
     This type extends DCMIRecordType to add ows:BoundingBox; it may be used to
     specify a spatial envelope for the catalogued resource.
     """
+
     any_text: List[EmptyType] = field(
         default_factory=list,
         metadata={
             "name": "AnyText",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     wgs84_bounding_box: List[Wgs84BoundingBox] = field(
         default_factory=list,
@@ -28,7 +29,7 @@ class RecordType(DcmirecordType):
             "name": "WGS84BoundingBox",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows",
-        }
+        },
     )
     bounding_box: List[BoundingBox1] = field(
         default_factory=list,
@@ -36,5 +37,5 @@ class RecordType(DcmirecordType):
             "name": "BoundingBox",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows",
-        }
+        },
     )

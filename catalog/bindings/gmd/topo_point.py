@@ -11,5 +11,6 @@ class TopoPoint(TopoPointType):
     express the structural and possibly geometric relationships of this feature
     to other features via shared node definitions.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

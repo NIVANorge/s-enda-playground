@@ -25,17 +25,18 @@ class SolidType(AbstractSolidType):
     :ivar interior: Boundaries of solids are similar to surface
         boundaries.
     """
+
     exterior: Optional[SurfacePropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     interior: List[SurfacePropertyType] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

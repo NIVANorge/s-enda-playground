@@ -9,6 +9,7 @@ class BoundingBox2(EnvelopeType):
     """
     A bounding box (or envelope) defining the spatial domain of this object.
     """
+
     class Meta:
         name = "boundingBox"
         namespace = "http://www.opengis.net/gml"

@@ -10,6 +10,7 @@ class MetaData2(AbstractMetaDataType):
     Abstract element which acts as the head of a substitution group for
     packages of MetaData properties.
     """
+
     class Meta:
         name = "_MetaData"
         namespace = "http://www.opengis.net/gml"

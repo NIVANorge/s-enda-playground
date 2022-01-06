@@ -9,6 +9,7 @@ class ValueOfParameter(OperationParameterRefType):
     """
     Association to the operation parameter that this is a value of.
     """
+
     class Meta:
         name = "valueOfParameter"
         namespace = "http://www.opengis.net/gml"

@@ -7,5 +7,6 @@ class SignType(Enum):
     """
     gml:SignType is a convenience type with values “+” (plus) and “-“ (minus).
     """
+
     VALUE = "-"
     VALUE_1 = "+"

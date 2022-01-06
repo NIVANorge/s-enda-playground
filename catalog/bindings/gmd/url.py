@@ -13,5 +13,5 @@ class Url:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )

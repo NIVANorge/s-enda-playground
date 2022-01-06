@@ -16,7 +16,7 @@ class EllipsoidType(IdentifiedObjectType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     second_defining_parameter: Optional[SecondDefiningParameter2] = field(
         default=None,
@@ -25,5 +25,5 @@ class EllipsoidType(IdentifiedObjectType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

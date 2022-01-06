@@ -12,10 +12,11 @@ class DistributedSearchType:
     decrements this value when the request is received,
     and must not forward the request if hopCount=0.
     """
+
     hop_count: int = field(
         default=2,
         metadata={
             "name": "hopCount",
             "type": "Attribute",
-        }
+        },
     )

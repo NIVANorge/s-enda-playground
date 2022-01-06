@@ -10,6 +10,7 @@ class KnotPropertyType:
     """
     Encapsulates a knot to use it in a geometric type.
     """
+
     knot: Optional[KnotType] = field(
         default=None,
         metadata={
@@ -17,5 +18,5 @@ class KnotPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

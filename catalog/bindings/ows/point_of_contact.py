@@ -18,5 +18,6 @@ class PointOfContact(ResponsiblePartyType):
     optional, since no clear use of this information is known in the
     ServiceProvider section.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/2.0"

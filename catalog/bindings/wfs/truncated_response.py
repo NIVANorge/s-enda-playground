@@ -18,5 +18,5 @@ class TruncatedResponse:
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
             "required": True,
-        }
+        },
     )

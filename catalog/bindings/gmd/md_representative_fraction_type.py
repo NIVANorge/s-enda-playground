@@ -17,5 +17,5 @@ class MdRepresentativeFractionType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )

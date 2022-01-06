@@ -17,5 +17,6 @@ class UnitDefinition(UnitDefinitionType):
     when the relationship of this unit to other units or units systems
     is unknown.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

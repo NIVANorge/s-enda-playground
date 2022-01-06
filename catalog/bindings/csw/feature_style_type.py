@@ -14,13 +14,14 @@ class FeatureStyleType(AbstractGmltype):
     """
     [complexType of] The style descriptor for features.
     """
+
     feature_constraint: Optional[str] = field(
         default=None,
         metadata={
             "name": "featureConstraint",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     geometry_style: List[GeometryStyle2] = field(
         default_factory=list,
@@ -28,7 +29,7 @@ class FeatureStyleType(AbstractGmltype):
             "name": "geometryStyle",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     topology_style: List[TopologyStyle2] = field(
         default_factory=list,
@@ -36,7 +37,7 @@ class FeatureStyleType(AbstractGmltype):
             "name": "topologyStyle",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     label_style: Optional[LabelStyle2] = field(
         default=None,
@@ -44,26 +45,26 @@ class FeatureStyleType(AbstractGmltype):
             "name": "labelStyle",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     feature_type: Optional[str] = field(
         default=None,
         metadata={
             "name": "featureType",
             "type": "Attribute",
-        }
+        },
     )
     base_type: Optional[str] = field(
         default=None,
         metadata={
             "name": "baseType",
             "type": "Attribute",
-        }
+        },
     )
     query_grammar: Optional[QueryGrammarEnumeration] = field(
         default=None,
         metadata={
             "name": "queryGrammar",
             "type": "Attribute",
-        }
+        },
     )

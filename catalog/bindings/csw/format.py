@@ -15,6 +15,7 @@ class Format(SimpleLiteral):
     is to select a value from a controlled vocabulary (for example, the
     list of Internet Media Types defining computer media formats).
     """
+
     class Meta:
         name = "format"
         namespace = "http://purl.org/dc/elements/1.1/"

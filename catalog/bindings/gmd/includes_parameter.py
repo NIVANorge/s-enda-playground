@@ -1,5 +1,7 @@
 from dataclasses import dataclass
-from bindings.gmd.abstract_general_operation_parameter_property_type import AbstractGeneralOperationParameterPropertyType
+from bindings.gmd.abstract_general_operation_parameter_property_type import (
+    AbstractGeneralOperationParameterPropertyType,
+)
 
 __NAMESPACE__ = "http://www.opengis.net/gml"
 

@@ -14,13 +14,14 @@ class CoverageFunctionType:
 
     More functions will be added to this list
     """
+
     mapping_rule: Optional[MappingRule] = field(
         default=None,
         metadata={
             "name": "MappingRule",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     index_map: Optional[IndexMap] = field(
         default=None,
@@ -28,7 +29,7 @@ class CoverageFunctionType:
             "name": "IndexMap",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     grid_function: Optional[GridFunction] = field(
         default=None,
@@ -36,5 +37,5 @@ class CoverageFunctionType:
             "name": "GridFunction",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

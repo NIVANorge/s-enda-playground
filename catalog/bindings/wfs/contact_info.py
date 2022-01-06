@@ -9,5 +9,6 @@ class ContactInfo(ContactType):
     """
     Address of the responsible party.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/1.1"

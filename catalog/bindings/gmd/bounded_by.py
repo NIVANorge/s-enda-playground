@@ -10,6 +10,7 @@ class BoundedBy(BoundingShapeType):
     This property describes the minimum bounding box or rectangle that encloses
     the entire feature.
     """
+
     class Meta:
         name = "boundedBy"
         nillable = True

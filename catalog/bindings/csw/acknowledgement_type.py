@@ -16,6 +16,7 @@ class AcknowledgementType:
     handler is available, or the URL scheme is
     unsupported)
     """
+
     echoed_request: Optional[EchoedRequestType] = field(
         default=None,
         metadata={
@@ -23,7 +24,7 @@ class AcknowledgementType:
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
             "required": True,
-        }
+        },
     )
     request_id: Optional[str] = field(
         default=None,
@@ -31,7 +32,7 @@ class AcknowledgementType:
             "name": "RequestId",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     time_stamp: Optional[XmlDateTime] = field(
         default=None,
@@ -39,5 +40,5 @@ class AcknowledgementType:
             "name": "timeStamp",
             "type": "Attribute",
             "required": True,
-        }
+        },
     )

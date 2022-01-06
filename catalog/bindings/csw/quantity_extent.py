@@ -10,5 +10,6 @@ class QuantityExtent(QuantityExtentType):
 
     If one member is a null, then this is a single ended interval.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

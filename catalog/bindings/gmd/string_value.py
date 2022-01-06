@@ -9,6 +9,7 @@ class StringValue:
 
     A string value does not have an associated unit of measure.
     """
+
     class Meta:
         name = "stringValue"
         namespace = "http://www.opengis.net/gml"
@@ -17,5 +18,5 @@ class StringValue:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )

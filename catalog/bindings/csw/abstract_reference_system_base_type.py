@@ -22,20 +22,21 @@ class AbstractReferenceSystemBaseType:
     Basic encoding for reference system objects, simplifying and restricting
     the DefinitionType as needed.
     """
+
     meta_data_property: List[MetaDataProperty] = field(
         default_factory=list,
         metadata={
             "name": "metaDataProperty",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     description: Optional[Description1] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     group_name: List[GroupName] = field(
         default_factory=list,
@@ -43,7 +44,7 @@ class AbstractReferenceSystemBaseType:
             "name": "groupName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     parameter_name: List[ParameterName] = field(
         default_factory=list,
@@ -51,7 +52,7 @@ class AbstractReferenceSystemBaseType:
             "name": "parameterName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     method_name: List[MethodName] = field(
         default_factory=list,
@@ -59,7 +60,7 @@ class AbstractReferenceSystemBaseType:
             "name": "methodName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     coordinate_operation_name: List[CoordinateOperationName] = field(
         default_factory=list,
@@ -67,7 +68,7 @@ class AbstractReferenceSystemBaseType:
             "name": "coordinateOperationName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     ellipsoid_name: List[EllipsoidName] = field(
         default_factory=list,
@@ -75,7 +76,7 @@ class AbstractReferenceSystemBaseType:
             "name": "ellipsoidName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     meridian_name: List[MeridianName] = field(
         default_factory=list,
@@ -83,7 +84,7 @@ class AbstractReferenceSystemBaseType:
             "name": "meridianName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     datum_name: List[DatumName] = field(
         default_factory=list,
@@ -91,7 +92,7 @@ class AbstractReferenceSystemBaseType:
             "name": "datumName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     cs_name: List[CsName] = field(
         default_factory=list,
@@ -99,7 +100,7 @@ class AbstractReferenceSystemBaseType:
             "name": "csName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     srs_name: Optional[SrsName] = field(
         default=None,
@@ -108,14 +109,14 @@ class AbstractReferenceSystemBaseType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     name: List[Name] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     id: Optional[str] = field(
         default=None,
@@ -123,5 +124,5 @@ class AbstractReferenceSystemBaseType:
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

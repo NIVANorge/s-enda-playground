@@ -13,5 +13,5 @@ class AbstractGeometricAggregateType(AbstractGeometryType):
         metadata={
             "name": "aggregationType",
             "type": "Attribute",
-        }
+        },
     )

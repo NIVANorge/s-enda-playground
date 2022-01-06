@@ -20,14 +20,14 @@ class AbstractGmltype:
             "name": "metaDataProperty",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     description: Optional[Description] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     description_reference: Optional[DescriptionReference] = field(
         default=None,
@@ -35,21 +35,21 @@ class AbstractGmltype:
             "name": "descriptionReference",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     identifier: Optional[Identifier] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     name: List[Name] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     id: Optional[str] = field(
         default=None,
@@ -57,5 +57,5 @@ class AbstractGmltype:
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

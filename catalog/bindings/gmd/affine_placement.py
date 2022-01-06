@@ -10,5 +10,6 @@ class AffinePlacement(AffinePlacementType):
     location, refDirection, inDimension and outDimension have the same meaning
     as specified in ISO 19107:2003, 6.4.21.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

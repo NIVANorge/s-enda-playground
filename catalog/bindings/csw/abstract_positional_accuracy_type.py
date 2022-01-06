@@ -10,11 +10,12 @@ class AbstractPositionalAccuracyType:
     """
     Position error estimate (or accuracy) data.
     """
+
     measure_description: Optional[MeasureDescription] = field(
         default=None,
         metadata={
             "name": "measureDescription",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

@@ -11,6 +11,7 @@ class ExTemporalExtentType(AbstractObjectType):
     """
     Time period covered by the content of the dataset.
     """
+
     class Meta:
         name = "EX_TemporalExtent_Type"
 
@@ -20,5 +21,5 @@ class ExTemporalExtentType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )

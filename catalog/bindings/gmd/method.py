@@ -10,6 +10,7 @@ class Method(OperationMethodPropertyType):
     gml:method is an association role to the operation method used by a
     coordinate operation.
     """
+
     class Meta:
         name = "method"
         namespace = "http://www.opengis.net/gml"

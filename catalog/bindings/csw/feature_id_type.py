@@ -12,5 +12,5 @@ class FeatureIdType(AbstractIdType):
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )

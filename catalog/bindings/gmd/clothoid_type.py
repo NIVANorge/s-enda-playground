@@ -17,7 +17,7 @@ class ClothoidType(AbstractCurveSegmentType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     scale_factor: Optional[Decimal] = field(
         default=None,
@@ -26,7 +26,7 @@ class ClothoidType(AbstractCurveSegmentType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     start_parameter: Optional[float] = field(
         default=None,
@@ -35,7 +35,7 @@ class ClothoidType(AbstractCurveSegmentType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     end_parameter: Optional[float] = field(
         default=None,
@@ -44,14 +44,14 @@ class ClothoidType(AbstractCurveSegmentType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     interpolation: CurveInterpolationType = field(
         init=False,
         default=CurveInterpolationType.CLOTHOID,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
 
     @dataclass
@@ -63,5 +63,5 @@ class ClothoidType(AbstractCurveSegmentType):
                 "type": "Element",
                 "namespace": "http://www.opengis.net/gml",
                 "required": True,
-            }
+            },
         )

@@ -13,6 +13,7 @@ class StyleType(AbstractStyleType):
 
     Encapsulates all other styling information.
     """
+
     feature_style: List[FeatureStyle2] = field(
         default_factory=list,
         metadata={
@@ -20,7 +21,7 @@ class StyleType(AbstractStyleType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 1,
-        }
+        },
     )
     graph_style: Optional[GraphStyle2] = field(
         default=None,
@@ -28,5 +29,5 @@ class StyleType(AbstractStyleType):
             "name": "graphStyle",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

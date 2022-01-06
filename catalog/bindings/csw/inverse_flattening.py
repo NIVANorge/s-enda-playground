@@ -13,6 +13,7 @@ class InverseFlattening(MeasureType):
     referenced by uom must be suitable for a scale factor, such as
     percent, permil, or parts-per-million.
     """
+
     class Meta:
         name = "inverseFlattening"
         namespace = "http://www.opengis.net/gml"

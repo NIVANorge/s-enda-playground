@@ -12,5 +12,5 @@ class CharacterString:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )

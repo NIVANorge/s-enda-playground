@@ -1,7 +1,11 @@
 from dataclasses import dataclass, field
 from typing import List, Optional
-from bindings.csw.absolute_external_positional_accuracy import AbsoluteExternalPositionalAccuracy
-from bindings.csw.abstract_coordinate_operation_base_type import AbstractCoordinateOperationBaseType
+from bindings.csw.absolute_external_positional_accuracy import (
+    AbsoluteExternalPositionalAccuracy,
+)
+from bindings.csw.abstract_coordinate_operation_base_type import (
+    AbstractCoordinateOperationBaseType,
+)
 from bindings.csw.abstract_reference_system_type import AbstractReferenceSystemType
 from bindings.csw.actuate_type import ActuateType
 from bindings.csw.coordinate_operation_id import CoordinateOperationId
@@ -14,7 +18,9 @@ from bindings.csw.geocentric_crs import GeocentricCrs
 from bindings.csw.geographic_crs import GeographicCrs
 from bindings.csw.image_crs import ImageCrs
 from bindings.csw.positional_accuracy import PositionalAccuracy
-from bindings.csw.relative_internal_positional_accuracy import RelativeInternalPositionalAccuracy
+from bindings.csw.relative_internal_positional_accuracy import (
+    RelativeInternalPositionalAccuracy,
+)
 from bindings.csw.remarks import Remarks
 from bindings.csw.show_type import ShowType
 from bindings.csw.temporal_crs import TemporalCrs
@@ -35,13 +41,14 @@ class GeneralConversionRefType:
     Association to a general conversion, either referencing or containing the
     definition of that conversion.
     """
+
     conversion: Optional["Conversion"] = field(
         default=None,
         metadata={
             "name": "Conversion",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     general_conversion: Optional["GeneralConversion"] = field(
         default=None,
@@ -49,7 +56,7 @@ class GeneralConversionRefType:
             "name": "_GeneralConversion",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: TypeType = field(
         init=False,
@@ -57,14 +64,14 @@ class GeneralConversionRefType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
@@ -72,7 +79,7 @@ class GeneralConversionRefType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
@@ -80,28 +87,28 @@ class GeneralConversionRefType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -109,7 +116,7 @@ class GeneralConversionRefType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
 
 
@@ -118,6 +125,7 @@ class DefinedByConversion(GeneralConversionRefType):
     """
     Association to the coordinate conversion used to define this derived CRS.
     """
+
     class Meta:
         name = "definedByConversion"
         namespace = "http://www.opengis.net/gml"
@@ -133,6 +141,7 @@ class AbstractGeneralDerivedCrstype(AbstractReferenceSystemType):
     with a meaning equivalent to a concrete subtype specified in this
     document.
     """
+
     class Meta:
         name = "AbstractGeneralDerivedCRSType"
 
@@ -143,7 +152,7 @@ class AbstractGeneralDerivedCrstype(AbstractReferenceSystemType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     defined_by_conversion: Optional[DefinedByConversion] = field(
         default=None,
@@ -152,7 +161,7 @@ class AbstractGeneralDerivedCrstype(AbstractReferenceSystemType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
 
 
@@ -165,6 +174,7 @@ class DerivedCrstype1(AbstractGeneralDerivedCrstype):
     This category includes coordinate reference systems derived from a
     projected coordinate reference system.
     """
+
     class Meta:
         name = "DerivedCRSType"
 
@@ -175,7 +185,7 @@ class DerivedCrstype1(AbstractGeneralDerivedCrstype):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     uses_cs: Optional[UsesCs] = field(
         default=None,
@@ -184,7 +194,7 @@ class DerivedCrstype1(AbstractGeneralDerivedCrstype):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
 
 
@@ -198,6 +208,7 @@ class ProjectedCrstype(AbstractGeneralDerivedCrstype):
     distances to produce values that are a close match to actual field
     values.
     """
+
     class Meta:
         name = "ProjectedCRSType"
 
@@ -208,7 +219,7 @@ class ProjectedCrstype(AbstractGeneralDerivedCrstype):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
 
 
@@ -239,13 +250,14 @@ class CoordinateReferenceSystemRefType:
     Association to a coordinate reference system, either referencing or
     containing the definition of that reference system.
     """
+
     temporal_crs: Optional[TemporalCrs] = field(
         default=None,
         metadata={
             "name": "TemporalCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     image_crs: Optional[ImageCrs] = field(
         default=None,
@@ -253,7 +265,7 @@ class CoordinateReferenceSystemRefType:
             "name": "ImageCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     engineering_crs: Optional[EngineeringCrs] = field(
         default=None,
@@ -261,7 +273,7 @@ class CoordinateReferenceSystemRefType:
             "name": "EngineeringCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     derived_crs: Optional[DerivedCrs] = field(
         default=None,
@@ -269,7 +281,7 @@ class CoordinateReferenceSystemRefType:
             "name": "DerivedCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     projected_crs: Optional[ProjectedCrs] = field(
         default=None,
@@ -277,7 +289,7 @@ class CoordinateReferenceSystemRefType:
             "name": "ProjectedCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     general_derived_crs: Optional[GeneralDerivedCrs] = field(
         default=None,
@@ -285,7 +297,7 @@ class CoordinateReferenceSystemRefType:
             "name": "_GeneralDerivedCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     geocentric_crs: Optional[GeocentricCrs] = field(
         default=None,
@@ -293,7 +305,7 @@ class CoordinateReferenceSystemRefType:
             "name": "GeocentricCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     vertical_crs: Optional[VerticalCrs] = field(
         default=None,
@@ -301,7 +313,7 @@ class CoordinateReferenceSystemRefType:
             "name": "VerticalCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     geographic_crs: Optional[GeographicCrs] = field(
         default=None,
@@ -309,7 +321,7 @@ class CoordinateReferenceSystemRefType:
             "name": "GeographicCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     coordinate_reference_system: Optional[CoordinateReferenceSystem] = field(
         default=None,
@@ -317,7 +329,7 @@ class CoordinateReferenceSystemRefType:
             "name": "_CoordinateReferenceSystem",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: TypeType = field(
         init=False,
@@ -325,14 +337,14 @@ class CoordinateReferenceSystemRefType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
@@ -340,7 +352,7 @@ class CoordinateReferenceSystemRefType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
@@ -348,28 +360,28 @@ class CoordinateReferenceSystemRefType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -377,7 +389,7 @@ class CoordinateReferenceSystemRefType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
 
 
@@ -386,6 +398,7 @@ class BaseCrs(CoordinateReferenceSystemRefType):
     """
     Association to the coordinate reference system used by this derived CRS.
     """
+
     class Meta:
         name = "baseCRS"
         namespace = "http://www.opengis.net/gml"
@@ -397,6 +410,7 @@ class IncludesCrs(CoordinateReferenceSystemRefType):
     An association to a component coordinate reference system included in this
     compound coordinate reference system.
     """
+
     class Meta:
         name = "includesCRS"
         namespace = "http://www.opengis.net/gml"
@@ -412,6 +426,7 @@ class CompoundCrstype(AbstractReferenceSystemType):
         component coordinate reference systems included in this compound
         coordinate reference system.
     """
+
     class Meta:
         name = "CompoundCRSType"
 
@@ -422,7 +437,7 @@ class CompoundCrstype(AbstractReferenceSystemType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 2,
-        }
+        },
     )
 
 
@@ -439,6 +454,7 @@ class CrsrefType:
     Association to a CRS abstract coordinate reference system, either
     referencing or containing the definition of that CRS.
     """
+
     class Meta:
         name = "CRSRefType"
 
@@ -448,7 +464,7 @@ class CrsrefType:
             "name": "CompoundCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     temporal_crs: Optional[TemporalCrs] = field(
         default=None,
@@ -456,7 +472,7 @@ class CrsrefType:
             "name": "TemporalCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     image_crs: Optional[ImageCrs] = field(
         default=None,
@@ -464,7 +480,7 @@ class CrsrefType:
             "name": "ImageCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     engineering_crs: Optional[EngineeringCrs] = field(
         default=None,
@@ -472,7 +488,7 @@ class CrsrefType:
             "name": "EngineeringCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     derived_crs: Optional[DerivedCrs] = field(
         default=None,
@@ -480,7 +496,7 @@ class CrsrefType:
             "name": "DerivedCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     projected_crs: Optional[ProjectedCrs] = field(
         default=None,
@@ -488,7 +504,7 @@ class CrsrefType:
             "name": "ProjectedCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     general_derived_crs: Optional[GeneralDerivedCrs] = field(
         default=None,
@@ -496,7 +512,7 @@ class CrsrefType:
             "name": "_GeneralDerivedCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     geocentric_crs: Optional[GeocentricCrs] = field(
         default=None,
@@ -504,7 +520,7 @@ class CrsrefType:
             "name": "GeocentricCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     vertical_crs: Optional[VerticalCrs] = field(
         default=None,
@@ -512,7 +528,7 @@ class CrsrefType:
             "name": "VerticalCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     geographic_crs: Optional[GeographicCrs] = field(
         default=None,
@@ -520,7 +536,7 @@ class CrsrefType:
             "name": "GeographicCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     coordinate_reference_system: Optional[CoordinateReferenceSystem] = field(
         default=None,
@@ -528,7 +544,7 @@ class CrsrefType:
             "name": "_CoordinateReferenceSystem",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     crs: Optional[Crs] = field(
         default=None,
@@ -536,7 +552,7 @@ class CrsrefType:
             "name": "_CRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: TypeType = field(
         init=False,
@@ -544,14 +560,14 @@ class CrsrefType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
@@ -559,7 +575,7 @@ class CrsrefType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
@@ -567,28 +583,28 @@ class CrsrefType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -596,7 +612,7 @@ class CrsrefType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
 
 
@@ -606,6 +622,7 @@ class SourceCrs(CrsrefType):
     Association to the source CRS (coordinate reference system) of this
     coordinate operation.
     """
+
     class Meta:
         name = "sourceCRS"
         namespace = "http://www.opengis.net/gml"
@@ -620,6 +637,7 @@ class TargetCrs(CrsrefType):
     UML model of Coordinate Operation package in OGC Abstract
     Specification topic 2.
     """
+
     class Meta:
         name = "targetCRS"
         namespace = "http://www.opengis.net/gml"
@@ -659,20 +677,21 @@ class AbstractCoordinateOperationType(AbstractCoordinateOperationBaseType):
     :ivar source_crs:
     :ivar target_crs:
     """
+
     coordinate_operation_id: List[CoordinateOperationId] = field(
         default_factory=list,
         metadata={
             "name": "coordinateOperationID",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     remarks: Optional[Remarks] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     operation_version: Optional[str] = field(
         default=None,
@@ -680,7 +699,7 @@ class AbstractCoordinateOperationType(AbstractCoordinateOperationBaseType):
             "name": "operationVersion",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     valid_area: Optional[ValidArea] = field(
         default=None,
@@ -688,14 +707,14 @@ class AbstractCoordinateOperationType(AbstractCoordinateOperationBaseType):
             "name": "validArea",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     scope: Optional[str] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     covariance_matrix: List[CovarianceMatrix] = field(
         default_factory=list,
@@ -703,23 +722,27 @@ class AbstractCoordinateOperationType(AbstractCoordinateOperationBaseType):
             "name": "covarianceMatrix",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
-    relative_internal_positional_accuracy: List[RelativeInternalPositionalAccuracy] = field(
+    relative_internal_positional_accuracy: List[
+        RelativeInternalPositionalAccuracy
+    ] = field(
         default_factory=list,
         metadata={
             "name": "relativeInternalPositionalAccuracy",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
-    absolute_external_positional_accuracy: List[AbsoluteExternalPositionalAccuracy] = field(
+    absolute_external_positional_accuracy: List[
+        AbsoluteExternalPositionalAccuracy
+    ] = field(
         default_factory=list,
         metadata={
             "name": "absoluteExternalPositionalAccuracy",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     positional_accuracy: List[PositionalAccuracy] = field(
         default_factory=list,
@@ -727,7 +750,7 @@ class AbstractCoordinateOperationType(AbstractCoordinateOperationBaseType):
             "name": "_positionalAccuracy",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     source_crs: Optional[SourceCrs] = field(
         default=None,
@@ -735,7 +758,7 @@ class AbstractCoordinateOperationType(AbstractCoordinateOperationBaseType):
             "name": "sourceCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     target_crs: Optional[TargetCrs] = field(
         default=None,
@@ -743,7 +766,7 @@ class AbstractCoordinateOperationType(AbstractCoordinateOperationBaseType):
             "name": "targetCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
 
 
@@ -788,6 +811,7 @@ class ConversionType(AbstractGeneralConversionType):
     :ivar uses_value: Unordered list of composition associations to the
         set of parameter values used by this conversion operation.
     """
+
     uses_method: Optional[UsesMethod] = field(
         default=None,
         metadata={
@@ -795,7 +819,7 @@ class ConversionType(AbstractGeneralConversionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     uses_value: List[UsesValue] = field(
         default_factory=list,
@@ -803,7 +827,7 @@ class ConversionType(AbstractGeneralConversionType):
             "name": "usesValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
 
 

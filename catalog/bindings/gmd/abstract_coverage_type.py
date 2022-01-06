@@ -22,13 +22,14 @@ class AbstractCoverageType(AbstractFeatureType):
     gml:domainSet property describes the domain of the coverage and the
     gml:rangeSet property describes the range of the coverage.
     """
+
     rectified_grid_domain: Optional[RectifiedGridDomain] = field(
         default=None,
         metadata={
             "name": "rectifiedGridDomain",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     grid_domain: Optional[GridDomain] = field(
         default=None,
@@ -36,7 +37,7 @@ class AbstractCoverageType(AbstractFeatureType):
             "name": "gridDomain",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_solid_domain: Optional[MultiSolidDomain] = field(
         default=None,
@@ -44,7 +45,7 @@ class AbstractCoverageType(AbstractFeatureType):
             "name": "multiSolidDomain",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_surface_domain: Optional[MultiSurfaceDomain] = field(
         default=None,
@@ -52,7 +53,7 @@ class AbstractCoverageType(AbstractFeatureType):
             "name": "multiSurfaceDomain",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_curve_domain: Optional[MultiCurveDomain] = field(
         default=None,
@@ -60,7 +61,7 @@ class AbstractCoverageType(AbstractFeatureType):
             "name": "multiCurveDomain",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_point_domain: Optional[MultiPointDomain] = field(
         default=None,
@@ -68,7 +69,7 @@ class AbstractCoverageType(AbstractFeatureType):
             "name": "multiPointDomain",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     domain_set: Optional[DomainSet] = field(
         default=None,
@@ -76,7 +77,7 @@ class AbstractCoverageType(AbstractFeatureType):
             "name": "domainSet",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     range_set: Optional[RangeSet] = field(
         default=None,
@@ -85,5 +86,5 @@ class AbstractCoverageType(AbstractFeatureType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

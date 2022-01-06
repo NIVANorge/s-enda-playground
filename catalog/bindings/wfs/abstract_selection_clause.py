@@ -14,5 +14,5 @@ class AbstractSelectionClause:
         metadata={
             "type": "Wildcard",
             "namespace": "##any",
-        }
+        },
     )

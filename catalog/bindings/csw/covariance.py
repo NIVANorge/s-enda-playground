@@ -9,6 +9,7 @@ class Covariance:
     """
     Value of covariance matrix element.
     """
+
     class Meta:
         name = "covariance"
         namespace = "http://www.opengis.net/gml"
@@ -17,5 +18,5 @@ class Covariance:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )

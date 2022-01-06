@@ -11,11 +11,12 @@ class AbstractGeneralOperationParameterType(DefinitionType):
     Abstract definition of a parameter or group of parameters used by an
     operation method.
     """
+
     minimum_occurs: Optional[int] = field(
         default=None,
         metadata={
             "name": "minimumOccurs",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

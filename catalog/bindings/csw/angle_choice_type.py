@@ -12,12 +12,13 @@ class AngleChoiceType:
     Value of an angle quantity provided in either degree-minute-second format
     or single value format.
     """
+
     angle: Optional[Angle] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     dms_angle: Optional[DmsAngle] = field(
         default=None,
@@ -25,5 +26,5 @@ class AngleChoiceType:
             "name": "dmsAngle",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

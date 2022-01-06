@@ -22,7 +22,9 @@ from bindings.csw.overlaps import Overlaps
 from bindings.csw.property_is_between import PropertyIsBetween
 from bindings.csw.property_is_equal_to import PropertyIsEqualTo
 from bindings.csw.property_is_greater_than import PropertyIsGreaterThan
-from bindings.csw.property_is_greater_than_or_equal_to import PropertyIsGreaterThanOrEqualTo
+from bindings.csw.property_is_greater_than_or_equal_to import (
+    PropertyIsGreaterThanOrEqualTo,
+)
 from bindings.csw.property_is_less_than import PropertyIsLessThan
 from bindings.csw.property_is_less_than_or_equal_to import PropertyIsLessThanOrEqualTo
 from bindings.csw.property_is_like import PropertyIsLike
@@ -43,7 +45,7 @@ class FilterType:
             "name": "BBOX",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     beyond: Optional[Beyond] = field(
         default=None,
@@ -51,7 +53,7 @@ class FilterType:
             "name": "Beyond",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     dwithin: Optional[Dwithin] = field(
         default=None,
@@ -59,7 +61,7 @@ class FilterType:
             "name": "DWithin",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     contains: Optional[Contains] = field(
         default=None,
@@ -67,7 +69,7 @@ class FilterType:
             "name": "Contains",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     intersects: Optional[Intersects] = field(
         default=None,
@@ -75,7 +77,7 @@ class FilterType:
             "name": "Intersects",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     crosses: Optional[Crosses] = field(
         default=None,
@@ -83,7 +85,7 @@ class FilterType:
             "name": "Crosses",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     overlaps: Optional[Overlaps] = field(
         default=None,
@@ -91,7 +93,7 @@ class FilterType:
             "name": "Overlaps",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     within: Optional[Within] = field(
         default=None,
@@ -99,7 +101,7 @@ class FilterType:
             "name": "Within",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     touches: Optional[Touches] = field(
         default=None,
@@ -107,7 +109,7 @@ class FilterType:
             "name": "Touches",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     disjoint: Optional[Disjoint] = field(
         default=None,
@@ -115,7 +117,7 @@ class FilterType:
             "name": "Disjoint",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     equals: Optional[Equals] = field(
         default=None,
@@ -123,7 +125,7 @@ class FilterType:
             "name": "Equals",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     spatial_ops: Optional[SpatialOps] = field(
         default=None,
@@ -131,7 +133,7 @@ class FilterType:
             "name": "spatialOps",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     property_is_between: Optional[PropertyIsBetween] = field(
         default=None,
@@ -139,7 +141,7 @@ class FilterType:
             "name": "PropertyIsBetween",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     property_is_null: Optional[PropertyIsNull] = field(
         default=None,
@@ -147,7 +149,7 @@ class FilterType:
             "name": "PropertyIsNull",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     property_is_like: Optional[PropertyIsLike] = field(
         default=None,
@@ -155,15 +157,17 @@ class FilterType:
             "name": "PropertyIsLike",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
-    property_is_greater_than_or_equal_to: Optional[PropertyIsGreaterThanOrEqualTo] = field(
+    property_is_greater_than_or_equal_to: Optional[
+        PropertyIsGreaterThanOrEqualTo
+    ] = field(
         default=None,
         metadata={
             "name": "PropertyIsGreaterThanOrEqualTo",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     property_is_less_than_or_equal_to: Optional[PropertyIsLessThanOrEqualTo] = field(
         default=None,
@@ -171,7 +175,7 @@ class FilterType:
             "name": "PropertyIsLessThanOrEqualTo",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     property_is_greater_than: Optional[PropertyIsGreaterThan] = field(
         default=None,
@@ -179,7 +183,7 @@ class FilterType:
             "name": "PropertyIsGreaterThan",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     property_is_less_than: Optional[PropertyIsLessThan] = field(
         default=None,
@@ -187,7 +191,7 @@ class FilterType:
             "name": "PropertyIsLessThan",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     property_is_not_equal_to: Optional[PropertyIsNotEqualTo] = field(
         default=None,
@@ -195,7 +199,7 @@ class FilterType:
             "name": "PropertyIsNotEqualTo",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     property_is_equal_to: Optional[PropertyIsEqualTo] = field(
         default=None,
@@ -203,7 +207,7 @@ class FilterType:
             "name": "PropertyIsEqualTo",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     comparison_ops: Optional[ComparisonOps] = field(
         default=None,
@@ -211,7 +215,7 @@ class FilterType:
             "name": "comparisonOps",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     not_value: Optional[Not] = field(
         default=None,
@@ -219,7 +223,7 @@ class FilterType:
             "name": "Not",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     or_value: Optional[Or] = field(
         default=None,
@@ -227,7 +231,7 @@ class FilterType:
             "name": "Or",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     and_value: Optional[And] = field(
         default=None,
@@ -235,7 +239,7 @@ class FilterType:
             "name": "And",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     logic_ops: Optional[LogicOps] = field(
         default=None,
@@ -243,7 +247,7 @@ class FilterType:
             "name": "logicOps",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     gml_object_id: List[GmlObjectId] = field(
         default_factory=list,
@@ -251,7 +255,7 @@ class FilterType:
             "name": "GmlObjectId",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     feature_id: List[FeatureId] = field(
         default_factory=list,
@@ -259,7 +263,7 @@ class FilterType:
             "name": "FeatureId",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     id: List[Id] = field(
         default_factory=list,
@@ -267,5 +271,5 @@ class FilterType:
             "name": "_Id",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )

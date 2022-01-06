@@ -16,7 +16,7 @@ class DeleteType(AbstractTransactionActionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "required": True,
-        }
+        },
     )
     type_name: Optional[QName] = field(
         default=None,
@@ -24,5 +24,5 @@ class DeleteType(AbstractTransactionActionType):
             "name": "typeName",
             "type": "Attribute",
             "required": True,
-        }
+        },
     )

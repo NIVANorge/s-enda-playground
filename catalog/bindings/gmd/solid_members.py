@@ -11,6 +11,7 @@ class SolidMembers(SolidArrayPropertyType):
     The order of the elements is significant and shall be preserved when
     processing the array.
     """
+
     class Meta:
         name = "solidMembers"
         namespace = "http://www.opengis.net/gml"

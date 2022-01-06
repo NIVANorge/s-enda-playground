@@ -10,5 +10,6 @@ class AbstractTimeComplex(AbstractTimeComplexType):
     gml:AbstractTimeComplex is an aggregation of temporal primitives and acts
     as the head of a substitution group for temporal complexes.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

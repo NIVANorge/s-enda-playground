@@ -1,5 +1,7 @@
 from dataclasses import dataclass
-from bindings.gmd.abstract_general_parameter_value_type import AbstractGeneralParameterValueType
+from bindings.gmd.abstract_general_parameter_value_type import (
+    AbstractGeneralParameterValueType,
+)
 
 __NAMESPACE__ = "http://www.opengis.net/gml"
 
@@ -21,5 +23,6 @@ class AbstractGeneralParameterValue(AbstractGeneralParameterValueType):
     "operationParameter" property element that references one element
     substitutable for the "OperationParameter" object element.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

@@ -10,6 +10,7 @@ class Value(MeasureType):
     Numeric value of an operation parameter, with its associated unit of
     measure.
     """
+
     class Meta:
         name = "value"
         namespace = "http://www.opengis.net/gml"

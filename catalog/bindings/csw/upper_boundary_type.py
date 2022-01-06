@@ -22,7 +22,7 @@ class UpperBoundaryType:
             "name": "Literal",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     function: Optional[Function] = field(
         default=None,
@@ -30,7 +30,7 @@ class UpperBoundaryType:
             "name": "Function",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     property_name: Optional[PropertyName] = field(
         default=None,
@@ -38,7 +38,7 @@ class UpperBoundaryType:
             "name": "PropertyName",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     div: Optional[Div] = field(
         default=None,
@@ -46,7 +46,7 @@ class UpperBoundaryType:
             "name": "Div",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     mul: Optional[Mul] = field(
         default=None,
@@ -54,7 +54,7 @@ class UpperBoundaryType:
             "name": "Mul",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     sub: Optional[Sub] = field(
         default=None,
@@ -62,7 +62,7 @@ class UpperBoundaryType:
             "name": "Sub",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     add: Optional[Add] = field(
         default=None,
@@ -70,12 +70,12 @@ class UpperBoundaryType:
             "name": "Add",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     expression: Optional[Expression] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )

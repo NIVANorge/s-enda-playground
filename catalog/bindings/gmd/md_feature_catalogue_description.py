@@ -1,5 +1,7 @@
 from dataclasses import dataclass
-from bindings.gmd.md_feature_catalogue_description_type import MdFeatureCatalogueDescriptionType
+from bindings.gmd.md_feature_catalogue_description_type import (
+    MdFeatureCatalogueDescriptionType,
+)
 
 __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
 

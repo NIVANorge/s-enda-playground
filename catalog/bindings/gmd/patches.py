@@ -11,6 +11,7 @@ class Patches(SurfacePatchArrayPropertyType):
     The order of the elements is significant and shall be preserved when
     processing the array.
     """
+
     class Meta:
         name = "patches"
         namespace = "http://www.opengis.net/gml"

@@ -20,7 +20,7 @@ class Bboxtype(SpatialOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "max_occurs": 2,
-        }
+        },
     )
     function: List[Function] = field(
         default_factory=list,
@@ -29,7 +29,7 @@ class Bboxtype(SpatialOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "max_occurs": 2,
-        }
+        },
     )
     value_reference: List[str] = field(
         default_factory=list,
@@ -38,7 +38,7 @@ class Bboxtype(SpatialOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "max_occurs": 2,
-        }
+        },
     )
     expression: List[Expression] = field(
         default_factory=list,
@@ -46,7 +46,7 @@ class Bboxtype(SpatialOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "max_occurs": 2,
-        }
+        },
     )
     other_element: List[object] = field(
         default_factory=list,
@@ -54,5 +54,5 @@ class Bboxtype(SpatialOpsType):
             "type": "Wildcard",
             "namespace": "##other",
             "max_occurs": 2,
-        }
+        },
     )

@@ -10,12 +10,13 @@ class LabelType:
     Label is mixed -- composed of text and XPath expressions used to extract
     the useful information from the feature.
     """
+
     transform: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     content: List[object] = field(
         default_factory=list,
@@ -30,5 +31,5 @@ class LabelType:
                     "namespace": "http://www.opengis.net/gml",
                 },
             ),
-        }
+        },
     )

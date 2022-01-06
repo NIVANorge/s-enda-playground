@@ -18,5 +18,6 @@ class UserDefinedCstype(AbstractCoordinateSystemType):
     curved. A UserDefinedCS shall have two or three usesAxis
     associations.
     """
+
     class Meta:
         name = "UserDefinedCSType"

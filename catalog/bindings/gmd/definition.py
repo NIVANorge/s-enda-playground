@@ -21,5 +21,6 @@ class Definition(DefinitionType):
     hold additional textual information that is not conceptually part of
     the definition but is useful in understanding the definition.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

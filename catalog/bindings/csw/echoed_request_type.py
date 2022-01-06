@@ -9,10 +9,11 @@ class EchoedRequestType:
     """
     Includes a copy of the request message body.
     """
+
     any_element: Optional[object] = field(
         default=None,
         metadata={
             "type": "Wildcard",
             "namespace": "##any",
-        }
+        },
     )

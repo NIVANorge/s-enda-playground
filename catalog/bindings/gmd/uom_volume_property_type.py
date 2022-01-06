@@ -22,7 +22,7 @@ class UomVolumePropertyType:
             "name": "ConventionalUnit",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     derived_unit: Optional[DerivedUnit] = field(
         default=None,
@@ -30,7 +30,7 @@ class UomVolumePropertyType:
             "name": "DerivedUnit",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     base_unit: Optional[BaseUnit] = field(
         default=None,
@@ -38,7 +38,7 @@ class UomVolumePropertyType:
             "name": "BaseUnit",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     unit_definition: Optional[UnitDefinition] = field(
         default=None,
@@ -46,7 +46,7 @@ class UomVolumePropertyType:
             "name": "UnitDefinition",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -54,55 +54,55 @@ class UomVolumePropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     uuidref: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -111,5 +111,5 @@ class UomVolumePropertyType:
             "type": "Attribute",
             "namespace": "http://www.isotc211.org/2005/gco",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )

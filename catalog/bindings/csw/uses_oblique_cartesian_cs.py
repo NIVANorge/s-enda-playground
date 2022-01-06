@@ -9,6 +9,7 @@ class UsesObliqueCartesianCs(ObliqueCartesianCsrefType):
     """
     Association to the oblique Cartesian coordinate system used by this CRS.
     """
+
     class Meta:
         name = "usesObliqueCartesianCS"
         namespace = "http://www.opengis.net/gml"

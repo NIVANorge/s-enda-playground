@@ -13,11 +13,12 @@ class ArcByBulgeType(ArcStringByBulgeType):
     :ivar num_arc: An arc is an arc string consiting of a single arc,
         the attribute is fixed to "1".
     """
+
     num_arc: int = field(
         init=False,
         default=1,
         metadata={
             "name": "numArc",
             "type": "Attribute",
-        }
+        },
     )

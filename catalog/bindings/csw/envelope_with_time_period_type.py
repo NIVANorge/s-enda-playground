@@ -11,6 +11,7 @@ class EnvelopeWithTimePeriodType(EnvelopeType):
     """
     Envelope that includes also a temporal extent.
     """
+
     time_position: List[TimePosition] = field(
         default_factory=list,
         metadata={
@@ -19,11 +20,11 @@ class EnvelopeWithTimePeriodType(EnvelopeType):
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 2,
             "max_occurs": 2,
-        }
+        },
     )
     frame: str = field(
         default="#ISO-8601",
         metadata={
             "type": "Attribute",
-        }
+        },
     )

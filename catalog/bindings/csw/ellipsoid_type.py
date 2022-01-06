@@ -25,20 +25,21 @@ class EllipsoidType(EllipsoidBaseType):
     :ivar semi_major_axis:
     :ivar second_defining_parameter:
     """
+
     ellipsoid_id: List[EllipsoidId] = field(
         default_factory=list,
         metadata={
             "name": "ellipsoidID",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     remarks: Optional[Remarks] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     semi_major_axis: Optional[SemiMajorAxis] = field(
         default=None,
@@ -47,7 +48,7 @@ class EllipsoidType(EllipsoidBaseType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     second_defining_parameter: Optional[SecondDefiningParameter] = field(
         default=None,
@@ -56,5 +57,5 @@ class EllipsoidType(EllipsoidBaseType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

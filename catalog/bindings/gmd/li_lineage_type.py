@@ -20,7 +20,7 @@ class LiLineageType(AbstractObjectType):
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     process_step: List[LiProcessStepPropertyType] = field(
         default_factory=list,
@@ -28,12 +28,12 @@ class LiLineageType(AbstractObjectType):
             "name": "processStep",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     source: List[LiSourcePropertyType] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

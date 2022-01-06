@@ -2,7 +2,9 @@ from dataclasses import dataclass, field
 from typing import List, Optional
 from bindings.gmd.abstract_object_type import AbstractObjectType
 from bindings.gmd.character_string_property_type import CharacterStringPropertyType
-from bindings.gmd.ci_responsible_party_property_type import CiResponsiblePartyPropertyType
+from bindings.gmd.ci_responsible_party_property_type import (
+    CiResponsiblePartyPropertyType,
+)
 from bindings.gmd.date_time_property_type import DateTimePropertyType
 
 __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
@@ -13,6 +15,7 @@ class MdUsageType(AbstractObjectType):
     """
     Brief description of ways in which the dataset is currently used.
     """
+
     class Meta:
         name = "MD_Usage_Type"
 
@@ -23,7 +26,7 @@ class MdUsageType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     usage_date_time: Optional[DateTimePropertyType] = field(
         default=None,
@@ -31,7 +34,7 @@ class MdUsageType(AbstractObjectType):
             "name": "usageDateTime",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     user_determined_limitations: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -39,7 +42,7 @@ class MdUsageType(AbstractObjectType):
             "name": "userDeterminedLimitations",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     user_contact_info: List[CiResponsiblePartyPropertyType] = field(
         default_factory=list,
@@ -48,5 +51,5 @@ class MdUsageType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "min_occurs": 1,
-        }
+        },
     )

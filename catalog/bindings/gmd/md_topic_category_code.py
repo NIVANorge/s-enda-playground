@@ -15,5 +15,5 @@ class MdTopicCategoryCode:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )

@@ -14,21 +14,21 @@ class QueryExpressionTextType:
             "type": "Attribute",
             "required": True,
             "tokens": True,
-        }
+        },
     )
     language: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
     is_private: bool = field(
         default=False,
         metadata={
             "name": "isPrivate",
             "type": "Attribute",
-        }
+        },
     )
     content: List[object] = field(
         default_factory=list,
@@ -36,5 +36,5 @@ class QueryExpressionTextType:
             "type": "Wildcard",
             "namespace": "##any",
             "mixed": True,
-        }
+        },
     )

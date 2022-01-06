@@ -29,20 +29,21 @@ class OperationMethodType(OperationMethodBaseType):
         operation parameters and parameter groups used by this operation
         method.
     """
+
     method_id: List[MethodId] = field(
         default_factory=list,
         metadata={
             "name": "methodID",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     remarks: Optional[Remarks] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     method_formula: Optional[MethodFormula] = field(
         default=None,
@@ -51,7 +52,7 @@ class OperationMethodType(OperationMethodBaseType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     source_dimensions: Optional[int] = field(
         default=None,
@@ -60,7 +61,7 @@ class OperationMethodType(OperationMethodBaseType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     target_dimensions: Optional[int] = field(
         default=None,
@@ -69,7 +70,7 @@ class OperationMethodType(OperationMethodBaseType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     uses_parameter: List[UsesParameter] = field(
         default_factory=list,
@@ -77,5 +78,5 @@ class OperationMethodType(OperationMethodBaseType):
             "name": "usesParameter",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

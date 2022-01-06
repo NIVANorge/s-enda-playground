@@ -25,7 +25,7 @@ class PropertyIsBetweenType(ComparisonOpsType):
             "name": "Literal",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     function: Optional[Function] = field(
         default=None,
@@ -33,7 +33,7 @@ class PropertyIsBetweenType(ComparisonOpsType):
             "name": "Function",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     property_name: Optional[PropertyName] = field(
         default=None,
@@ -41,7 +41,7 @@ class PropertyIsBetweenType(ComparisonOpsType):
             "name": "PropertyName",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     div: Optional[Div] = field(
         default=None,
@@ -49,7 +49,7 @@ class PropertyIsBetweenType(ComparisonOpsType):
             "name": "Div",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     mul: Optional[Mul] = field(
         default=None,
@@ -57,7 +57,7 @@ class PropertyIsBetweenType(ComparisonOpsType):
             "name": "Mul",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     sub: Optional[Sub] = field(
         default=None,
@@ -65,7 +65,7 @@ class PropertyIsBetweenType(ComparisonOpsType):
             "name": "Sub",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     add: Optional[Add] = field(
         default=None,
@@ -73,14 +73,14 @@ class PropertyIsBetweenType(ComparisonOpsType):
             "name": "Add",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     expression: Optional[Expression] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     lower_boundary: Optional[LowerBoundaryType] = field(
         default=None,
@@ -89,7 +89,7 @@ class PropertyIsBetweenType(ComparisonOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "required": True,
-        }
+        },
     )
     upper_boundary: Optional[UpperBoundaryType] = field(
         default=None,
@@ -98,5 +98,5 @@ class PropertyIsBetweenType(ComparisonOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "required": True,
-        }
+        },
     )

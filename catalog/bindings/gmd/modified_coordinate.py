@@ -10,6 +10,7 @@ class ModifiedCoordinate:
     gml:modifiedCoordinate is a positive integer defining a position in a
     coordinate tuple.
     """
+
     class Meta:
         name = "modifiedCoordinate"
         namespace = "http://www.opengis.net/gml"
@@ -18,5 +19,5 @@ class ModifiedCoordinate:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )

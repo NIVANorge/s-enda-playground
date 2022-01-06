@@ -17,14 +17,14 @@ class DefinitionBaseType:
             "name": "metaDataProperty",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     description: Optional[Description] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     description_reference: Optional[DescriptionReference] = field(
         default=None,
@@ -32,7 +32,7 @@ class DefinitionBaseType:
             "name": "descriptionReference",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     identifier: Optional[Identifier] = field(
         default=None,
@@ -40,14 +40,14 @@ class DefinitionBaseType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     name: List[Name] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     id: Optional[str] = field(
         default=None,
@@ -55,5 +55,5 @@ class DefinitionBaseType:
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

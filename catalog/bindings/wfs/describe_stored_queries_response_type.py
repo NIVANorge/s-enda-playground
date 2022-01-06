@@ -13,5 +13,5 @@ class DescribeStoredQueriesResponseType:
             "name": "StoredQueryDescription",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )

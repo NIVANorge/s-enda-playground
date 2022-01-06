@@ -1,6 +1,8 @@
 from dataclasses import dataclass, field
 from typing import List, Optional
-from bindings.csw.abstract_general_transformation_type import AbstractGeneralTransformationType
+from bindings.csw.abstract_general_transformation_type import (
+    AbstractGeneralTransformationType,
+)
 from bindings.csw.uses_method import UsesMethod
 from bindings.csw.uses_value import UsesValue
 
@@ -28,6 +30,7 @@ class TransformationType(AbstractGeneralTransformationType):
     :ivar uses_value: Unordered set of composition associations to the
         set of parameter values used by this transformation operation.
     """
+
     uses_method: Optional[UsesMethod] = field(
         default=None,
         metadata={
@@ -35,7 +38,7 @@ class TransformationType(AbstractGeneralTransformationType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     uses_value: List[UsesValue] = field(
         default_factory=list,
@@ -43,5 +46,5 @@ class TransformationType(AbstractGeneralTransformationType):
             "name": "usesValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

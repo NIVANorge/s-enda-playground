@@ -8,6 +8,7 @@ class CurveInterpolationType(Enum):
     CurveInterpolationType is a list of codes that may be used to identify the
     interpolation mechanisms specified by an application schema.
     """
+
     LINEAR = "linear"
     GEODESIC = "geodesic"
     CIRCULAR_ARC3_POINTS = "circularArc3Points"

@@ -10,6 +10,7 @@ class Surface2(AbstractSurfaceType):
     The "_Surface" element is the abstract head of the substituition group for
     all (continuous) surface elements.
     """
+
     class Meta:
         name = "_Surface"
         namespace = "http://www.opengis.net/gml"

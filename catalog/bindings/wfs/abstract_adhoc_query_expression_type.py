@@ -19,7 +19,7 @@ class AbstractAdhocQueryExpressionType(AbstractQueryExpressionType):
             "name": "PropertyName",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     abstract_projection_clause: List[AbstractProjectionClause] = field(
         default_factory=list,
@@ -27,7 +27,7 @@ class AbstractAdhocQueryExpressionType(AbstractQueryExpressionType):
             "name": "AbstractProjectionClause",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     filter: Optional[Filter] = field(
         default=None,
@@ -35,7 +35,7 @@ class AbstractAdhocQueryExpressionType(AbstractQueryExpressionType):
             "name": "Filter",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     abstract_selection_clause: Optional[AbstractSelectionClause] = field(
         default=None,
@@ -43,7 +43,7 @@ class AbstractAdhocQueryExpressionType(AbstractQueryExpressionType):
             "name": "AbstractSelectionClause",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     sort_by: Optional[SortBy] = field(
         default=None,
@@ -51,7 +51,7 @@ class AbstractAdhocQueryExpressionType(AbstractQueryExpressionType):
             "name": "SortBy",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     abstract_sorting_clause: Optional[AbstractSortingClause] = field(
         default=None,
@@ -59,7 +59,7 @@ class AbstractAdhocQueryExpressionType(AbstractQueryExpressionType):
             "name": "AbstractSortingClause",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     type_names: List[str] = field(
         default_factory=list,
@@ -69,12 +69,12 @@ class AbstractAdhocQueryExpressionType(AbstractQueryExpressionType):
             "required": True,
             "pattern": r"schema\-element\(.+\)",
             "tokens": True,
-        }
+        },
     )
     aliases: List[str] = field(
         default_factory=list,
         metadata={
             "type": "Attribute",
             "tokens": True,
-        }
+        },
     )

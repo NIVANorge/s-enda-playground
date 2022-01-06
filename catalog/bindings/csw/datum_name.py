@@ -9,6 +9,7 @@ class DatumName(CodeType2):
     """
     The name by which this datum is identified.
     """
+
     class Meta:
         name = "datumName"
         namespace = "http://www.opengis.net/gml"

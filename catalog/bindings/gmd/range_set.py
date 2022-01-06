@@ -19,6 +19,7 @@ class RangeSet(RangeSetType):
     gml:AbstractScalarValueList substitution group . Use of these
     elements satisfies the value-type homogeneity requirement.
     """
+
     class Meta:
         name = "rangeSet"
         namespace = "http://www.opengis.net/gml"

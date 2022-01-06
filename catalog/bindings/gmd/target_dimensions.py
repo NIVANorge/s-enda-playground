@@ -10,6 +10,7 @@ class TargetDimensions:
     gml:targetDimensions is the number of dimensions in the target CRS of this
     operation method.
     """
+
     class Meta:
         name = "targetDimensions"
         namespace = "http://www.opengis.net/gml"
@@ -18,5 +19,5 @@ class TargetDimensions:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )

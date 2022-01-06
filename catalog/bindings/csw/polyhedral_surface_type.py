@@ -14,11 +14,12 @@ class PolyhedralSurfaceType(SurfaceType):
     This differs from the surface type only in the restriction on the
     types of surface patches acceptable.
     """
+
     srs_name: List[SrsName] = field(
         default_factory=list,
         metadata={
             "name": "srsName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

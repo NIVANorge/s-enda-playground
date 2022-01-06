@@ -8,6 +8,7 @@ class MinimumValue:
     """
     Minimum value of this numeric parameter.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/2.0"
 
@@ -15,5 +16,5 @@ class MinimumValue:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )

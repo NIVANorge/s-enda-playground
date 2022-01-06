@@ -13,6 +13,7 @@ class MdStandardOrderProcessType(AbstractObjectType):
     Common ways in which the dataset may be obtained or received, and related
     instructions and fee information.
     """
+
     class Meta:
         name = "MD_StandardOrderProcess_Type"
 
@@ -21,7 +22,7 @@ class MdStandardOrderProcessType(AbstractObjectType):
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     planned_available_date_time: Optional[DateTimePropertyType] = field(
         default=None,
@@ -29,7 +30,7 @@ class MdStandardOrderProcessType(AbstractObjectType):
             "name": "plannedAvailableDateTime",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     ordering_instructions: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -37,12 +38,12 @@ class MdStandardOrderProcessType(AbstractObjectType):
             "name": "orderingInstructions",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     turnaround: Optional[CharacterStringPropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

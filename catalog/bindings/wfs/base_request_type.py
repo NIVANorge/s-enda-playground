@@ -12,7 +12,7 @@ class BaseRequestType:
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
     version: Optional[str] = field(
         default=None,
@@ -20,11 +20,11 @@ class BaseRequestType:
             "type": "Attribute",
             "required": True,
             "pattern": r"2\.0\.\d+",
-        }
+        },
     )
     handle: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

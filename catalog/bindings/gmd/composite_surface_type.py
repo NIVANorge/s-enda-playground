@@ -25,14 +25,14 @@ class CompositeSurfaceType(AbstractSurfaceType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 1,
-        }
+        },
     )
     aggregation_type: Optional[AggregationType] = field(
         default=None,
         metadata={
             "name": "aggregationType",
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -45,13 +45,13 @@ class OrientableSurfaceType(AbstractSurfaceType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     orientation: SignType = field(
         default=SignType.VALUE,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -66,6 +66,7 @@ class CompositeSurface(CompositeSurfaceType):
     surfaceMember references or contains inline one surface in the
     composite surface. The surfaces are contiguous.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"
 
@@ -80,6 +81,7 @@ class OrientableSurface(OrientableSurfaceType):
     up-normal that reverses the direction for this OrientableSurface,
     the sense of "the top of the surface".
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"
 
@@ -94,13 +96,14 @@ class SurfacePropertyType:
     Either the reference or the contained element shall be given, but
     neither both nor none.
     """
+
     composite_surface: Optional[CompositeSurface] = field(
         default=None,
         metadata={
             "name": "CompositeSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     orientable_surface: Optional[OrientableSurface] = field(
         default=None,
@@ -108,7 +111,7 @@ class SurfacePropertyType:
             "name": "OrientableSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     tin: Optional[Tin] = field(
         default=None,
@@ -116,7 +119,7 @@ class SurfacePropertyType:
             "name": "Tin",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     triangulated_surface: Optional[TriangulatedSurface] = field(
         default=None,
@@ -124,7 +127,7 @@ class SurfacePropertyType:
             "name": "TriangulatedSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     polyhedral_surface: Optional[PolyhedralSurface] = field(
         default=None,
@@ -132,7 +135,7 @@ class SurfacePropertyType:
             "name": "PolyhedralSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     surface: Optional[Surface] = field(
         default=None,
@@ -140,7 +143,7 @@ class SurfacePropertyType:
             "name": "Surface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     polygon: Optional[Polygon] = field(
         default=None,
@@ -148,7 +151,7 @@ class SurfacePropertyType:
             "name": "Polygon",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_surface: Optional[AbstractSurface] = field(
         default=None,
@@ -156,7 +159,7 @@ class SurfacePropertyType:
             "name": "AbstractSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -164,49 +167,49 @@ class SurfacePropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -214,7 +217,7 @@ class SurfacePropertyType:
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -222,13 +225,13 @@ class SurfacePropertyType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -241,6 +244,7 @@ class BaseSurface(SurfacePropertyType):
     is any element which is substitutable for gml:AbstractSurface. The
     base surface has positive orientation.
     """
+
     class Meta:
         name = "baseSurface"
         namespace = "http://www.opengis.net/gml"
@@ -254,6 +258,7 @@ class SurfaceMember(SurfacePropertyType):
     A surface element is any element, which is substitutable for
     gml:AbstractSurface.
     """
+
     class Meta:
         name = "surfaceMember"
         namespace = "http://www.opengis.net/gml"

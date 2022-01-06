@@ -18,7 +18,7 @@ class TemporalCapabilitiesType:
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "required": True,
-        }
+        },
     )
     temporal_operators: Optional[TemporalOperatorsType] = field(
         default=None,
@@ -27,5 +27,5 @@ class TemporalCapabilitiesType:
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "required": True,
-        }
+        },
     )

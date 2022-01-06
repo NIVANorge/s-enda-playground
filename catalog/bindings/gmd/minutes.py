@@ -15,5 +15,5 @@ class Minutes:
         metadata={
             "required": True,
             "max_inclusive": 59,
-        }
+        },
     )

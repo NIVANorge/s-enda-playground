@@ -13,5 +13,5 @@ class Remarks:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )

@@ -9,6 +9,7 @@ class PriorityLocation(PriorityLocationPropertyType):
     """
     Deprecated in GML 3.1.0.
     """
+
     class Meta:
         name = "priorityLocation"
         namespace = "http://www.opengis.net/gml"

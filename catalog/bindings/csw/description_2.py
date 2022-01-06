@@ -12,6 +12,7 @@ class Description2(SimpleLiteral):
     abstract, table of contents, reference to a graphical representation
     of content, or free-text account of the content.
     """
+
     class Meta:
         name = "description"
         namespace = "http://purl.org/dc/elements/1.1/"

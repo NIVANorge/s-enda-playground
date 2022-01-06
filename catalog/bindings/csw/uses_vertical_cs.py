@@ -9,6 +9,7 @@ class UsesVerticalCs(VerticalCsrefType):
     """
     Association to the vertical coordinate system used by this CRS.
     """
+
     class Meta:
         name = "usesVerticalCS"
         namespace = "http://www.opengis.net/gml"

@@ -1,9 +1,13 @@
 from dataclasses import dataclass, field
 from typing import List, Optional
-from bindings.gmd.abstract_md_spatial_representation_type import AbstractMdSpatialRepresentationType
+from bindings.gmd.abstract_md_spatial_representation_type import (
+    AbstractMdSpatialRepresentationType,
+)
 from bindings.gmd.boolean_property_type_2 import BooleanPropertyType2
 from bindings.gmd.integer_property_type import IntegerPropertyType
-from bindings.gmd.md_cell_geometry_code_property_type import MdCellGeometryCodePropertyType
+from bindings.gmd.md_cell_geometry_code_property_type import (
+    MdCellGeometryCodePropertyType,
+)
 from bindings.gmd.md_dimension_property_type import MdDimensionPropertyType
 
 __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
@@ -14,6 +18,7 @@ class MdGridSpatialRepresentationType(AbstractMdSpatialRepresentationType):
     """
     Types and numbers of raster spatial objects in the dataset.
     """
+
     class Meta:
         name = "MD_GridSpatialRepresentation_Type"
 
@@ -24,7 +29,7 @@ class MdGridSpatialRepresentationType(AbstractMdSpatialRepresentationType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     axis_dimension_properties: List[MdDimensionPropertyType] = field(
         default_factory=list,
@@ -32,7 +37,7 @@ class MdGridSpatialRepresentationType(AbstractMdSpatialRepresentationType):
             "name": "axisDimensionProperties",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     cell_geometry: Optional[MdCellGeometryCodePropertyType] = field(
         default=None,
@@ -41,7 +46,7 @@ class MdGridSpatialRepresentationType(AbstractMdSpatialRepresentationType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     transformation_parameter_availability: Optional[BooleanPropertyType2] = field(
         default=None,
@@ -50,5 +55,5 @@ class MdGridSpatialRepresentationType(AbstractMdSpatialRepresentationType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )

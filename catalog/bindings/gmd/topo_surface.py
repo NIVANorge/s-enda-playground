@@ -15,5 +15,6 @@ class TopoSurface(TopoSurfaceType):
     relationships of this surface feature to other features via the
     shared face definitions.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

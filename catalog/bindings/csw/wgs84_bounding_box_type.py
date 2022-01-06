@@ -32,6 +32,7 @@ class Wgs84BoundingBoxType:
         number is specified by the CRS definition, but can also be
         specified here.
     """
+
     class Meta:
         name = "WGS84BoundingBoxType"
 
@@ -44,7 +45,7 @@ class Wgs84BoundingBoxType:
             "required": True,
             "length": 2,
             "tokens": True,
-        }
+        },
     )
     upper_corner: List[float] = field(
         default_factory=list,
@@ -55,19 +56,19 @@ class Wgs84BoundingBoxType:
             "required": True,
             "length": 2,
             "tokens": True,
-        }
+        },
     )
     crs: str = field(
         init=False,
         default="urn:ogc:def:crs:OGC:2:84",
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     dimensions: int = field(
         init=False,
         default=2,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

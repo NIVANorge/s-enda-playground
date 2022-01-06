@@ -10,5 +10,6 @@ class AbstractCurve(AbstractCurveType):
     The AbstractCurve element is the abstract head of the substitution group
     for all (continuous) curve elements.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

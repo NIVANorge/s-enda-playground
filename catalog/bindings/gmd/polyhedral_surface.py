@@ -13,5 +13,6 @@ class PolyhedralSurface(PolyhedralSurfaceType):
     types of surface patches acceptable. polygonPatches encapsulates the
     polygon patches of the polyhedral surface.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

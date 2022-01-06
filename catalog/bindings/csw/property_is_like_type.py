@@ -16,7 +16,7 @@ class PropertyIsLikeType(ComparisonOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "required": True,
-        }
+        },
     )
     literal: Optional[Literal] = field(
         default=None,
@@ -25,7 +25,7 @@ class PropertyIsLikeType(ComparisonOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "required": True,
-        }
+        },
     )
     wild_card: Optional[str] = field(
         default=None,
@@ -33,7 +33,7 @@ class PropertyIsLikeType(ComparisonOpsType):
             "name": "wildCard",
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
     single_char: Optional[str] = field(
         default=None,
@@ -41,7 +41,7 @@ class PropertyIsLikeType(ComparisonOpsType):
             "name": "singleChar",
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
     escape_char: Optional[str] = field(
         default=None,
@@ -49,12 +49,12 @@ class PropertyIsLikeType(ComparisonOpsType):
             "name": "escapeChar",
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
     match_case: bool = field(
         default=True,
         metadata={
             "name": "matchCase",
             "type": "Attribute",
-        }
+        },
     )

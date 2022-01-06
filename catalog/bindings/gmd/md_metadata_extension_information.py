@@ -1,5 +1,7 @@
 from dataclasses import dataclass
-from bindings.gmd.md_metadata_extension_information_type import MdMetadataExtensionInformationType
+from bindings.gmd.md_metadata_extension_information_type import (
+    MdMetadataExtensionInformationType,
+)
 
 __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
 

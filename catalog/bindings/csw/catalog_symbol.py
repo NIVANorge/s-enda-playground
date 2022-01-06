@@ -18,6 +18,7 @@ class CatalogSymbol(CodeType2):
     might indicate that it is the "m" symbol combined with the "c"
     prefix.
     """
+
     class Meta:
         name = "catalogSymbol"
         namespace = "http://www.opengis.net/gml"

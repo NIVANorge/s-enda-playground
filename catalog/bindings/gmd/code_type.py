@@ -14,16 +14,17 @@ class CodeType:
     thesaurus, classification scheme, authority, or pattern for the
     term.
     """
+
     value: str = field(
         default="",
         metadata={
             "required": True,
-        }
+        },
     )
     code_space: Optional[str] = field(
         default=None,
         metadata={
             "name": "codeSpace",
             "type": "Attribute",
-        }
+        },
     )

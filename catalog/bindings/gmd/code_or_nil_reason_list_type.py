@@ -16,17 +16,18 @@ class CodeOrNilReasonListType:
     intended to be used in situations where a term or classification is
     expected, but the value may be absent for some reason.
     """
+
     value: List[Union[str, NilReasonEnumerationValue]] = field(
         default_factory=list,
         metadata={
             "pattern": r"other:\w{2,}",
             "tokens": True,
-        }
+        },
     )
     code_space: Optional[str] = field(
         default=None,
         metadata={
             "name": "codeSpace",
             "type": "Attribute",
-        }
+        },
     )

@@ -36,13 +36,14 @@ class MetadataType:
         includes this "metadata" element that this metadata provides
         more information about.
     """
+
     additional_parameter: List[AdditionalParameter] = field(
         default_factory=list,
         metadata={
             "name": "AdditionalParameter",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     abstract_meta_data: Optional[AbstractMetaData] = field(
         default=None,
@@ -50,7 +51,7 @@ class MetadataType:
             "name": "AbstractMetaData",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     type: TypeType = field(
         init=False,
@@ -58,14 +59,14 @@ class MetadataType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
@@ -73,7 +74,7 @@ class MetadataType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
@@ -81,32 +82,32 @@ class MetadataType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     about: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

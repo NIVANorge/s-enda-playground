@@ -11,6 +11,7 @@ class MinimumOccurs:
 
     If this attribute is omitted, the minimum number shall be one.
     """
+
     class Meta:
         name = "minimumOccurs"
         namespace = "http://www.opengis.net/gml"
@@ -19,5 +20,5 @@ class MinimumOccurs:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )

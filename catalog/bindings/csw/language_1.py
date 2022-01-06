@@ -10,6 +10,7 @@ class Language1:
     This language identifier shall be as specified in IETF RFC 1766.
     When this element is omitted, the language used is not identified.
     """
+
     class Meta:
         name = "Language"
         namespace = "http://www.opengis.net/ows"
@@ -18,5 +19,5 @@ class Language1:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )

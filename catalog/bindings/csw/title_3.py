@@ -11,6 +11,7 @@ class Title3(SimpleLiteral):
     Typically, Title will be a name by which the resource is formally
     known.
     """
+
     class Meta:
         name = "title"
         namespace = "http://purl.org/dc/elements/1.1/"

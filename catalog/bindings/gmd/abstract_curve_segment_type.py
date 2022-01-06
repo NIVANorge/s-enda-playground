@@ -10,19 +10,19 @@ class AbstractCurveSegmentType:
         metadata={
             "name": "numDerivativesAtStart",
             "type": "Attribute",
-        }
+        },
     )
     num_derivatives_at_end: int = field(
         default=0,
         metadata={
             "name": "numDerivativesAtEnd",
             "type": "Attribute",
-        }
+        },
     )
     num_derivative_interior: int = field(
         default=0,
         metadata={
             "name": "numDerivativeInterior",
             "type": "Attribute",
-        }
+        },
     )

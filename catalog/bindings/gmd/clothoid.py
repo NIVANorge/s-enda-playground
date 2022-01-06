@@ -14,5 +14,6 @@ class Clothoid(ClothoidType):
     is fixed as "clothoid". The content model follows the general
     pattern for the encoding of curve segments.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

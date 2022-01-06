@@ -11,6 +11,7 @@ class InnerBoundaryIs(AbstractRingPropertyType):
 
     Use "interior" instead.
     """
+
     class Meta:
         name = "innerBoundaryIs"
         namespace = "http://www.opengis.net/gml"

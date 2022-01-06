@@ -15,5 +15,5 @@ class MdPixelOrientationCode:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )

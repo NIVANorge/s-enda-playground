@@ -12,5 +12,5 @@ class ValueReference:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )

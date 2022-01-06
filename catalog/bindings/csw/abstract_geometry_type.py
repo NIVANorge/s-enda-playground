@@ -74,20 +74,21 @@ class AbstractGeometryType:
         included. When the axisLabels attribute is omitted, this
         attribute shall also be omitted.
     """
+
     meta_data_property: List[MetaDataProperty] = field(
         default_factory=list,
         metadata={
             "name": "metaDataProperty",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     description: Optional[Description1] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     group_name: List[GroupName] = field(
         default_factory=list,
@@ -95,7 +96,7 @@ class AbstractGeometryType:
             "name": "groupName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     parameter_name: List[ParameterName] = field(
         default_factory=list,
@@ -103,7 +104,7 @@ class AbstractGeometryType:
             "name": "parameterName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     method_name: List[MethodName] = field(
         default_factory=list,
@@ -111,7 +112,7 @@ class AbstractGeometryType:
             "name": "methodName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     coordinate_operation_name: List[CoordinateOperationName] = field(
         default_factory=list,
@@ -119,7 +120,7 @@ class AbstractGeometryType:
             "name": "coordinateOperationName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     ellipsoid_name: List[EllipsoidName] = field(
         default_factory=list,
@@ -127,7 +128,7 @@ class AbstractGeometryType:
             "name": "ellipsoidName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     meridian_name: List[MeridianName] = field(
         default_factory=list,
@@ -135,7 +136,7 @@ class AbstractGeometryType:
             "name": "meridianName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     datum_name: List[DatumName] = field(
         default_factory=list,
@@ -143,7 +144,7 @@ class AbstractGeometryType:
             "name": "datumName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     cs_name: List[CsName] = field(
         default_factory=list,
@@ -151,41 +152,41 @@ class AbstractGeometryType:
             "name": "csName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     gid: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     name: List[Name] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     id: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     srs_name_attribute: Optional[str] = field(
         default=None,
         metadata={
             "name": "srsName",
             "type": "Attribute",
-        }
+        },
     )
     srs_dimension: Optional[int] = field(
         default=None,
         metadata={
             "name": "srsDimension",
             "type": "Attribute",
-        }
+        },
     )
     axis_labels: List[str] = field(
         default_factory=list,
@@ -193,7 +194,7 @@ class AbstractGeometryType:
             "name": "axisLabels",
             "type": "Attribute",
             "tokens": True,
-        }
+        },
     )
     uom_labels: List[str] = field(
         default_factory=list,
@@ -201,5 +202,5 @@ class AbstractGeometryType:
             "name": "uomLabels",
             "type": "Attribute",
             "tokens": True,
-        }
+        },
     )

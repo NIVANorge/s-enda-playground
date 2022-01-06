@@ -14,5 +14,5 @@ class FunctionsType:
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "required": True,
-        }
+        },
     )

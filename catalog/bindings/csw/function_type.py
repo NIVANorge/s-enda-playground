@@ -16,7 +16,7 @@ class FunctionType(ExpressionType):
             "name": "Literal",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     function: List["Function"] = field(
         default_factory=list,
@@ -24,7 +24,7 @@ class FunctionType(ExpressionType):
             "name": "Function",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     property_name: List[PropertyName] = field(
         default_factory=list,
@@ -32,7 +32,7 @@ class FunctionType(ExpressionType):
             "name": "PropertyName",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     div: List["Div"] = field(
         default_factory=list,
@@ -40,7 +40,7 @@ class FunctionType(ExpressionType):
             "name": "Div",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     mul: List["Mul"] = field(
         default_factory=list,
@@ -48,7 +48,7 @@ class FunctionType(ExpressionType):
             "name": "Mul",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     sub: List["Sub"] = field(
         default_factory=list,
@@ -56,7 +56,7 @@ class FunctionType(ExpressionType):
             "name": "Sub",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     add: List["Add"] = field(
         default_factory=list,
@@ -64,21 +64,21 @@ class FunctionType(ExpressionType):
             "name": "Add",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     expression: List[Expression] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     name: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
 
 
@@ -97,7 +97,7 @@ class BinaryOperatorType(ExpressionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "max_occurs": 2,
-        }
+        },
     )
     function: List[Function] = field(
         default_factory=list,
@@ -106,7 +106,7 @@ class BinaryOperatorType(ExpressionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "max_occurs": 2,
-        }
+        },
     )
     property_name: List[PropertyName] = field(
         default_factory=list,
@@ -115,7 +115,7 @@ class BinaryOperatorType(ExpressionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "max_occurs": 2,
-        }
+        },
     )
     div: List["Div"] = field(
         default_factory=list,
@@ -124,7 +124,7 @@ class BinaryOperatorType(ExpressionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "max_occurs": 2,
-        }
+        },
     )
     mul: List["Mul"] = field(
         default_factory=list,
@@ -133,7 +133,7 @@ class BinaryOperatorType(ExpressionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "max_occurs": 2,
-        }
+        },
     )
     sub: List["Sub"] = field(
         default_factory=list,
@@ -142,7 +142,7 @@ class BinaryOperatorType(ExpressionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "max_occurs": 2,
-        }
+        },
     )
     add: List["Add"] = field(
         default_factory=list,
@@ -151,7 +151,7 @@ class BinaryOperatorType(ExpressionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "max_occurs": 2,
-        }
+        },
     )
     expression: List[Expression] = field(
         default_factory=list,
@@ -159,7 +159,7 @@ class BinaryOperatorType(ExpressionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "max_occurs": 2,
-        }
+        },
     )
 
 

@@ -13,5 +13,5 @@ class PropertyNameType(ExpressionType):
             "type": "Wildcard",
             "namespace": "##any",
             "mixed": True,
-        }
+        },
     )

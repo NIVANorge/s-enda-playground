@@ -10,6 +10,7 @@ class ExtendedCapabilities:
     Individual software vendors and servers can use this element to provide
     metadata about any additional server abilities.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/2.0"
 
@@ -18,5 +19,5 @@ class ExtendedCapabilities:
         metadata={
             "type": "Wildcard",
             "namespace": "##any",
-        }
+        },
     )

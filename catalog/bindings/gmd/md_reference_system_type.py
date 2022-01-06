@@ -17,5 +17,5 @@ class MdReferenceSystemType(AbstractObjectType):
             "name": "referenceSystemIdentifier",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

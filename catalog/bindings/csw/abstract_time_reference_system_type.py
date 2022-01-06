@@ -14,11 +14,12 @@ class AbstractTimeReferenceSystemType(DefinitionType):
     temporal reference systems, and temporal coordinate systems (time
     elapsed since some epoch, e.g. UNIX time).
     """
+
     domain_of_validity: Optional[str] = field(
         default=None,
         metadata={
             "name": "domainOfValidity",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

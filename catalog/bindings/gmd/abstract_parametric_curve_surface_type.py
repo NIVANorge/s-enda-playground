@@ -13,5 +13,5 @@ class AbstractParametricCurveSurfaceType(AbstractSurfacePatchType):
         metadata={
             "name": "aggregationType",
             "type": "Attribute",
-        }
+        },
     )

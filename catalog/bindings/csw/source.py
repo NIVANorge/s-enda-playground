@@ -13,6 +13,7 @@ class Source(SimpleLiteral):
     referenced resource by means of a string or number conforming to a
     formal identification system.
     """
+
     class Meta:
         name = "source"
         namespace = "http://purl.org/dc/elements/1.1/"

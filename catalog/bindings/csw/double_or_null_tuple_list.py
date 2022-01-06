@@ -16,5 +16,5 @@ class DoubleOrNullTupleList:
         metadata={
             "pattern": r"other:\w{2,}",
             "tokens": True,
-        }
+        },
     )

@@ -9,6 +9,7 @@ class Abstract1:
     Brief narrative description of this resource, normally used for display to
     a human.
     """
+
     class Meta:
         name = "Abstract"
         namespace = "http://www.opengis.net/ows"
@@ -17,5 +18,5 @@ class Abstract1:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )

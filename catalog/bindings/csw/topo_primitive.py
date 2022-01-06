@@ -10,6 +10,7 @@ class TopoPrimitive(AbstractTopoPrimitiveType):
     Substitution group branch for Topo Primitives, used by
     TopoPrimitiveArrayAssociationType.
     """
+
     class Meta:
         name = "_TopoPrimitive"
         namespace = "http://www.opengis.net/gml"

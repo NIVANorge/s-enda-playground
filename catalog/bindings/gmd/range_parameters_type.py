@@ -31,13 +31,14 @@ class RangeParametersType:
     Application Schema that provides elements that are substitutable for
     gml:AbstractValue.
     """
+
     quantity_extent: Optional[QuantityExtent] = field(
         default=None,
         metadata={
             "name": "QuantityExtent",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     count_extent: List[Union[str, NilReasonEnumerationValue]] = field(
         default_factory=list,
@@ -48,7 +49,7 @@ class RangeParametersType:
             "length": 2,
             "pattern": r"other:\w{2,}",
             "tokens": True,
-        }
+        },
     )
     category_extent: Optional[CategoryExtent] = field(
         default=None,
@@ -56,7 +57,7 @@ class RangeParametersType:
             "name": "CategoryExtent",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     value_array: Optional[ValueArray] = field(
         default=None,
@@ -64,7 +65,7 @@ class RangeParametersType:
             "name": "ValueArray",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     composite_value: Optional[CompositeValue] = field(
         default=None,
@@ -72,7 +73,7 @@ class RangeParametersType:
             "name": "CompositeValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     quantity_list: Optional[QuantityList] = field(
         default=None,
@@ -80,7 +81,7 @@ class RangeParametersType:
             "name": "QuantityList",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     count_list: List[Union[str, NilReasonEnumerationValue]] = field(
         default_factory=list,
@@ -90,7 +91,7 @@ class RangeParametersType:
             "namespace": "http://www.opengis.net/gml",
             "pattern": r"other:\w{2,}",
             "tokens": True,
-        }
+        },
     )
     category_list: Optional[CategoryList] = field(
         default=None,
@@ -98,7 +99,7 @@ class RangeParametersType:
             "name": "CategoryList",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     boolean_list: List[Union[str, NilReasonEnumerationValue]] = field(
         default_factory=list,
@@ -108,7 +109,7 @@ class RangeParametersType:
             "namespace": "http://www.opengis.net/gml",
             "pattern": r"other:\w{2,}",
             "tokens": True,
-        }
+        },
     )
     abstract_scalar_value_list: Optional[AbstractScalarValueList] = field(
         default=None,
@@ -116,7 +117,7 @@ class RangeParametersType:
             "name": "AbstractScalarValueList",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     quantity: Optional[Quantity] = field(
         default=None,
@@ -125,7 +126,7 @@ class RangeParametersType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "nillable": True,
-        }
+        },
     )
     count: Optional[Count] = field(
         default=None,
@@ -134,7 +135,7 @@ class RangeParametersType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "nillable": True,
-        }
+        },
     )
     category: Optional[Category] = field(
         default=None,
@@ -143,7 +144,7 @@ class RangeParametersType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "nillable": True,
-        }
+        },
     )
     boolean: Optional[Boolean1] = field(
         default=None,
@@ -152,7 +153,7 @@ class RangeParametersType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "nillable": True,
-        }
+        },
     )
     abstract_scalar_value: Optional[AbstractScalarValue] = field(
         default=None,
@@ -160,7 +161,7 @@ class RangeParametersType:
             "name": "AbstractScalarValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_value: Optional[AbstractValue] = field(
         default=None,
@@ -168,13 +169,13 @@ class RangeParametersType:
             "name": "AbstractValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -182,49 +183,49 @@ class RangeParametersType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -232,7 +233,7 @@ class RangeParametersType:
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -240,5 +241,5 @@ class RangeParametersType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

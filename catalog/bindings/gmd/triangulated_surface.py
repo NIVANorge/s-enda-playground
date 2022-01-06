@@ -13,5 +13,6 @@ class TriangulatedSurface(TriangulatedSurfaceType):
     trianglePatches encapsulates the triangles of the triangulated
     surface.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

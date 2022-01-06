@@ -16,13 +16,14 @@ class ReferenceGroupType(BasicIdentificationType):
     A Group can be used instead of a Manifest that can only contain one
     group.
     """
+
     service_reference: List[ServiceReference] = field(
         default_factory=list,
         metadata={
             "name": "ServiceReference",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     reference: List[Reference] = field(
         default_factory=list,
@@ -30,7 +31,7 @@ class ReferenceGroupType(BasicIdentificationType):
             "name": "Reference",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     abstract_reference_base: List[AbstractReferenceBase] = field(
         default_factory=list,
@@ -38,5 +39,5 @@ class ReferenceGroupType(BasicIdentificationType):
             "name": "AbstractReferenceBase",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )

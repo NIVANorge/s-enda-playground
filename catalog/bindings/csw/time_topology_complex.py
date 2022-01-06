@@ -11,5 +11,6 @@ class TimeTopologyComplex(TimeTopologyComplexType):
     It shall be the connected acyclic directed graph composed of time
     nodes and time edges.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

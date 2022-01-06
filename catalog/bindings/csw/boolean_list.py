@@ -12,6 +12,7 @@ class BooleanList:
     An element of this type contains a space-separated list of boolean
     values {0,1,true,false}
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"
 
@@ -20,5 +21,5 @@ class BooleanList:
         metadata={
             "pattern": r"other:\w{2,}",
             "tokens": True,
-        }
+        },
     )

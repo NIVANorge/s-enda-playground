@@ -12,6 +12,7 @@ class MethodFormula(CodeType2):
     operation method may not be analytic, in which case this element
     references or contains the procedure, not an analytic formula.
     """
+
     class Meta:
         name = "methodFormula"
         namespace = "http://www.opengis.net/gml"

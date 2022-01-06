@@ -12,5 +12,5 @@ class UnitOfMeasureType:
             "type": "Attribute",
             "required": True,
             "pattern": r"[^: \n\r\t]+",
-        }
+        },
     )

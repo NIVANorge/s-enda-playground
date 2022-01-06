@@ -16,7 +16,7 @@ class UnitDefinitionType(DefinitionType):
             "name": "quantityType",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     quantity_type_reference: Optional[QuantityTypeReference] = field(
         default=None,
@@ -24,7 +24,7 @@ class UnitDefinitionType(DefinitionType):
             "name": "quantityTypeReference",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     catalog_symbol: Optional[CatalogSymbol] = field(
         default=None,
@@ -32,5 +32,5 @@ class UnitDefinitionType(DefinitionType):
             "name": "catalogSymbol",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

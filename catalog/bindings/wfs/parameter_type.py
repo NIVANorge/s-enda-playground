@@ -11,7 +11,7 @@ class ParameterType:
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
     content: List[object] = field(
         default_factory=list,
@@ -19,5 +19,5 @@ class ParameterType:
             "type": "Wildcard",
             "namespace": "##any",
             "mixed": True,
-        }
+        },
     )

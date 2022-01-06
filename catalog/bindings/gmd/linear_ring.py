@@ -12,5 +12,6 @@ class LinearRing(LinearRingType):
 
     The number of direct positions in the list shall be at least four.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

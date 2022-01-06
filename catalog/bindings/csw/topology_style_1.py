@@ -10,6 +10,7 @@ class TopologyStyle1(TopologyStyleType):
 
     Describes individual topology elements styles.
     """
+
     class Meta:
         name = "TopologyStyle"
         namespace = "http://www.opengis.net/gml"

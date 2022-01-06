@@ -46,6 +46,7 @@ class ClothoidType(AbstractCurveSegmentType):
         curve segment at its start point. The startParameter can either
         be positive or negative.
     """
+
     ref_location: Optional["ClothoidType.RefLocation"] = field(
         default=None,
         metadata={
@@ -53,7 +54,7 @@ class ClothoidType(AbstractCurveSegmentType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     scale_factor: Optional[Decimal] = field(
         default=None,
@@ -62,7 +63,7 @@ class ClothoidType(AbstractCurveSegmentType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     start_parameter: Optional[float] = field(
         default=None,
@@ -71,7 +72,7 @@ class ClothoidType(AbstractCurveSegmentType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     end_parameter: Optional[float] = field(
         default=None,
@@ -80,7 +81,7 @@ class ClothoidType(AbstractCurveSegmentType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
 
     @dataclass
@@ -90,6 +91,7 @@ class ClothoidType(AbstractCurveSegmentType):
             that places  the curve defined by the Fresnel Integrals into
             the co-ordinate reference system of this object.
         """
+
         affine_placement: Optional[AffinePlacement] = field(
             default=None,
             metadata={
@@ -97,5 +99,5 @@ class ClothoidType(AbstractCurveSegmentType):
                 "type": "Element",
                 "namespace": "http://www.opengis.net/gml",
                 "required": True,
-            }
+            },
         )

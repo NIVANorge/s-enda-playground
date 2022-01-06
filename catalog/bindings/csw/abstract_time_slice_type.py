@@ -16,6 +16,7 @@ class AbstractTimeSliceType(AbstractGmltype):
     The dataSource property describes how the temporal data was
     acquired.
     """
+
     valid_time: Optional[ValidTime] = field(
         default=None,
         metadata={
@@ -23,7 +24,7 @@ class AbstractTimeSliceType(AbstractGmltype):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     data_source: Optional[DataSource] = field(
         default=None,
@@ -31,5 +32,5 @@ class AbstractTimeSliceType(AbstractGmltype):
             "name": "dataSource",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

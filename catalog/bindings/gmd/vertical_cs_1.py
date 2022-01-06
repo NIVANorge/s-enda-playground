@@ -14,6 +14,7 @@ class VerticalCs1(VerticalCstype):
     the vertical coordinate system axis. A VerticalCS shall have one
     gml:axis property element.
     """
+
     class Meta:
         name = "VerticalCS"
         namespace = "http://www.opengis.net/gml"

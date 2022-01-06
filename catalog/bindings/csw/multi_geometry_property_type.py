@@ -25,13 +25,14 @@ class MultiGeometryPropertyType:
     Either the reference or the contained element must be given, but
     neither both nor none.
     """
+
     multi_line_string: Optional[MultiLineString] = field(
         default=None,
         metadata={
             "name": "MultiLineString",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_polygon: Optional[MultiPolygon] = field(
         default=None,
@@ -39,7 +40,7 @@ class MultiGeometryPropertyType:
             "name": "MultiPolygon",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_solid: Optional[MultiSolid] = field(
         default=None,
@@ -47,7 +48,7 @@ class MultiGeometryPropertyType:
             "name": "MultiSolid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_surface: Optional[MultiSurface] = field(
         default=None,
@@ -55,7 +56,7 @@ class MultiGeometryPropertyType:
             "name": "MultiSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_curve: Optional[MultiCurve] = field(
         default=None,
@@ -63,7 +64,7 @@ class MultiGeometryPropertyType:
             "name": "MultiCurve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_point: Optional[MultiPoint] = field(
         default=None,
@@ -71,7 +72,7 @@ class MultiGeometryPropertyType:
             "name": "MultiPoint",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_geometry: Optional[MultiGeometry] = field(
         default=None,
@@ -79,7 +80,7 @@ class MultiGeometryPropertyType:
             "name": "MultiGeometry",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     geometric_aggregate: Optional[GeometricAggregate] = field(
         default=None,
@@ -87,7 +88,7 @@ class MultiGeometryPropertyType:
             "name": "_GeometricAggregate",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: TypeType = field(
         init=False,
@@ -95,14 +96,14 @@ class MultiGeometryPropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
@@ -110,7 +111,7 @@ class MultiGeometryPropertyType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
@@ -118,28 +119,28 @@ class MultiGeometryPropertyType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -147,5 +148,5 @@ class MultiGeometryPropertyType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

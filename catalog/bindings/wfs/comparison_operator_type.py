@@ -1,6 +1,8 @@
 from dataclasses import dataclass, field
 from typing import Optional, Union
-from bindings.wfs.comparison_operator_name_type_value import ComparisonOperatorNameTypeValue
+from bindings.wfs.comparison_operator_name_type_value import (
+    ComparisonOperatorNameTypeValue,
+)
 
 __NAMESPACE__ = "http://www.opengis.net/fes/2.0"
 
@@ -13,5 +15,5 @@ class ComparisonOperatorType:
             "type": "Attribute",
             "required": True,
             "pattern": r"extension:\w{2,}",
-        }
+        },
     )

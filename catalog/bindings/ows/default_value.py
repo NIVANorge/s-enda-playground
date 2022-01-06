@@ -8,6 +8,7 @@ class DefaultValue:
     """
     The default value for a quantity for which multiple values are allowed.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/2.0"
 
@@ -15,5 +16,5 @@ class DefaultValue:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )

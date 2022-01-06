@@ -14,5 +14,6 @@ class LinearCstype(AbstractCoordinateSystemType):
     representing a road to describe points on or along that road. A
     LinearCS shall have one usesAxis association.
     """
+
     class Meta:
         name = "LinearCSType"

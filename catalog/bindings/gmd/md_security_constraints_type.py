@@ -1,7 +1,9 @@
 from dataclasses import dataclass, field
 from typing import Optional
 from bindings.gmd.character_string_property_type import CharacterStringPropertyType
-from bindings.gmd.md_classification_code_property_type import MdClassificationCodePropertyType
+from bindings.gmd.md_classification_code_property_type import (
+    MdClassificationCodePropertyType,
+)
 from bindings.gmd.md_constraints_type import MdConstraintsType
 
 __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
@@ -13,6 +15,7 @@ class MdSecurityConstraintsType(MdConstraintsType):
     Handling restrictions imposed on the dataset because of national security,
     privacy, or other concerns.
     """
+
     class Meta:
         name = "MD_SecurityConstraints_Type"
 
@@ -22,7 +25,7 @@ class MdSecurityConstraintsType(MdConstraintsType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     user_note: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -30,7 +33,7 @@ class MdSecurityConstraintsType(MdConstraintsType):
             "name": "userNote",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     classification_system: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -38,7 +41,7 @@ class MdSecurityConstraintsType(MdConstraintsType):
             "name": "classificationSystem",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     handling_description: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -46,5 +49,5 @@ class MdSecurityConstraintsType(MdConstraintsType):
             "name": "handlingDescription",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

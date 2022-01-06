@@ -12,6 +12,7 @@ class DefaultStyle(DefaultStylePropertyType):
     GML data. The link between the data and the style should be
     established through this property only.
     """
+
     class Meta:
         name = "defaultStyle"
         namespace = "http://www.opengis.net/gml"

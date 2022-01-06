@@ -10,5 +10,6 @@ class AbstractSingleOperation(AbstractCoordinateOperationType):
     gml:AbstractSingleOperation is a single (not concatenated) coordinate
     operation.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

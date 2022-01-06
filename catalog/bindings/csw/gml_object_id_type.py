@@ -13,5 +13,5 @@ class GmlObjectIdType(AbstractIdType):
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

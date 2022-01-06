@@ -33,13 +33,14 @@ class IdentificationType(DescriptionType):
         data identification could be specified in the Implementation
         Specification for this service.
     """
+
     identifier: Optional[Identifier1] = field(
         default=None,
         metadata={
             "name": "Identifier",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows",
-        }
+        },
     )
     wgs84_bounding_box: List[Wgs84BoundingBox] = field(
         default_factory=list,
@@ -47,7 +48,7 @@ class IdentificationType(DescriptionType):
             "name": "WGS84BoundingBox",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows",
-        }
+        },
     )
     bounding_box: List[BoundingBox1] = field(
         default_factory=list,
@@ -55,7 +56,7 @@ class IdentificationType(DescriptionType):
             "name": "BoundingBox",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows",
-        }
+        },
     )
     output_format: List[str] = field(
         default_factory=list,
@@ -64,7 +65,7 @@ class IdentificationType(DescriptionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ows",
             "pattern": r"(application|audio|image|text|video|message|multipart|model)/.+(;\s*.+=.+)*",
-        }
+        },
     )
     supported_crs: List[str] = field(
         default_factory=list,
@@ -72,7 +73,7 @@ class IdentificationType(DescriptionType):
             "name": "SupportedCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows",
-        }
+        },
     )
     available_crs: List[str] = field(
         default_factory=list,
@@ -80,7 +81,7 @@ class IdentificationType(DescriptionType):
             "name": "AvailableCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows",
-        }
+        },
     )
     metadata: List[Metadata1] = field(
         default_factory=list,
@@ -88,5 +89,5 @@ class IdentificationType(DescriptionType):
             "name": "Metadata",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows",
-        }
+        },
     )

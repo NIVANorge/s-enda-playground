@@ -13,6 +13,7 @@ class CapabilitiesType(CapabilitiesBaseType):
 
     A profile may extend this type to describe additional capabilities.
     """
+
     filter_capabilities: Optional[FilterCapabilities] = field(
         default=None,
         metadata={
@@ -20,5 +21,5 @@ class CapabilitiesType(CapabilitiesBaseType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "required": True,
-        }
+        },
     )

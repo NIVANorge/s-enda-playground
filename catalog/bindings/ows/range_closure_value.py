@@ -16,6 +16,7 @@ class RangeClosureValue(Enum):
         range, and the specified maximum value is NOT included in this
         range.
     """
+
     CLOSED = "closed"
     OPEN = "open"
     OPEN_CLOSED = "open-closed"

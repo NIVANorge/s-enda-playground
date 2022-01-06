@@ -3,7 +3,9 @@ from typing import List, Optional
 from bindings.gmd.abstract_object_type import AbstractObjectType
 from bindings.gmd.ex_extent_property_type import ExExtentPropertyType
 from bindings.gmd.md_scope_code_property_type import MdScopeCodePropertyType
-from bindings.gmd.md_scope_description_property_type import MdScopeDescriptionPropertyType
+from bindings.gmd.md_scope_description_property_type import (
+    MdScopeDescriptionPropertyType,
+)
 
 __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
 
@@ -19,14 +21,14 @@ class DqScopeType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     extent: Optional[ExExtentPropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     level_description: List[MdScopeDescriptionPropertyType] = field(
         default_factory=list,
@@ -34,5 +36,5 @@ class DqScopeType(AbstractObjectType):
             "name": "levelDescription",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

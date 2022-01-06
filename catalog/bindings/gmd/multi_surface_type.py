@@ -1,6 +1,8 @@
 from dataclasses import dataclass, field
 from typing import List, Optional
-from bindings.gmd.abstract_geometric_aggregate_type import AbstractGeometricAggregateType
+from bindings.gmd.abstract_geometric_aggregate_type import (
+    AbstractGeometricAggregateType,
+)
 from bindings.gmd.composite_surface_type import SurfaceMember
 from bindings.gmd.surface_members import SurfaceMembers
 
@@ -15,7 +17,7 @@ class MultiSurfaceType(AbstractGeometricAggregateType):
             "name": "surfaceMember",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     surface_members: Optional[SurfaceMembers] = field(
         default=None,
@@ -23,5 +25,5 @@ class MultiSurfaceType(AbstractGeometricAggregateType):
             "name": "surfaceMembers",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

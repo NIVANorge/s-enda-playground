@@ -34,13 +34,14 @@ class ContactType:
     :ivar contact_instructions: Supplemental instructions on how or when
         to contact the individual or organization.
     """
+
     phone: Optional[TelephoneType] = field(
         default=None,
         metadata={
             "name": "Phone",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     address: Optional[AddressType] = field(
         default=None,
@@ -48,7 +49,7 @@ class ContactType:
             "name": "Address",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     online_resource: Optional[OnlineResourceType] = field(
         default=None,
@@ -56,7 +57,7 @@ class ContactType:
             "name": "OnlineResource",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     hours_of_service: Optional[str] = field(
         default=None,
@@ -64,7 +65,7 @@ class ContactType:
             "name": "HoursOfService",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     contact_instructions: Optional[str] = field(
         default=None,
@@ -72,5 +73,5 @@ class ContactType:
             "name": "ContactInstructions",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )

@@ -19,7 +19,7 @@ class DirectionPropertyType:
             "name": "DirectionVector",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     compass_point: Optional[CompassPointEnumeration] = field(
         default=None,
@@ -27,7 +27,7 @@ class DirectionPropertyType:
             "name": "CompassPoint",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     direction_keyword: Optional[CodeType2] = field(
         default=None,
@@ -35,7 +35,7 @@ class DirectionPropertyType:
             "name": "DirectionKeyword",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     direction_string: Optional[StringOrRefType] = field(
         default=None,
@@ -43,7 +43,7 @@ class DirectionPropertyType:
             "name": "DirectionString",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: TypeType = field(
         init=False,
@@ -51,14 +51,14 @@ class DirectionPropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
@@ -66,7 +66,7 @@ class DirectionPropertyType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
@@ -74,28 +74,28 @@ class DirectionPropertyType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -103,5 +103,5 @@ class DirectionPropertyType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

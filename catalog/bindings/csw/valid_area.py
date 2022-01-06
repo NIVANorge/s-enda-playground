@@ -9,6 +9,7 @@ class ValidArea(ExtentType):
     """
     Area or region in which this CRS object is valid.
     """
+
     class Meta:
         name = "validArea"
         namespace = "http://www.opengis.net/gml"

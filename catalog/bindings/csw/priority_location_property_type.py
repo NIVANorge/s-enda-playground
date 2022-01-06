@@ -10,9 +10,10 @@ class PriorityLocationPropertyType(LocationPropertyType):
     """
     G-XML component Deprecated in GML 3.1.0.
     """
+
     priority: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

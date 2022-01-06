@@ -14,12 +14,12 @@ class SpatialOperatorType:
             "name": "GeometryOperands",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     name: Optional[Union[str, SpatialOperatorNameTypeValue]] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "pattern": r"extension:\w{2,}",
-        }
+        },
     )

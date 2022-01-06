@@ -1,5 +1,7 @@
 from dataclasses import dataclass
-from bindings.gmd.time_ordinal_reference_system_type import TimeOrdinalReferenceSystemType
+from bindings.gmd.time_ordinal_reference_system_type import (
+    TimeOrdinalReferenceSystemType,
+)
 
 __NAMESPACE__ = "http://www.opengis.net/gml"
 
@@ -32,5 +34,6 @@ class TimeOrdinalReferenceSystem(TimeOrdinalReferenceSystemType):
     gml:TimeOrdinalReferenceSystem adds one or more gml:component
     properties to the generic temporal reference system model.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

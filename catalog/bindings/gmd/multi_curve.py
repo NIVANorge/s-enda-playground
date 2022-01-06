@@ -13,5 +13,6 @@ class MultiCurve(MultiCurveType):
     (gml:curveMembers). It is also valid to use both the "standard" and
     the array properties in the same collection.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

@@ -15,12 +15,12 @@ class Title2:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )
     lang: Union[str, LangValue] = field(
         default="en",
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/XML/1998/namespace",
-        }
+        },
     )

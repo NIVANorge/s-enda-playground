@@ -35,6 +35,7 @@ class TimeCalendarEraType(DefinitionType):
     :ivar epoch_of_use: Period for which the calendar era was used as a
         basis for dating.
     """
+
     reference_event: Optional[StringOrRefType] = field(
         default=None,
         metadata={
@@ -42,7 +43,7 @@ class TimeCalendarEraType(DefinitionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     reference_date: Optional[XmlDate] = field(
         default=None,
@@ -50,7 +51,7 @@ class TimeCalendarEraType(DefinitionType):
             "name": "referenceDate",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     julian_reference: Optional[Decimal] = field(
         default=None,
@@ -59,7 +60,7 @@ class TimeCalendarEraType(DefinitionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     epoch_of_use: Optional[TimePeriodPropertyType] = field(
         default=None,
@@ -68,5 +69,5 @@ class TimeCalendarEraType(DefinitionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

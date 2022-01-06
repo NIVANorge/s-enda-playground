@@ -14,12 +14,12 @@ class ResourceIdentifierType:
             "name": "Metadata",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )
     name: Optional[QName] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )

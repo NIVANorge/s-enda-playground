@@ -22,13 +22,14 @@ class ContentsBaseType:
         metadata describing the coverage offerings available from this
         server.
     """
+
     dataset_description_summary: List[DatasetDescriptionSummary] = field(
         default_factory=list,
         metadata={
             "name": "DatasetDescriptionSummary",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     other_source: List[OtherSource] = field(
         default_factory=list,
@@ -36,5 +37,5 @@ class ContentsBaseType:
             "name": "OtherSource",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )

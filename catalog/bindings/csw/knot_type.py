@@ -21,13 +21,14 @@ class KnotType:
     :ivar weight: The property "weight" is the value of the averaging
         weight used for this knot of the spline.
     """
+
     value: Optional[float] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     multiplicity: Optional[int] = field(
         default=None,
@@ -35,7 +36,7 @@ class KnotType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     weight: Optional[float] = field(
         default=None,
@@ -43,5 +44,5 @@ class KnotType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

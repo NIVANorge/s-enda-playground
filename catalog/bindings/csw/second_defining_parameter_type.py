@@ -19,13 +19,14 @@ class SecondDefiningParameterType:
     that case, the semi-major axis "degenerates" into the radius of the
     sphere.
     """
+
     inverse_flattening: Optional[InverseFlattening] = field(
         default=None,
         metadata={
             "name": "inverseFlattening",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     semi_minor_axis: Optional[SemiMinorAxis] = field(
         default=None,
@@ -33,7 +34,7 @@ class SecondDefiningParameterType:
             "name": "semiMinorAxis",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     is_sphere: Optional[IsSphereValue] = field(
         default=None,
@@ -41,5 +42,5 @@ class SecondDefiningParameterType:
             "name": "isSphere",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

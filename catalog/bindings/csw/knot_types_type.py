@@ -12,6 +12,7 @@ class KnotTypesType(Enum):
     of multiplicity 1 elsewhere, and they differ by a positive constant
     from the preceding knot.
     """
+
     UNIFORM = "uniform"
     QUASI_UNIFORM = "quasiUniform"
     PIECEWISE_BEZIER = "piecewiseBezier"

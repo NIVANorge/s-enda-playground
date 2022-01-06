@@ -11,12 +11,13 @@ class DirectionVectorType:
     """
     Direction expressed as a vector, either using components, or using angles.
     """
+
     vector: Optional[Vector] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     horizontal_angle: Optional[AngleType] = field(
         default=None,
@@ -24,7 +25,7 @@ class DirectionVectorType:
             "name": "horizontalAngle",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     vertical_angle: Optional[AngleType] = field(
         default=None,
@@ -32,5 +33,5 @@ class DirectionVectorType:
             "name": "verticalAngle",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

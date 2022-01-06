@@ -13,6 +13,7 @@ class MultiCurveProperty(MultiCurvePropertyType):
     GML Application Schemas whenever a GML Feature has a property with a
     value that is substitutable for MultiCurve.
     """
+
     class Meta:
         name = "multiCurveProperty"
         namespace = "http://www.opengis.net/gml"

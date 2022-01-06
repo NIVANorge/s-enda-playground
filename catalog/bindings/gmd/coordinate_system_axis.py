@@ -9,5 +9,6 @@ class CoordinateSystemAxis(CoordinateSystemAxisType):
     """
     gml:CoordinateSystemAxis is a definition of a coordinate system axis.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

@@ -19,20 +19,21 @@ class PolygonType(AbstractSurfaceType):
     Polygon of GML 2, GM_Polygon of ISO 19107 is implemented by
     PolygonPatch.
     """
+
     outer_boundary_is: Optional[OuterBoundaryIs] = field(
         default=None,
         metadata={
             "name": "outerBoundaryIs",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     exterior: Optional[Exterior] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     inner_boundary_is: List[InnerBoundaryIs] = field(
         default_factory=list,
@@ -40,12 +41,12 @@ class PolygonType(AbstractSurfaceType):
             "name": "innerBoundaryIs",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     interior: List[Interior] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

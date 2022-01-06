@@ -11,16 +11,17 @@ class DomainMetadataType:
 
     (Informative: This element was simplified from the metaDataProperty element in GML 3.0.)
     """
+
     value: str = field(
         default="",
         metadata={
             "required": True,
-        }
+        },
     )
     reference: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )

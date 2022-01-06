@@ -25,5 +25,6 @@ class TimeTopologyComplex(TimeTopologyComplexType):
     primtives are indicated, either by reference or by value, using the
     primitive property.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

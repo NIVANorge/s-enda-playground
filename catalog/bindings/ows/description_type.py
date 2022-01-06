@@ -24,13 +24,14 @@ class DescriptionType:
     Title or Abstract elements shall not exist in the same Description
     with the same xml:lang attribute value unless otherwise specified.
     """
+
     title: List[Title1] = field(
         default_factory=list,
         metadata={
             "name": "Title",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     abstract: List[Abstract] = field(
         default_factory=list,
@@ -38,7 +39,7 @@ class DescriptionType:
             "name": "Abstract",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     keywords: List[Keywords] = field(
         default_factory=list,
@@ -46,5 +47,5 @@ class DescriptionType:
             "name": "Keywords",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )

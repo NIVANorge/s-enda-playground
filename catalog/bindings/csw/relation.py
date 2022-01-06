@@ -12,6 +12,7 @@ class Relation(SimpleLiteral):
     means of a string or number conforming to a formal identification
     system.
     """
+
     class Meta:
         name = "relation"
         namespace = "http://purl.org/dc/elements/1.1/"

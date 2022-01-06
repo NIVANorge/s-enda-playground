@@ -14,5 +14,5 @@ class Null:
         default="",
         metadata={
             "pattern": r"other:\w{2,}",
-        }
+        },
     )

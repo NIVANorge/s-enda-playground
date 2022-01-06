@@ -7,5 +7,6 @@ class DrawingTypeType(Enum):
     """
     Graph-specific styling property.
     """
+
     POLYLINE = "POLYLINE"
     ORTHOGONAL = "ORTHOGONAL"

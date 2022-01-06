@@ -14,6 +14,7 @@ class Language2(SimpleLiteral):
     "akk" for Akkadian, and "en-GB" for English used in the United
     Kingdom.
     """
+
     class Meta:
         name = "language"
         namespace = "http://purl.org/dc/elements/1.1/"

@@ -17,6 +17,7 @@ class Coverage2(SimpleLiteral):
     periods in preference to numeric identifiers such as sets of
     coordinates or date ranges.
     """
+
     class Meta:
         name = "coverage"
         namespace = "http://purl.org/dc/elements/1.1/"

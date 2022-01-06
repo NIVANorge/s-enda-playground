@@ -14,5 +14,5 @@ class CreateStoredQueryType(BaseRequestType):
             "name": "StoredQueryDefinition",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )

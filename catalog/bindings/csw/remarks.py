@@ -10,6 +10,7 @@ class Remarks(StringOrRefType):
 
     Contains text or refers to external text.
     """
+
     class Meta:
         name = "remarks"
         namespace = "http://www.opengis.net/gml"

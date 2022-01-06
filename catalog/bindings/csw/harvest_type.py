@@ -25,6 +25,7 @@ class HarvestType(RequestBaseType):
     attempts (e.g., P6M indicates an interval of
     six months).
     """
+
     source: Optional[str] = field(
         default=None,
         metadata={
@@ -32,7 +33,7 @@ class HarvestType(RequestBaseType):
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
             "required": True,
-        }
+        },
     )
     resource_type: Optional[str] = field(
         default=None,
@@ -41,7 +42,7 @@ class HarvestType(RequestBaseType):
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
             "required": True,
-        }
+        },
     )
     resource_format: Optional[str] = field(
         default=None,
@@ -49,7 +50,7 @@ class HarvestType(RequestBaseType):
             "name": "ResourceFormat",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     harvest_interval: Optional[XmlDuration] = field(
         default=None,
@@ -57,7 +58,7 @@ class HarvestType(RequestBaseType):
             "name": "HarvestInterval",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     response_handler: List[str] = field(
         default_factory=list,
@@ -65,5 +66,5 @@ class HarvestType(RequestBaseType):
             "name": "ResponseHandler",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )

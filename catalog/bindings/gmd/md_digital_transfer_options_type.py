@@ -15,6 +15,7 @@ class MdDigitalTransferOptionsType(AbstractObjectType):
     Technical means and media by which a dataset is obtained from the
     distributor.
     """
+
     class Meta:
         name = "MD_DigitalTransferOptions_Type"
 
@@ -24,7 +25,7 @@ class MdDigitalTransferOptionsType(AbstractObjectType):
             "name": "unitsOfDistribution",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     transfer_size: Optional[RealPropertyType] = field(
         default=None,
@@ -32,7 +33,7 @@ class MdDigitalTransferOptionsType(AbstractObjectType):
             "name": "transferSize",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     on_line: List[CiOnlineResourcePropertyType] = field(
         default_factory=list,
@@ -40,7 +41,7 @@ class MdDigitalTransferOptionsType(AbstractObjectType):
             "name": "onLine",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     off_line: Optional[MdMediumPropertyType] = field(
         default=None,
@@ -48,5 +49,5 @@ class MdDigitalTransferOptionsType(AbstractObjectType):
             "name": "offLine",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

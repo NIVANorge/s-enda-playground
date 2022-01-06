@@ -15,7 +15,7 @@ class RectifiedGridType(GridType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     offset_vector: List[VectorType] = field(
         default_factory=list,
@@ -24,5 +24,5 @@ class RectifiedGridType(GridType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 1,
-        }
+        },
     )

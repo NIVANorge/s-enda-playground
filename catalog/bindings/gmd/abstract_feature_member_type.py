@@ -14,9 +14,10 @@ class AbstractFeatureMemberType:
     instance to assert ownership of a feature in the collection. A
     collection shall not own a feature already owned by another object.
     """
+
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

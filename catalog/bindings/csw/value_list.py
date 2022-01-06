@@ -12,6 +12,7 @@ class ValueList(MeasureListType):
     An element of this type contains a space-separated sequence of
     double values.
     """
+
     class Meta:
         name = "valueList"
         namespace = "http://www.opengis.net/gml"

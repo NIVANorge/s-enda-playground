@@ -15,5 +15,5 @@ class DecimalType:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )

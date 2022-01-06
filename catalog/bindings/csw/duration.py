@@ -13,6 +13,7 @@ class Duration:
     It is a valid subtype of TimeDurationType according to section
     3.14.6, rule 2.2.4 in XML Schema, Part 1.
     """
+
     class Meta:
         name = "duration"
         namespace = "http://www.opengis.net/gml"
@@ -21,5 +22,5 @@ class Duration:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )

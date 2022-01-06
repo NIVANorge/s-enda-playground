@@ -8,6 +8,7 @@ class OrganisationName:
     """
     Name of the responsible organization.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/2.0"
 
@@ -15,5 +16,5 @@ class OrganisationName:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )

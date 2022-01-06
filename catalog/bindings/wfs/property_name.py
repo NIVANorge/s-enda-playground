@@ -16,32 +16,32 @@ class PropertyName:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )
     resolve: ResolveValueType = field(
         default=ResolveValueType.NONE,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     resolve_depth: Union[int, StarStringType] = field(
         default=StarStringType.VALUE,
         metadata={
             "name": "resolveDepth",
             "type": "Attribute",
-        }
+        },
     )
     resolve_timeout: int = field(
         default=300,
         metadata={
             "name": "resolveTimeout",
             "type": "Attribute",
-        }
+        },
     )
     resolve_path: Optional[str] = field(
         default=None,
         metadata={
             "name": "resolvePath",
             "type": "Attribute",
-        }
+        },
     )

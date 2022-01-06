@@ -14,6 +14,7 @@ class CartesianCs1(CartesianCstype):
     all axes shall have the same length unit of measure. A CartesianCS
     shall have one, two, or three gml:axis property elements.
     """
+
     class Meta:
         name = "CartesianCS"
         namespace = "http://www.opengis.net/gml"

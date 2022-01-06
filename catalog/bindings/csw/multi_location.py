@@ -13,6 +13,7 @@ class MultiLocation(MultiPointPropertyType):
     line string via the XLink-attributes or contains the line string
     element.
     """
+
     class Meta:
         name = "multiLocation"
         namespace = "http://www.opengis.net/gml"

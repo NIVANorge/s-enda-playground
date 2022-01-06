@@ -21,13 +21,14 @@ class DatumPropertyType:
     gml:DatumPropertyType is a property type for association roles to a datum,
     either referencing or containing the definition of that datum.
     """
+
     temporal_datum: Optional[TemporalDatum1] = field(
         default=None,
         metadata={
             "name": "TemporalDatum",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     vertical_datum: Optional[VerticalDatum1] = field(
         default=None,
@@ -35,7 +36,7 @@ class DatumPropertyType:
             "name": "VerticalDatum",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     image_datum: Optional[ImageDatum1] = field(
         default=None,
@@ -43,7 +44,7 @@ class DatumPropertyType:
             "name": "ImageDatum",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     engineering_datum: Optional[EngineeringDatum1] = field(
         default=None,
@@ -51,7 +52,7 @@ class DatumPropertyType:
             "name": "EngineeringDatum",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     geodetic_datum: Optional[GeodeticDatum1] = field(
         default=None,
@@ -59,7 +60,7 @@ class DatumPropertyType:
             "name": "GeodeticDatum",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_datum: Optional[AbstractDatum] = field(
         default=None,
@@ -67,7 +68,7 @@ class DatumPropertyType:
             "name": "AbstractDatum",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -75,49 +76,49 @@ class DatumPropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -125,7 +126,7 @@ class DatumPropertyType:
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -133,5 +134,5 @@ class DatumPropertyType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

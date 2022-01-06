@@ -13,7 +13,7 @@ class MappingRuleType:
             "name": "ruleDefinition",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     rule_reference: Optional[ReferenceType] = field(
         default=None,
@@ -21,5 +21,5 @@ class MappingRuleType:
             "name": "ruleReference",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

@@ -10,6 +10,7 @@ class Resource1:
     The complexType used by this element shall be specified by each
     specific OWS.
     """
+
     class Meta:
         name = "Resource"
         namespace = "http://www.opengis.net/ows/2.0"

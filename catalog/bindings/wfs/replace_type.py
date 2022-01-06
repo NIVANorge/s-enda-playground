@@ -13,7 +13,7 @@ class ReplaceType(AbstractTransactionActionType):
         metadata={
             "type": "Wildcard",
             "namespace": "##other",
-        }
+        },
     )
     filter: Optional[Filter] = field(
         default=None,
@@ -22,19 +22,19 @@ class ReplaceType(AbstractTransactionActionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "required": True,
-        }
+        },
     )
     input_format: str = field(
         default="application/gml+xml; version=3.2",
         metadata={
             "name": "inputFormat",
             "type": "Attribute",
-        }
+        },
     )
     srs_name: Optional[str] = field(
         default=None,
         metadata={
             "name": "srsName",
             "type": "Attribute",
-        }
+        },
     )

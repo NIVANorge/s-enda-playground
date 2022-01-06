@@ -19,5 +19,6 @@ class AbstractCurveSegment(AbstractCurveSegmentType):
     the control points and control parameters to determine the position
     of this curve segment.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

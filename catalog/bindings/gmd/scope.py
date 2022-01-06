@@ -10,6 +10,7 @@ class Scope:
 
     If unknown, enter "not known".
     """
+
     class Meta:
         name = "scope"
         namespace = "http://www.opengis.net/gml"
@@ -18,5 +19,5 @@ class Scope:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )

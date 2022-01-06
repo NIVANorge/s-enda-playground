@@ -14,5 +14,6 @@ class RectifiedGridCoverage(RectifiedGridCoverageType):
     domain that is a gml:RectifiedGrid geometry. The coverage domain is
     described by gml:rectifiedGridDomain.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

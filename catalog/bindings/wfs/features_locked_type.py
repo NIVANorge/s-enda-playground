@@ -14,5 +14,5 @@ class FeaturesLockedType:
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 1,
-        }
+        },
     )

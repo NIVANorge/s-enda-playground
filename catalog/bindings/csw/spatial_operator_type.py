@@ -14,11 +14,11 @@ class SpatialOperatorType:
             "name": "GeometryOperands",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     name: Optional[SpatialOperatorNameType] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

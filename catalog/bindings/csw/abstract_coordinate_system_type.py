@@ -1,6 +1,8 @@
 from dataclasses import dataclass, field
 from typing import List, Optional
-from bindings.csw.abstract_coordinate_system_base_type import AbstractCoordinateSystemBaseType
+from bindings.csw.abstract_coordinate_system_base_type import (
+    AbstractCoordinateSystemBaseType,
+)
 from bindings.csw.cs_id import CsId
 from bindings.csw.remarks import Remarks
 from bindings.csw.uses_axis import UsesAxis
@@ -31,20 +33,21 @@ class AbstractCoordinateSystemType(AbstractCoordinateSystemBaseType):
     :ivar uses_axis: Ordered sequence of associations to the coordinate
         system axes included in this coordinate system.
     """
+
     cs_id: List[CsId] = field(
         default_factory=list,
         metadata={
             "name": "csID",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     remarks: Optional[Remarks] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     uses_axis: List[UsesAxis] = field(
         default_factory=list,
@@ -53,5 +56,5 @@ class AbstractCoordinateSystemType(AbstractCoordinateSystemBaseType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 1,
-        }
+        },
     )

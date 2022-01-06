@@ -13,6 +13,7 @@ class SemiMajorAxis(MeasureType):
     referenced by uom must be suitable for a length, such as metres or
     feet.
     """
+
     class Meta:
         name = "semiMajorAxis"
         namespace = "http://www.opengis.net/gml"

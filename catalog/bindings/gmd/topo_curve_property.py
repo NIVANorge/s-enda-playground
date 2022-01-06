@@ -10,6 +10,7 @@ class TopoCurveProperty(TopoCurvePropertyType):
     The gml:topoCurveProperty property element may be used in features to
     express their relationship to the referenced topology edges.
     """
+
     class Meta:
         name = "topoCurveProperty"
         namespace = "http://www.opengis.net/gml"

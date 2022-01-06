@@ -9,11 +9,12 @@ class MeasureListType:
     """
     gml:MeasureListType provides for a list of quantities.
     """
+
     value: List[float] = field(
         default_factory=list,
         metadata={
             "tokens": True,
-        }
+        },
     )
     uom: Optional[str] = field(
         default=None,
@@ -21,5 +22,5 @@ class MeasureListType:
             "type": "Attribute",
             "required": True,
             "pattern": r"[^: \n\r\t]+",
-        }
+        },
     )

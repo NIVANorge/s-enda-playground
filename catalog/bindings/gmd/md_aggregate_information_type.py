@@ -5,8 +5,12 @@ from bindings.gmd.ci_citation_type import (
     CiCitationPropertyType,
     MdIdentifierPropertyType,
 )
-from bindings.gmd.ds_association_type_code_property_type import DsAssociationTypeCodePropertyType
-from bindings.gmd.ds_initiative_type_code_property_type import DsInitiativeTypeCodePropertyType
+from bindings.gmd.ds_association_type_code_property_type import (
+    DsAssociationTypeCodePropertyType,
+)
+from bindings.gmd.ds_initiative_type_code_property_type import (
+    DsInitiativeTypeCodePropertyType,
+)
 
 __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
 
@@ -16,6 +20,7 @@ class MdAggregateInformationType(AbstractObjectType):
     """
     Encapsulates the dataset aggregation information.
     """
+
     class Meta:
         name = "MD_AggregateInformation_Type"
 
@@ -25,7 +30,7 @@ class MdAggregateInformationType(AbstractObjectType):
             "name": "aggregateDataSetName",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     aggregate_data_set_identifier: Optional[MdIdentifierPropertyType] = field(
         default=None,
@@ -33,7 +38,7 @@ class MdAggregateInformationType(AbstractObjectType):
             "name": "aggregateDataSetIdentifier",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     association_type: Optional[DsAssociationTypeCodePropertyType] = field(
         default=None,
@@ -42,7 +47,7 @@ class MdAggregateInformationType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     initiative_type: Optional[DsInitiativeTypeCodePropertyType] = field(
         default=None,
@@ -50,5 +55,5 @@ class MdAggregateInformationType(AbstractObjectType):
             "name": "initiativeType",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

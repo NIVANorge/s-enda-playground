@@ -11,6 +11,7 @@ class ResultType(Enum):
         message if it is valid. Continue processing the request
         asynchronously.
     """
+
     RESULTS = "results"
     HITS = "hits"
     VALIDATE = "validate"

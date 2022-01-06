@@ -1,5 +1,7 @@
 from dataclasses import dataclass
-from bindings.gmd.md_vector_spatial_representation_type import MdVectorSpatialRepresentationType
+from bindings.gmd.md_vector_spatial_representation_type import (
+    MdVectorSpatialRepresentationType,
+)
 
 __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
 

@@ -16,6 +16,7 @@ class AbstractAssociationRole(AssociationRoleType):
     -       the encoding to „by-reference only“ (see 7.2.3.7),
     -       the encoding to „inline only“ (see 7.2.3.8).
     """
+
     class Meta:
         name = "abstractAssociationRole"
         namespace = "http://www.opengis.net/gml"

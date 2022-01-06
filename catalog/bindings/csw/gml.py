@@ -11,6 +11,7 @@ class Gml(AbstractGmltype):
     include any element which is a GML feature, object, geometry or complex
     value.
     """
+
     class Meta:
         name = "_GML"
         namespace = "http://www.opengis.net/gml"

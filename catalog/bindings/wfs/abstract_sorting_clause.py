@@ -14,5 +14,5 @@ class AbstractSortingClause:
         metadata={
             "type": "Wildcard",
             "namespace": "##any",
-        }
+        },
     )

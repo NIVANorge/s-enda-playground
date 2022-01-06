@@ -15,6 +15,7 @@ class TransactionType(RequestBaseType):
     If the verboseResponse attribute has the value "true", then one or
     more csw:InsertResult elements must be included in the response.
     """
+
     insert: List[InsertType] = field(
         default_factory=list,
         metadata={
@@ -22,7 +23,7 @@ class TransactionType(RequestBaseType):
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
             "sequential": True,
-        }
+        },
     )
     update: List[UpdateType] = field(
         default_factory=list,
@@ -31,7 +32,7 @@ class TransactionType(RequestBaseType):
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
             "sequential": True,
-        }
+        },
     )
     delete: List[DeleteType] = field(
         default_factory=list,
@@ -40,19 +41,19 @@ class TransactionType(RequestBaseType):
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
             "sequential": True,
-        }
+        },
     )
     verbose_response: bool = field(
         default=False,
         metadata={
             "name": "verboseResponse",
             "type": "Attribute",
-        }
+        },
     )
     request_id: Optional[str] = field(
         default=None,
         metadata={
             "name": "requestId",
             "type": "Attribute",
-        }
+        },
     )

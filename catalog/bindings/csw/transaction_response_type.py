@@ -13,6 +13,7 @@ class TransactionResponseType:
     If the transaction failed for any reason, a service exception report
     indicating a TransactionFailure is returned instead.
     """
+
     transaction_summary: Optional[TransactionSummaryType] = field(
         default=None,
         metadata={
@@ -20,7 +21,7 @@ class TransactionResponseType:
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
             "required": True,
-        }
+        },
     )
     insert_result: List[InsertResultType] = field(
         default_factory=list,
@@ -28,11 +29,11 @@ class TransactionResponseType:
             "name": "InsertResult",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     version: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

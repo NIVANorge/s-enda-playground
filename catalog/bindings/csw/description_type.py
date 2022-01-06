@@ -15,13 +15,14 @@ class DescriptionType:
     shall not be restricted for a specific OWS to change the
     multiplicity (or optionality) of some elements.
     """
+
     title: Optional[str] = field(
         default=None,
         metadata={
             "name": "Title",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows",
-        }
+        },
     )
     abstract: Optional[str] = field(
         default=None,
@@ -29,7 +30,7 @@ class DescriptionType:
             "name": "Abstract",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows",
-        }
+        },
     )
     keywords: List[Keywords] = field(
         default_factory=list,
@@ -37,5 +38,5 @@ class DescriptionType:
             "name": "Keywords",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows",
-        }
+        },
     )

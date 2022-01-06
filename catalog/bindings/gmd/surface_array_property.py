@@ -12,6 +12,7 @@ class SurfaceArrayProperty(SurfaceArrayPropertyType):
     GML Application Schemas whenever a GML feature has a property with a
     value that is substitutable for a list of AbstractSurfaces.
     """
+
     class Meta:
         name = "surfaceArrayProperty"
         namespace = "http://www.opengis.net/gml"

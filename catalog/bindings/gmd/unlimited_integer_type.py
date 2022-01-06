@@ -13,12 +13,12 @@ class UnlimitedIntegerType:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )
     is_infinite: Optional[bool] = field(
         default=None,
         metadata={
             "name": "isInfinite",
             "type": "Attribute",
-        }
+        },
     )

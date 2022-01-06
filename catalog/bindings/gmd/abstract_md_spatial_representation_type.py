@@ -9,5 +9,6 @@ class AbstractMdSpatialRepresentationType(AbstractObjectType):
     """
     Digital mechanism used to represent spatial information.
     """
+
     class Meta:
         name = "AbstractMD_SpatialRepresentation_Type"

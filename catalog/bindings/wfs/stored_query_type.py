@@ -14,12 +14,12 @@ class StoredQueryType(AbstractQueryExpressionType):
             "name": "Parameter",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     id: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )

@@ -9,6 +9,7 @@ class SrsId(IdentifierType):
     """
     An identification of a reference system.
     """
+
     class Meta:
         name = "srsID"
         namespace = "http://www.opengis.net/gml"

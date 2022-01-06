@@ -20,6 +20,7 @@ class ArcType2:
     :ivar from_value:
     :ivar to: from and to have default behavior when values are missing
     """
+
     class Meta:
         name = "arcType"
 
@@ -28,7 +29,7 @@ class ArcType2:
         metadata={
             "type": "Element",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     type: TypeType = field(
         init=False,
@@ -37,7 +38,7 @@ class ArcType2:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "required": True,
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
@@ -45,7 +46,7 @@ class ArcType2:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     title_attribute: Optional[str] = field(
         default=None,
@@ -53,21 +54,21 @@ class ArcType2:
             "name": "title",
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     from_value: Optional[str] = field(
         default=None,
@@ -75,12 +76,12 @@ class ArcType2:
             "name": "from",
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     to: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )

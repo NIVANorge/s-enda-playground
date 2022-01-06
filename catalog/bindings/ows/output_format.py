@@ -11,6 +11,7 @@ class OutputFormat:
     specifications wherever applicable. More than one such parameter can
     be included for different purposes.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/2.0"
 
@@ -19,5 +20,5 @@ class OutputFormat:
         metadata={
             "required": True,
             "pattern": r"(application|audio|image|text|video|message|multipart|model)/.+(;\s*.+=.+)*",
-        }
+        },
     )

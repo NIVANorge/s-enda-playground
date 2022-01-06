@@ -14,5 +14,5 @@ class Record:
         metadata={
             "type": "Wildcard",
             "namespace": "##any",
-        }
+        },
     )

@@ -14,6 +14,7 @@ class TimeIndeterminateValueType(Enum):
     -       be used either alone, or
     -       qualify a specific value for temporal position.
     """
+
     AFTER = "after"
     BEFORE = "before"
     NOW = "now"

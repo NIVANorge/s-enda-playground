@@ -17,6 +17,7 @@ class VerticalDatumType1(AbstractDatumType):
     constraints on the Coordinate Axis with which it is combined to
     create a Vertical CRS.
     """
+
     class Meta:
         name = "VerticalDatumType"
 
@@ -26,5 +27,5 @@ class VerticalDatumType1(AbstractDatumType):
             "name": "verticalDatumType",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

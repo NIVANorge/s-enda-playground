@@ -1,5 +1,7 @@
 from dataclasses import dataclass
-from bindings.gmd.dq_quantitative_attribute_accuracy_type import DqQuantitativeAttributeAccuracyType
+from bindings.gmd.dq_quantitative_attribute_accuracy_type import (
+    DqQuantitativeAttributeAccuracyType,
+)
 
 __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
 

@@ -1,6 +1,8 @@
 from dataclasses import dataclass, field
 from typing import Optional
-from bindings.gmd.abstract_ex_geographic_extent_type import AbstractExGeographicExtentType
+from bindings.gmd.abstract_ex_geographic_extent_type import (
+    AbstractExGeographicExtentType,
+)
 from bindings.gmd.ci_citation_type import MdIdentifierPropertyType
 
 __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
@@ -18,5 +20,5 @@ class ExGeographicDescriptionType(AbstractExGeographicExtentType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )

@@ -15,5 +15,6 @@ class Meaning(DomainMetadataType):
     "documentation" elements in XML Schemas or "description" elements in
     GML objects.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/1.1"

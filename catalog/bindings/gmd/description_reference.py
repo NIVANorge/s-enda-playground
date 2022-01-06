@@ -11,6 +11,7 @@ class DescriptionReference(ReferenceType):
     The xlink:href attribute of the gml:descriptionReference property
     references the external description.
     """
+
     class Meta:
         name = "descriptionReference"
         namespace = "http://www.opengis.net/gml"

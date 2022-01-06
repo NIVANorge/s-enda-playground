@@ -14,6 +14,7 @@ class Description(StringOrRefType):
     external description has been deprecated and replaced by the
     gml:descriptionReference property.
     """
+
     class Meta:
         name = "description"
         namespace = "http://www.opengis.net/gml"

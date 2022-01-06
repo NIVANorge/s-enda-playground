@@ -14,5 +14,6 @@ class AbstractGriddedSurface(AbstractGriddedSurfaceType):
     for the surface patches based on a grid. All derived subtypes shall
     conform to the constraints specified in ISO 19107:2003, 6.4.41.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

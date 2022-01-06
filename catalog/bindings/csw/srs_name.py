@@ -9,6 +9,7 @@ class SrsName(CodeType2):
     """
     The name by which this reference system is identified.
     """
+
     class Meta:
         name = "srsName"
         namespace = "http://www.opengis.net/gml"

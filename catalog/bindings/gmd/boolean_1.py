@@ -16,7 +16,7 @@ class Boolean1:
         default=None,
         metadata={
             "nillable": True,
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -24,5 +24,5 @@ class Boolean1:
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )

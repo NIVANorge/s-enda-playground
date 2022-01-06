@@ -9,6 +9,7 @@ class ValidTime(TimePrimitivePropertyType):
     """
     gml:validTime is a convenience property element.
     """
+
     class Meta:
         name = "validTime"
         namespace = "http://www.opengis.net/gml"

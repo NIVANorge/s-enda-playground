@@ -15,5 +15,6 @@ class TopoVolume(TopoVolumeType):
     this solid feature to other features via the shared solid
     definitions.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

@@ -12,5 +12,6 @@ class ArcString(ArcStringType):
     The number of arcs in the arc string may be explicitly stated in the attribute numArc. The number of control points in the arc string shall be 2 * numArc + 1.
     The content model follows the general pattern for the encoding of curve segments.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

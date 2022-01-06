@@ -13,5 +13,6 @@ class LineString(LineStringType):
     interpolation between them. The number of direct positions in the
     list shall be at least two.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

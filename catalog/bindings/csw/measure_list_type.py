@@ -11,16 +11,17 @@ class MeasureListType:
     The value of uom (Units Of Measure) attribute is a reference to a
     Reference System for the amount, either a ratio or position scale.
     """
+
     value: List[float] = field(
         default_factory=list,
         metadata={
             "tokens": True,
-        }
+        },
     )
     uom: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )

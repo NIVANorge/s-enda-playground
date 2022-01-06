@@ -11,12 +11,12 @@ class GetFeatureWithLockType(GetFeatureType):
         default=300,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     lock_action: AllSomeType = field(
         default=AllSomeType.ALL,
         metadata={
             "name": "lockAction",
             "type": "Attribute",
-        }
+        },
     )

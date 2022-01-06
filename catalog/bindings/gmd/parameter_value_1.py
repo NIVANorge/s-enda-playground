@@ -16,6 +16,7 @@ class ParameterValue1(ParameterValueType):
     restricted for well-known operation methods, especially for methods
     with many instances.
     """
+
     class Meta:
         name = "ParameterValue"
         namespace = "http://www.opengis.net/gml"

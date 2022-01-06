@@ -17,9 +17,10 @@ class AbstractMemberType:
     instance to assert ownership of an object in the collection. A
     collection shall not own an object already owned by another object.
     """
+
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

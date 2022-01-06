@@ -19,13 +19,14 @@ class GetRecordsType(RequestBaseType):
     the catalogue is a member of a federation. Profiles may allow
     alternative query expressions.
     """
+
     distributed_search: Optional[DistributedSearchType] = field(
         default=None,
         metadata={
             "name": "DistributedSearch",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     response_handler: List[str] = field(
         default_factory=list,
@@ -33,7 +34,7 @@ class GetRecordsType(RequestBaseType):
             "name": "ResponseHandler",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     query: Optional[Query] = field(
         default=None,
@@ -41,7 +42,7 @@ class GetRecordsType(RequestBaseType):
             "name": "Query",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     abstract_query: Optional[AbstractQuery] = field(
         default=None,
@@ -49,54 +50,54 @@ class GetRecordsType(RequestBaseType):
             "name": "AbstractQuery",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     other_element: Optional[object] = field(
         default=None,
         metadata={
             "type": "Wildcard",
             "namespace": "##other",
-        }
+        },
     )
     request_id: Optional[str] = field(
         default=None,
         metadata={
             "name": "requestId",
             "type": "Attribute",
-        }
+        },
     )
     result_type: ResultType = field(
         default=ResultType.HITS,
         metadata={
             "name": "resultType",
             "type": "Attribute",
-        }
+        },
     )
     output_format: str = field(
         default="application/xml",
         metadata={
             "name": "outputFormat",
             "type": "Attribute",
-        }
+        },
     )
     output_schema: Optional[str] = field(
         default=None,
         metadata={
             "name": "outputSchema",
             "type": "Attribute",
-        }
+        },
     )
     start_position: int = field(
         default=1,
         metadata={
             "name": "startPosition",
             "type": "Attribute",
-        }
+        },
     )
     max_records: int = field(
         default=10,
         metadata={
             "name": "maxRecords",
             "type": "Attribute",
-        }
+        },
     )

@@ -9,6 +9,7 @@ class MethodName(CodeType2):
     """
     The name by which this operation method is identified.
     """
+
     class Meta:
         name = "methodName"
         namespace = "http://www.opengis.net/gml"

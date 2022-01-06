@@ -15,16 +15,17 @@ class CodeType:
     documentation edited, for possible use outside the
     ServiceIdentification section of a service metadata document.
     """
+
     value: str = field(
         default="",
         metadata={
             "required": True,
-        }
+        },
     )
     code_space: Optional[str] = field(
         default=None,
         metadata={
             "name": "codeSpace",
             "type": "Attribute",
-        }
+        },
     )

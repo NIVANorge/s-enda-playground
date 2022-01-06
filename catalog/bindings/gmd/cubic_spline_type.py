@@ -21,7 +21,7 @@ class CubicSplineType(AbstractCurveSegmentType):
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 2,
             "sequential": True,
-        }
+        },
     )
     point_property: List[PointProperty] = field(
         default_factory=list,
@@ -31,7 +31,7 @@ class CubicSplineType(AbstractCurveSegmentType):
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 2,
             "sequential": True,
-        }
+        },
     )
     point_rep: List[PointRep] = field(
         default_factory=list,
@@ -41,7 +41,7 @@ class CubicSplineType(AbstractCurveSegmentType):
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 2,
             "sequential": True,
-        }
+        },
     )
     pos_list: Optional[PosList] = field(
         default=None,
@@ -49,14 +49,14 @@ class CubicSplineType(AbstractCurveSegmentType):
             "name": "posList",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     coordinates: Optional[Coordinates] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     vector_at_start: Optional[VectorType] = field(
         default=None,
@@ -65,7 +65,7 @@ class CubicSplineType(AbstractCurveSegmentType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     vector_at_end: Optional[VectorType] = field(
         default=None,
@@ -74,19 +74,19 @@ class CubicSplineType(AbstractCurveSegmentType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     interpolation: CurveInterpolationType = field(
         init=False,
         default=CurveInterpolationType.CUBIC_SPLINE,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     degree: int = field(
         init=False,
         default=3,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

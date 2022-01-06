@@ -10,5 +10,5 @@ class AbstractQueryExpressionType:
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

@@ -13,11 +13,12 @@ class TriangulatedSurfaceType(SurfaceType):
 
     There is no restriction on how the triangulation is derived.
     """
+
     srs_name: List[SrsName] = field(
         default_factory=list,
         metadata={
             "name": "srsName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

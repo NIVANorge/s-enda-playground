@@ -12,5 +12,6 @@ class GeodesicString(GeodesicStringType):
     fixed as "geodesic". The content model follows the general pattern
     for the encoding of curve segments.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

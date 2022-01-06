@@ -14,7 +14,7 @@ class GridType(AbstractGeometryType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     axis_labels: List[str] = field(
         default_factory=list,
@@ -23,7 +23,7 @@ class GridType(AbstractGeometryType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "tokens": True,
-        }
+        },
     )
     axis_name: List[str] = field(
         default_factory=list,
@@ -31,12 +31,12 @@ class GridType(AbstractGeometryType):
             "name": "axisName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     dimension: Optional[int] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )

@@ -20,32 +20,33 @@ class DirectionDescriptionType:
     decribed in prose, gml:direction or gml:reference should be used,
     allowing the value to be included inline or by reference.
     """
+
     compass_point: Optional[CompassPointEnumeration] = field(
         default=None,
         metadata={
             "name": "compassPoint",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     keyword: Optional[CodeType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     description: Optional[str] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     reference: Optional[ReferenceType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

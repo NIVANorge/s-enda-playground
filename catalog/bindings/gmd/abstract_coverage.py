@@ -12,5 +12,6 @@ class AbstractCoverage(AbstractCoverageType):
     It may act as a variable in the definition of content models where
     it is required to permit any coverage to be valid.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

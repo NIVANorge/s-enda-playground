@@ -19,5 +19,6 @@ class OtherSource(MetadataType):
     currently available from this OWS server, with the metadata for each
     such dataset referencing this OWS server.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/2.0"

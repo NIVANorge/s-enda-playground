@@ -13,16 +13,17 @@ class CodeListType:
     codeSpace attribute is present, then its value is a reference to a
     Reference System for the value, a dictionary or code list.
     """
+
     value: List[str] = field(
         default_factory=list,
         metadata={
             "tokens": True,
-        }
+        },
     )
     code_space: Optional[str] = field(
         default=None,
         metadata={
             "name": "codeSpace",
             "type": "Attribute",
-        }
+        },
     )

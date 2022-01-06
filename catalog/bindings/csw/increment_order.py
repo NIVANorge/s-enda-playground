@@ -12,6 +12,7 @@ class IncrementOrder(Enum):
     The points on all other axes (if any) beyond the first 2 are assumed
     to increment from lowest to highest.
     """
+
     X_Y = "+x+y"
     Y_X = "+y+x"
     X_Y_1 = "+x-y"

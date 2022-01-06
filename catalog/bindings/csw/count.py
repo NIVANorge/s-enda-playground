@@ -9,6 +9,7 @@ class Count:
     """
     An integer representing a frequency of occurrence.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"
 
@@ -16,5 +17,5 @@ class Count:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )

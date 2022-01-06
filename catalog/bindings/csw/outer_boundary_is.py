@@ -11,6 +11,7 @@ class OuterBoundaryIs(AbstractRingPropertyType):
 
     Use "exterior" instead.
     """
+
     class Meta:
         name = "outerBoundaryIs"
         namespace = "http://www.opengis.net/gml"

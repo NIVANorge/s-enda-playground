@@ -13,6 +13,7 @@ class PointProperty(PointPropertyType):
     Application Schemas whenever a GML feature has a property with a
     value that is substitutable for Point.
     """
+
     class Meta:
         name = "pointProperty"
         namespace = "http://www.opengis.net/gml"

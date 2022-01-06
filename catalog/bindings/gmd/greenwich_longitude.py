@@ -12,6 +12,7 @@ class GreenwichLongitude(AngleType):
     If the value of the prime meridian “name” is "Greenwich" then the
     value of greenwichLongitude shall be 0 degrees.
     """
+
     class Meta:
         name = "greenwichLongitude"
         namespace = "http://www.opengis.net/gml"

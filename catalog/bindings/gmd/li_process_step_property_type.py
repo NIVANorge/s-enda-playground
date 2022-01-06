@@ -4,11 +4,15 @@ from bindings.gmd.abstract_object_type import AbstractObjectType
 from bindings.gmd.actuate_value import ActuateValue
 from bindings.gmd.character_string_property_type import CharacterStringPropertyType
 from bindings.gmd.ci_citation_type import CiCitationPropertyType
-from bindings.gmd.ci_responsible_party_property_type import CiResponsiblePartyPropertyType
+from bindings.gmd.ci_responsible_party_property_type import (
+    CiResponsiblePartyPropertyType,
+)
 from bindings.gmd.date_time_property_type import DateTimePropertyType
 from bindings.gmd.ex_extent_property_type import ExExtentPropertyType
 from bindings.gmd.md_reference_system_property_type import MdReferenceSystemPropertyType
-from bindings.gmd.md_representative_fraction_property_type import MdRepresentativeFractionPropertyType
+from bindings.gmd.md_representative_fraction_property_type import (
+    MdRepresentativeFractionPropertyType,
+)
 from bindings.gmd.nil_reason_enumeration_value import NilReasonEnumerationValue
 from bindings.gmd.show_value import ShowValue
 
@@ -26,7 +30,7 @@ class LiProcessStepPropertyType:
             "name": "LI_ProcessStep",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -34,55 +38,55 @@ class LiProcessStepPropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     uuidref: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -91,7 +95,7 @@ class LiProcessStepPropertyType:
             "type": "Attribute",
             "namespace": "http://www.isotc211.org/2005/gco",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
 
 
@@ -105,7 +109,7 @@ class LiSourceType(AbstractObjectType):
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     scale_denominator: Optional[MdRepresentativeFractionPropertyType] = field(
         default=None,
@@ -113,7 +117,7 @@ class LiSourceType(AbstractObjectType):
             "name": "scaleDenominator",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     source_reference_system: Optional[MdReferenceSystemPropertyType] = field(
         default=None,
@@ -121,7 +125,7 @@ class LiSourceType(AbstractObjectType):
             "name": "sourceReferenceSystem",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     source_citation: Optional[CiCitationPropertyType] = field(
         default=None,
@@ -129,7 +133,7 @@ class LiSourceType(AbstractObjectType):
             "name": "sourceCitation",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     source_extent: List[ExExtentPropertyType] = field(
         default_factory=list,
@@ -137,7 +141,7 @@ class LiSourceType(AbstractObjectType):
             "name": "sourceExtent",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     source_step: List[LiProcessStepPropertyType] = field(
         default_factory=list,
@@ -145,7 +149,7 @@ class LiSourceType(AbstractObjectType):
             "name": "sourceStep",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
 
 
@@ -167,7 +171,7 @@ class LiSourcePropertyType:
             "name": "LI_Source",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -175,55 +179,55 @@ class LiSourcePropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     uuidref: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -232,7 +236,7 @@ class LiSourcePropertyType:
             "type": "Attribute",
             "namespace": "http://www.isotc211.org/2005/gco",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
 
 
@@ -247,14 +251,14 @@ class LiProcessStepType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     rationale: Optional[CharacterStringPropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     date_time: Optional[DateTimePropertyType] = field(
         default=None,
@@ -262,21 +266,21 @@ class LiProcessStepType(AbstractObjectType):
             "name": "dateTime",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     processor: List[CiResponsiblePartyPropertyType] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     source: List[LiSourcePropertyType] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
 
 

@@ -13,5 +13,5 @@ class ListOfValuesType:
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
             "min_occurs": 1,
-        }
+        },
     )

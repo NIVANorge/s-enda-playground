@@ -19,25 +19,26 @@ class DirectPositionType:
     context this geometry element is part of, typically a geometric
     object like a point, curve, etc.
     """
+
     value: List[float] = field(
         default_factory=list,
         metadata={
             "tokens": True,
-        }
+        },
     )
     srs_name: Optional[str] = field(
         default=None,
         metadata={
             "name": "srsName",
             "type": "Attribute",
-        }
+        },
     )
     srs_dimension: Optional[int] = field(
         default=None,
         metadata={
             "name": "srsDimension",
             "type": "Attribute",
-        }
+        },
     )
     axis_labels: List[str] = field(
         default_factory=list,
@@ -45,7 +46,7 @@ class DirectPositionType:
             "name": "axisLabels",
             "type": "Attribute",
             "tokens": True,
-        }
+        },
     )
     uom_labels: List[str] = field(
         default_factory=list,
@@ -53,5 +54,5 @@ class DirectPositionType:
             "name": "uomLabels",
             "type": "Attribute",
             "tokens": True,
-        }
+        },
     )

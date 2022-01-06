@@ -25,13 +25,14 @@ class ServiceReferenceType(ReferenceType):
         shall be attached to the same message (using the cid scheme), or
         be accessible using a URL.
     """
+
     request_message: Optional[object] = field(
         default=None,
         metadata={
             "name": "RequestMessage",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )
     request_message_reference: Optional[str] = field(
         default=None,
@@ -39,5 +40,5 @@ class ServiceReferenceType(ReferenceType):
             "name": "RequestMessageReference",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )

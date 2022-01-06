@@ -11,5 +11,6 @@ class Point(PointType):
     The direct position of a point is specified by the pos element which
     is of type DirectPositionType.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

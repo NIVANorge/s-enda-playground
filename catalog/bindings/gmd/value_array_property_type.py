@@ -74,7 +74,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     count_extent: List[List[Union[str, NilReasonEnumerationValue]]] = field(
         default_factory=list,
@@ -86,7 +86,7 @@ class ValueArrayPropertyType:
             "pattern": r"other:\w{2,}",
             "sequential": True,
             "tokens": True,
-        }
+        },
     )
     category_extent: List[CategoryExtent] = field(
         default_factory=list,
@@ -95,7 +95,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     value_array: List["ValueArray"] = field(
         default_factory=list,
@@ -104,7 +104,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     composite_value: List["CompositeValue"] = field(
         default_factory=list,
@@ -113,7 +113,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     quantity_list: List[QuantityList] = field(
         default_factory=list,
@@ -122,7 +122,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     count_list: List[List[Union[str, NilReasonEnumerationValue]]] = field(
         default_factory=list,
@@ -133,7 +133,7 @@ class ValueArrayPropertyType:
             "pattern": r"other:\w{2,}",
             "sequential": True,
             "tokens": True,
-        }
+        },
     )
     category_list: List[CategoryList] = field(
         default_factory=list,
@@ -142,7 +142,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     boolean_list: List[List[Union[str, NilReasonEnumerationValue]]] = field(
         default_factory=list,
@@ -153,7 +153,7 @@ class ValueArrayPropertyType:
             "pattern": r"other:\w{2,}",
             "sequential": True,
             "tokens": True,
-        }
+        },
     )
     abstract_scalar_value_list: List[AbstractScalarValueList] = field(
         default_factory=list,
@@ -162,7 +162,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     quantity: List[Quantity] = field(
         default_factory=list,
@@ -172,7 +172,7 @@ class ValueArrayPropertyType:
             "namespace": "http://www.opengis.net/gml",
             "nillable": True,
             "sequential": True,
-        }
+        },
     )
     count: List[Count] = field(
         default_factory=list,
@@ -182,7 +182,7 @@ class ValueArrayPropertyType:
             "namespace": "http://www.opengis.net/gml",
             "nillable": True,
             "sequential": True,
-        }
+        },
     )
     category: List[Category] = field(
         default_factory=list,
@@ -192,7 +192,7 @@ class ValueArrayPropertyType:
             "namespace": "http://www.opengis.net/gml",
             "nillable": True,
             "sequential": True,
-        }
+        },
     )
     boolean: List[Boolean1] = field(
         default_factory=list,
@@ -202,7 +202,7 @@ class ValueArrayPropertyType:
             "namespace": "http://www.opengis.net/gml",
             "nillable": True,
             "sequential": True,
-        }
+        },
     )
     abstract_scalar_value: List[AbstractScalarValue] = field(
         default_factory=list,
@@ -211,7 +211,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     abstract_value: List[AbstractValue] = field(
         default_factory=list,
@@ -220,7 +220,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     rectified_grid: List[RectifiedGrid] = field(
         default_factory=list,
@@ -229,7 +229,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     grid: List[Grid] = field(
         default_factory=list,
@@ -238,7 +238,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     abstract_implicit_geometry: List[AbstractImplicitGeometry] = field(
         default_factory=list,
@@ -247,7 +247,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     geometric_complex: List[GeometricComplex] = field(
         default_factory=list,
@@ -256,7 +256,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     multi_solid: List[MultiSolid] = field(
         default_factory=list,
@@ -265,7 +265,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     multi_surface: List[MultiSurface] = field(
         default_factory=list,
@@ -274,7 +274,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     multi_curve: List[MultiCurve] = field(
         default_factory=list,
@@ -283,7 +283,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     multi_point: List[MultiPoint] = field(
         default_factory=list,
@@ -292,7 +292,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     multi_geometry: List[MultiGeometry] = field(
         default_factory=list,
@@ -301,7 +301,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     abstract_geometric_aggregate: List[AbstractGeometricAggregate] = field(
         default_factory=list,
@@ -310,7 +310,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     composite_solid: List[CompositeSolid] = field(
         default_factory=list,
@@ -319,7 +319,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     solid: List[Solid] = field(
         default_factory=list,
@@ -328,7 +328,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     abstract_solid: List[AbstractSolid] = field(
         default_factory=list,
@@ -337,7 +337,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     composite_surface: List[CompositeSurface] = field(
         default_factory=list,
@@ -346,7 +346,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     orientable_surface: List[OrientableSurface] = field(
         default_factory=list,
@@ -355,7 +355,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     tin: List[Tin] = field(
         default_factory=list,
@@ -364,7 +364,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     triangulated_surface: List[TriangulatedSurface] = field(
         default_factory=list,
@@ -373,7 +373,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     polyhedral_surface: List[PolyhedralSurface] = field(
         default_factory=list,
@@ -382,7 +382,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     surface: List[Surface] = field(
         default_factory=list,
@@ -391,7 +391,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     polygon: List[Polygon] = field(
         default_factory=list,
@@ -400,7 +400,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     abstract_surface: List[AbstractSurface] = field(
         default_factory=list,
@@ -409,7 +409,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     composite_curve: List[CompositeCurve] = field(
         default_factory=list,
@@ -418,7 +418,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     orientable_curve: List[OrientableCurve] = field(
         default_factory=list,
@@ -427,7 +427,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     curve: List[Curve] = field(
         default_factory=list,
@@ -436,7 +436,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     line_string: List[LineString] = field(
         default_factory=list,
@@ -445,7 +445,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     abstract_curve: List[AbstractCurve] = field(
         default_factory=list,
@@ -454,7 +454,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     point: List[Point] = field(
         default_factory=list,
@@ -463,7 +463,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     abstract_geometric_primitive: List[AbstractGeometricPrimitive] = field(
         default_factory=list,
@@ -472,7 +472,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     abstract_geometry: List[AbstractGeometry] = field(
         default_factory=list,
@@ -481,7 +481,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     time_topology_complex: List[TimeTopologyComplex] = field(
         default_factory=list,
@@ -490,7 +490,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     abstract_time_complex: List[AbstractTimeComplex] = field(
         default_factory=list,
@@ -499,7 +499,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     time_edge: List[TimeEdge] = field(
         default_factory=list,
@@ -508,7 +508,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     time_node: List[TimeNode] = field(
         default_factory=list,
@@ -517,7 +517,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     abstract_time_topology_primitive: List[AbstractTimeTopologyPrimitive] = field(
         default_factory=list,
@@ -526,7 +526,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     time_period: List[TimePeriod] = field(
         default_factory=list,
@@ -535,7 +535,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     time_instant: List[TimeInstant] = field(
         default_factory=list,
@@ -544,7 +544,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     abstract_time_geometric_primitive: List[AbstractTimeGeometricPrimitive] = field(
         default_factory=list,
@@ -553,7 +553,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     abstract_time_primitive: List[AbstractTimePrimitive] = field(
         default_factory=list,
@@ -562,7 +562,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     abstract_time_object: List[AbstractTimeObject] = field(
         default_factory=list,
@@ -571,7 +571,7 @@ class ValueArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     null: List[Union[str, NilReasonEnumerationValue]] = field(
         default_factory=list,
@@ -581,13 +581,13 @@ class ValueArrayPropertyType:
             "namespace": "http://www.opengis.net/gml",
             "pattern": r"other:\w{2,}",
             "sequential": True,
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -599,7 +599,7 @@ class ValuePropertyType:
             "name": "QuantityExtent",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     count_extent: List[Union[str, NilReasonEnumerationValue]] = field(
         default_factory=list,
@@ -610,7 +610,7 @@ class ValuePropertyType:
             "length": 2,
             "pattern": r"other:\w{2,}",
             "tokens": True,
-        }
+        },
     )
     category_extent: Optional[CategoryExtent] = field(
         default=None,
@@ -618,7 +618,7 @@ class ValuePropertyType:
             "name": "CategoryExtent",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     value_array: Optional["ValueArray"] = field(
         default=None,
@@ -626,7 +626,7 @@ class ValuePropertyType:
             "name": "ValueArray",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     composite_value: Optional["CompositeValue"] = field(
         default=None,
@@ -634,7 +634,7 @@ class ValuePropertyType:
             "name": "CompositeValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     quantity_list: Optional[QuantityList] = field(
         default=None,
@@ -642,7 +642,7 @@ class ValuePropertyType:
             "name": "QuantityList",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     count_list: List[Union[str, NilReasonEnumerationValue]] = field(
         default_factory=list,
@@ -652,7 +652,7 @@ class ValuePropertyType:
             "namespace": "http://www.opengis.net/gml",
             "pattern": r"other:\w{2,}",
             "tokens": True,
-        }
+        },
     )
     category_list: Optional[CategoryList] = field(
         default=None,
@@ -660,7 +660,7 @@ class ValuePropertyType:
             "name": "CategoryList",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     boolean_list: List[Union[str, NilReasonEnumerationValue]] = field(
         default_factory=list,
@@ -670,7 +670,7 @@ class ValuePropertyType:
             "namespace": "http://www.opengis.net/gml",
             "pattern": r"other:\w{2,}",
             "tokens": True,
-        }
+        },
     )
     abstract_scalar_value_list: Optional[AbstractScalarValueList] = field(
         default=None,
@@ -678,7 +678,7 @@ class ValuePropertyType:
             "name": "AbstractScalarValueList",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     quantity: Optional[Quantity] = field(
         default=None,
@@ -687,7 +687,7 @@ class ValuePropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "nillable": True,
-        }
+        },
     )
     count: Optional[Count] = field(
         default=None,
@@ -696,7 +696,7 @@ class ValuePropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "nillable": True,
-        }
+        },
     )
     category: Optional[Category] = field(
         default=None,
@@ -705,7 +705,7 @@ class ValuePropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "nillable": True,
-        }
+        },
     )
     boolean: Optional[Boolean1] = field(
         default=None,
@@ -714,7 +714,7 @@ class ValuePropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "nillable": True,
-        }
+        },
     )
     abstract_scalar_value: Optional[AbstractScalarValue] = field(
         default=None,
@@ -722,7 +722,7 @@ class ValuePropertyType:
             "name": "AbstractScalarValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_value: Optional[AbstractValue] = field(
         default=None,
@@ -730,7 +730,7 @@ class ValuePropertyType:
             "name": "AbstractValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     rectified_grid: Optional[RectifiedGrid] = field(
         default=None,
@@ -738,7 +738,7 @@ class ValuePropertyType:
             "name": "RectifiedGrid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     grid: Optional[Grid] = field(
         default=None,
@@ -746,7 +746,7 @@ class ValuePropertyType:
             "name": "Grid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_implicit_geometry: Optional[AbstractImplicitGeometry] = field(
         default=None,
@@ -754,7 +754,7 @@ class ValuePropertyType:
             "name": "AbstractImplicitGeometry",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     geometric_complex: Optional[GeometricComplex] = field(
         default=None,
@@ -762,7 +762,7 @@ class ValuePropertyType:
             "name": "GeometricComplex",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_solid: Optional[MultiSolid] = field(
         default=None,
@@ -770,7 +770,7 @@ class ValuePropertyType:
             "name": "MultiSolid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_surface: Optional[MultiSurface] = field(
         default=None,
@@ -778,7 +778,7 @@ class ValuePropertyType:
             "name": "MultiSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_curve: Optional[MultiCurve] = field(
         default=None,
@@ -786,7 +786,7 @@ class ValuePropertyType:
             "name": "MultiCurve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_point: Optional[MultiPoint] = field(
         default=None,
@@ -794,7 +794,7 @@ class ValuePropertyType:
             "name": "MultiPoint",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_geometry: Optional[MultiGeometry] = field(
         default=None,
@@ -802,7 +802,7 @@ class ValuePropertyType:
             "name": "MultiGeometry",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_geometric_aggregate: Optional[AbstractGeometricAggregate] = field(
         default=None,
@@ -810,7 +810,7 @@ class ValuePropertyType:
             "name": "AbstractGeometricAggregate",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     composite_solid: Optional[CompositeSolid] = field(
         default=None,
@@ -818,7 +818,7 @@ class ValuePropertyType:
             "name": "CompositeSolid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     solid: Optional[Solid] = field(
         default=None,
@@ -826,7 +826,7 @@ class ValuePropertyType:
             "name": "Solid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_solid: Optional[AbstractSolid] = field(
         default=None,
@@ -834,7 +834,7 @@ class ValuePropertyType:
             "name": "AbstractSolid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     composite_surface: Optional[CompositeSurface] = field(
         default=None,
@@ -842,7 +842,7 @@ class ValuePropertyType:
             "name": "CompositeSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     orientable_surface: Optional[OrientableSurface] = field(
         default=None,
@@ -850,7 +850,7 @@ class ValuePropertyType:
             "name": "OrientableSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     tin: Optional[Tin] = field(
         default=None,
@@ -858,7 +858,7 @@ class ValuePropertyType:
             "name": "Tin",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     triangulated_surface: Optional[TriangulatedSurface] = field(
         default=None,
@@ -866,7 +866,7 @@ class ValuePropertyType:
             "name": "TriangulatedSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     polyhedral_surface: Optional[PolyhedralSurface] = field(
         default=None,
@@ -874,7 +874,7 @@ class ValuePropertyType:
             "name": "PolyhedralSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     surface: Optional[Surface] = field(
         default=None,
@@ -882,7 +882,7 @@ class ValuePropertyType:
             "name": "Surface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     polygon: Optional[Polygon] = field(
         default=None,
@@ -890,7 +890,7 @@ class ValuePropertyType:
             "name": "Polygon",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_surface: Optional[AbstractSurface] = field(
         default=None,
@@ -898,7 +898,7 @@ class ValuePropertyType:
             "name": "AbstractSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     composite_curve: Optional[CompositeCurve] = field(
         default=None,
@@ -906,7 +906,7 @@ class ValuePropertyType:
             "name": "CompositeCurve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     orientable_curve: Optional[OrientableCurve] = field(
         default=None,
@@ -914,7 +914,7 @@ class ValuePropertyType:
             "name": "OrientableCurve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     curve: Optional[Curve] = field(
         default=None,
@@ -922,7 +922,7 @@ class ValuePropertyType:
             "name": "Curve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     line_string: Optional[LineString] = field(
         default=None,
@@ -930,7 +930,7 @@ class ValuePropertyType:
             "name": "LineString",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_curve: Optional[AbstractCurve] = field(
         default=None,
@@ -938,7 +938,7 @@ class ValuePropertyType:
             "name": "AbstractCurve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     point: Optional[Point] = field(
         default=None,
@@ -946,7 +946,7 @@ class ValuePropertyType:
             "name": "Point",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_geometric_primitive: Optional[AbstractGeometricPrimitive] = field(
         default=None,
@@ -954,7 +954,7 @@ class ValuePropertyType:
             "name": "AbstractGeometricPrimitive",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_geometry: Optional[AbstractGeometry] = field(
         default=None,
@@ -962,7 +962,7 @@ class ValuePropertyType:
             "name": "AbstractGeometry",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_topology_complex: Optional[TimeTopologyComplex] = field(
         default=None,
@@ -970,7 +970,7 @@ class ValuePropertyType:
             "name": "TimeTopologyComplex",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_time_complex: Optional[AbstractTimeComplex] = field(
         default=None,
@@ -978,7 +978,7 @@ class ValuePropertyType:
             "name": "AbstractTimeComplex",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_edge: Optional[TimeEdge] = field(
         default=None,
@@ -986,7 +986,7 @@ class ValuePropertyType:
             "name": "TimeEdge",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_node: Optional[TimeNode] = field(
         default=None,
@@ -994,7 +994,7 @@ class ValuePropertyType:
             "name": "TimeNode",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_time_topology_primitive: Optional[AbstractTimeTopologyPrimitive] = field(
         default=None,
@@ -1002,7 +1002,7 @@ class ValuePropertyType:
             "name": "AbstractTimeTopologyPrimitive",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_period: Optional[TimePeriod] = field(
         default=None,
@@ -1010,7 +1010,7 @@ class ValuePropertyType:
             "name": "TimePeriod",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_instant: Optional[TimeInstant] = field(
         default=None,
@@ -1018,7 +1018,7 @@ class ValuePropertyType:
             "name": "TimeInstant",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_time_geometric_primitive: Optional[AbstractTimeGeometricPrimitive] = field(
         default=None,
@@ -1026,7 +1026,7 @@ class ValuePropertyType:
             "name": "AbstractTimeGeometricPrimitive",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_time_primitive: Optional[AbstractTimePrimitive] = field(
         default=None,
@@ -1034,7 +1034,7 @@ class ValuePropertyType:
             "name": "AbstractTimePrimitive",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_time_object: Optional[AbstractTimeObject] = field(
         default=None,
@@ -1042,7 +1042,7 @@ class ValuePropertyType:
             "name": "AbstractTimeObject",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     null: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -1051,7 +1051,7 @@ class ValuePropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -1059,49 +1059,49 @@ class ValuePropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -1109,7 +1109,7 @@ class ValuePropertyType:
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -1117,13 +1117,13 @@ class ValuePropertyType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -1132,6 +1132,7 @@ class ValueComponent(ValuePropertyType):
     """
     Property that refers to, or contains, a Value.
     """
+
     class Meta:
         name = "valueComponent"
         namespace = "http://www.opengis.net/gml"
@@ -1142,6 +1143,7 @@ class ValueComponents(ValueArrayPropertyType):
     """
     Property that contains Values.
     """
+
     class Meta:
         name = "valueComponents"
         namespace = "http://www.opengis.net/gml"
@@ -1155,7 +1157,7 @@ class CompositeValueType(AbstractGmltype):
             "name": "valueComponent",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     value_components: Optional[ValueComponents] = field(
         default=None,
@@ -1163,14 +1165,14 @@ class CompositeValueType(AbstractGmltype):
             "name": "valueComponents",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     aggregation_type: Optional[AggregationType] = field(
         default=None,
         metadata={
             "name": "aggregationType",
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -1183,6 +1185,7 @@ class CompositeValue(CompositeValueType):
     may be used for strongly coupled aggregates (vectors, tensors) or
     for arbitrary collections of values.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"
 
@@ -1194,14 +1197,14 @@ class ValueArrayType(CompositeValueType):
         metadata={
             "name": "codeSpace",
             "type": "Attribute",
-        }
+        },
     )
     uom: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "pattern": r"[^: \n\r\t]+",
-        }
+        },
     )
 
 
@@ -1218,5 +1221,6 @@ class ValueArray(ValueArrayType):
     gml:referenceSystem (uom, codeSpace) may be specified on the
     gml:ValueArray itself and inherited by all the members if desired.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

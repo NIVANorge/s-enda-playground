@@ -14,10 +14,11 @@ class NilValueType(CodeType):
     :ivar nil_reason: An anyURI value which refers to a resource that
         describes the reason for the nil value
     """
+
     nil_reason: Optional[str] = field(
         default=None,
         metadata={
             "name": "nilReason",
             "type": "Attribute",
-        }
+        },
     )

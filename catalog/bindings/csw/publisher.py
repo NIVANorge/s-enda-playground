@@ -12,6 +12,7 @@ class Publisher(SimpleLiteral):
     service. Typically, the name of a Publisher should be used to
     indicate the entity.
     """
+
     class Meta:
         name = "publisher"
         namespace = "http://purl.org/dc/elements/1.1/"

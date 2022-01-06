@@ -26,13 +26,14 @@ class GetResourceByIdType:
     :ivar service:
     :ivar version:
     """
+
     resource_id: List[str] = field(
         default_factory=list,
         metadata={
             "name": "ResourceID",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     output_format: Optional[str] = field(
         default=None,
@@ -41,14 +42,14 @@ class GetResourceByIdType:
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
             "pattern": r"(application|audio|image|text|video|message|multipart|model)/.+(;\s*.+=.+)*",
-        }
+        },
     )
     service: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
     version: Optional[str] = field(
         default=None,
@@ -56,5 +57,5 @@ class GetResourceByIdType:
             "type": "Attribute",
             "required": True,
             "pattern": r"\d+\.\d?\d\.\d?\d",
-        }
+        },
     )

@@ -15,5 +15,5 @@ class Date:
         default=None,
         metadata={
             "nillable": True,
-        }
+        },
     )

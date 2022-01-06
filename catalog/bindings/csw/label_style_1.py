@@ -9,6 +9,7 @@ class LabelStyle1(LabelStyleType):
     """
     The style descriptor for labels of a feature, geometry or topology.
     """
+
     class Meta:
         name = "LabelStyle"
         namespace = "http://www.opengis.net/gml"

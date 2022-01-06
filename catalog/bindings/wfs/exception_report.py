@@ -32,6 +32,7 @@ class ExceptionReport:
         specified in IETF RFC 4646. When this attribute is omitted, the
         language used is not identified.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/1.1"
 
@@ -41,7 +42,7 @@ class ExceptionReport:
             "name": "Exception",
             "type": "Element",
             "min_occurs": 1,
-        }
+        },
     )
     version: Optional[str] = field(
         default=None,
@@ -49,12 +50,12 @@ class ExceptionReport:
             "type": "Attribute",
             "required": True,
             "pattern": r"\d+\.\d?\d\.\d?\d",
-        }
+        },
     )
     lang: Optional[Union[str, LangValue]] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/XML/1998/namespace",
-        }
+        },
     )

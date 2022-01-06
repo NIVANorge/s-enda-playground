@@ -15,13 +15,14 @@ class TopoComplexMemberType:
     """
     This Property can be used to embed a TopoComplex in a feature collection.
     """
+
     topo_complex: Optional["TopoComplex"] = field(
         default=None,
         metadata={
             "name": "TopoComplex",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: TypeType = field(
         init=False,
@@ -29,14 +30,14 @@ class TopoComplexMemberType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
@@ -44,7 +45,7 @@ class TopoComplexMemberType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
@@ -52,28 +53,28 @@ class TopoComplexMemberType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -81,7 +82,7 @@ class TopoComplexMemberType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
 
 
@@ -90,6 +91,7 @@ class MaximalComplex(TopoComplexMemberType):
     """
     Need schamatron test here that isMaximal attribute value is true.
     """
+
     class Meta:
         name = "maximalComplex"
         namespace = "http://www.opengis.net/gml"
@@ -115,6 +117,7 @@ class TopoComplexType(AbstractTopologyType):
     This type represents a TP_Complex capable of holding topological
     primitives.
     """
+
     maximal_complex: Optional[MaximalComplex] = field(
         default=None,
         metadata={
@@ -122,7 +125,7 @@ class TopoComplexType(AbstractTopologyType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     super_complex: List[SuperComplex] = field(
         default_factory=list,
@@ -130,7 +133,7 @@ class TopoComplexType(AbstractTopologyType):
             "name": "superComplex",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     sub_complex: List[SubComplex] = field(
         default_factory=list,
@@ -138,7 +141,7 @@ class TopoComplexType(AbstractTopologyType):
             "name": "subComplex",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     topo_primitive_member: List[TopoPrimitiveMember] = field(
         default_factory=list,
@@ -146,7 +149,7 @@ class TopoComplexType(AbstractTopologyType):
             "name": "topoPrimitiveMember",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     topo_primitive_members: Optional[TopoPrimitiveMembers] = field(
         default=None,
@@ -154,14 +157,14 @@ class TopoComplexType(AbstractTopologyType):
             "name": "topoPrimitiveMembers",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     is_maximal: bool = field(
         default=False,
         metadata={
             "name": "isMaximal",
             "type": "Attribute",
-        }
+        },
     )
 
 

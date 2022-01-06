@@ -15,7 +15,7 @@ class TransactionResponseType:
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
             "required": True,
-        }
+        },
     )
     insert_results: Optional[ActionResultsType] = field(
         default=None,
@@ -23,7 +23,7 @@ class TransactionResponseType:
             "name": "InsertResults",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     update_results: Optional[ActionResultsType] = field(
         default=None,
@@ -31,7 +31,7 @@ class TransactionResponseType:
             "name": "UpdateResults",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     replace_results: Optional[ActionResultsType] = field(
         default=None,
@@ -39,7 +39,7 @@ class TransactionResponseType:
             "name": "ReplaceResults",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     version: Optional[str] = field(
         default=None,
@@ -47,5 +47,5 @@ class TransactionResponseType:
             "type": "Attribute",
             "required": True,
             "pattern": r"2\.0\.\d+",
-        }
+        },
     )

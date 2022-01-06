@@ -1,5 +1,7 @@
 from dataclasses import dataclass
-from bindings.gmd.general_transformation_property_type import GeneralTransformationPropertyType
+from bindings.gmd.general_transformation_property_type import (
+    GeneralTransformationPropertyType,
+)
 
 __NAMESPACE__ = "http://www.opengis.net/gml"
 

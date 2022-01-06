@@ -10,5 +10,6 @@ class RectifiedGrid(RectifiedGridType):
     Should be substitutionGroup="gml:Grid" but changed in order to accomplish
     Xerces-J schema validation.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

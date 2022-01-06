@@ -11,7 +11,7 @@ class AbstractMetaDataType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     content: List[object] = field(
         default_factory=list,
@@ -19,5 +19,5 @@ class AbstractMetaDataType:
             "type": "Wildcard",
             "namespace": "##any",
             "mixed": True,
-        }
+        },
     )

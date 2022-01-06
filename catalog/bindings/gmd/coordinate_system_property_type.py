@@ -27,13 +27,14 @@ class CoordinateSystemPropertyType:
     to a coordinate system, either referencing or containing the definition of
     that coordinate system.
     """
+
     oblique_cartesian_cs: Optional[ObliqueCartesianCs] = field(
         default=None,
         metadata={
             "name": "ObliqueCartesianCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     affine_cs: Optional[AffineCs1] = field(
         default=None,
@@ -41,7 +42,7 @@ class CoordinateSystemPropertyType:
             "name": "AffineCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     cylindrical_cs: Optional[CylindricalCs] = field(
         default=None,
@@ -49,7 +50,7 @@ class CoordinateSystemPropertyType:
             "name": "CylindricalCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     polar_cs: Optional[PolarCs] = field(
         default=None,
@@ -57,7 +58,7 @@ class CoordinateSystemPropertyType:
             "name": "PolarCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     spherical_cs: Optional[SphericalCs1] = field(
         default=None,
@@ -65,7 +66,7 @@ class CoordinateSystemPropertyType:
             "name": "SphericalCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     user_defined_cs: Optional[UserDefinedCs] = field(
         default=None,
@@ -73,7 +74,7 @@ class CoordinateSystemPropertyType:
             "name": "UserDefinedCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     linear_cs: Optional[LinearCs] = field(
         default=None,
@@ -81,7 +82,7 @@ class CoordinateSystemPropertyType:
             "name": "LinearCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     temporal_cs: Optional[TemporalCs] = field(
         default=None,
@@ -89,7 +90,7 @@ class CoordinateSystemPropertyType:
             "name": "TemporalCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_cs: Optional[TimeCs1] = field(
         default=None,
@@ -97,7 +98,7 @@ class CoordinateSystemPropertyType:
             "name": "TimeCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     vertical_cs: Optional[VerticalCs1] = field(
         default=None,
@@ -105,7 +106,7 @@ class CoordinateSystemPropertyType:
             "name": "VerticalCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     cartesian_cs: Optional[CartesianCs1] = field(
         default=None,
@@ -113,7 +114,7 @@ class CoordinateSystemPropertyType:
             "name": "CartesianCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     ellipsoidal_cs: Optional[EllipsoidalCs1] = field(
         default=None,
@@ -121,7 +122,7 @@ class CoordinateSystemPropertyType:
             "name": "EllipsoidalCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_coordinate_system: Optional[AbstractCoordinateSystem] = field(
         default=None,
@@ -129,7 +130,7 @@ class CoordinateSystemPropertyType:
             "name": "AbstractCoordinateSystem",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -137,49 +138,49 @@ class CoordinateSystemPropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -187,7 +188,7 @@ class CoordinateSystemPropertyType:
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -195,5 +196,5 @@ class CoordinateSystemPropertyType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

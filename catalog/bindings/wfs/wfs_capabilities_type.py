@@ -21,7 +21,7 @@ class WfsCapabilitiesType(CapabilitiesBaseType):
             "name": "WSDL",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     feature_type_list: Optional[FeatureTypeList] = field(
         default=None,
@@ -29,7 +29,7 @@ class WfsCapabilitiesType(CapabilitiesBaseType):
             "name": "FeatureTypeList",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     filter_capabilities: Optional[FilterCapabilities] = field(
         default=None,
@@ -37,7 +37,7 @@ class WfsCapabilitiesType(CapabilitiesBaseType):
             "name": "Filter_Capabilities",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
 
     @dataclass
@@ -47,7 +47,7 @@ class WfsCapabilitiesType(CapabilitiesBaseType):
             metadata={
                 "type": "Wildcard",
                 "namespace": "##any",
-            }
+            },
         )
         type: TypeType = field(
             init=False,
@@ -55,14 +55,14 @@ class WfsCapabilitiesType(CapabilitiesBaseType):
             metadata={
                 "type": "Attribute",
                 "namespace": "http://www.w3.org/1999/xlink",
-            }
+            },
         )
         href: Optional[str] = field(
             default=None,
             metadata={
                 "type": "Attribute",
                 "namespace": "http://www.w3.org/1999/xlink",
-            }
+            },
         )
         role: Optional[str] = field(
             default=None,
@@ -70,7 +70,7 @@ class WfsCapabilitiesType(CapabilitiesBaseType):
                 "type": "Attribute",
                 "namespace": "http://www.w3.org/1999/xlink",
                 "min_length": 1,
-            }
+            },
         )
         arcrole: Optional[str] = field(
             default=None,
@@ -78,26 +78,26 @@ class WfsCapabilitiesType(CapabilitiesBaseType):
                 "type": "Attribute",
                 "namespace": "http://www.w3.org/1999/xlink",
                 "min_length": 1,
-            }
+            },
         )
         title: Optional[str] = field(
             default=None,
             metadata={
                 "type": "Attribute",
                 "namespace": "http://www.w3.org/1999/xlink",
-            }
+            },
         )
         show: Optional[ShowType] = field(
             default=None,
             metadata={
                 "type": "Attribute",
                 "namespace": "http://www.w3.org/1999/xlink",
-            }
+            },
         )
         actuate: Optional[ActuateType] = field(
             default=None,
             metadata={
                 "type": "Attribute",
                 "namespace": "http://www.w3.org/1999/xlink",
-            }
+            },
         )

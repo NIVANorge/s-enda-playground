@@ -1,7 +1,9 @@
 from dataclasses import dataclass, field
 from typing import List, Optional
 from xsdata.models.datatype import XmlTime
-from bindings.csw.abstract_time_reference_system_type import AbstractTimeReferenceSystemType
+from bindings.csw.abstract_time_reference_system_type import (
+    AbstractTimeReferenceSystemType,
+)
 from bindings.csw.string_or_ref_type import StringOrRefType
 from bindings.csw.time_calendar_property_type import TimeCalendarPropertyType
 
@@ -25,6 +27,7 @@ class TimeClockType(AbstractTimeReferenceSystemType):
         the reference time.
     :ivar date_basis:
     """
+
     reference_event: Optional[StringOrRefType] = field(
         default=None,
         metadata={
@@ -32,7 +35,7 @@ class TimeClockType(AbstractTimeReferenceSystemType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     reference_time: Optional[XmlTime] = field(
         default=None,
@@ -41,7 +44,7 @@ class TimeClockType(AbstractTimeReferenceSystemType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     utc_reference: Optional[XmlTime] = field(
         default=None,
@@ -50,7 +53,7 @@ class TimeClockType(AbstractTimeReferenceSystemType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     date_basis: List[TimeCalendarPropertyType] = field(
         default_factory=list,
@@ -58,5 +61,5 @@ class TimeClockType(AbstractTimeReferenceSystemType):
             "name": "dateBasis",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

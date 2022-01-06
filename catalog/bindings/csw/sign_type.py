@@ -9,5 +9,6 @@ class SignType(Enum):
     - e.g. to indicate the direction of topological objects;
     "+" for forwards, or "-" for backwards.
     """
+
     VALUE = "-"
     VALUE_1 = "+"

@@ -15,6 +15,7 @@ class Identifier2(SimpleLiteral):
     Locator (URL)), the Digital Object Identifier (DOI), and the
     International Standard Book Number (ISBN).
     """
+
     class Meta:
         name = "identifier"
         namespace = "http://purl.org/dc/elements/1.1/"

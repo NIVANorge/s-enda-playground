@@ -17,5 +17,5 @@ class LocalisedCharacterStringPropertyType(ObjectReferencePropertyType):
             "name": "LocalisedCharacterString",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

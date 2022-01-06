@@ -42,7 +42,10 @@ ds = xr.merge([asdataarray(d) for d in [w_temp, sal, con]])
 #%%
 ds.attrs = asdict(
     DatasetAttributes(
-        title="hei", date_created=str(datetime.now()), keywords=["hei"], featureType="traectory"
+        title="hei",
+        date_created=str(datetime.now()),
+        keywords=["hei"],
+        featureType="traectory",
     )
 )
 

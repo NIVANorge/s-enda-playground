@@ -9,6 +9,7 @@ class EllipsoidId(IdentifierType):
     """
     An identification of an ellipsoid.
     """
+
     class Meta:
         name = "ellipsoidID"
         namespace = "http://www.opengis.net/gml"

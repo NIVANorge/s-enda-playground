@@ -17,5 +17,6 @@ class TimeClock(TimeClockType):
     -       gml:utcReference specifies the 24 hour local or UTC time that corresponds to the reference time.
     -       gml:dateBasis contains or references the calendars that use this clock.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

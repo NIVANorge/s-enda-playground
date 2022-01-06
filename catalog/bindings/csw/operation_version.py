@@ -11,6 +11,7 @@ class OperationVersion:
     Mandatory when describing a transformation, and should not be
     supplied for a conversion.
     """
+
     class Meta:
         name = "operationVersion"
         namespace = "http://www.opengis.net/gml"
@@ -19,5 +20,5 @@ class OperationVersion:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )

@@ -14,5 +14,6 @@ class Quantity(MeasureType):
     which identifies the definition of the scale or units by which the
     numeric value must be multiplied.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

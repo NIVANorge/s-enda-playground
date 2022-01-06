@@ -10,6 +10,7 @@ class UsesValue(ParameterValueType):
     Composition association to a parameter value used by this coordinate
     operation.
     """
+
     class Meta:
         name = "usesValue"
         namespace = "http://www.opengis.net/gml"

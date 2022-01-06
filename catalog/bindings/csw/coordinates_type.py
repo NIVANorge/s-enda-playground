@@ -16,27 +16,28 @@ class CoordinatesType:
     space between tuples. However, any string content will be schema-
     valid.
     """
+
     value: str = field(
         default="",
         metadata={
             "required": True,
-        }
+        },
     )
     decimal: str = field(
         default=".",
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     cs: str = field(
         default=",",
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     ts: str = field(
         default=" ",
         metadata={
             "type": "Attribute",
-        }
+        },
     )

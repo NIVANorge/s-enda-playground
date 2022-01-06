@@ -9,6 +9,7 @@ class GroupId(IdentifierType):
     """
     An identification of an operation parameter group.
     """
+
     class Meta:
         name = "groupID"
         namespace = "http://www.opengis.net/gml"

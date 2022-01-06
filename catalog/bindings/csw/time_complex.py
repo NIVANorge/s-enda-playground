@@ -14,6 +14,7 @@ class TimeComplex(AbstractTimeComplexType):
     topology complex. N.B. Temporal geometric complex is not defined in
     this schema.
     """
+
     class Meta:
         name = "_TimeComplex"
         namespace = "http://www.opengis.net/gml"

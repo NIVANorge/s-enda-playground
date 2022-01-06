@@ -11,6 +11,7 @@ class Coord(CoordType):
 
     Use the "pos" element instead.
     """
+
     class Meta:
         name = "coord"
         namespace = "http://www.opengis.net/gml"

@@ -23,20 +23,21 @@ class CoordinateSystemAxisType(CoordinateSystemAxisBaseType):
     :ivar axis_direction:
     :ivar uom:
     """
+
     axis_id: List[AxisId] = field(
         default_factory=list,
         metadata={
             "name": "axisID",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     remarks: Optional[Remarks] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     axis_abbrev: Optional[AxisAbbrev] = field(
         default=None,
@@ -45,7 +46,7 @@ class CoordinateSystemAxisType(CoordinateSystemAxisBaseType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     axis_direction: Optional[AxisDirection] = field(
         default=None,
@@ -54,7 +55,7 @@ class CoordinateSystemAxisType(CoordinateSystemAxisBaseType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     uom: Optional[str] = field(
         default=None,
@@ -62,5 +63,5 @@ class CoordinateSystemAxisType(CoordinateSystemAxisBaseType):
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

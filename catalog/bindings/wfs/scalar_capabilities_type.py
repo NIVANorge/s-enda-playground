@@ -17,7 +17,7 @@ class ScalarCapabilitiesType:
             "name": "LogicalOperators",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     comparison_operators: Optional[ComparisonOperatorsType] = field(
         default=None,
@@ -25,5 +25,5 @@ class ScalarCapabilitiesType:
             "name": "ComparisonOperators",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )

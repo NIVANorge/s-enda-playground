@@ -11,5 +11,5 @@ class PriorityLocationPropertyType(LocationPropertyType):
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

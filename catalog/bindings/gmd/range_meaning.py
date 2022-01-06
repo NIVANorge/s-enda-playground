@@ -17,6 +17,7 @@ class RangeMeaning(CodeWithAuthorityType):
     shall reference a source of information specifying the values and
     meanings of all the allowed string values for this property.
     """
+
     class Meta:
         name = "rangeMeaning"
         namespace = "http://www.opengis.net/gml"

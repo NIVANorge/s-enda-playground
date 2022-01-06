@@ -14,5 +14,6 @@ class VerticalCstype(AbstractCoordinateSystemType):
     the vertical coordinate system axis. A VerticalCS shall have one
     usesAxis association.
     """
+
     class Meta:
         name = "VerticalCSType"

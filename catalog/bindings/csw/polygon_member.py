@@ -12,6 +12,7 @@ class PolygonMember(PolygonPropertyType):
     Use "surfaceMember" instead. This property element either references
     a polygon via the XLink-attributes or contains the polygon element.
     """
+
     class Meta:
         name = "polygonMember"
         namespace = "http://www.opengis.net/gml"

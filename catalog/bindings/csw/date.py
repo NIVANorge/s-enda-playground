@@ -13,6 +13,7 @@ class Date(SimpleLiteral):
     value is defined in a profile of ISO 8601 and includes (among
     others) dates of the form YYYY-MM-DD.
     """
+
     class Meta:
         name = "date"
         namespace = "http://purl.org/dc/elements/1.1/"

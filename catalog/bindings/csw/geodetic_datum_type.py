@@ -15,6 +15,7 @@ class GeodeticDatumType(AbstractDatumType):
     the shape of the earth, or of a Cartesian coordinate system centered in
     this ellipsoid (or sphere).
     """
+
     uses_prime_meridian: Optional[UsesPrimeMeridian] = field(
         default=None,
         metadata={
@@ -22,7 +23,7 @@ class GeodeticDatumType(AbstractDatumType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     uses_ellipsoid: Optional[UsesEllipsoid] = field(
         default=None,
@@ -31,5 +32,5 @@ class GeodeticDatumType(AbstractDatumType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

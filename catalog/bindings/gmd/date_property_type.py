@@ -18,7 +18,7 @@ class DatePropertyType:
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gco",
             "nillable": True,
-        }
+        },
     )
     date_time: Optional[XmlDateTime] = field(
         default=None,
@@ -26,7 +26,7 @@ class DatePropertyType:
             "name": "DateTime",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gco",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -35,5 +35,5 @@ class DatePropertyType:
             "type": "Attribute",
             "namespace": "http://www.isotc211.org/2005/gco",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )

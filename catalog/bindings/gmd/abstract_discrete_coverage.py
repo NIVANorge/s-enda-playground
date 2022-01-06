@@ -21,5 +21,6 @@ class AbstractDiscreteCoverage(AbstractDiscreteCoverageType):
     any discrete coverage whose type is derived from
     gml:AbstractDiscreteCoverageType.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

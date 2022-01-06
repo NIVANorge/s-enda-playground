@@ -19,13 +19,14 @@ class ConeType(AbstractGriddedSurfaceType):
     constructed using ((P1, P1, P1),(P2, P3, P4)). The apex most not
     coinside with the other plane.
     """
+
     horizontal_curve_type: CurveInterpolationType = field(
         init=False,
         default=CurveInterpolationType.CIRCULAR_ARC3_POINTS,
         metadata={
             "name": "horizontalCurveType",
             "type": "Attribute",
-        }
+        },
     )
     vertical_curve_type: CurveInterpolationType = field(
         init=False,
@@ -33,5 +34,5 @@ class ConeType(AbstractGriddedSurfaceType):
         metadata={
             "name": "verticalCurveType",
             "type": "Attribute",
-        }
+        },
     )

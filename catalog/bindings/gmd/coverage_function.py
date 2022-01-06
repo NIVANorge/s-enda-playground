@@ -17,6 +17,7 @@ class CoverageFunction(CoverageFunctionType):
     is assumed to be linear and the gml:axisOrder property is assumed to
     be “+1 +2”.
     """
+
     class Meta:
         name = "coverageFunction"
         namespace = "http://www.opengis.net/gml"

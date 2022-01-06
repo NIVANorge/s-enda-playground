@@ -28,13 +28,14 @@ class ReferenceSystemRefType:
     Association to a reference system, either referencing or containing the
     definition of that reference system.
     """
+
     compound_crs: Optional[CompoundCrs] = field(
         default=None,
         metadata={
             "name": "CompoundCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     temporal_crs: Optional[TemporalCrs] = field(
         default=None,
@@ -42,7 +43,7 @@ class ReferenceSystemRefType:
             "name": "TemporalCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     image_crs: Optional[ImageCrs] = field(
         default=None,
@@ -50,7 +51,7 @@ class ReferenceSystemRefType:
             "name": "ImageCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     engineering_crs: Optional[EngineeringCrs] = field(
         default=None,
@@ -58,7 +59,7 @@ class ReferenceSystemRefType:
             "name": "EngineeringCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     derived_crs: Optional[DerivedCrs] = field(
         default=None,
@@ -66,7 +67,7 @@ class ReferenceSystemRefType:
             "name": "DerivedCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     projected_crs: Optional[ProjectedCrs] = field(
         default=None,
@@ -74,7 +75,7 @@ class ReferenceSystemRefType:
             "name": "ProjectedCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     general_derived_crs: Optional[GeneralDerivedCrs] = field(
         default=None,
@@ -82,7 +83,7 @@ class ReferenceSystemRefType:
             "name": "_GeneralDerivedCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     geocentric_crs: Optional[GeocentricCrs] = field(
         default=None,
@@ -90,7 +91,7 @@ class ReferenceSystemRefType:
             "name": "GeocentricCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     vertical_crs: Optional[VerticalCrs] = field(
         default=None,
@@ -98,7 +99,7 @@ class ReferenceSystemRefType:
             "name": "VerticalCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     geographic_crs: Optional[GeographicCrs] = field(
         default=None,
@@ -106,7 +107,7 @@ class ReferenceSystemRefType:
             "name": "GeographicCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     coordinate_reference_system: Optional[CoordinateReferenceSystem] = field(
         default=None,
@@ -114,7 +115,7 @@ class ReferenceSystemRefType:
             "name": "_CoordinateReferenceSystem",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     crs: Optional[Crs] = field(
         default=None,
@@ -122,7 +123,7 @@ class ReferenceSystemRefType:
             "name": "_CRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     reference_system: Optional[ReferenceSystem] = field(
         default=None,
@@ -130,7 +131,7 @@ class ReferenceSystemRefType:
             "name": "_ReferenceSystem",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: TypeType = field(
         init=False,
@@ -138,14 +139,14 @@ class ReferenceSystemRefType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
@@ -153,7 +154,7 @@ class ReferenceSystemRefType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
@@ -161,28 +162,28 @@ class ReferenceSystemRefType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -190,5 +191,5 @@ class ReferenceSystemRefType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

@@ -10,6 +10,7 @@ class Style1(StyleType):
 
     Encapsulates all other styling information.
     """
+
     class Meta:
         name = "Style"
         namespace = "http://www.opengis.net/gml"

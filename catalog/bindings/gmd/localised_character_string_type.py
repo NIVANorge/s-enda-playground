@@ -13,17 +13,17 @@ class LocalisedCharacterStringType:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )
     id: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     locale: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

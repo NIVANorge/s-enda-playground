@@ -21,7 +21,7 @@ class ArcStringByBulgeType(AbstractCurveSegmentType):
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 2,
             "sequential": True,
-        }
+        },
     )
     point_property: List[PointProperty] = field(
         default_factory=list,
@@ -31,7 +31,7 @@ class ArcStringByBulgeType(AbstractCurveSegmentType):
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 2,
             "sequential": True,
-        }
+        },
     )
     point_rep: List[PointRep] = field(
         default_factory=list,
@@ -41,7 +41,7 @@ class ArcStringByBulgeType(AbstractCurveSegmentType):
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 2,
             "sequential": True,
-        }
+        },
     )
     pos_list: Optional[PosList] = field(
         default=None,
@@ -49,14 +49,14 @@ class ArcStringByBulgeType(AbstractCurveSegmentType):
             "name": "posList",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     coordinates: Optional[Coordinates] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     bulge: List[float] = field(
         default_factory=list,
@@ -64,7 +64,7 @@ class ArcStringByBulgeType(AbstractCurveSegmentType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 1,
-        }
+        },
     )
     normal: List[VectorType] = field(
         default_factory=list,
@@ -72,19 +72,19 @@ class ArcStringByBulgeType(AbstractCurveSegmentType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 1,
-        }
+        },
     )
     interpolation: CurveInterpolationType = field(
         init=False,
         default=CurveInterpolationType.CIRCULAR_ARC2_POINT_WITH_BULGE,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     num_arc: Optional[int] = field(
         default=None,
         metadata={
             "name": "numArc",
             "type": "Attribute",
-        }
+        },
     )

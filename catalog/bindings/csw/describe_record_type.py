@@ -16,25 +16,26 @@ class DescribeRecordType(RequestBaseType):
     (W3C XML Schema by default)
     outputFormat - preferred output format (application/xml by default)
     """
+
     type_name: List[QName] = field(
         default_factory=list,
         metadata={
             "name": "TypeName",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     output_format: str = field(
         default="application/xml",
         metadata={
             "name": "outputFormat",
             "type": "Attribute",
-        }
+        },
     )
     schema_language: str = field(
         default="http://www.w3.org/XML/Schema",
         metadata={
             "name": "schemaLanguage",
             "type": "Attribute",
-        }
+        },
     )

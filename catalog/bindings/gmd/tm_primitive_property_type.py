@@ -27,7 +27,7 @@ class TmPrimitivePropertyType:
             "name": "TimeEdge",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_node: Optional[TimeNode] = field(
         default=None,
@@ -35,7 +35,7 @@ class TmPrimitivePropertyType:
             "name": "TimeNode",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_time_topology_primitive: Optional[AbstractTimeTopologyPrimitive] = field(
         default=None,
@@ -43,7 +43,7 @@ class TmPrimitivePropertyType:
             "name": "AbstractTimeTopologyPrimitive",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_period: Optional[TimePeriod] = field(
         default=None,
@@ -51,7 +51,7 @@ class TmPrimitivePropertyType:
             "name": "TimePeriod",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_instant: Optional[TimeInstant] = field(
         default=None,
@@ -59,7 +59,7 @@ class TmPrimitivePropertyType:
             "name": "TimeInstant",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_time_geometric_primitive: Optional[AbstractTimeGeometricPrimitive] = field(
         default=None,
@@ -67,7 +67,7 @@ class TmPrimitivePropertyType:
             "name": "AbstractTimeGeometricPrimitive",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_time_primitive: Optional[AbstractTimePrimitive] = field(
         default=None,
@@ -75,7 +75,7 @@ class TmPrimitivePropertyType:
             "name": "AbstractTimePrimitive",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -83,55 +83,55 @@ class TmPrimitivePropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     uuidref: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -140,5 +140,5 @@ class TmPrimitivePropertyType:
             "type": "Attribute",
             "namespace": "http://www.isotc211.org/2005/gco",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )

@@ -4,8 +4,12 @@ from bindings.gmd.abstract_object_type import AbstractObjectType
 from bindings.gmd.actuate_value import ActuateValue
 from bindings.gmd.character_string_property_type import CharacterStringPropertyType
 from bindings.gmd.ci_date_property_type import CiDatePropertyType
-from bindings.gmd.ci_presentation_form_code_property_type import CiPresentationFormCodePropertyType
-from bindings.gmd.ci_responsible_party_property_type import CiResponsiblePartyPropertyType
+from bindings.gmd.ci_presentation_form_code_property_type import (
+    CiPresentationFormCodePropertyType,
+)
+from bindings.gmd.ci_responsible_party_property_type import (
+    CiResponsiblePartyPropertyType,
+)
 from bindings.gmd.ci_series_property_type import CiSeriesPropertyType
 from bindings.gmd.date_property_type import DatePropertyType
 from bindings.gmd.nil_reason_enumeration_value import NilReasonEnumerationValue
@@ -19,6 +23,7 @@ class CiCitationType(AbstractObjectType):
     """
     Standardized resource reference.
     """
+
     class Meta:
         name = "CI_Citation_Type"
 
@@ -28,7 +33,7 @@ class CiCitationType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     alternate_title: List[CharacterStringPropertyType] = field(
         default_factory=list,
@@ -36,7 +41,7 @@ class CiCitationType(AbstractObjectType):
             "name": "alternateTitle",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     date: List[CiDatePropertyType] = field(
         default_factory=list,
@@ -44,14 +49,14 @@ class CiCitationType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "min_occurs": 1,
-        }
+        },
     )
     edition: Optional[CharacterStringPropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     edition_date: Optional[DatePropertyType] = field(
         default=None,
@@ -59,14 +64,14 @@ class CiCitationType(AbstractObjectType):
             "name": "editionDate",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     identifier: List["MdIdentifierPropertyType"] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     cited_responsible_party: List[CiResponsiblePartyPropertyType] = field(
         default_factory=list,
@@ -74,7 +79,7 @@ class CiCitationType(AbstractObjectType):
             "name": "citedResponsibleParty",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     presentation_form: List[CiPresentationFormCodePropertyType] = field(
         default_factory=list,
@@ -82,14 +87,14 @@ class CiCitationType(AbstractObjectType):
             "name": "presentationForm",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     series: Optional[CiSeriesPropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     other_citation_details: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -97,7 +102,7 @@ class CiCitationType(AbstractObjectType):
             "name": "otherCitationDetails",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     collective_title: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -105,7 +110,7 @@ class CiCitationType(AbstractObjectType):
             "name": "collectiveTitle",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     isbn: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -113,7 +118,7 @@ class CiCitationType(AbstractObjectType):
             "name": "ISBN",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     issn: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -121,7 +126,7 @@ class CiCitationType(AbstractObjectType):
             "name": "ISSN",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
 
 
@@ -143,7 +148,7 @@ class CiCitationPropertyType:
             "name": "CI_Citation",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -151,55 +156,55 @@ class CiCitationPropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     uuidref: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -208,7 +213,7 @@ class CiCitationPropertyType:
             "type": "Attribute",
             "namespace": "http://www.isotc211.org/2005/gco",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
 
 
@@ -222,7 +227,7 @@ class MdIdentifierType(AbstractObjectType):
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     code: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -230,7 +235,7 @@ class MdIdentifierType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
 
 
@@ -252,14 +257,14 @@ class RsIdentifierType(MdIdentifierType):
             "name": "codeSpace",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     version: Optional[CharacterStringPropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
 
 
@@ -281,7 +286,7 @@ class MdIdentifierPropertyType:
             "name": "RS_Identifier",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     md_identifier: Optional[MdIdentifier] = field(
         default=None,
@@ -289,7 +294,7 @@ class MdIdentifierPropertyType:
             "name": "MD_Identifier",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -297,55 +302,55 @@ class MdIdentifierPropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     uuidref: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -354,5 +359,5 @@ class MdIdentifierPropertyType:
             "type": "Attribute",
             "namespace": "http://www.isotc211.org/2005/gco",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )

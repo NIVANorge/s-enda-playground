@@ -10,6 +10,7 @@ class Ring2(AbstractRingType):
     The "_Ring" element is the abstract head of the substituition group for all
     closed boundaries of a surface patch.
     """
+
     class Meta:
         name = "_Ring"
         namespace = "http://www.opengis.net/gml"

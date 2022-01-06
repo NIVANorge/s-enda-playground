@@ -14,7 +14,7 @@ class ArithmeticOperatorsType:
             "name": "SimpleArithmetic",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     functions: List[FunctionsType] = field(
         default_factory=list,
@@ -22,5 +22,5 @@ class ArithmeticOperatorsType:
             "name": "Functions",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )

@@ -15,5 +15,5 @@ class PropertyIsNullType(ComparisonOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "required": True,
-        }
+        },
     )

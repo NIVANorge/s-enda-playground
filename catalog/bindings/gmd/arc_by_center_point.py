@@ -20,5 +20,6 @@ class ArcByCenterPoint(ArcByCenterPointType):
     model follows the general pattern for the encoding of curve
     segments.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

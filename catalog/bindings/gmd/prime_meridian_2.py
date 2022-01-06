@@ -10,6 +10,7 @@ class PrimeMeridian2(PrimeMeridianPropertyType):
     gml:primeMeridian is an association role to the prime meridian used by this
     geodetic datum.
     """
+
     class Meta:
         name = "primeMeridian"
         namespace = "http://www.opengis.net/gml"

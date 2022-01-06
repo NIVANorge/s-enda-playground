@@ -10,6 +10,7 @@ class VerticalCs2(VerticalCspropertyType):
     gml:verticalCS is an association role to the vertical coordinate system
     used by this CRS.
     """
+
     class Meta:
         name = "verticalCS"
         namespace = "http://www.opengis.net/gml"

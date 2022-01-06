@@ -13,5 +13,5 @@ class Real:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )

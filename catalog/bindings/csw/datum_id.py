@@ -9,6 +9,7 @@ class DatumId(IdentifierType):
     """
     An identification of a datum.
     """
+
     class Meta:
         name = "datumID"
         namespace = "http://www.opengis.net/gml"

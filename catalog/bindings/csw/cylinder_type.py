@@ -15,13 +15,14 @@ class CylinderType(AbstractGriddedSurfaceType):
     Cylinder can be given by two circles, giving us the control points
     of the form ((P1, P2, P3),(P4, P5, P6)).
     """
+
     horizontal_curve_type: CurveInterpolationType = field(
         init=False,
         default=CurveInterpolationType.CIRCULAR_ARC3_POINTS,
         metadata={
             "name": "horizontalCurveType",
             "type": "Attribute",
-        }
+        },
     )
     vertical_curve_type: CurveInterpolationType = field(
         init=False,
@@ -29,5 +30,5 @@ class CylinderType(AbstractGriddedSurfaceType):
         metadata={
             "name": "verticalCurveType",
             "type": "Attribute",
-        }
+        },
     )

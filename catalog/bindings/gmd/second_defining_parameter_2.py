@@ -25,6 +25,7 @@ class SecondDefiningParameter2:
     is degenerate and is actually a sphere. The sphere is completely
     defined by the semi-major axis, which is the radius of the sphere.
     """
+
     class Meta:
         name = "secondDefiningParameter"
         namespace = "http://www.opengis.net/gml"
@@ -35,5 +36,5 @@ class SecondDefiningParameter2:
             "name": "SecondDefiningParameter",
             "type": "Element",
             "required": True,
-        }
+        },
     )

@@ -22,6 +22,7 @@ class CoordinateReferenceSystem(AbstractReferenceSystemType):
     acceptable degree of error. The exception to the rule is the subtype
     "Temporal" which has been added by analogy.
     """
+
     class Meta:
         name = "_CoordinateReferenceSystem"
         namespace = "http://www.opengis.net/gml"

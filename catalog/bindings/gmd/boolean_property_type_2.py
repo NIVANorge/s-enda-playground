@@ -16,7 +16,7 @@ class BooleanPropertyType2:
             "name": "Boolean",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gco",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -25,5 +25,5 @@ class BooleanPropertyType2:
             "type": "Attribute",
             "namespace": "http://www.isotc211.org/2005/gco",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )

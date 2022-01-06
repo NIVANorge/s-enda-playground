@@ -15,5 +15,5 @@ class TmPeriodDuration:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )

@@ -25,13 +25,14 @@ class IdentificationType(BasicIdentificationType):
     :ivar available_crs: Unordered list of zero or more available
         coordinate reference systems.
     """
+
     wgs84_bounding_box: List[Wgs84BoundingBox] = field(
         default_factory=list,
         metadata={
             "name": "WGS84BoundingBox",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     bounding_box: List[BoundingBox] = field(
         default_factory=list,
@@ -39,7 +40,7 @@ class IdentificationType(BasicIdentificationType):
             "name": "BoundingBox",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     output_format: List[str] = field(
         default_factory=list,
@@ -48,7 +49,7 @@ class IdentificationType(BasicIdentificationType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
             "pattern": r"(application|audio|image|text|video|message|multipart|model)/.+(;\s*.+=.+)*",
-        }
+        },
     )
     supported_crs: List[str] = field(
         default_factory=list,
@@ -56,7 +57,7 @@ class IdentificationType(BasicIdentificationType):
             "name": "SupportedCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     available_crs: List[str] = field(
         default_factory=list,
@@ -64,5 +65,5 @@ class IdentificationType(BasicIdentificationType):
             "name": "AvailableCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )

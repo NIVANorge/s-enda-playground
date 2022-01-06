@@ -18,7 +18,7 @@ class LockFeatureType(BaseRequestType):
             "name": "StoredQuery",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     query: List[Query] = field(
         default_factory=list,
@@ -26,7 +26,7 @@ class LockFeatureType(BaseRequestType):
             "name": "Query",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     abstract_adhoc_query_expression: List[AbstractAdhocQueryExpression] = field(
         default_factory=list,
@@ -34,7 +34,7 @@ class LockFeatureType(BaseRequestType):
             "name": "AbstractAdhocQueryExpression",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     abstract_query_expression: List[AbstractQueryExpression] = field(
         default_factory=list,
@@ -42,25 +42,25 @@ class LockFeatureType(BaseRequestType):
             "name": "AbstractQueryExpression",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     lock_id: Optional[str] = field(
         default=None,
         metadata={
             "name": "lockId",
             "type": "Attribute",
-        }
+        },
     )
     expiry: int = field(
         default=300,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     lock_action: AllSomeType = field(
         default=AllSomeType.ALL,
         metadata={
             "name": "lockAction",
             "type": "Attribute",
-        }
+        },
     )

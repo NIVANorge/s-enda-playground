@@ -13,5 +13,5 @@ class AvailableCrs:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )

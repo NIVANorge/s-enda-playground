@@ -12,6 +12,7 @@ class TupleList(CoordinatesType):
 
     The gml:tupleList encoding is effectively “band-interleaved”.
     """
+
     class Meta:
         name = "tupleList"
         namespace = "http://www.opengis.net/gml"

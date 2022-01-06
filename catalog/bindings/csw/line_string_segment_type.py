@@ -32,6 +32,7 @@ class LineStringSegmentType(AbstractCurveSegmentType):
         determine the position of this curve segment. For a
         LineStringSegment the interpolation is fixed as "linear".
     """
+
     pos: List[Pos] = field(
         default_factory=list,
         metadata={
@@ -39,7 +40,7 @@ class LineStringSegmentType(AbstractCurveSegmentType):
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 2,
             "sequential": True,
-        }
+        },
     )
     point_property: List[PointProperty] = field(
         default_factory=list,
@@ -49,7 +50,7 @@ class LineStringSegmentType(AbstractCurveSegmentType):
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 2,
             "sequential": True,
-        }
+        },
     )
     point_rep: List[PointRep] = field(
         default_factory=list,
@@ -59,7 +60,7 @@ class LineStringSegmentType(AbstractCurveSegmentType):
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 2,
             "sequential": True,
-        }
+        },
     )
     pos_list: Optional[PosList] = field(
         default=None,
@@ -67,19 +68,19 @@ class LineStringSegmentType(AbstractCurveSegmentType):
             "name": "posList",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     coordinates: Optional[Coordinates] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     interpolation: CurveInterpolationType = field(
         init=False,
         default=CurveInterpolationType.LINEAR,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

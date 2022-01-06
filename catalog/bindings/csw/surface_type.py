@@ -30,13 +30,14 @@ class SurfaceType(AbstractSurfaceType):
     :ivar polygon_patches:
     :ivar patches: This element encapsulates the patches of the surface.
     """
+
     triangle_patches: Optional[TrianglePatches] = field(
         default=None,
         metadata={
             "name": "trianglePatches",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     polygon_patches: Optional[PolygonPatches] = field(
         default=None,
@@ -44,12 +45,12 @@ class SurfaceType(AbstractSurfaceType):
             "name": "polygonPatches",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     patches: Optional[Patches] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

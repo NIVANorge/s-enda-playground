@@ -9,6 +9,7 @@ class UsesCs(CoordinateSystemRefType):
     """
     Association to the coordinate system used by this CRS.
     """
+
     class Meta:
         name = "usesCS"
         namespace = "http://www.opengis.net/gml"

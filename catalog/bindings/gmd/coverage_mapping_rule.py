@@ -14,5 +14,6 @@ class CoverageMappingRule(MappingRuleType):
     (gml:ruleReference). If no rule name is specified, the default is
     ‘Linear’ with respect to members of the domain in document order.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

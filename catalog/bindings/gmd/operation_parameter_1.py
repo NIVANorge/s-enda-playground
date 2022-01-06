@@ -14,6 +14,7 @@ class OperationParameter1(OperationParameterType):
     extended for all operation methods, without defining operation-
     method-specialized element names.
     """
+
     class Meta:
         name = "OperationParameter"
         namespace = "http://www.opengis.net/gml"

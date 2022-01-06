@@ -13,6 +13,7 @@ class SuccessionType(Enum):
     * define a temporal topological complex element as a feature element
     * define an association same as temporal topological complex between features.
     """
+
     SUBSTITUTION = "substitution"
     DIVISION = "division"
     FUSION = "fusion"

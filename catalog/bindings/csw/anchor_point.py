@@ -17,6 +17,7 @@ class AnchorPoint(CodeType2):
     - For an image datum, the anchor point is usually either the centre of the image or the corner of the image.
     - For a temporal datum, this attribute is not defined. Instead of the anchor point, a temporal datum carries a separate time origin of type DateTime.
     """
+
     class Meta:
         name = "anchorPoint"
         namespace = "http://www.opengis.net/gml"

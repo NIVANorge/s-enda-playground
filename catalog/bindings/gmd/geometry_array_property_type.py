@@ -2,7 +2,9 @@ from dataclasses import dataclass, field
 from typing import List, Optional, Union
 from bindings.gmd.abstract_curve import AbstractCurve
 from bindings.gmd.abstract_geometric_aggregate import AbstractGeometricAggregate
-from bindings.gmd.abstract_geometric_aggregate_type import AbstractGeometricAggregateType
+from bindings.gmd.abstract_geometric_aggregate_type import (
+    AbstractGeometricAggregateType,
+)
 from bindings.gmd.abstract_geometric_primitive import AbstractGeometricPrimitive
 from bindings.gmd.abstract_geometry import AbstractGeometry
 from bindings.gmd.abstract_implicit_geometry import AbstractImplicitGeometry
@@ -50,6 +52,7 @@ class GeometryArrayPropertyType:
     in the array property, referencing geometry elements or arrays of
     geometry elements via XLinks is not supported.
     """
+
     rectified_grid: List[RectifiedGrid] = field(
         default_factory=list,
         metadata={
@@ -57,7 +60,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     grid: List[Grid] = field(
         default_factory=list,
@@ -66,7 +69,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     abstract_implicit_geometry: List[AbstractImplicitGeometry] = field(
         default_factory=list,
@@ -75,7 +78,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     geometric_complex: List[GeometricComplex] = field(
         default_factory=list,
@@ -84,7 +87,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     multi_solid: List[MultiSolid] = field(
         default_factory=list,
@@ -93,7 +96,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     multi_surface: List[MultiSurface] = field(
         default_factory=list,
@@ -102,7 +105,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     multi_curve: List[MultiCurve] = field(
         default_factory=list,
@@ -111,7 +114,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     multi_point: List[MultiPoint] = field(
         default_factory=list,
@@ -120,7 +123,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     multi_geometry: List["MultiGeometry"] = field(
         default_factory=list,
@@ -129,7 +132,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     abstract_geometric_aggregate: List[AbstractGeometricAggregate] = field(
         default_factory=list,
@@ -138,7 +141,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     composite_solid: List[CompositeSolid] = field(
         default_factory=list,
@@ -147,7 +150,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     solid: List[Solid] = field(
         default_factory=list,
@@ -156,7 +159,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     abstract_solid: List[AbstractSolid] = field(
         default_factory=list,
@@ -165,7 +168,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     composite_surface: List[CompositeSurface] = field(
         default_factory=list,
@@ -174,7 +177,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     orientable_surface: List[OrientableSurface] = field(
         default_factory=list,
@@ -183,7 +186,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     tin: List[Tin] = field(
         default_factory=list,
@@ -192,7 +195,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     triangulated_surface: List[TriangulatedSurface] = field(
         default_factory=list,
@@ -201,7 +204,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     polyhedral_surface: List[PolyhedralSurface] = field(
         default_factory=list,
@@ -210,7 +213,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     surface: List[Surface] = field(
         default_factory=list,
@@ -219,7 +222,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     polygon: List[Polygon] = field(
         default_factory=list,
@@ -228,7 +231,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     abstract_surface: List[AbstractSurface] = field(
         default_factory=list,
@@ -237,7 +240,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     composite_curve: List[CompositeCurve] = field(
         default_factory=list,
@@ -246,7 +249,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     orientable_curve: List[OrientableCurve] = field(
         default_factory=list,
@@ -255,7 +258,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     curve: List[Curve] = field(
         default_factory=list,
@@ -264,7 +267,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     line_string: List[LineString] = field(
         default_factory=list,
@@ -273,7 +276,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     abstract_curve: List[AbstractCurve] = field(
         default_factory=list,
@@ -282,7 +285,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     point: List[Point] = field(
         default_factory=list,
@@ -291,7 +294,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     abstract_geometric_primitive: List[AbstractGeometricPrimitive] = field(
         default_factory=list,
@@ -300,7 +303,7 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     abstract_geometry: List[AbstractGeometry] = field(
         default_factory=list,
@@ -309,13 +312,13 @@ class GeometryArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -331,13 +334,14 @@ class GeometryPropertyType:
     a geometry element as its value, this is called a geometry property.
     A generic type for such a geometry property is GeometryPropertyType.
     """
+
     rectified_grid: Optional[RectifiedGrid] = field(
         default=None,
         metadata={
             "name": "RectifiedGrid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     grid: Optional[Grid] = field(
         default=None,
@@ -345,7 +349,7 @@ class GeometryPropertyType:
             "name": "Grid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_implicit_geometry: Optional[AbstractImplicitGeometry] = field(
         default=None,
@@ -353,7 +357,7 @@ class GeometryPropertyType:
             "name": "AbstractImplicitGeometry",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     geometric_complex: Optional[GeometricComplex] = field(
         default=None,
@@ -361,7 +365,7 @@ class GeometryPropertyType:
             "name": "GeometricComplex",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_solid: Optional[MultiSolid] = field(
         default=None,
@@ -369,7 +373,7 @@ class GeometryPropertyType:
             "name": "MultiSolid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_surface: Optional[MultiSurface] = field(
         default=None,
@@ -377,7 +381,7 @@ class GeometryPropertyType:
             "name": "MultiSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_curve: Optional[MultiCurve] = field(
         default=None,
@@ -385,7 +389,7 @@ class GeometryPropertyType:
             "name": "MultiCurve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_point: Optional[MultiPoint] = field(
         default=None,
@@ -393,7 +397,7 @@ class GeometryPropertyType:
             "name": "MultiPoint",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_geometry: Optional["MultiGeometry"] = field(
         default=None,
@@ -401,7 +405,7 @@ class GeometryPropertyType:
             "name": "MultiGeometry",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_geometric_aggregate: Optional[AbstractGeometricAggregate] = field(
         default=None,
@@ -409,7 +413,7 @@ class GeometryPropertyType:
             "name": "AbstractGeometricAggregate",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     composite_solid: Optional[CompositeSolid] = field(
         default=None,
@@ -417,7 +421,7 @@ class GeometryPropertyType:
             "name": "CompositeSolid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     solid: Optional[Solid] = field(
         default=None,
@@ -425,7 +429,7 @@ class GeometryPropertyType:
             "name": "Solid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_solid: Optional[AbstractSolid] = field(
         default=None,
@@ -433,7 +437,7 @@ class GeometryPropertyType:
             "name": "AbstractSolid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     composite_surface: Optional[CompositeSurface] = field(
         default=None,
@@ -441,7 +445,7 @@ class GeometryPropertyType:
             "name": "CompositeSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     orientable_surface: Optional[OrientableSurface] = field(
         default=None,
@@ -449,7 +453,7 @@ class GeometryPropertyType:
             "name": "OrientableSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     tin: Optional[Tin] = field(
         default=None,
@@ -457,7 +461,7 @@ class GeometryPropertyType:
             "name": "Tin",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     triangulated_surface: Optional[TriangulatedSurface] = field(
         default=None,
@@ -465,7 +469,7 @@ class GeometryPropertyType:
             "name": "TriangulatedSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     polyhedral_surface: Optional[PolyhedralSurface] = field(
         default=None,
@@ -473,7 +477,7 @@ class GeometryPropertyType:
             "name": "PolyhedralSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     surface: Optional[Surface] = field(
         default=None,
@@ -481,7 +485,7 @@ class GeometryPropertyType:
             "name": "Surface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     polygon: Optional[Polygon] = field(
         default=None,
@@ -489,7 +493,7 @@ class GeometryPropertyType:
             "name": "Polygon",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_surface: Optional[AbstractSurface] = field(
         default=None,
@@ -497,7 +501,7 @@ class GeometryPropertyType:
             "name": "AbstractSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     composite_curve: Optional[CompositeCurve] = field(
         default=None,
@@ -505,7 +509,7 @@ class GeometryPropertyType:
             "name": "CompositeCurve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     orientable_curve: Optional[OrientableCurve] = field(
         default=None,
@@ -513,7 +517,7 @@ class GeometryPropertyType:
             "name": "OrientableCurve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     curve: Optional[Curve] = field(
         default=None,
@@ -521,7 +525,7 @@ class GeometryPropertyType:
             "name": "Curve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     line_string: Optional[LineString] = field(
         default=None,
@@ -529,7 +533,7 @@ class GeometryPropertyType:
             "name": "LineString",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_curve: Optional[AbstractCurve] = field(
         default=None,
@@ -537,7 +541,7 @@ class GeometryPropertyType:
             "name": "AbstractCurve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     point: Optional[Point] = field(
         default=None,
@@ -545,7 +549,7 @@ class GeometryPropertyType:
             "name": "Point",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_geometric_primitive: Optional[AbstractGeometricPrimitive] = field(
         default=None,
@@ -553,7 +557,7 @@ class GeometryPropertyType:
             "name": "AbstractGeometricPrimitive",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_geometry: Optional[AbstractGeometry] = field(
         default=None,
@@ -561,7 +565,7 @@ class GeometryPropertyType:
             "name": "AbstractGeometry",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -569,49 +573,49 @@ class GeometryPropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -619,7 +623,7 @@ class GeometryPropertyType:
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -627,13 +631,13 @@ class GeometryPropertyType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -643,6 +647,7 @@ class GeometryMember(GeometryPropertyType):
     This property element either references a geometry element via the XLink-
     attributes or contains the geometry element.
     """
+
     class Meta:
         name = "geometryMember"
         namespace = "http://www.opengis.net/gml"
@@ -655,6 +660,7 @@ class GeometryMembers(GeometryArrayPropertyType):
     The order of the elements is significant and shall be preserved when
     processing the array.
     """
+
     class Meta:
         name = "geometryMembers"
         namespace = "http://www.opengis.net/gml"
@@ -668,7 +674,7 @@ class MultiGeometryType(AbstractGeometricAggregateType):
             "name": "geometryMember",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     geometry_members: Optional[GeometryMembers] = field(
         default=None,
@@ -676,7 +682,7 @@ class MultiGeometryType(AbstractGeometricAggregateType):
             "name": "geometryMembers",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
 
 
@@ -690,5 +696,6 @@ class MultiGeometry(MultiGeometryType):
     (gml:geometryMembers). It is also valid to use both the "standard"
     and the array properties in the same collection.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

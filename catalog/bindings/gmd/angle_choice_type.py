@@ -13,7 +13,7 @@ class AngleChoiceType:
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     dms_angle: Optional[DmsAngle] = field(
         default=None,
@@ -21,5 +21,5 @@ class AngleChoiceType:
             "name": "dmsAngle",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

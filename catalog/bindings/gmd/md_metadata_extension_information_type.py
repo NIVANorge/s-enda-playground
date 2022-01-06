@@ -2,7 +2,9 @@ from dataclasses import dataclass, field
 from typing import List, Optional
 from bindings.gmd.abstract_object_type import AbstractObjectType
 from bindings.gmd.ci_online_resource_property_type import CiOnlineResourcePropertyType
-from bindings.gmd.md_extended_element_information_property_type import MdExtendedElementInformationPropertyType
+from bindings.gmd.md_extended_element_information_property_type import (
+    MdExtendedElementInformationPropertyType,
+)
 
 __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
 
@@ -12,6 +14,7 @@ class MdMetadataExtensionInformationType(AbstractObjectType):
     """
     Information describing metadata extensions.
     """
+
     class Meta:
         name = "MD_MetadataExtensionInformation_Type"
 
@@ -21,13 +24,15 @@ class MdMetadataExtensionInformationType(AbstractObjectType):
             "name": "extensionOnLineResource",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
-    extended_element_information: List[MdExtendedElementInformationPropertyType] = field(
+    extended_element_information: List[
+        MdExtendedElementInformationPropertyType
+    ] = field(
         default_factory=list,
         metadata={
             "name": "extendedElementInformation",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

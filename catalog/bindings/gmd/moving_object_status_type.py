@@ -22,14 +22,14 @@ class MovingObjectStatusType(AbstractTimeSliceType):
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     pos: Optional[Pos] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     location_name: Optional[LocationName] = field(
         default=None,
@@ -37,7 +37,7 @@ class MovingObjectStatusType(AbstractTimeSliceType):
             "name": "locationName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     location_reference: Optional[LocationReference] = field(
         default=None,
@@ -45,7 +45,7 @@ class MovingObjectStatusType(AbstractTimeSliceType):
             "name": "locationReference",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     priority_location: Optional[PriorityLocation] = field(
         default=None,
@@ -53,49 +53,49 @@ class MovingObjectStatusType(AbstractTimeSliceType):
             "name": "priorityLocation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     location: Optional[Location] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     speed: Optional[MeasureType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     bearing: Optional[DirectionPropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     acceleration: Optional[MeasureType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     elevation: Optional[MeasureType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     status: Optional[Status] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     status_reference: Optional[StatusReference] = field(
         default=None,
@@ -103,5 +103,5 @@ class MovingObjectStatusType(AbstractTimeSliceType):
             "name": "statusReference",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

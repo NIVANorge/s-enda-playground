@@ -18,7 +18,7 @@ class DynamicFeatureMemberType(AbstractFeatureMemberType):
             "name": "DynamicFeatureCollection",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     dynamic_feature: List[DynamicFeature] = field(
         default_factory=list,
@@ -26,7 +26,7 @@ class DynamicFeatureMemberType(AbstractFeatureMemberType):
             "name": "DynamicFeature",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -34,49 +34,49 @@ class DynamicFeatureMemberType(AbstractFeatureMemberType):
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -84,7 +84,7 @@ class DynamicFeatureMemberType(AbstractFeatureMemberType):
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -92,7 +92,7 @@ class DynamicFeatureMemberType(AbstractFeatureMemberType):
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
 
 
@@ -112,7 +112,7 @@ class DynamicFeatureCollectionType(DynamicFeatureType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
 
 
@@ -128,5 +128,6 @@ class DynamicFeatureCollection(DynamicFeatureCollectionType):
     1.      A feature collection which consists of static feature members (members do not change in time) but which has properties of the collection object as a whole that do change in time .
     2.      A feature collection which consists of dynamic feature members (the members are gml:DynamicFeatures) but which also has properties of the collection as a whole that vary in time.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

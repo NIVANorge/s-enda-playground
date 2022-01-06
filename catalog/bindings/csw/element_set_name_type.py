@@ -12,7 +12,7 @@ class ElementSetNameType:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )
     type_names: List[QName] = field(
         default_factory=list,
@@ -20,5 +20,5 @@ class ElementSetNameType:
             "name": "typeNames",
             "type": "Attribute",
             "tokens": True,
-        }
+        },
     )

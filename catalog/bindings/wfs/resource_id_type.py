@@ -14,32 +14,32 @@ class ResourceIdType(AbstractIdType):
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
     previous_rid: Optional[str] = field(
         default=None,
         metadata={
             "name": "previousRid",
             "type": "Attribute",
-        }
+        },
     )
     version: Optional[Union[VersionActionTokens, int, XmlDateTime]] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     start_date: Optional[XmlDateTime] = field(
         default=None,
         metadata={
             "name": "startDate",
             "type": "Attribute",
-        }
+        },
     )
     end_date: Optional[XmlDateTime] = field(
         default=None,
         metadata={
             "name": "endDate",
             "type": "Attribute",
-        }
+        },
     )

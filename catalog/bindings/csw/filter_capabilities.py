@@ -19,7 +19,7 @@ class FilterCapabilities:
             "name": "Spatial_Capabilities",
             "type": "Element",
             "required": True,
-        }
+        },
     )
     scalar_capabilities: Optional[ScalarCapabilitiesType] = field(
         default=None,
@@ -27,7 +27,7 @@ class FilterCapabilities:
             "name": "Scalar_Capabilities",
             "type": "Element",
             "required": True,
-        }
+        },
     )
     id_capabilities: Optional[IdCapabilitiesType] = field(
         default=None,
@@ -35,5 +35,5 @@ class FilterCapabilities:
             "name": "Id_Capabilities",
             "type": "Element",
             "required": True,
-        }
+        },
     )

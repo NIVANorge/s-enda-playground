@@ -42,13 +42,14 @@ class UnNamedDomainType:
         elements for this quantity should be specified in the
         Implementation Specification for this service.
     """
+
     allowed_values: Optional[AllowedValues] = field(
         default=None,
         metadata={
             "name": "AllowedValues",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     any_value: Optional[AnyValue] = field(
         default=None,
@@ -56,7 +57,7 @@ class UnNamedDomainType:
             "name": "AnyValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     no_values: Optional[NoValues] = field(
         default=None,
@@ -64,7 +65,7 @@ class UnNamedDomainType:
             "name": "NoValues",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     values_reference: Optional[ValuesReference] = field(
         default=None,
@@ -72,7 +73,7 @@ class UnNamedDomainType:
             "name": "ValuesReference",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     default_value: Optional[str] = field(
         default=None,
@@ -80,7 +81,7 @@ class UnNamedDomainType:
             "name": "DefaultValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     meaning: Optional[Meaning] = field(
         default=None,
@@ -88,7 +89,7 @@ class UnNamedDomainType:
             "name": "Meaning",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     data_type: Optional[DataType] = field(
         default=None,
@@ -96,7 +97,7 @@ class UnNamedDomainType:
             "name": "DataType",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     uom: Optional[Uom] = field(
         default=None,
@@ -104,7 +105,7 @@ class UnNamedDomainType:
             "name": "UOM",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     reference_system: Optional[ReferenceSystem] = field(
         default=None,
@@ -112,7 +113,7 @@ class UnNamedDomainType:
             "name": "ReferenceSystem",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     additional_parameters: List[AdditionalParameters] = field(
         default_factory=list,
@@ -120,7 +121,7 @@ class UnNamedDomainType:
             "name": "AdditionalParameters",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     metadata: List[Metadata] = field(
         default_factory=list,
@@ -128,5 +129,5 @@ class UnNamedDomainType:
             "name": "Metadata",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )

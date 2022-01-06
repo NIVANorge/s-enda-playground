@@ -9,6 +9,7 @@ class UsesEllipsoid(EllipsoidRefType):
     """
     Association to the ellipsoid used by this geodetic datum.
     """
+
     class Meta:
         name = "usesEllipsoid"
         namespace = "http://www.opengis.net/gml"

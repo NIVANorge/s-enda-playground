@@ -12,7 +12,7 @@ class KnotType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     multiplicity: Optional[int] = field(
         default=None,
@@ -20,7 +20,7 @@ class KnotType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     weight: Optional[float] = field(
         default=None,
@@ -28,5 +28,5 @@ class KnotType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

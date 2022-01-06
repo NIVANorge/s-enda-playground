@@ -10,5 +10,5 @@ class AbstractTransactionActionType:
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

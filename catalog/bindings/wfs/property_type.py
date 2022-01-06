@@ -14,7 +14,7 @@ class PropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
             "required": True,
-        }
+        },
     )
     value: Optional[object] = field(
         default=None,
@@ -22,7 +22,7 @@ class PropertyType:
             "name": "Value",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
 
     @dataclass
@@ -31,11 +31,11 @@ class PropertyType:
             default="",
             metadata={
                 "required": True,
-            }
+            },
         )
         action: UpdateActionType = field(
             default=UpdateActionType.REPLACE,
             metadata={
                 "type": "Attribute",
-            }
+            },
         )

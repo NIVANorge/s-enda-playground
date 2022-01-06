@@ -19,7 +19,7 @@ class TopoComplexMemberType:
             "name": "TopoComplex",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -27,49 +27,49 @@ class TopoComplexMemberType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -77,7 +77,7 @@ class TopoComplexMemberType:
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -85,7 +85,7 @@ class TopoComplexMemberType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
 
 
@@ -96,6 +96,7 @@ class MaximalComplex(TopoComplexMemberType):
     gml:maximalComplex provide an encoding for relationships between topology
     complexes as described for gml:TopoComplex above.
     """
+
     class Meta:
         name = "maximalComplex"
         namespace = "http://www.opengis.net/gml"
@@ -108,6 +109,7 @@ class SubComplex(TopoComplexMemberType):
     gml:maximalComplex provide an encoding for relationships between topology
     complexes as described for gml:TopoComplex above.
     """
+
     class Meta:
         name = "subComplex"
         namespace = "http://www.opengis.net/gml"
@@ -120,6 +122,7 @@ class SuperComplex(TopoComplexMemberType):
     gml:maximalComplex provide an encoding for relationships between topology
     complexes as described for gml:TopoComplex above.
     """
+
     class Meta:
         name = "superComplex"
         namespace = "http://www.opengis.net/gml"
@@ -134,7 +137,7 @@ class TopoComplexType(AbstractTopologyType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     super_complex: List[SuperComplex] = field(
         default_factory=list,
@@ -142,7 +145,7 @@ class TopoComplexType(AbstractTopologyType):
             "name": "superComplex",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     sub_complex: List[SubComplex] = field(
         default_factory=list,
@@ -150,7 +153,7 @@ class TopoComplexType(AbstractTopologyType):
             "name": "subComplex",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     topo_primitive_member: List[TopoPrimitiveMember] = field(
         default_factory=list,
@@ -158,7 +161,7 @@ class TopoComplexType(AbstractTopologyType):
             "name": "topoPrimitiveMember",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     topo_primitive_members: Optional[TopoPrimitiveMembers] = field(
         default=None,
@@ -166,21 +169,21 @@ class TopoComplexType(AbstractTopologyType):
             "name": "topoPrimitiveMembers",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     is_maximal: bool = field(
         default=False,
         metadata={
             "name": "isMaximal",
             "type": "Attribute",
-        }
+        },
     )
     aggregation_type: Optional[AggregationType] = field(
         default=None,
         metadata={
             "name": "aggregationType",
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -193,5 +196,6 @@ class TopoComplex(TopoComplexType):
     (gml:subComplex, gml:superComplex). A topology complex contains its
     primitive and sub-complex members.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

@@ -14,5 +14,6 @@ class TimeCalendarEra(TimeCalendarEraType):
     -       gml:julianReference specifies the Julian date that corresponds to the reference date.  The Julian day number is an integer value; the Julian date is a decimal value that allows greater resolution.  Transforming calendar dates to and from Julian dates provides a relatively simple basis for transforming dates from one calendar to another.
     -       gml:epochOfUse is the period for which the calendar era was used as a basis for dating.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

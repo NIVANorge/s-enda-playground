@@ -33,6 +33,7 @@ class LineStringType(AbstractCurveType):
     :ivar coordinates: Deprecated with GML version 3.1.0. Use "posList"
         instead.
     """
+
     pos: List[Pos] = field(
         default_factory=list,
         metadata={
@@ -40,7 +41,7 @@ class LineStringType(AbstractCurveType):
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 2,
             "sequential": True,
-        }
+        },
     )
     point_property: List[PointProperty] = field(
         default_factory=list,
@@ -50,7 +51,7 @@ class LineStringType(AbstractCurveType):
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 2,
             "sequential": True,
-        }
+        },
     )
     point_rep: List[PointRep] = field(
         default_factory=list,
@@ -60,7 +61,7 @@ class LineStringType(AbstractCurveType):
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 2,
             "sequential": True,
-        }
+        },
     )
     coord: List[Coord] = field(
         default_factory=list,
@@ -69,7 +70,7 @@ class LineStringType(AbstractCurveType):
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 2,
             "sequential": True,
-        }
+        },
     )
     pos_list: Optional[PosList] = field(
         default=None,
@@ -77,12 +78,12 @@ class LineStringType(AbstractCurveType):
             "name": "posList",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     coordinates: Optional[Coordinates] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

@@ -22,13 +22,14 @@ class SingleOperationRefType:
     Association to a single operation, either referencing or containing the
     definition of that single operation.
     """
+
     transformation: Optional[Transformation] = field(
         default=None,
         metadata={
             "name": "Transformation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     general_transformation: Optional[GeneralTransformation] = field(
         default=None,
@@ -36,7 +37,7 @@ class SingleOperationRefType:
             "name": "_GeneralTransformation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     conversion: Optional[Conversion] = field(
         default=None,
@@ -44,7 +45,7 @@ class SingleOperationRefType:
             "name": "Conversion",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     general_conversion: Optional[GeneralConversion] = field(
         default=None,
@@ -52,7 +53,7 @@ class SingleOperationRefType:
             "name": "_GeneralConversion",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     operation: Optional[Operation2] = field(
         default=None,
@@ -60,7 +61,7 @@ class SingleOperationRefType:
             "name": "_Operation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     pass_through_operation: Optional[PassThroughOperation] = field(
         default=None,
@@ -68,7 +69,7 @@ class SingleOperationRefType:
             "name": "PassThroughOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     single_operation: Optional[SingleOperation] = field(
         default=None,
@@ -76,7 +77,7 @@ class SingleOperationRefType:
             "name": "_SingleOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: TypeType = field(
         init=False,
@@ -84,14 +85,14 @@ class SingleOperationRefType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
@@ -99,7 +100,7 @@ class SingleOperationRefType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
@@ -107,28 +108,28 @@ class SingleOperationRefType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -136,5 +137,5 @@ class SingleOperationRefType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

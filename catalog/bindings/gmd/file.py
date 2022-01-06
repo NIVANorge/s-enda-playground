@@ -34,5 +34,6 @@ class File(FileType):
     within a record match the gml:valueComponents of the
     gml:CompositeValue in document order.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

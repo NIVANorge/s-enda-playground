@@ -14,6 +14,7 @@ class SolidArrayPropertyType:
     The elements are always contained in the array property, referencing
     geometry elements or arrays of geometry elements is not supported.
     """
+
     composite_solid: List[CompositeSolid] = field(
         default_factory=list,
         metadata={
@@ -21,7 +22,7 @@ class SolidArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     solid: List[Solid] = field(
         default_factory=list,
@@ -30,7 +31,7 @@ class SolidArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     abstract_solid: List[AbstractSolid] = field(
         default_factory=list,
@@ -39,11 +40,11 @@ class SolidArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

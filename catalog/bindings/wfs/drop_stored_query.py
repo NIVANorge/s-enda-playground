@@ -15,5 +15,5 @@ class DropStoredQuery(BaseRequestType):
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )

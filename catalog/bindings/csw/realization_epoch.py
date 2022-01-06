@@ -18,6 +18,7 @@ class RealizationEpoch:
     realization epoch for the new datum defines the upper limit for the
     validity of the superseded datum.
     """
+
     class Meta:
         name = "realizationEpoch"
         namespace = "http://www.opengis.net/gml"
@@ -26,5 +27,5 @@ class RealizationEpoch:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )

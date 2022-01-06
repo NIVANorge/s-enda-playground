@@ -14,5 +14,6 @@ class GenericMetaData(GenericMetaDataType):
     to the GML _MetaData substitution group directly. Deprecated with
     GML version 3.1.0.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

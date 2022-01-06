@@ -13,6 +13,7 @@ class ImageDatumType(AbstractDatumType):
 
     For more information, see OGC Abstract Specification Topic 2.
     """
+
     pixel_in_cell: Optional[PixelInCell] = field(
         default=None,
         metadata={
@@ -20,5 +21,5 @@ class ImageDatumType(AbstractDatumType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

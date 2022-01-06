@@ -17,6 +17,7 @@ class AnchorDefinition(CodeType):
     -       For an image datum, the anchor definition is usually either the centre of the image or the corner of the image.
     -       For a temporal datum, this attribute is not defined. Instead of the anchor definition, a temporal datum carries a separate time origin of type DateTime.
     """
+
     class Meta:
         name = "anchorDefinition"
         namespace = "http://www.opengis.net/gml"

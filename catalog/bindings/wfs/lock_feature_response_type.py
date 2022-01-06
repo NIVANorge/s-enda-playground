@@ -14,7 +14,7 @@ class LockFeatureResponseType:
             "name": "FeaturesLocked",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     features_not_locked: Optional[FeaturesNotLockedType] = field(
         default=None,
@@ -22,12 +22,12 @@ class LockFeatureResponseType:
             "name": "FeaturesNotLocked",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     lock_id: Optional[str] = field(
         default=None,
         metadata={
             "name": "lockId",
             "type": "Attribute",
-        }
+        },
     )

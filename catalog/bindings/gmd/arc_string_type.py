@@ -20,7 +20,7 @@ class ArcStringType(AbstractCurveSegmentType):
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 3,
             "sequential": True,
-        }
+        },
     )
     point_property: List[PointProperty] = field(
         default_factory=list,
@@ -30,7 +30,7 @@ class ArcStringType(AbstractCurveSegmentType):
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 3,
             "sequential": True,
-        }
+        },
     )
     point_rep: List[PointRep] = field(
         default_factory=list,
@@ -40,7 +40,7 @@ class ArcStringType(AbstractCurveSegmentType):
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 3,
             "sequential": True,
-        }
+        },
     )
     pos_list: Optional[PosList] = field(
         default=None,
@@ -48,26 +48,26 @@ class ArcStringType(AbstractCurveSegmentType):
             "name": "posList",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     coordinates: Optional[Coordinates] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     interpolation: CurveInterpolationType = field(
         init=False,
         default=CurveInterpolationType.CIRCULAR_ARC3_POINTS,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     num_arc: Optional[int] = field(
         default=None,
         metadata={
             "name": "numArc",
             "type": "Attribute",
-        }
+        },
     )

@@ -24,7 +24,7 @@ class BinaryComparisonOpType(ComparisonOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "max_occurs": 2,
-        }
+        },
     )
     function: List[Function] = field(
         default_factory=list,
@@ -33,7 +33,7 @@ class BinaryComparisonOpType(ComparisonOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "max_occurs": 2,
-        }
+        },
     )
     property_name: List[PropertyName] = field(
         default_factory=list,
@@ -42,7 +42,7 @@ class BinaryComparisonOpType(ComparisonOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "max_occurs": 2,
-        }
+        },
     )
     div: List[Div] = field(
         default_factory=list,
@@ -51,7 +51,7 @@ class BinaryComparisonOpType(ComparisonOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "max_occurs": 2,
-        }
+        },
     )
     mul: List[Mul] = field(
         default_factory=list,
@@ -60,7 +60,7 @@ class BinaryComparisonOpType(ComparisonOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "max_occurs": 2,
-        }
+        },
     )
     sub: List[Sub] = field(
         default_factory=list,
@@ -69,7 +69,7 @@ class BinaryComparisonOpType(ComparisonOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "max_occurs": 2,
-        }
+        },
     )
     add: List[Add] = field(
         default_factory=list,
@@ -78,7 +78,7 @@ class BinaryComparisonOpType(ComparisonOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "max_occurs": 2,
-        }
+        },
     )
     expression: List[Expression] = field(
         default_factory=list,
@@ -86,12 +86,12 @@ class BinaryComparisonOpType(ComparisonOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "max_occurs": 2,
-        }
+        },
     )
     match_case: bool = field(
         default=True,
         metadata={
             "name": "matchCase",
             "type": "Attribute",
-        }
+        },
     )

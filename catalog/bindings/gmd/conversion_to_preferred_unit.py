@@ -13,6 +13,7 @@ class ConversionToPreferredUnit(ConversionToPreferredUnitType):
     A preferred unit is either a Base Unit or a Derived Unit that is
     selected for all values of one physical quantity type.
     """
+
     class Meta:
         name = "conversionToPreferredUnit"
         namespace = "http://www.opengis.net/gml"

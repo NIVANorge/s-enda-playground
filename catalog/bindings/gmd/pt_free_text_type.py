@@ -1,7 +1,9 @@
 from dataclasses import dataclass, field
 from typing import List
 from bindings.gmd.abstract_object_type import AbstractObjectType
-from bindings.gmd.localised_character_string_property_type import LocalisedCharacterStringPropertyType
+from bindings.gmd.localised_character_string_property_type import (
+    LocalisedCharacterStringPropertyType,
+)
 
 __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
 
@@ -18,5 +20,5 @@ class PtFreeTextType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "min_occurs": 1,
-        }
+        },
     )

@@ -8,6 +8,7 @@ class Spacing:
     """
     The regular distance or spacing between the allowed values in a range.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/1.1"
 
@@ -15,5 +16,5 @@ class Spacing:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )

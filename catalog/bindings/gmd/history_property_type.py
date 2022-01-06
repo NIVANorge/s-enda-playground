@@ -14,7 +14,7 @@ class HistoryPropertyType:
             "name": "MovingObjectStatus",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_time_slice: List[AbstractTimeSlice] = field(
         default_factory=list,
@@ -22,11 +22,11 @@ class HistoryPropertyType:
             "name": "AbstractTimeSlice",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

@@ -16,5 +16,6 @@ class TopoCurve(TopoCurveType):
     provided, the aggregationType attribute shall have the value
     “sequence”.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

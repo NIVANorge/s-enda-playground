@@ -9,6 +9,7 @@ class UsesImageDatum(ImageDatumRefType):
     """
     Association to the image datum used by this CRS.
     """
+
     class Meta:
         name = "usesImageDatum"
         namespace = "http://www.opengis.net/gml"

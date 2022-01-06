@@ -9,6 +9,7 @@ class ValueProperty(ValuePropertyType):
     """
     Element which refers to, or contains, a Value.
     """
+
     class Meta:
         name = "valueProperty"
         namespace = "http://www.opengis.net/gml"

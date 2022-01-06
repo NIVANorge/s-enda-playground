@@ -16,19 +16,19 @@ class AbstractCoordinateSystemType(IdentifiedObjectType):
             "name": "usesAxis",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     axis: List[Axis] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     aggregation_type: Optional[AggregationType] = field(
         default=None,
         metadata={
             "name": "aggregationType",
             "type": "Attribute",
-        }
+        },
     )

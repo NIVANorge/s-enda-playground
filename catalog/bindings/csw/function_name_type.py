@@ -10,7 +10,7 @@ class FunctionNameType:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )
     n_args: Optional[str] = field(
         default=None,
@@ -18,5 +18,5 @@ class FunctionNameType:
             "name": "nArgs",
             "type": "Attribute",
             "required": True,
-        }
+        },
     )

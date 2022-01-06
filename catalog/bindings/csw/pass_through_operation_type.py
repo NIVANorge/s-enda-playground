@@ -17,6 +17,7 @@ class PassThroughOperationType(AbstractCoordinateOperationType):
         affected by this pass-through operation.
     :ivar uses_operation:
     """
+
     modified_coordinate: List[int] = field(
         default_factory=list,
         metadata={
@@ -24,7 +25,7 @@ class PassThroughOperationType(AbstractCoordinateOperationType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 1,
-        }
+        },
     )
     uses_operation: Optional[UsesOperation] = field(
         default=None,
@@ -33,5 +34,5 @@ class PassThroughOperationType(AbstractCoordinateOperationType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

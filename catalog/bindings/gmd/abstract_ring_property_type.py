@@ -14,13 +14,14 @@ class AbstractRingPropertyType:
     encapsulates a ring to represent the surface boundary property of a
     surface.
     """
+
     ring: Optional[Ring] = field(
         default=None,
         metadata={
             "name": "Ring",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     linear_ring: Optional[LinearRing] = field(
         default=None,
@@ -28,7 +29,7 @@ class AbstractRingPropertyType:
             "name": "LinearRing",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_ring: Optional[AbstractRing] = field(
         default=None,
@@ -36,5 +37,5 @@ class AbstractRingPropertyType:
             "name": "AbstractRing",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

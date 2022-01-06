@@ -20,13 +20,14 @@ class AbstractFeatureType(AbstractGmltype):
     :ivar priority_location:
     :ivar location: deprecated in GML version 3.1
     """
+
     bounded_by: Optional[BoundedBy] = field(
         default=None,
         metadata={
             "name": "boundedBy",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     priority_location: Optional[PriorityLocation] = field(
         default=None,
@@ -34,12 +35,12 @@ class AbstractFeatureType(AbstractGmltype):
             "name": "priorityLocation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     location: Optional[Location] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

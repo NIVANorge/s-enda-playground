@@ -16,14 +16,14 @@ class TimeCoordinateSystemType(TimeReferenceSystemType):
             "name": "originPosition",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     origin: Optional[TimeInstantPropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     interval: Optional[TimeIntervalLengthType] = field(
         default=None,
@@ -31,5 +31,5 @@ class TimeCoordinateSystemType(TimeReferenceSystemType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

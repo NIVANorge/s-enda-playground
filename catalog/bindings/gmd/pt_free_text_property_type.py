@@ -17,5 +17,5 @@ class PtFreeTextPropertyType(CharacterStringPropertyType):
             "name": "PT_FreeText",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

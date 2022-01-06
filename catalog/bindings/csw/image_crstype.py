@@ -17,6 +17,7 @@ class ImageCrstype(AbstractReferenceSystemType):
     type because a separate user community exists for images with its
     own terms of reference.
     """
+
     class Meta:
         name = "ImageCRSType"
 
@@ -26,7 +27,7 @@ class ImageCrstype(AbstractReferenceSystemType):
             "name": "usesCartesianCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     uses_oblique_cartesian_cs: Optional[UsesObliqueCartesianCs] = field(
         default=None,
@@ -34,7 +35,7 @@ class ImageCrstype(AbstractReferenceSystemType):
             "name": "usesObliqueCartesianCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     uses_image_datum: Optional[UsesImageDatum] = field(
         default=None,
@@ -43,5 +44,5 @@ class ImageCrstype(AbstractReferenceSystemType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

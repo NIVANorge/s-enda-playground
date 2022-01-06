@@ -12,6 +12,7 @@ class GreenwichLongitude(AngleChoiceType):
     The greenwichLongitude most common value is zero, and that value
     shall be used when the meridianName value is Greenwich.
     """
+
     class Meta:
         name = "greenwichLongitude"
         namespace = "http://www.opengis.net/gml"

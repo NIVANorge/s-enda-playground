@@ -14,9 +14,10 @@ class RequestStatusType:
     timestamp - the date and time when the result set was modified
     (ISO 8601 format: YYYY-MM-DDThh:mm:ss[+|-]hh:mm).
     """
+
     timestamp: Optional[XmlDateTime] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

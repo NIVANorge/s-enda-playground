@@ -19,6 +19,7 @@ class CurveArrayPropertyType:
     geometry elements or arrays of geometry elements via XLinks is not
     supported.
     """
+
     composite_curve: List[CompositeCurve] = field(
         default_factory=list,
         metadata={
@@ -26,7 +27,7 @@ class CurveArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     orientable_curve: List[OrientableCurve] = field(
         default_factory=list,
@@ -35,7 +36,7 @@ class CurveArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     curve: List[Curve] = field(
         default_factory=list,
@@ -44,7 +45,7 @@ class CurveArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     line_string: List[LineString] = field(
         default_factory=list,
@@ -53,7 +54,7 @@ class CurveArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     abstract_curve: List[AbstractCurve] = field(
         default_factory=list,
@@ -62,11 +63,11 @@ class CurveArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

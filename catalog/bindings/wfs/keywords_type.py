@@ -23,6 +23,7 @@ class KeywordsType:
     complex information that could be referenced by the codeSpace
     attribute of the Type element.
     """
+
     keyword: List[LanguageStringType] = field(
         default_factory=list,
         metadata={
@@ -30,7 +31,7 @@ class KeywordsType:
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
             "min_occurs": 1,
-        }
+        },
     )
     type: Optional[CodeType] = field(
         default=None,
@@ -38,5 +39,5 @@ class KeywordsType:
             "name": "Type",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )

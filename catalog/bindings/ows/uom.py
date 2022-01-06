@@ -12,6 +12,7 @@ class Uom(DomainMetadataType):
     well-known unit of measure (uom). For example, such a URN could be a
     UOM identification URN defined in the "ogc" URN namespace.
     """
+
     class Meta:
         name = "UOM"
         namespace = "http://www.opengis.net/ows/2.0"

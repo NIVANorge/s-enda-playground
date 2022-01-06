@@ -15,42 +15,42 @@ class AnimateMotionPrototype:
         default=AnimAddAccumAttrsAdditive.REPLACE,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     accumulate: AnimAddAccumAttrsAccumulate = field(
         default=AnimAddAccumAttrsAccumulate.NONE,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     to: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     from_value: Optional[str] = field(
         default=None,
         metadata={
             "name": "from",
             "type": "Attribute",
-        }
+        },
     )
     by: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     values: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     origin: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

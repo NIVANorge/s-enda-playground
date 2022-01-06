@@ -18,7 +18,7 @@ class CiDateType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     date_type: Optional[CiDateTypeCodePropertyType] = field(
         default=None,
@@ -27,5 +27,5 @@ class CiDateType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )

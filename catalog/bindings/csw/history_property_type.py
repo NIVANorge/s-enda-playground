@@ -12,6 +12,7 @@ class HistoryPropertyType:
     The history relationship associates a feature with a sequence of TimeSlice
     instances.
     """
+
     moving_object_status: List[MovingObjectStatus] = field(
         default_factory=list,
         metadata={
@@ -19,7 +20,7 @@ class HistoryPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     time_slice: List[TimeSlice] = field(
         default_factory=list,
@@ -28,5 +29,5 @@ class HistoryPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )

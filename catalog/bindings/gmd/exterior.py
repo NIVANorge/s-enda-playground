@@ -13,6 +13,7 @@ class Exterior(AbstractRingPropertyType):
     possible, in which case all boundaries shall be listed as interior
     boundaries, and the exterior will be empty.
     """
+
     class Meta:
         name = "exterior"
         namespace = "http://www.opengis.net/gml"

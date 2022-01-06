@@ -12,6 +12,7 @@ class Creator(SimpleLiteral):
     Typically, the name of a Creator should be used to indicate the
     entity.
     """
+
     class Meta:
         name = "creator"
         namespace = "http://purl.org/dc/elements/1.1/"

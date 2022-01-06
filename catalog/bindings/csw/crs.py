@@ -14,6 +14,7 @@ class Crs(AbstractReferenceSystemType):
     with a meaning equivalent to a concrete subtype specified in this
     document.
     """
+
     class Meta:
         name = "_CRS"
         namespace = "http://www.opengis.net/gml"

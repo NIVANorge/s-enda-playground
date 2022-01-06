@@ -15,19 +15,19 @@ class PolygonPatchType(AbstractSurfacePatchType):
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     interior: List[Interior] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     interpolation: SurfaceInterpolationType = field(
         init=False,
         default=SurfaceInterpolationType.PLANAR,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

@@ -13,5 +13,6 @@ class Circle(CircleType):
     past the third control point until the first control point is
     encountered.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

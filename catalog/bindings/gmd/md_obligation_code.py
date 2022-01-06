@@ -15,5 +15,5 @@ class MdObligationCode:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )

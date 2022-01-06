@@ -27,25 +27,26 @@ class TriangleType(AbstractSurfacePatchType):
         points on a single plane. The boundary of the patch shall be
         contained within that plane.
     """
+
     outer_boundary_is: Optional[OuterBoundaryIs] = field(
         default=None,
         metadata={
             "name": "outerBoundaryIs",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     exterior: Optional[Exterior] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     interpolation: SurfaceInterpolationType = field(
         init=False,
         default=SurfaceInterpolationType.PLANAR,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

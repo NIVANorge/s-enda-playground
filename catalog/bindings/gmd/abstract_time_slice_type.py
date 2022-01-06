@@ -16,7 +16,7 @@ class AbstractTimeSliceType(AbstractGmltype):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     data_source: Optional[DataSource] = field(
         default=None,
@@ -24,5 +24,5 @@ class AbstractTimeSliceType(AbstractGmltype):
             "name": "dataSource",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

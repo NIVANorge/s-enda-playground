@@ -14,6 +14,7 @@ class TypeType(SimpleLiteral):
     DCMI Type Vocabulary). To describe the physical or digital
     manifestation of the resource, use the Format element.
     """
+
     class Meta:
         name = "type"
         namespace = "http://purl.org/dc/elements/1.1/"

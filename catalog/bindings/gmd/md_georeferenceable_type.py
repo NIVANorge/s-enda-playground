@@ -3,7 +3,9 @@ from typing import List, Optional
 from bindings.gmd.boolean_property_type_2 import BooleanPropertyType2
 from bindings.gmd.character_string_property_type import CharacterStringPropertyType
 from bindings.gmd.ci_citation_type import CiCitationPropertyType
-from bindings.gmd.md_grid_spatial_representation_type import MdGridSpatialRepresentationType
+from bindings.gmd.md_grid_spatial_representation_type import (
+    MdGridSpatialRepresentationType,
+)
 from bindings.gmd.record_property_type import RecordPropertyType
 
 __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
@@ -21,7 +23,7 @@ class MdGeoreferenceableType(MdGridSpatialRepresentationType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     orientation_parameter_availability: Optional[BooleanPropertyType2] = field(
         default=None,
@@ -30,7 +32,7 @@ class MdGeoreferenceableType(MdGridSpatialRepresentationType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     orientation_parameter_description: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -38,7 +40,7 @@ class MdGeoreferenceableType(MdGridSpatialRepresentationType):
             "name": "orientationParameterDescription",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     georeferenced_parameters: Optional[RecordPropertyType] = field(
         default=None,
@@ -47,7 +49,7 @@ class MdGeoreferenceableType(MdGridSpatialRepresentationType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     parameter_citation: List[CiCitationPropertyType] = field(
         default_factory=list,
@@ -55,5 +57,5 @@ class MdGeoreferenceableType(MdGridSpatialRepresentationType):
             "name": "parameterCitation",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

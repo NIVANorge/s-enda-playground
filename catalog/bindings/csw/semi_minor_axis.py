@@ -12,6 +12,7 @@ class SemiMinorAxis(MeasureType):
     referenced by uom must be suitable for a length, such as metres or
     feet.
     """
+
     class Meta:
         name = "semiMinorAxis"
         namespace = "http://www.opengis.net/gml"

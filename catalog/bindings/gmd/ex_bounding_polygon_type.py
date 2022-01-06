@@ -1,6 +1,8 @@
 from dataclasses import dataclass, field
 from typing import List
-from bindings.gmd.abstract_ex_geographic_extent_type import AbstractExGeographicExtentType
+from bindings.gmd.abstract_ex_geographic_extent_type import (
+    AbstractExGeographicExtentType,
+)
 from bindings.gmd.gm_object_property_type import GmObjectPropertyType
 
 __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
@@ -12,6 +14,7 @@ class ExBoundingPolygonType(AbstractExGeographicExtentType):
     Boundary enclosing the dataset expressed as the closed set of (x,y)
     coordinates of the polygon (last point replicates first point)
     """
+
     class Meta:
         name = "EX_BoundingPolygon_Type"
 
@@ -21,5 +24,5 @@ class ExBoundingPolygonType(AbstractExGeographicExtentType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "min_occurs": 1,
-        }
+        },
     )

@@ -12,6 +12,7 @@ class TemporalCrstype(AbstractReferenceSystemType):
     """
     A 1D coordinate reference system used for the recording of time.
     """
+
     class Meta:
         name = "TemporalCRSType"
 
@@ -22,7 +23,7 @@ class TemporalCrstype(AbstractReferenceSystemType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     uses_temporal_datum: Optional[UsesTemporalDatum] = field(
         default=None,
@@ -31,5 +32,5 @@ class TemporalCrstype(AbstractReferenceSystemType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

@@ -12,6 +12,7 @@ class MdBrowseGraphicType(AbstractObjectType):
     Graphic that provides an illustration of the dataset (should include a
     legend for the graphic)
     """
+
     class Meta:
         name = "MD_BrowseGraphic_Type"
 
@@ -22,7 +23,7 @@ class MdBrowseGraphicType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     file_description: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -30,7 +31,7 @@ class MdBrowseGraphicType(AbstractObjectType):
             "name": "fileDescription",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     file_type: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -38,5 +39,5 @@ class MdBrowseGraphicType(AbstractObjectType):
             "name": "fileType",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

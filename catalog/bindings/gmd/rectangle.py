@@ -17,5 +17,6 @@ class Rectangle(RectangleType):
     single plane. The boundary of the patch shall be contained within
     that plane.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

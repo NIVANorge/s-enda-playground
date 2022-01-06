@@ -14,6 +14,7 @@ class ValueFile:
     referenced file or part of a file may reference another part of the
     same or different files, as allowed in XML documents.
     """
+
     class Meta:
         name = "valueFile"
         namespace = "http://www.opengis.net/gml"
@@ -22,5 +23,5 @@ class ValueFile:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )

@@ -35,13 +35,14 @@ class CapabilitiesBaseType:
         and are always opaque to clients. When not supported by server,
         server shall not return this attribute.
     """
+
     service_identification: Optional[ServiceIdentification] = field(
         default=None,
         metadata={
             "name": "ServiceIdentification",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )
     service_provider: Optional[ServiceProvider] = field(
         default=None,
@@ -49,7 +50,7 @@ class CapabilitiesBaseType:
             "name": "ServiceProvider",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )
     operations_metadata: Optional[OperationsMetadata] = field(
         default=None,
@@ -57,7 +58,7 @@ class CapabilitiesBaseType:
             "name": "OperationsMetadata",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )
     version: Optional[str] = field(
         default=None,
@@ -65,12 +66,12 @@ class CapabilitiesBaseType:
             "type": "Attribute",
             "required": True,
             "pattern": r"\d+\.\d?\d\.\d?\d",
-        }
+        },
     )
     update_sequence: Optional[str] = field(
         default=None,
         metadata={
             "name": "updateSequence",
             "type": "Attribute",
-        }
+        },
     )

@@ -9,6 +9,7 @@ class UsesSingleOperation(SingleOperationRefType):
     """
     Association to a single operation.
     """
+
     class Meta:
         name = "usesSingleOperation"
         namespace = "http://www.opengis.net/gml"

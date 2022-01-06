@@ -15,6 +15,7 @@ class AbstractValue:
     that in an XML instance document any member of its substitution
     group may occur.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"
 
@@ -23,5 +24,5 @@ class AbstractValue:
         metadata={
             "type": "Wildcard",
             "namespace": "##any",
-        }
+        },
     )

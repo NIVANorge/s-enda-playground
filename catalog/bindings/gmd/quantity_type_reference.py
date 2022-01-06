@@ -11,6 +11,7 @@ class QuantityTypeReference(ReferenceType):
 
     The content is a reference to a remote value.
     """
+
     class Meta:
         name = "quantityTypeReference"
         namespace = "http://www.opengis.net/gml"

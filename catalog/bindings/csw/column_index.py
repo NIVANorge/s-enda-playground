@@ -9,6 +9,7 @@ class ColumnIndex:
     """
     Column number of this covariance element value.
     """
+
     class Meta:
         name = "columnIndex"
         namespace = "http://www.opengis.net/gml"
@@ -17,5 +18,5 @@ class ColumnIndex:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )

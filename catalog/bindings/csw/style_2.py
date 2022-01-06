@@ -11,6 +11,7 @@ class Style2(AbstractStyleType):
     It is an abstract element. Used as the head element of the
     substitution group for extensibility purposes.
     """
+
     class Meta:
         name = "_Style"
         namespace = "http://www.opengis.net/gml"

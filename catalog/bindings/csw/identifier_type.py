@@ -45,13 +45,14 @@ class IdentifierType:
     :ivar version:
     :ivar remarks: Remarks about this code or alias.
     """
+
     group_name: Optional[GroupName] = field(
         default=None,
         metadata={
             "name": "groupName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     parameter_name: Optional[ParameterName] = field(
         default=None,
@@ -59,7 +60,7 @@ class IdentifierType:
             "name": "parameterName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     method_name: Optional[MethodName] = field(
         default=None,
@@ -67,7 +68,7 @@ class IdentifierType:
             "name": "methodName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     coordinate_operation_name: Optional[CoordinateOperationName] = field(
         default=None,
@@ -75,7 +76,7 @@ class IdentifierType:
             "name": "coordinateOperationName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     ellipsoid_name: Optional[EllipsoidName] = field(
         default=None,
@@ -83,7 +84,7 @@ class IdentifierType:
             "name": "ellipsoidName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     meridian_name: Optional[MeridianName] = field(
         default=None,
@@ -91,7 +92,7 @@ class IdentifierType:
             "name": "meridianName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     datum_name: Optional[DatumName] = field(
         default=None,
@@ -99,7 +100,7 @@ class IdentifierType:
             "name": "datumName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     cs_name: Optional[CsName] = field(
         default=None,
@@ -107,7 +108,7 @@ class IdentifierType:
             "name": "csName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     srs_name: Optional[SrsName] = field(
         default=None,
@@ -115,26 +116,26 @@ class IdentifierType:
             "name": "srsName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     name: Optional[Name] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     version: Optional[str] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     remarks: Optional[Remarks] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

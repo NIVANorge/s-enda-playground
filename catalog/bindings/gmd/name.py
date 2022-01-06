@@ -18,6 +18,7 @@ class Name(CodeType):
     a processing application may select the name from its preferred
     codeSpace.
     """
+
     class Meta:
         name = "name"
         namespace = "http://www.opengis.net/gml"

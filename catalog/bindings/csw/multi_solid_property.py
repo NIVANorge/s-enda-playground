@@ -13,6 +13,7 @@ class MultiSolidProperty(MultiSolidPropertyType):
     GML Application Schemas whenever a GML Feature has a property with a
     value that is substitutable for MultiSolid.
     """
+
     class Meta:
         name = "multiSolidProperty"
         namespace = "http://www.opengis.net/gml"

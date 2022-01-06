@@ -11,13 +11,14 @@ class GetDomainType(RequestBaseType):
     Requests the actual values of some specified request parameter or other
     data element.
     """
+
     property_name: Optional[str] = field(
         default=None,
         metadata={
             "name": "PropertyName",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     parameter_name: Optional[str] = field(
         default=None,
@@ -25,5 +26,5 @@ class GetDomainType(RequestBaseType):
             "name": "ParameterName",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )

@@ -19,5 +19,6 @@ class GridFunction(GridFunctionType):
     Subsequent points in the mapping are determined by the value of the
     gml:sequenceRule.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

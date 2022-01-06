@@ -13,7 +13,7 @@ class NativeType(AbstractTransactionActionType):
             "name": "vendorId",
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
     safe_to_ignore: Optional[bool] = field(
         default=None,
@@ -21,7 +21,7 @@ class NativeType(AbstractTransactionActionType):
             "name": "safeToIgnore",
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
     content: List[object] = field(
         default_factory=list,
@@ -29,5 +29,5 @@ class NativeType(AbstractTransactionActionType):
             "type": "Wildcard",
             "namespace": "##any",
             "mixed": True,
-        }
+        },
     )

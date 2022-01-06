@@ -20,13 +20,14 @@ class QueryType(AbstractQueryType):
 
     typeNames - a list of object types to query.
     """
+
     element_set_name: Optional[ElementSetName] = field(
         default=None,
         metadata={
             "name": "ElementSetName",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     element_name: List[QName] = field(
         default_factory=list,
@@ -34,7 +35,7 @@ class QueryType(AbstractQueryType):
             "name": "ElementName",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     constraint: Optional[Constraint] = field(
         default=None,
@@ -42,7 +43,7 @@ class QueryType(AbstractQueryType):
             "name": "Constraint",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     sort_by: Optional[SortBy] = field(
         default=None,
@@ -50,7 +51,7 @@ class QueryType(AbstractQueryType):
             "name": "SortBy",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     type_names: List[QName] = field(
         default_factory=list,
@@ -59,5 +60,5 @@ class QueryType(AbstractQueryType):
             "type": "Attribute",
             "required": True,
             "tokens": True,
-        }
+        },
     )

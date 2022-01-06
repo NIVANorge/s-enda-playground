@@ -13,7 +13,7 @@ class ConceptualSchemeType:
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
             "required": True,
-        }
+        },
     )
     document: Optional[str] = field(
         default=None,
@@ -22,7 +22,7 @@ class ConceptualSchemeType:
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
             "required": True,
-        }
+        },
     )
     authority: Optional[str] = field(
         default=None,
@@ -31,5 +31,5 @@ class ConceptualSchemeType:
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
             "required": True,
-        }
+        },
     )

@@ -12,6 +12,7 @@ class InsertResultType:
     The handle attribute may reference a particular statement in the
     corresponding transaction request.
     """
+
     brief_record: List[BriefRecord] = field(
         default_factory=list,
         metadata={
@@ -19,12 +20,12 @@ class InsertResultType:
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
             "min_occurs": 1,
-        }
+        },
     )
     handle_ref: Optional[str] = field(
         default=None,
         metadata={
             "name": "handleRef",
             "type": "Attribute",
-        }
+        },
     )

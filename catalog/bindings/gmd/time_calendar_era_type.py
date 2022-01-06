@@ -18,7 +18,7 @@ class TimeCalendarEraType(DefinitionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     reference_date: Optional[Union[XmlDate, XmlPeriod]] = field(
         default=None,
@@ -27,7 +27,7 @@ class TimeCalendarEraType(DefinitionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     julian_reference: Optional[Decimal] = field(
         default=None,
@@ -36,7 +36,7 @@ class TimeCalendarEraType(DefinitionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     epoch_of_use: Optional[TimePeriodPropertyType] = field(
         default=None,
@@ -45,5 +45,5 @@ class TimeCalendarEraType(DefinitionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

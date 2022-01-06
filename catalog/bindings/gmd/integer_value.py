@@ -11,6 +11,7 @@ class IntegerValue:
 
     An integer value does not have an associated unit of measure.
     """
+
     class Meta:
         name = "integerValue"
         namespace = "http://www.opengis.net/gml"
@@ -19,5 +20,5 @@ class IntegerValue:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )

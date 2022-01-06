@@ -12,6 +12,7 @@ class GetDomainResponseType:
     In general this is a subset of the value domain (that is, set of
     permissible values), although in some cases these may be the same.
     """
+
     domain_values: List[DomainValuesType] = field(
         default_factory=list,
         metadata={
@@ -19,5 +20,5 @@ class GetDomainResponseType:
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
             "min_occurs": 1,
-        }
+        },
     )

@@ -13,7 +13,7 @@ class GridEnvelopeType:
             "namespace": "http://www.opengis.net/gml",
             "required": True,
             "tokens": True,
-        }
+        },
     )
     high: List[int] = field(
         default_factory=list,
@@ -22,5 +22,5 @@ class GridEnvelopeType:
             "namespace": "http://www.opengis.net/gml",
             "required": True,
             "tokens": True,
-        }
+        },
     )

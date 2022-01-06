@@ -14,6 +14,7 @@ class BaseUnitType(UnitDefinitionType):
     A base unit cannot be derived by combination of other base units
     within this system.  Sometimes known as "fundamental unit".
     """
+
     units_system: Optional[ReferenceType] = field(
         default=None,
         metadata={
@@ -21,5 +22,5 @@ class BaseUnitType(UnitDefinitionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

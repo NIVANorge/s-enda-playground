@@ -17,6 +17,7 @@ class TopoPrimitiveArrayAssociationType:
     This type supports embedding an array of topological primitives in a
     TopoComplex.
     """
+
     topo_solid: List[TopoSolid] = field(
         default_factory=list,
         metadata={
@@ -24,7 +25,7 @@ class TopoPrimitiveArrayAssociationType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     face: List[Face] = field(
         default_factory=list,
@@ -33,7 +34,7 @@ class TopoPrimitiveArrayAssociationType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     edge: List[Edge] = field(
         default_factory=list,
@@ -42,7 +43,7 @@ class TopoPrimitiveArrayAssociationType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     node: List[Node] = field(
         default_factory=list,
@@ -51,7 +52,7 @@ class TopoPrimitiveArrayAssociationType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     topo_primitive: List[TopoPrimitive] = field(
         default_factory=list,
@@ -60,5 +61,5 @@ class TopoPrimitiveArrayAssociationType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )

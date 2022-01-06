@@ -1,5 +1,7 @@
 from dataclasses import dataclass
-from bindings.gmd.md_portrayal_catalogue_reference_type import MdPortrayalCatalogueReferenceType
+from bindings.gmd.md_portrayal_catalogue_reference_type import (
+    MdPortrayalCatalogueReferenceType,
+)
 
 __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
 

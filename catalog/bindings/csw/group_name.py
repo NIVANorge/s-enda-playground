@@ -9,6 +9,7 @@ class GroupName(CodeType2):
     """
     The name by which this operation parameter group is identified.
     """
+
     class Meta:
         name = "groupName"
         namespace = "http://www.opengis.net/gml"

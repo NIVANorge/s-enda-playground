@@ -15,11 +15,12 @@ class SimpleLiteral:
     as a qualifier to reference an encoding scheme that describes the
     value domain for a given property.
     """
+
     scheme: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     content: List[object] = field(
         default_factory=list,
@@ -27,5 +28,5 @@ class SimpleLiteral:
             "type": "Wildcard",
             "namespace": "##any",
             "mixed": True,
-        }
+        },
     )

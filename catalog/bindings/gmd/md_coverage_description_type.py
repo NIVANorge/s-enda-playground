@@ -1,7 +1,11 @@
 from dataclasses import dataclass, field
 from typing import List, Optional
-from bindings.gmd.abstract_md_content_information_type import AbstractMdContentInformationType
-from bindings.gmd.md_coverage_content_type_code_property_type import MdCoverageContentTypeCodePropertyType
+from bindings.gmd.abstract_md_content_information_type import (
+    AbstractMdContentInformationType,
+)
+from bindings.gmd.md_coverage_content_type_code_property_type import (
+    MdCoverageContentTypeCodePropertyType,
+)
 from bindings.gmd.md_range_dimension_property_type import MdRangeDimensionPropertyType
 from bindings.gmd.record_type_property_type import RecordTypePropertyType
 
@@ -13,6 +17,7 @@ class MdCoverageDescriptionType(AbstractMdContentInformationType):
     """
     Information about the domain of the raster cell.
     """
+
     class Meta:
         name = "MD_CoverageDescription_Type"
 
@@ -23,7 +28,7 @@ class MdCoverageDescriptionType(AbstractMdContentInformationType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     content_type: Optional[MdCoverageContentTypeCodePropertyType] = field(
         default=None,
@@ -32,12 +37,12 @@ class MdCoverageDescriptionType(AbstractMdContentInformationType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     dimension: List[MdRangeDimensionPropertyType] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

@@ -18,6 +18,7 @@ class TimeInterval(TimeIntervalLengthType):
     component of this union type provides a method for indicating time
     units other than the six standard units given in the enumeration.
     """
+
     class Meta:
         name = "timeInterval"
         namespace = "http://www.opengis.net/gml"

@@ -11,5 +11,5 @@ class DerivationUnitTermType(UnitOfMeasureType):
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

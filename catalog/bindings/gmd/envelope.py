@@ -18,5 +18,6 @@ class Envelope(EnvelopeType):
     deprecated. The explicitly named properties “lowerCorner” and
     “upperCorner” shall be used instead.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

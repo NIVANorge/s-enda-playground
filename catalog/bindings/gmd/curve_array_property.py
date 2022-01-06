@@ -12,6 +12,7 @@ class CurveArrayProperty(CurveArrayPropertyType):
     GML Application Schemas whenever a GML feature has a property with a
     value that is substitutable for a list of curves.
     """
+
     class Meta:
         name = "curveArrayProperty"
         namespace = "http://www.opengis.net/gml"

@@ -11,6 +11,7 @@ class RoughConversionToPreferredUnit(ConversionToPreferredUnitType):
     unknown, but this unit has a rough or inaccurate conversion to the
     preferred unit for this quantity type.
     """
+
     class Meta:
         name = "roughConversionToPreferredUnit"
         namespace = "http://www.opengis.net/gml"

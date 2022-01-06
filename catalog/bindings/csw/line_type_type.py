@@ -7,5 +7,6 @@ class LineTypeType(Enum):
     """
     Graph-specific styling property.
     """
+
     STRAIGHT = "STRAIGHT"
     BENT = "BENT"

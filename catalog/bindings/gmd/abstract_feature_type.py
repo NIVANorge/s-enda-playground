@@ -21,6 +21,7 @@ class AbstractFeatureType(AbstractGmltype):
     gml:location property describes the extent, position or relative
     location of the feature.
     """
+
     bounded_by: Optional[BoundedBy] = field(
         default=None,
         metadata={
@@ -28,7 +29,7 @@ class AbstractFeatureType(AbstractGmltype):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "nillable": True,
-        }
+        },
     )
     priority_location: Optional[PriorityLocation] = field(
         default=None,
@@ -36,12 +37,12 @@ class AbstractFeatureType(AbstractGmltype):
             "name": "priorityLocation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     location: Optional[Location] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

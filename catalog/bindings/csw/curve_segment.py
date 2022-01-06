@@ -11,6 +11,7 @@ class CurveSegment(AbstractCurveSegmentType):
     for all curve segment elements, i.e. continuous segments of the same
     interpolation mechanism.
     """
+
     class Meta:
         name = "_CurveSegment"
         namespace = "http://www.opengis.net/gml"

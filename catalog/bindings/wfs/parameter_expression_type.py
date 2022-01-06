@@ -16,7 +16,7 @@ class ParameterExpressionType:
             "name": "Title",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     abstract: List[Abstract2] = field(
         default_factory=list,
@@ -24,7 +24,7 @@ class ParameterExpressionType:
             "name": "Abstract",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     metadata: List[Metadata] = field(
         default_factory=list,
@@ -32,19 +32,19 @@ class ParameterExpressionType:
             "name": "Metadata",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )
     name: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
     type: Optional[QName] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )

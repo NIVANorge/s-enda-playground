@@ -9,6 +9,7 @@ class UsesEllipsoidalCs(EllipsoidalCsrefType):
     """
     Association to the ellipsoidal coordinate system used by this CRS.
     """
+
     class Meta:
         name = "usesEllipsoidalCS"
         namespace = "http://www.opengis.net/gml"

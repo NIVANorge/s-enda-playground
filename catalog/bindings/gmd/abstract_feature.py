@@ -18,5 +18,6 @@ class AbstractFeature(AbstractFeatureType):
     properties contain one or multiple copies of gml:AbstractFeature
     respectively.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

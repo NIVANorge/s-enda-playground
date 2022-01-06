@@ -14,27 +14,28 @@ class DynamicFeatureType(AbstractFeatureType):
     """
     A dynamic feature may possess a history and/or a timestamp.
     """
+
     valid_time: Optional[ValidTime] = field(
         default=None,
         metadata={
             "name": "validTime",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     track: Optional[Track] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     history: Optional[History] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     data_source: Optional[DataSource] = field(
         default=None,
@@ -42,5 +43,5 @@ class DynamicFeatureType(AbstractFeatureType):
             "name": "dataSource",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

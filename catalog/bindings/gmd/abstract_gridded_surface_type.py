@@ -1,6 +1,8 @@
 from dataclasses import dataclass, field
 from typing import List, Optional
-from bindings.gmd.abstract_parametric_curve_surface_type import AbstractParametricCurveSurfaceType
+from bindings.gmd.abstract_parametric_curve_surface_type import (
+    AbstractParametricCurveSurfaceType,
+)
 from bindings.gmd.point_property import PointProperty
 from bindings.gmd.pos import Pos
 from bindings.gmd.pos_list import PosList
@@ -16,20 +18,20 @@ class AbstractGriddedSurfaceType(AbstractParametricCurveSurfaceType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     rows_attribute: Optional[int] = field(
         default=None,
         metadata={
             "name": "rows",
             "type": "Attribute",
-        }
+        },
     )
     columns: Optional[int] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
 
     @dataclass
@@ -41,7 +43,7 @@ class AbstractGriddedSurfaceType(AbstractParametricCurveSurfaceType):
                 "type": "Element",
                 "namespace": "http://www.opengis.net/gml",
                 "min_occurs": 1,
-            }
+            },
         )
 
         @dataclass
@@ -52,14 +54,14 @@ class AbstractGriddedSurfaceType(AbstractParametricCurveSurfaceType):
                     "name": "posList",
                     "type": "Element",
                     "namespace": "http://www.opengis.net/gml",
-                }
+                },
             )
             pos: List[Pos] = field(
                 default_factory=list,
                 metadata={
                     "type": "Element",
                     "namespace": "http://www.opengis.net/gml",
-                }
+                },
             )
             point_property: List[PointProperty] = field(
                 default_factory=list,
@@ -67,5 +69,5 @@ class AbstractGriddedSurfaceType(AbstractParametricCurveSurfaceType):
                     "name": "pointProperty",
                     "type": "Element",
                     "namespace": "http://www.opengis.net/gml",
-                }
+                },
             )

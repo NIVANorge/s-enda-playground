@@ -9,6 +9,7 @@ class AxisId(IdentifierType):
     """
     An identification of a coordinate system axis.
     """
+
     class Meta:
         name = "axisID"
         namespace = "http://www.opengis.net/gml"

@@ -16,6 +16,7 @@ class MemberNameType(AbstractObjectType):
     The stored value "aName" is the returned value for the "aName()"
     operation.
     """
+
     class Meta:
         name = "MemberName_Type"
 
@@ -26,7 +27,7 @@ class MemberNameType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gco",
             "required": True,
-        }
+        },
     )
     attribute_type: Optional[TypeNamePropertyType] = field(
         default=None,
@@ -35,5 +36,5 @@ class MemberNameType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gco",
             "required": True,
-        }
+        },
     )

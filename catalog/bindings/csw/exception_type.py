@@ -30,13 +30,14 @@ class ExceptionType:
         exceptionCode and OWS service, and shall be specified in the OWS
         Implementation Specification.
     """
+
     exception_text: List[str] = field(
         default_factory=list,
         metadata={
             "name": "ExceptionText",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows",
-        }
+        },
     )
     exception_code: Optional[str] = field(
         default=None,
@@ -44,11 +45,11 @@ class ExceptionType:
             "name": "exceptionCode",
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
     locator: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

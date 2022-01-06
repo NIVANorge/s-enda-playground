@@ -14,6 +14,7 @@ class Quantity(MeasureType):
     numeric value shall be multiplied, or an interval or position scale on
     which the value occurs.
     """
+
     class Meta:
         nillable = True
         namespace = "http://www.opengis.net/gml"
@@ -24,5 +25,5 @@ class Quantity(MeasureType):
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )

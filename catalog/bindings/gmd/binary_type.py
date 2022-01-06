@@ -13,11 +13,11 @@ class BinaryType:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )
     src: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

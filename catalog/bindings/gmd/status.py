@@ -10,6 +10,7 @@ class Status(StringOrRefType):
     The remote link attributes of the gml:status element have been deprecated
     along with its current type.
     """
+
     class Meta:
         name = "status"
         namespace = "http://www.opengis.net/gml"

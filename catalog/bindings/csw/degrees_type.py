@@ -18,16 +18,17 @@ class DegreesType:
     the specified rotational direction from a specified reference
     direction.
     """
+
     value: Optional[int] = field(
         default=None,
         metadata={
             "required": True,
             "max_inclusive": 359,
-        }
+        },
     )
     direction: Optional[DegreesTypeValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

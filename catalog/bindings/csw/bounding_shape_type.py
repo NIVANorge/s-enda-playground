@@ -12,13 +12,14 @@ class BoundingShapeType:
     """
     Bounding shape.
     """
+
     envelope_with_time_period: Optional[EnvelopeWithTimePeriod] = field(
         default=None,
         metadata={
             "name": "EnvelopeWithTimePeriod",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     envelope: Optional[Envelope] = field(
         default=None,
@@ -26,7 +27,7 @@ class BoundingShapeType:
             "name": "Envelope",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     null: Optional[Union[str, NullEnumerationValue]] = field(
         default=None,
@@ -35,5 +36,5 @@ class BoundingShapeType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )

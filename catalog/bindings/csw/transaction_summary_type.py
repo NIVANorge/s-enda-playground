@@ -12,13 +12,14 @@ class TransactionSummaryType:
     If the client did not specify a requestId, the server may assign one
     (a URI value).
     """
+
     total_inserted: Optional[int] = field(
         default=None,
         metadata={
             "name": "totalInserted",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     total_updated: Optional[int] = field(
         default=None,
@@ -26,7 +27,7 @@ class TransactionSummaryType:
             "name": "totalUpdated",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     total_deleted: Optional[int] = field(
         default=None,
@@ -34,12 +35,12 @@ class TransactionSummaryType:
             "name": "totalDeleted",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     request_id: Optional[str] = field(
         default=None,
         metadata={
             "name": "requestId",
             "type": "Attribute",
-        }
+        },
     )

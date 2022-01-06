@@ -14,5 +14,6 @@ class TimeReferenceSystem(TimeReferenceSystemType):
     gml:DefinitionType with one additional property,
     gml:domainOfValidity.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

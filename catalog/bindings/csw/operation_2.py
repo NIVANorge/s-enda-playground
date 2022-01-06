@@ -16,6 +16,7 @@ class Operation2(AbstractCoordinateOperationType):
     directly used, extended, or restricted in a compliant Application
     Schema.
     """
+
     class Meta:
         name = "_Operation"
         namespace = "http://www.opengis.net/gml"

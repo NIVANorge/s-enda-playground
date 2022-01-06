@@ -17,13 +17,14 @@ class GridFunctionType:
         equal to the value of gridEnvelope::low from the grid
         definition.
     """
+
     sequence_rule: Optional[SequenceRuleType] = field(
         default=None,
         metadata={
             "name": "sequenceRule",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     start_point: List[int] = field(
         default_factory=list,
@@ -32,5 +33,5 @@ class GridFunctionType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "tokens": True,
-        }
+        },
     )

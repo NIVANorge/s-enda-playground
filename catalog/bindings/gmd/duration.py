@@ -11,6 +11,7 @@ class Duration:
     gml:duration conforms to the ISO 8601 syntax for temporal length as
     implemented by the XML Schema duration type.
     """
+
     class Meta:
         name = "duration"
         namespace = "http://www.opengis.net/gml"
@@ -19,5 +20,5 @@ class Duration:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )

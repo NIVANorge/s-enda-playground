@@ -10,6 +10,7 @@ class Solid2(AbstractSolidType):
     The "_Solid" element is the abstract head of the substituition group for
     all (continuous) solid elements.
     """
+
     class Meta:
         name = "_Solid"
         namespace = "http://www.opengis.net/gml"

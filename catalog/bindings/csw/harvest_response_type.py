@@ -14,7 +14,7 @@ class HarvestResponseType:
             "name": "Acknowledgement",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     transaction_response: Optional[TransactionResponse] = field(
         default=None,
@@ -22,5 +22,5 @@ class HarvestResponseType:
             "name": "TransactionResponse",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )

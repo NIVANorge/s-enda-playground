@@ -15,7 +15,7 @@ class CoverageFunctionType:
             "name": "MappingRule",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     coverage_mapping_rule: Optional[CoverageMappingRule] = field(
         default=None,
@@ -23,7 +23,7 @@ class CoverageFunctionType:
             "name": "CoverageMappingRule",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     grid_function: Optional[GridFunction] = field(
         default=None,
@@ -31,5 +31,5 @@ class CoverageFunctionType:
             "name": "GridFunction",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

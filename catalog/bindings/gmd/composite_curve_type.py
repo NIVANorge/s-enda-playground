@@ -39,14 +39,14 @@ class CompositeCurveType(AbstractCurveType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 1,
-        }
+        },
     )
     aggregation_type: Optional[AggregationType] = field(
         default=None,
         metadata={
             "name": "aggregationType",
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -59,7 +59,7 @@ class OffsetCurveType(AbstractCurveSegmentType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     distance: Optional[LengthType] = field(
         default=None,
@@ -67,7 +67,7 @@ class OffsetCurveType(AbstractCurveSegmentType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     ref_direction: Optional[VectorType] = field(
         default=None,
@@ -75,7 +75,7 @@ class OffsetCurveType(AbstractCurveSegmentType):
             "name": "refDirection",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
 
 
@@ -88,13 +88,13 @@ class OrientableCurveType(AbstractCurveType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     orientation: SignType = field(
         default=SignType.VALUE,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -109,6 +109,7 @@ class CompositeCurve(CompositeCurveType):
     ordered. Therefore, if provided, the aggregationType attribute shall
     have the value “sequence”.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"
 
@@ -122,6 +123,7 @@ class OffsetCurve(OffsetCurveType):
     in ISO 19107:2003, 6.4.23. The content model follows the general
     pattern for the encoding of curve segments.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"
 
@@ -135,6 +137,7 @@ class OrientableCurve(OrientableCurveType):
     is related to another AbstractCurve with a parameterization that
     reverses the sense of the curve traversal.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"
 
@@ -145,6 +148,7 @@ class CurveSegmentArrayPropertyType:
     gml:CurveSegmentArrayPropertyType is a container for an array of curve
     segments.
     """
+
     geodesic: List[Geodesic] = field(
         default_factory=list,
         metadata={
@@ -152,7 +156,7 @@ class CurveSegmentArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     geodesic_string: List[GeodesicString] = field(
         default_factory=list,
@@ -161,7 +165,7 @@ class CurveSegmentArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     clothoid: List[Clothoid] = field(
         default_factory=list,
@@ -170,7 +174,7 @@ class CurveSegmentArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     offset_curve: List[OffsetCurve] = field(
         default_factory=list,
@@ -179,7 +183,7 @@ class CurveSegmentArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     bezier: List[Bezier] = field(
         default_factory=list,
@@ -188,7 +192,7 @@ class CurveSegmentArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     bspline: List[Bspline] = field(
         default_factory=list,
@@ -197,7 +201,7 @@ class CurveSegmentArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     cubic_spline: List[CubicSpline] = field(
         default_factory=list,
@@ -206,7 +210,7 @@ class CurveSegmentArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     circle_by_center_point: List[CircleByCenterPoint] = field(
         default_factory=list,
@@ -215,7 +219,7 @@ class CurveSegmentArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     arc_by_center_point: List[ArcByCenterPoint] = field(
         default_factory=list,
@@ -224,7 +228,7 @@ class CurveSegmentArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     arc_by_bulge: List[ArcByBulge] = field(
         default_factory=list,
@@ -233,7 +237,7 @@ class CurveSegmentArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     arc_string_by_bulge: List[ArcStringByBulge] = field(
         default_factory=list,
@@ -242,7 +246,7 @@ class CurveSegmentArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     circle: List[Circle] = field(
         default_factory=list,
@@ -251,7 +255,7 @@ class CurveSegmentArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     arc: List[Arc] = field(
         default_factory=list,
@@ -260,7 +264,7 @@ class CurveSegmentArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     arc_string: List[ArcString] = field(
         default_factory=list,
@@ -269,7 +273,7 @@ class CurveSegmentArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     line_string_segment: List[LineStringSegment] = field(
         default_factory=list,
@@ -278,7 +282,7 @@ class CurveSegmentArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     abstract_curve_segment: List[AbstractCurveSegment] = field(
         default_factory=list,
@@ -287,7 +291,7 @@ class CurveSegmentArrayPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
 
 
@@ -298,6 +302,7 @@ class Segments(CurveSegmentArrayPropertyType):
     The order of the elements is significant and shall be preserved when
     processing the array.
     """
+
     class Meta:
         name = "segments"
         namespace = "http://www.opengis.net/gml"
@@ -311,7 +316,7 @@ class CurveType(AbstractCurveType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
 
 
@@ -328,6 +333,7 @@ class Curve(CurveType):
     list. The orientation of the curve is positive. The element segments
     encapsulates the segments of the curve.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"
 
@@ -342,13 +348,14 @@ class CurvePropertyType:
     Either the reference or the contained element shall be given, but
     neither both nor none.
     """
+
     composite_curve: Optional[CompositeCurve] = field(
         default=None,
         metadata={
             "name": "CompositeCurve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     orientable_curve: Optional[OrientableCurve] = field(
         default=None,
@@ -356,7 +363,7 @@ class CurvePropertyType:
             "name": "OrientableCurve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     curve: Optional[Curve] = field(
         default=None,
@@ -364,7 +371,7 @@ class CurvePropertyType:
             "name": "Curve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     line_string: Optional[LineString] = field(
         default=None,
@@ -372,7 +379,7 @@ class CurvePropertyType:
             "name": "LineString",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_curve: Optional[AbstractCurve] = field(
         default=None,
@@ -380,7 +387,7 @@ class CurvePropertyType:
             "name": "AbstractCurve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -388,49 +395,49 @@ class CurvePropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -438,7 +445,7 @@ class CurvePropertyType:
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -446,13 +453,13 @@ class CurvePropertyType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -465,6 +472,7 @@ class BaseCurve(CurvePropertyType):
     A curve element is any element which is substitutable for
     AbstractCurve. The base curve has positive orientation.
     """
+
     class Meta:
         name = "baseCurve"
         namespace = "http://www.opengis.net/gml"

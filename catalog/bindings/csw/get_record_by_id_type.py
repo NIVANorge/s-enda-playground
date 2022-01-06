@@ -16,6 +16,7 @@ class GetRecordByIdType(RequestBaseType):
     persistent result sets).
     ElementSetName - one of "brief, "summary", or "full"
     """
+
     id: List[str] = field(
         default_factory=list,
         metadata={
@@ -23,7 +24,7 @@ class GetRecordByIdType(RequestBaseType):
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
             "min_occurs": 1,
-        }
+        },
     )
     element_set_name: Optional[ElementSetName] = field(
         default=None,
@@ -31,19 +32,19 @@ class GetRecordByIdType(RequestBaseType):
             "name": "ElementSetName",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     output_format: str = field(
         default="application/xml",
         metadata={
             "name": "outputFormat",
             "type": "Attribute",
-        }
+        },
     )
     output_schema: Optional[str] = field(
         default=None,
         metadata={
             "name": "outputSchema",
             "type": "Attribute",
-        }
+        },
     )

@@ -11,6 +11,7 @@ class PointRep(PointPropertyType):
     Use "pointProperty" instead. Included for backwards compatibility
     with GML 3.0.0.
     """
+
     class Meta:
         name = "pointRep"
         namespace = "http://www.opengis.net/gml"

@@ -1,5 +1,7 @@
 from dataclasses import dataclass
-from bindings.gmd.md_application_schema_information_type import MdApplicationSchemaInformationType
+from bindings.gmd.md_application_schema_information_type import (
+    MdApplicationSchemaInformationType,
+)
 
 __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
 

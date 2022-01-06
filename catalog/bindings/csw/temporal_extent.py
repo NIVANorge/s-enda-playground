@@ -9,6 +9,7 @@ class TemporalExtent(TimePeriodType):
     """
     A time period defining the temporal domain of this object.
     """
+
     class Meta:
         name = "temporalExtent"
         namespace = "http://www.opengis.net/gml"

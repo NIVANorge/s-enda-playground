@@ -14,6 +14,7 @@ class ReversePropertyName:
     The value of the element shall contain the qualified name of the
     property element.
     """
+
     class Meta:
         name = "reversePropertyName"
         namespace = "http://www.opengis.net/gml"
@@ -22,5 +23,5 @@ class ReversePropertyName:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )

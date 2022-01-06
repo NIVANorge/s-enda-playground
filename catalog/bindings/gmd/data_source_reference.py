@@ -11,6 +11,7 @@ class DataSourceReference(ReferenceType):
     gml:dataSourceReference property that indicates the source of the temporal
     data.
     """
+
     class Meta:
         name = "dataSourceReference"
         namespace = "http://www.opengis.net/gml"

@@ -13,6 +13,7 @@ class EllipsoidalCs1(EllipsoidalCstype):
     An EllipsoidalCS shall have two or three gml:axis property elements;
     the number of associations shall equal the dimension of the CS.
     """
+
     class Meta:
         name = "EllipsoidalCS"
         namespace = "http://www.opengis.net/gml"

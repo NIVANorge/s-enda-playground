@@ -13,6 +13,7 @@ class UserDefinedCs(UserDefinedCstype):
     A UserDefinedCS shall have two or three gml:axis property elements;
     the number of property elements shall equal the dimension of the CS.
     """
+
     class Meta:
         name = "UserDefinedCS"
         namespace = "http://www.opengis.net/gml"

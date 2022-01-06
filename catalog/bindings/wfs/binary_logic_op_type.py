@@ -29,7 +29,9 @@ from bindings.wfs.overlaps import Overlaps
 from bindings.wfs.property_is_between import PropertyIsBetween
 from bindings.wfs.property_is_equal_to import PropertyIsEqualTo
 from bindings.wfs.property_is_greater_than import PropertyIsGreaterThan
-from bindings.wfs.property_is_greater_than_or_equal_to import PropertyIsGreaterThanOrEqualTo
+from bindings.wfs.property_is_greater_than_or_equal_to import (
+    PropertyIsGreaterThanOrEqualTo,
+)
 from bindings.wfs.property_is_less_than import PropertyIsLessThan
 from bindings.wfs.property_is_less_than_or_equal_to import PropertyIsLessThanOrEqualTo
 from bindings.wfs.property_is_like import PropertyIsLike
@@ -57,7 +59,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     property_is_nil: List[PropertyIsNil] = field(
         default_factory=list,
@@ -66,7 +68,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     property_is_null: List[PropertyIsNull] = field(
         default_factory=list,
@@ -75,7 +77,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     property_is_like: List[PropertyIsLike] = field(
         default_factory=list,
@@ -84,7 +86,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     property_is_greater_than_or_equal_to: List[PropertyIsGreaterThanOrEqualTo] = field(
         default_factory=list,
@@ -93,7 +95,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     property_is_less_than_or_equal_to: List[PropertyIsLessThanOrEqualTo] = field(
         default_factory=list,
@@ -102,7 +104,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     property_is_greater_than: List[PropertyIsGreaterThan] = field(
         default_factory=list,
@@ -111,7 +113,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     property_is_less_than: List[PropertyIsLessThan] = field(
         default_factory=list,
@@ -120,7 +122,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     property_is_not_equal_to: List[PropertyIsNotEqualTo] = field(
         default_factory=list,
@@ -129,7 +131,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     property_is_equal_to: List[PropertyIsEqualTo] = field(
         default_factory=list,
@@ -138,7 +140,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     comparison_ops: List[ComparisonOps] = field(
         default_factory=list,
@@ -147,7 +149,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     bbox: List[Bbox] = field(
         default_factory=list,
@@ -156,7 +158,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     beyond: List[Beyond] = field(
         default_factory=list,
@@ -165,7 +167,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     dwithin: List[Dwithin] = field(
         default_factory=list,
@@ -174,7 +176,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     contains: List[Contains] = field(
         default_factory=list,
@@ -183,7 +185,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     intersects: List[Intersects] = field(
         default_factory=list,
@@ -192,7 +194,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     crosses: List[Crosses] = field(
         default_factory=list,
@@ -201,7 +203,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     overlaps: List[Overlaps] = field(
         default_factory=list,
@@ -210,7 +212,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     within: List[Within] = field(
         default_factory=list,
@@ -219,7 +221,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     touches: List[Touches] = field(
         default_factory=list,
@@ -228,7 +230,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     disjoint: List[Disjoint] = field(
         default_factory=list,
@@ -237,7 +239,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     equals: List[Equals] = field(
         default_factory=list,
@@ -246,7 +248,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     spatial_ops: List[SpatialOps] = field(
         default_factory=list,
@@ -255,7 +257,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     any_interacts: List[AnyInteracts] = field(
         default_factory=list,
@@ -264,7 +266,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     overlapped_by: List[OverlappedBy] = field(
         default_factory=list,
@@ -273,7 +275,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     toverlaps: List[Toverlaps] = field(
         default_factory=list,
@@ -282,7 +284,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     met_by: List[MetBy] = field(
         default_factory=list,
@@ -291,7 +293,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     meets: List[Meets] = field(
         default_factory=list,
@@ -300,7 +302,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     tequals: List[Tequals] = field(
         default_factory=list,
@@ -309,7 +311,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     ends: List[Ends] = field(
         default_factory=list,
@@ -318,7 +320,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     ended_by: List[EndedBy] = field(
         default_factory=list,
@@ -327,7 +329,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     during: List[During] = field(
         default_factory=list,
@@ -336,7 +338,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     tcontains: List[Tcontains] = field(
         default_factory=list,
@@ -345,7 +347,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     begun_by: List[BegunBy] = field(
         default_factory=list,
@@ -354,7 +356,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     begins: List[Begins] = field(
         default_factory=list,
@@ -363,7 +365,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     before: List[Before] = field(
         default_factory=list,
@@ -372,7 +374,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     after: List[After] = field(
         default_factory=list,
@@ -381,7 +383,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     temporal_ops: List[TemporalOps] = field(
         default_factory=list,
@@ -390,7 +392,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     not_value: List["Not"] = field(
         default_factory=list,
@@ -399,7 +401,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     or_value: List["Or"] = field(
         default_factory=list,
@@ -408,7 +410,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     and_value: List["And"] = field(
         default_factory=list,
@@ -417,7 +419,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     logic_ops: List[LogicOps] = field(
         default_factory=list,
@@ -426,7 +428,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     extension_ops: List[ExtensionOps] = field(
         default_factory=list,
@@ -435,7 +437,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     function: List[Function] = field(
         default_factory=list,
@@ -444,7 +446,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     resource_id: List[ResourceId] = field(
         default_factory=list,
@@ -453,7 +455,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
     id: List[Id] = field(
         default_factory=list,
@@ -462,7 +464,7 @@ class BinaryLogicOpType(LogicOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 2,
-        }
+        },
     )
 
 
@@ -486,7 +488,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "PropertyIsBetween",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     property_is_nil: Optional[PropertyIsNil] = field(
         default=None,
@@ -494,7 +496,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "PropertyIsNil",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     property_is_null: Optional[PropertyIsNull] = field(
         default=None,
@@ -502,7 +504,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "PropertyIsNull",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     property_is_like: Optional[PropertyIsLike] = field(
         default=None,
@@ -510,15 +512,17 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "PropertyIsLike",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
-    property_is_greater_than_or_equal_to: Optional[PropertyIsGreaterThanOrEqualTo] = field(
+    property_is_greater_than_or_equal_to: Optional[
+        PropertyIsGreaterThanOrEqualTo
+    ] = field(
         default=None,
         metadata={
             "name": "PropertyIsGreaterThanOrEqualTo",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     property_is_less_than_or_equal_to: Optional[PropertyIsLessThanOrEqualTo] = field(
         default=None,
@@ -526,7 +530,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "PropertyIsLessThanOrEqualTo",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     property_is_greater_than: Optional[PropertyIsGreaterThan] = field(
         default=None,
@@ -534,7 +538,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "PropertyIsGreaterThan",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     property_is_less_than: Optional[PropertyIsLessThan] = field(
         default=None,
@@ -542,7 +546,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "PropertyIsLessThan",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     property_is_not_equal_to: Optional[PropertyIsNotEqualTo] = field(
         default=None,
@@ -550,7 +554,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "PropertyIsNotEqualTo",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     property_is_equal_to: Optional[PropertyIsEqualTo] = field(
         default=None,
@@ -558,7 +562,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "PropertyIsEqualTo",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     comparison_ops: Optional[ComparisonOps] = field(
         default=None,
@@ -566,7 +570,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "comparisonOps",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     bbox: Optional[Bbox] = field(
         default=None,
@@ -574,7 +578,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "BBOX",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     beyond: Optional[Beyond] = field(
         default=None,
@@ -582,7 +586,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Beyond",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     dwithin: Optional[Dwithin] = field(
         default=None,
@@ -590,7 +594,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "DWithin",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     contains: Optional[Contains] = field(
         default=None,
@@ -598,7 +602,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Contains",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     intersects: Optional[Intersects] = field(
         default=None,
@@ -606,7 +610,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Intersects",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     crosses: Optional[Crosses] = field(
         default=None,
@@ -614,7 +618,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Crosses",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     overlaps: Optional[Overlaps] = field(
         default=None,
@@ -622,7 +626,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Overlaps",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     within: Optional[Within] = field(
         default=None,
@@ -630,7 +634,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Within",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     touches: Optional[Touches] = field(
         default=None,
@@ -638,7 +642,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Touches",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     disjoint: Optional[Disjoint] = field(
         default=None,
@@ -646,7 +650,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Disjoint",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     equals: Optional[Equals] = field(
         default=None,
@@ -654,7 +658,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Equals",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     spatial_ops: Optional[SpatialOps] = field(
         default=None,
@@ -662,7 +666,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "spatialOps",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     any_interacts: Optional[AnyInteracts] = field(
         default=None,
@@ -670,7 +674,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "AnyInteracts",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     overlapped_by: Optional[OverlappedBy] = field(
         default=None,
@@ -678,7 +682,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "OverlappedBy",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     toverlaps: Optional[Toverlaps] = field(
         default=None,
@@ -686,7 +690,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "TOverlaps",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     met_by: Optional[MetBy] = field(
         default=None,
@@ -694,7 +698,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "MetBy",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     meets: Optional[Meets] = field(
         default=None,
@@ -702,7 +706,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Meets",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     tequals: Optional[Tequals] = field(
         default=None,
@@ -710,7 +714,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "TEquals",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     ends: Optional[Ends] = field(
         default=None,
@@ -718,7 +722,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Ends",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     ended_by: Optional[EndedBy] = field(
         default=None,
@@ -726,7 +730,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "EndedBy",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     during: Optional[During] = field(
         default=None,
@@ -734,7 +738,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "During",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     tcontains: Optional[Tcontains] = field(
         default=None,
@@ -742,7 +746,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "TContains",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     begun_by: Optional[BegunBy] = field(
         default=None,
@@ -750,7 +754,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "BegunBy",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     begins: Optional[Begins] = field(
         default=None,
@@ -758,7 +762,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Begins",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     before: Optional[Before] = field(
         default=None,
@@ -766,7 +770,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Before",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     after: Optional[After] = field(
         default=None,
@@ -774,7 +778,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "After",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     temporal_ops: Optional[TemporalOps] = field(
         default=None,
@@ -782,7 +786,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "temporalOps",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     not_value: Optional["Not"] = field(
         default=None,
@@ -790,7 +794,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Not",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     or_value: Optional[Or] = field(
         default=None,
@@ -798,7 +802,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Or",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     and_value: Optional[And] = field(
         default=None,
@@ -806,7 +810,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "And",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     logic_ops: Optional[LogicOps] = field(
         default=None,
@@ -814,7 +818,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "logicOps",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     extension_ops: Optional[ExtensionOps] = field(
         default=None,
@@ -822,7 +826,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "extensionOps",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     function: Optional[Function] = field(
         default=None,
@@ -830,7 +834,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "Function",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     resource_id: List[ResourceId] = field(
         default_factory=list,
@@ -838,7 +842,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "ResourceId",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     id: List[Id] = field(
         default_factory=list,
@@ -846,7 +850,7 @@ class UnaryLogicOpType(LogicOpsType):
             "name": "_Id",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
 
 

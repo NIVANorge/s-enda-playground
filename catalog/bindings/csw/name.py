@@ -14,6 +14,7 @@ class Name(CodeType2):
     unique, as determined by the rules of the organization responsible
     for the codeSpace.
     """
+
     class Meta:
         name = "name"
         namespace = "http://www.opengis.net/gml"

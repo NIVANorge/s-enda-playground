@@ -33,20 +33,21 @@ class AbstractDatumType(AbstractDatumBaseType):
     :ivar valid_area:
     :ivar scope:
     """
+
     datum_id: List[DatumId] = field(
         default_factory=list,
         metadata={
             "name": "datumID",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     remarks: Optional[Remarks] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     anchor_point: Optional[AnchorPoint] = field(
         default=None,
@@ -54,7 +55,7 @@ class AbstractDatumType(AbstractDatumBaseType):
             "name": "anchorPoint",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     realization_epoch: Optional[XmlDate] = field(
         default=None,
@@ -62,7 +63,7 @@ class AbstractDatumType(AbstractDatumBaseType):
             "name": "realizationEpoch",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     valid_area: Optional[ValidArea] = field(
         default=None,
@@ -70,12 +71,12 @@ class AbstractDatumType(AbstractDatumBaseType):
             "name": "validArea",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     scope: Optional[str] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

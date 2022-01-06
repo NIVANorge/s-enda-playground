@@ -7,5 +7,6 @@ class GraphTypeType(Enum):
     """
     Graph-specific styling property.
     """
+
     TREE = "TREE"
     BICONNECTED = "BICONNECTED"

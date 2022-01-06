@@ -17,6 +17,7 @@ class MaximumValue:
     a value of plus infiniy for the gml:maximumValue element. If these
     elements are omitted, the value is unspecified.
     """
+
     class Meta:
         name = "maximumValue"
         namespace = "http://www.opengis.net/gml"
@@ -25,5 +26,5 @@ class MaximumValue:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )

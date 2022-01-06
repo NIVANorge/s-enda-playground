@@ -14,7 +14,7 @@ class AffinePlacementType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     ref_direction: List[VectorType] = field(
         default_factory=list,
@@ -23,7 +23,7 @@ class AffinePlacementType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 1,
-        }
+        },
     )
     in_dimension: Optional[int] = field(
         default=None,
@@ -32,7 +32,7 @@ class AffinePlacementType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     out_dimension: Optional[int] = field(
         default=None,
@@ -41,5 +41,5 @@ class AffinePlacementType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

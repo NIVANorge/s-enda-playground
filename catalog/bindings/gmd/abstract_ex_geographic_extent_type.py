@@ -11,6 +11,7 @@ class AbstractExGeographicExtentType(AbstractObjectType):
     """
     Geographic area of the dataset.
     """
+
     class Meta:
         name = "AbstractEX_GeographicExtent_Type"
 
@@ -20,5 +21,5 @@ class AbstractExGeographicExtentType(AbstractObjectType):
             "name": "extentTypeCode",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

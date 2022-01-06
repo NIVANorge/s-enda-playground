@@ -13,6 +13,7 @@ class MdRangeDimensionType(AbstractObjectType):
     Set of adjacent wavelengths in the electro-magnetic spectrum with a common
     characteristic, such as the visible band.
     """
+
     class Meta:
         name = "MD_RangeDimension_Type"
 
@@ -22,12 +23,12 @@ class MdRangeDimensionType(AbstractObjectType):
             "name": "sequenceIdentifier",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     descriptor: Optional[CharacterStringPropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

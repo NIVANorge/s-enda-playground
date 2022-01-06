@@ -9,6 +9,7 @@ class MetaDataProperty(MetaDataPropertyType):
     """
     Contains or refers to a metadata package that contains metadata properties.
     """
+
     class Meta:
         name = "metaDataProperty"
         namespace = "http://www.opengis.net/gml"

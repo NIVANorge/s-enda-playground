@@ -32,6 +32,7 @@ class OperationsMetadata:
         specified in the Implementation Specification for this service.
     :ivar extended_capabilities:
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows"
 
@@ -41,26 +42,26 @@ class OperationsMetadata:
             "name": "Operation",
             "type": "Element",
             "min_occurs": 2,
-        }
+        },
     )
     parameter: List[DomainType] = field(
         default_factory=list,
         metadata={
             "name": "Parameter",
             "type": "Element",
-        }
+        },
     )
     constraint: List[DomainType] = field(
         default_factory=list,
         metadata={
             "name": "Constraint",
             "type": "Element",
-        }
+        },
     )
     extended_capabilities: Optional[ExtendedCapabilities] = field(
         default=None,
         metadata={
             "name": "ExtendedCapabilities",
             "type": "Element",
-        }
+        },
     )

@@ -17,5 +17,6 @@ class MovingObjectStatus(MovingObjectStatusType):
     object may be recorded in the gml:status or gml:statusReference
     property elements.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

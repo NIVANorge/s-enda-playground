@@ -10,6 +10,7 @@ class TimeInterval(TimeIntervalLengthType):
     This element is a valid subtype of TimeDurationType according to section
     3.14.6, rule 2.2.4 in XML Schema, Part 1.
     """
+
     class Meta:
         name = "timeInterval"
         namespace = "http://www.opengis.net/gml"

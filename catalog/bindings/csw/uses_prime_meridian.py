@@ -9,6 +9,7 @@ class UsesPrimeMeridian(PrimeMeridianRefType):
     """
     Association to the prime meridian used by this geodetic datum.
     """
+
     class Meta:
         name = "usesPrimeMeridian"
         namespace = "http://www.opengis.net/gml"

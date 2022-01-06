@@ -13,12 +13,13 @@ class MeasureOrNilReasonListType:
     NilReasonType. It is intended to be used in situations where a value
     is expected, but the value may be absent for some reason.
     """
+
     value: List[Union[str, NilReasonEnumerationValue]] = field(
         default_factory=list,
         metadata={
             "pattern": r"other:\w{2,}",
             "tokens": True,
-        }
+        },
     )
     uom: Optional[str] = field(
         default=None,
@@ -26,5 +27,5 @@ class MeasureOrNilReasonListType:
             "type": "Attribute",
             "required": True,
             "pattern": r"[^: \n\r\t]+",
-        }
+        },
     )

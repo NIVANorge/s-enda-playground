@@ -15,5 +15,5 @@ class BaseUnitType(UnitDefinitionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

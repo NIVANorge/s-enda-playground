@@ -15,6 +15,7 @@ class Rights(SimpleLiteral):
     absent, no assumptions may be made about any rights held in or over
     the resource.
     """
+
     class Meta:
         name = "rights"
         namespace = "http://purl.org/dc/elements/1.1/"

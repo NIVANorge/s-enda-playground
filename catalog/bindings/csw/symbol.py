@@ -11,6 +11,7 @@ class Symbol(SymbolType):
     Extends the gml:AssociationType to allow for remote referencing of
     symbols.
     """
+
     class Meta:
         name = "symbol"
         namespace = "http://www.opengis.net/gml"

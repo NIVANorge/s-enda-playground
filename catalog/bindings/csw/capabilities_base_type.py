@@ -25,13 +25,14 @@ class CapabilitiesBaseType:
     GetCapabilities operation request. This base type shall be extended
     by each specific OWS to include the additional contents needed.
     """
+
     service_identification: Optional[ServiceIdentification] = field(
         default=None,
         metadata={
             "name": "ServiceIdentification",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows",
-        }
+        },
     )
     service_provider: Optional[ServiceProvider] = field(
         default=None,
@@ -39,7 +40,7 @@ class CapabilitiesBaseType:
             "name": "ServiceProvider",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows",
-        }
+        },
     )
     operations_metadata: Optional[OperationsMetadata] = field(
         default=None,
@@ -47,19 +48,19 @@ class CapabilitiesBaseType:
             "name": "OperationsMetadata",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows",
-        }
+        },
     )
     version: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
     update_sequence: Optional[str] = field(
         default=None,
         metadata={
             "name": "updateSequence",
             "type": "Attribute",
-        }
+        },
     )

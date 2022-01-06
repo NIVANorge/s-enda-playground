@@ -13,6 +13,7 @@ class LinearCs(LinearCstype):
     from the specified datum to the point along the axis. A LinearCS
     shall have one gml:axis property element.
     """
+
     class Meta:
         name = "LinearCS"
         namespace = "http://www.opengis.net/gml"

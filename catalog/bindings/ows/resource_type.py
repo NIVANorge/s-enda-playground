@@ -17,7 +17,7 @@ class ResourceType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "required": True,
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
@@ -25,21 +25,21 @@ class ResourceType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     label: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     content: List[object] = field(
         default_factory=list,
@@ -47,5 +47,5 @@ class ResourceType:
             "type": "Wildcard",
             "namespace": "##any",
             "mixed": True,
-        }
+        },
     )

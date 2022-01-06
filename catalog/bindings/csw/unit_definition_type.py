@@ -17,6 +17,7 @@ class UnitDefinitionType(DefinitionType):
     the relationship of this unit to other units or units systems is
     unknown.
     """
+
     quantity_type: Optional[QuantityType] = field(
         default=None,
         metadata={
@@ -24,7 +25,7 @@ class UnitDefinitionType(DefinitionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     catalog_symbol: Optional[CatalogSymbol] = field(
         default=None,
@@ -32,5 +33,5 @@ class UnitDefinitionType(DefinitionType):
             "name": "catalogSymbol",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

@@ -17,7 +17,7 @@ class DmsangleType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     decimal_minutes: Optional[Decimal] = field(
         default=None,
@@ -27,7 +27,7 @@ class DmsangleType:
             "namespace": "http://www.opengis.net/gml",
             "min_inclusive": Decimal("0.00"),
             "max_exclusive": Decimal("60.00"),
-        }
+        },
     )
     minutes: Optional[int] = field(
         default=None,
@@ -35,7 +35,7 @@ class DmsangleType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "max_inclusive": 59,
-        }
+        },
     )
     seconds: Optional[Decimal] = field(
         default=None,
@@ -44,5 +44,5 @@ class DmsangleType:
             "namespace": "http://www.opengis.net/gml",
             "min_inclusive": Decimal("0.00"),
             "max_exclusive": Decimal("60.00"),
-        }
+        },
     )

@@ -17,5 +17,6 @@ class OperationResponse(ManifestType):
     This element or the ManifestType shall be used instead of using the
     ows:ReferenceType proposed in OGC 04-105.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/2.0"

@@ -12,11 +12,11 @@ class DegreesType:
         metadata={
             "required": True,
             "max_inclusive": 359,
-        }
+        },
     )
     direction: Optional[DegreesTypeDirection] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

@@ -14,5 +14,6 @@ class DynamicFeature(DynamicFeatureType):
     will normally be extended to suit particular applications.  A
     dynamic feature bears either a time stamp or a history.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

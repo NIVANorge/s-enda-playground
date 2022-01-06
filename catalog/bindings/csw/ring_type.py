@@ -21,6 +21,7 @@ class RingType(AbstractRingType):
         structure, i.e. a CompositeCurve may use, for example, another
         CompositeCurve as a curve member.
     """
+
     curve_member: List[CurveMember] = field(
         default_factory=list,
         metadata={
@@ -28,5 +29,5 @@ class RingType(AbstractRingType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 1,
-        }
+        },
     )

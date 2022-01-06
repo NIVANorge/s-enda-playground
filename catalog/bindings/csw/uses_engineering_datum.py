@@ -9,6 +9,7 @@ class UsesEngineeringDatum(EngineeringDatumRefType):
     """
     Association to the engineering datum used by this CRS.
     """
+
     class Meta:
         name = "usesEngineeringDatum"
         namespace = "http://www.opengis.net/gml"

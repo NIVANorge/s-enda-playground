@@ -1,7 +1,9 @@
 from dataclasses import dataclass, field
 from typing import Optional
 from bindings.gmd.distance_property_type import DistancePropertyType
-from bindings.gmd.md_representative_fraction_property_type import MdRepresentativeFractionPropertyType
+from bindings.gmd.md_representative_fraction_property_type import (
+    MdRepresentativeFractionPropertyType,
+)
 
 __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
 
@@ -17,12 +19,12 @@ class MdResolutionType:
             "name": "equivalentScale",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     distance: Optional[DistancePropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

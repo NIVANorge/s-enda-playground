@@ -14,5 +14,5 @@ class AbstractProjectionClause:
         metadata={
             "type": "Wildcard",
             "namespace": "##any",
-        }
+        },
     )

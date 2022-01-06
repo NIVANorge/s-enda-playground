@@ -13,5 +13,5 @@ class LiteralType(ExpressionType):
             "type": "Wildcard",
             "namespace": "##any",
             "mixed": True,
-        }
+        },
     )

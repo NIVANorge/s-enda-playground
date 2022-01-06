@@ -45,6 +45,7 @@ class Operation:
         operations implemented shall be specified in the Implementation
         Specification for this service.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/2.0"
 
@@ -54,40 +55,40 @@ class Operation:
             "name": "DCP",
             "type": "Element",
             "min_occurs": 1,
-        }
+        },
     )
     parameter: List[DomainType] = field(
         default_factory=list,
         metadata={
             "name": "Parameter",
             "type": "Element",
-        }
+        },
     )
     constraint: List[DomainType] = field(
         default_factory=list,
         metadata={
             "name": "Constraint",
             "type": "Element",
-        }
+        },
     )
     additional_parameters: List[AdditionalParameters] = field(
         default_factory=list,
         metadata={
             "name": "AdditionalParameters",
             "type": "Element",
-        }
+        },
     )
     metadata: List[Metadata] = field(
         default_factory=list,
         metadata={
             "name": "Metadata",
             "type": "Element",
-        }
+        },
     )
     name: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )

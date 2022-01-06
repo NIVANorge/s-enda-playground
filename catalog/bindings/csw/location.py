@@ -9,6 +9,7 @@ class Location(LocationPropertyType):
     """
     Deprecated in GML 3.1.0.
     """
+
     class Meta:
         name = "location"
         namespace = "http://www.opengis.net/gml"

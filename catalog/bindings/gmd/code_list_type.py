@@ -12,16 +12,17 @@ class CodeListType:
     the rules of the dictionary, classification scheme, or authority
     identified by the value of its codeSpace attribute.
     """
+
     value: List[str] = field(
         default_factory=list,
         metadata={
             "tokens": True,
-        }
+        },
     )
     code_space: Optional[str] = field(
         default=None,
         metadata={
             "name": "codeSpace",
             "type": "Attribute",
-        }
+        },
     )

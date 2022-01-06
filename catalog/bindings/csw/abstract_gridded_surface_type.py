@@ -1,6 +1,8 @@
 from dataclasses import dataclass, field
 from typing import List, Optional
-from bindings.csw.abstract_parametric_curve_surface_type import AbstractParametricCurveSurfaceType
+from bindings.csw.abstract_parametric_curve_surface_type import (
+    AbstractParametricCurveSurfaceType,
+)
 from bindings.csw.point_property import PointProperty
 from bindings.csw.pos import Pos
 from bindings.csw.pos_list import PosList
@@ -37,27 +39,28 @@ class AbstractGriddedSurfaceType(AbstractParametricCurveSurfaceType):
     :ivar columns: The attribute columns gives the number of columns in
         the parameter grid.
     """
+
     row: List["AbstractGriddedSurfaceType.Row"] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 1,
-        }
+        },
     )
     rows: Optional[int] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     columns: Optional[int] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
 
     @dataclass
@@ -68,14 +71,14 @@ class AbstractGriddedSurfaceType(AbstractParametricCurveSurfaceType):
                 "name": "posList",
                 "type": "Element",
                 "namespace": "http://www.opengis.net/gml",
-            }
+            },
         )
         pos: List[Pos] = field(
             default_factory=list,
             metadata={
                 "type": "Element",
                 "namespace": "http://www.opengis.net/gml",
-            }
+            },
         )
         point_property: List[PointProperty] = field(
             default_factory=list,
@@ -83,5 +86,5 @@ class AbstractGriddedSurfaceType(AbstractParametricCurveSurfaceType):
                 "name": "pointProperty",
                 "type": "Element",
                 "namespace": "http://www.opengis.net/gml",
-            }
+            },
         )

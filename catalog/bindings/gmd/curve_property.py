@@ -13,6 +13,7 @@ class CurveProperty(CurvePropertyType):
     Application Schemas whenever a GML feature has a property with a
     value that is substitutable for AbstractCurve.
     """
+
     class Meta:
         name = "curveProperty"
         namespace = "http://www.opengis.net/gml"

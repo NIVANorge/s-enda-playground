@@ -14,6 +14,7 @@ class GeographicCrstype(AbstractReferenceSystemType):
     geoid; this provides an accurate representation of the geometry of
     geographic features for a large portion of the earth's surface.
     """
+
     class Meta:
         name = "GeographicCRSType"
 
@@ -24,7 +25,7 @@ class GeographicCrstype(AbstractReferenceSystemType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     uses_geodetic_datum: Optional[UsesGeodeticDatum] = field(
         default=None,
@@ -33,5 +34,5 @@ class GeographicCrstype(AbstractReferenceSystemType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

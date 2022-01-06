@@ -12,6 +12,7 @@ class Ellipsoid1(EllipsoidType):
     In mathematical terms, it is a surface formed by the rotation of an
     ellipse about its minor axis.
     """
+
     class Meta:
         name = "Ellipsoid"
         namespace = "http://www.opengis.net/gml"

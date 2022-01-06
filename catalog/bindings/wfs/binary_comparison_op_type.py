@@ -18,7 +18,7 @@ class BinaryComparisonOpType(ComparisonOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "max_occurs": 2,
-        }
+        },
     )
     function: List[Function] = field(
         default_factory=list,
@@ -27,7 +27,7 @@ class BinaryComparisonOpType(ComparisonOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "max_occurs": 2,
-        }
+        },
     )
     value_reference: List[str] = field(
         default_factory=list,
@@ -36,7 +36,7 @@ class BinaryComparisonOpType(ComparisonOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "max_occurs": 2,
-        }
+        },
     )
     expression: List[Expression] = field(
         default_factory=list,
@@ -44,19 +44,19 @@ class BinaryComparisonOpType(ComparisonOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "max_occurs": 2,
-        }
+        },
     )
     match_case: bool = field(
         default=True,
         metadata={
             "name": "matchCase",
             "type": "Attribute",
-        }
+        },
     )
     match_action: MatchActionType = field(
         default=MatchActionType.ANY,
         metadata={
             "name": "matchAction",
             "type": "Attribute",
-        }
+        },
     )

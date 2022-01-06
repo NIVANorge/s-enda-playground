@@ -9,6 +9,7 @@ class UsesVerticalDatum(VerticalDatumRefType):
     """
     Association to the vertical datum used by this CRS.
     """
+
     class Meta:
         name = "usesVerticalDatum"
         namespace = "http://www.opengis.net/gml"

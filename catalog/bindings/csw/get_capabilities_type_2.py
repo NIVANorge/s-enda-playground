@@ -10,6 +10,7 @@ class GetCapabilitiesType2(GetCapabilitiesType1):
 
     See OGC 05-008 for more information.
     """
+
     class Meta:
         name = "GetCapabilitiesType"
 
@@ -17,5 +18,5 @@ class GetCapabilitiesType2(GetCapabilitiesType1):
         default="http://www.opengis.net/cat/csw",
         metadata={
             "type": "Attribute",
-        }
+        },
     )

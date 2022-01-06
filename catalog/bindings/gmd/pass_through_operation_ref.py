@@ -1,5 +1,7 @@
 from dataclasses import dataclass
-from bindings.gmd.pass_through_operation_property_type import PassThroughOperationPropertyType
+from bindings.gmd.pass_through_operation_property_type import (
+    PassThroughOperationPropertyType,
+)
 
 __NAMESPACE__ = "http://www.opengis.net/gml"
 

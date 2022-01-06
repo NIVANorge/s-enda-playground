@@ -14,6 +14,7 @@ class CiResponsiblePartyType(AbstractObjectType):
     Identification of, and means of communication with, person(s) and
     organisations associated with the dataset.
     """
+
     class Meta:
         name = "CI_ResponsibleParty_Type"
 
@@ -23,7 +24,7 @@ class CiResponsiblePartyType(AbstractObjectType):
             "name": "individualName",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     organisation_name: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -31,7 +32,7 @@ class CiResponsiblePartyType(AbstractObjectType):
             "name": "organisationName",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     position_name: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -39,7 +40,7 @@ class CiResponsiblePartyType(AbstractObjectType):
             "name": "positionName",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     contact_info: Optional[CiContactPropertyType] = field(
         default=None,
@@ -47,7 +48,7 @@ class CiResponsiblePartyType(AbstractObjectType):
             "name": "contactInfo",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     role: Optional[CiRoleCodePropertyType] = field(
         default=None,
@@ -55,5 +56,5 @@ class CiResponsiblePartyType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )

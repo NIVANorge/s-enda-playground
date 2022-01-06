@@ -10,6 +10,7 @@ class GraphStyle1(GraphStyleType):
 
     Describes graph-specific style attributes.
     """
+
     class Meta:
         name = "GraphStyle"
         namespace = "http://www.opengis.net/gml"

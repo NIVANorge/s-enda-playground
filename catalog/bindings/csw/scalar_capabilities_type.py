@@ -18,7 +18,7 @@ class ScalarCapabilitiesType:
             "name": "LogicalOperators",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     comparison_operators: Optional[ComparisonOperatorsType] = field(
         default=None,
@@ -26,7 +26,7 @@ class ScalarCapabilitiesType:
             "name": "ComparisonOperators",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )
     arithmetic_operators: Optional[ArithmeticOperatorsType] = field(
         default=None,
@@ -34,5 +34,5 @@ class ScalarCapabilitiesType:
             "name": "ArithmeticOperators",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )

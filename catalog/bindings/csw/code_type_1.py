@@ -15,6 +15,7 @@ class CodeType1:
     documentation edited, for possible use outside the
     ServiceIdentification section of a service metadata document.
     """
+
     class Meta:
         name = "CodeType"
 
@@ -22,12 +23,12 @@ class CodeType1:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )
     code_space: Optional[str] = field(
         default=None,
         metadata={
             "name": "codeSpace",
             "type": "Attribute",
-        }
+        },
     )

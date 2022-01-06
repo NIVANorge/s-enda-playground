@@ -13,5 +13,5 @@ class Integer:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )

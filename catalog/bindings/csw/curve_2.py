@@ -10,6 +10,7 @@ class Curve2(AbstractCurveType):
     The "_Curve" element is the abstract head of the substituition group for
     all (continuous) curve elements.
     """
+
     class Meta:
         name = "_Curve"
         namespace = "http://www.opengis.net/gml"

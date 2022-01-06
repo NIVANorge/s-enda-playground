@@ -15,6 +15,7 @@ class QuantityType(StringOrRefType):
     this term is known as observable type or measurand. The use of
     gml:quantityType for references to remote values is deprecated.
     """
+
     class Meta:
         name = "quantityType"
         namespace = "http://www.opengis.net/gml"

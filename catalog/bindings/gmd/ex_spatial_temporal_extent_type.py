@@ -1,6 +1,8 @@
 from dataclasses import dataclass, field
 from typing import List
-from bindings.gmd.ex_geographic_extent_property_type import ExGeographicExtentPropertyType
+from bindings.gmd.ex_geographic_extent_property_type import (
+    ExGeographicExtentPropertyType,
+)
 from bindings.gmd.ex_temporal_extent_type import ExTemporalExtentType
 
 __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
@@ -11,6 +13,7 @@ class ExSpatialTemporalExtentType(ExTemporalExtentType):
     """
     Extent with respect to date and time.
     """
+
     class Meta:
         name = "EX_SpatialTemporalExtent_Type"
 
@@ -21,5 +24,5 @@ class ExSpatialTemporalExtentType(ExTemporalExtentType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "min_occurs": 1,
-        }
+        },
     )

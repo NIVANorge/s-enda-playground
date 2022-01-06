@@ -16,5 +16,5 @@ class CountExtent:
             "length": 2,
             "pattern": r"other:\w{2,}",
             "tokens": True,
-        }
+        },
     )

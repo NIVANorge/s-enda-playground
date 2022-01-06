@@ -19,14 +19,14 @@ class OperationMethodType(IdentifiedObjectType):
             "name": "methodFormula",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     formula: Optional[Formula] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     source_dimensions: Optional[int] = field(
         default=None,
@@ -34,7 +34,7 @@ class OperationMethodType(IdentifiedObjectType):
             "name": "sourceDimensions",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     target_dimensions: Optional[int] = field(
         default=None,
@@ -42,7 +42,7 @@ class OperationMethodType(IdentifiedObjectType):
             "name": "targetDimensions",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     uses_parameter: List[UsesParameter] = field(
         default_factory=list,
@@ -50,7 +50,7 @@ class OperationMethodType(IdentifiedObjectType):
             "name": "usesParameter",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     general_operation_parameter: List[GeneralOperationParameter] = field(
         default_factory=list,
@@ -58,5 +58,5 @@ class OperationMethodType(IdentifiedObjectType):
             "name": "generalOperationParameter",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

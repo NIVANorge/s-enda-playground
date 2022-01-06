@@ -56,13 +56,14 @@ class DatasetDescriptionSummaryBaseType(DescriptionType):
     :ivar dataset_description_summary: Metadata describing zero or more
         unordered subsidiary datasets available from this server.
     """
+
     wgs84_bounding_box: List[Wgs84BoundingBox] = field(
         default_factory=list,
         metadata={
             "name": "WGS84BoundingBox",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )
     identifier: Optional[CodeType] = field(
         default=None,
@@ -71,7 +72,7 @@ class DatasetDescriptionSummaryBaseType(DescriptionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
             "required": True,
-        }
+        },
     )
     bounding_box: List[BoundingBox] = field(
         default_factory=list,
@@ -79,7 +80,7 @@ class DatasetDescriptionSummaryBaseType(DescriptionType):
             "name": "BoundingBox",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )
     metadata: List[Metadata] = field(
         default_factory=list,
@@ -87,7 +88,7 @@ class DatasetDescriptionSummaryBaseType(DescriptionType):
             "name": "Metadata",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )
     dataset_description_summary: List["DatasetDescriptionSummary"] = field(
         default_factory=list,
@@ -95,7 +96,7 @@ class DatasetDescriptionSummaryBaseType(DescriptionType):
             "name": "DatasetDescriptionSummary",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )
 
 

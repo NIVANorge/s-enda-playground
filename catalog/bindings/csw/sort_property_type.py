@@ -15,7 +15,7 @@ class SortPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "required": True,
-        }
+        },
     )
     sort_order: Optional[SortOrderType] = field(
         default=None,
@@ -23,5 +23,5 @@ class SortPropertyType:
             "name": "SortOrder",
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
-        }
+        },
     )

@@ -16,7 +16,7 @@ class DomainValuesType:
             "name": "PropertyName",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     parameter_name: Optional[str] = field(
         default=None,
@@ -24,7 +24,7 @@ class DomainValuesType:
             "name": "ParameterName",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     list_of_values: Optional[ListOfValuesType] = field(
         default=None,
@@ -32,7 +32,7 @@ class DomainValuesType:
             "name": "ListOfValues",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     conceptual_scheme: Optional[ConceptualSchemeType] = field(
         default=None,
@@ -40,7 +40,7 @@ class DomainValuesType:
             "name": "ConceptualScheme",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     range_of_values: Optional[RangeOfValuesType] = field(
         default=None,
@@ -48,18 +48,18 @@ class DomainValuesType:
             "name": "RangeOfValues",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     type: Optional[QName] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
     uom: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

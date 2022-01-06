@@ -13,7 +13,7 @@ class ConeType(AbstractGriddedSurfaceType):
         metadata={
             "name": "horizontalCurveType",
             "type": "Attribute",
-        }
+        },
     )
     vertical_curve_type: CurveInterpolationType = field(
         init=False,
@@ -21,5 +21,5 @@ class ConeType(AbstractGriddedSurfaceType):
         metadata={
             "name": "verticalCurveType",
             "type": "Attribute",
-        }
+        },
     )

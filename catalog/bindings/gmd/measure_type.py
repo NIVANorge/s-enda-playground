@@ -13,11 +13,12 @@ class MeasureType:
     The value of the uom attribute identifies a reference system for the
     amount, usually a ratio or interval scale.
     """
+
     value: Optional[float] = field(
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )
     uom: Optional[str] = field(
         default=None,
@@ -25,5 +26,5 @@ class MeasureType:
             "type": "Attribute",
             "required": True,
             "pattern": r"[^: \n\r\t]+",
-        }
+        },
     )

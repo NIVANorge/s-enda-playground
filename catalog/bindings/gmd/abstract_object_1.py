@@ -12,6 +12,7 @@ class AbstractObject1:
     unifies complex content and certain simple content elements used for
     datatypes in GML, including the gml:AbstractGML substitution group.
     """
+
     class Meta:
         name = "AbstractObject"
         namespace = "http://www.opengis.net/gml"

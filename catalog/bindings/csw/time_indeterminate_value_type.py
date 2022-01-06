@@ -7,6 +7,7 @@ class TimeIndeterminateValueType(Enum):
     """
     This enumerated data type specifies values for indeterminate positions.
     """
+
     AFTER = "after"
     BEFORE = "before"
     NOW = "now"

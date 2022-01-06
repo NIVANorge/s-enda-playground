@@ -17,13 +17,14 @@ class AddressType:
     :ivar electronic_mail_address: Address of the electronic mailbox of
         the responsible organization or individual.
     """
+
     delivery_point: List[str] = field(
         default_factory=list,
         metadata={
             "name": "DeliveryPoint",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     city: Optional[str] = field(
         default=None,
@@ -31,7 +32,7 @@ class AddressType:
             "name": "City",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     administrative_area: Optional[str] = field(
         default=None,
@@ -39,7 +40,7 @@ class AddressType:
             "name": "AdministrativeArea",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     postal_code: Optional[str] = field(
         default=None,
@@ -47,7 +48,7 @@ class AddressType:
             "name": "PostalCode",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     country: Optional[str] = field(
         default=None,
@@ -55,7 +56,7 @@ class AddressType:
             "name": "Country",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     electronic_mail_address: List[str] = field(
         default_factory=list,
@@ -63,5 +64,5 @@ class AddressType:
             "name": "ElectronicMailAddress",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )

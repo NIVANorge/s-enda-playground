@@ -21,7 +21,7 @@ class TransactionType(BaseRequestType):
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
             "sequential": True,
-        }
+        },
     )
     delete: List[Delete] = field(
         default_factory=list,
@@ -30,7 +30,7 @@ class TransactionType(BaseRequestType):
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
             "sequential": True,
-        }
+        },
     )
     replace: List[Replace] = field(
         default_factory=list,
@@ -39,7 +39,7 @@ class TransactionType(BaseRequestType):
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
             "sequential": True,
-        }
+        },
     )
     update: List[Update] = field(
         default_factory=list,
@@ -48,7 +48,7 @@ class TransactionType(BaseRequestType):
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
             "sequential": True,
-        }
+        },
     )
     insert: List[Insert] = field(
         default_factory=list,
@@ -57,7 +57,7 @@ class TransactionType(BaseRequestType):
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
             "sequential": True,
-        }
+        },
     )
     abstract_transaction_action: List[AbstractTransactionAction] = field(
         default_factory=list,
@@ -66,26 +66,26 @@ class TransactionType(BaseRequestType):
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
             "sequential": True,
-        }
+        },
     )
     lock_id: Optional[str] = field(
         default=None,
         metadata={
             "name": "lockId",
             "type": "Attribute",
-        }
+        },
     )
     release_action: AllSomeType = field(
         default=AllSomeType.ALL,
         metadata={
             "name": "releaseAction",
             "type": "Attribute",
-        }
+        },
     )
     srs_name: Optional[str] = field(
         default=None,
         metadata={
             "name": "srsName",
             "type": "Attribute",
-        }
+        },
     )

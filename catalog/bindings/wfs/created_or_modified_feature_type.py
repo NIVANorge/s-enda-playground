@@ -14,11 +14,11 @@ class CreatedOrModifiedFeatureType:
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "min_occurs": 1,
-        }
+        },
     )
     handle: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

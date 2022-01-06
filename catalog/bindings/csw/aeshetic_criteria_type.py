@@ -7,6 +7,7 @@ class AesheticCriteriaType(Enum):
     """
     Graph-specific styling property.
     """
+
     MIN_CROSSINGS = "MIN_CROSSINGS"
     MIN_AREA = "MIN_AREA"
     MIN_BENDS = "MIN_BENDS"

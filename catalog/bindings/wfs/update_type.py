@@ -17,7 +17,7 @@ class UpdateType(AbstractTransactionActionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
             "min_occurs": 1,
-        }
+        },
     )
     filter: Optional[Filter] = field(
         default=None,
@@ -25,7 +25,7 @@ class UpdateType(AbstractTransactionActionType):
             "name": "Filter",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )
     type_name: Optional[QName] = field(
         default=None,
@@ -33,19 +33,19 @@ class UpdateType(AbstractTransactionActionType):
             "name": "typeName",
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
     input_format: str = field(
         default="application/gml+xml; version=3.2",
         metadata={
             "name": "inputFormat",
             "type": "Attribute",
-        }
+        },
     )
     srs_name: Optional[str] = field(
         default=None,
         metadata={
             "name": "srsName",
             "type": "Attribute",
-        }
+        },
     )

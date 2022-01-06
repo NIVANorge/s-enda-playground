@@ -1,5 +1,7 @@
 from dataclasses import dataclass
-from bindings.csw.abstract_general_transformation_type import AbstractGeneralTransformationType
+from bindings.csw.abstract_general_transformation_type import (
+    AbstractGeneralTransformationType,
+)
 
 __NAMESPACE__ = "http://www.opengis.net/gml"
 

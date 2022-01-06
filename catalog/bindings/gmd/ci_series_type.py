@@ -16,7 +16,7 @@ class CiSeriesType(AbstractObjectType):
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     issue_identification: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -24,12 +24,12 @@ class CiSeriesType(AbstractObjectType):
             "name": "issueIdentification",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     page: Optional[CharacterStringPropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

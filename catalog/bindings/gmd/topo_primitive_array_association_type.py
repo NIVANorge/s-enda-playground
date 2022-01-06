@@ -20,7 +20,7 @@ class TopoPrimitiveArrayAssociationType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     face: List[Face] = field(
         default_factory=list,
@@ -29,7 +29,7 @@ class TopoPrimitiveArrayAssociationType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     edge: List[Edge] = field(
         default_factory=list,
@@ -38,7 +38,7 @@ class TopoPrimitiveArrayAssociationType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     node: List[Node] = field(
         default_factory=list,
@@ -47,7 +47,7 @@ class TopoPrimitiveArrayAssociationType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     abstract_topo_primitive: List[AbstractTopoPrimitive] = field(
         default_factory=list,
@@ -56,11 +56,11 @@ class TopoPrimitiveArrayAssociationType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "sequential": True,
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

@@ -17,7 +17,7 @@ class StoredQueryDescriptionType:
             "name": "Title",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     abstract: List[Abstract2] = field(
         default_factory=list,
@@ -25,7 +25,7 @@ class StoredQueryDescriptionType:
             "name": "Abstract",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     metadata: List[Metadata] = field(
         default_factory=list,
@@ -33,7 +33,7 @@ class StoredQueryDescriptionType:
             "name": "Metadata",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )
     parameter: List[ParameterExpressionType] = field(
         default_factory=list,
@@ -41,7 +41,7 @@ class StoredQueryDescriptionType:
             "name": "Parameter",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     query_expression_text: List[QueryExpressionTextType] = field(
         default_factory=list,
@@ -50,12 +50,12 @@ class StoredQueryDescriptionType:
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
             "min_occurs": 1,
-        }
+        },
     )
     id: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )

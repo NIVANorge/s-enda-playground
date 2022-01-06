@@ -1,6 +1,8 @@
 from dataclasses import dataclass, field
 from typing import List, Optional
-from bindings.gmd.abstract_geometric_aggregate_type import AbstractGeometricAggregateType
+from bindings.gmd.abstract_geometric_aggregate_type import (
+    AbstractGeometricAggregateType,
+)
 from bindings.gmd.composite_curve_type import CurveMember
 from bindings.gmd.curve_members import CurveMembers
 
@@ -15,7 +17,7 @@ class MultiCurveType(AbstractGeometricAggregateType):
             "name": "curveMember",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     curve_members: Optional[CurveMembers] = field(
         default=None,
@@ -23,5 +25,5 @@ class MultiCurveType(AbstractGeometricAggregateType):
             "name": "curveMembers",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

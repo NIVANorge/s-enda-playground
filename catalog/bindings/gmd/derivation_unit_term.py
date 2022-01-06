@@ -16,6 +16,7 @@ class DerivationUnitTerm(DerivationUnitTermType):
     in defining the compound unit. The exponent may be positive or
     negative, but not zero.
     """
+
     class Meta:
         name = "derivationUnitTerm"
         namespace = "http://www.opengis.net/gml"

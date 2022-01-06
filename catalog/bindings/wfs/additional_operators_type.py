@@ -13,5 +13,5 @@ class AdditionalOperatorsType:
             "name": "Operator",
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
-        }
+        },
     )

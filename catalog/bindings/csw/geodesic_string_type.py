@@ -27,20 +27,21 @@ class GeodesicStringType(AbstractCurveSegmentType):
         determine the position of this curve segment. For an
         GeodesicString the interpolation is fixed as "geodesic".
     """
+
     pos_list: Optional[PosList] = field(
         default=None,
         metadata={
             "name": "posList",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     pos: List[Pos] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     point_property: List[PointProperty] = field(
         default_factory=list,
@@ -48,12 +49,12 @@ class GeodesicStringType(AbstractCurveSegmentType):
             "name": "pointProperty",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     interpolation: CurveInterpolationType = field(
         init=False,
         default=CurveInterpolationType.GEODESIC,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

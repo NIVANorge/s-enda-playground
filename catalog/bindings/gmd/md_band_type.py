@@ -19,7 +19,7 @@ class MdBandType(MdRangeDimensionType):
             "name": "maxValue",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     min_value: Optional[RealPropertyType] = field(
         default=None,
@@ -27,14 +27,14 @@ class MdBandType(MdRangeDimensionType):
             "name": "minValue",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     units: Optional[UomLengthPropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     peak_response: Optional[RealPropertyType] = field(
         default=None,
@@ -42,7 +42,7 @@ class MdBandType(MdRangeDimensionType):
             "name": "peakResponse",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     bits_per_value: Optional[IntegerPropertyType] = field(
         default=None,
@@ -50,7 +50,7 @@ class MdBandType(MdRangeDimensionType):
             "name": "bitsPerValue",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     tone_gradation: Optional[IntegerPropertyType] = field(
         default=None,
@@ -58,7 +58,7 @@ class MdBandType(MdRangeDimensionType):
             "name": "toneGradation",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     scale_factor: Optional[RealPropertyType] = field(
         default=None,
@@ -66,12 +66,12 @@ class MdBandType(MdRangeDimensionType):
             "name": "scaleFactor",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     offset: Optional[RealPropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

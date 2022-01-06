@@ -23,13 +23,14 @@ class RangeType:
     :ivar range_closure: Shall be included unless the default value
         applies.
     """
+
     minimum_value: Optional[str] = field(
         default=None,
         metadata={
             "name": "MinimumValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )
     maximum_value: Optional[str] = field(
         default=None,
@@ -37,7 +38,7 @@ class RangeType:
             "name": "MaximumValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )
     spacing: Optional[str] = field(
         default=None,
@@ -45,7 +46,7 @@ class RangeType:
             "name": "Spacing",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )
     range_closure: RangeClosureValue = field(
         default=RangeClosureValue.CLOSED,
@@ -53,5 +54,5 @@ class RangeType:
             "name": "rangeClosure",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )

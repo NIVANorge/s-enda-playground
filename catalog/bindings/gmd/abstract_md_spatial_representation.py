@@ -1,5 +1,7 @@
 from dataclasses import dataclass
-from bindings.gmd.abstract_md_spatial_representation_type import AbstractMdSpatialRepresentationType
+from bindings.gmd.abstract_md_spatial_representation_type import (
+    AbstractMdSpatialRepresentationType,
+)
 
 __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
 

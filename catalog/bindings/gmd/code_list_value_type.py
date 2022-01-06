@@ -13,7 +13,7 @@ class CodeListValueType:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )
     code_list: Optional[str] = field(
         default=None,
@@ -21,7 +21,7 @@ class CodeListValueType:
             "name": "codeList",
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
     code_list_value: Optional[str] = field(
         default=None,
@@ -29,12 +29,12 @@ class CodeListValueType:
             "name": "codeListValue",
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
     code_space: Optional[str] = field(
         default=None,
         metadata={
             "name": "codeSpace",
             "type": "Attribute",
-        }
+        },
     )

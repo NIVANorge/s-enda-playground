@@ -26,11 +26,12 @@ class RequestMethodType(OnlineResourceType):
         method for this operation shall be specified in the
         Implementation Specification for this service.
     """
+
     constraint: List[DomainType] = field(
         default_factory=list,
         metadata={
             "name": "Constraint",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows",
-        }
+        },
     )

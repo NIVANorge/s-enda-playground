@@ -1,6 +1,8 @@
 from dataclasses import dataclass, field
 from typing import List, Optional
-from bindings.gmd.abstract_md_content_information_type import AbstractMdContentInformationType
+from bindings.gmd.abstract_md_content_information_type import (
+    AbstractMdContentInformationType,
+)
 from bindings.gmd.boolean_property_type_2 import BooleanPropertyType2
 from bindings.gmd.character_string_property_type import CharacterStringPropertyType
 from bindings.gmd.ci_citation_type import CiCitationPropertyType
@@ -14,6 +16,7 @@ class MdFeatureCatalogueDescriptionType(AbstractMdContentInformationType):
     """
     Information identifing the feature catalogue.
     """
+
     class Meta:
         name = "MD_FeatureCatalogueDescription_Type"
 
@@ -23,14 +26,14 @@ class MdFeatureCatalogueDescriptionType(AbstractMdContentInformationType):
             "name": "complianceCode",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     language: List[CharacterStringPropertyType] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     included_with_dataset: Optional[BooleanPropertyType2] = field(
         default=None,
@@ -39,7 +42,7 @@ class MdFeatureCatalogueDescriptionType(AbstractMdContentInformationType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     feature_types: List[GenericNamePropertyType] = field(
         default_factory=list,
@@ -47,7 +50,7 @@ class MdFeatureCatalogueDescriptionType(AbstractMdContentInformationType):
             "name": "featureTypes",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     feature_catalogue_citation: List[CiCitationPropertyType] = field(
         default_factory=list,
@@ -56,5 +59,5 @@ class MdFeatureCatalogueDescriptionType(AbstractMdContentInformationType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "min_occurs": 1,
-        }
+        },
     )

@@ -15,5 +15,6 @@ class Shell(ShellType):
     If provided, the aggregationType attribute shall have the value
     “set”.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

@@ -15,17 +15,18 @@ class CodeOrNullListType:
     then its value is a reference to a Reference System for the value, a
     dictionary or code list.
     """
+
     value: List[Union[str, NullEnumerationValue]] = field(
         default_factory=list,
         metadata={
             "pattern": r"other:\w{2,}",
             "tokens": True,
-        }
+        },
     )
     code_space: Optional[str] = field(
         default=None,
         metadata={
             "name": "codeSpace",
             "type": "Attribute",
-        }
+        },
     )

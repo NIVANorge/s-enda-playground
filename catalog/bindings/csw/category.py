@@ -11,5 +11,6 @@ class Category(CodeType2):
     It has an optional XML attribute codeSpace, whose value is a URI
     which identifies a dictionary, codelist or authority for the term.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

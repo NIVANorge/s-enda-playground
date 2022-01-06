@@ -22,6 +22,7 @@ class Bspline(BsplineType):
     6.4.30.4). The content model follows the general pattern for the
     encoding of curve segments.
     """
+
     class Meta:
         name = "BSpline"
         namespace = "http://www.opengis.net/gml"

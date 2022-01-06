@@ -18,5 +18,6 @@ class TimeCalendar(TimeCalendarType):
     gml:TimeCalendarEra element, or a link to a gml:TimeCalendarEra
     which is explicit elsewhere.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

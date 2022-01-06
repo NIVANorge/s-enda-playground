@@ -12,6 +12,7 @@ class GridEnvelopeType:
     The value of a single coordinate is the number of offsets from the
     origin of the grid in the direction of a specific axis.
     """
+
     low: List[int] = field(
         default_factory=list,
         metadata={
@@ -19,7 +20,7 @@ class GridEnvelopeType:
             "namespace": "http://www.opengis.net/gml",
             "required": True,
             "tokens": True,
-        }
+        },
     )
     high: List[int] = field(
         default_factory=list,
@@ -28,5 +29,5 @@ class GridEnvelopeType:
             "namespace": "http://www.opengis.net/gml",
             "required": True,
             "tokens": True,
-        }
+        },
     )

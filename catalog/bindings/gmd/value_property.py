@@ -10,6 +10,7 @@ class ValueProperty(ValuePropertyType):
 
     Convenience element for general use.
     """
+
     class Meta:
         name = "valueProperty"
         namespace = "http://www.opengis.net/gml"

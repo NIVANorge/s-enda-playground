@@ -10,6 +10,7 @@ class CountList:
     """
     A space-separated list of integers or nulls.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"
 
@@ -18,5 +19,5 @@ class CountList:
         metadata={
             "pattern": r"other:\w{2,}",
             "tokens": True,
-        }
+        },
     )

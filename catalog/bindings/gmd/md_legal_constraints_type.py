@@ -12,6 +12,7 @@ class MdLegalConstraintsType(MdConstraintsType):
     """
     Restrictions and legal prerequisites for accessing and using the dataset.
     """
+
     class Meta:
         name = "MD_LegalConstraints_Type"
 
@@ -21,7 +22,7 @@ class MdLegalConstraintsType(MdConstraintsType):
             "name": "accessConstraints",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     use_constraints: List[MdRestrictionCodePropertyType] = field(
         default_factory=list,
@@ -29,7 +30,7 @@ class MdLegalConstraintsType(MdConstraintsType):
             "name": "useConstraints",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     other_constraints: List[CharacterStringPropertyType] = field(
         default_factory=list,
@@ -37,5 +38,5 @@ class MdLegalConstraintsType(MdConstraintsType):
             "name": "otherConstraints",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

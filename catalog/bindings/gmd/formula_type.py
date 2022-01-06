@@ -11,7 +11,7 @@ class FormulaType:
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     b: Optional[float] = field(
         default=None,
@@ -19,7 +19,7 @@ class FormulaType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     c: Optional[float] = field(
         default=None,
@@ -27,12 +27,12 @@ class FormulaType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     d: Optional[float] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

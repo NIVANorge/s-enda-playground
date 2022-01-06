@@ -17,5 +17,6 @@ class DerivedUnit(DerivedUnitType):
     gml:DerivedUnit extends gml:UnitDefinition with the property
     gml:derivationUnitTerms.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

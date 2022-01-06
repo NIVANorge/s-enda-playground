@@ -9,6 +9,7 @@ class FeatureStyle1(FeatureStyleType):
     """
     The style descriptor for features.
     """
+
     class Meta:
         name = "FeatureStyle"
         namespace = "http://www.opengis.net/gml"

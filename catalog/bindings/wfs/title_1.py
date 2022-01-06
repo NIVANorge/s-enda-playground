@@ -9,6 +9,7 @@ class Title1(LanguageStringType):
     """
     Title of this resource, normally used for display to a human.
     """
+
     class Meta:
         name = "Title"
         namespace = "http://www.opengis.net/ows/1.1"

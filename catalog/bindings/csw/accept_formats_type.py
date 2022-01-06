@@ -12,6 +12,7 @@ class AcceptFormatsType:
     Each response format shall be identified by its MIME type. See
     AcceptFormats parameter use subclause for more information.
     """
+
     output_format: List[str] = field(
         default_factory=list,
         metadata={
@@ -19,5 +20,5 @@ class AcceptFormatsType:
             "type": "Element",
             "namespace": "http://www.opengis.net/ows",
             "pattern": r"(application|audio|image|text|video|message|multipart|model)/.+(;\s*.+=.+)*",
-        }
+        },
     )

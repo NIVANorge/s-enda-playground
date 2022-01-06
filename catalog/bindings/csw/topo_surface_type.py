@@ -17,6 +17,7 @@ class TopoSurfaceType(AbstractTopologyType):
     relationships of this surface to other features via the shared face
     definitions.
     """
+
     directed_face: List[DirectedFace] = field(
         default_factory=list,
         metadata={
@@ -24,5 +25,5 @@ class TopoSurfaceType(AbstractTopologyType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 1,
-        }
+        },
     )

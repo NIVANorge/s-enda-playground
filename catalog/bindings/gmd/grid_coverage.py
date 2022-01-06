@@ -16,5 +16,6 @@ class GridCoverage(GridCoverageType):
     geometric positioning is introduced in the
     gml:RectifiedGridCoverage.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

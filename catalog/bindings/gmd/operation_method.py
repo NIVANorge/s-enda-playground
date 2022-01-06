@@ -16,5 +16,6 @@ class OperationMethod(OperationMethodType):
     associations to the set of operation parameters and parameter groups
     used by this operation method.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

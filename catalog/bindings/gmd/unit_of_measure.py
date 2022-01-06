@@ -12,6 +12,7 @@ class UnitOfMeasure(UnitOfMeasureType):
     This is an empty element which carries a reference to a unit of
     measure definition.
     """
+
     class Meta:
         name = "unitOfMeasure"
         namespace = "http://www.opengis.net/gml"

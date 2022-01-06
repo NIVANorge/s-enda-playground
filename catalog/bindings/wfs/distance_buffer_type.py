@@ -19,7 +19,7 @@ class DistanceBufferType(SpatialOpsType):
             "namespace": "http://www.opengis.net/fes/2.0",
             "max_occurs": 2,
             "sequential": True,
-        }
+        },
     )
     function: List[Function] = field(
         default_factory=list,
@@ -29,7 +29,7 @@ class DistanceBufferType(SpatialOpsType):
             "namespace": "http://www.opengis.net/fes/2.0",
             "max_occurs": 2,
             "sequential": True,
-        }
+        },
     )
     value_reference: List[str] = field(
         default_factory=list,
@@ -39,7 +39,7 @@ class DistanceBufferType(SpatialOpsType):
             "namespace": "http://www.opengis.net/fes/2.0",
             "max_occurs": 2,
             "sequential": True,
-        }
+        },
     )
     expression: List[Expression] = field(
         default_factory=list,
@@ -48,7 +48,7 @@ class DistanceBufferType(SpatialOpsType):
             "namespace": "http://www.opengis.net/fes/2.0",
             "max_occurs": 2,
             "sequential": True,
-        }
+        },
     )
     other_element: List[object] = field(
         default_factory=list,
@@ -57,7 +57,7 @@ class DistanceBufferType(SpatialOpsType):
             "namespace": "##other",
             "max_occurs": 2,
             "sequential": True,
-        }
+        },
     )
     distance: Optional[MeasureType] = field(
         default=None,
@@ -66,5 +66,5 @@ class DistanceBufferType(SpatialOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "required": True,
-        }
+        },
     )

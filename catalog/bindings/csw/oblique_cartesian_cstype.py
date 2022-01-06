@@ -11,5 +11,6 @@ class ObliqueCartesianCstype(AbstractCoordinateSystemType):
 
     An ObliqueCartesianCS shall have two or three usesAxis associations.
     """
+
     class Meta:
         name = "ObliqueCartesianCSType"

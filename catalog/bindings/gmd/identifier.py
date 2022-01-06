@@ -14,6 +14,7 @@ class Identifier(CodeWithAuthorityType):
     application domain. gml:identifier is a pre-defined property for
     such identifiers.
     """
+
     class Meta:
         name = "identifier"
         namespace = "http://www.opengis.net/gml"

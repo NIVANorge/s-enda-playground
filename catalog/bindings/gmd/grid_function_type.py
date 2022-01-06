@@ -13,7 +13,7 @@ class GridFunctionType:
             "name": "sequenceRule",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     start_point: List[int] = field(
         default_factory=list,
@@ -22,5 +22,5 @@ class GridFunctionType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "tokens": True,
-        }
+        },
     )

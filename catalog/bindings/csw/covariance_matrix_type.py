@@ -1,6 +1,8 @@
 from dataclasses import dataclass, field
 from typing import List
-from bindings.csw.abstract_positional_accuracy_type import AbstractPositionalAccuracyType
+from bindings.csw.abstract_positional_accuracy_type import (
+    AbstractPositionalAccuracyType,
+)
 from bindings.csw.includes_element import IncludesElement
 from bindings.csw.unit_of_measure import UnitOfMeasure
 
@@ -24,6 +26,7 @@ class CovarianceMatrixType(AbstractPositionalAccuracyType):
         diagonal) of the matrix need to be specified. Any zero valued
         covariance elements can be omitted.
     """
+
     unit_of_measure: List[UnitOfMeasure] = field(
         default_factory=list,
         metadata={
@@ -31,7 +34,7 @@ class CovarianceMatrixType(AbstractPositionalAccuracyType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 1,
-        }
+        },
     )
     includes_element: List[IncludesElement] = field(
         default_factory=list,
@@ -40,5 +43,5 @@ class CovarianceMatrixType(AbstractPositionalAccuracyType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 1,
-        }
+        },
     )

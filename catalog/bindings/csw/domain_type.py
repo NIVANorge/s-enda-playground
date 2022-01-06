@@ -30,6 +30,7 @@ class DomainType:
         This metadata might specify the meanings of the valid values.)
     :ivar name: Name or identifier of this parameter or other quantity.
     """
+
     value: List[str] = field(
         default_factory=list,
         metadata={
@@ -37,7 +38,7 @@ class DomainType:
             "type": "Element",
             "namespace": "http://www.opengis.net/ows",
             "min_occurs": 1,
-        }
+        },
     )
     metadata: List[Metadata1] = field(
         default_factory=list,
@@ -45,12 +46,12 @@ class DomainType:
             "name": "Metadata",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows",
-        }
+        },
     )
     name: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )

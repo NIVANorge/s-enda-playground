@@ -9,6 +9,7 @@ class CoordinateSystem(CoordinateSystemPropertyType):
     """
     An association role to the coordinate system used by this CRS.
     """
+
     class Meta:
         name = "coordinateSystem"
         namespace = "http://www.opengis.net/gml"

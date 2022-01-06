@@ -19,19 +19,20 @@ class GeometryStyleType(BaseStyleDescriptorType):
     :ivar geometry_property:
     :ivar geometry_type:
     """
+
     symbol: Optional[Symbol] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     style: Optional[str] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     label_style: Optional[LabelStyle2] = field(
         default=None,
@@ -39,19 +40,19 @@ class GeometryStyleType(BaseStyleDescriptorType):
             "name": "labelStyle",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     geometry_property: Optional[str] = field(
         default=None,
         metadata={
             "name": "geometryProperty",
             "type": "Attribute",
-        }
+        },
     )
     geometry_type: Optional[str] = field(
         default=None,
         metadata={
             "name": "geometryType",
             "type": "Attribute",
-        }
+        },
     )

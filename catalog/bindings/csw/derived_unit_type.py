@@ -17,6 +17,7 @@ class DerivedUnitType(UnitDefinitionType):
     within a system.  If a derived unit is not the preferred unit, the
     ConventionalUnit element should be used instead.
     """
+
     derivation_unit_term: List[DerivationUnitTerm] = field(
         default_factory=list,
         metadata={
@@ -24,5 +25,5 @@ class DerivedUnitType(UnitDefinitionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 1,
-        }
+        },
     )

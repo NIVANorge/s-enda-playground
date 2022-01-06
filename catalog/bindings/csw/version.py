@@ -12,6 +12,7 @@ class Version:
     versions. When appropriate, the version is identified by the
     effective date, coded using ISO 8601 date format.
     """
+
     class Meta:
         name = "version"
         namespace = "http://www.opengis.net/gml"
@@ -20,5 +21,5 @@ class Version:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )

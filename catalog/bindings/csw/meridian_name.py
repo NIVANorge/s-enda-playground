@@ -11,6 +11,7 @@ class MeridianName(CodeType2):
     The meridianName most common value is Greenwich, and that value
     shall be used when the greenwichLongitude value is zero.
     """
+
     class Meta:
         name = "meridianName"
         namespace = "http://www.opengis.net/gml"

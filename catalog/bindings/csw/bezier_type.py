@@ -20,12 +20,13 @@ class BezierType(BsplineType):
     :ivar is_polynomial: The attribute isPolynomial is set to true as
         this is a polynomial spline.
     """
+
     interpolation: CurveInterpolationType = field(
         init=False,
         default=CurveInterpolationType.POLYNOMIAL_SPLINE,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     is_polynomial: bool = field(
         init=False,
@@ -33,5 +34,5 @@ class BezierType(BsplineType):
         metadata={
             "name": "isPolynomial",
             "type": "Attribute",
-        }
+        },
     )

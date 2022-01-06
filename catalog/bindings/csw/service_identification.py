@@ -28,6 +28,7 @@ class ServiceIdentification(DescriptionType):
         (case insensitive) shall be used to mean no access constraints
         are imposed. If this element is omitted, no meaning is implied.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows"
 
@@ -37,7 +38,7 @@ class ServiceIdentification(DescriptionType):
             "name": "ServiceType",
             "type": "Element",
             "required": True,
-        }
+        },
     )
     service_type_version: List[str] = field(
         default_factory=list,
@@ -45,19 +46,19 @@ class ServiceIdentification(DescriptionType):
             "name": "ServiceTypeVersion",
             "type": "Element",
             "min_occurs": 1,
-        }
+        },
     )
     fees: Optional[str] = field(
         default=None,
         metadata={
             "name": "Fees",
             "type": "Element",
-        }
+        },
     )
     access_constraints: List[str] = field(
         default_factory=list,
         metadata={
             "name": "AccessConstraints",
             "type": "Element",
-        }
+        },
     )

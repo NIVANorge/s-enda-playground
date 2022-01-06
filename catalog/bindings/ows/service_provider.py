@@ -21,6 +21,7 @@ class ServiceProvider:
         element should not be used to reference a web site of the
         service provider.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/2.0"
 
@@ -30,14 +31,14 @@ class ServiceProvider:
             "name": "ProviderName",
             "type": "Element",
             "required": True,
-        }
+        },
     )
     provider_site: Optional[OnlineResourceType] = field(
         default=None,
         metadata={
             "name": "ProviderSite",
             "type": "Element",
-        }
+        },
     )
     service_contact: Optional[ResponsiblePartySubsetType] = field(
         default=None,
@@ -45,5 +46,5 @@ class ServiceProvider:
             "name": "ServiceContact",
             "type": "Element",
             "required": True,
-        }
+        },
     )

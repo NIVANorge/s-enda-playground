@@ -14,6 +14,7 @@ class Geometry(AbstractGeometryType):
     of AbstractGeometryType and must be directly or indirectly in the
     substitution group of "_Geometry".
     """
+
     class Meta:
         name = "_Geometry"
         namespace = "http://www.opengis.net/gml"

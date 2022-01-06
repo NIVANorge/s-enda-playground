@@ -19,5 +19,6 @@ class MultiSurfaceCoverage(MultiSurfaceCoverageType):
     -       For gml:CompositeValue encodings the surfaces of the gml:MultiSurface are mapped to the members of the composite value in document order.
     -       For gml:File encodings the surfaces of the gml:MultiSurface are mapped to the records of the file in sequential order.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

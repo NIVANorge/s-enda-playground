@@ -11,6 +11,7 @@ __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
 @dataclass
 class DqConformanceResultType(AbstractDqResultType):
     """quantitative_result from Quality Procedures -  - renamed to remove implied use limitiation."""
+
     class Meta:
         name = "DQ_ConformanceResult_Type"
 
@@ -20,7 +21,7 @@ class DqConformanceResultType(AbstractDqResultType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     explanation: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -28,7 +29,7 @@ class DqConformanceResultType(AbstractDqResultType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     pass_value: Optional[BooleanPropertyType2] = field(
         default=None,
@@ -37,5 +38,5 @@ class DqConformanceResultType(AbstractDqResultType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )

@@ -19,7 +19,7 @@ class GenericNamePropertyType:
             "name": "ScopedName",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gco",
-        }
+        },
     )
     local_name: Optional[LocalName] = field(
         default=None,
@@ -27,7 +27,7 @@ class GenericNamePropertyType:
             "name": "LocalName",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gco",
-        }
+        },
     )
     abstract_generic_name: Optional[AbstractGenericName] = field(
         default=None,
@@ -35,7 +35,7 @@ class GenericNamePropertyType:
             "name": "AbstractGenericName",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gco",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -44,5 +44,5 @@ class GenericNamePropertyType:
             "type": "Attribute",
             "namespace": "http://www.isotc211.org/2005/gco",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )

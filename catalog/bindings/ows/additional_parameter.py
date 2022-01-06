@@ -15,6 +15,7 @@ class AdditionalParameter:
     :ivar value: Unordered list of one or more values of this
         AdditionalParameter.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/2.0"
 
@@ -24,7 +25,7 @@ class AdditionalParameter:
             "name": "Name",
             "type": "Element",
             "required": True,
-        }
+        },
     )
     value: List[object] = field(
         default_factory=list,
@@ -32,5 +33,5 @@ class AdditionalParameter:
             "name": "Value",
             "type": "Element",
             "min_occurs": 1,
-        }
+        },
     )

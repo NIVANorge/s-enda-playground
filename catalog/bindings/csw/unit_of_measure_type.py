@@ -20,10 +20,11 @@ class UnitOfMeasureType:
         abbreviation of the unit name. However, the "#" symbol may be
         optional, and still may be interpreted as a reference.
     """
+
     uom: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )

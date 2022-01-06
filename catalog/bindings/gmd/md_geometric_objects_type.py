@@ -2,7 +2,9 @@ from dataclasses import dataclass, field
 from typing import Optional
 from bindings.gmd.abstract_object_type import AbstractObjectType
 from bindings.gmd.integer_property_type import IntegerPropertyType
-from bindings.gmd.md_geometric_object_type_code_property_type import MdGeometricObjectTypeCodePropertyType
+from bindings.gmd.md_geometric_object_type_code_property_type import (
+    MdGeometricObjectTypeCodePropertyType,
+)
 
 __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
 
@@ -19,7 +21,7 @@ class MdGeometricObjectsType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     geometric_object_count: Optional[IntegerPropertyType] = field(
         default=None,
@@ -27,5 +29,5 @@ class MdGeometricObjectsType(AbstractObjectType):
             "name": "geometricObjectCount",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

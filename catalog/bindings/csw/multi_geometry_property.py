@@ -13,6 +13,7 @@ class MultiGeometryProperty(MultiGeometryPropertyType):
     by GML Application Schemas whenever a GML Feature has a property
     with a value that is substitutable for _GeometricAggregate.
     """
+
     class Meta:
         name = "multiGeometryProperty"
         namespace = "http://www.opengis.net/gml"

@@ -11,6 +11,7 @@ class CrsRef(CrspropertyType):
 
     This property element has been deprecated.
     """
+
     class Meta:
         name = "crsRef"
         namespace = "http://www.opengis.net/gml"

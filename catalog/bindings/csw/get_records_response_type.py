@@ -14,13 +14,14 @@ class GetRecordsResponseType:
     the SearchResults element. The RequestId is only included if the
     client specified it.
     """
+
     request_id: Optional[str] = field(
         default=None,
         metadata={
             "name": "RequestId",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     search_status: Optional[RequestStatusType] = field(
         default=None,
@@ -29,7 +30,7 @@ class GetRecordsResponseType:
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
             "required": True,
-        }
+        },
     )
     search_results: Optional[SearchResultsType] = field(
         default=None,
@@ -38,11 +39,11 @@ class GetRecordsResponseType:
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
             "required": True,
-        }
+        },
     )
     version: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

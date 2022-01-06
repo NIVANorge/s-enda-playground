@@ -27,7 +27,7 @@ class PassThroughOperationType(AbstractCoordinateOperationType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 1,
-        }
+        },
     )
     uses_operation: Optional["UsesOperation"] = field(
         default=None,
@@ -35,7 +35,7 @@ class PassThroughOperationType(AbstractCoordinateOperationType):
             "name": "usesOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     uses_single_operation: Optional["UsesSingleOperation"] = field(
         default=None,
@@ -43,7 +43,7 @@ class PassThroughOperationType(AbstractCoordinateOperationType):
             "name": "usesSingleOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     coord_operation: Optional["CoordOperation"] = field(
         default=None,
@@ -51,14 +51,14 @@ class PassThroughOperationType(AbstractCoordinateOperationType):
             "name": "coordOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     aggregation_type: Optional[AggregationType] = field(
         default=None,
         metadata={
             "name": "aggregationType",
             "type": "Attribute",
-        }
+        },
     )
 
 
@@ -73,6 +73,7 @@ class PassThroughOperation(PassThroughOperationType):
     AggregationAttributeGroup should be used to specify that the
     modifiedCoordinate elements are ordered.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"
 
@@ -84,13 +85,14 @@ class CoordinateOperationPropertyType:
     roles to a coordinate operation, either referencing or containing the
     definition of that coordinate operation.
     """
+
     concatenated_operation: Optional["ConcatenatedOperation"] = field(
         default=None,
         metadata={
             "name": "ConcatenatedOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     pass_through_operation: Optional[PassThroughOperation] = field(
         default=None,
@@ -98,7 +100,7 @@ class CoordinateOperationPropertyType:
             "name": "PassThroughOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     transformation: Optional[Transformation] = field(
         default=None,
@@ -106,7 +108,7 @@ class CoordinateOperationPropertyType:
             "name": "Transformation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_general_transformation: Optional[AbstractGeneralTransformation] = field(
         default=None,
@@ -114,7 +116,7 @@ class CoordinateOperationPropertyType:
             "name": "AbstractGeneralTransformation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     conversion: Optional[Conversion1] = field(
         default=None,
@@ -122,7 +124,7 @@ class CoordinateOperationPropertyType:
             "name": "Conversion",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_general_conversion: Optional[AbstractGeneralConversion] = field(
         default=None,
@@ -130,7 +132,7 @@ class CoordinateOperationPropertyType:
             "name": "AbstractGeneralConversion",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_operation: Optional[AbstractOperation] = field(
         default=None,
@@ -138,7 +140,7 @@ class CoordinateOperationPropertyType:
             "name": "AbstractOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_single_operation: Optional[AbstractSingleOperation] = field(
         default=None,
@@ -146,7 +148,7 @@ class CoordinateOperationPropertyType:
             "name": "AbstractSingleOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_coordinate_operation: Optional[AbstractCoordinateOperation] = field(
         default=None,
@@ -154,7 +156,7 @@ class CoordinateOperationPropertyType:
             "name": "AbstractCoordinateOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -162,49 +164,49 @@ class CoordinateOperationPropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -212,7 +214,7 @@ class CoordinateOperationPropertyType:
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -220,7 +222,7 @@ class CoordinateOperationPropertyType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
 
 
@@ -229,6 +231,7 @@ class CoordOperation(CoordinateOperationPropertyType):
     """
     gml:coordOperation is an association role to a coordinate operation.
     """
+
     class Meta:
         name = "coordOperation"
         namespace = "http://www.opengis.net/gml"
@@ -239,6 +242,7 @@ class UsesOperation(CoordinateOperationPropertyType):
     """
     gml:usesOperation is deprecated, gml:coordOperation shall be used instead.
     """
+
     class Meta:
         name = "usesOperation"
         namespace = "http://www.opengis.net/gml"
@@ -270,13 +274,14 @@ class ConcatenatedOperationType(AbstractCoordinateOperationType):
     operation. The AggregationAttributeGroup should be used to specify
     that the coordOperation associations are ordered.
     """
+
     uses_operation: List[UsesOperation] = field(
         default_factory=list,
         metadata={
             "name": "usesOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     uses_single_operation: List[UsesSingleOperation] = field(
         default_factory=list,
@@ -284,7 +289,7 @@ class ConcatenatedOperationType(AbstractCoordinateOperationType):
             "name": "usesSingleOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     coord_operation: List[CoordOperation] = field(
         default_factory=list,
@@ -292,14 +297,14 @@ class ConcatenatedOperationType(AbstractCoordinateOperationType):
             "name": "coordOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     aggregation_type: Optional[AggregationType] = field(
         default=None,
         metadata={
             "name": "aggregationType",
             "type": "Attribute",
-        }
+        },
     )
 
 

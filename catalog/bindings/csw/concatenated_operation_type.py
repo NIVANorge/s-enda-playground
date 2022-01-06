@@ -24,6 +24,7 @@ class ConcatenatedOperationType(AbstractCoordinateOperationType):
         two or more single operations used by this concatenated
         operation.
     """
+
     uses_single_operation: List[UsesSingleOperation] = field(
         default_factory=list,
         metadata={
@@ -31,5 +32,5 @@ class ConcatenatedOperationType(AbstractCoordinateOperationType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 2,
-        }
+        },
     )

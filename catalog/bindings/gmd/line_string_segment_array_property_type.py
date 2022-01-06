@@ -11,11 +11,12 @@ class LineStringSegmentArrayPropertyType:
     gml:LineStringSegmentArrayPropertyType provides a container for line
     strings.
     """
+
     line_string_segment: List[LineStringSegment] = field(
         default_factory=list,
         metadata={
             "name": "LineStringSegment",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

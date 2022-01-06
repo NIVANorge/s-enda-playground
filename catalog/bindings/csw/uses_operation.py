@@ -9,6 +9,7 @@ class UsesOperation(OperationRefType):
     """
     Association to the operation applied to the specified ordinates.
     """
+
     class Meta:
         name = "usesOperation"
         namespace = "http://www.opengis.net/gml"

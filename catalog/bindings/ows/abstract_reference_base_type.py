@@ -30,13 +30,14 @@ class AbstractReferenceBaseType:
     :ivar actuate: Although allowed, this attribute is not expected to
         be useful in this application of xlink:simpleAttrs.
     """
+
     type: str = field(
         init=False,
         default="simple",
         metadata={
             "type": "Attribute",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
@@ -44,7 +45,7 @@ class AbstractReferenceBaseType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "required": True,
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
@@ -52,7 +53,7 @@ class AbstractReferenceBaseType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
@@ -60,26 +61,26 @@ class AbstractReferenceBaseType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )

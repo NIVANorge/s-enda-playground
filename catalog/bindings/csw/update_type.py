@@ -17,12 +17,13 @@ class UpdateType:
     statement  is determined by the Constraint element. The 'handle' is
     a local identifier for the action.
     """
+
     other_element: Optional[object] = field(
         default=None,
         metadata={
             "type": "Wildcard",
             "namespace": "##other",
-        }
+        },
     )
     record_property: List[RecordProperty] = field(
         default_factory=list,
@@ -30,7 +31,7 @@ class UpdateType:
             "name": "RecordProperty",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     constraint: Optional[Constraint] = field(
         default=None,
@@ -38,11 +39,11 @@ class UpdateType:
             "name": "Constraint",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     handle: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

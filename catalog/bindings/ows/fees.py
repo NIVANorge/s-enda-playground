@@ -11,6 +11,7 @@ class Fees:
     The reserved value NONE (case insensitive) shall be used to mean no
     fees or terms.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/2.0"
 
@@ -18,5 +19,5 @@ class Fees:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )

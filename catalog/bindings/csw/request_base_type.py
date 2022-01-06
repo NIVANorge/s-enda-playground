@@ -9,13 +9,14 @@ class RequestBaseType:
 
     The attributes identify the relevant service type and version.
     """
+
     service: str = field(
         init=False,
         default="CSW",
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
     version: str = field(
         init=False,
@@ -23,5 +24,5 @@ class RequestBaseType:
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )

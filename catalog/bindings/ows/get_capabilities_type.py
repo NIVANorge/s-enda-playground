@@ -32,13 +32,14 @@ class GetCapabilitiesType:
     :ivar update_sequence: When omitted or not supported by server,
         server shall return latest complete service metadata document.
     """
+
     accept_versions: Optional[AcceptVersionsType] = field(
         default=None,
         metadata={
             "name": "AcceptVersions",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     sections: Optional[SectionsType] = field(
         default=None,
@@ -46,7 +47,7 @@ class GetCapabilitiesType:
             "name": "Sections",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     accept_formats: Optional[AcceptFormatsType] = field(
         default=None,
@@ -54,7 +55,7 @@ class GetCapabilitiesType:
             "name": "AcceptFormats",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     accept_languages: Optional["GetCapabilitiesType.AcceptLanguages"] = field(
         default=None,
@@ -62,14 +63,14 @@ class GetCapabilitiesType:
             "name": "AcceptLanguages",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/2.0",
-        }
+        },
     )
     update_sequence: Optional[str] = field(
         default=None,
         metadata={
             "name": "updateSequence",
             "type": "Attribute",
-        }
+        },
     )
 
     @dataclass
@@ -81,5 +82,5 @@ class GetCapabilitiesType:
                 "type": "Element",
                 "namespace": "http://www.opengis.net/ows/2.0",
                 "min_occurs": 1,
-            }
+            },
         )

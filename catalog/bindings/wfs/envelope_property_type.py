@@ -11,5 +11,5 @@ class EnvelopePropertyType:
         metadata={
             "type": "Wildcard",
             "namespace": "##other",
-        }
+        },
     )

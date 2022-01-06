@@ -22,5 +22,6 @@ class Grid(GridType):
     the diagonally opposing corners of a “rectangular” region of
     interest.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

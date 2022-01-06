@@ -49,13 +49,14 @@ class TimeOrdinalEraType(DefinitionType):
         elsewhere, then it may be useful for a child (member) era to
         carry an explicit pointer back to its parent (group) Era.
     """
+
     related_time: List[RelatedTimeType] = field(
         default_factory=list,
         metadata={
             "name": "relatedTime",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     start: Optional[TimeNodePropertyType] = field(
         default=None,
@@ -63,7 +64,7 @@ class TimeOrdinalEraType(DefinitionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     end: Optional[TimeNodePropertyType] = field(
         default=None,
@@ -71,28 +72,28 @@ class TimeOrdinalEraType(DefinitionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     extent: Optional[TimePeriodPropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     member: List["TimeOrdinalEraPropertyType"] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     group: Optional[ReferenceType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
 
 
@@ -110,7 +111,7 @@ class TimeOrdinalEraPropertyType:
             "name": "TimeOrdinalEra",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     type: TypeType = field(
         init=False,
@@ -118,14 +119,14 @@ class TimeOrdinalEraPropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
@@ -133,7 +134,7 @@ class TimeOrdinalEraPropertyType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
@@ -141,28 +142,28 @@ class TimeOrdinalEraPropertyType:
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
             "min_length": 1,
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateType] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -170,5 +171,5 @@ class TimeOrdinalEraPropertyType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

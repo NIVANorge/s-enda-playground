@@ -17,6 +17,7 @@ class GeocentricCrstype(AbstractReferenceSystemType):
     spatial view, which obviates the need to model the earth's
     curvature.
     """
+
     class Meta:
         name = "GeocentricCRSType"
 
@@ -26,7 +27,7 @@ class GeocentricCrstype(AbstractReferenceSystemType):
             "name": "usesCartesianCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     uses_spherical_cs: Optional[UsesSphericalCs] = field(
         default=None,
@@ -34,7 +35,7 @@ class GeocentricCrstype(AbstractReferenceSystemType):
             "name": "usesSphericalCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     uses_geodetic_datum: Optional[UsesGeodeticDatum] = field(
         default=None,
@@ -43,5 +44,5 @@ class GeocentricCrstype(AbstractReferenceSystemType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

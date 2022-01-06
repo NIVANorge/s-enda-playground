@@ -11,6 +11,7 @@ class RingPropertyType:
     A property with the content model of gml:RingPropertyType encapsulates a
     ring to represent a component of a surface boundary.
     """
+
     ring: Optional[Ring] = field(
         default=None,
         metadata={
@@ -18,5 +19,5 @@ class RingPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

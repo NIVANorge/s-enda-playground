@@ -12,6 +12,7 @@ class AllowedValues:
     For numeric quantities, signed values should be ordered from
     negative infinity to positive infinity.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/1.1"
 
@@ -20,12 +21,12 @@ class AllowedValues:
         metadata={
             "name": "Value",
             "type": "Element",
-        }
+        },
     )
     range: List[Range] = field(
         default_factory=list,
         metadata={
             "name": "Range",
             "type": "Element",
-        }
+        },
     )

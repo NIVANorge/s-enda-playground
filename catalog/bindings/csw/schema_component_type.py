@@ -13,20 +13,21 @@ class SchemaComponentType:
     If the component is a schema fragment its parent MUST be referenced
     (parentSchema).
     """
+
     target_namespace: Optional[str] = field(
         default=None,
         metadata={
             "name": "targetNamespace",
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
     parent_schema: Optional[str] = field(
         default=None,
         metadata={
             "name": "parentSchema",
             "type": "Attribute",
-        }
+        },
     )
     schema_language: Optional[str] = field(
         default=None,
@@ -34,7 +35,7 @@ class SchemaComponentType:
             "name": "schemaLanguage",
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
     content: List[object] = field(
         default_factory=list,
@@ -42,5 +43,5 @@ class SchemaComponentType:
             "type": "Wildcard",
             "namespace": "##any",
             "mixed": True,
-        }
+        },
     )

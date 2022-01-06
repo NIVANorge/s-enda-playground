@@ -22,5 +22,6 @@ class AbstractCoordinateOperation(AbstractCoordinateOperationType):
     coordinateOperationAccuracy property elements provide estimates of
     the impact of this coordinate operation on point position accuracy.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

@@ -23,5 +23,6 @@ class ConventionalUnit(ConventionalUnitType):
     record how this unit may be derived from other (“more primitive”)
     units.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

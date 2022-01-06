@@ -11,6 +11,7 @@ class LocationReference(ReferenceType):
     the text value referenced by the xlink:href attribute describes the
     location of the feature.
     """
+
     class Meta:
         name = "locationReference"
         namespace = "http://www.opengis.net/gml"

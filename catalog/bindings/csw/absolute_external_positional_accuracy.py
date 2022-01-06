@@ -1,5 +1,7 @@
 from dataclasses import dataclass
-from bindings.csw.absolute_external_positional_accuracy_type import AbsoluteExternalPositionalAccuracyType
+from bindings.csw.absolute_external_positional_accuracy_type import (
+    AbsoluteExternalPositionalAccuracyType,
+)
 
 __NAMESPACE__ = "http://www.opengis.net/gml"
 

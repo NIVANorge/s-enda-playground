@@ -21,20 +21,21 @@ class PrimeMeridianType(PrimeMeridianBaseType):
         including source information.
     :ivar greenwich_longitude:
     """
+
     meridian_id: List[MeridianId] = field(
         default_factory=list,
         metadata={
             "name": "meridianID",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     remarks: Optional[Remarks] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     greenwich_longitude: Optional[GreenwichLongitude] = field(
         default=None,
@@ -43,5 +44,5 @@ class PrimeMeridianType(PrimeMeridianBaseType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

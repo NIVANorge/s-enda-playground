@@ -19,6 +19,7 @@ class VerticalCrstype(AbstractReferenceSystemType):
     inseparable part of a 3D coordinate tuple defined in a geographic 3D
     coordinate reference system.
     """
+
     class Meta:
         name = "VerticalCRSType"
 
@@ -29,7 +30,7 @@ class VerticalCrstype(AbstractReferenceSystemType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     uses_vertical_datum: Optional[UsesVerticalDatum] = field(
         default=None,
@@ -38,5 +39,5 @@ class VerticalCrstype(AbstractReferenceSystemType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

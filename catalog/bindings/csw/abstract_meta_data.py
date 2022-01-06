@@ -12,5 +12,6 @@ class AbstractMetaData:
     Specification, can define concrete elements in the AbstractMetaData
     substitution group.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows"

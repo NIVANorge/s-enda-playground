@@ -11,6 +11,7 @@ class AbstractStrictAssociationRole(AssociationRoleType):
     constraint to limit the property to act in either inline or by-reference
     mode, but not both.
     """
+
     class Meta:
         name = "abstractStrictAssociationRole"
         namespace = "http://www.opengis.net/gml"

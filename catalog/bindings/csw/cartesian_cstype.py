@@ -14,5 +14,6 @@ class CartesianCstype(AbstractCoordinateSystemType):
     case, all axes shall have the same length unit of measure. A
     CartesianCS shall have one, two, or three usesAxis associations.
     """
+
     class Meta:
         name = "CartesianCSType"

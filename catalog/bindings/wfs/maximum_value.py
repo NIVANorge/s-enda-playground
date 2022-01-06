@@ -8,6 +8,7 @@ class MaximumValue:
     """
     Maximum value of this numeric parameter.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/1.1"
 
@@ -15,5 +16,5 @@ class MaximumValue:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )

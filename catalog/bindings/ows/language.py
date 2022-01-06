@@ -13,6 +13,7 @@ class Language:
     the RFC 4646 codes, the server shall support the single special
     value "*" which is used to indicate "any language".
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/2.0"
 
@@ -20,5 +21,5 @@ class Language:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )

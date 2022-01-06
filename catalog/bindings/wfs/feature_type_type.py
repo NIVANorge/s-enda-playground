@@ -21,7 +21,7 @@ class FeatureTypeType:
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
             "required": True,
-        }
+        },
     )
     title: List[Title2] = field(
         default_factory=list,
@@ -29,7 +29,7 @@ class FeatureTypeType:
             "name": "Title",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     abstract: List[Abstract2] = field(
         default_factory=list,
@@ -37,7 +37,7 @@ class FeatureTypeType:
             "name": "Abstract",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     keywords: List[Keywords] = field(
         default_factory=list,
@@ -45,7 +45,7 @@ class FeatureTypeType:
             "name": "Keywords",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )
     default_crs: Optional[str] = field(
         default=None,
@@ -53,7 +53,7 @@ class FeatureTypeType:
             "name": "DefaultCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     other_crs: List[str] = field(
         default_factory=list,
@@ -61,7 +61,7 @@ class FeatureTypeType:
             "name": "OtherCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     no_crs: Optional[object] = field(
         default=None,
@@ -69,7 +69,7 @@ class FeatureTypeType:
             "name": "NoCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     output_formats: Optional[OutputFormatListType] = field(
         default=None,
@@ -77,7 +77,7 @@ class FeatureTypeType:
             "name": "OutputFormats",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     wgs84_bounding_box: List[Wgs84BoundingBox] = field(
         default_factory=list,
@@ -85,7 +85,7 @@ class FeatureTypeType:
             "name": "WGS84BoundingBox",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )
     metadata_url: List[MetadataUrltype] = field(
         default_factory=list,
@@ -93,7 +93,7 @@ class FeatureTypeType:
             "name": "MetadataURL",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )
     extended_description: Optional[ExtendedDescriptionType] = field(
         default=None,
@@ -101,5 +101,5 @@ class FeatureTypeType:
             "name": "ExtendedDescription",
             "type": "Element",
             "namespace": "http://www.opengis.net/wfs/2.0",
-        }
+        },
     )

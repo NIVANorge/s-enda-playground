@@ -10,12 +10,12 @@ class DistanceType:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )
     units: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )

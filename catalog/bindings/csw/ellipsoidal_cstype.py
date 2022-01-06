@@ -12,5 +12,6 @@ class EllipsoidalCstype(AbstractCoordinateSystemType):
 
     An EllipsoidalCS shall have two or three usesAxis associations.
     """
+
     class Meta:
         name = "EllipsoidalCSType"

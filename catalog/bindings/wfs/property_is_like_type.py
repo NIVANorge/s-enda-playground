@@ -17,7 +17,7 @@ class PropertyIsLikeType(ComparisonOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "max_occurs": 2,
-        }
+        },
     )
     function: List[Function] = field(
         default_factory=list,
@@ -26,7 +26,7 @@ class PropertyIsLikeType(ComparisonOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "max_occurs": 2,
-        }
+        },
     )
     value_reference: List[str] = field(
         default_factory=list,
@@ -35,7 +35,7 @@ class PropertyIsLikeType(ComparisonOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "max_occurs": 2,
-        }
+        },
     )
     expression: List[Expression] = field(
         default_factory=list,
@@ -43,7 +43,7 @@ class PropertyIsLikeType(ComparisonOpsType):
             "type": "Element",
             "namespace": "http://www.opengis.net/fes/2.0",
             "max_occurs": 2,
-        }
+        },
     )
     wild_card: Optional[str] = field(
         default=None,
@@ -51,7 +51,7 @@ class PropertyIsLikeType(ComparisonOpsType):
             "name": "wildCard",
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
     single_char: Optional[str] = field(
         default=None,
@@ -59,7 +59,7 @@ class PropertyIsLikeType(ComparisonOpsType):
             "name": "singleChar",
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
     escape_char: Optional[str] = field(
         default=None,
@@ -67,12 +67,12 @@ class PropertyIsLikeType(ComparisonOpsType):
             "name": "escapeChar",
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
     match_case: bool = field(
         default=True,
         metadata={
             "name": "matchCase",
             "type": "Attribute",
-        }
+        },
     )

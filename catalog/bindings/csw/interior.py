@@ -11,6 +11,7 @@ class Interior(AbstractRingPropertyType):
     The "interior" rings seperate the surface / surface patch from the
     area enclosed by the rings.
     """
+
     class Meta:
         name = "interior"
         namespace = "http://www.opengis.net/gml"

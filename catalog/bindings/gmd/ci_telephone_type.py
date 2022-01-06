@@ -12,6 +12,7 @@ class CiTelephoneType(AbstractObjectType):
     Telephone numbers for contacting the responsible individual or
     organisation.
     """
+
     class Meta:
         name = "CI_Telephone_Type"
 
@@ -20,12 +21,12 @@ class CiTelephoneType(AbstractObjectType):
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     facsimile: List[CharacterStringPropertyType] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

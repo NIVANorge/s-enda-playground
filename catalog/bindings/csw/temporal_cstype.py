@@ -12,5 +12,6 @@ class TemporalCstype(AbstractCoordinateSystemType):
 
     A TemporalCS shall have one usesAxis association.
     """
+
     class Meta:
         name = "TemporalCSType"

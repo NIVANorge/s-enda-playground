@@ -10,6 +10,7 @@ class Origin:
     """
     gml:origin is the date and time origin of this temporal datum.
     """
+
     class Meta:
         name = "origin"
         namespace = "http://www.opengis.net/gml"
@@ -18,5 +19,5 @@ class Origin:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )

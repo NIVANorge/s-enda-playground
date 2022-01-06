@@ -10,6 +10,7 @@ class SphericalCs2(SphericalCspropertyType):
     gml:sphericalCS is an association role to the spherical coordinate system
     used by this CRS.
     """
+
     class Meta:
         name = "sphericalCS"
         namespace = "http://www.opengis.net/gml"

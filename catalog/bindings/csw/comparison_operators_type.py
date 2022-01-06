@@ -14,5 +14,5 @@ class ComparisonOperatorsType:
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "min_occurs": 1,
-        }
+        },
     )

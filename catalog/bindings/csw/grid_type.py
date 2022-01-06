@@ -13,13 +13,14 @@ class GridType(AbstractGeometryType):
     equally spaced parallel lines in which the members of each set intersect
     the members of the other sets at right angles.
     """
+
     limits: Optional[GridLimitsType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     axis_name: List[str] = field(
         default_factory=list,
@@ -28,12 +29,12 @@ class GridType(AbstractGeometryType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "min_occurs": 1,
-        }
+        },
     )
     dimension: Optional[int] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )

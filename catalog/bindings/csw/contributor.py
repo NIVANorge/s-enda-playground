@@ -13,6 +13,7 @@ class Contributor(SimpleLiteral):
     service. Typically, the name of a Contributor should be used to
     indicate the entity.
     """
+
     class Meta:
         name = "contributor"
         namespace = "http://purl.org/dc/elements/1.1/"

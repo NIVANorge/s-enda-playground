@@ -5,7 +5,9 @@ from bindings.gmd.abstract_general_parameter_value_property_type import (
     ParameterValue2,
     UsesValue,
 )
-from bindings.gmd.abstract_general_transformation_type import AbstractGeneralTransformationType
+from bindings.gmd.abstract_general_transformation_type import (
+    AbstractGeneralTransformationType,
+)
 from bindings.gmd.method import Method
 from bindings.gmd.uses_method import UsesMethod
 
@@ -20,14 +22,14 @@ class TransformationType(AbstractGeneralTransformationType):
             "name": "usesMethod",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     method: Optional[Method] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     includes_value: List[IncludesValue] = field(
         default_factory=list,
@@ -35,7 +37,7 @@ class TransformationType(AbstractGeneralTransformationType):
             "name": "includesValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     uses_value: List[UsesValue] = field(
         default_factory=list,
@@ -43,7 +45,7 @@ class TransformationType(AbstractGeneralTransformationType):
             "name": "usesValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     parameter_value: List[ParameterValue2] = field(
         default_factory=list,
@@ -51,5 +53,5 @@ class TransformationType(AbstractGeneralTransformationType):
             "name": "parameterValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

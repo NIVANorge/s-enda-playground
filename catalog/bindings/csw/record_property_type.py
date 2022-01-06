@@ -12,6 +12,7 @@ class RecordPropertyType:
     :ivar value: The Value element contains the replacement value for
         the named property.
     """
+
     name: Optional[str] = field(
         default=None,
         metadata={
@@ -19,7 +20,7 @@ class RecordPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
             "required": True,
-        }
+        },
     )
     value: Optional[object] = field(
         default=None,
@@ -27,5 +28,5 @@ class RecordPropertyType:
             "name": "Value",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )

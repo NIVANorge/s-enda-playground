@@ -13,17 +13,18 @@ class MeasureOrNullListType:
     Measure) attribute is a reference to a Reference System for the
     amount, either a ratio or position scale.
     """
+
     value: List[Union[str, NullEnumerationValue]] = field(
         default_factory=list,
         metadata={
             "pattern": r"other:\w{2,}",
             "tokens": True,
-        }
+        },
     )
     uom: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "required": True,
-        }
+        },
     )

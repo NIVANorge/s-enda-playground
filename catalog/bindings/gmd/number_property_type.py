@@ -17,7 +17,7 @@ class NumberPropertyType:
             "name": "Real",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gco",
-        }
+        },
     )
     decimal: Optional[Decimal] = field(
         default=None,
@@ -25,7 +25,7 @@ class NumberPropertyType:
             "name": "Decimal",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gco",
-        }
+        },
     )
     integer: Optional[int] = field(
         default=None,
@@ -33,7 +33,7 @@ class NumberPropertyType:
             "name": "Integer",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gco",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -42,5 +42,5 @@ class NumberPropertyType:
             "type": "Attribute",
             "namespace": "http://www.isotc211.org/2005/gco",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )

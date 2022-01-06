@@ -18,13 +18,14 @@ class ResponsiblePartySubsetType:
     to optional, since no clear use of this information is known in the
     ServiceProvider section.
     """
+
     individual_name: Optional[str] = field(
         default=None,
         metadata={
             "name": "IndividualName",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )
     position_name: Optional[str] = field(
         default=None,
@@ -32,7 +33,7 @@ class ResponsiblePartySubsetType:
             "name": "PositionName",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )
     contact_info: Optional[ContactInfo] = field(
         default=None,
@@ -40,7 +41,7 @@ class ResponsiblePartySubsetType:
             "name": "ContactInfo",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )
     role: Optional[Role] = field(
         default=None,
@@ -48,5 +49,5 @@ class ResponsiblePartySubsetType:
             "name": "Role",
             "type": "Element",
             "namespace": "http://www.opengis.net/ows/1.1",
-        }
+        },
     )

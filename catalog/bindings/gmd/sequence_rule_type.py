@@ -15,17 +15,18 @@ class SequenceRuleType:
     names are defined in ISO 19123. If no rule name is specified the
     default is “Linear”.
     """
+
     value: Optional[SequenceRuleEnumeration] = field(
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )
     order: Optional[IncrementOrder] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     axis_order: List[str] = field(
         default_factory=list,
@@ -34,5 +35,5 @@ class SequenceRuleType:
             "type": "Attribute",
             "pattern": r"[\+\-][1-9][0-9]*",
             "tokens": True,
-        }
+        },
     )

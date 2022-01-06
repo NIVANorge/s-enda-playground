@@ -13,5 +13,6 @@ class QuantityList(MeasureOrNullListType):
     identifies the definition of the scale or units by which all the
     amounts in the list must be multiplied.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

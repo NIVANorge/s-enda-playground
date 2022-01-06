@@ -22,18 +22,19 @@ class OperationParameterType(OperationParameterBaseType):
     :ivar remarks: Comments on or information about this operation
         parameter, including source information.
     """
+
     parameter_id: List[ParameterId] = field(
         default_factory=list,
         metadata={
             "name": "parameterID",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     remarks: Optional[Remarks] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

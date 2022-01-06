@@ -13,6 +13,7 @@ class MultiSurfaceProperty(MultiSurfacePropertyType):
     by GML Application Schemas whenever a GML feature has a property
     with a value that is substitutable for MultiSurface.
     """
+
     class Meta:
         name = "multiSurfaceProperty"
         namespace = "http://www.opengis.net/gml"

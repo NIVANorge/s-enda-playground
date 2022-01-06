@@ -12,7 +12,7 @@ class RangeOfValuesType:
             "name": "MinValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )
     max_value: Optional[object] = field(
         default=None,
@@ -20,5 +20,5 @@ class RangeOfValuesType:
             "name": "MaxValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/cat/csw/2.0.2",
-        }
+        },
     )

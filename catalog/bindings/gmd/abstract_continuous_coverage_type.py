@@ -14,5 +14,5 @@ class AbstractContinuousCoverageType(AbstractCoverageType):
             "name": "coverageFunction",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

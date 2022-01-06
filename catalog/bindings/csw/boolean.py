@@ -10,6 +10,7 @@ class Boolean:
 
     An instance may take the values {true, false, 1, 0}.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"
 
@@ -17,5 +18,5 @@ class Boolean:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )

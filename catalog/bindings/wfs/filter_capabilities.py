@@ -23,47 +23,47 @@ class FilterCapabilities:
             "name": "Conformance",
             "type": "Element",
             "required": True,
-        }
+        },
     )
     id_capabilities: Optional[IdCapabilitiesType] = field(
         default=None,
         metadata={
             "name": "Id_Capabilities",
             "type": "Element",
-        }
+        },
     )
     scalar_capabilities: Optional[ScalarCapabilitiesType] = field(
         default=None,
         metadata={
             "name": "Scalar_Capabilities",
             "type": "Element",
-        }
+        },
     )
     spatial_capabilities: Optional[SpatialCapabilitiesType] = field(
         default=None,
         metadata={
             "name": "Spatial_Capabilities",
             "type": "Element",
-        }
+        },
     )
     temporal_capabilities: Optional[TemporalCapabilitiesType] = field(
         default=None,
         metadata={
             "name": "Temporal_Capabilities",
             "type": "Element",
-        }
+        },
     )
     functions: Optional[AvailableFunctionsType] = field(
         default=None,
         metadata={
             "name": "Functions",
             "type": "Element",
-        }
+        },
     )
     extended_capabilities: Optional[ExtendedCapabilitiesType] = field(
         default=None,
         metadata={
             "name": "Extended_Capabilities",
             "type": "Element",
-        }
+        },
     )

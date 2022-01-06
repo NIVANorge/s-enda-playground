@@ -8,6 +8,7 @@ class SurfaceInterpolationType(Enum):
     gml:SurfaceInterpolationType is a list of codes that may be used to
     identify the interpolation mechanisms specified by an application schema.
     """
+
     NONE = "none"
     PLANAR = "planar"
     SPHERICAL = "spherical"

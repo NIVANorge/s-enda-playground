@@ -1,5 +1,7 @@
 from dataclasses import dataclass
-from bindings.gmd.dq_relative_internal_positional_accuracy_type import DqRelativeInternalPositionalAccuracyType
+from bindings.gmd.dq_relative_internal_positional_accuracy_type import (
+    DqRelativeInternalPositionalAccuracyType,
+)
 
 __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
 

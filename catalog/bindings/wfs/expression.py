@@ -15,5 +15,5 @@ class Expression:
         metadata={
             "type": "Wildcard",
             "namespace": "##any",
-        }
+        },
     )

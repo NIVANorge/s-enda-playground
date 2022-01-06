@@ -60,7 +60,7 @@ class DomainSetType:
             "name": "RectifiedGrid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     grid: Optional[Grid] = field(
         default=None,
@@ -68,7 +68,7 @@ class DomainSetType:
             "name": "Grid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_implicit_geometry: Optional[AbstractImplicitGeometry] = field(
         default=None,
@@ -76,7 +76,7 @@ class DomainSetType:
             "name": "AbstractImplicitGeometry",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     geometric_complex: Optional[GeometricComplex] = field(
         default=None,
@@ -84,7 +84,7 @@ class DomainSetType:
             "name": "GeometricComplex",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_solid: Optional[MultiSolid] = field(
         default=None,
@@ -92,7 +92,7 @@ class DomainSetType:
             "name": "MultiSolid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_surface: Optional[MultiSurface] = field(
         default=None,
@@ -100,7 +100,7 @@ class DomainSetType:
             "name": "MultiSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_curve: Optional[MultiCurve] = field(
         default=None,
@@ -108,7 +108,7 @@ class DomainSetType:
             "name": "MultiCurve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_point: Optional[MultiPoint] = field(
         default=None,
@@ -116,7 +116,7 @@ class DomainSetType:
             "name": "MultiPoint",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_geometry: Optional[MultiGeometry] = field(
         default=None,
@@ -124,7 +124,7 @@ class DomainSetType:
             "name": "MultiGeometry",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_geometric_aggregate: Optional[AbstractGeometricAggregate] = field(
         default=None,
@@ -132,7 +132,7 @@ class DomainSetType:
             "name": "AbstractGeometricAggregate",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     composite_solid: Optional[CompositeSolid] = field(
         default=None,
@@ -140,7 +140,7 @@ class DomainSetType:
             "name": "CompositeSolid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     solid: Optional[Solid] = field(
         default=None,
@@ -148,7 +148,7 @@ class DomainSetType:
             "name": "Solid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_solid: Optional[AbstractSolid] = field(
         default=None,
@@ -156,7 +156,7 @@ class DomainSetType:
             "name": "AbstractSolid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     composite_surface: Optional[CompositeSurface] = field(
         default=None,
@@ -164,7 +164,7 @@ class DomainSetType:
             "name": "CompositeSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     orientable_surface: Optional[OrientableSurface] = field(
         default=None,
@@ -172,7 +172,7 @@ class DomainSetType:
             "name": "OrientableSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     tin: Optional[Tin] = field(
         default=None,
@@ -180,7 +180,7 @@ class DomainSetType:
             "name": "Tin",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     triangulated_surface: Optional[TriangulatedSurface] = field(
         default=None,
@@ -188,7 +188,7 @@ class DomainSetType:
             "name": "TriangulatedSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     polyhedral_surface: Optional[PolyhedralSurface] = field(
         default=None,
@@ -196,7 +196,7 @@ class DomainSetType:
             "name": "PolyhedralSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     surface: Optional[Surface] = field(
         default=None,
@@ -204,7 +204,7 @@ class DomainSetType:
             "name": "Surface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     polygon: Optional[Polygon] = field(
         default=None,
@@ -212,7 +212,7 @@ class DomainSetType:
             "name": "Polygon",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_surface: Optional[AbstractSurface] = field(
         default=None,
@@ -220,7 +220,7 @@ class DomainSetType:
             "name": "AbstractSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     composite_curve: Optional[CompositeCurve] = field(
         default=None,
@@ -228,7 +228,7 @@ class DomainSetType:
             "name": "CompositeCurve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     orientable_curve: Optional[OrientableCurve] = field(
         default=None,
@@ -236,7 +236,7 @@ class DomainSetType:
             "name": "OrientableCurve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     curve: Optional[Curve] = field(
         default=None,
@@ -244,7 +244,7 @@ class DomainSetType:
             "name": "Curve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     line_string: Optional[LineString] = field(
         default=None,
@@ -252,7 +252,7 @@ class DomainSetType:
             "name": "LineString",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_curve: Optional[AbstractCurve] = field(
         default=None,
@@ -260,7 +260,7 @@ class DomainSetType:
             "name": "AbstractCurve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     point: Optional[Point] = field(
         default=None,
@@ -268,7 +268,7 @@ class DomainSetType:
             "name": "Point",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_geometric_primitive: Optional[AbstractGeometricPrimitive] = field(
         default=None,
@@ -276,7 +276,7 @@ class DomainSetType:
             "name": "AbstractGeometricPrimitive",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_geometry: Optional[AbstractGeometry] = field(
         default=None,
@@ -284,7 +284,7 @@ class DomainSetType:
             "name": "AbstractGeometry",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_topology_complex: Optional[TimeTopologyComplex] = field(
         default=None,
@@ -292,7 +292,7 @@ class DomainSetType:
             "name": "TimeTopologyComplex",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_time_complex: Optional[AbstractTimeComplex] = field(
         default=None,
@@ -300,7 +300,7 @@ class DomainSetType:
             "name": "AbstractTimeComplex",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_edge: Optional[TimeEdge] = field(
         default=None,
@@ -308,7 +308,7 @@ class DomainSetType:
             "name": "TimeEdge",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_node: Optional[TimeNode] = field(
         default=None,
@@ -316,7 +316,7 @@ class DomainSetType:
             "name": "TimeNode",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_time_topology_primitive: Optional[AbstractTimeTopologyPrimitive] = field(
         default=None,
@@ -324,7 +324,7 @@ class DomainSetType:
             "name": "AbstractTimeTopologyPrimitive",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_period: Optional[TimePeriod] = field(
         default=None,
@@ -332,7 +332,7 @@ class DomainSetType:
             "name": "TimePeriod",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_instant: Optional[TimeInstant] = field(
         default=None,
@@ -340,7 +340,7 @@ class DomainSetType:
             "name": "TimeInstant",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_time_geometric_primitive: Optional[AbstractTimeGeometricPrimitive] = field(
         default=None,
@@ -348,7 +348,7 @@ class DomainSetType:
             "name": "AbstractTimeGeometricPrimitive",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_time_primitive: Optional[AbstractTimePrimitive] = field(
         default=None,
@@ -356,7 +356,7 @@ class DomainSetType:
             "name": "AbstractTimePrimitive",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_time_object: Optional[AbstractTimeObject] = field(
         default=None,
@@ -364,13 +364,13 @@ class DomainSetType:
             "name": "AbstractTimeObject",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -378,49 +378,49 @@ class DomainSetType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -428,7 +428,7 @@ class DomainSetType:
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -436,5 +436,5 @@ class DomainSetType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

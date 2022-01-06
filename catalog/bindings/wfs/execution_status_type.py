@@ -10,5 +10,5 @@ class ExecutionStatusType:
         default="OK",
         metadata={
             "type": "Attribute",
-        }
+        },
     )

@@ -11,6 +11,7 @@ class MdConstraintsType(AbstractObjectType):
     """
     Restrictions on the access and use of a dataset or metadata.
     """
+
     class Meta:
         name = "MD_Constraints_Type"
 
@@ -20,5 +21,5 @@ class MdConstraintsType(AbstractObjectType):
             "name": "useLimitation",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

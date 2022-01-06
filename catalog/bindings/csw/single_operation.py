@@ -9,6 +9,7 @@ class SingleOperation(AbstractCoordinateOperationType):
     """
     A single (not concatenated) coordinate operation.
     """
+
     class Meta:
         name = "_SingleOperation"
         namespace = "http://www.opengis.net/gml"

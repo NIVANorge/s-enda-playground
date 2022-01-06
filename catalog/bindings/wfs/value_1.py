@@ -13,5 +13,5 @@ class Value1:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )

@@ -7,7 +7,9 @@ from bindings.gmd.ci_citation_type import (
     MdIdentifierPropertyType,
 )
 from bindings.gmd.date_time_property_type import DateTimePropertyType
-from bindings.gmd.dq_evaluation_method_type_code_property_type import DqEvaluationMethodTypeCodePropertyType
+from bindings.gmd.dq_evaluation_method_type_code_property_type import (
+    DqEvaluationMethodTypeCodePropertyType,
+)
 from bindings.gmd.dq_result_property_type import DqResultPropertyType
 
 __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
@@ -24,7 +26,7 @@ class AbstractDqElementType(AbstractObjectType):
             "name": "nameOfMeasure",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     measure_identification: Optional[MdIdentifierPropertyType] = field(
         default=None,
@@ -32,7 +34,7 @@ class AbstractDqElementType(AbstractObjectType):
             "name": "measureIdentification",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     measure_description: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -40,7 +42,7 @@ class AbstractDqElementType(AbstractObjectType):
             "name": "measureDescription",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     evaluation_method_type: Optional[DqEvaluationMethodTypeCodePropertyType] = field(
         default=None,
@@ -48,7 +50,7 @@ class AbstractDqElementType(AbstractObjectType):
             "name": "evaluationMethodType",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     evaluation_method_description: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -56,7 +58,7 @@ class AbstractDqElementType(AbstractObjectType):
             "name": "evaluationMethodDescription",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     evaluation_procedure: Optional[CiCitationPropertyType] = field(
         default=None,
@@ -64,7 +66,7 @@ class AbstractDqElementType(AbstractObjectType):
             "name": "evaluationProcedure",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     date_time: List[DateTimePropertyType] = field(
         default_factory=list,
@@ -72,7 +74,7 @@ class AbstractDqElementType(AbstractObjectType):
             "name": "dateTime",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     result: List[DqResultPropertyType] = field(
         default_factory=list,
@@ -81,5 +83,5 @@ class AbstractDqElementType(AbstractObjectType):
             "namespace": "http://www.isotc211.org/2005/gmd",
             "min_occurs": 1,
             "max_occurs": 2,
-        }
+        },
     )

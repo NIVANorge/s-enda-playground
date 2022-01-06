@@ -9,6 +9,7 @@ class VerticalExtent(EnvelopeType):
     """
     An interval defining the vertical spatial domain of this object.
     """
+
     class Meta:
         name = "verticalExtent"
         namespace = "http://www.opengis.net/gml"

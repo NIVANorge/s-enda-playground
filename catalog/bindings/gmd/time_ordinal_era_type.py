@@ -22,7 +22,7 @@ class TimeOrdinalEraType(DefinitionType):
             "name": "relatedTime",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     start: Optional[TimeNodePropertyType] = field(
         default=None,
@@ -30,7 +30,7 @@ class TimeOrdinalEraType(DefinitionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     end: Optional[TimeNodePropertyType] = field(
         default=None,
@@ -38,28 +38,28 @@ class TimeOrdinalEraType(DefinitionType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     extent: Optional[TimePeriodPropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     member: List["TimeOrdinalEraPropertyType"] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     group: Optional[ReferenceType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
 
 
@@ -76,6 +76,7 @@ class TimeOrdinalEra(TimeOrdinalEraType):
     schema, such that an ordinal era at a given level of the hierarchy
     includes a sequence of shorter, coterminous ordinal eras.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"
 
@@ -86,19 +87,20 @@ class TimeOrdinalEraPropertyType:
     gml:TimeOrdinalEraPropertyType provides for associating a
     gml:TimeOrdinalEra with an object.
     """
+
     time_ordinal_era: Optional[TimeOrdinalEra] = field(
         default=None,
         metadata={
             "name": "TimeOrdinalEra",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -106,49 +108,49 @@ class TimeOrdinalEraPropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -156,7 +158,7 @@ class TimeOrdinalEraPropertyType:
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
     remote_schema: Optional[str] = field(
         default=None,
@@ -164,5 +166,5 @@ class TimeOrdinalEraPropertyType:
             "name": "remoteSchema",
             "type": "Attribute",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

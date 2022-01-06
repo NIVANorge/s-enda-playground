@@ -31,10 +31,16 @@ from bindings.gmd.abstract_curve_segment import AbstractCurveSegment
 from bindings.gmd.abstract_datum import AbstractDatum
 from bindings.gmd.abstract_discrete_coverage import AbstractDiscreteCoverage
 from bindings.gmd.abstract_feature import AbstractFeature
-from bindings.gmd.abstract_general_operation_parameter import AbstractGeneralOperationParameter
-from bindings.gmd.abstract_general_operation_parameter_property_type import OperationParameterGroup
+from bindings.gmd.abstract_general_operation_parameter import (
+    AbstractGeneralOperationParameter,
+)
+from bindings.gmd.abstract_general_operation_parameter_property_type import (
+    OperationParameterGroup,
+)
 from bindings.gmd.abstract_general_parameter_value import AbstractGeneralParameterValue
-from bindings.gmd.abstract_general_parameter_value_property_type import ParameterValueGroup
+from bindings.gmd.abstract_general_parameter_value_property_type import (
+    ParameterValueGroup,
+)
 from bindings.gmd.abstract_general_transformation import AbstractGeneralTransformation
 from bindings.gmd.abstract_geometric_aggregate import AbstractGeometricAggregate
 from bindings.gmd.abstract_geometric_primitive import AbstractGeometricPrimitive
@@ -207,7 +213,7 @@ class InlinePropertyType:
             "name": "ParameterValueGroup",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     parameter_value: Optional[ParameterValue1] = field(
         default=None,
@@ -215,7 +221,7 @@ class InlinePropertyType:
             "name": "ParameterValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_general_parameter_value: Optional[AbstractGeneralParameterValue] = field(
         default=None,
@@ -223,7 +229,7 @@ class InlinePropertyType:
             "name": "AbstractGeneralParameterValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     grid_function: Optional[GridFunction] = field(
         default=None,
@@ -231,7 +237,7 @@ class InlinePropertyType:
             "name": "GridFunction",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     coverage_mapping_rule: Optional[CoverageMappingRule] = field(
         default=None,
@@ -239,7 +245,7 @@ class InlinePropertyType:
             "name": "CoverageMappingRule",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     coverage_function: Optional[CoverageFunction] = field(
         default=None,
@@ -247,7 +253,7 @@ class InlinePropertyType:
             "name": "coverageFunction",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     file: Optional[File] = field(
         default=None,
@@ -255,7 +261,7 @@ class InlinePropertyType:
             "name": "File",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     data_block: Optional[DataBlock] = field(
         default=None,
@@ -263,7 +269,7 @@ class InlinePropertyType:
             "name": "DataBlock",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     quantity_extent: Optional[QuantityExtent] = field(
         default=None,
@@ -271,7 +277,7 @@ class InlinePropertyType:
             "name": "QuantityExtent",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     count_extent: List[Union[str, NilReasonEnumerationValue]] = field(
         default_factory=list,
@@ -282,7 +288,7 @@ class InlinePropertyType:
             "length": 2,
             "pattern": r"other:\w{2,}",
             "tokens": True,
-        }
+        },
     )
     category_extent: Optional[CategoryExtent] = field(
         default=None,
@@ -290,7 +296,7 @@ class InlinePropertyType:
             "name": "CategoryExtent",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     value_array: Optional[ValueArray] = field(
         default=None,
@@ -298,7 +304,7 @@ class InlinePropertyType:
             "name": "ValueArray",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     composite_value: Optional[CompositeValue] = field(
         default=None,
@@ -306,7 +312,7 @@ class InlinePropertyType:
             "name": "CompositeValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     quantity_list: Optional[QuantityList] = field(
         default=None,
@@ -314,7 +320,7 @@ class InlinePropertyType:
             "name": "QuantityList",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     count_list: List[Union[str, NilReasonEnumerationValue]] = field(
         default_factory=list,
@@ -324,7 +330,7 @@ class InlinePropertyType:
             "namespace": "http://www.opengis.net/gml",
             "pattern": r"other:\w{2,}",
             "tokens": True,
-        }
+        },
     )
     category_list: Optional[CategoryList] = field(
         default=None,
@@ -332,7 +338,7 @@ class InlinePropertyType:
             "name": "CategoryList",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     boolean_list: List[Union[str, NilReasonEnumerationValue]] = field(
         default_factory=list,
@@ -342,7 +348,7 @@ class InlinePropertyType:
             "namespace": "http://www.opengis.net/gml",
             "pattern": r"other:\w{2,}",
             "tokens": True,
-        }
+        },
     )
     abstract_scalar_value_list: Optional[AbstractScalarValueList] = field(
         default=None,
@@ -350,7 +356,7 @@ class InlinePropertyType:
             "name": "AbstractScalarValueList",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     quantity: Optional[Quantity] = field(
         default=None,
@@ -359,7 +365,7 @@ class InlinePropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "nillable": True,
-        }
+        },
     )
     count: Optional[Count] = field(
         default=None,
@@ -368,7 +374,7 @@ class InlinePropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "nillable": True,
-        }
+        },
     )
     category: Optional[Category] = field(
         default=None,
@@ -377,7 +383,7 @@ class InlinePropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "nillable": True,
-        }
+        },
     )
     boolean: Optional[Boolean1] = field(
         default=None,
@@ -386,7 +392,7 @@ class InlinePropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "nillable": True,
-        }
+        },
     )
     abstract_scalar_value: Optional[AbstractScalarValue] = field(
         default=None,
@@ -394,7 +400,7 @@ class InlinePropertyType:
             "name": "AbstractScalarValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_value: Optional[AbstractValue] = field(
         default=None,
@@ -402,7 +408,7 @@ class InlinePropertyType:
             "name": "AbstractValue",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     shell: Optional[Shell] = field(
         default=None,
@@ -410,7 +416,7 @@ class InlinePropertyType:
             "name": "Shell",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     affine_placement: Optional[AffinePlacement] = field(
         default=None,
@@ -418,7 +424,7 @@ class InlinePropertyType:
             "name": "AffinePlacement",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     geodesic: Optional[Geodesic] = field(
         default=None,
@@ -426,7 +432,7 @@ class InlinePropertyType:
             "name": "Geodesic",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     geodesic_string: Optional[GeodesicString] = field(
         default=None,
@@ -434,7 +440,7 @@ class InlinePropertyType:
             "name": "GeodesicString",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     clothoid: Optional[Clothoid] = field(
         default=None,
@@ -442,7 +448,7 @@ class InlinePropertyType:
             "name": "Clothoid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     offset_curve: Optional[OffsetCurve] = field(
         default=None,
@@ -450,7 +456,7 @@ class InlinePropertyType:
             "name": "OffsetCurve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     bezier: Optional[Bezier] = field(
         default=None,
@@ -458,7 +464,7 @@ class InlinePropertyType:
             "name": "Bezier",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     bspline: Optional[Bspline] = field(
         default=None,
@@ -466,7 +472,7 @@ class InlinePropertyType:
             "name": "BSpline",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     cubic_spline: Optional[CubicSpline] = field(
         default=None,
@@ -474,7 +480,7 @@ class InlinePropertyType:
             "name": "CubicSpline",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     circle_by_center_point: Optional[CircleByCenterPoint] = field(
         default=None,
@@ -482,7 +488,7 @@ class InlinePropertyType:
             "name": "CircleByCenterPoint",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     arc_by_center_point: Optional[ArcByCenterPoint] = field(
         default=None,
@@ -490,7 +496,7 @@ class InlinePropertyType:
             "name": "ArcByCenterPoint",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     arc_by_bulge: Optional[ArcByBulge] = field(
         default=None,
@@ -498,7 +504,7 @@ class InlinePropertyType:
             "name": "ArcByBulge",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     arc_string_by_bulge: Optional[ArcStringByBulge] = field(
         default=None,
@@ -506,7 +512,7 @@ class InlinePropertyType:
             "name": "ArcStringByBulge",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     circle: Optional[Circle] = field(
         default=None,
@@ -514,7 +520,7 @@ class InlinePropertyType:
             "name": "Circle",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     arc: Optional[Arc] = field(
         default=None,
@@ -522,7 +528,7 @@ class InlinePropertyType:
             "name": "Arc",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     arc_string: Optional[ArcString] = field(
         default=None,
@@ -530,7 +536,7 @@ class InlinePropertyType:
             "name": "ArcString",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     line_string_segment: Optional[LineStringSegment] = field(
         default=None,
@@ -538,7 +544,7 @@ class InlinePropertyType:
             "name": "LineStringSegment",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_curve_segment: Optional[AbstractCurveSegment] = field(
         default=None,
@@ -546,7 +552,7 @@ class InlinePropertyType:
             "name": "AbstractCurveSegment",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     ring: Optional[Ring] = field(
         default=None,
@@ -554,7 +560,7 @@ class InlinePropertyType:
             "name": "Ring",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     linear_ring: Optional[LinearRing] = field(
         default=None,
@@ -562,7 +568,7 @@ class InlinePropertyType:
             "name": "LinearRing",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_ring: Optional[AbstractRing] = field(
         default=None,
@@ -570,7 +576,7 @@ class InlinePropertyType:
             "name": "AbstractRing",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     envelope_with_time_period: Optional[EnvelopeWithTimePeriod] = field(
         default=None,
@@ -578,7 +584,7 @@ class InlinePropertyType:
             "name": "EnvelopeWithTimePeriod",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     envelope: Optional[Envelope] = field(
         default=None,
@@ -586,7 +592,7 @@ class InlinePropertyType:
             "name": "Envelope",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     generic_meta_data: Optional[GenericMetaData] = field(
         default=None,
@@ -594,7 +600,7 @@ class InlinePropertyType:
             "name": "GenericMetaData",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_meta_data: Optional[AbstractMetaData] = field(
         default=None,
@@ -602,7 +608,7 @@ class InlinePropertyType:
             "name": "AbstractMetaData",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     topo_complex: Optional[TopoComplex] = field(
         default=None,
@@ -610,7 +616,7 @@ class InlinePropertyType:
             "name": "TopoComplex",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     topo_solid: Optional[TopoSolid] = field(
         default=None,
@@ -618,7 +624,7 @@ class InlinePropertyType:
             "name": "TopoSolid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     face: Optional[Face] = field(
         default=None,
@@ -626,7 +632,7 @@ class InlinePropertyType:
             "name": "Face",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     edge: Optional[Edge] = field(
         default=None,
@@ -634,7 +640,7 @@ class InlinePropertyType:
             "name": "Edge",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     node: Optional[Node] = field(
         default=None,
@@ -642,7 +648,7 @@ class InlinePropertyType:
             "name": "Node",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_topo_primitive: Optional[AbstractTopoPrimitive] = field(
         default=None,
@@ -650,7 +656,7 @@ class InlinePropertyType:
             "name": "AbstractTopoPrimitive",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_topology: Optional[AbstractTopology] = field(
         default=None,
@@ -658,7 +664,7 @@ class InlinePropertyType:
             "name": "AbstractTopology",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     moving_object_status: Optional[MovingObjectStatus] = field(
         default=None,
@@ -666,7 +672,7 @@ class InlinePropertyType:
             "name": "MovingObjectStatus",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_time_slice: Optional[AbstractTimeSlice] = field(
         default=None,
@@ -674,7 +680,7 @@ class InlinePropertyType:
             "name": "AbstractTimeSlice",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     directed_observation_at_distance: Optional[DirectedObservationAtDistance] = field(
         default=None,
@@ -682,7 +688,7 @@ class InlinePropertyType:
             "name": "DirectedObservationAtDistance",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     directed_observation: Optional[DirectedObservation] = field(
         default=None,
@@ -690,7 +696,7 @@ class InlinePropertyType:
             "name": "DirectedObservation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     observation: Optional[Observation] = field(
         default=None,
@@ -698,7 +704,7 @@ class InlinePropertyType:
             "name": "Observation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_continuous_coverage: Optional[AbstractContinuousCoverage] = field(
         default=None,
@@ -706,7 +712,7 @@ class InlinePropertyType:
             "name": "AbstractContinuousCoverage",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     rectified_grid_coverage: Optional[RectifiedGridCoverage] = field(
         default=None,
@@ -714,7 +720,7 @@ class InlinePropertyType:
             "name": "RectifiedGridCoverage",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     grid_coverage: Optional[GridCoverage] = field(
         default=None,
@@ -722,7 +728,7 @@ class InlinePropertyType:
             "name": "GridCoverage",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_solid_coverage: Optional[MultiSolidCoverage] = field(
         default=None,
@@ -730,7 +736,7 @@ class InlinePropertyType:
             "name": "MultiSolidCoverage",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_surface_coverage: Optional[MultiSurfaceCoverage] = field(
         default=None,
@@ -738,7 +744,7 @@ class InlinePropertyType:
             "name": "MultiSurfaceCoverage",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_curve_coverage: Optional[MultiCurveCoverage] = field(
         default=None,
@@ -746,7 +752,7 @@ class InlinePropertyType:
             "name": "MultiCurveCoverage",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_point_coverage: Optional[MultiPointCoverage] = field(
         default=None,
@@ -754,7 +760,7 @@ class InlinePropertyType:
             "name": "MultiPointCoverage",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_discrete_coverage: Optional[AbstractDiscreteCoverage] = field(
         default=None,
@@ -762,7 +768,7 @@ class InlinePropertyType:
             "name": "AbstractDiscreteCoverage",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_coverage: Optional[AbstractCoverage] = field(
         default=None,
@@ -770,7 +776,7 @@ class InlinePropertyType:
             "name": "AbstractCoverage",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     dynamic_feature_collection: Optional[DynamicFeatureCollection] = field(
         default=None,
@@ -778,7 +784,7 @@ class InlinePropertyType:
             "name": "DynamicFeatureCollection",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     dynamic_feature: Optional[DynamicFeature] = field(
         default=None,
@@ -786,7 +792,7 @@ class InlinePropertyType:
             "name": "DynamicFeature",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     feature_collection: Optional[FeatureCollection] = field(
         default=None,
@@ -794,7 +800,7 @@ class InlinePropertyType:
             "name": "FeatureCollection",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_feature_collection: Optional[AbstractFeatureCollection] = field(
         default=None,
@@ -802,7 +808,7 @@ class InlinePropertyType:
             "name": "AbstractFeatureCollection",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_feature: Optional[AbstractFeature] = field(
         default=None,
@@ -810,7 +816,7 @@ class InlinePropertyType:
             "name": "AbstractFeature",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_topology_complex: Optional[TimeTopologyComplex] = field(
         default=None,
@@ -818,7 +824,7 @@ class InlinePropertyType:
             "name": "TimeTopologyComplex",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_time_complex: Optional[AbstractTimeComplex] = field(
         default=None,
@@ -826,7 +832,7 @@ class InlinePropertyType:
             "name": "AbstractTimeComplex",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_edge: Optional[TimeEdge] = field(
         default=None,
@@ -834,7 +840,7 @@ class InlinePropertyType:
             "name": "TimeEdge",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_node: Optional[TimeNode] = field(
         default=None,
@@ -842,7 +848,7 @@ class InlinePropertyType:
             "name": "TimeNode",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_time_topology_primitive: Optional[AbstractTimeTopologyPrimitive] = field(
         default=None,
@@ -850,7 +856,7 @@ class InlinePropertyType:
             "name": "AbstractTimeTopologyPrimitive",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_period: Optional[TimePeriod] = field(
         default=None,
@@ -858,7 +864,7 @@ class InlinePropertyType:
             "name": "TimePeriod",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_instant: Optional[TimeInstant] = field(
         default=None,
@@ -866,7 +872,7 @@ class InlinePropertyType:
             "name": "TimeInstant",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_time_geometric_primitive: Optional[AbstractTimeGeometricPrimitive] = field(
         default=None,
@@ -874,7 +880,7 @@ class InlinePropertyType:
             "name": "AbstractTimeGeometricPrimitive",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_time_primitive: Optional[AbstractTimePrimitive] = field(
         default=None,
@@ -882,7 +888,7 @@ class InlinePropertyType:
             "name": "AbstractTimePrimitive",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_time_object: Optional[AbstractTimeObject] = field(
         default=None,
@@ -890,7 +896,7 @@ class InlinePropertyType:
             "name": "AbstractTimeObject",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     rectified_grid: Optional[RectifiedGrid] = field(
         default=None,
@@ -898,7 +904,7 @@ class InlinePropertyType:
             "name": "RectifiedGrid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     grid: Optional[Grid] = field(
         default=None,
@@ -906,7 +912,7 @@ class InlinePropertyType:
             "name": "Grid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_implicit_geometry: Optional[AbstractImplicitGeometry] = field(
         default=None,
@@ -914,7 +920,7 @@ class InlinePropertyType:
             "name": "AbstractImplicitGeometry",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     geometric_complex: Optional[GeometricComplex] = field(
         default=None,
@@ -922,7 +928,7 @@ class InlinePropertyType:
             "name": "GeometricComplex",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_solid: Optional[MultiSolid] = field(
         default=None,
@@ -930,7 +936,7 @@ class InlinePropertyType:
             "name": "MultiSolid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_surface: Optional[MultiSurface] = field(
         default=None,
@@ -938,7 +944,7 @@ class InlinePropertyType:
             "name": "MultiSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_curve: Optional[MultiCurve] = field(
         default=None,
@@ -946,7 +952,7 @@ class InlinePropertyType:
             "name": "MultiCurve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_point: Optional[MultiPoint] = field(
         default=None,
@@ -954,7 +960,7 @@ class InlinePropertyType:
             "name": "MultiPoint",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     multi_geometry: Optional[MultiGeometry] = field(
         default=None,
@@ -962,7 +968,7 @@ class InlinePropertyType:
             "name": "MultiGeometry",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_geometric_aggregate: Optional[AbstractGeometricAggregate] = field(
         default=None,
@@ -970,7 +976,7 @@ class InlinePropertyType:
             "name": "AbstractGeometricAggregate",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     composite_solid: Optional[CompositeSolid] = field(
         default=None,
@@ -978,7 +984,7 @@ class InlinePropertyType:
             "name": "CompositeSolid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     solid: Optional[Solid] = field(
         default=None,
@@ -986,7 +992,7 @@ class InlinePropertyType:
             "name": "Solid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_solid: Optional[AbstractSolid] = field(
         default=None,
@@ -994,7 +1000,7 @@ class InlinePropertyType:
             "name": "AbstractSolid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     composite_surface: Optional[CompositeSurface] = field(
         default=None,
@@ -1002,7 +1008,7 @@ class InlinePropertyType:
             "name": "CompositeSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     orientable_surface: Optional[OrientableSurface] = field(
         default=None,
@@ -1010,7 +1016,7 @@ class InlinePropertyType:
             "name": "OrientableSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     tin: Optional[Tin] = field(
         default=None,
@@ -1018,7 +1024,7 @@ class InlinePropertyType:
             "name": "Tin",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     triangulated_surface: Optional[TriangulatedSurface] = field(
         default=None,
@@ -1026,7 +1032,7 @@ class InlinePropertyType:
             "name": "TriangulatedSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     polyhedral_surface: Optional[PolyhedralSurface] = field(
         default=None,
@@ -1034,7 +1040,7 @@ class InlinePropertyType:
             "name": "PolyhedralSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     surface: Optional[Surface] = field(
         default=None,
@@ -1042,7 +1048,7 @@ class InlinePropertyType:
             "name": "Surface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     polygon: Optional[Polygon] = field(
         default=None,
@@ -1050,7 +1056,7 @@ class InlinePropertyType:
             "name": "Polygon",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_surface: Optional[AbstractSurface] = field(
         default=None,
@@ -1058,7 +1064,7 @@ class InlinePropertyType:
             "name": "AbstractSurface",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     composite_curve: Optional[CompositeCurve] = field(
         default=None,
@@ -1066,7 +1072,7 @@ class InlinePropertyType:
             "name": "CompositeCurve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     orientable_curve: Optional[OrientableCurve] = field(
         default=None,
@@ -1074,7 +1080,7 @@ class InlinePropertyType:
             "name": "OrientableCurve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     curve: Optional[Curve] = field(
         default=None,
@@ -1082,7 +1088,7 @@ class InlinePropertyType:
             "name": "Curve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     line_string: Optional[LineString] = field(
         default=None,
@@ -1090,7 +1096,7 @@ class InlinePropertyType:
             "name": "LineString",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_curve: Optional[AbstractCurve] = field(
         default=None,
@@ -1098,7 +1104,7 @@ class InlinePropertyType:
             "name": "AbstractCurve",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     point: Optional[Point] = field(
         default=None,
@@ -1106,7 +1112,7 @@ class InlinePropertyType:
             "name": "Point",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_geometric_primitive: Optional[AbstractGeometricPrimitive] = field(
         default=None,
@@ -1114,7 +1120,7 @@ class InlinePropertyType:
             "name": "AbstractGeometricPrimitive",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_geometry: Optional[AbstractGeometry] = field(
         default=None,
@@ -1122,7 +1128,7 @@ class InlinePropertyType:
             "name": "AbstractGeometry",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_ordinal_reference_system: Optional[TimeOrdinalReferenceSystem] = field(
         default=None,
@@ -1130,7 +1136,7 @@ class InlinePropertyType:
             "name": "TimeOrdinalReferenceSystem",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_clock: Optional[TimeClock] = field(
         default=None,
@@ -1138,7 +1144,7 @@ class InlinePropertyType:
             "name": "TimeClock",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_calendar: Optional[TimeCalendar] = field(
         default=None,
@@ -1146,7 +1152,7 @@ class InlinePropertyType:
             "name": "TimeCalendar",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_coordinate_system: Optional[TimeCoordinateSystem] = field(
         default=None,
@@ -1154,7 +1160,7 @@ class InlinePropertyType:
             "name": "TimeCoordinateSystem",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_reference_system: Optional[TimeReferenceSystem] = field(
         default=None,
@@ -1162,7 +1168,7 @@ class InlinePropertyType:
             "name": "TimeReferenceSystem",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     operation_parameter_group: Optional[OperationParameterGroup] = field(
         default=None,
@@ -1170,7 +1176,7 @@ class InlinePropertyType:
             "name": "OperationParameterGroup",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     operation_parameter: Optional[OperationParameter1] = field(
         default=None,
@@ -1178,15 +1184,17 @@ class InlinePropertyType:
             "name": "OperationParameter",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
-    abstract_general_operation_parameter: Optional[AbstractGeneralOperationParameter] = field(
+    abstract_general_operation_parameter: Optional[
+        AbstractGeneralOperationParameter
+    ] = field(
         default=None,
         metadata={
             "name": "AbstractGeneralOperationParameter",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     operation_method: Optional[OperationMethod] = field(
         default=None,
@@ -1194,7 +1202,7 @@ class InlinePropertyType:
             "name": "OperationMethod",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     concatenated_operation: Optional[ConcatenatedOperation] = field(
         default=None,
@@ -1202,7 +1210,7 @@ class InlinePropertyType:
             "name": "ConcatenatedOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     pass_through_operation: Optional[PassThroughOperation] = field(
         default=None,
@@ -1210,7 +1218,7 @@ class InlinePropertyType:
             "name": "PassThroughOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     transformation: Optional[Transformation] = field(
         default=None,
@@ -1218,7 +1226,7 @@ class InlinePropertyType:
             "name": "Transformation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_general_transformation: Optional[AbstractGeneralTransformation] = field(
         default=None,
@@ -1226,7 +1234,7 @@ class InlinePropertyType:
             "name": "AbstractGeneralTransformation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     conversion: Optional[Conversion1] = field(
         default=None,
@@ -1234,7 +1242,7 @@ class InlinePropertyType:
             "name": "Conversion",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_general_conversion: Optional[AbstractGeneralConversion] = field(
         default=None,
@@ -1242,7 +1250,7 @@ class InlinePropertyType:
             "name": "AbstractGeneralConversion",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_operation: Optional[AbstractOperation] = field(
         default=None,
@@ -1250,7 +1258,7 @@ class InlinePropertyType:
             "name": "AbstractOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_single_operation: Optional[AbstractSingleOperation] = field(
         default=None,
@@ -1258,7 +1266,7 @@ class InlinePropertyType:
             "name": "AbstractSingleOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_coordinate_operation: Optional[AbstractCoordinateOperation] = field(
         default=None,
@@ -1266,7 +1274,7 @@ class InlinePropertyType:
             "name": "AbstractCoordinateOperation",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     prime_meridian: Optional[PrimeMeridian1] = field(
         default=None,
@@ -1274,7 +1282,7 @@ class InlinePropertyType:
             "name": "PrimeMeridian",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     ellipsoid: Optional[Ellipsoid1] = field(
         default=None,
@@ -1282,7 +1290,7 @@ class InlinePropertyType:
             "name": "Ellipsoid",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     temporal_datum: Optional[TemporalDatum1] = field(
         default=None,
@@ -1290,7 +1298,7 @@ class InlinePropertyType:
             "name": "TemporalDatum",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     vertical_datum: Optional[VerticalDatum1] = field(
         default=None,
@@ -1298,7 +1306,7 @@ class InlinePropertyType:
             "name": "VerticalDatum",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     image_datum: Optional[ImageDatum1] = field(
         default=None,
@@ -1306,7 +1314,7 @@ class InlinePropertyType:
             "name": "ImageDatum",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     engineering_datum: Optional[EngineeringDatum1] = field(
         default=None,
@@ -1314,7 +1322,7 @@ class InlinePropertyType:
             "name": "EngineeringDatum",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     geodetic_datum: Optional[GeodeticDatum1] = field(
         default=None,
@@ -1322,7 +1330,7 @@ class InlinePropertyType:
             "name": "GeodeticDatum",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_datum: Optional[AbstractDatum] = field(
         default=None,
@@ -1330,7 +1338,7 @@ class InlinePropertyType:
             "name": "AbstractDatum",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     oblique_cartesian_cs: Optional[ObliqueCartesianCs] = field(
         default=None,
@@ -1338,7 +1346,7 @@ class InlinePropertyType:
             "name": "ObliqueCartesianCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     affine_cs: Optional[AffineCs1] = field(
         default=None,
@@ -1346,7 +1354,7 @@ class InlinePropertyType:
             "name": "AffineCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     cylindrical_cs: Optional[CylindricalCs] = field(
         default=None,
@@ -1354,7 +1362,7 @@ class InlinePropertyType:
             "name": "CylindricalCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     polar_cs: Optional[PolarCs] = field(
         default=None,
@@ -1362,7 +1370,7 @@ class InlinePropertyType:
             "name": "PolarCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     spherical_cs: Optional[SphericalCs1] = field(
         default=None,
@@ -1370,7 +1378,7 @@ class InlinePropertyType:
             "name": "SphericalCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     user_defined_cs: Optional[UserDefinedCs] = field(
         default=None,
@@ -1378,7 +1386,7 @@ class InlinePropertyType:
             "name": "UserDefinedCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     linear_cs: Optional[LinearCs] = field(
         default=None,
@@ -1386,7 +1394,7 @@ class InlinePropertyType:
             "name": "LinearCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     temporal_cs: Optional[TemporalCs] = field(
         default=None,
@@ -1394,7 +1402,7 @@ class InlinePropertyType:
             "name": "TemporalCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     time_cs: Optional[TimeCs1] = field(
         default=None,
@@ -1402,7 +1410,7 @@ class InlinePropertyType:
             "name": "TimeCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     vertical_cs: Optional[VerticalCs1] = field(
         default=None,
@@ -1410,7 +1418,7 @@ class InlinePropertyType:
             "name": "VerticalCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     cartesian_cs: Optional[CartesianCs1] = field(
         default=None,
@@ -1418,7 +1426,7 @@ class InlinePropertyType:
             "name": "CartesianCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     ellipsoidal_cs: Optional[EllipsoidalCs1] = field(
         default=None,
@@ -1426,7 +1434,7 @@ class InlinePropertyType:
             "name": "EllipsoidalCS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_coordinate_system: Optional[AbstractCoordinateSystem] = field(
         default=None,
@@ -1434,7 +1442,7 @@ class InlinePropertyType:
             "name": "AbstractCoordinateSystem",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     coordinate_system_axis: Optional[CoordinateSystemAxis] = field(
         default=None,
@@ -1442,7 +1450,7 @@ class InlinePropertyType:
             "name": "CoordinateSystemAxis",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     compound_crs: Optional[CompoundCrs] = field(
         default=None,
@@ -1450,7 +1458,7 @@ class InlinePropertyType:
             "name": "CompoundCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     geocentric_crs: Optional[GeocentricCrs] = field(
         default=None,
@@ -1458,7 +1466,7 @@ class InlinePropertyType:
             "name": "GeocentricCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     geographic_crs: Optional[GeographicCrs] = field(
         default=None,
@@ -1466,7 +1474,7 @@ class InlinePropertyType:
             "name": "GeographicCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     temporal_crs: Optional[TemporalCrs] = field(
         default=None,
@@ -1474,7 +1482,7 @@ class InlinePropertyType:
             "name": "TemporalCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     image_crs: Optional[ImageCrs] = field(
         default=None,
@@ -1482,7 +1490,7 @@ class InlinePropertyType:
             "name": "ImageCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     engineering_crs: Optional[EngineeringCrs] = field(
         default=None,
@@ -1490,7 +1498,7 @@ class InlinePropertyType:
             "name": "EngineeringCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     vertical_crs: Optional[VerticalCrs] = field(
         default=None,
@@ -1498,7 +1506,7 @@ class InlinePropertyType:
             "name": "VerticalCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     geodetic_crs: Optional[GeodeticCrs] = field(
         default=None,
@@ -1506,7 +1514,7 @@ class InlinePropertyType:
             "name": "GeodeticCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     derived_crs: Optional[DerivedCrs] = field(
         default=None,
@@ -1514,7 +1522,7 @@ class InlinePropertyType:
             "name": "DerivedCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     projected_crs: Optional[ProjectedCrs] = field(
         default=None,
@@ -1522,7 +1530,7 @@ class InlinePropertyType:
             "name": "ProjectedCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_general_derived_crs: Optional[AbstractGeneralDerivedCrs] = field(
         default=None,
@@ -1530,7 +1538,7 @@ class InlinePropertyType:
             "name": "AbstractGeneralDerivedCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_single_crs: Optional[AbstractSingleCrs] = field(
         default=None,
@@ -1538,7 +1546,7 @@ class InlinePropertyType:
             "name": "AbstractSingleCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_crs: Optional[AbstractCrs] = field(
         default=None,
@@ -1546,7 +1554,7 @@ class InlinePropertyType:
             "name": "AbstractCRS",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     conventional_unit: Optional[ConventionalUnit] = field(
         default=None,
@@ -1554,7 +1562,7 @@ class InlinePropertyType:
             "name": "ConventionalUnit",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     derived_unit: Optional[DerivedUnit] = field(
         default=None,
@@ -1562,7 +1570,7 @@ class InlinePropertyType:
             "name": "DerivedUnit",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     base_unit: Optional[BaseUnit] = field(
         default=None,
@@ -1570,7 +1578,7 @@ class InlinePropertyType:
             "name": "BaseUnit",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     unit_definition: Optional[UnitDefinition] = field(
         default=None,
@@ -1578,7 +1586,7 @@ class InlinePropertyType:
             "name": "UnitDefinition",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     definition_proxy: Optional[DefinitionProxy] = field(
         default=None,
@@ -1586,7 +1594,7 @@ class InlinePropertyType:
             "name": "DefinitionProxy",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     definition_collection: Optional[DefinitionCollection] = field(
         default=None,
@@ -1594,7 +1602,7 @@ class InlinePropertyType:
             "name": "DefinitionCollection",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     dictionary: Optional[Dictionary] = field(
         default=None,
@@ -1602,7 +1610,7 @@ class InlinePropertyType:
             "name": "Dictionary",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     definition: Optional[Definition] = field(
         default=None,
@@ -1610,7 +1618,7 @@ class InlinePropertyType:
             "name": "Definition",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     array: Optional[Array] = field(
         default=None,
@@ -1618,7 +1626,7 @@ class InlinePropertyType:
             "name": "Array",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     bag: Optional[Bag] = field(
         default=None,
@@ -1626,7 +1634,7 @@ class InlinePropertyType:
             "name": "Bag",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_gml: Optional[AbstractGml] = field(
         default=None,
@@ -1634,7 +1642,7 @@ class InlinePropertyType:
             "name": "AbstractGML",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     abstract_object: Optional[AbstractObject1] = field(
         default=None,
@@ -1642,11 +1650,11 @@ class InlinePropertyType:
             "name": "AbstractObject",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     owns: bool = field(
         default=False,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

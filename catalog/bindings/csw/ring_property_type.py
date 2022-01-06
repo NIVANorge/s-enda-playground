@@ -11,6 +11,7 @@ class RingPropertyType:
     Encapsulates a ring to represent properties in features or geometry
     collections.
     """
+
     ring: Optional[Ring1] = field(
         default=None,
         metadata={
@@ -18,5 +19,5 @@ class RingPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

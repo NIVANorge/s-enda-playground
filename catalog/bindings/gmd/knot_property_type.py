@@ -17,6 +17,7 @@ class KnotPropertyType:
         weight). weight is the value of the averaging weight used for
         this knot of the spline.
     """
+
     knot: Optional[KnotType] = field(
         default=None,
         metadata={
@@ -24,5 +25,5 @@ class KnotPropertyType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

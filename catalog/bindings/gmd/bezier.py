@@ -16,5 +16,6 @@ class Bezier(BezierType):
     "polynomialSpline". isPolynomial is fixed as “true”. knotType is not
     relevant for Bezier curve segments.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

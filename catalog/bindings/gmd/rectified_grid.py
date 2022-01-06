@@ -17,5 +17,6 @@ class RectifiedGrid(RectifiedGridType):
     gml:RectifiedGrid adds a gml:origin property (contains or references
     a gml:Point) and a set of gml:offsetVector properties.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

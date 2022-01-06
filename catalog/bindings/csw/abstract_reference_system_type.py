@@ -1,6 +1,8 @@
 from dataclasses import dataclass, field
 from typing import List, Optional
-from bindings.csw.abstract_reference_system_base_type import AbstractReferenceSystemBaseType
+from bindings.csw.abstract_reference_system_base_type import (
+    AbstractReferenceSystemBaseType,
+)
 from bindings.csw.remarks import Remarks
 from bindings.csw.srs_id import SrsId
 from bindings.csw.valid_area import ValidArea
@@ -22,20 +24,21 @@ class AbstractReferenceSystemType(AbstractReferenceSystemBaseType):
     :ivar valid_area:
     :ivar scope:
     """
+
     srs_id: List[SrsId] = field(
         default_factory=list,
         metadata={
             "name": "srsID",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     remarks: Optional[Remarks] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     valid_area: Optional[ValidArea] = field(
         default=None,
@@ -43,12 +46,12 @@ class AbstractReferenceSystemType(AbstractReferenceSystemBaseType):
             "name": "validArea",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     scope: Optional[str] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

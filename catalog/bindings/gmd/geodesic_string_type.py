@@ -17,14 +17,14 @@ class GeodesicStringType(AbstractCurveSegmentType):
             "name": "posList",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     pos: List[Pos] = field(
         default_factory=list,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     point_property: List[PointProperty] = field(
         default_factory=list,
@@ -32,12 +32,12 @@ class GeodesicStringType(AbstractCurveSegmentType):
             "name": "pointProperty",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     interpolation: CurveInterpolationType = field(
         init=False,
         default=CurveInterpolationType.GEODESIC,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

@@ -19,6 +19,7 @@ class TimePositionType:
     of the calendar era to which the date is referenced (e.g. the Meiji
     era of the Japanese calendar).
     """
+
     value: Union[XmlDate, XmlPeriod, XmlTime, XmlDateTime, str, Decimal] = field(
         default=""
     )
@@ -26,19 +27,19 @@ class TimePositionType:
         default="#ISO-8601",
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     calendar_era_name: Optional[str] = field(
         default=None,
         metadata={
             "name": "calendarEraName",
             "type": "Attribute",
-        }
+        },
     )
     indeterminate_position: Optional[TimeIndeterminateValueType] = field(
         default=None,
         metadata={
             "name": "indeterminatePosition",
             "type": "Attribute",
-        }
+        },
     )

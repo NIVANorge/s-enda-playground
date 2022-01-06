@@ -3,9 +3,15 @@ from typing import List, Optional, Union
 from bindings.gmd.abstract_object_type import AbstractObjectType
 from bindings.gmd.actuate_value import ActuateValue
 from bindings.gmd.character_string_property_type import CharacterStringPropertyType
-from bindings.gmd.ci_responsible_party_property_type import CiResponsiblePartyPropertyType
-from bindings.gmd.md_digital_transfer_options_property_type import MdDigitalTransferOptionsPropertyType
-from bindings.gmd.md_standard_order_process_property_type import MdStandardOrderProcessPropertyType
+from bindings.gmd.ci_responsible_party_property_type import (
+    CiResponsiblePartyPropertyType,
+)
+from bindings.gmd.md_digital_transfer_options_property_type import (
+    MdDigitalTransferOptionsPropertyType,
+)
+from bindings.gmd.md_standard_order_process_property_type import (
+    MdStandardOrderProcessPropertyType,
+)
 from bindings.gmd.nil_reason_enumeration_value import NilReasonEnumerationValue
 from bindings.gmd.show_value import ShowValue
 
@@ -23,7 +29,7 @@ class MdDistributorPropertyType:
             "name": "MD_Distributor",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -31,55 +37,55 @@ class MdDistributorPropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     uuidref: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -88,7 +94,7 @@ class MdDistributorPropertyType:
             "type": "Attribute",
             "namespace": "http://www.isotc211.org/2005/gco",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
 
 
@@ -97,6 +103,7 @@ class MdFormatType(AbstractObjectType):
     """
     Description of the form of the data to be distributed.
     """
+
     class Meta:
         name = "MD_Format_Type"
 
@@ -106,7 +113,7 @@ class MdFormatType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     version: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -114,7 +121,7 @@ class MdFormatType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     amendment_number: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -122,14 +129,14 @@ class MdFormatType(AbstractObjectType):
             "name": "amendmentNumber",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     specification: Optional[CharacterStringPropertyType] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     file_decompression_technique: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -137,7 +144,7 @@ class MdFormatType(AbstractObjectType):
             "name": "fileDecompressionTechnique",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     format_distributor: List[MdDistributorPropertyType] = field(
         default_factory=list,
@@ -145,7 +152,7 @@ class MdFormatType(AbstractObjectType):
             "name": "formatDistributor",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
 
 
@@ -167,7 +174,7 @@ class MdFormatPropertyType:
             "name": "MD_Format",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     type: str = field(
         init=False,
@@ -175,55 +182,55 @@ class MdFormatPropertyType:
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     href: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     role: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     arcrole: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     title: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     show: Optional[ShowValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     actuate: Optional[ActuateValue] = field(
         default=None,
         metadata={
             "type": "Attribute",
             "namespace": "http://www.w3.org/1999/xlink",
-        }
+        },
     )
     uuidref: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     nil_reason: Optional[Union[str, NilReasonEnumerationValue]] = field(
         default=None,
@@ -232,7 +239,7 @@ class MdFormatPropertyType:
             "type": "Attribute",
             "namespace": "http://www.isotc211.org/2005/gco",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )
 
 
@@ -241,6 +248,7 @@ class MdDistributorType(AbstractObjectType):
     """
     Information about the distributor.
     """
+
     class Meta:
         name = "MD_Distributor_Type"
 
@@ -251,7 +259,7 @@ class MdDistributorType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     distribution_order_process: List[MdStandardOrderProcessPropertyType] = field(
         default_factory=list,
@@ -259,7 +267,7 @@ class MdDistributorType(AbstractObjectType):
             "name": "distributionOrderProcess",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     distributor_format: List[MdFormatPropertyType] = field(
         default_factory=list,
@@ -267,7 +275,7 @@ class MdDistributorType(AbstractObjectType):
             "name": "distributorFormat",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     distributor_transfer_options: List[MdDigitalTransferOptionsPropertyType] = field(
         default_factory=list,
@@ -275,7 +283,7 @@ class MdDistributorType(AbstractObjectType):
             "name": "distributorTransferOptions",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
 
 

@@ -41,6 +41,7 @@ class BoundingBoxType:
         number is specified by the CRS definition, but can also be
         specified here.
     """
+
     lower_corner: List[float] = field(
         default_factory=list,
         metadata={
@@ -49,7 +50,7 @@ class BoundingBoxType:
             "namespace": "http://www.opengis.net/ows/1.1",
             "required": True,
             "tokens": True,
-        }
+        },
     )
     upper_corner: List[float] = field(
         default_factory=list,
@@ -59,17 +60,17 @@ class BoundingBoxType:
             "namespace": "http://www.opengis.net/ows/1.1",
             "required": True,
             "tokens": True,
-        }
+        },
     )
     crs: Optional[str] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )
     dimensions: Optional[int] = field(
         default=None,
         metadata={
             "type": "Attribute",
-        }
+        },
     )

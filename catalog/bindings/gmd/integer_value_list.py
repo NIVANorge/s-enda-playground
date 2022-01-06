@@ -13,6 +13,7 @@ class IntegerValueList:
     element of this type contains a space-separated sequence of integer
     values.
     """
+
     class Meta:
         name = "integerValueList"
         namespace = "http://www.opengis.net/gml"
@@ -21,5 +22,5 @@ class IntegerValueList:
         default_factory=list,
         metadata={
             "tokens": True,
-        }
+        },
     )

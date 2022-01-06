@@ -12,6 +12,7 @@ class AbstractScalarValueList:
     gml:CountList and gml:QuantityList, and (transitively) the elements in
     their substitution groups.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"
 
@@ -20,5 +21,5 @@ class AbstractScalarValueList:
         metadata={
             "type": "Wildcard",
             "namespace": "##any",
-        }
+        },
     )

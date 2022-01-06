@@ -18,7 +18,7 @@ class SpatialCapabilitiesType:
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "required": True,
-        }
+        },
     )
     spatial_operators: Optional[SpatialOperatorsType] = field(
         default=None,
@@ -27,5 +27,5 @@ class SpatialCapabilitiesType:
             "type": "Element",
             "namespace": "http://www.opengis.net/ogc",
             "required": True,
-        }
+        },
     )

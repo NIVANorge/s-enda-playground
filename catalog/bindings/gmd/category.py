@@ -12,6 +12,7 @@ class Category(CodeType):
     A gml:Category has an optional XML attribute codeSpace, whose value is a
     URI which identifies a dictionary, codelist or authority for the term.
     """
+
     class Meta:
         nillable = True
         namespace = "http://www.opengis.net/gml"
@@ -22,5 +23,5 @@ class Category(CodeType):
             "name": "nilReason",
             "type": "Attribute",
             "pattern": r"other:\w{2,}",
-        }
+        },
     )

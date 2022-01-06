@@ -15,5 +15,6 @@ class AbstractTopoPrimitive(AbstractTopoPrimitiveType):
     Conversely, nodes may have faces as containers and nodes and edges
     may have solids as containers (gml:container).
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

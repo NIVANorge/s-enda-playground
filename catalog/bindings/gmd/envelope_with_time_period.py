@@ -15,5 +15,6 @@ class EnvelopeWithTimePeriod(EnvelopeWithTimePeriodType):
     headed by gml:Envelope, it may be used whenever gml:Envelope is
     valid.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

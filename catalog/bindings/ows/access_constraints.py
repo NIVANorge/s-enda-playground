@@ -12,6 +12,7 @@ class AccessConstraints:
     The reserved value NONE (case insensitive) shall be used to mean no
     access constraints are imposed.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/ows/2.0"
 
@@ -19,5 +20,5 @@ class AccessConstraints:
         default="",
         metadata={
             "required": True,
-        }
+        },
     )

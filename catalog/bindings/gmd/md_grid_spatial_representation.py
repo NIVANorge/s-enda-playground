@@ -1,5 +1,7 @@
 from dataclasses import dataclass
-from bindings.gmd.md_grid_spatial_representation_type import MdGridSpatialRepresentationType
+from bindings.gmd.md_grid_spatial_representation_type import (
+    MdGridSpatialRepresentationType,
+)
 
 __NAMESPACE__ = "http://www.isotc211.org/2005/gmd"
 

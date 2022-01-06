@@ -14,5 +14,5 @@ class CompassPoint:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )

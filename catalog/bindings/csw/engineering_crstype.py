@@ -16,6 +16,7 @@ class EngineeringCrstype(AbstractReferenceSystemType):
     - CRSs on moving platforms such as road vehicles, vessels, aircraft, or spacecraft.
     For further information, see OGC Abstract Specification Topic 2.
     """
+
     class Meta:
         name = "EngineeringCRSType"
 
@@ -26,7 +27,7 @@ class EngineeringCrstype(AbstractReferenceSystemType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     uses_engineering_datum: Optional[UsesEngineeringDatum] = field(
         default=None,
@@ -35,5 +36,5 @@ class EngineeringCrstype(AbstractReferenceSystemType):
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )

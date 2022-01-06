@@ -13,5 +13,6 @@ class SphericalCstype(AbstractCoordinateSystemType):
     ellipsoid "degenerated" into a sphere. A SphericalCS shall have
     three usesAxis associations.
     """
+
     class Meta:
         name = "SphericalCSType"

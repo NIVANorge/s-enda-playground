@@ -13,6 +13,7 @@ class MdApplicationSchemaInformationType(AbstractObjectType):
     """
     Information about the application schema used to build the dataset.
     """
+
     class Meta:
         name = "MD_ApplicationSchemaInformation_Type"
 
@@ -22,7 +23,7 @@ class MdApplicationSchemaInformationType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     schema_language: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -31,7 +32,7 @@ class MdApplicationSchemaInformationType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     constraint_language: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -40,7 +41,7 @@ class MdApplicationSchemaInformationType(AbstractObjectType):
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
             "required": True,
-        }
+        },
     )
     schema_ascii: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -48,7 +49,7 @@ class MdApplicationSchemaInformationType(AbstractObjectType):
             "name": "schemaAscii",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     graphics_file: Optional[BinaryPropertyType] = field(
         default=None,
@@ -56,7 +57,7 @@ class MdApplicationSchemaInformationType(AbstractObjectType):
             "name": "graphicsFile",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     software_development_file: Optional[BinaryPropertyType] = field(
         default=None,
@@ -64,7 +65,7 @@ class MdApplicationSchemaInformationType(AbstractObjectType):
             "name": "softwareDevelopmentFile",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )
     software_development_file_format: Optional[CharacterStringPropertyType] = field(
         default=None,
@@ -72,5 +73,5 @@ class MdApplicationSchemaInformationType(AbstractObjectType):
             "name": "softwareDevelopmentFileFormat",
             "type": "Element",
             "namespace": "http://www.isotc211.org/2005/gmd",
-        }
+        },
     )

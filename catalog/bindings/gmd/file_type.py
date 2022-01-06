@@ -15,7 +15,7 @@ class FileType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     file_name: Optional[str] = field(
         default=None,
@@ -23,7 +23,7 @@ class FileType:
             "name": "fileName",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     file_reference: Optional[str] = field(
         default=None,
@@ -31,7 +31,7 @@ class FileType:
             "name": "fileReference",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     file_structure: Optional[FileValueModelType] = field(
         default=None,
@@ -40,7 +40,7 @@ class FileType:
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
             "required": True,
-        }
+        },
     )
     mime_type: Optional[str] = field(
         default=None,
@@ -48,12 +48,12 @@ class FileType:
             "name": "mimeType",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     compression: Optional[str] = field(
         default=None,
         metadata={
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

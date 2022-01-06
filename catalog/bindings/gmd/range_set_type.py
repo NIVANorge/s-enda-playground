@@ -19,7 +19,7 @@ class RangeSetType:
             "name": "ValueArray",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     quantity_list: List[QuantityList] = field(
         default_factory=list,
@@ -27,7 +27,7 @@ class RangeSetType:
             "name": "QuantityList",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     count_list: List[List[Union[str, NilReasonEnumerationValue]]] = field(
         default_factory=list,
@@ -37,7 +37,7 @@ class RangeSetType:
             "namespace": "http://www.opengis.net/gml",
             "pattern": r"other:\w{2,}",
             "tokens": True,
-        }
+        },
     )
     category_list: List[CategoryList] = field(
         default_factory=list,
@@ -45,7 +45,7 @@ class RangeSetType:
             "name": "CategoryList",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     boolean_list: List[List[Union[str, NilReasonEnumerationValue]]] = field(
         default_factory=list,
@@ -55,7 +55,7 @@ class RangeSetType:
             "namespace": "http://www.opengis.net/gml",
             "pattern": r"other:\w{2,}",
             "tokens": True,
-        }
+        },
     )
     abstract_scalar_value_list: List[AbstractScalarValueList] = field(
         default_factory=list,
@@ -63,7 +63,7 @@ class RangeSetType:
             "name": "AbstractScalarValueList",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     data_block: Optional[DataBlock] = field(
         default=None,
@@ -71,7 +71,7 @@ class RangeSetType:
             "name": "DataBlock",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )
     file: Optional[File] = field(
         default=None,
@@ -79,5 +79,5 @@ class RangeSetType:
             "name": "File",
             "type": "Element",
             "namespace": "http://www.opengis.net/gml",
-        }
+        },
     )

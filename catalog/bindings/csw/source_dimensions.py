@@ -9,6 +9,7 @@ class SourceDimensions:
     """
     Number of dimensions in the source CRS of this operation method.
     """
+
     class Meta:
         name = "sourceDimensions"
         namespace = "http://www.opengis.net/gml"
@@ -17,5 +18,5 @@ class SourceDimensions:
         default=None,
         metadata={
             "required": True,
-        }
+        },
     )

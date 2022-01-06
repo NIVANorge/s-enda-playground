@@ -9,6 +9,7 @@ class MeasureDescription(CodeType2):
     """
     A description of the position accuracy parameter(s) provided.
     """
+
     class Meta:
         name = "measureDescription"
         namespace = "http://www.opengis.net/gml"

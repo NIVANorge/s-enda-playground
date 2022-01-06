@@ -13,5 +13,6 @@ class TimeCoordinateSystem(TimeCoordinateSystemType):
     -       the origin is specified either using the property gml:originPosition whose value is a direct time position, or using the property gml:origin whose model is gml:TimeInstantPropertyType; this permits more flexibility in representation and also supports referring to a value fixed elsewhere;
     -       the interval uses gml:TimeIntervalLengthType.
     """
+
     class Meta:
         namespace = "http://www.opengis.net/gml"

@@ -12,6 +12,7 @@ class PrimeMeridian1(PrimeMeridianType):
     The default value for the prime meridian gml:identifier value is
     "Greenwich".
     """
+
     class Meta:
         name = "PrimeMeridian"
         namespace = "http://www.opengis.net/gml"
