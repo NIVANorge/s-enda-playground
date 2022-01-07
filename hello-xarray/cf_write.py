@@ -56,11 +56,3 @@ ds.sel(depth=4).sea_water_temperature.plot.line("o")
 # %%
 ds.to_netcdf("test.nc")
 # %%
-a = asdataarray(
-    TemperatureTraj(
-        [[10, 15]],
-        trajectory=["first"],
-        time=[["1970-01-01T00:00:00.000000000", "1970-01-01T10:00:00.000000000"]],
-    )
-)
-# %%
