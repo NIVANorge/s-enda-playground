@@ -5,32 +5,31 @@ from datetime import datetime
 import xarray as xr
 from xarray_dataclasses import asdataarray, asdataset
 
-from cf_classes.attributes import DatasetAttributes
-from cf_classes.dataarrays import (
+from cf_classes.attributes import DatasetAttrs
+from cf_classes.time_series import (
     Conductivity,
     Latitude,
     Longitude,
     Salinity,
     WaterTemperature,
-    TemperatureTraj
 )
 
 #%%
 w_temp = WaterTemperature(
     # (4m, 8m)
-    [(10, 15), (20, 25)],
+    data=[(10, 15), (20, 25)],
     time=["1970-01-01T00:00:00.000000000", "1970-01-01T01:00:00.000000000"],
     depth=[4, 8],
 )
 #%%
 sal = Salinity(
-    [(10, 1500, 15000), (15, 2000, 20000)],
+    data=[(10, 1500, 15000), (15, 2000, 20000)],
     time=["1970-01-01T00:00:00.000000000", "1970-01-01T10:00:00.000000000"],
     depth=[4, 8, 16],
 )
 #%%
 con = Conductivity(
-    [(10, 15), (15, 20), (1.5, 2.0)],
+    data=[(10, 15), (15, 20), (1.5, 2.0)],
     time=[
         "1970-01-01T00:00:00.000000000",
         "1970-01-01T10:00:00.000000000",
@@ -59,8 +58,11 @@ ds.sel(depth=4).sea_water_temperature.plot.line("o")
 # %%
 ds.to_netcdf("test.nc")
 # %%
-a = asdataarray(TemperatureTraj([[10, 15]],
-    trajectory=[1],
-    time=[["1970-01-01T00:00:00.000000000", "1970-01-01T10:00:00.000000000"]],
-    ))
+a = asdataarray(
+    TemperatureTraj(
+        [[10, 15]],
+        trajectory=["first"],
+        time=[["1970-01-01T00:00:00.000000000", "1970-01-01T10:00:00.000000000"]],
+    )
+)
 # %%
