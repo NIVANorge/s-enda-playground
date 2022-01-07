@@ -11,6 +11,7 @@ from cf_classes.time_series import (
     Salinity,
     WaterTemperature,
 )
+from cf_classes.trajectory import TemperatureTraj
 
 #%%
 w_temp = WaterTemperature(
@@ -55,4 +56,21 @@ ds.sel(depth=4)
 ds.sel(depth=4).sea_water_temperature.plot.line("o")
 # %%
 ds.to_netcdf("test.nc")
+# %%
+
+temp_traj = asdataarray(TemperatureTraj(
+    data=[[2, 4, 5]],
+    trajectory=["first"],
+    time=[
+        [
+            "1970-01-01T00:00:00.000000000",
+            "1970-01-01T10:00:00.000000000",
+            "1980-01-01T10:00:00.000000000",
+        ]
+    ],
+
+))
+
+# %%
+temp_traj.sel(trajectory='first').plot(x='time').line('o')
 # %%

@@ -8,9 +8,13 @@ from cf_classes.literals import TRAJECTORY, OBS
 from cf_classes.attributes import TimeAttrs, WaterTemperatureAttrs
 
 @dataclass
-class Time:
+class TimeTrajData:
     """Specs for the Time axis."""
     data: Data[Tuple[TRAJECTORY, OBS], Literal["datetime64[ns]"]]
+
+@dataclass
+class TimeTraj(TimeAttrs, TimeTrajData):
+    """Time Trajectory"""
 
 @dataclass
 class Trajectory:
@@ -19,8 +23,12 @@ class Trajectory:
     long_name: Attr[str] = "trajectory"
 
 @dataclass
-class WaterTemperature:
+class TemperatureTrajData:
     data: Data[Tuple[TRAJECTORY, OBS], np.float32] 
     name: Name[str] = "sea_water_temperature"
-    time: Coordof[Time] = 0
+    time: Coordof[TimeTraj] = 0
     trajectory: Coordof[Trajectory] = 0
+
+@dataclass
+class TemperatureTraj(WaterTemperatureAttrs, TemperatureTrajData):
+    """Sea water temperature trajectories"""
