@@ -20,5 +20,6 @@ ds_traj = xr.open_dataset('https://podaac-opendap.jpl.nasa.gov/opendap/allData/i
 # %%
 ds_traj.to_dict(data=False)
 # %%
-ds_traj.obs
+ds_traj.attrs
 # %%
+ds_traj.CDOM_MEAN.plot(x='time')
