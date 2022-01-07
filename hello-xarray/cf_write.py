@@ -8,8 +8,6 @@ from xarray_dataclasses import asdataarray, asdataset
 from cf_classes.attributes import DatasetAttrs
 from cf_classes.time_series import (
     Conductivity,
-    Latitude,
-    Longitude,
     Salinity,
     WaterTemperature,
 )
@@ -41,7 +39,7 @@ con = Conductivity(
 ds = xr.merge([asdataarray(d) for d in [w_temp, sal, con]])
 #%%
 ds.attrs = asdict(
-    DatasetAttributes(
+    DatasetAttrs(
         title="hei",
         date_created=str(datetime.now()),
         keywords=["hei"],
