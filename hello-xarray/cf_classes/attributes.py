@@ -1,7 +1,18 @@
 from dataclasses import dataclass
 from typing import List, Literal
+from numpy import positive
 
 from xarray_dataclasses import Attr
+
+
+@dataclass
+class AltitudeAttrs:
+    standard_name: Attr[str] = "height"
+    long_name: Attr[str] = "vertical distance above the surface"
+    units: Attr[str] = "m"
+    positive: Attr[str] = "up"
+    axis: Attr[str] = "Z"
+
 
 @dataclass
 class LatitudeAttrs:
@@ -68,6 +79,7 @@ class DepthAttrs:
     reference: Attr[str] = "sea_level"
     coordinate_reference_frame: Attr[str] = "urn:ogc:def:crs:EPSG::CRF 5831"
 
+
 @dataclass
 class DatasetAttrs:
     title: Attr[str]
@@ -90,6 +102,6 @@ class DatasetAttrs:
     publisher_url: Attr[str] = "niva.no"
     licence: Attr[
         str
-    ] = 'Freely distributed. Must credit the source of data, e.g. "Data fra Norsk Institut for Vannforskning", "Based on data from the Norwegian Institute for Water Research". Data and products are licensed under Norwegian license for public data (NLOD) and Creative Commons Attribution 3.0 Norway. See http://met.no/English/Data_Policy_and_Data_Services/.'
+    ] = 'Freely distributed. Must credit the source of data, e.g. "Data fra Norsk Institut for Vannforskning", "Based on data from the Norwegian Institute for Water Research". Data and products are licensed under Norwegian license for public data (NLOD) and Creative Commons Attribution 3.0 Norway.'
     position_ref: Attr[str] = "ETRS 89"
     history: Attr[str] = "Initial data"

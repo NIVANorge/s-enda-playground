@@ -4,9 +4,9 @@ from typing import Tuple, Literal
 import numpy as np
 from xarray_dataclasses import Attr, Coordof, Data, Name
 
-from cf_classes.literals import DEPTH, TIME, STATION, OBS
+from cf_classes.literals import TIME, STATION
 from cf_classes.attributes import (
-    DepthAttrs,
+    AltitudeAttrs,
     LatitudeAttrs,
     TimeAttrs,
     LongitudeAttrs,
@@ -14,6 +14,15 @@ from cf_classes.attributes import (
     ConductivityAttrs,
     WaterTemperatureAttrs,
 )
+
+
+@dataclass
+class StationId:
+    data: Data[Literal[()], np.str_]
+    name: Name[str] = 'station_id'
+    long_name: Attr[str] = "Station ID"
+    cf_role: Attr[str] = "timeseries_id"
+
 
 
 @dataclass
@@ -28,20 +37,20 @@ class TimeAxis(TimeAttrs, TimeData):
 
 
 @dataclass
-class DepthData:
-    data: Data[DEPTH, np.int16]
+class AltitudeData:
+    data: Data[Literal[()], np.int16]
+    name: Name[str] = "alt"
 
 
 @dataclass
-class DepthAxis(DepthAttrs, DepthData):
+class StationAltitude(AltitudeAttrs, AltitudeData):
     """Specs for the Z axis."""
 
 
 @dataclass
 class LatitudeData:
-    data: Data[TIME, np.float64]
-    name: Name[str] = "latitude"
-    time: Coordof[TimeAxis] = 0
+    data: Data[Literal[()], np.float64]
+    name: Name[str] = "lat"
 
 
 @dataclass
@@ -51,9 +60,8 @@ class Latitude(LatitudeAttrs, LatitudeData):
 
 @dataclass
 class LongitudeData:
-    data: Data[TIME, np.float64]
-    name: Name[str] = "longitude"
-    time: Coordof[TimeAxis] = 0
+    data: Data[Literal[()], np.float64]
+    name: Name[str] = "lon"
 
 
 @dataclass
@@ -63,11 +71,11 @@ class Longitude(LongitudeAttrs, LongitudeData):
 
 @dataclass
 class SalinityData:
-    data: Data[Tuple[TIME, DEPTH], np.float32]
+    data: Data[TIME, np.float32]
     name: Name[str] = "salinity"
     time: Coordof[TimeAxis] = 0
-    depth: Coordof[DepthAxis] = 0
-    grid_mapping: Attr[str] = 'crs'
+    grid_mapping: Attr[str] = "crs"
+    coordinates: Attr[str] = "time lat lon alt"
 
 
 @dataclass
@@ -77,11 +85,11 @@ class Salinity(SalinityAttrs, SalinityData):
 
 @dataclass
 class ConductivityData:
-    data: Data[Tuple[TIME, DEPTH], np.float32]
+    data: Data[TIME, np.float32]
     name: Name[str] = "conductivity"
     time: Coordof[TimeAxis] = 0
-    depth: Coordof[DepthAxis] = 0
-    grid_mapping: Attr[str] = 'crs'
+    grid_mapping: Attr[str] = "crs"
+    coordinates: Attr[str] = "time lat lon alt"
 
 
 @dataclass
@@ -91,11 +99,11 @@ class Conductivity(ConductivityAttrs, ConductivityData):
 
 @dataclass
 class WaterTemperatureData:
-    data: Data[Tuple[TIME, DEPTH], np.float32]
+    data: Data[TIME, np.float32]
     name: Name[str] = "sea_water_temperature"
     time: Coordof[TimeAxis] = 0
-    depth: Coordof[DepthAxis] = 0
-    grid_mapping: Attr[str] = 'crs'
+    grid_mapping: Attr[str] = "crs"
+    coordinates: Attr[str] = "time lat lon alt"
 
 
 @dataclass

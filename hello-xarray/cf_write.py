@@ -1,6 +1,7 @@
 #%%
 from dataclasses import asdict
-from datetime import datetime
+from datetime import datetime, timedelta
+import numpy as np
 
 import xarray as xr
 from xarray_dataclasses import asdataarray, asdataset
@@ -8,53 +9,68 @@ from xarray_dataclasses import asdataarray, asdataset
 from cf_classes.attributes import DatasetAttrs
 from cf_classes.time_series import (
     Conductivity,
+    Latitude,
+    Longitude,
     Salinity,
     WaterTemperature,
+    StationId,
+    StationAltitude
 )
 from cf_classes.trajectory import TemperatureTraj
 from cf_classes.common import CRSWGS1984
 
 #%%
-w_temp = WaterTemperature(
+temperature = WaterTemperature(
     # (4m, 8m)
-    data=[(10, 15), (20, 25)],
-    time=["1970-01-01T00:00:00.000000000", "1970-01-01T01:00:00.000000000"],
-    depth=[4, 8],
+    data=[10, 15],
+    time=["1970-01-01T00:00:00", "1970-01-01T01:00:10"],
 )
 #%%
-sal = Salinity(
-    data=[(10, 1500, 15000), (15, 2000, 20000)],
-    time=["1970-01-01T00:00:00.000000000", "1970-01-01T10:00:00.000000000"],
-    depth=[4, 8, 16],
+salinity = Salinity(
+    long_name='Salinity at some place',
+    data=[10, 1500, 15000, 15, 2000, 20000],
+    time=np.arange(datetime(1995, 7, 1), datetime(1995, 7, 7), timedelta(days=1)),
 )
 #%%
-con = Conductivity(
-    data=[(10, 15), (15, 20), (1.5, 2.0)],
+conductivity = Conductivity(
+    data=[10, 15, 56],
     time=[
-        "1970-01-01T00:00:00.000000000",
-        "1970-01-01T10:00:00.000000000",
-        "1980-01-01T10:00:00.000000000",
+        "1970-01-01T00:00:00",
+        "1970-01-01T10:00:00",
+        "1980-01-01T10:00:00",
     ],
-    depth=[4, 8],
 )
 #%%
-ds = xr.merge([asdataarray(d) for d in [w_temp, sal, con, CRSWGS1984()]])
+ds = xr.merge(
+    [
+        asdataarray(d)
+        for d in [
+            temperature,
+            salinity,
+            conductivity,
+            CRSWGS1984(),
+            Latitude(59.95),
+            Longitude(10.75),
+            StationAltitude(5),
+            StationId("Oslo1")
+        ]
+    ]
+)
 #%%
 ds.attrs = asdict(
     DatasetAttrs(
         title="hei",
         date_created=str(datetime.now()),
         keywords=["hei"],
-        featureType="traectory",
+        featureType="timeSeries",
     )
 )
 
 # %%
 ds
 # %%
-ds.sel(depth=4)
 # %%
-ds.sel(depth=4).sea_water_temperature.plot.line("o")
+ds.salinity.plot.line("o")
 # %%
 ds.to_netcdf("test.nc")
 # %%
