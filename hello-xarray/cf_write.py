@@ -13,7 +13,8 @@ from cf_classes.time_series import (
     Longitude,
     StationId,
     StationAltitude,
-    TimeDataVar
+    TimeDataVar,
+    TimeSeriesAttrs
 )
 from cf_classes.trajectory import TrajDataVar
 from cf_classes.common import WGS1984
@@ -67,18 +68,16 @@ ds = xr.merge(
 )
 #%%
 ds.attrs = asdict(
-    DatasetAttrs(
+    TimeSeriesAttrs(
         title="hei",
         date_created=str(datetime.now()),
         keywords=["hei"],
         featureType="timeSeries",
+        station_name="Oslo",
+        time_coverage_start=str(ds.time.values[0]),
+        time_coverage_end=str(ds.time.values[-1])
     )
 )
-
-# %%
-ds
-# %%
-ds = xr.tutorial.load_dataset("air_temperature")
 
 # %%
 ds.salinity.plot.line("o")

@@ -65,6 +65,8 @@ class DatasetAttrs:
     date_created: Attr[Literal["datetime64[ns]"]]
     keywords: Attr[List[str]]
     featureType: Attr[Literal["timeSeries", "trajectory"]]
+    time_coverage_start: Attr[str]
+    time_coverage_end: Attr[str]
     geospatial_lat_min: Attr[float] = 0
     geospatial_lat_max: Attr[float] = 0
     geospatial_lon_min: Attr[float] = 0
@@ -82,5 +84,4 @@ class DatasetAttrs:
     licence: Attr[
         str
     ] = 'Freely distributed. Must credit the source of data, e.g. "Data fra Norsk Institut for Vannforskning", "Based on data from the Norwegian Institute for Water Research". Data and products are licensed under Norwegian license for public data (NLOD) and Creative Commons Attribution 3.0 Norway.'
-    position_ref: Attr[str] = "ETRS 89"
     history: Attr[str] = "Initial data"

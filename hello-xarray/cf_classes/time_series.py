@@ -7,6 +7,7 @@ from xarray_dataclasses import Attr, Coordof, Data, Name
 from cf_classes.literals import TIME, STATION
 from cf_classes.attributes import (
     AltitudeAttrs,
+    DatasetAttrs,
     LatitudeAttrs,
     TimeAttrs,
     LongitudeAttrs,
@@ -74,3 +75,11 @@ class TimeDataVar(DataVarAttrs):
     time: Coordof[TimeAxis] = 0
     grid_mapping: Attr[str] = "crs"
     coordinates: Attr[str] = "time lat lon alt"
+
+@dataclass
+class _TimeSeriesAttrs:
+    station_name: Attr[str]
+
+@dataclass
+class TimeSeriesAttrs(DatasetAttrs, _TimeSeriesAttrs):
+    pass
