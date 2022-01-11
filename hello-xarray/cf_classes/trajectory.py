@@ -5,7 +5,7 @@ import numpy as np
 from xarray_dataclasses import Attr, Data, Coordof, Name
 
 from cf_classes.literals import TRAJECTORY, OBS
-from cf_classes.attributes import TimeAttrs, WaterTemperatureAttrs
+from cf_classes.attributes import TimeAttrs, DataVarAttrs
 
 
 @dataclass
@@ -28,13 +28,8 @@ class Trajectory:
 
 
 @dataclass
-class TemperatureTrajData:
+class TrajDataVar(DataVarAttrs):
     data: Data[Tuple[TRAJECTORY, OBS], np.float32]
-    name: Name[str] = "sea_water_temperature"
+    name: Name[str]
     time: Coordof[TimeTraj] = 0
     trajectory: Coordof[Trajectory] = 0
-
-
-@dataclass
-class TemperatureTraj(WaterTemperatureAttrs, TemperatureTrajData):
-    """Sea water temperature trajectories"""

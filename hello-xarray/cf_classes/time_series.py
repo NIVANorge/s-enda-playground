@@ -10,9 +10,7 @@ from cf_classes.attributes import (
     LatitudeAttrs,
     TimeAttrs,
     LongitudeAttrs,
-    SalinityAttrs,
-    ConductivityAttrs,
-    WaterTemperatureAttrs,
+    DataVarAttrs
 )
 
 
@@ -70,42 +68,9 @@ class Longitude(LongitudeAttrs, LongitudeData):
 
 
 @dataclass
-class SalinityData:
+class TimeDataVar(DataVarAttrs):
     data: Data[TIME, np.float32]
-    name: Name[str] = "salinity"
+    name: Name[str]
     time: Coordof[TimeAxis] = 0
     grid_mapping: Attr[str] = "crs"
     coordinates: Attr[str] = "time lat lon alt"
-
-
-@dataclass
-class Salinity(SalinityAttrs, SalinityData):
-    pass
-
-
-@dataclass
-class ConductivityData:
-    data: Data[TIME, np.float32]
-    name: Name[str] = "conductivity"
-    time: Coordof[TimeAxis] = 0
-    grid_mapping: Attr[str] = "crs"
-    coordinates: Attr[str] = "time lat lon alt"
-
-
-@dataclass
-class Conductivity(ConductivityAttrs, ConductivityData):
-    pass
-
-
-@dataclass
-class WaterTemperatureData:
-    data: Data[TIME, np.float32]
-    name: Name[str] = "sea_water_temperature"
-    time: Coordof[TimeAxis] = 0
-    grid_mapping: Attr[str] = "crs"
-    coordinates: Attr[str] = "time lat lon alt"
-
-
-@dataclass
-class WaterTemperature(WaterTemperatureAttrs, WaterTemperatureData):
-    pass
