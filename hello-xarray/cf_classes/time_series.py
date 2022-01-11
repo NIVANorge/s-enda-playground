@@ -4,7 +4,7 @@ from typing import Tuple, Literal
 import numpy as np
 from xarray_dataclasses import Attr, Coordof, Data, Name
 
-from cf_classes.literals import DEPTH, TIME, TRAJECTORY, OBS
+from cf_classes.literals import DEPTH, TIME, STATION, OBS
 from cf_classes.attributes import (
     DepthAttrs,
     LatitudeAttrs,
@@ -67,6 +67,7 @@ class SalinityData:
     name: Name[str] = "salinity"
     time: Coordof[TimeAxis] = 0
     depth: Coordof[DepthAxis] = 0
+    grid_mapping: Attr[str] = 'crs'
 
 
 @dataclass
@@ -80,6 +81,7 @@ class ConductivityData:
     name: Name[str] = "conductivity"
     time: Coordof[TimeAxis] = 0
     depth: Coordof[DepthAxis] = 0
+    grid_mapping: Attr[str] = 'crs'
 
 
 @dataclass
@@ -93,6 +95,7 @@ class WaterTemperatureData:
     name: Name[str] = "sea_water_temperature"
     time: Coordof[TimeAxis] = 0
     depth: Coordof[DepthAxis] = 0
+    grid_mapping: Attr[str] = 'crs'
 
 
 @dataclass

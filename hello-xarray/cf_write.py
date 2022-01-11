@@ -12,6 +12,7 @@ from cf_classes.time_series import (
     WaterTemperature,
 )
 from cf_classes.trajectory import TemperatureTraj
+from cf_classes.common import CRSWGS1984
 
 #%%
 w_temp = WaterTemperature(
@@ -37,7 +38,7 @@ con = Conductivity(
     depth=[4, 8],
 )
 #%%
-ds = xr.merge([asdataarray(d) for d in [w_temp, sal, con]])
+ds = xr.merge([asdataarray(d) for d in [w_temp, sal, con, CRSWGS1984()]])
 #%%
 ds.attrs = asdict(
     DatasetAttrs(
