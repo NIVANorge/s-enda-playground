@@ -8,7 +8,7 @@ import numpy as np
 
 
 @dataclass
-class CRSWGS1984:
+class WGS1984:
     data: Data[Literal[()], np.int8] = 0
     name: Name[str] = "crs"
     grid_mapping_name: Attr[str] = "latitude_longitude"

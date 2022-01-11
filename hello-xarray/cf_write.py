@@ -17,7 +17,7 @@ from cf_classes.time_series import (
     StationAltitude
 )
 from cf_classes.trajectory import TemperatureTraj
-from cf_classes.common import CRSWGS1984
+from cf_classes.common import WGS1984
 
 #%%
 temperature = WaterTemperature(
@@ -48,7 +48,7 @@ ds = xr.merge(
             temperature,
             salinity,
             conductivity,
-            CRSWGS1984(),
+            WGS1984(),
             Latitude(59.95),
             Longitude(10.75),
             StationAltitude(5),
@@ -69,6 +69,8 @@ ds.attrs = asdict(
 # %%
 ds
 # %%
+ds = xr.tutorial.load_dataset("air_temperature")
+
 # %%
 ds.salinity.plot.line("o")
 # %%
