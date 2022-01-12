@@ -65,7 +65,6 @@ ds.attrs = asdict(
         title="hei",
         date_created=str(datetime.now()),
         keywords=["hei"],
-        featureType="timeSeries",
         station_name="Oslo",
         time_coverage_start=str(ds.time.values[0]),
         time_coverage_end=str(ds.time.values[-1]),
@@ -78,4 +77,6 @@ ds.attrs = asdict(
 
 # %%
 ds.salinity.plot.line("o")
+# %%
+ds
 # %%

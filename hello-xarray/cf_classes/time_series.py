@@ -1,11 +1,11 @@
 from dataclasses import dataclass, field
-from typing import Tuple, Literal
 
 import numpy as np
 from xarray_dataclasses import Attr, Coordof, Data, Name
 
 from cf_classes.literals import TIME
 from cf_classes.attributes import DatasetAttrs
+
 
 @dataclass
 class StationId:
@@ -14,6 +14,7 @@ class StationId:
     long_name: Attr[str] = "Station ID"
     cf_role: Attr[str] = "timeseries_id"
 
+
 @dataclass
 class _TimeSeriesAttrs:
     station_name: Attr[str]
@@ -21,4 +22,4 @@ class _TimeSeriesAttrs:
 
 @dataclass
 class TimeSeriesAttrs(DatasetAttrs, _TimeSeriesAttrs):
-    pass
+    featureType: Attr[str] = "timeSeries"

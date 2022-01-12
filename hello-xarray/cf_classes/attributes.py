@@ -64,7 +64,6 @@ class DatasetAttrs:
     title: Attr[str]
     date_created: Attr[Literal["datetime64[ns]"]]
     keywords: Attr[List[str]]
-    featureType: Attr[Literal["timeSeries", "trajectory"]]
     time_coverage_start: Attr[str]
     time_coverage_end: Attr[str]
     geospatial_lat_min: Attr[float]
