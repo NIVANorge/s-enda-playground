@@ -10,7 +10,6 @@ from cf_classes.attributes import (
     DatasetAttrs,
     LatitudeAttrs,
     LongitudeAttrs,
-    DataVarAttrs
 )
 
 from cf_classes.common import TimeAxis
@@ -19,9 +18,10 @@ from cf_classes.common import TimeAxis
 @dataclass
 class StationId:
     data: Data[None, np.str_]
-    name: Name[str] = 'station_id'
+    name: Name[str] = "station_id"
     long_name: Attr[str] = "Station ID"
     cf_role: Attr[str] = "timeseries_id"
+
 
 @dataclass
 class AltitudeData:
@@ -57,16 +57,9 @@ class Longitude(LongitudeAttrs, LongitudeData):
 
 
 @dataclass
-class TimeSeriesVar(DataVarAttrs):
-    data: Data[TIME, np.float32]
-    name: Name[str]
-    time: Coordof[TimeAxis] = 0
-    grid_mapping: Attr[str] = "crs"
-    coordinates: Attr[str] = "time lat lon alt"
-
-@dataclass
 class _TimeSeriesAttrs:
     station_name: Attr[str]
+
 
 @dataclass
 class TimeSeriesAttrs(DatasetAttrs, _TimeSeriesAttrs):

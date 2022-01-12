@@ -5,21 +5,9 @@ from typing import Tuple, Literal
 import numpy as np
 from xarray_dataclasses import Attr, Data, Coordof, Name
 
-from cf_classes.literals import TRAJECTORY, OBS
+from cf_classes.literals import TIME
 from cf_classes.attributes import TimeAttrs, DataVarAttrs
-
-
-@dataclass
-class TrajTimeData:
-    """Specs for the Time axis."""
-
-    data: Data[Tuple[TRAJECTORY, OBS], Literal["datetime64[ns]"]]
-
-
-@dataclass
-class TrajectoryTime(TimeAttrs, TrajTimeData):
-    """Time Trajectory"""
-
+from cf_classes.common import TimeAxis 
 
 @dataclass
 class TrajectoryId:
@@ -28,8 +16,3 @@ class TrajectoryId:
     long_name: Attr[str] = "trajectory"
 
 
-@dataclass
-class TrajectoryVar(DataVarAttrs):
-    data: Data[Tuple[TRAJECTORY, OBS], np.float32]
-    name: Name[str]
-    time: Coordof[TrajectoryTime] = 0

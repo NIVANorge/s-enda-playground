@@ -13,15 +13,13 @@ from cf_classes.time_series import (
     Longitude,
     StationId,
     StationAltitude,
-    TimeSeriesVar,
     TimeSeriesAttrs
 )
-from cf_classes.trajectory import TrajectoryVar
-from cf_classes.common import WGS1984
+from cf_classes.common import WGS1984, TimeArray
 
 #%% 
 # standard names http://vocab.nerc.ac.uk/collection/P07/current/
-temperature = TimeSeriesVar(
+temperature = TimeArray(
     name='temperature',
     standard_name='sea_water_temperature',
     long_name='Sea water temperature',
@@ -30,7 +28,7 @@ temperature = TimeSeriesVar(
     time=["1970-01-01T00:00:00", "1970-01-01T01:00:10"],
 )
 #%%
-salinity = TimeSeriesVar(
+salinity = TimeArray(
     name='salinity',
     standard_name='sea_water_salinity',
     long_name='Salinity at some place',
@@ -39,7 +37,7 @@ salinity = TimeSeriesVar(
     time=np.arange(datetime(1995, 7, 1), datetime(1995, 7, 7), timedelta(days=1)),
 )
 #%%
-conductivity = TimeSeriesVar(
+conductivity = TimeArray(
     name='conductivity',
     standard_name = "sea_water_electrical_conductivity",
     long_name = "Conductivity at depth",
@@ -87,3 +85,5 @@ ds.attrs = asdict(
 # %%
 ds.salinity.plot.line("o")
 
+
+# %%
