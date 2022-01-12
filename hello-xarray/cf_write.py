@@ -16,7 +16,7 @@ from cf_classes.time_series import (
     TimeSeriesVar,
     TimeSeriesAttrs
 )
-from cf_classes.trajectory import TrajDataVar
+from cf_classes.trajectory import TrajectoryVar
 from cf_classes.common import WGS1984
 
 #%%
@@ -75,7 +75,11 @@ ds.attrs = asdict(
         featureType="timeSeries",
         station_name="Oslo",
         time_coverage_start=str(ds.time.values[0]),
-        time_coverage_end=str(ds.time.values[-1])
+        time_coverage_end=str(ds.time.values[-1]),
+        geospatial_lat_min=float(ds.lat),
+        geospatial_lat_max=float(ds.lat),
+        geospatial_lon_min=float(ds.lon),
+        geospatial_lon_max=float(ds.lon)
     )
 )
 
@@ -85,13 +89,12 @@ ds.salinity.plot.line("o")
 ds.to_netcdf("test.nc")
 # %%
 temp_traj = asdataset(
-    TrajDataVar(
+    TrajectoryVar(
         name="sea_water_temperature",
         standard_name="sea_water_temperature",
         long_name="sea_water_temperature",
         units="degree_Celsius",
         data=[[2, 4, 5], [90, 70, 45]],
-        trajectory=["first", "second"],
         time=[
             [
                 "1970-01-01T00:00:00.000000000",

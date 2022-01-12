@@ -67,10 +67,10 @@ class DatasetAttrs:
     featureType: Attr[Literal["timeSeries", "trajectory"]]
     time_coverage_start: Attr[str]
     time_coverage_end: Attr[str]
-    geospatial_lat_min: Attr[float] = 0
-    geospatial_lat_max: Attr[float] = 0
-    geospatial_lon_min: Attr[float] = 0
-    geospatial_lon_max: Attr[float] = 0
+    geospatial_lat_min: Attr[float]
+    geospatial_lat_max: Attr[float]
+    geospatial_lon_min: Attr[float]
+    geospatial_lon_max: Attr[float]
     keywords_vocabulary: Attr[str] = "GCM:GCMD Keywords"
     data_owner: Attr[str] = "Norwegian Institute for Water Research"
     summary: Attr[str] = ""

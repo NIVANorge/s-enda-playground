@@ -9,27 +9,26 @@ from cf_classes.attributes import TimeAttrs, DataVarAttrs
 
 
 @dataclass
-class TimeTrajData:
+class TrajTimeData:
     """Specs for the Time axis."""
 
     data: Data[Tuple[TRAJECTORY, OBS], Literal["datetime64[ns]"]]
 
 
 @dataclass
-class TimeTraj(TimeAttrs, TimeTrajData):
+class TrajectoryTime(TimeAttrs, TrajTimeData):
     """Time Trajectory"""
 
 
 @dataclass
-class Trajectory:
+class TrajectoryId:
     data: Data[TRAJECTORY, np.str_]
     cf_role: Attr[str] = "trajectory_id"
     long_name: Attr[str] = "trajectory"
 
 
 @dataclass
-class TrajDataVar(DataVarAttrs):
+class TrajectoryVar(DataVarAttrs):
     data: Data[Tuple[TRAJECTORY, OBS], np.float32]
     name: Name[str]
-    time: Coordof[TimeTraj] = 0
-    trajectory: Coordof[Trajectory] = 0
+    time: Coordof[TrajectoryTime] = 0
