@@ -17,7 +17,7 @@ from cf_classes.attributes import (
 
 @dataclass
 class StationId:
-    data: Data[Literal[()], np.str_]
+    data: Data[None, np.str_]
     name: Name[str] = 'station_id'
     long_name: Attr[str] = "Station ID"
     cf_role: Attr[str] = "timeseries_id"
@@ -37,7 +37,7 @@ class TimeAxis(TimeAttrs, TimeData):
 
 @dataclass
 class AltitudeData:
-    data: Data[Literal[()], np.int16]
+    data: Data[None, np.int16]
     name: Name[str] = "alt"
 
 
@@ -48,7 +48,7 @@ class StationAltitude(AltitudeAttrs, AltitudeData):
 
 @dataclass
 class LatitudeData:
-    data: Data[Literal[()], np.float64]
+    data: Data[None, np.float64]
     name: Name[str] = "lat"
 
 
@@ -59,7 +59,7 @@ class Latitude(LatitudeAttrs, LatitudeData):
 
 @dataclass
 class LongitudeData:
-    data: Data[Literal[()], np.float64]
+    data: Data[None, np.float64]
     name: Name[str] = "lon"
 
 

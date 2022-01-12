@@ -1,3 +1,4 @@
+
 from dataclasses import dataclass, field
 from typing import Tuple, Literal
 
@@ -22,7 +23,7 @@ class TrajectoryTime(TimeAttrs, TrajTimeData):
 
 @dataclass
 class TrajectoryId:
-    data: Data[TRAJECTORY, np.str_]
+    data: Data[None, np.str_]
     cf_role: Attr[str] = "trajectory_id"
     long_name: Attr[str] = "trajectory"
 
