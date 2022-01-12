@@ -19,7 +19,8 @@ from cf_classes.time_series import (
 from cf_classes.trajectory import TrajectoryVar
 from cf_classes.common import WGS1984
 
-#%%
+#%% 
+# standard names http://vocab.nerc.ac.uk/collection/P07/current/
 temperature = TimeSeriesVar(
     name='temperature',
     standard_name='sea_water_temperature',
