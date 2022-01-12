@@ -4,15 +4,16 @@ from typing import Tuple, Literal
 import numpy as np
 from xarray_dataclasses import Attr, Coordof, Data, Name
 
-from cf_classes.literals import TIME, STATION
+from cf_classes.literals import TIME
 from cf_classes.attributes import (
     AltitudeAttrs,
     DatasetAttrs,
     LatitudeAttrs,
-    TimeAttrs,
     LongitudeAttrs,
     DataVarAttrs
 )
+
+from cf_classes.common import TimeAxis
 
 
 @dataclass
@@ -21,19 +22,6 @@ class StationId:
     name: Name[str] = 'station_id'
     long_name: Attr[str] = "Station ID"
     cf_role: Attr[str] = "timeseries_id"
-
-
-
-@dataclass
-class TimeData:
-    data: Data[TIME, Literal["datetime64[ns]"]]
-    # units is filled by xarray, based on time interval
-
-
-@dataclass
-class TimeAxis(TimeAttrs, TimeData):
-    """Specs for the Time axis."""
-
 
 @dataclass
 class AltitudeData:

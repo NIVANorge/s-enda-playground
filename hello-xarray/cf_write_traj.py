@@ -12,7 +12,10 @@ from cf_classes.attributes import DatasetAttrs
 from cf_classes.trajectory import TrajectoryVar, TrajectoryId
 from cf_classes.common import WGS1984
 #%%
-a = asdataarray(TrajectoryId('ll'))
+a = asdataset(TrajectoryId('ll'))
+a
+#%%
+a.to_netcdf('test.nc')
 #%%
 temp_traj = asdataset(
     TrajectoryVar(
