@@ -13,14 +13,14 @@ from cf_classes.time_series import (
     Longitude,
     StationId,
     StationAltitude,
-    TimeDataVar,
+    TimeSeriesVar,
     TimeSeriesAttrs
 )
 from cf_classes.trajectory import TrajDataVar
 from cf_classes.common import WGS1984
 
 #%%
-temperature = TimeDataVar(
+temperature = TimeSeriesVar(
     name='temperature',
     standard_name='sea_water_temperature',
     long_name='Sea water temperature',
@@ -29,7 +29,7 @@ temperature = TimeDataVar(
     time=["1970-01-01T00:00:00", "1970-01-01T01:00:10"],
 )
 #%%
-salinity = TimeDataVar(
+salinity = TimeSeriesVar(
     name='salinity',
     standard_name='sea_water_salinity',
     long_name='Salinity at some place',
@@ -38,7 +38,7 @@ salinity = TimeDataVar(
     time=np.arange(datetime(1995, 7, 1), datetime(1995, 7, 7), timedelta(days=1)),
 )
 #%%
-conductivity = TimeDataVar(
+conductivity = TimeSeriesVar(
     name='conductivity',
     standard_name = "sea_water_electrical_conductivity",
     long_name = "Conductivity at depth",

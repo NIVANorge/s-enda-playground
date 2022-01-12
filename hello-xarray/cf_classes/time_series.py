@@ -69,7 +69,7 @@ class Longitude(LongitudeAttrs, LongitudeData):
 
 
 @dataclass
-class TimeDataVar(DataVarAttrs):
+class TimeSeriesVar(DataVarAttrs):
     data: Data[TIME, np.float32]
     name: Name[str]
     time: Coordof[TimeAxis] = 0
