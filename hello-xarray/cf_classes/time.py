@@ -8,6 +8,7 @@ import numpy as np
 from cf_classes.literals import TIME
 
 from cf_classes.attributes import (
+    DataVarAttrs,
     TimeAttrs,
     AltitudeAttrs,
     LatitudeAttrs,
@@ -57,3 +58,7 @@ class LongitudeDataByTime:
 @dataclass
 class LongitudeByTime(LongitudeAttrs, LongitudeDataByTime):
     pass
+
+@dataclass
+class DataByTime(DataVarAttrs):
+    data: Data[TIME, np.float32]
