@@ -62,12 +62,12 @@ class LongitudeByTime(LongitudeAttrs, LongitudeDataByTime):
 
 
 @dataclass
-class DataVarByTime(DataVarAttrs):
+class DataVar(DataVarAttrs):
     data: Data[TIME, np.float32]
 
 
 @dataclass
-class DataVarByTime(DataVarByTime):
+class DataVarByTime(DataVar):
     name: Name[str]
     time: Coordof[TimeAxis] = 0
     grid_mapping: Attr[str] = "crs"
