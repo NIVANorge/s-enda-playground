@@ -10,21 +10,19 @@ from cf_classes.attributes import (
     DatasetAttrs,
 )
 
-from cf_classes.common import TimeAxis
-
-
 @dataclass
 class TrajectoryId:
     data: Data[None, np.str_]
+    name: Name[str] = 'trajectory_id'
     cf_role: Attr[str] = "trajectory_id"
     long_name: Attr[str] = "trajectory"
 
 
 @dataclass
 class _TrajectoryAttrs:
-    station_name: Attr[str]
+    trajectory_name: Attr[str]
 
 
 @dataclass
 class TrajectoryAttrs(DatasetAttrs, _TrajectoryAttrs):
-    pass
+    featureType: Attr[str] = "trajectory"

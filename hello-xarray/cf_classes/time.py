@@ -41,7 +41,7 @@ class AltitudeByTime(AltitudeAttrs, AltitudeDataByTime):
 
 @dataclass
 class LatitudeDataByTime:
-    data: Data[None, np.float64]
+    data: Data[TIME, np.float64]
     name: Name[str] = "lat"
 
 
@@ -52,7 +52,7 @@ class LatitudeByTime(LatitudeAttrs, LatitudeDataByTime):
 
 @dataclass
 class LongitudeDataByTime:
-    data: Data[None, np.float64]
+    data: Data[TIME, np.float64]
     name: Name[str] = "lon"
 
 
