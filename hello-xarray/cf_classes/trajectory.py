@@ -12,7 +12,7 @@ from cf_classes.attributes import (
 
 @dataclass
 class TrajectoryId:
-    data: Data[None, np.str_]
+    data: Data[None, Literal['|S64']]
     name: Name[str] = 'trajectory_id'
     cf_role: Attr[str] = "trajectory_id"
     long_name: Attr[str] = "trajectory"

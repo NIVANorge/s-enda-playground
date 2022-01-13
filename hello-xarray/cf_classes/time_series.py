@@ -1,4 +1,5 @@
 from dataclasses import dataclass, field
+from typing import Literal
 
 import numpy as np
 from xarray_dataclasses import Attr, Coordof, Data, Name
@@ -9,7 +10,7 @@ from cf_classes.attributes import DatasetAttrs
 
 @dataclass
 class StationId:
-    data: Data[None, np.str_]
+    data: Data[None, Literal["|S64"]]
     name: Name[str] = "station_id"
     long_name: Attr[str] = "Station ID"
     cf_role: Attr[str] = "timeseries_id"

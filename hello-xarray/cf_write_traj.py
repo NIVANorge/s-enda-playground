@@ -24,13 +24,14 @@ temperature = DataVarByTime(
     units="degree_Celsius",
     data=[2, None, 5, 7],
     time=time,
+    coordinates='time lat lon'
 )
 # %%
 latitude = LatitudeByTime(data=[50.70, 50.60, 50.50, 50.40])
 longitude = LongitudeByTime(data=[10.70, 10.60, 10.50, 10.40])
 
 # %%
-ds = xr.merge([asdataarray(d) for d in [temperature, longitude, latitude, TrajectoryId('traj1')]])
+ds = xr.merge([asdataarray(d) for d in [temperature, longitude, latitude, TrajectoryId('traj1'), WGS1984()]])
 # %%
 ds.attrs = asdict(TrajectoryAttrs(
         title="hei",
