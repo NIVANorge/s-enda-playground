@@ -5,7 +5,9 @@ import numpy as np
 from xarray_dataclasses import Attr, Coordof, Data, Name
 
 from cf_classes.literals import TIME
-from cf_classes.attributes import DatasetAttrs
+from cf_classes.attributes import DatasetAttrs, DataVarAttrs
+from cf_classes.dimless import Latitude, Longitude
+from cf_classes.time import TimeAxis
 
 
 @dataclass
@@ -24,3 +26,17 @@ class _TimeSeriesAttrs:
 @dataclass
 class TimeSeriesAttrs(DatasetAttrs, _TimeSeriesAttrs):
     featureType: Attr[str] = "timeSeries"
+
+@dataclass
+class DataVar(DataVarAttrs):
+    data: Data[TIME, np.float32]
+
+
+@dataclass
+class TimeSeriesVariable(DataVar):
+    name: Name[str]
+    time: Coordof[TimeAxis] = 0
+    lat: Coordof[Latitude] = 0
+    lon: Coordof[Longitude] = 0
+    grid_mapping: Attr[str] = "crs"
+    coordinates: Attr[str] = "time lat lon"

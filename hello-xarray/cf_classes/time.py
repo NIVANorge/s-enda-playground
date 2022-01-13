@@ -7,10 +7,8 @@ import numpy as np
 
 from cf_classes.literals import TIME
 
-
 from cf_classes.attributes import (
     TimeAttrs,
-    DataVarAttrs,
     AltitudeAttrs,
     LatitudeAttrs,
     LongitudeAttrs,
@@ -59,16 +57,3 @@ class LongitudeDataByTime:
 @dataclass
 class LongitudeByTime(LongitudeAttrs, LongitudeDataByTime):
     pass
-
-
-@dataclass
-class DataVar(DataVarAttrs):
-    data: Data[TIME, np.float32]
-
-
-@dataclass
-class DataVarByTime(DataVar):
-    name: Name[str]
-    time: Coordof[TimeAxis] = 0
-    grid_mapping: Attr[str] = "crs"
-    coordinates: Attr[str] = "time lat lon alt"
