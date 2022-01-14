@@ -1,14 +1,7 @@
 from xarray_dataclasses import Attr, Data, Name
-from typing import Literal
 from dataclasses import dataclass
 
-from xarray_dataclasses import Coordof
 import numpy as np
-
-from cf_classes.utils.literals import TIME
-
-
-from cf_classes.utils.attributes import TimeAttrs, DataVarAttrs
 
 
 @dataclass
