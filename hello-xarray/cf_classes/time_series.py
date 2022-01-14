@@ -5,7 +5,7 @@ import numpy as np
 from xarray_dataclasses import Attr, Coordof, Data, Name
 
 from cf_classes.literals import TIME
-from cf_classes.attributes import DatasetAttrs, DataVarAttrs
+from cf_classes.attributes import DatasetAttrs
 from cf_classes.dimless import Latitude, Longitude
 from cf_classes.time import TimeAxis, DataByTime
 

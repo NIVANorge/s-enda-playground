@@ -1,13 +1,11 @@
 from dataclasses import dataclass, field
+from typing import Literal
 
 import numpy as np
 from xarray_dataclasses import Data, Name
 
-from cf_classes.attributes import (
-    AltitudeAttrs,
-    LatitudeAttrs,
-    LongitudeAttrs,
-)
+from cf_classes.attributes import (AltitudeAttrs, LatitudeAttrs,
+                                   LongitudeAttrs, TimeAttrs)
 
 
 @dataclass
@@ -40,4 +38,15 @@ class LongitudeData:
 
 @dataclass
 class Longitude(LongitudeAttrs, LongitudeData):
+    pass
+
+
+@dataclass
+class TimeData:
+    data: Data[None, Literal["datetime64[ns]"]]
+    name: Name[str] = "time"
+
+
+@dataclass
+class Time(TimeAttrs, TimeData):
     pass
