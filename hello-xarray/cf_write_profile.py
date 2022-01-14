@@ -9,7 +9,7 @@ from cf_classes.common import WGS1984
 from cf_classes.profile import ProfileId, ProfileAttrs, DepthProfileVariable
 
 # %%
-temperature = DepthProfileVariable(
+temperature1 = DepthProfileVariable(
     name="temperature",
     standard_name="sea_water_temperature",
     long_name="Sea water temperature",
@@ -22,14 +22,35 @@ temperature = DepthProfileVariable(
 )
 
 # %%
-# %%
-ds = xr.merge(
+ds1 = xr.merge(
     [
         asdataarray(d)
-        for d in [temperature, ProfileId("profile1"), WGS1984()]
+        for d in [temperature1, ProfileId("profile1")]
     ]
 )
 # %%
+temperature2 = DepthProfileVariable(
+    name="temperature",
+    standard_name="sea_water_temperature",
+    long_name="Sea water temperature",
+    units="degree_Celsius",
+    data=[20, 255, 2000, 100],
+    lon=10.75,
+    lat=59.95,
+    depth=[1, 2, 10, 20],
+    time="1980-01-01T00:00:00",
+)
+
+# %%
+ds2 = xr.merge(
+    [
+        asdataarray(d)
+        for d in [temperature2, ProfileId("profile2")]
+    ]
+)
+# %%
+ds = xr.concat([ds1, ds2], dim='profile_id')
+#%%
 ds.attrs = asdict(
     ProfileAttrs(
         title="hei",
@@ -45,5 +66,7 @@ ds.attrs = asdict(
     )
 )
 # %%
-ds
+ds['crs'] = asdataarray(WGS1984())
+# %%
+ds.temperature.sel(profile_id=b'profile1').plot.line('o')
 # %%
