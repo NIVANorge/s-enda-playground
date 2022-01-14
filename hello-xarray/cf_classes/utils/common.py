@@ -5,10 +5,11 @@ from dataclasses import dataclass
 from xarray_dataclasses import Coordof
 import numpy as np
 
-from cf_classes.literals import TIME
+from cf_classes.utils.literals import TIME
 
 
-from cf_classes.attributes import TimeAttrs, DataVarAttrs
+from cf_classes.utils.attributes import TimeAttrs, DataVarAttrs
+
 
 @dataclass
 class WGS1984:

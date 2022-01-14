@@ -4,8 +4,12 @@ from typing import Literal
 import numpy as np
 from xarray_dataclasses import Data, Name
 
-from cf_classes.attributes import (AltitudeAttrs, LatitudeAttrs,
-                                   LongitudeAttrs, TimeAttrs)
+from cf_classes.utils.attributes import (
+    AltitudeAttrs,
+    LatitudeAttrs,
+    LongitudeAttrs,
+    TimeAttrs,
+)
 
 
 @dataclass

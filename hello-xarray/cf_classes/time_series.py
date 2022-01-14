@@ -4,10 +4,10 @@ from typing import Literal
 import numpy as np
 from xarray_dataclasses import Attr, Coordof, Data, Name
 
-from cf_classes.literals import TIME
-from cf_classes.attributes import DatasetAttrs
-from cf_classes.dimless import Latitude, Longitude
-from cf_classes.time import TimeAxis, DataByTime
+from cf_classes.utils.literals import TIME
+from cf_classes.utils.attributes import DatasetAttrs
+from cf_classes.utils.dimless import Latitude, Longitude
+from cf_classes.utils.time import TimeAxis, DataByTime
 
 
 @dataclass

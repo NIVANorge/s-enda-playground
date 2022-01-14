@@ -5,9 +5,9 @@ from dataclasses import dataclass
 from xarray_dataclasses import Coordof
 import numpy as np
 
-from cf_classes.literals import TIME
+from cf_classes.utils.literals import TIME
 
-from cf_classes.attributes import (
+from cf_classes.utils.attributes import (
     DataVarAttrs,
     TimeAttrs,
     AltitudeAttrs,
@@ -58,6 +58,7 @@ class LongitudeDataByTime:
 @dataclass
 class LongitudeByTime(LongitudeAttrs, LongitudeDataByTime):
     pass
+
 
 @dataclass
 class DataByTime(DataVarAttrs):

@@ -4,11 +4,10 @@ from datetime import datetime, timedelta
 import numpy as np
 
 import xarray as xr
-from xarray_dataclasses import asdataarray, asdataset
+from xarray_dataclasses import asdataarray
 
 from cf_classes.time_series import StationId, TimeSeriesAttrs, TimeSeriesVariable
-from cf_classes.dimless import Latitude, Longitude, Altitude
-from cf_classes.common import WGS1984
+from cf_classes.utils.common import WGS1984
 
 #%%
 # standard names http://vocab.nerc.ac.uk/collection/P07/current/

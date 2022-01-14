@@ -4,16 +4,15 @@ from typing import Tuple, Literal, Union
 import numpy as np
 from xarray_dataclasses import Attr, Coordof, Data, Name
 
-from cf_classes.literals import TIME
-from cf_classes.time import DataByTime, TimeAxis, LongitudeByTime, LatitudeByTime
-from cf_classes.attributes import (
-    DatasetAttrs,
-)
+from cf_classes.utils.literals import TIME
+from cf_classes.utils.time import DataByTime, TimeAxis, LongitudeByTime, LatitudeByTime
+from cf_classes.utils.attributes import DatasetAttrs
+
 
 @dataclass
 class TrajectoryId:
-    data: Data[None, Literal['|S64']]
-    name: Name[str] = 'trajectory_id'
+    data: Data[None, Literal["|S64"]]
+    name: Name[str] = "trajectory_id"
     cf_role: Attr[str] = "trajectory_id"
     long_name: Attr[str] = "trajectory"
 
@@ -26,6 +25,7 @@ class _TrajectoryAttrs:
 @dataclass
 class TrajectoryAttrs(DatasetAttrs, _TrajectoryAttrs):
     featureType: Attr[str] = "trajectory"
+
 
 @dataclass
 class TrajectoryVariable(DataByTime):

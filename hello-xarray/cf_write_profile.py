@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 import xarray as xr
 from xarray_dataclasses import asdataarray, asdataset
 
-from cf_classes.common import WGS1984
+from cf_classes.utils.common import WGS1984
 from cf_classes.profile import ProfileId, ProfileAttrs, DepthProfileVariable
 
 # %%
@@ -22,12 +22,7 @@ temperature1 = DepthProfileVariable(
 )
 
 # %%
-ds1 = xr.merge(
-    [
-        asdataarray(d)
-        for d in [temperature1, ProfileId("profile1")]
-    ]
-)
+ds1 = xr.merge([asdataarray(d) for d in [temperature1, ProfileId("profile1")]])
 # %%
 temperature2 = DepthProfileVariable(
     name="temperature",
@@ -42,14 +37,9 @@ temperature2 = DepthProfileVariable(
 )
 
 # %%
-ds2 = xr.merge(
-    [
-        asdataarray(d)
-        for d in [temperature2, ProfileId("profile2")]
-    ]
-)
+ds2 = xr.merge([asdataarray(d) for d in [temperature2, ProfileId("profile2")]])
 # %%
-ds = xr.concat([ds1, ds2], dim='profile_id')
+ds = xr.concat([ds1, ds2], dim="profile_id")
 #%%
 ds.attrs = asdict(
     ProfileAttrs(
@@ -66,7 +56,7 @@ ds.attrs = asdict(
     )
 )
 # %%
-ds['crs'] = asdataarray(WGS1984())
+ds["crs"] = asdataarray(WGS1984())
 # %%
-ds.temperature.sel(profile_id=b'profile1').plot.line('o')
+ds.temperature.sel(profile_id=b"profile1").plot.line("o")
 # %%

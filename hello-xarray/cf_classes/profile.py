@@ -4,9 +4,10 @@ import numpy as np
 
 from xarray_dataclasses import Attr, Coordof, Data, Name
 
-from cf_classes.literals import DEPTH
-from cf_classes.attributes import DatasetAttrs, DataVarAttrs, DepthAttrs
-from cf_classes.dimless import Latitude, Longitude, Time
+from cf_classes.utils.literals import DEPTH
+from cf_classes.utils.attributes import DatasetAttrs, DataVarAttrs, DepthAttrs
+from cf_classes.utils.dimless import Latitude, Longitude, Time
+
 
 @dataclass
 class ProfileId:
@@ -25,13 +26,16 @@ class _ProfileAttrs:
 class ProfileAttrs(DatasetAttrs, _ProfileAttrs):
     featureType: Attr[str] = "profile"
 
+
 @dataclass
 class DepthData:
     data: Data[DEPTH, np.float32]
 
+
 @dataclass
 class Depth(DepthAttrs, DepthData):
     pass
+
 
 @dataclass
 class DepthProfileVariable(DataVarAttrs):

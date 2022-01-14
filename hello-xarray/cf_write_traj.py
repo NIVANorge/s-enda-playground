@@ -3,9 +3,9 @@ from dataclasses import asdict
 from datetime import datetime, timedelta
 
 import xarray as xr
-from xarray_dataclasses import asdataarray, asdataset
+from xarray_dataclasses import asdataarray
 
-from cf_classes.common import WGS1984
+from cf_classes.utils.common import WGS1984
 from cf_classes.trajectory import TrajectoryId, TrajectoryAttrs, TrajectoryVariable
 
 #%%
@@ -30,12 +30,7 @@ temperature = TrajectoryVariable(
     coordinates="time lat lon",
 )
 # %%
-ds = xr.merge(
-    [
-        asdataarray(d)
-        for d in [temperature, TrajectoryId("traj1"), WGS1984()]
-    ]
-)
+ds = xr.merge([asdataarray(d) for d in [temperature, TrajectoryId("traj1"), WGS1984()]])
 # %%
 ds.attrs = asdict(
     TrajectoryAttrs(

@@ -33,8 +33,9 @@ class LongitudeAttrs:
 @dataclass
 class DataVarAttrs:
     standard_name: Attr[str]
-    long_name: Attr[str] 
+    long_name: Attr[str]
     units: Attr[str]
+
 
 @dataclass
 class TimeAttrs:
