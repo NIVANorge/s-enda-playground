@@ -81,3 +81,5 @@ ds.conductivity.plot.line("o")
 # %%
 ds
 # %%
+ds.to_netcdf("test.nc", unlimited_dims=['time'])
+# %%
