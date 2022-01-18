@@ -2,7 +2,7 @@ from dataclasses import dataclass, field
 from typing import Tuple, Literal, Union
 
 import numpy as np
-from xarray_dataclasses import Attr, Coordof, Data, Name
+from xarray_dataclasses import Attr, Coordof, Data, Name, AsDataset, Dataof
 
 from cf_classes.utils.literals import TIME
 from cf_classes.utils.time import DataByTime, TimeAxis, LongitudeByTime, LatitudeByTime
@@ -35,3 +35,5 @@ class TrajectoryVariable(DataByTime):
     lon: Coordof[LongitudeByTime] = 0
     grid_mapping: Attr[str] = "crs"
     coordinates: Attr[str] = "time lat lon"
+
+    
