@@ -59,7 +59,6 @@ class DepthAttrs:
     reference: Attr[str] = "sea_level"
     coordinate_reference_frame: Attr[str] = "urn:ogc:def:crs:EPSG::CRF 5831"
 
-
 @dataclass
 class DatasetAttrs:
     title: Attr[str]
@@ -71,32 +70,6 @@ class DatasetAttrs:
     geospatial_lat_max: Attr[float]
     geospatial_lon_min: Attr[float]
     geospatial_lon_max: Attr[float]
-    keywords_vocabulary: Attr[str]
-    data_owner: Attr[str]
-    summary: Attr[str]
-    geospatial_vertical_positive: Attr[str]
-    processing_level: Attr[str]
-    Conventions: Attr[str]
-    netcdf_version: Attr[str]
-    publisher_name: Attr[str]
-    publisher_email: Attr[str]
-    publisher_url: Attr[str]
-    licence: Attr[
-        str
-    ]
-    history: Attr[str]
-
-@dataclass
-class DatasetAttrsDefaults:
-    title: Attr[str] = ""
-    date_created: Attr[Literal["datetime64[ns]"]] = ""
-    keywords: Attr[List[str]] = field(default_factory=lambda: [""])
-    time_coverage_start: Attr[str] = ""
-    time_coverage_end: Attr[str] = ""
-    geospatial_lat_min: Attr[float] = 0.0
-    geospatial_lat_max: Attr[float] = 0.0
-    geospatial_lon_min: Attr[float] = 0.0
-    geospatial_lon_max: Attr[float] = 0.0
     keywords_vocabulary: Attr[str] = "GCM:GCMD Keywords"
     data_owner: Attr[str] = "Norwegian Institute for Water Research"
     summary: Attr[str] = ""
