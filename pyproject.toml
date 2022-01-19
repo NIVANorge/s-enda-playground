@@ -21,6 +21,7 @@ gcsfs = "^2021.11.0"
 cf-python = "^3.11.0"
 xarray-dataclasses = "^0.8.0"
 pooch = "^1.5.2"
+attrs = "^21.4.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.4"

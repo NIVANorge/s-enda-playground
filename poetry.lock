@@ -1492,7 +1492,7 @@ jupyter = ["notebook", "ipytree"]
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8,<3.10"
-content-hash = "a065c3fda68bd097a3d3643dbed0476969ece6adc32bc966a2a1e7fd3e6e82d7"
+content-hash = "a4001abefaf457e1f5949a60b3bf43661a0da36234deebb037c8812ff4fdde14"
 
 [metadata.files]
 aiohttp = [
