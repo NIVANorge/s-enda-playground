@@ -3,84 +3,75 @@ from typing import List, Literal
 from numpy import positive
 
 from xarray_dataclasses import Attr
+from attrs import define
 
-
-@dataclass
+@define
 class AltitudeAttrs:
-    standard_name: Attr[str] = "height"
-    long_name: Attr[str] = "vertical distance above the surface"
-    units: Attr[str] = "m"
-    positive: Attr[str] = "up"
-    axis: Attr[str] = "Z"
+    standard_name: str = "height"
+    long_name: str = "vertical distance above the surface"
+    units: str = "m"
+    positive: str = "up"
+    axis: str = "Z"
 
 
-@dataclass
+@define
 class LatitudeAttrs:
-    standard_name: Attr[str] = "latitude"
-    units: Attr[str] = "degree_north"
-    valid_min: Attr[float] = -90.0
-    valid_max: Attr[float] = 90.0
+    standard_name: str = "latitude"
+    units: str = "degree_north"
+    valid_min: float = -90.0
+    valid_max: float = 90.0
 
 
-@dataclass
+@define
 class LongitudeAttrs:
-    standard_name: Attr[str] = "longitude"
-    units: Attr[str] = "degree_east"
-    valid_min: Attr[float] = -180.0
-    valid_max: Attr[float] = 180.0
+    standard_name: str = "longitude"
+    units: str = "degree_east"
+    valid_min: float = -180.0
+    valid_max: float = 180.0
 
 
-@dataclass
-class DataVarAttrs:
-    standard_name: Attr[str]
-    long_name: Attr[str]
-    units: Attr[str]
-
-
-@dataclass
+@define
 class TimeAttrs:
     """Specs for the Time axis."""
 
-    standard_name: Attr[str] = "time"
-    long_name: Attr[str] = "Time of measurement"
-    axis: Attr[str] = "T"
+    standard_name: str = "time"
+    long_name: str = "Time of measurement"
+    axis: str = "T"
     # units is filled by xarray, based on time interval
 
 
-@dataclass
+@define
 class DepthAttrs:
     """Specs for the Z axis."""
 
-    standard_name: Attr[str] = "depth"
-    long_name: Attr[str] = "Depth of measurement"
-    positive: Attr[str] = "down"
-    units: Attr[str] = "m"
-    axis: Attr[str] = "Z"
-    reference: Attr[str] = "sea_level"
-    coordinate_reference_frame: Attr[str] = "urn:ogc:def:crs:EPSG::CRF 5831"
+    standard_name: str = "depth"
+    long_name: str = "Depth of measurement"
+    positive: str = "down"
+    units: str = "m"
+    axis: str = "Z"
+    reference: str = "sea_level"
+    coordinate_reference_frame: str = "urn:ogc:def:crs:EPSG::CRF 5831"
 
-@dataclass
+@define
 class DatasetAttrs:
-    title: Attr[str]
-    date_created: Attr[Literal["datetime64[ns]"]]
-    keywords: Attr[List[str]]
-    time_coverage_start: Attr[str]
-    time_coverage_end: Attr[str]
-    geospatial_lat_min: Attr[float]
-    geospatial_lat_max: Attr[float]
-    geospatial_lon_min: Attr[float]
-    geospatial_lon_max: Attr[float]
-    keywords_vocabulary: Attr[str] = "GCM:GCMD Keywords"
-    data_owner: Attr[str] = "Norwegian Institute for Water Research"
-    summary: Attr[str] = ""
-    geospatial_vertical_positive: Attr[str] = "down"
-    processing_level: Attr[str] = "Missing data has been filled with fillValue."
-    Conventions: Attr[str] = "CF-1.6, ACDD-1.3"
-    netcdf_version: Attr[str] = "4"
-    publisher_name: Attr[str] = "NIVA"
-    publisher_email: Attr[str] = "post[..]niva.no"
-    publisher_url: Attr[str] = "niva.no"
-    licence: Attr[
-        str
-    ] = 'Freely distributed. Must credit the source of data, e.g. "Data fra Norsk Institut for Vannforskning", "Based on data from the Norwegian Institute for Water Research". Data and products are licensed under Norwegian license for public data (NLOD) and Creative Commons Attribution 3.0 Norway.'
-    history: Attr[str] = "Initial data"
+    title: str
+    date_created: Literal["datetime64[ns]"]
+    keywords: List[str]
+    time_coverage_start: str
+    time_coverage_end: str
+    geospatial_lat_min: float
+    geospatial_lat_max: float
+    geospatial_lon_min: float
+    geospatial_lon_max: float
+    keywords_vocabulary: str = "GCM:GCMD Keywords"
+    data_owner: str = "Norwegian Institute for Water Research"
+    summary: str = ""
+    geospatial_vertical_positive: str = "down"
+    processing_level: str = "Missing data has been filled with fillValue."
+    Conventions: str = "CF-1.6, ACDD-1.3"
+    netcdf_version: str = "4"
+    publisher_name: str = "NIVA"
+    publisher_email: str = "post[..]niva.no"
+    publisher_url: str = "niva.no"
+    licence: str = 'Freely distributed. Must credit the source of data, e.g. "Data fra Norsk Institut for Vannforskning", "Based on data from the Norwegian Institute for Water Research". Data and products are licensed under Norwegian license for public data (NLOD) and Creative Commons Attribution 3.0 Norway.'
+    history: str = "Initial data"

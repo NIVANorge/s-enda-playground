@@ -6,9 +6,14 @@ import numpy as np
 import xarray as xr
 from xarray_dataclasses import asdataarray
 
-from cf_classes.time_series import StationId, TimeSeriesAttrs, TimeSeriesVariable
-from cf_classes.utils.common import WGS1984
-
+from cf_classes.time_series import station_id, timeseries
+#from cf_classes.utils.common import WGS1984
+from cf_classes.utils.attributes import TimeAttrs
+from attrs import asdict
+#%%
+t = timeseries([datetime(1999,10,4)], attrs=asdict(TimeAttrs()))
+#%%
+xr.Dataset({'time':t})
 #%%
 # standard names http://vocab.nerc.ac.uk/collection/P07/current/
 temperature = TimeSeriesVariable(
