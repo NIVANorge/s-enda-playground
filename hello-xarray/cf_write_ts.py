@@ -6,37 +6,46 @@ import numpy as np
 import xarray as xr
 from xarray_dataclasses import asdataarray
 
-from cf_classes.time_series import station_id, timeseries
-#from cf_classes.utils.common import WGS1984
-from cf_classes.utils.attributes import TimeAttrs
+from cf_classes.time_series import asstationvariable, astimevariable
+
+# from cf_classes.utils.common import WGS1984
+from cf_classes.utils.attributes import TimeAttrs, VariableAttrs
 from attrs import asdict
+
 #%%
-t = timeseries([datetime(1999,10,4)], attrs=asdict(TimeAttrs()))
+t = astimevariable([datetime(1999, 10, 4)], attrs=asdict(TimeAttrs()))
 #%%
-xr.Dataset({'time':t})
+d = xr.Dataset({"time": t, "id": asstationvariable("hei")})
+#%
+d.to_netcdf("test.nc")
 #%%
 # standard names http://vocab.nerc.ac.uk/collection/P07/current/
-temperature = TimeSeriesVariable(
-    name="temperature",
-    standard_name="sea_water_temperature",
-    long_name="Sea water temperature",
-    units="degree_Celsius",
+temperature = astimevariable(
     data=[10, 15],
-    lon=10.75,
-    lat=59.95,
-    time=["1970-01-01T00:00:00", "1970-01-01T01:00:10"],
+    attrs=asdict(
+        VariableAttrs(
+            standard_name="sea_water_temperature",
+            long_name="Sea water temperature",
+            units="degree_Celsius",
+        )
+    ),
 )
 #%%
-salinity = TimeSeriesVariable(
-    name="salinity",
+salinity = astimevariable(
+    data=[10, 1500, 15000, 15, 2000, 20000],
+    attrs=asdict(
+        VariableAttrs(
     standard_name="sea_water_salinity",
     long_name="Salinity at some place",
     units="1e-3",
-    data=[10, 1500, 15000, 15, 2000, 20000],
-    lon=10.75,
-    lat=59.95,
-    time=np.arange(datetime(1995, 7, 1), datetime(1995, 7, 7), timedelta(days=1)),
+        )
+    )
 )
+   
+    #lon=10.75,
+    #lat=59.95,
+    #time=np.arange(datetime(1995, 7, 1), datetime(1995, 7, 7), timedelta(days=1)),
+
 #%%
 conductivity = TimeSeriesVariable(
     name="conductivity",
@@ -86,5 +95,5 @@ ds.conductivity.plot.line("o")
 # %%
 ds
 # %%
-ds.to_netcdf("test.nc", unlimited_dims=['time'])
+ds.to_netcdf("test.nc", unlimited_dims=["time"])
 # %%

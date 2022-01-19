@@ -6,6 +6,12 @@ from xarray_dataclasses import Attr
 from attrs import define
 
 @define
+class VariableAttrs:
+    standard_name: str
+    long_name: str
+    units: str
+
+@define
 class AltitudeAttrs:
     standard_name: str = "height"
     long_name: str = "vertical distance above the surface"
