@@ -7,10 +7,17 @@ import numpy as np
 from xarray_dataclasses import Attr, Coordof, Data, Name
 import xarray as xr
 
-from cf_classes.utils.attributes import DatasetAttrs, TimeAttrs
-
-from attr import define
+from cf_classes.utils.attributes import LatitudeAttrs, LongitudeAttrs, TimeAttrs, VariableAttrs
+from attr import asdict, define
 from toolz import curry
+from cf_classes.dims import TIME, DIMLESS, LONGITUDE, LATITUDE
+
+
+@define
+class TimeSeriesCoord:
+    time: xr.Variable
+    longitude: xr.Variable
+    latitude: xr.Variable
 
 
 def asstationvariable(station_id: str):
@@ -18,14 +25,24 @@ def asstationvariable(station_id: str):
         "long_name": "Station ID",
         "cf_role": "timeseries_id",
     }
-    return xr.Variable((), station_id, attrs)
+    return xr.DataArray(station_id, name='station_id', dims=DIMLESS, attrs=attrs)
 
 
 def astimevariable(data, attrs):
-    return xr.Variable("time", data, attrs)
+    return xr.Variable(TIME, data, attrs)
 
 
 def astimearray(
-    data, time: List[datetime], lon: float, lat: float, attrs: Dict[str, Any]
+    data,
+    name: str,
+    coords:TimeSeriesCoord,
+    attrs: VariableAttrs,
 ):
-    pass
+
+    return xr.DataArray(
+        data,
+        dims=(TIME),
+        name=name,
+        coords=asdict(coords),
+        attrs=asdict(attrs),
+    )
