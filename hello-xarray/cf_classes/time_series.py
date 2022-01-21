@@ -7,7 +7,12 @@ import numpy as np
 from xarray_dataclasses import Attr, Coordof, Data, Name
 import xarray as xr
 
-from cf_classes.utils.attributes import LatitudeAttrs, LongitudeAttrs, TimeAttrs, VariableAttrs
+from cf_classes.utils.attributes import (
+    LatitudeAttrs,
+    LongitudeAttrs,
+    TimeAttrs,
+    VariableAttrs,
+)
 from attr import asdict, define
 from toolz import curry
 from cf_classes.dims import TIME, DIMLESS, LONGITUDE, LATITUDE
@@ -25,9 +30,9 @@ def asstationvariable(station_id: str):
         "long_name": "Station ID",
         "cf_role": "timeseries_id",
     }
-    return xr.DataArray(station_id, name='station_id', dims=DIMLESS, attrs=attrs)
+    return xr.DataArray(station_id, name="station_id", dims=DIMLESS, attrs=attrs)
 
-
+@curry
 def astimevariable(data, attrs):
     return xr.Variable(TIME, data, attrs)
 
@@ -35,14 +40,29 @@ def astimevariable(data, attrs):
 def astimearray(
     data,
     name: str,
-    coords:TimeSeriesCoord,
-    attrs: VariableAttrs,
+    standard_name: str,
+    long_name: str,
+    units: str,
+    time: List[datetime],
+    longitude: float,
+    latitude: float,
 ):
-
     return xr.DataArray(
-        data,
-        dims=(TIME),
         name=name,
-        coords=asdict(coords),
-        attrs=asdict(attrs),
+        dims=(TIME),
+        data=data,
+        coords=asdict(
+            TimeSeriesCoord(
+                time=xr.Variable(TIME, time, asdict(TimeAttrs())),
+                longitude=xr.Variable(DIMLESS, longitude, asdict(LongitudeAttrs())),
+                latitude=xr.Variable(DIMLESS, latitude, asdict(LongitudeAttrs())),
+            )
+        ),
+        attrs=asdict(
+            VariableAttrs(
+                standard_name=standard_name,
+                long_name=long_name,
+                units=units,
+            )
+        ),
     )

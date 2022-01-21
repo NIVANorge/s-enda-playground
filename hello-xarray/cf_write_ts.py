@@ -26,35 +26,23 @@ d = xr.Dataset({"time": t, "id": asstationvariable("hei")})
 temperature = astimearray(
     name="temperature",
     data=[10, 15],
-    coords=TimeSeriesCoord(
-        time=xr.Variable(
-            TIME, [datetime(1999, 10, 4), datetime(1999, 10, 5)], asdict(TimeAttrs())
-        ),
-        longitude=xr.Variable(DIMLESS, 10.75, asdict(LongitudeAttrs())),
-        latitude=xr.Variable(DIMLESS, 59.95, asdict(LongitudeAttrs())),
-    ),
-    attrs=VariableAttrs(
-        standard_name="sea_water_temperature",
-        long_name="Sea water temperature",
-        units="degree_Celsius",
-    ),
+    time=[datetime(1999, 10, 4), datetime(1999, 10, 5)],
+    longitude=10.75,
+    latitude=59.95,
+    standard_name="sea_water_temperature",
+    long_name="Sea water temperature",
+    units="degree_Celsius"
 )
 #%%
 salinity = astimearray(
     name="salinity",
     data=[10, 15],
-    coords=TimeSeriesCoord(
-         time=xr.Variable(
-            TIME, [datetime(1999, 10, 4), datetime(1999, 10, 5)], asdict(TimeAttrs())
-        ),
-        longitude=xr.Variable(DIMLESS, 10.75, asdict(LongitudeAttrs())),
-        latitude=xr.Variable(DIMLESS, 59.95, asdict(LongitudeAttrs())),
-    ),
-    attrs=VariableAttrs(
-        standard_name="sea_water_salinity",
-        long_name="Salinity at some place",
-        units="1e-3",
-    ),
+    time=[datetime(1999, 10, 4), datetime(1999, 10, 5)],
+    longitude=10.75,
+    latitude=59.95,
+    standard_name="sea_water_salinity",
+    long_name="Salinity at some place",
+    units="1e-3"
 )
 
 
@@ -62,18 +50,12 @@ salinity = astimearray(
 conductivity = astimearray(
     name="conductivity",
     data=[10, 15, 100, None],
-    coords=TimeSeriesCoord(
-        time=xr.Variable(
-            TIME, [datetime(1999, 10, i) for i in range(1,5)], asdict(TimeAttrs())
-        ),
-        longitude=xr.Variable(DIMLESS, 10.75, asdict(LongitudeAttrs())),
-        latitude=xr.Variable(DIMLESS, 59.95, asdict(LongitudeAttrs())),
-    ),
-    attrs=VariableAttrs(
-        standard_name="sea_water_electrical_conductivity",
-        long_name="Conductivity at depth",
-        units="mS cm-1",
-    ),
+    time=[datetime(1999, 10, i) for i in range(1,5)],
+    longitude=10.75,
+    latitude=59.95,
+    standard_name="sea_water_electrical_conductivity",
+    long_name="Conductivity at depth",
+    units="mS cm-1",
 )
 
 #%%
