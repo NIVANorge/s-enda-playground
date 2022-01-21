@@ -6,14 +6,15 @@ from cf_classes.utils.attributes import (
     LongitudeAttrs,
     DepthAttrs,
     VariableAttrs,
+    DatasetAttrs,
 )
 from typing import List
-from attr import asdict, define
-from toolz import curry
-from cf_classes.dims import DEPTH, LONGITUDE, LATITUDE, DIMLESS
+from dataclasses import asdict, dataclass
+from toolz import compose
+from cf_classes.dims import DEPTH, DIMLESS
 
 
-@define
+@dataclass
 class DepthCoords:
     depth: xr.Variable
     time: xr.Variable
@@ -28,7 +29,6 @@ def asprofileidarray(profile_id: str):
     }
     return xr.DataArray(profile_id, dims=DIMLESS, name="profile_id", attrs=attrs)
 
-@curry
 def asdepthvariable(data, attrs):
     return xr.Variable(DEPTH, data, attrs)
 
@@ -64,15 +64,3 @@ def asprofilearray(
             )
         ),
     )
-
-
-#@dataclass
-#class DepthProfileVariable(DataVarAttrs):
-#    data: Data[DEPTH, np.float32]
-#    name: Name[str]
-#    time: Coordof[Time]
-#    lat: Coordof[Latitude]
-#    lon: Coordof[Longitude]
-#    depth: Coordof[Depth]
-#    grid_mapping: Attr[str] = "crs"
-#    coordinates: Attr[str] = "time lat lon depth"

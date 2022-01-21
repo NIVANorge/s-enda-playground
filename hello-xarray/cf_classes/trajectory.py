@@ -9,12 +9,12 @@ from cf_classes.utils.attributes import (
     TimeAttrs,
     VariableAttrs,
 )
-from attr import asdict, define
+from dataclasses import asdict, dataclass
 from toolz import curry
 from cf_classes.dims import TIME, DIMLESS
 
 
-@define
+@dataclass
 class TimeSeriesCoord:
     time: xr.Variable
     longitude: xr.Variable

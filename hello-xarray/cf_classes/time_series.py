@@ -10,28 +10,24 @@ from cf_classes.utils.attributes import (
     TimeAttrs,
     VariableAttrs,
 )
-from attr import asdict, define
+from dataclasses import asdict, dataclass
 from toolz import curry
 from cf_classes.dims import TIME, DIMLESS, LONGITUDE, LATITUDE
 
 
-@define
+@dataclass
 class TimeSeriesCoord:
     time: xr.Variable
     longitude: xr.Variable
     latitude: xr.Variable
 
 
-def asstationvariable(station_id: str):
+def asstationidarray(station_id: str):
     attrs = {
         "long_name": "Station ID",
         "cf_role": "timeseries_id",
     }
     return xr.DataArray(station_id, dims=DIMLESS, name="station_id", attrs=attrs)
-
-@curry
-def astimevariable(data, attrs):
-    return xr.Variable(TIME, data, attrs)
 
 
 def astimearray(

@@ -6,10 +6,8 @@ import xarray as xr
 from xarray_dataclasses import asdataarray
 
 from cf_classes.time_series import (
-    asstationvariable,
-    astimevariable,
+    asstationidarray,
     astimearray,
-    TimeSeriesCoord,
 )
 
 # from cf_classes.utils.common import WGS1984
@@ -18,10 +16,6 @@ from cf_classes.dims import TIME, DIMLESS
 from attrs import asdict
 
 #%%
-t = astimevariable([datetime(1999, 10, 4)], attrs=asdict(TimeAttrs()))
-#%%
-d = xr.Dataset({"time": t, "id": asstationvariable("hei")})
-#%
 # standard names http://vocab.nerc.ac.uk/collection/P07/current/
 temperature = astimearray(
     name="temperature",
@@ -64,7 +58,7 @@ ds = xr.merge(
         temperature,
         salinity,
         conductivity,
-        asstationvariable("Oslo1"),
+        asstationidarray("Oslo1"),
     ]
 )
 #%%

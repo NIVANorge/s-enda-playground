@@ -1,17 +1,17 @@
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import List, Literal
 from numpy import positive
 
 from xarray_dataclasses import Attr
-from attrs import define
-
-@define
+from datetime import datetime
+from toolz import curry
+@dataclass
 class VariableAttrs:
     standard_name: str
     long_name: str
     units: str
 
-@define
+@dataclass
 class AltitudeAttrs:
     standard_name: str = "height"
     long_name: str = "vertical distance above the surface"
@@ -20,7 +20,7 @@ class AltitudeAttrs:
     axis: str = "Z"
 
 
-@define
+@dataclass
 class LatitudeAttrs:
     standard_name: str = "latitude"
     units: str = "degree_north"
@@ -28,7 +28,7 @@ class LatitudeAttrs:
     valid_max: float = 90.0
 
 
-@define
+@dataclass
 class LongitudeAttrs:
     standard_name: str = "longitude"
     units: str = "degree_east"
@@ -36,7 +36,7 @@ class LongitudeAttrs:
     valid_max: float = 180.0
 
 
-@define
+@dataclass
 class TimeAttrs:
     """Specs for the Time axis."""
 
@@ -46,7 +46,7 @@ class TimeAttrs:
     # units is filled by xarray, based on time interval
 
 
-@define
+@dataclass
 class DepthAttrs:
     """Specs for the Z axis."""
 
@@ -58,10 +58,10 @@ class DepthAttrs:
     reference: str = "sea_level"
     coordinate_reference_frame: str = "urn:ogc:def:crs:EPSG::CRF 5831"
 
-@define
+@dataclass
 class DatasetAttrs:
     title: str
-    date_created: Literal["datetime64[ns]"]
+    date_created: datetime
     keywords: List[str]
     time_coverage_start: str
     time_coverage_end: str

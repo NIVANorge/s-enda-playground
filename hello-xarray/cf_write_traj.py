@@ -7,7 +7,7 @@ from xarray_dataclasses import asdataarray
 
 from cf_classes.utils.common import WGS1984
 from cf_classes.trajectory import astrajectoryidarray, astrajectoryarray
-
+from cf_classes.utils.attributes import DatasetAttrs
 #%%
 time = list(map(
     datetime.fromisoformat,
@@ -35,7 +35,7 @@ temperature = astrajectoryarray(
 ds = xr.merge([temperature, astrajectoryidarray("traj1")])
 # %%
 ds.attrs = asdict(
-    TrajectoryAttrs(
+    DatasetAttrs(
         title="hei",
         date_created=str(datetime.now()),
         keywords=["hei"],
