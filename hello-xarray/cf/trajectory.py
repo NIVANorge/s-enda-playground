@@ -3,7 +3,7 @@ from typing import List
 from datetime import datetime
 import xarray as xr
 
-from cf_classes.utils.attributes import (
+from cf.utils.attributes import (
     LatitudeAttrs,
     LongitudeAttrs,
     TimeAttrs,
@@ -11,7 +11,7 @@ from cf_classes.utils.attributes import (
 )
 from dataclasses import asdict, dataclass
 from toolz import curry
-from cf_classes.dims import TIME, DIMLESS
+from cf.dims import TIME, DIMLESS
 
 
 @dataclass

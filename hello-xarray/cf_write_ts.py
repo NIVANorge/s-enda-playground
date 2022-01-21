@@ -5,15 +5,15 @@ from datetime import datetime, timedelta
 import xarray as xr
 from xarray_dataclasses import asdataarray
 
-from cf_classes.time_series import (
+from cf.time_series import (
     asstationidarray,
     astimearray,
 )
 
-# from cf_classes.utils.common import WGS1984
-from cf_classes.utils.attributes import TimeAttrs, VariableAttrs, LongitudeAttrs
-from cf_classes.dims import TIME, DIMLESS
-from attrs import asdict
+# from cf.utils.common import WGS1984
+from cf.utils.attributes import DatasetAttrs
+from cf.dims import TIME, DIMLESS
+from dataclasses import asdict
 
 #%%
 # standard names http://vocab.nerc.ac.uk/collection/P07/current/
@@ -43,7 +43,7 @@ salinity = astimearray(
 #%%
 conductivity = astimearray(
     name="conductivity",
-    data=[10, 15, 100, None],
+    data=[10, 15, 100, 40],
     time=[datetime(1999, 10, i) for i in range(1,5)],
     longitude=10.75,
     latitude=59.95,
@@ -67,13 +67,12 @@ ds.attrs = asdict(
         title="hei",
         date_created=str(datetime.now()),
         keywords=["hei"],
-        station_name="Oslo",
         time_coverage_start=str(ds.time.values[0]),
         time_coverage_end=str(ds.time.values[-1]),
-        geospatial_lat_min=float(ds.lat),
-        geospatial_lat_max=float(ds.lat),
-        geospatial_lon_min=float(ds.lon),
-        geospatial_lon_max=float(ds.lon),
+        geospatial_lat_min=float(ds.latitude),
+        geospatial_lat_max=float(ds.latitude),
+        geospatial_lon_min=float(ds.longitude),
+        geospatial_lon_max=float(ds.longitude),
     )
 )
 

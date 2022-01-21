@@ -5,9 +5,9 @@ from datetime import datetime
 import xarray as xr
 from xarray_dataclasses import asdataarray
 
-from cf_classes.utils.common import WGS1984
-from cf_classes.trajectory import astrajectoryidarray, astrajectoryarray
-from cf_classes.utils.attributes import DatasetAttrs
+from cf.utils.common import WGS1984
+from cf.trajectory import astrajectoryidarray, astrajectoryarray
+from cf.utils.attributes import DatasetAttrs
 #%%
 time = list(map(
     datetime.fromisoformat,
@@ -39,13 +39,12 @@ ds.attrs = asdict(
         title="hei",
         date_created=str(datetime.now()),
         keywords=["hei"],
-        trajectory_name="Bergen",
         time_coverage_start=str(ds.time.values[0]),
         time_coverage_end=str(ds.time.values[-1]),
-        geospatial_lat_min=float(min(ds.lat)),
-        geospatial_lat_max=float(max(ds.lat)),
-        geospatial_lon_min=float(min(ds.lon)),
-        geospatial_lon_max=float(max(ds.lon)),
+        geospatial_lat_min=float(min(ds.latitude)),
+        geospatial_lat_max=float(max(ds.latitude)),
+        geospatial_lon_min=float(min(ds.longitude)),
+        geospatial_lon_max=float(max(ds.longitude)),
     )
 )
 # %%

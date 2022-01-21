@@ -5,9 +5,9 @@ from datetime import datetime, timedelta
 import xarray as xr
 from xarray_dataclasses import asdataarray, asdataset
 
-from cf_classes.utils.common import WGS1984
-from cf_classes.profile import asprofilearray, asprofileidarray, ProfileAttrs
-from cf_classes.utils.attributes import DatasetAttrs
+from cf.utils.common import WGS1984
+from cf.profile import asprofilearray, asprofileidarray, ProfileAttrs
+from cf.utils.attributes import DatasetAttrs
 from toolz.dicttoolz import merge
 
 # %%

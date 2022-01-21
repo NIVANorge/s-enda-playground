@@ -1,5 +1,5 @@
 #%%
-from cf_classes.datasets import SampleDataSet
+from cf.datasets import SampleDataSet
 from datetime import datetime, timedelta
 import numpy as np
 # %%

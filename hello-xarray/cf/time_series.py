@@ -1,57 +1,52 @@
+from typing import List
+
 from datetime import datetime
+
 import xarray as xr
 
-from cf_classes.utils.attributes import (
+from cf.utils.attributes import (
     LatitudeAttrs,
     LongitudeAttrs,
-    DepthAttrs,
+    TimeAttrs,
     VariableAttrs,
-    DatasetAttrs,
 )
-from typing import List
 from dataclasses import asdict, dataclass
-from toolz import compose
-from cf_classes.dims import DEPTH, DIMLESS
+from toolz import curry
+from cf.dims import TIME, DIMLESS, LONGITUDE, LATITUDE
 
 
 @dataclass
-class DepthCoords:
-    depth: xr.Variable
+class TimeSeriesCoord:
     time: xr.Variable
     longitude: xr.Variable
     latitude: xr.Variable
 
 
-def asprofileidarray(profile_id: str):
+def asstationidarray(station_id: str):
     attrs = {
-        "long_name": "Profile ID",
-        "cf_role": "profile_id",
+        "long_name": "Station ID",
+        "cf_role": "timeseries_id",
     }
-    return xr.DataArray(profile_id, dims=DIMLESS, name="profile_id", attrs=attrs)
-
-def asdepthvariable(data, attrs):
-    return xr.Variable(DEPTH, data, attrs)
+    return xr.DataArray(station_id, dims=DIMLESS, name="station_id", attrs=attrs)
 
 
-def asprofilearray(
+def astimearray(
     data,
     name: str,
     standard_name: str,
     long_name: str,
     units: str,
-    depth: List[float],
-    time: datetime,
+    time: List[datetime],
     longitude: float,
     latitude: float,
 ):
     return xr.DataArray(
         name=name,
-        dims=(DEPTH),
+        dims=(TIME),
         data=data,
         coords=asdict(
-            DepthCoords(
-                depth=xr.Variable(DEPTH, depth, asdict(DepthAttrs())),
-                time=xr.Variable(DIMLESS, time, asdict(DepthAttrs())),
+            TimeSeriesCoord(
+                time=xr.Variable(TIME, time, asdict(TimeAttrs())),
                 longitude=xr.Variable(DIMLESS, longitude, asdict(LongitudeAttrs())),
                 latitude=xr.Variable(DIMLESS, latitude, asdict(LatitudeAttrs())),
             )
