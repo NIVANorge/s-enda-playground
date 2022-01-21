@@ -1,49 +1,78 @@
-from dataclasses import dataclass, field
-from typing import Literal
-import numpy as np
+from datetime import datetime
+import xarray as xr
 
-from xarray_dataclasses import Attr, Coordof, Data, Name
-
-from cf_classes.utils.literals import DEPTH
-from cf_classes.utils.attributes import DatasetAttrs, DataVarAttrs, DepthAttrs
-from cf_classes.utils.dimless import Latitude, Longitude, Time
-
-
-@dataclass
-class ProfileId:
-    data: Data[None, Literal["|S64"]]
-    name: Name[str] = "profile_id"
-    long_name: Attr[str] = "Profile ID"
-    cf_role: Attr[str] = "profile_id"
+from cf_classes.utils.attributes import (
+    LatitudeAttrs,
+    LongitudeAttrs,
+    DepthAttrs,
+    VariableAttrs,
+)
+from typing import List
+from attr import asdict, define
+from toolz import curry
+from cf_classes.dims import DEPTH, LONGITUDE, LATITUDE, DIMLESS
 
 
-@dataclass
-class _ProfileAttrs:
-    profile_name: Attr[str]
+@define
+class DepthCoords:
+    depth: xr.Variable
+    time: xr.Variable
+    longitude: xr.Variable
+    latitude: xr.Variable
 
 
-@dataclass
-class ProfileAttrs(DatasetAttrs, _ProfileAttrs):
-    featureType: Attr[str] = "profile"
+def asprofileidarray(profile_id: str):
+    attrs = {
+        "long_name": "Profile ID",
+        "cf_role": "profile_id",
+    }
+    return xr.DataArray(profile_id, dims=DIMLESS, name="profile_id", attrs=attrs)
+
+@curry
+def asdepthvariable(data, attrs):
+    return xr.Variable(DEPTH, data, attrs)
 
 
-@dataclass
-class DepthData:
-    data: Data[DEPTH, np.float32]
+def asprofilearray(
+    data,
+    name: str,
+    standard_name: str,
+    long_name: str,
+    units: str,
+    depth: List[float],
+    time: datetime,
+    longitude: float,
+    latitude: float,
+):
+    return xr.DataArray(
+        name=name,
+        dims=(DEPTH),
+        data=data,
+        coords=asdict(
+            DepthCoords(
+                depth=xr.Variable(DEPTH, depth, asdict(DepthAttrs())),
+                time=xr.Variable(DIMLESS, time, asdict(DepthAttrs())),
+                longitude=xr.Variable(DIMLESS, longitude, asdict(LongitudeAttrs())),
+                latitude=xr.Variable(DIMLESS, latitude, asdict(LatitudeAttrs())),
+            )
+        ),
+        attrs=asdict(
+            VariableAttrs(
+                standard_name=standard_name,
+                long_name=long_name,
+                units=units,
+            )
+        ),
+    )
 
 
-@dataclass
-class Depth(DepthAttrs, DepthData):
-    pass
-
-
-@dataclass
-class DepthProfileVariable(DataVarAttrs):
-    data: Data[DEPTH, np.float32]
-    name: Name[str]
-    time: Coordof[Time]
-    lat: Coordof[Latitude]
-    lon: Coordof[Longitude]
-    depth: Coordof[Depth]
-    grid_mapping: Attr[str] = "crs"
-    coordinates: Attr[str] = "time lat lon depth"
+#@dataclass
+#class DepthProfileVariable(DataVarAttrs):
+#    data: Data[DEPTH, np.float32]
+#    name: Name[str]
+#    time: Coordof[Time]
+#    lat: Coordof[Latitude]
+#    lon: Coordof[Longitude]
+#    depth: Coordof[Depth]
+#    grid_mapping: Attr[str] = "crs"
+#    coordinates: Attr[str] = "time lat lon depth"

@@ -6,38 +6,38 @@ import xarray as xr
 from xarray_dataclasses import asdataarray, asdataset
 
 from cf_classes.utils.common import WGS1984
-from cf_classes.profile import ProfileId, ProfileAttrs, DepthProfileVariable
+from cf_classes.profile import asprofilearray, asprofileidarray
 
 # %%
-temperature1 = DepthProfileVariable(
+temperature1 = asprofilearray(
     name="temperature",
     standard_name="sea_water_temperature",
     long_name="Sea water temperature",
     units="degree_Celsius",
     data=[10, 15],
-    lon=10.75,
-    lat=59.95,
+    longitude=10.75,
+    latitude=59.95,
     depth=[1, 2],
-    time="1970-01-01T00:00:00",
+    time=datetime.fromisoformat("1970-01-01T00:00:00"),
 )
 
 # %%
-ds1 = xr.merge([asdataarray(d) for d in [temperature1, ProfileId("profile1")]])
+ds1 = xr.merge([temperature1, asprofileidarray("profile1")])
 # %%
-temperature2 = DepthProfileVariable(
+temperature2 = asprofilearray(
     name="temperature",
     standard_name="sea_water_temperature",
     long_name="Sea water temperature",
     units="degree_Celsius",
     data=[20, 255, 2000, 100],
-    lon=10.75,
-    lat=59.95,
+    longitude=10.75,
+    latitude=59.95,
     depth=[1, 2, 10, 20],
-    time="1980-01-01T00:00:00",
+    time=datetime.fromisoformat("1980-01-01T00:00:00"),
 )
 
 # %%
-ds2 = xr.merge([asdataarray(d) for d in [temperature2, ProfileId("profile2")]])
+ds2 = xr.merge([temperature2, asprofileidarray("profile2")])
 # %%
 ds = xr.concat([ds1, ds2], dim="profile_id")
 #%%
@@ -58,5 +58,5 @@ ds.attrs = asdict(
 # %%
 ds["crs"] = asdataarray(WGS1984())
 # %%
-ds.temperature.sel(profile_id=b"profile1").plot.line("o")
+ds.temperature.sel(profile_id="profile1").plot.line("o")
 # %%

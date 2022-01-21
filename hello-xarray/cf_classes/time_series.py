@@ -27,7 +27,7 @@ def asstationvariable(station_id: str):
         "long_name": "Station ID",
         "cf_role": "timeseries_id",
     }
-    return xr.DataArray(DIMLESS, station_id, name="station_id", attrs=attrs)
+    return xr.DataArray(station_id, dims=DIMLESS, name="station_id", attrs=attrs)
 
 @curry
 def astimevariable(data, attrs):
