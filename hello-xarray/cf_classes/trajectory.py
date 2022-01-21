@@ -1,39 +1,75 @@
-from dataclasses import dataclass, field
-from typing import Tuple, Literal, Union
+from typing import List
 
-import numpy as np
-from xarray_dataclasses import Attr, Coordof, Data, Name, AsDataset, Dataof
+from datetime import datetime
+import xarray as xr
 
-from cf_classes.utils.literals import TIME
-from cf_classes.utils.time import DataByTime, TimeAxis, LongitudeByTime, LatitudeByTime
-from cf_classes.utils.attributes import DatasetAttrs
-
-
-@dataclass
-class TrajectoryId:
-    data: Data[None, Literal["|S64"]]
-    name: Name[str] = "trajectory_id"
-    cf_role: Attr[str] = "trajectory_id"
-    long_name: Attr[str] = "trajectory"
+from cf_classes.utils.attributes import (
+    LatitudeAttrs,
+    LongitudeAttrs,
+    TimeAttrs,
+    VariableAttrs,
+)
+from attr import asdict, define
+from toolz import curry
+from cf_classes.dims import TIME, DIMLESS
 
 
-@dataclass
-class _TrajectoryAttrs:
-    trajectory_name: Attr[str]
+@define
+class TimeSeriesCoord:
+    time: xr.Variable
+    longitude: xr.Variable
+    latitude: xr.Variable
 
 
-@dataclass
-class TrajectoryAttrs(DatasetAttrs, _TrajectoryAttrs):
-    featureType: Attr[str] = "trajectory"
+def astrajectoryidarray(trajectory_id: str):
+    attrs = {
+        "long_name": "trajectory ID",
+        "cf_role": "timeseries_id",
+    }
+    return xr.DataArray(trajectory_id, dims=DIMLESS, name="trajectory_id", attrs=attrs)
+
+@curry
+def astimevariable(data, attrs):
+    return xr.Variable(TIME, data, attrs)
 
 
-@dataclass
-class TrajectoryVariable(DataByTime):
-    name: Name[str]
-    time: Coordof[TimeAxis] = 0
-    lat: Coordof[LatitudeByTime] = 0
-    lon: Coordof[LongitudeByTime] = 0
-    grid_mapping: Attr[str] = "crs"
-    coordinates: Attr[str] = "time lat lon"
+def astrajectoryarray(
+    data,
+    name: str,
+    standard_name: str,
+    long_name: str,
+    units: str,
+    time: List[datetime],
+    longitude: List[float],
+    latitude: List[float],
+):
+    return xr.DataArray(
+        name=name,
+        dims=(TIME),
+        data=data,
+        coords=asdict(
+            TimeSeriesCoord(
+                time=xr.Variable(TIME, time, asdict(TimeAttrs())),
+                longitude=xr.Variable(TIME, longitude, asdict(LongitudeAttrs())),
+                latitude=xr.Variable(TIME, latitude, asdict(LatitudeAttrs())),
+            )
+        ),
+        attrs=asdict(
+            VariableAttrs(
+                standard_name=standard_name,
+                long_name=long_name,
+                units=units,
+            )
+        ),
+    )
 
+#@dataclass
+#class TrajectoryVariable(DataByTime):
+#    name: Name[str]
+#    time: Coordof[TimeAxis] = 0
+#    lat: Coordof[LatitudeByTime] = 0
+#    lon: Coordof[LongitudeByTime] = 0
+#    grid_mapping: Attr[str] = "crs"
+#    coordinates: Attr[str] = "time lat lon"
+#
     

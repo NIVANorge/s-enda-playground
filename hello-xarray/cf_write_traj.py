@@ -1,36 +1,38 @@
 #%%
 from dataclasses import asdict
-from datetime import datetime, timedelta
+from datetime import datetime
 
 import xarray as xr
 from xarray_dataclasses import asdataarray
 
 from cf_classes.utils.common import WGS1984
-from cf_classes.trajectory import TrajectoryId, TrajectoryAttrs, TrajectoryVariable
+from cf_classes.trajectory import astrajectoryidarray, astrajectoryarray
 
 #%%
-time = [
-    "1970-01-01T00:00:00.000000000",
-    "1970-01-01T10:00:00.000000000",
-    "1980-01-01T10:00:00.000000000",
-    "1990-01-01T10:00:00.000000000",
-]
+time = list(map(
+    datetime.fromisoformat,
+    [
+        "1970-01-01T00:00:00",
+        "1970-01-01T10:00:00",
+        "1980-01-01T10:00:00",
+        "1990-01-01T10:00:00",
+    ],
+))
 longitudes = [10.70, 10.60, 10.50, 10.40]
 latitudes = [50.70, 50.60, 50.50, 50.40]
 #%%
-temperature = TrajectoryVariable(
+temperature = astrajectoryarray(
     name="sea_water_temperature",
     standard_name="sea_water_temperature",
     long_name="sea_water_temperature",
     units="degree_Celsius",
     data=[2, None, 5, 7],
     time=time,
-    lat=latitudes,
-    lon=longitudes,
-    coordinates="time lat lon",
+    latitude=latitudes,
+    longitude=longitudes,
 )
 # %%
-ds = xr.merge([asdataarray(d) for d in [temperature, TrajectoryId("traj1"), WGS1984()]])
+ds = xr.merge([temperature, astrajectoryidarray("traj1")])
 # %%
 ds.attrs = asdict(
     TrajectoryAttrs(
