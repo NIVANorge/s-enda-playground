@@ -1,10 +1,7 @@
-from dataclasses import dataclass, field
-from typing import Literal, List, Dict, Any
+from typing import List
 
 from datetime import datetime
 
-import numpy as np
-from xarray_dataclasses import Attr, Coordof, Data, Name
 import xarray as xr
 
 from cf_classes.utils.attributes import (
