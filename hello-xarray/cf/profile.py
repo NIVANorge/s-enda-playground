@@ -6,7 +6,7 @@ from cf.utils.attributes import (
     LongitudeAttrs,
     DepthAttrs,
     VariableAttrs,
-    DatasetAttrs,
+    TimeAttrs,
 )
 from typing import List
 from dataclasses import asdict, dataclass
@@ -51,7 +51,7 @@ def asprofilearray(
         coords=asdict(
             DepthCoords(
                 depth=xr.Variable(DEPTH, depth, asdict(DepthAttrs())),
-                time=xr.Variable(DIMLESS, time, asdict(DepthAttrs())),
+                time=xr.Variable(DIMLESS, time, asdict(TimeAttrs())),
                 longitude=xr.Variable(DIMLESS, longitude, asdict(LongitudeAttrs())),
                 latitude=xr.Variable(DIMLESS, latitude, asdict(LatitudeAttrs())),
             )
