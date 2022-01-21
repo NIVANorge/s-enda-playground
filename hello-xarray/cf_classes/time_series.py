@@ -55,7 +55,7 @@ def astimearray(
             TimeSeriesCoord(
                 time=xr.Variable(TIME, time, asdict(TimeAttrs())),
                 longitude=xr.Variable(DIMLESS, longitude, asdict(LongitudeAttrs())),
-                latitude=xr.Variable(DIMLESS, latitude, asdict(LongitudeAttrs())),
+                latitude=xr.Variable(DIMLESS, latitude, asdict(LatitudeAttrs())),
             )
         ),
         attrs=asdict(
