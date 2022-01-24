@@ -29,9 +29,6 @@ def profileidarray(profile_id: str):
     }
     return xr.DataArray(profile_id, dims=DIMLESS, name="profile_id", attrs=attrs)
 
-def depthvariable(data, attrs):
-    return xr.Variable(DEPTH, data, attrs)
-
 
 def profilearray(
     data,
