@@ -61,8 +61,7 @@ def timearraycoords(
     longitude: float,
     latitude: float,
 ):
-    darray = timearray(data, name, standard_name, long_name, units)
-    return darray.assign_coords(asdict(
+    return timearray(data, name, standard_name, long_name, units).assign_coords(asdict(
         TimeSeriesCoord(
             time=xr.Variable(TIME, time, asdict(TimeAttrs())),
             longitude=xr.Variable(DIMLESS, longitude, asdict(LongitudeAttrs())),

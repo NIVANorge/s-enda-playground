@@ -6,12 +6,12 @@ import xarray as xr
 from xarray_dataclasses import asdataarray, asdataset
 
 from cfxarray.common import wgs1984
-from cfxarray.profile import profilearray, profileidarray
+from cfxarray.profile import profilearraycoords, profileidarray
 from cfxarray.attributes import DatasetAttrs
 from toolz.dicttoolz import merge
 
 # %%
-temperature1 = profilearray(
+temperature1 = profilearraycoords(
     name="temperature",
     standard_name="sea_water_temperature",
     long_name="Sea water temperature",
@@ -26,7 +26,7 @@ temperature1 = profilearray(
 # %%
 ds1 = xr.merge([temperature1, profileidarray("profile1")])
 # %%
-temperature2 = profilearray(
+temperature2 = profilearraycoords(
     name="temperature",
     standard_name="sea_water_temperature",
     long_name="Sea water temperature",

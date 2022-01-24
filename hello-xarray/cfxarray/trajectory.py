@@ -59,13 +59,23 @@ def trajectoryarray(
         ),
     )
 
-#@dataclass
-#class TrajectoryVariable(DataByTime):
-#    name: Name[str]
-#    time: Coordof[TimeAxis] = 0
-#    lat: Coordof[LatitudeByTime] = 0
-#    lon: Coordof[LongitudeByTime] = 0
-#    grid_mapping: Attr[str] = "crs"
-#    coordinates: Attr[str] = "time lat lon"
-#
-    
+
+def trajectoryarraycoords(
+    data,
+    name: str,
+    standard_name: str,
+    long_name: str,
+    units: str,
+    time: List[datetime],
+    longitude: List[float],
+    latitude: List[float],
+):
+    return trajectoryarray(data, name, standard_name, long_name, units).assign_coords(
+        asdict(
+            TimeSeriesCoord(
+                time=xr.Variable(TIME, time, asdict(TimeAttrs())),
+                longitude=xr.Variable(TIME, longitude, asdict(LongitudeAttrs())),
+                latitude=xr.Variable(TIME, latitude, asdict(LatitudeAttrs())),
+            )
+        )
+    )

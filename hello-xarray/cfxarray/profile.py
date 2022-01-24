@@ -39,23 +39,11 @@ def profilearray(
     standard_name: str,
     long_name: str,
     units: str,
-    depth: List[float],
-    time: datetime,
-    longitude: float,
-    latitude: float,
 ):
     return xr.DataArray(
         name=name,
         dims=(DEPTH),
         data=data,
-        coords=asdict(
-            DepthCoords(
-                depth=xr.Variable(DEPTH, depth, asdict(DepthAttrs())),
-                time=xr.Variable(DIMLESS, time, asdict(TimeAttrs())),
-                longitude=xr.Variable(DIMLESS, longitude, asdict(LongitudeAttrs())),
-                latitude=xr.Variable(DIMLESS, latitude, asdict(LatitudeAttrs())),
-            )
-        ),
         attrs=asdict(
             VariableAttrs(
                 standard_name=standard_name,
@@ -64,3 +52,26 @@ def profilearray(
             )
         ),
     )
+
+
+def profilearraycoords(
+    data,
+    name: str,
+    standard_name: str,
+    long_name: str,
+    units: str,
+    depth: List[float],
+    time: datetime,
+    longitude: float,
+    latitude: float,
+):
+    return profilearray(data, name, standard_name, long_name, units).assign_coords(
+        asdict(
+            DepthCoords(
+                depth=xr.Variable(DEPTH, depth, asdict(DepthAttrs())),
+                time=xr.Variable(DIMLESS, time, asdict(TimeAttrs())),
+                longitude=xr.Variable(DIMLESS, longitude, asdict(LongitudeAttrs())),
+                latitude=xr.Variable(DIMLESS, latitude, asdict(LatitudeAttrs())),
+            )
+        ))
+    
