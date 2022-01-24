@@ -35,21 +35,11 @@ def trajectoryarray(
     standard_name: str,
     long_name: str,
     units: str,
-    time: List[datetime],
-    longitude: List[float],
-    latitude: List[float],
 ):
     return xr.DataArray(
         name=name,
         dims=(TIME),
         data=data,
-        coords=asdict(
-            TimeSeriesCoord(
-                time=xr.Variable(TIME, time, asdict(TimeAttrs())),
-                longitude=xr.Variable(TIME, longitude, asdict(LongitudeAttrs())),
-                latitude=xr.Variable(TIME, latitude, asdict(LatitudeAttrs())),
-            )
-        ),
         attrs=asdict(
             VariableAttrs(
                 standard_name=standard_name,
