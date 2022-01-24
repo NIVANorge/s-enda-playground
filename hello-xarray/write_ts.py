@@ -9,7 +9,7 @@ from cfxarray.time_series import (
     stationidarray,
     timearraycoords,
 )
-# from cfxarray.common import WGS1984
+from cfxarray.common import wgs1984
 from cfxarray.attributes import DatasetAttrs
 from cfxarray.dims import TIME, DIMLESS
 from dataclasses import asdict
