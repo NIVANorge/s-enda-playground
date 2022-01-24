@@ -1,7 +1,7 @@
 from datetime import datetime
 import xarray as xr
 
-from cfxarray.utils.attributes import (
+from cfxarray.attributes import (
     LatitudeAttrs,
     LongitudeAttrs,
     DepthAttrs,
@@ -22,18 +22,18 @@ class DepthCoords:
     latitude: xr.Variable
 
 
-def asprofileidarray(profile_id: str):
+def profileidarray(profile_id: str):
     attrs = {
         "long_name": "Profile ID",
         "cf_role": "profile_id",
     }
     return xr.DataArray(profile_id, dims=DIMLESS, name="profile_id", attrs=attrs)
 
-def asdepthvariable(data, attrs):
+def depthvariable(data, attrs):
     return xr.Variable(DEPTH, data, attrs)
 
 
-def asprofilearray(
+def profilearray(
     data,
     name: str,
     standard_name: str,

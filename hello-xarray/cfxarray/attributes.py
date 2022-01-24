@@ -26,6 +26,7 @@ class LatitudeAttrs:
     units: str = "degree_north"
     valid_min: float = -90.0
     valid_max: float = 90.0
+    axis: str = 'Y'
 
 
 @dataclass
@@ -34,6 +35,7 @@ class LongitudeAttrs:
     units: str = "degree_east"
     valid_min: float = -180.0
     valid_max: float = 180.0
+    axis: str = 'X'
 
 
 @dataclass
@@ -69,6 +71,7 @@ class DatasetAttrs:
     geospatial_lat_max: float
     geospatial_lon_min: float
     geospatial_lon_max: float
+    featureType: str
     keywords_vocabulary: str = "GCM:GCMD Keywords"
     data_owner: str = "Norwegian Institute for Water Research"
     summary: str = ""

@@ -3,7 +3,7 @@ from typing import List
 from datetime import datetime
 import xarray as xr
 
-from cfxarray.utils.attributes import (
+from cfxarray.attributes import (
     LatitudeAttrs,
     LongitudeAttrs,
     TimeAttrs,
@@ -21,19 +21,15 @@ class TimeSeriesCoord:
     latitude: xr.Variable
 
 
-def astrajectoryidarray(trajectory_id: str):
+def trajectoryidarray(trajectory_id: str):
     attrs = {
         "long_name": "trajectory ID",
         "cf_role": "timeseries_id",
     }
     return xr.DataArray(trajectory_id, dims=DIMLESS, name="trajectory_id", attrs=attrs)
 
-@curry
-def astimevariable(data, attrs):
-    return xr.Variable(TIME, data, attrs)
 
-
-def astrajectoryarray(
+def trajectoryarray(
     data,
     name: str,
     standard_name: str,

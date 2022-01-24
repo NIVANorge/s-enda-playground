@@ -5,9 +5,9 @@ from datetime import datetime
 import xarray as xr
 from xarray_dataclasses import asdataarray
 
-from cfxarray.utils.common import WGS1984
-from cfxarray.trajectory import astrajectoryidarray, astrajectoryarray
-from cfxarray.utils.attributes import DatasetAttrs
+from cfxarray.common import WGS1984
+from cfxarray.trajectory import trajectoryidarray, trajectoryarray
+from cfxarray.attributes import DatasetAttrs
 #%%
 time = list(map(
     datetime.fromisoformat,
@@ -21,7 +21,7 @@ time = list(map(
 longitudes = [10.70, 10.60, 10.50, 10.40]
 latitudes = [50.70, 50.60, 50.50, 50.40]
 #%%
-temperature = astrajectoryarray(
+temperature = trajectoryarray(
     name="sea_water_temperature",
     standard_name="sea_water_temperature",
     long_name="sea_water_temperature",
@@ -32,7 +32,7 @@ temperature = astrajectoryarray(
     longitude=longitudes,
 )
 # %%
-ds = xr.merge([temperature, astrajectoryidarray("traj1")])
+ds = xr.merge([temperature, trajectoryidarray("traj1")])
 # %%
 ds.attrs = asdict(
     DatasetAttrs(
@@ -45,6 +45,7 @@ ds.attrs = asdict(
         geospatial_lat_max=float(max(ds.latitude)),
         geospatial_lon_min=float(min(ds.longitude)),
         geospatial_lon_max=float(max(ds.longitude)),
+        featureType='trajectory'
     )
 )
 # %%

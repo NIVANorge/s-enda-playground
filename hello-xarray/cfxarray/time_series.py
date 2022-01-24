@@ -4,7 +4,7 @@ from datetime import datetime
 
 import xarray as xr
 
-from cfxarray.utils.attributes import (
+from cfxarray.attributes import (
     LatitudeAttrs,
     LongitudeAttrs,
     TimeAttrs,

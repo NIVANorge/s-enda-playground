@@ -5,13 +5,13 @@ from datetime import datetime, timedelta
 import xarray as xr
 from xarray_dataclasses import asdataarray, asdataset
 
-from cfxarray.utils.common import WGS1984
-from cfxarray.profile import asprofilearray, asprofileidarray, ProfileAttrs
-from cfxarray.utils.attributes import DatasetAttrs
+from cfxarray.common import wgs1984
+from cfxarray.profile import profilearray, profileidarray
+from cfxarray.attributes import DatasetAttrs
 from toolz.dicttoolz import merge
 
 # %%
-temperature1 = asprofilearray(
+temperature1 = profilearray(
     name="temperature",
     standard_name="sea_water_temperature",
     long_name="Sea water temperature",
@@ -24,9 +24,9 @@ temperature1 = asprofilearray(
 )
 
 # %%
-ds1 = xr.merge([temperature1, asprofileidarray("profile1")])
+ds1 = xr.merge([temperature1, profileidarray("profile1")])
 # %%
-temperature2 = asprofilearray(
+temperature2 = profilearray(
     name="temperature",
     standard_name="sea_water_temperature",
     long_name="Sea water temperature",
@@ -39,7 +39,7 @@ temperature2 = asprofilearray(
 )
 
 # %%
-ds2 = xr.merge([temperature2, asprofileidarray("profile2")])
+ds2 = xr.merge([temperature2, profileidarray("profile2")])
 # %%
 ds = xr.concat([ds1, ds2], dim="profile_id")
 #%%
@@ -48,17 +48,18 @@ ds.attrs = asdict(
             title="hei",
             date_created=str(datetime.now()),
             keywords=["hei"],
-            profile_name="oslo",
             time_coverage_start=str(ds.time.min().values),
             time_coverage_end=str(ds.time.max().values),
             geospatial_lat_min=float(ds.latitude.min().values),
             geospatial_lat_max=float(ds.latitude.max().values),
             geospatial_lon_min=float(ds.longitude.min().values),
             geospatial_lon_max=float(ds.longitude.max().values),
+            featureType='profile'
         ))
 
 # %%
-ds["crs"] = asdataarray(WGS1984())
+ds["crs"] = wgs1984()
 # %%
 ds.temperature.sel(profile_id="profile1").plot.line("o")
+# %%
 # %%

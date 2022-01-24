@@ -9,8 +9,8 @@ from cfxarray.time_series import (
     stationidarray,
     timearraycoords,
 )
-# from cfxarray.utils.common import WGS1984
-from cfxarray.utils.attributes import DatasetAttrs
+# from cfxarray.common import WGS1984
+from cfxarray.attributes import DatasetAttrs
 from cfxarray.dims import TIME, DIMLESS
 from dataclasses import asdict
 #%%
@@ -71,6 +71,7 @@ ds.attrs = asdict(
         geospatial_lat_max=float(ds.latitude),
         geospatial_lon_min=float(ds.longitude),
         geospatial_lon_max=float(ds.longitude),
+        featureType="timeSeries"
     )
 )
 
