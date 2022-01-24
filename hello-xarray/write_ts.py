@@ -5,51 +5,49 @@ from datetime import datetime, timedelta
 import xarray as xr
 from xarray_dataclasses import asdataarray
 
-from cf.time_series import (
-    asstationidarray,
-    astimearray,
+from cfxarray.time_series import (
+    stationidarray,
+    timearraycoords,
 )
-
-# from cf.utils.common import WGS1984
-from cf.utils.attributes import DatasetAttrs
-from cf.dims import TIME, DIMLESS
+# from cfxarray.utils.common import WGS1984
+from cfxarray.utils.attributes import DatasetAttrs
+from cfxarray.dims import TIME, DIMLESS
 from dataclasses import asdict
-
 #%%
 # standard names http://vocab.nerc.ac.uk/collection/P07/current/
-temperature = astimearray(
+temperature = timearraycoords(
     name="temperature",
-    data=[10, 15],
-    time=[datetime(1999, 10, 4), datetime(1999, 10, 5)],
-    longitude=10.75,
-    latitude=59.95,
     standard_name="sea_water_temperature",
     long_name="Sea water temperature",
-    units="degree_Celsius"
-)
-#%%
-salinity = astimearray(
-    name="salinity",
+    units="degree_Celsius",
     data=[10, 15],
     time=[datetime(1999, 10, 4), datetime(1999, 10, 5)],
     longitude=10.75,
-    latitude=59.95,
+    latitude=59.95
+)
+#%%
+salinity = timearraycoords(
+    name="salinity",
     standard_name="sea_water_salinity",
     long_name="Salinity at some place",
-    units="1e-3"
+    units="1e-3",
+    data=[10, 15],
+    time=[datetime(1999, 10, 4), datetime(1999, 10, 5)],
+    longitude=10.75,
+    latitude=59.95
 )
 
 
 #%%
-conductivity = astimearray(
+conductivity = timearraycoords(
     name="conductivity",
+    units="mS cm-1",
+    standard_name="sea_water_electrical_conductivity",
+    long_name="Conductivity at depth",
     data=[10, 15, 100, 40],
     time=[datetime(1999, 10, i) for i in range(1,5)],
     longitude=10.75,
-    latitude=59.95,
-    standard_name="sea_water_electrical_conductivity",
-    long_name="Conductivity at depth",
-    units="mS cm-1",
+    latitude=59.95
 )
 
 #%%
@@ -58,7 +56,7 @@ ds = xr.merge(
         temperature,
         salinity,
         conductivity,
-        asstationidarray("Oslo1"),
+        stationidarray("Oslo1"),
     ]
 )
 #%%

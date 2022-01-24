@@ -4,7 +4,7 @@ from datetime import datetime
 
 import xarray as xr
 
-from cf.utils.attributes import (
+from cfxarray.utils.attributes import (
     LatitudeAttrs,
     LongitudeAttrs,
     TimeAttrs,
@@ -12,7 +12,7 @@ from cf.utils.attributes import (
 )
 from dataclasses import asdict, dataclass
 from toolz import curry
-from cf.dims import TIME, DIMLESS, LONGITUDE, LATITUDE
+from cfxarray.dims import TIME, DIMLESS, LONGITUDE, LATITUDE
 
 
 @dataclass
@@ -22,7 +22,7 @@ class TimeSeriesCoord:
     latitude: xr.Variable
 
 
-def asstationidarray(station_id: str):
+def stationidarray(station_id: str):
     attrs = {
         "long_name": "Station ID",
         "cf_role": "timeseries_id",
@@ -30,7 +30,28 @@ def asstationidarray(station_id: str):
     return xr.DataArray(station_id, dims=DIMLESS, name="station_id", attrs=attrs)
 
 
-def astimearray(
+def timearray(
+    data,
+    name: str,
+    standard_name: str,
+    long_name: str,
+    units: str,
+):
+    return xr.DataArray(
+        name=name,
+        dims=(TIME),
+        data=data,
+        attrs=asdict(
+            VariableAttrs(
+                standard_name=standard_name,
+                long_name=long_name,
+                units=units,
+            )
+        ),
+    )
+
+
+def timearraycoords(
     data,
     name: str,
     standard_name: str,
@@ -40,22 +61,12 @@ def astimearray(
     longitude: float,
     latitude: float,
 ):
-    return xr.DataArray(
-        name=name,
-        dims=(TIME),
-        data=data,
-        coords=asdict(
-            TimeSeriesCoord(
-                time=xr.Variable(TIME, time, asdict(TimeAttrs())),
-                longitude=xr.Variable(DIMLESS, longitude, asdict(LongitudeAttrs())),
-                latitude=xr.Variable(DIMLESS, latitude, asdict(LatitudeAttrs())),
-            )
-        ),
-        attrs=asdict(
-            VariableAttrs(
-                standard_name=standard_name,
-                long_name=long_name,
-                units=units,
-            )
-        ),
+    darray = timearray(data, name, standard_name, long_name, units)
+    darray.coords = asdict(
+        TimeSeriesCoord(
+            time=xr.Variable(TIME, time, asdict(TimeAttrs())),
+            longitude=xr.Variable(DIMLESS, longitude, asdict(LongitudeAttrs())),
+            latitude=xr.Variable(DIMLESS, latitude, asdict(LatitudeAttrs())),
+        )
     )
+    return darray

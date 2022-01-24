@@ -5,11 +5,11 @@ from typing import Literal, List
 import numpy as np
 from xarray_dataclasses import Attr, Coordof, Data, Name, AsDataset, Dataof
 
-from cf.utils.literals import TIME
-from cf.utils.common import WGS1984
-from cf.utils.time import DataByTime, TimeAxis, LongitudeByTime, LatitudeByTime
-from cf.utils.attributes import DatasetAttrs
-from cf.trajectory import TrajectoryId
+from cfxarray.utils.literals import TIME
+from cfxarray.utils.common import WGS1984
+from cfxarray.utils.time import DataByTime, TimeAxis, LongitudeByTime, LatitudeByTime
+from cfxarray.utils.attributes import DatasetAttrs
+from cfxarray.trajectory import TrajectoryId
 
 @dataclass
 class Salinity:

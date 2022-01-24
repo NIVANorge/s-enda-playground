@@ -1,7 +1,7 @@
 from datetime import datetime
 import xarray as xr
 
-from cf.utils.attributes import (
+from cfxarray.utils.attributes import (
     LatitudeAttrs,
     LongitudeAttrs,
     DepthAttrs,
@@ -11,7 +11,7 @@ from cf.utils.attributes import (
 from typing import List
 from dataclasses import asdict, dataclass
 from toolz import compose
-from cf.dims import DEPTH, DIMLESS
+from cfxarray.dims import DEPTH, DIMLESS
 
 
 @dataclass

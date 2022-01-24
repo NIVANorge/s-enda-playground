@@ -1,5 +1,5 @@
 #%%
-from cf.datasets import SampleDataSet
+from cfxarray.datasets import SampleDataSet
 from datetime import datetime, timedelta
 import numpy as np
 # %%

@@ -5,9 +5,9 @@ from datetime import datetime
 import xarray as xr
 from xarray_dataclasses import asdataarray
 
-from cf.utils.common import WGS1984
-from cf.trajectory import astrajectoryidarray, astrajectoryarray
-from cf.utils.attributes import DatasetAttrs
+from cfxarray.utils.common import WGS1984
+from cfxarray.trajectory import astrajectoryidarray, astrajectoryarray
+from cfxarray.utils.attributes import DatasetAttrs
 #%%
 time = list(map(
     datetime.fromisoformat,
