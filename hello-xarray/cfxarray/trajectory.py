@@ -12,6 +12,7 @@ from cfxarray.attributes import (
 from dataclasses import asdict, dataclass
 from toolz import curry
 from cfxarray.dims import TIME, DIMLESS
+from cfxarray.arrays import arraybytime
 
 
 @dataclass
@@ -29,27 +30,6 @@ def trajectoryidarray(trajectory_id: str):
     return xr.DataArray(trajectory_id, dims=DIMLESS, name="trajectory_id", attrs=attrs)
 
 
-def trajectoryarray(
-    data,
-    name: str,
-    standard_name: str,
-    long_name: str,
-    units: str,
-):
-    return xr.DataArray(
-        name=name,
-        dims=(TIME),
-        data=data,
-        attrs=asdict(
-            VariableAttrs(
-                standard_name=standard_name,
-                long_name=long_name,
-                units=units,
-            )
-        ),
-    )
-
-
 def trajectoryarraycoords(
     data,
     name: str,
@@ -60,7 +40,13 @@ def trajectoryarraycoords(
     longitude: List[float],
     latitude: List[float],
 ):
-    return trajectoryarray(data, name, standard_name, long_name, units).assign_coords(
+    return arraybytime(
+        data,
+        name,
+        standard_name,
+        long_name,
+        units,
+    ).assign_coords(
         asdict(
             TimeSeriesCoord(
                 time=xr.Variable(TIME, time, asdict(TimeAttrs())),

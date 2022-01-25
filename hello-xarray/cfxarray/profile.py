@@ -12,6 +12,7 @@ from typing import List
 from dataclasses import asdict, dataclass
 from toolz import compose
 from cfxarray.dims import DEPTH, DIMLESS
+from cfxarray.arrays import arraybydepth
 
 
 @dataclass
@@ -30,28 +31,7 @@ def profileidarray(profile_id: str):
     return xr.DataArray(profile_id, dims=DIMLESS, name="profile_id", attrs=attrs)
 
 
-def profilearray(
-    data,
-    name: str,
-    standard_name: str,
-    long_name: str,
-    units: str,
-):
-    return xr.DataArray(
-        name=name,
-        dims=(DEPTH),
-        data=data,
-        attrs=asdict(
-            VariableAttrs(
-                standard_name=standard_name,
-                long_name=long_name,
-                units=units,
-            )
-        ),
-    )
-
-
-def profilearraycoords(
+def profilebycoords(
     data,
     name: str,
     standard_name: str,
@@ -62,7 +42,13 @@ def profilearraycoords(
     longitude: float,
     latitude: float,
 ):
-    return profilearray(data, name, standard_name, long_name, units).assign_coords(
+    return arraybydepth(
+        data,
+        name,
+        standard_name,
+        long_name,
+        units,
+    ).assign_coords(
         asdict(
             DepthCoords(
                 depth=xr.Variable(DEPTH, depth, asdict(DepthAttrs())),
@@ -70,5 +56,5 @@ def profilearraycoords(
                 longitude=xr.Variable(DIMLESS, longitude, asdict(LongitudeAttrs())),
                 latitude=xr.Variable(DIMLESS, latitude, asdict(LatitudeAttrs())),
             )
-        ))
-    
+        )
+    )
