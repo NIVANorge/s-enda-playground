@@ -12,7 +12,8 @@ from cfxarray.attributes import (
 )
 from dataclasses import asdict, dataclass
 from cfxarray.dims import TIME, DIMLESS, LONGITUDE, LATITUDE
-from cfxarray.arrays import arraybytime
+from cfxarray.arrays import dataarraybytime
+from toolz import curry
 
 
 @dataclass
@@ -30,28 +31,15 @@ def stationidarray(station_id: str):
     return xr.DataArray(station_id, dims=DIMLESS, name="station_id", attrs=attrs)
 
 
-def timearraycoords(
-    data,
-    name: str,
-    standard_name: str,
-    long_name: str,
-    units: str,
+def timeseriescoords(
     time: List[datetime],
     longitude: float,
     latitude: float,
 ):
-    return arraybytime(
-        data,
-        name,
-        standard_name,
-        long_name,
-        units,
-    ).assign_coords(
-        asdict(
-            TimeSeriesCoord(
-                time=xr.Variable(TIME, time, asdict(TimeAttrs())),
-                longitude=xr.Variable(DIMLESS, longitude, asdict(LongitudeAttrs())),
-                latitude=xr.Variable(DIMLESS, latitude, asdict(LatitudeAttrs())),
-            )
+    return asdict(
+        TimeSeriesCoord(
+            time=xr.Variable(TIME, time, asdict(TimeAttrs())),
+            longitude=xr.Variable(DIMLESS, longitude, asdict(LongitudeAttrs())),
+            latitude=xr.Variable(DIMLESS, latitude, asdict(LatitudeAttrs())),
         )
     )

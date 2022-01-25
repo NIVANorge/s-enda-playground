@@ -11,8 +11,9 @@ from dataclasses import asdict, dataclass
 from toolz import curry
 from cfxarray.dims import TIME, DEPTH
 
+
 @curry
-def variablearray(
+def dataarray(
     dims: Union[Tuple, str],
     data: List[Any],
     name: str,
@@ -34,6 +35,6 @@ def variablearray(
     )
 
 
-arraybytime = variablearray(TIME)
+dataarraybytime = dataarray(TIME)
 
-arraybydepth = variablearray(DEPTH)
+dataarraybydepth = dataarray(DEPTH)

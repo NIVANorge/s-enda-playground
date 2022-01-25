@@ -1,4 +1,3 @@
-
 from dataclasses import dataclass, field
 from typing import Literal, List
 
@@ -7,9 +6,10 @@ from xarray_dataclasses import Attr, Coordof, Data, Name, AsDataset, Dataof
 
 from cfxarray.literals import TIME
 from cfxarray.common import WGS1984
-from cfxarray.time import DataByTime, TimeAxis, LongitudeByTime, LatitudeByTime
+from cfxarray.time import dataarraybyTime, TimeAxis, LongitudeByTime, LatitudeByTime
 from cfxarray.attributes import DatasetAttrs
 from cfxarray.trajectory import TrajectoryId
+
 
 @dataclass
 class Salinity:
@@ -18,12 +18,14 @@ class Salinity:
     long_name: Attr[str] = "Salinity at some place"
     units: Attr[str] = "1e-3"
 
+
 @dataclass
 class Temperature:
     data: Data[TIME, np.float32]
     standard_name: Attr[str] = "sea_water_temperature"
     long_name: Attr[str] = "Temperature some place"
     units: Attr[str] = "degree_Celsius"
+
 
 @dataclass
 class SampleDataSet(AsDataset):

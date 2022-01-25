@@ -7,47 +7,58 @@ from xarray_dataclasses import asdataarray
 
 from cfxarray.time_series import (
     stationidarray,
-    timearraycoords,
 )
 from cfxarray.common import wgs1984
 from cfxarray.attributes import DatasetAttrs
 from cfxarray.dims import TIME, DIMLESS
+from cfxarray.arrays import dataarraybytime
+from cfxarray.time_series import timeseriescoords
 from dataclasses import asdict
+
 #%%
 # standard names http://vocab.nerc.ac.uk/collection/P07/current/
-temperature = timearraycoords(
+temperature = dataarraybytime(
+    data=[10, 15],
     name="temperature",
     standard_name="sea_water_temperature",
     long_name="Sea water temperature",
     units="degree_Celsius",
-    data=[10, 15],
-    time=[datetime(1999, 10, 4), datetime(1999, 10, 5)],
-    longitude=10.75,
-    latitude=59.95
+).assign_coords(
+    timeseriescoords(
+        time=[datetime(1999, 10, 4), datetime(1999, 10, 5)],
+        latitude=59.95,
+        longitude=10.75,
+    )
 )
 #%%
-salinity = timearraycoords(
+salinity = dataarraybytime(
+    data=[10, 15],
     name="salinity",
     standard_name="sea_water_salinity",
     long_name="Salinity at some place",
     units="1e-3",
-    data=[10, 15],
-    time=[datetime(1999, 10, 4), datetime(1999, 10, 5)],
-    longitude=10.75,
-    latitude=59.95
+).assign_coords(
+    timeseriescoords(
+        time=[datetime(1999, 10, 4), datetime(1999, 10, 5)],
+        latitude=59.95,
+        longitude=10.75,
+    )
 )
 
 
 #%%
-conductivity = timearraycoords(
+conductivity = dataarraybytime(
+    data=[10, 15, 100, 40],
     name="conductivity",
     units="mS cm-1",
     standard_name="sea_water_electrical_conductivity",
     long_name="Conductivity at depth",
-    data=[10, 15, 100, 40],
-    time=[datetime(1999, 10, i) for i in range(1,5)],
-    longitude=10.75,
-    latitude=59.95
+).assign_coords(
+    timeseriescoords(
+        time=[datetime(1999, 10, i) for i in range(1, 5)],
+        longitude=10.75,
+        latitude=59.95,
+    )
 )
 
 #%%
@@ -71,7 +82,7 @@ ds.attrs = asdict(
         geospatial_lat_max=float(ds.latitude),
         geospatial_lon_min=float(ds.longitude),
         geospatial_lon_max=float(ds.longitude),
-        featureType="timeSeries"
+        featureType="timeSeries",
     )
 )
 

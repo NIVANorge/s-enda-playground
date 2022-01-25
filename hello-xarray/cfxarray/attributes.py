@@ -5,11 +5,14 @@ from numpy import positive
 from xarray_dataclasses import Attr
 from datetime import datetime
 from toolz import curry
+
+
 @dataclass
 class VariableAttrs:
     standard_name: str
     long_name: str
     units: str
+
 
 @dataclass
 class AltitudeAttrs:
@@ -26,7 +29,7 @@ class LatitudeAttrs:
     units: str = "degree_north"
     valid_min: float = -90.0
     valid_max: float = 90.0
-    axis: str = 'Y'
+    axis: str = "Y"
 
 
 @dataclass
@@ -35,7 +38,7 @@ class LongitudeAttrs:
     units: str = "degree_east"
     valid_min: float = -180.0
     valid_max: float = 180.0
-    axis: str = 'X'
+    axis: str = "X"
 
 
 @dataclass
@@ -59,6 +62,7 @@ class DepthAttrs:
     axis: str = "Z"
     reference: str = "sea_level"
     coordinate_reference_frame: str = "urn:ogc:def:crs:EPSG::CRF 5831"
+
 
 @dataclass
 class DatasetAttrs:
