@@ -12,7 +12,7 @@ from cfxarray.attributes import (
 from dataclasses import asdict, dataclass
 from toolz import curry
 from cfxarray.dims import TIME, DIMLESS
-from cfxarray.arrays import dataarraybytime
+from cfxarray.base import dataarraybytime
 
 
 @dataclass

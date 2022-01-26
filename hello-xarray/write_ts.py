@@ -3,7 +3,6 @@ from dataclasses import asdict
 from datetime import datetime, timedelta
 
 import xarray as xr
-from xarray_dataclasses import asdataarray
 
 from cfxarray.time_series import (
     stationidarray,
@@ -11,8 +10,8 @@ from cfxarray.time_series import (
 from cfxarray.common import wgs1984
 from cfxarray.attributes import DatasetAttrs
 from cfxarray.dims import TIME, DIMLESS
-from cfxarray.arrays import dataarraybytime
-from cfxarray.time_series import timeseriescoords
+from cfxarray.base import dataarraybytime
+from cfxarray.time_series import timeseriescoords, timeseriesdataset
 from dataclasses import asdict
 
 #%%
@@ -60,16 +59,10 @@ conductivity = dataarraybytime(
         latitude=59.95,
     )
 )
-
 #%%
-ds = xr.merge(
-    [
-        temperature,
-        salinity,
-        conductivity,
-        stationidarray("Oslo1"),
-    ]
-)
+ds = timeseriesdataset([conductivity, salinity, temperature], "oslo1")
+#%%
+
 #%%
 ds.attrs = asdict(
     DatasetAttrs(

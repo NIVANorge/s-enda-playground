@@ -12,7 +12,7 @@ from typing import List
 from dataclasses import asdict, dataclass
 from toolz import compose
 from cfxarray.dims import DEPTH, DIMLESS
-from cfxarray.arrays import dataarraybydepth
+from cfxarray.base import dataarraybydepth
 
 
 @dataclass

@@ -7,7 +7,7 @@ from xarray_dataclasses import asdataarray, asdataset
 
 from cfxarray.common import wgs1984
 from cfxarray.profile import depthcoords, profileidarray
-from cfxarray.arrays import dataarraybydepth
+from cfxarray.base import dataarraybydepth
 from cfxarray.attributes import DatasetAttrs
 from toolz.dicttoolz import merge
 

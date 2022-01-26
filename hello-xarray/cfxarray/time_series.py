@@ -8,12 +8,13 @@ from cfxarray.attributes import (
     LatitudeAttrs,
     LongitudeAttrs,
     TimeAttrs,
-    VariableAttrs,
+    DatasetAttrs,
 )
 from dataclasses import asdict, dataclass
 from cfxarray.dims import TIME, DIMLESS, LONGITUDE, LATITUDE
-from cfxarray.arrays import dataarraybytime
+from cfxarray.base import dataarraybytime
 from toolz import curry
+from cfxarray.common import wgs1984
 
 
 @dataclass
@@ -43,3 +44,24 @@ def timeseriescoords(
             latitude=xr.Variable(DIMLESS, latitude, asdict(LatitudeAttrs())),
         )
     )
+
+
+def timeseriesdataset(named_dataarrys: List[xr.DataArray], station_id):
+    ds = xr.merge([stationidarray(station_id), wgs1984()] + named_dataarrys)
+
+    ds.attrs = asdict(
+        DatasetAttrs(
+            title="hei",
+            date_created=str(datetime.now()),
+            keywords=["hei"],
+            time_coverage_start=str(ds.time.min().values),
+            time_coverage_end=str(ds.time.max().values),
+            geospatial_lat_min=float(ds.latitude.min()),
+            geospatial_lat_max=float(ds.latitude.max()),
+            geospatial_lon_min=float(ds.longitude.min()),
+            geospatial_lon_max=float(ds.longitude.max()),
+            featureType="timeSeries",
+        )
+    )
+
+    return ds

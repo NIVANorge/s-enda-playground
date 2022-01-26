@@ -30,6 +30,8 @@ class LatitudeAttrs:
     valid_min: float = -90.0
     valid_max: float = 90.0
     axis: str = "Y"
+    grid_mapping: str = "crs"
+    coordinate_reference_frame: str = "urn:ogc:def:crs:EPSG::4326"
 
 
 @dataclass
@@ -39,6 +41,8 @@ class LongitudeAttrs:
     valid_min: float = -180.0
     valid_max: float = 180.0
     axis: str = "X"
+    grid_mapping: str = "crs"
+    coordinate_reference_frame: str = "urn:ogc:def:crs:EPSG::4326"
 
 
 @dataclass

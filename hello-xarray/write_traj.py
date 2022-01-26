@@ -6,7 +6,7 @@ import xarray as xr
 from xarray_dataclasses import asdataarray
 
 from cfxarray.common import wgs1984
-from cfxarray.arrays import dataarraybytime
+from cfxarray.base import dataarraybytime
 from cfxarray.trajectory import trajectoryidarray, trajectorycoords
 from cfxarray.attributes import DatasetAttrs
 
