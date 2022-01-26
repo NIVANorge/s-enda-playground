@@ -47,6 +47,6 @@ def timeseriescoords(
     )
 
 
-timeseriesdataset = dataset("timeSeries",  "Station ID", "timeseries_id")
+timeseriesdataset = dataset("timeSeries", "timeseries_id")
 
 

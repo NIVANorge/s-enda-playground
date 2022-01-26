@@ -40,18 +40,16 @@ dataarraybytime = dataarray(TIME)
 
 dataarraybydepth = dataarray(DEPTH)
 
-def idarray(id: str, long_name: str, cf_role:str):
+def idarray(id: str, cf_role:str):
     attrs = {
-        "long_name": long_name,
         "cf_role": cf_role,
     }
-    return xr.DataArray(id, dims=DIMLESS, name="id", attrs=attrs)
+    return xr.DataArray(id, dims=DIMLESS, name=cf_role, attrs=attrs)
 
 
 @curry
 def dataset(
     feature_type: str,
-    id_long_name,
     cf_role,
     id: str,
     title: str,
@@ -59,7 +57,7 @@ def dataset(
     keywords: List[str],
     named_dataarrays: List[xr.DataArray],
 ):
-    ds = xr.merge(named_dataarrays + [idarray(id, id_long_name, cf_role), wgs1984()])
+    ds = xr.merge(named_dataarrays + [idarray(id, cf_role), wgs1984()])
 
     ds.attrs = asdict(
         DatasetAttrs(

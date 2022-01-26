@@ -46,4 +46,4 @@ def depthcoords(
         )
     )
 
-profiledataset = dataset("profile",  "profile ID", "profile_id")
+profiledataset = dataset("profile", "profile_id")

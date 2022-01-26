@@ -17,3 +17,10 @@ poetry install
 ```
 
 it can be practical to use `poetry config virtualenvs.in-project true`.
+
+ERDDAP
+------
+
+``` bash
+http://localhost:8080/erddap/tabledap/datasets_bfaf_84b3_3aa5.htmlTable?time,longitude,latitude,sea_water_temperature
+```
