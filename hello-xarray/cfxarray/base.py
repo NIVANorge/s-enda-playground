@@ -8,8 +8,9 @@ from cfxarray.attributes import (
 )
 from dataclasses import asdict
 from toolz import curry
-from cfxarray.dims import TIME, DEPTH
+from cfxarray.dims import TIME, DEPTH, DIMLESS
 from cfxarray.attributes import DatasetAttrs
+from cfxarray.common import wgs1984
 
 
 @curry
@@ -39,16 +40,26 @@ dataarraybytime = dataarray(TIME)
 
 dataarraybydepth = dataarray(DEPTH)
 
+def idarray(id: str, long_name: str, cf_role:str):
+    attrs = {
+        "long_name": long_name,
+        "cf_role": cf_role,
+    }
+    return xr.DataArray(id, dims=DIMLESS, name="id", attrs=attrs)
 
+
+@curry
 def dataset(
     feature_type: str,
-    named_dataarrys: List[xr.DataArray],
-    aux_dataarrays: List[xr.DataArray],
+    id_long_name,
+    cf_role,
+    named_dataarrays,
+    id: str,
     title: str,
     summary: str,
     keywords: List[str],
 ):
-    ds = xr.merge(named_dataarrys + aux_dataarrays)
+    ds = xr.merge(named_dataarrays + [idarray(id, id_long_name, cf_role), wgs1984()])
 
     ds.attrs = asdict(
         DatasetAttrs(

@@ -60,26 +60,10 @@ conductivity = dataarraybytime(
     )
 )
 #%%
-ds = timeseriesdataset([conductivity, salinity, temperature], "oslo1")
-#%%
-
-#%%
-ds.attrs = asdict(
-    DatasetAttrs(
-        title="hei",
-        date_created=str(datetime.now()),
-        keywords=["hei"],
-        time_coverage_start=str(ds.time.values[0]),
-        time_coverage_end=str(ds.time.values[-1]),
-        geospatial_lat_min=float(ds.latitude),
-        geospatial_lat_max=float(ds.latitude),
-        geospatial_lon_min=float(ds.longitude),
-        geospatial_lon_max=float(ds.longitude),
-        featureType="timeSeries",
-    )
+ds = timeseriesdataset(
+    [conductivity, salinity, temperature], "oslo1", "title", "summary", ["keyword"]
 )
-
-# %%
+#%%
 ds.conductivity.plot.line("o")
 # %%
 ds
