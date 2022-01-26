@@ -3,10 +3,9 @@ from dataclasses import asdict
 from datetime import datetime, timedelta
 
 import xarray as xr
-from xarray_dataclasses import asdataarray, asdataset
 
 from cfxarray.common import wgs1984
-from cfxarray.profile import depthcoords, profileidarray
+from cfxarray.profile import depthcoords, profiledataset, profileidarray
 from cfxarray.base import dataarraybydepth
 from cfxarray.attributes import DatasetAttrs
 from toolz.dicttoolz import merge
@@ -28,7 +27,7 @@ temperature1 = dataarraybydepth(
 )
 
 # %%
-ds1 = xr.merge([temperature1, profileidarray("profile1")])
+ds1 = profiledataset("profile1", "title", "summary", ["keyword"], [temperature1])
 # %%
 temperature2 = dataarraybydepth(
     name="temperature",
@@ -46,26 +45,9 @@ temperature2 = dataarraybydepth(
 )
 
 # %%
-ds2 = xr.merge([temperature2, profileidarray("profile2")])
+ds2 = profiledataset("profile2", "title", "summary", ["keyword"], [temperature2])
 # %%
-ds = xr.concat([ds1, ds2], dim="profile_id")
-#%%
-ds.attrs = asdict(
-    DatasetAttrs(
-        title="hei",
-        date_created=str(datetime.now()),
-        keywords=["hei"],
-        time_coverage_start=str(ds.time.min().values),
-        time_coverage_end=str(ds.time.max().values),
-        geospatial_lat_min=float(ds.latitude.min().values),
-        geospatial_lat_max=float(ds.latitude.max().values),
-        geospatial_lon_min=float(ds.longitude.min().values),
-        geospatial_lon_max=float(ds.longitude.max().values),
-        featureType="profile",
-    )
-)
-
+ds = xr.concat([ds1, ds2], dim="id")
 # %%
-ds["crs"] = wgs1984()
+ds.temperature.sel(id="profile1").plot.line("o")
 # %%
-ds.temperature.sel(profile_id="profile1").plot.line("o")

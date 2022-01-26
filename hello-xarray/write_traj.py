@@ -7,7 +7,7 @@ from xarray_dataclasses import asdataarray
 
 from cfxarray.common import wgs1984
 from cfxarray.base import dataarraybytime
-from cfxarray.trajectory import trajectoryidarray, trajectorycoords
+from cfxarray.trajectory import trajectoryidarray, trajectorycoords, trajectorydataset
 from cfxarray.attributes import DatasetAttrs
 
 #%%
@@ -39,22 +39,7 @@ temperature = dataarraybytime(
     )
 )
 # %%
-ds = xr.merge([temperature, trajectoryidarray("traj1")])
-# %%
-ds.attrs = asdict(
-    DatasetAttrs(
-        title="hei",
-        date_created=str(datetime.now()),
-        keywords=["hei"],
-        time_coverage_start=str(ds.time.values[0]),
-        time_coverage_end=str(ds.time.values[-1]),
-        geospatial_lat_min=float(min(ds.latitude)),
-        geospatial_lat_max=float(max(ds.latitude)),
-        geospatial_lon_min=float(min(ds.longitude)),
-        geospatial_lon_max=float(max(ds.longitude)),
-        featureType="trajectory",
-    )
-)
+ds = trajectorydataset("traj1", "title", "summary", ["keyword"], [temperature])
 # %%
 ds.to_netcdf("traj.nc")
 # %%

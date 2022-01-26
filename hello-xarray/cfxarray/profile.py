@@ -12,7 +12,7 @@ from typing import List
 from dataclasses import asdict, dataclass
 from toolz import compose
 from cfxarray.dims import DEPTH, DIMLESS
-from cfxarray.base import dataarraybydepth
+from cfxarray.base import dataset
 
 
 @dataclass
@@ -45,3 +45,5 @@ def depthcoords(
             latitude=xr.Variable(DIMLESS, latitude, asdict(LatitudeAttrs())),
         )
     )
+
+profiledataset = dataset("profile",  "profile ID", "profile_id")

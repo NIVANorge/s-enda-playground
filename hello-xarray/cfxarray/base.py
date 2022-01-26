@@ -53,11 +53,11 @@ def dataset(
     feature_type: str,
     id_long_name,
     cf_role,
-    named_dataarrays,
     id: str,
     title: str,
     summary: str,
     keywords: List[str],
+    named_dataarrays: List[xr.DataArray],
 ):
     ds = xr.merge(named_dataarrays + [idarray(id, id_long_name, cf_role), wgs1984()])
 

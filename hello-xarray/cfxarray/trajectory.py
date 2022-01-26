@@ -7,12 +7,10 @@ from cfxarray.attributes import (
     LatitudeAttrs,
     LongitudeAttrs,
     TimeAttrs,
-    VariableAttrs,
 )
 from dataclasses import asdict, dataclass
-from toolz import curry
 from cfxarray.dims import TIME, DIMLESS
-from cfxarray.base import dataarraybytime
+from cfxarray.base import dataset
 
 
 @dataclass
@@ -42,3 +40,6 @@ def trajectorycoords(
             latitude=xr.Variable(TIME, latitude, asdict(LatitudeAttrs())),
         )
     )
+
+trajectorydataset = dataset("trajectory",  "trajectory ID", "trajectory_id")
+ 

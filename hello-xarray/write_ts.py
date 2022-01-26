@@ -60,9 +60,7 @@ conductivity = dataarraybytime(
     )
 )
 #%%
-ds = timeseriesdataset(
-    [conductivity, salinity, temperature], "oslo1", "title", "summary", ["keyword"]
-)
+ds = timeseriesdataset("oslo1", "title", "summary", ["keyword"], [conductivity, salinity, temperature])
 #%%
 ds.conductivity.plot.line("o")
 # %%
