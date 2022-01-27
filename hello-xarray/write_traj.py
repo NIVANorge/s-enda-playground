@@ -41,6 +41,8 @@ temperature = dataarraybytime(
 # %%
 ds = trajectorydataset("traj1", "title", "summary", ["keyword"], [temperature])
 # %%
+ds.time.encoding['units'] = 'seconds since 1970-01-01 00:00:00'
+
 ds.to_netcdf("traj.nc")
 # %%
 ds
