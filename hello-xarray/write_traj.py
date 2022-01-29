@@ -1,14 +1,8 @@
 #%%
-from dataclasses import asdict
 from datetime import datetime
 
-import xarray as xr
-from xarray_dataclasses import asdataarray
-
-from cfxarray.common import wgs1984
 from cfxarray.base import dataarraybytime
-from cfxarray.trajectory import trajectoryidarray, trajectorycoords, trajectorydataset
-from cfxarray.attributes import DatasetAttrs
+from cfxarray.trajectory import trajectorycoords, trajectorydataset
 
 #%%
 time = list(
@@ -39,7 +33,7 @@ temperature = dataarraybytime(
     )
 )
 # %%
-ds = trajectorydataset("traj1", "title", "summary", ["keyword"], [temperature])
+ds = trajectorydataset([temperature], "traj1", "title", "summary", ["keyword"])
 # %%
 ds.time.encoding['units'] = 'seconds since 1970-01-01 00:00:00'
 

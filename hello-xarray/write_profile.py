@@ -23,7 +23,7 @@ temperature1 = dataarraybydepth(
 )
 
 # %%
-ds1 = profiledataset("profile1", "title", "summary", ["keyword"], [temperature1])
+ds1 = profiledataset([temperature1], "profile1", "title", "summary", ["keyword"])
 # %%
 temperature2 = dataarraybydepth(
     name="temperature",
@@ -41,9 +41,9 @@ temperature2 = dataarraybydepth(
 )
 
 # %%
-ds2 = profiledataset("profile2", "title", "summary", ["keyword"], [temperature2])
+ds2 = profiledataset([temperature2], "profile2", "title", "summary", ["keyword"])
 # %%
-ds = xr.concat([ds1, ds2], dim="id")
+ds = xr.concat([ds1, ds2], dim="profile_id")
 # %%
-ds.temperature.sel(id="profile1").plot.line("o")
+ds.temperature.sel(profile_id="profile1").plot.line("o")
 # %%
