@@ -1,19 +1,15 @@
-from typing import List, Tuple, Union, Any
+from dataclasses import asdict
+from datetime import datetime
+from functools import partial
+from typing import Any, List, Literal, Tuple, Union
 
 import xarray as xr
-from datetime import datetime
 
-from cfxarray.attributes import (
-    VariableAttrs,
-)
-from dataclasses import asdict
-from toolz import curry
-from cfxarray.dims import TIME, DEPTH, DIMLESS
-from cfxarray.attributes import DatasetAttrs
+from cfxarray.attributes import DatasetAttrs, VariableAttrs
 from cfxarray.common import wgs1984
+from cfxarray.dims import DEPTH, DIMLESS, TIME
 
 
-@curry
 def dataarray(
     dims: Union[Tuple, str],
     data: List[Any],
@@ -36,9 +32,9 @@ def dataarray(
     )
 
 
-dataarraybytime = dataarray(TIME)
+dataarraybytime = partial(dataarray, dims=TIME)
 
-dataarraybydepth = dataarray(DEPTH)
+dataarraybydepth = partial(dataarray, dims=DEPTH)
 
 def idarray(id: str, cf_role:str):
     attrs = {
@@ -47,17 +43,15 @@ def idarray(id: str, cf_role:str):
     return xr.DataArray(id, dims=DIMLESS, name=cf_role, attrs=attrs)
 
 
-@curry
 def dataset(
-    feature_type: str,
-    cf_role,
+    feature_type: Literal['timeseries', 'trajectory', 'profile'],
+    named_dataarrays: List[xr.DataArray],
     id: str,
     title: str,
     summary: str,
     keywords: List[str],
-    named_dataarrays: List[xr.DataArray],
 ):
-    ds = xr.merge(named_dataarrays + [idarray(id, cf_role), wgs1984()])
+    ds = xr.merge(named_dataarrays + [idarray(id, feature_type+'_id'), wgs1984()])
 
     ds.attrs = asdict(
         DatasetAttrs(

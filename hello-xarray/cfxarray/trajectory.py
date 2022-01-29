@@ -1,16 +1,13 @@
+from dataclasses import asdict, dataclass
+from datetime import datetime
+from functools import partial
 from typing import List
 
-from datetime import datetime
 import xarray as xr
 
-from cfxarray.attributes import (
-    LatitudeAttrs,
-    LongitudeAttrs,
-    TimeAttrs,
-)
-from dataclasses import asdict, dataclass
-from cfxarray.dims import TIME, DIMLESS
+from cfxarray.attributes import LatitudeAttrs, LongitudeAttrs, TimeAttrs
 from cfxarray.base import dataset
+from cfxarray.dims import DIMLESS, TIME
 
 
 @dataclass
@@ -18,14 +15,6 @@ class TimeSeriesCoord:
     time: xr.Variable
     longitude: xr.Variable
     latitude: xr.Variable
-
-
-def trajectoryidarray(trajectory_id: str):
-    attrs = {
-        "long_name": "trajectory ID",
-        "cf_role": "timeseries_id",
-    }
-    return xr.DataArray(trajectory_id, dims=DIMLESS, name="trajectory_id", attrs=attrs)
 
 
 def trajectorycoords(
@@ -41,5 +30,5 @@ def trajectorycoords(
         )
     )
 
-trajectorydataset = dataset("trajectory", "trajectory_id")
+trajectorydataset =  partial(dataset, feature_type="trajectory")
  

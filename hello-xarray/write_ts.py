@@ -4,9 +4,6 @@ from datetime import datetime, timedelta
 
 import xarray as xr
 
-from cfxarray.time_series import (
-    stationidarray,
-)
 from cfxarray.common import wgs1984
 from cfxarray.attributes import DatasetAttrs
 from cfxarray.dims import TIME, DIMLESS
@@ -60,7 +57,7 @@ conductivity = dataarraybytime(
     )
 )
 #%%
-ds = timeseriesdataset("oslo1", "title", "summary", ["keyword"], [conductivity, salinity, temperature])
+ds = timeseriesdataset([conductivity, salinity, temperature],"oslo1", "title", "summary", ["keyword"])
 #%%
 ds.conductivity.plot.line("o")
 # %%

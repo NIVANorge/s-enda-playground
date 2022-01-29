@@ -1,14 +1,10 @@
 #%%
-from dataclasses import asdict
-from datetime import datetime, timedelta
+from datetime import datetime
 
 import xarray as xr
 
-from cfxarray.common import wgs1984
-from cfxarray.profile import depthcoords, profiledataset, profileidarray
+from cfxarray.profile import depthcoords, profiledataset
 from cfxarray.base import dataarraybydepth
-from cfxarray.attributes import DatasetAttrs
-from toolz.dicttoolz import merge
 
 # %%
 temperature1 = dataarraybydepth(

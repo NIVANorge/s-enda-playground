@@ -5,15 +5,13 @@ from cfxarray.attributes import (
     LatitudeAttrs,
     LongitudeAttrs,
     DepthAttrs,
-    VariableAttrs,
     TimeAttrs,
 )
 from typing import List
 from dataclasses import asdict, dataclass
-from toolz import compose
+from functools import partial
 from cfxarray.dims import DEPTH, DIMLESS
 from cfxarray.base import dataset
-
 
 @dataclass
 class DepthCoords:
@@ -21,14 +19,6 @@ class DepthCoords:
     time: xr.Variable
     longitude: xr.Variable
     latitude: xr.Variable
-
-
-def profileidarray(profile_id: str):
-    attrs = {
-        "long_name": "Profile ID",
-        "cf_role": "profile_id",
-    }
-    return xr.DataArray(profile_id, dims=DIMLESS, name="profile_id", attrs=attrs)
 
 
 def depthcoords(
@@ -46,4 +36,4 @@ def depthcoords(
         )
     )
 
-profiledataset = dataset("profile", "profile_id")
+profiledataset = partial(dataset, feature_type="profile")
