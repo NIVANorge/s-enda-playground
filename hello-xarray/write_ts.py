@@ -51,11 +51,11 @@ conductivity = dataarraybytime(
     )
 )
 #%%
-ds = timeseriesdataset([conductivity, salinity, temperature],"oslo1", "title", "summary", ["keyword"])
+ds = timeseriesdataset([conductivity, salinity, temperature],"oslo1", "Dummy timeseries", "Dummy summary", ["keyword"])
 #%%
 ds.conductivity.plot.line("o")
 # %%
 ds
 # %%
-ds.to_netcdf("test.nc", unlimited_dims=["time"])
+ds.to_netcdf("timeseries.nc", unlimited_dims=["time"])
 # %%
