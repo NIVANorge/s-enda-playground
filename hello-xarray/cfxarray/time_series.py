@@ -34,4 +34,4 @@ def timeseriescoords(
     ))
 
 
-timeseriesdataset = partial(dataset, "timeseries")
+timeseriesdataset = partial(dataset, "timeseries", "station_name")

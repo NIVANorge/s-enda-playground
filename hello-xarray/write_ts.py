@@ -1,7 +1,7 @@
 #%%
 from datetime import datetime, timedelta
 
-from cfxarray.base import dataarraybytime
+from cfxarray.base import dataarraybytime, DEFAULT_ENCODING
 from cfxarray.time_series import timeseriescoords, timeseriesdataset
 from dataclasses import asdict
 
@@ -57,5 +57,5 @@ ds.conductivity.plot.line("o")
 # %%
 ds
 # %%
-ds.to_netcdf("timeseries.nc", unlimited_dims=["time"])
+ds.to_netcdf("timeseries.nc", unlimited_dims=["time"], encoding=DEFAULT_ENCODING)
 # %%

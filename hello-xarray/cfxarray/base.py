@@ -36,22 +36,24 @@ dataarraybytime = partial(dataarray, dims=TIME)
 
 dataarraybydepth = partial(dataarray, dims=DEPTH)
 
-def idarray(id: str, cf_role:str):
+
+def idarray(name: str, id: str, cf_role: str):
     attrs = {
         "cf_role": cf_role,
     }
-    return xr.DataArray(id, dims=DIMLESS, name=cf_role, attrs=attrs)
+    return xr.DataArray(id, dims=DIMLESS, name=name, attrs=attrs)
 
 
 def dataset(
-    feature_type: Literal['timeseries', 'trajectory', 'profile'],
+    feature_type: Literal["timeseries", "trajectory", "profile"],
+    id_name: str,
     named_dataarrays: List[xr.DataArray],
     id: str,
     title: str,
     summary: str,
     keywords: List[str],
 ):
-    ds = xr.merge(named_dataarrays + [idarray(id, feature_type+'_id'), wgs1984()])
+    ds = xr.merge(named_dataarrays + [idarray(id_name, id, feature_type + "_id")])
 
     ds.attrs = asdict(
         DatasetAttrs(
@@ -69,3 +71,8 @@ def dataset(
         )
     )
     return ds
+
+
+DEFAULT_ENCODING = {
+    "time": {"dtype": "int32", "units": "seconds since 1970-01-01 00:00:00"}
+}

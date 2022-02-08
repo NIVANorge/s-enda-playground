@@ -36,4 +36,4 @@ def depthcoords(
         )
     )
 
-profiledataset = partial(dataset, "profile")
+profiledataset = partial(dataset, "profile", "profile_name")

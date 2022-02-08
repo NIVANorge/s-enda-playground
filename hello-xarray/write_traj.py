@@ -1,7 +1,7 @@
 #%%
 from datetime import datetime
 
-from cfxarray.base import dataarraybytime
+from cfxarray.base import dataarraybytime, DEFAULT_ENCODING
 from cfxarray.trajectory import trajectorycoords, trajectorydataset
 
 #%%
@@ -9,10 +9,10 @@ time = list(
     map(
         datetime.fromisoformat,
         [
-            "1970-01-01T00:00:00",
-            "1970-01-01T10:00:00",
-            "1980-01-01T10:00:00",
-            "1990-01-01T10:00:00",
+            "1970-06-01T00:00:00",
+            "1970-06-01T10:00:00",
+            "1980-06-01T10:00:00",
+            "1990-06-01T10:00:00",
         ],
     )
 )
@@ -33,11 +33,10 @@ temperature = dataarraybytime(
     )
 )
 # %%
-ds = trajectorydataset([temperature], "traj1", "title", "summary", ["keyword"])
+ds = trajectorydataset([temperature], "sample_trajectory", "title", "summary", ["keyword"])
 # %%
-ds.time.encoding['units'] = 'seconds since 1970-01-01 00:00:00'
 
-ds.to_netcdf("traj.nc")
+ds.to_netcdf("traj2.nc", encoding=DEFAULT_ENCODING)
 # %%
 ds
 # %%
