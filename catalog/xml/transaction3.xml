@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:Transaction xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" service="CSW" version="2.0.2" verboseResponse="false">
+  <csw:Insert typeName="csw:Record">
+    <csw:Record>
+      <ns1:references xmlns:ns1="http://purl.org/dc/terms/">http://aquamonitor.niva.no/nmdc/archives/jmgwuvw/Iddefjorden_hydrografi.nc</ns1:references>
+      <ns1:identifier xmlns:ns1="http://purl.org/dc/elements/1.1/">mock.1234567</ns1:identifier>
+      <ns1:abstract xmlns:ns1="http://purl.org/dc/terms/" scheme="My Long abstract"/>
+      <ns1:title xmlns:ns1="http://purl.org/dc/elements/1.1/" scheme="Iddefjorden_hydrografi"/>
+    </csw:Record>
+  </csw:Insert>
+</csw:Transaction>

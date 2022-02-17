@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:GetRecordsResponse xmlns:wfs="http://www.opengis.net/wfs" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2">
+  <csw:SearchStatus timestamp="2021-10-01T11:55:44"/>
+  <csw:SearchResults elementSet="full" numberOfRecordsMatched="34" numberOfRecordsReturned="34" nextRecord="0">
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">f860dd80-9e54-4c5b-aaaf-f3870c9e59e0</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">PNG</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">service</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2018-05-15</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2020-07-09</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Topografisk kart for bruk i ArcticSDI Geoportalen</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Topografisk kart for bruk i ArcticSDI Geoportalen</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Basis geodata</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Arctic SDI cache</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">PNG</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">infoMapAccessService</ns2:subject>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/">Ingen prosseshistorie tilgjenglig.</ns2:source>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">66c0bf7d-6bbc-442d-8a3a-f3b735f91369</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">http</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">software</ns2:type>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2020-01-24</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Meteorologisk institutt</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">yr.no er et samarbeid mellom Meteorologisk institutt og NRK om formidling av informasjon om vær og klima. Værvarslene er utarbeidd på grunnlag av data fra Meteorologisk institutt og de internasjonale samarbeidspartnerne til instituttet; ECMWF (European Centre for Medium Range Forecasts),EUMETSAT (den europeiske organisasjonen for meteorologiske satellitter). På yr.no er det også andre data fra Meteorologisk institutt, data fra NRK, og dessuten også fra: 
+Norges vassdrags- og energidirektorat (NVE)
+Norges astma- og allergiforbund (NAAF)
+Norsk polarinstitutt
+Kartverket
+Geonames
+Ugland IT</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">yr.no er et samarbeid mellom Meteorologisk institutt og NRK om formidling av informasjon om vær og klima. Værvarslene er utarbeidd på grunnlag av data fra Meteorologisk institutt og de internasjonale samarbeidspartnerne til instituttet; ECMWF (European Centre for Medium Range Forecasts),EUMETSAT (den europeiske organisasjonen for meteorologiske satellitter). På yr.no er det også andre data fra Meteorologisk institutt, data fra NRK, og dessuten også fra: 
+Norges vassdrags- og energidirektorat (NVE)
+Norges astma- og allergiforbund (NAAF)
+Norsk polarinstitutt
+Kartverket
+Geonames
+Ugland IT</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Natur</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Meteorologisk institutt</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">yr.no</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">http</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Vær og klima</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Norge</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Europa</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Verden</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Meteorologi</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Værprognoser</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Værvarsler</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Tekstvarsler</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Værsymbol</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Klimainformasjon</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">climatologyMeteorologyAtmosphere</ns2:subject>
+      <ns2:BoundingBox xmlns:ns2="http://www.opengis.net/ows" crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ns2:LowerCorner>180.0 -90.0</ns2:LowerCorner>
+        <ns2:UpperCorner>-179.999 90.0</ns2:UpperCorner>
+      </ns2:BoundingBox>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/">Ingen prosseshistorie tilgjenglig.</ns2:source>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">ebc7fead-050b-4837-a245-f1c6b706aecf</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">HTML</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">software</ns2:type>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2020-01-24</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Meteorologisk institutt</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">met.no er Meteorologisk institutt sin nettstad.
+
+Meteorologisk institutt står for den offentlege meteorologiske tenesta for sivile og miltære føremål. Instituttet skal arbeide for at styresmakter, næringsliv, institusjonar og folk flest best mogeleg skal få høve til å sikre liv og verdiar, for planlegging og for vern av miljøet.</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">met.no er Meteorologisk institutt sin nettstad.
+
+Meteorologisk institutt står for den offentlege meteorologiske tenesta for sivile og miltære føremål. Instituttet skal arbeide for at styresmakter, næringsliv, institusjonar og folk flest best mogeleg skal få høve til å sikre liv og verdiar, for planlegging og for vern av miljøet.</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Natur</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Meteorologisk institutt</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">met.no</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">HTML</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Norge</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Meteorologisk institutt</ns2:creator>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Europa</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Meteorologisk institutt</ns2:creator>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Verden</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Meteorologisk institutt</ns2:creator>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Meteorologi</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Meteorologisk institutt</ns2:creator>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Klima</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Forskning</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Oseanografi</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Hav</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Værvarsling</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Luftforurensning</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">climatologyMeteorologyAtmosphere</ns2:subject>
+      <ns2:BoundingBox xmlns:ns2="http://www.opengis.net/ows" crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ns2:LowerCorner>180.0 -90.0</ns2:LowerCorner>
+        <ns2:UpperCorner>-179.999 90.0</ns2:UpperCorner>
+      </ns2:BoundingBox>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">8b4f2b34-2d0d-4744-ae0f-d7989b9f7a02</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">png</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">service</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2018-10-26</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2019-03-28</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">The Arctic SDI Topographic Basemap is a WMTS service provided by Arctic SDI - a cooperation between the national mapping agencies in Canada, Denmark, Finland, Iceland, Norway, Russia, Sweden and US. It contains basic topographic information coming from these authoritative data sources:: Canada Centre for Mapping and Earth Observation - National Resources Canada, Danish Agency for Data Supply and Efficiency, National Land Survey of Finland, National Land Survey of Iceland, Norwegian Mapping Authority, Norwegian Polar Institute, Russian Federal Service for State Registration, Cadastre and Mapping, Swedish Mapping, Cadastre and Land Registration Authority and United States Geological Survey.</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">The Arctic SDI Topographic Basemap is a WMTS service provided by Arctic SDI - a cooperation between the national mapping agencies in Canada, Denmark, Finland, Iceland, Norway, Russia, Sweden and US. It contains basic topographic information coming from these authoritative data sources:: Canada Centre for Mapping and Earth Observation - National Resources Canada, Danish Agency for Data Supply and Efficiency, National Land Survey of Finland, National Land Survey of Iceland, Norwegian Mapping Authority, Norwegian Polar Institute, Russian Federal Service for State Registration, Cadastre and Mapping, Swedish Mapping, Cadastre and Land Registration Authority and United States Geological Survey.</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Basis geodata</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">The Arctic SDI Topographic Basemap</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">license</ns2:rights>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">png</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">The Arctic region and adjacent areas as defined by the countries themselves.</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Placenames</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Transport</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Landcover</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Hydrography</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Bathymetri(small scales)</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">infoMapAccessService</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Arctic</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Basemap</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Referencemap</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Panarctic</ns2:subject>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">b4b96e46-d69c-4159-b1e8-60945bda2ed5</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">png</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">service</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2019-09-10</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2021-06-10</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Urfolk fra arktiske land underinndeling etter språkfamilier. Denne tjeneste er et internt tjeneste bare brukt i Arctic-SDI geoportal: https://geoportal.arctic-sdi.org/</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Urfolk fra arktiske land underinndeling etter språkfamilier. Denne tjeneste er et internt tjeneste bare brukt i Arctic-SDI geoportal: https://geoportal.arctic-sdi.org/</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Befolkning</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Indigenous peoples of the Arctic counties</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">png</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">infoMapAccessService</ns2:subject>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">6ddd26aa-818b-4d40-9fe4-2a214f0cc76c</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">png</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">service</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2019-09-10</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2021-06-10</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Arctic boundaries according to AHDR. Denne tjeneste er et internt tjeneste bare brukt i Arctic-SDI geoportal: https://geoportal.arctic-sdi.org/</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Arctic boundaries according to AHDR. Denne tjeneste er et internt tjeneste bare brukt i Arctic-SDI geoportal: https://geoportal.arctic-sdi.org/</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Basis geodata</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Arctic AHDR</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">png</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">infoMapAccessService</ns2:subject>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">ecb97a82-c34a-4e92-a72e-372011b08244</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">png</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">service</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2019-09-10</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2021-06-10</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Sirkumpolært bakgrunnskart med GEBCO dybdedata, landområder, sjøområder, kystkonturer, isbreer og riksgrenser fra Vmap0.
+Denne tjeneste er et internt tjeneste bare brukt i Arctic-SDI geoportal: https://geoportal.arctic-sdi.org/</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Sirkumpolært bakgrunnskart med GEBCO dybdedata, landområder, sjøområder, kystkonturer, isbreer og riksgrenser fra Vmap0.
+Denne tjeneste er et internt tjeneste bare brukt i Arctic-SDI geoportal: https://geoportal.arctic-sdi.org/</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Basis geodata</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Arctic physiography</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">png</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Geologi</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Natur</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">infoMapAccessService</ns2:subject>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/">Ingen prosseshistorie tilgjenglig.</ns2:source>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">b1980b24-70fa-420e-972a-7aa070a72240</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC:WMS</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">service</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2011-02-09</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2018-08-31</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">The North Atlantic current (red arrows) originates in the hot and salty Gulf Stream which flows out of the Mexican gulf and follows the east coast of the USA. When this current leaves the continental shelf and moves across the North Atlantic itâs often called the North Atlantic current. The North Atlantic current provides a significant amount of heat transport to northern Europe. This heat transport is greatest in winter because the current velocity is greater in that part of the year. The North Atlantic current keeps a very constant temperature and salinity throughout the year. It gradually looses heat and salinity as it flows towards the north east and gets mixed with colder and less salty water. At the south western part of the map where the current leaves the American continental shelf the surface temperature is 15-20 oC and the salinity is approximately 36. When it reaches the inlet to the Barents Sea the surface temperature is reduced to 5 oC in the winter and 10 oC in the summer, while the salinity stays at 35 throughout the year.The North Atlantic current continues into the Polar seas through the Fram Strait west of Svalbard and into the Barents Sea (pink arrows). When it reaches these areas its quickly chilled to 2-3 oC and the salinity sinks towards 34.7.The cooling of the North Atlantic current happens when it comes into contact with the colder and less salty Arctic current (blue arrows) that flows south west towards Svalbardâs east coast, south out of the Fram Strait and south out of the Davids Strait between Greenland and Canada. This current has salinity below 34 and the temperature is between -2 oC and +2 oC. In the same way as the North Atlantic current cools on the way north east the Arctic current heats up on its way towards the south west. The Arctic current does however give a significant colder climate around the coast of Greenland and along the Canadian Labrador- and Newfoundland-coasts compared to Europe coasts.Close to the coasts both on the eastern and western side of the North Atlantic there are lighter coastal currents with salinity between 25 and 34 (green arrows). In these areas both the temperature and salinity varies greatly throughout the season. They are warmer then the North Atlantic current during the summer and colder during the winter. In the same way the salinity varies greatly throughout the year because of the varying freshwater runoffs from land.</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">The North Atlantic current (red arrows) originates in the hot and salty Gulf Stream which flows out of the Mexican gulf and follows the east coast of the USA. When this current leaves the continental shelf and moves across the North Atlantic itâs often called the North Atlantic current. The North Atlantic current provides a significant amount of heat transport to northern Europe. This heat transport is greatest in winter because the current velocity is greater in that part of the year. The North Atlantic current keeps a very constant temperature and salinity throughout the year. It gradually looses heat and salinity as it flows towards the north east and gets mixed with colder and less salty water. At the south western part of the map where the current leaves the American continental shelf the surface temperature is 15-20 oC and the salinity is approximately 36. When it reaches the inlet to the Barents Sea the surface temperature is reduced to 5 oC in the winter and 10 oC in the summer, while the salinity stays at 35 throughout the year.The North Atlantic current continues into the Polar seas through the Fram Strait west of Svalbard and into the Barents Sea (pink arrows). When it reaches these areas its quickly chilled to 2-3 oC and the salinity sinks towards 34.7.The cooling of the North Atlantic current happens when it comes into contact with the colder and less salty Arctic current (blue arrows) that flows south west towards Svalbardâs east coast, south out of the Fram Strait and south out of the Davids Strait between Greenland and Canada. This current has salinity below 34 and the temperature is between -2 oC and +2 oC. In the same way as the North Atlantic current cools on the way north east the Arctic current heats up on its way towards the south west. The Arctic current does however give a significant colder climate around the coast of Greenland and along the Canadian Labrador- and Newfoundland-coasts compared to Europe coasts.Close to the coasts both on the eastern and western side of the North Atlantic there are lighter coastal currents with salinity between 25 and 34 (green arrows). In these areas both the temperature and salinity varies greatly throughout the season. They are warmer then the North Atlantic current during the summer and colder during the winter. In the same way the salinity varies greatly throughout the year because of the varying freshwater runoffs from land.</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Norge digitalt</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">North Atlantic currents</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC:WMS</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Kyst og fiskeri</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">North Atlantic current</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Arctic current</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">current</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Atlantic</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">North Atlantic</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Gulf Stream</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">infoMapAccessService</ns2:subject>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/">Ingen prosesshistorie tilgjengelig</ns2:source>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">a90500c2-8d27-48ad-a44e-de9e3cf1178c</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">png</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">service</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2019-09-10</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2020-10-20</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Visningstjeneste som viser administrative enheter for land som inngår i samarbeidet Arctid SDI. Trykk på "Vis produktside" for å lese mer om Arctic SDI.</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Visningstjeneste som viser administrative enheter for land som inngår i samarbeidet Arctid SDI. Trykk på "Vis produktside" for å lese mer om Arctic SDI.</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Norge digitalt</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Arktiske administrative enheter WMS</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">png</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Basis geodata</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Arctid SDI</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">infoMapAccessService</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Global</ns2:subject>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">6e85c132-0490-48db-af2c-55c3df852d80</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">png</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">service</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2017-05-04</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2019-01-14</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Tjenesten inneholder topografiske kart i malestokken 1:1M.</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Tjenesten inneholder topografiske kart i malestokken 1:1M.</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">arcticSDI</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Arctic SDI cascading WMS</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">license</ns2:rights>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">jpeg</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Basis geodata</ns2:subject>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">png</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Arktisk</ns2:subject>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">jpeg</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Arktisk</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">infoMapAccessService</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Arktisk</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Arcticsdi</ns2:subject>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">043a019d-c620-4b48-9d41-c5d82b7fa818</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC WMS</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">service</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2017-09-28</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2018-02-27</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Sirkumpolært bakgrunnskart med landområder, sjøområder, kystkonturer, isbreer og riksgrenser fra Vmap0.</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Sirkumpolært bakgrunnskart med landområder, sjøområder, kystkonturer, isbreer og riksgrenser fra Vmap0.</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Sea regions</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Bakgrunnskart havarealverktøy</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">license</ns2:rights>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC WMS</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Basis geodata</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Sirkumpolært</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Arctic</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Bakgrunnskart</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">havarealverktøy</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">infoMapAccessService</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">landområder</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">sjøområder</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">kystkonturer</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">isbreer</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">riksgrenser</ns2:subject>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/">Ingen prosseshistorie tilgjenglig.</ns2:source>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">c60f16ad-7519-4b2f-9cae-2f61d1d1b413</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">png</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">service</ns2:type>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2020-02-19</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Miljødirektoratet</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Tjenesten viser registrerte fiskeplasser fra datasettet Sjølaksefiske (ordinært fiske eller ekstraordinært fiske med kilenot, krokgarn og settegarn etter laks, sjøørret og sjørøye i sjøen).</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Tjenesten viser registrerte fiskeplasser fra datasettet Sjølaksefiske (ordinært fiske eller ekstraordinært fiske med kilenot, krokgarn og settegarn etter laks, sjøørret og sjørøye i sjøen).</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Norge digitalt</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Miljødirektoratet</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Laksekart WMS</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">license</ns2:rights>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">png</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Kyst og fiskeri</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">lakseregisteret</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">sjølaksefiske</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">laks</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">sjøørret</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">sjørøye</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">infoMapAccessService</ns2:subject>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/">Ingen prosseshistorie tilgjenglig.</ns2:source>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">b97c3584-2308-426c-8b42-1a1658c58666</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">software</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">0001-01-01</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2021-09-29</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Miljødirektoratet</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">I Lakseregisteret finner du informasjon om cirka 1300 elver hvor det finnes laks, sjøørret og sjørøye. Miljødirektoratet er ansvarlig for denne tjenesten. Den tekniske løsningen er utviklet av Fylkesmannen i Sogn og Fjordane på oppdrag fra direktoratet. I tillegg til data fra direktoratets egne databaser er data innhentet fra Fylkesmennene, Statistisk sentralbyrå, forskningsinstitusjoner og andre etater. Registeret inneholder informasjon om vurdering av bestandstilstanden for laks, sjøørret og sjørøye i de registrerte elvene. Det er også lagt inn opplysninger om negative menneskeskapte påvirkningsfaktorer og andre forhold i elvene. 
+
+Fangststatistikk fra elvefisket omfatter perioden fra 1876 og fram til i dag. Mer detaljert statistikk og tall for gjenutsatt fisk vil komme til senere. Opplysning om fisketider i elvene er basert på de offentlige fiskeforskriftene. Lokale regler og private forordninger er ikke med. 
+
+I karttjenesten ligger det inne lakseførende strekning, vandringsstopp, utløpspunkt, nasjonale laksevassdrag, nasjonale laksefjorder med mer.</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">I Lakseregisteret finner du informasjon om cirka 1300 elver hvor det finnes laks, sjøørret og sjørøye. Miljødirektoratet er ansvarlig for denne tjenesten. Den tekniske løsningen er utviklet av Fylkesmannen i Sogn og Fjordane på oppdrag fra direktoratet. I tillegg til data fra direktoratets egne databaser er data innhentet fra Fylkesmennene, Statistisk sentralbyrå, forskningsinstitusjoner og andre etater. Registeret inneholder informasjon om vurdering av bestandstilstanden for laks, sjøørret og sjørøye i de registrerte elvene. Det er også lagt inn opplysninger om negative menneskeskapte påvirkningsfaktorer og andre forhold i elvene. 
+
+Fangststatistikk fra elvefisket omfatter perioden fra 1876 og fram til i dag. Mer detaljert statistikk og tall for gjenutsatt fisk vil komme til senere. Opplysning om fisketider i elvene er basert på de offentlige fiskeforskriftene. Lokale regler og private forordninger er ikke med. 
+
+I karttjenesten ligger det inne lakseførende strekning, vandringsstopp, utløpspunkt, nasjonale laksevassdrag, nasjonale laksefjorder med mer.</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">modellbaserteVegprosjekter</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Miljødirektoratet</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Lakseregisteret</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Kyst og fiskeri</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">lakseregisteret</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">environment</ns2:subject>
+      <ns2:BoundingBox xmlns:ns2="http://www.opengis.net/ows" crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ns2:LowerCorner>146358.34018679138 40.23844495478836</ns2:LowerCorner>
+        <ns2:UpperCorner>-34164.412440391876 -3934.026641621523</ns2:UpperCorner>
+      </ns2:BoundingBox>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:language xmlns:ns2="http://purl.org/dc/elements/1.1/">nor</ns2:language>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">45e69e05-d17f-42fd-8f01-43751b671853</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">AI</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">dataset</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2018-01-16</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2021-09-30</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Kartene har topografisk innhold og viser blant annet stedsnavn, isbreer og høydeinformasjon. Kartene er basert på kartgrunnlag fra Norsk Polarinstitutt. Dataene distribueres som JPG-fil, powerpoint-presentasjon, EMF-filer og Adobe Illustratorfiler.</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartene har topografisk innhold og viser blant annet stedsnavn, isbreer og høydeinformasjon. Kartene er basert på kartgrunnlag fra Norsk Polarinstitutt. Dataene distribueres som JPG-fil, powerpoint-presentasjon, EMF-filer og Adobe Illustratorfiler.</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Norge digitalt</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Antarktis, illustrasjonskart</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">EMF</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">fellesDatakatalog</ns2:subject>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">JPEG</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Basis geodata</ns2:subject>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">PPTX</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Antarktis</ns2:subject>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">AI</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">imageryBaseMapsEarthCover</ns2:subject>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">EMF</ns2:format>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">JPEG</ns2:format>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">PPTX</ns2:format>
+      <ns2:BoundingBox xmlns:ns2="http://www.opengis.net/ows" crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ns2:LowerCorner>-90.0 -90.0</ns2:LowerCorner>
+        <ns2:UpperCorner>90.0 80.0</ns2:UpperCorner>
+      </ns2:BoundingBox>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:language xmlns:ns2="http://purl.org/dc/elements/1.1/">nor</ns2:language>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">825eab8c-9f97-4a21-8424-d51f0b02cada</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">AI</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">dataset</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2017-12-06</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2021-09-30</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Europa:
+Det finnes to kart i nedlastingspakken, ett kart med samme bunntone på hele kartet, og ett kart der landene er skilt med ulike farger.
+
+Kartene inneholder landegrenser og navn på land og hovedsteder/byer. De enkelte land er framstilt som egne flater som brukeren kan endre fargene på (AI- og PPT-formatene).
+
+Dataene distribueres som JPEG, EMF, PPT og AI (Adobe Illustrator-fil).</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Europa:
+Det finnes to kart i nedlastingspakken, ett kart med samme bunntone på hele kartet, og ett kart der landene er skilt med ulike farger.
+
+Kartene inneholder landegrenser og navn på land og hovedsteder/byer. De enkelte land er framstilt som egne flater som brukeren kan endre fargene på (AI- og PPT-formatene).
+
+Dataene distribueres som JPEG, EMF, PPT og AI (Adobe Illustrator-fil).</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Åpne data</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Europa, Illustrasjonskart</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">EMF</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Norge digitalt</ns2:subject>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">JPEG</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">fellesDatakatalog</ns2:subject>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">PPTX</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Basis geodata</ns2:subject>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">AI</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Europa</ns2:subject>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">EMF</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Europa</ns2:subject>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">JPEG</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Europakart</ns2:subject>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">PPTX</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Illustrasjonskart</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Nord-Europa</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">European</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">boundaries</ns2:subject>
+      <ns2:BoundingBox xmlns:ns2="http://www.opengis.net/ows" crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ns2:LowerCorner>-20.0 33.0</ns2:LowerCorner>
+        <ns2:UpperCorner>78.0 84.0</ns2:UpperCorner>
+      </ns2:BoundingBox>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:language xmlns:ns2="http://purl.org/dc/elements/1.1/">nor</ns2:language>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">73d6303e-7815-4f91-8cd3-99a6e227b0a3</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">AI</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">dataset</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2017-12-06</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2021-09-30</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Svalbard illustrasjonskart har topografisk innhold og viser blant annet stedsnavn, isbreer og høydeinformasjon. Kartet er basert på kartgrunnlag fra Norsk Polarinstitutt. Dataene distribueres som JPG-fil, powerpoint-presentasjon, EMF-filer og Adobe Illustratorfiler.</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Svalbard illustrasjonskart har topografisk innhold og viser blant annet stedsnavn, isbreer og høydeinformasjon. Kartet er basert på kartgrunnlag fra Norsk Polarinstitutt. Dataene distribueres som JPG-fil, powerpoint-presentasjon, EMF-filer og Adobe Illustratorfiler.</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Åpne data</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Svalbard, illustrasjonskart</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">EMF</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Norge digitalt</ns2:subject>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">JPEG</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">fellesDatakatalog</ns2:subject>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">PPTX</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Basis geodata</ns2:subject>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">AI</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Svalbard</ns2:subject>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">EMF</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Jan Mayen</ns2:subject>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">JPEG</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Svalbard</ns2:subject>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">PPTX</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Jan Mayen</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Illustrasjonskart</ns2:subject>
+      <ns2:BoundingBox xmlns:ns2="http://www.opengis.net/ows" crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ns2:LowerCorner>-90.0 -90.0</ns2:LowerCorner>
+        <ns2:UpperCorner>90.0 80.0</ns2:UpperCorner>
+      </ns2:BoundingBox>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:language xmlns:ns2="http://purl.org/dc/elements/1.1/">nor</ns2:language>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">82399812-ae1e-43fc-b29f-f1b28954b59b</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">AI</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">dataset</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2018-01-16</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2021-09-30</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Kartene inneholder kommunegrenser, kommunenavn og kommunenummer.
+
+Dataene distribueres som JPEG, EMF, PPT og AI (Adobe Illustrator-fil).</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartene inneholder kommunegrenser, kommunenavn og kommunenummer.
+
+Dataene distribueres som JPEG, EMF, PPT og AI (Adobe Illustrator-fil).</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Norge digitalt</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Fylkeskart - kommunegrenser, illustrasjonskart</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">EMF</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">fellesDatakatalog</ns2:subject>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">JPEG</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Basis geodata</ns2:subject>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">PPTX</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">fylke</ns2:subject>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">AI</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">kommunegrense</ns2:subject>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">EMF</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">kommune</ns2:subject>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">JPEG</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">fylkesgrense</ns2:subject>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">PPTX</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Illustrasjonskart</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">imageryBaseMapsEarthCover</ns2:subject>
+      <ns2:BoundingBox xmlns:ns2="http://www.opengis.net/ows" crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ns2:LowerCorner>-90.0 -90.0</ns2:LowerCorner>
+        <ns2:UpperCorner>90.0 80.0</ns2:UpperCorner>
+      </ns2:BoundingBox>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:relation xmlns:ns2="http://purl.org/dc/elements/1.1/">043a019d-c620-4b48-9d41-c5d82b7fa818</ns2:relation>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">853495fa-c21e-4c51-b299-d4781fec0f7d</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC WMS</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">service</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2017-09-28</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2018-02-27</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Sirkumpolært bakgrunnskart med landområder, sjøområder, kystkonturer, isbreer og riksgrenser fra Vmap0.</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Sirkumpolært bakgrunnskart med landområder, sjøområder, kystkonturer, isbreer og riksgrenser fra Vmap0.</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Sea regions</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Sjø</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">license</ns2:rights>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC WMS</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Kyst og fiskeri</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Sirkumpolært</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Arctic</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Bakgrunnskart</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">havarealverktøy</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">infoMapAccessService</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">landområder</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">sjøområder</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">kystkonturer</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">isbreer</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">riksgrenser</ns2:subject>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:relation xmlns:ns2="http://purl.org/dc/elements/1.1/">043a019d-c620-4b48-9d41-c5d82b7fa818</ns2:relation>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">d1a61790-6574-4aba-bd6b-b1bd26cc385b</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC WMS</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">service</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2017-09-28</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2018-02-27</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Sirkumpolært bakgrunnskart med landområder, sjøområder, kystkonturer, isbreer og riksgrenser fra Vmap0.</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Sirkumpolært bakgrunnskart med landområder, sjøområder, kystkonturer, isbreer og riksgrenser fra Vmap0.</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Sea regions</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Sjø</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">license</ns2:rights>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC WMS</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Kyst og fiskeri</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Sirkumpolært</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Arctic</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Bakgrunnskart</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">havarealverktøy</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">infoMapAccessService</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">landområder</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">sjøområder</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">kystkonturer</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">isbreer</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">riksgrenser</ns2:subject>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:relation xmlns:ns2="http://purl.org/dc/elements/1.1/">043a019d-c620-4b48-9d41-c5d82b7fa818</ns2:relation>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">6a5f5d70-e865-4a7c-8358-f1e725598bd9</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC WMS</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">service</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2017-09-28</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2018-02-27</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Sirkumpolært bakgrunnskart med landområder, sjøområder, kystkonturer, isbreer og riksgrenser fra Vmap0.</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Sirkumpolært bakgrunnskart med landområder, sjøområder, kystkonturer, isbreer og riksgrenser fra Vmap0.</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Sea regions</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Isbre og snøfelt</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">license</ns2:rights>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC WMS</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Natur</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Sirkumpolært</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Arctic</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Bakgrunnskart</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">havarealverktøy</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">infoMapAccessService</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">landområder</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">sjøområder</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">kystkonturer</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">isbreer</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">riksgrenser</ns2:subject>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:relation xmlns:ns2="http://purl.org/dc/elements/1.1/">043a019d-c620-4b48-9d41-c5d82b7fa818</ns2:relation>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">bd9fb2a9-6885-4b39-916f-802dad8f4e63</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC WMS</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">service</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2017-09-28</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2018-02-27</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Sirkumpolært bakgrunnskart med landområder, sjøområder, kystkonturer, isbreer og riksgrenser fra Vmap0.</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Sirkumpolært bakgrunnskart med landområder, sjøområder, kystkonturer, isbreer og riksgrenser fra Vmap0.</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Sea regions</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Isbre og snøfelt</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">license</ns2:rights>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC WMS</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Natur</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Sirkumpolært</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Arctic</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Bakgrunnskart</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">havarealverktøy</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">infoMapAccessService</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">landområder</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">sjøområder</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">kystkonturer</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">isbreer</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">riksgrenser</ns2:subject>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:relation xmlns:ns2="http://purl.org/dc/elements/1.1/">043a019d-c620-4b48-9d41-c5d82b7fa818</ns2:relation>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">4d08debd-b8a5-44c2-80d5-43d55b3bd207</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC WMS</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">service</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2017-09-28</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2018-02-27</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Sirkumpolært bakgrunnskart med landområder, sjøområder, kystkonturer, isbreer og riksgrenser fra Vmap0.</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Sirkumpolært bakgrunnskart med landområder, sjøområder, kystkonturer, isbreer og riksgrenser fra Vmap0.</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Sea regions</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Landareal</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">license</ns2:rights>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC WMS</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Basis geodata</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Sirkumpolært</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Arctic</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Bakgrunnskart</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">havarealverktøy</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">infoMapAccessService</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">landområder</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">sjøområder</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">kystkonturer</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">isbreer</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">riksgrenser</ns2:subject>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:relation xmlns:ns2="http://purl.org/dc/elements/1.1/">043a019d-c620-4b48-9d41-c5d82b7fa818</ns2:relation>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">25cb6fd1-27d0-4288-a008-87540fccb828</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC WMS</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">service</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2017-09-28</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2018-02-27</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Sirkumpolært bakgrunnskart med landområder, sjøområder, kystkonturer, isbreer og riksgrenser fra Vmap0.</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Sirkumpolært bakgrunnskart med landområder, sjøområder, kystkonturer, isbreer og riksgrenser fra Vmap0.</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Sea regions</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Landareal</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">license</ns2:rights>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC WMS</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Basis geodata</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Sirkumpolært</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Arctic</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Bakgrunnskart</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">havarealverktøy</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">infoMapAccessService</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">landområder</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">sjøområder</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">kystkonturer</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">isbreer</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">riksgrenser</ns2:subject>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:relation xmlns:ns2="http://purl.org/dc/elements/1.1/">043a019d-c620-4b48-9d41-c5d82b7fa818</ns2:relation>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">23a6449b-0e1b-4c5c-aad7-1c1dd4fdda96</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC WMS</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">service</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2017-09-28</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2018-02-27</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Sirkumpolært bakgrunnskart med landområder, sjøområder, kystkonturer, isbreer og riksgrenser fra Vmap0.</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Sirkumpolært bakgrunnskart med landområder, sjøområder, kystkonturer, isbreer og riksgrenser fra Vmap0.</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Sea regions</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Nasjonale grenser</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">license</ns2:rights>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC WMS</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Basis geodata</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Sirkumpolært</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Arctic</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Bakgrunnskart</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">havarealverktøy</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">infoMapAccessService</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">landområder</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">sjøområder</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">kystkonturer</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">isbreer</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">riksgrenser</ns2:subject>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:relation xmlns:ns2="http://purl.org/dc/elements/1.1/">270f936d-ebed-42b0-a127-545383d773fc</ns2:relation>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/">Dataene oppdateres fortløpende basert på innrapportering til Kystvaktsentralen.</ns2:source>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">69f9e7e4-daf3-4648-ac2a-faa6d158dc0c</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">PNG</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">service</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2016-10-18</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2021-02-17</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Barentswatch</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">BarentsWatch fiskeriaktivitet er en historisk oversikt over kartlaget faststående bruk fra tjenesten FiskInfo. Kartet viser liner, garn, snurpenot og teiner, som har vært satt i de valgte månedene og rapporteres til Kystvaktsentralen i henhold til Utøvelsesforskriften § 30. Kartlaget viser data fra slutten av 2014 og blir oppdatert løpende.
+
+Utøvelsesforskriften § 30: "Rapportering ved fiske med faststående redskap og fløytline. Fartøy som driver fiske med faststående redskap og fløytline nord for 62° N utenfor grunnlinjene, fartøy som driver garnfiske etter blåkveite nord for 62° N og fartøy som driver garnfiske etter breiflabb skal rapportere til Kystvaktsentralen (tlf. 07611) om følgende: a)setting av redskap, og b)opphaling av redskap ved avslutning av fisket." Les hele forskriften hos Fiskeridirektoratet</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">BarentsWatch fiskeriaktivitet er en historisk oversikt over kartlaget faststående bruk fra tjenesten FiskInfo. Kartet viser liner, garn, snurpenot og teiner, som har vært satt i de valgte månedene og rapporteres til Kystvaktsentralen i henhold til Utøvelsesforskriften § 30. Kartlaget viser data fra slutten av 2014 og blir oppdatert løpende.
+
+Utøvelsesforskriften § 30: "Rapportering ved fiske med faststående redskap og fløytline. Fartøy som driver fiske med faststående redskap og fløytline nord for 62° N utenfor grunnlinjene, fartøy som driver garnfiske etter blåkveite nord for 62° N og fartøy som driver garnfiske etter breiflabb skal rapportere til Kystvaktsentralen (tlf. 07611) om følgende: a)setting av redskap, og b)opphaling av redskap ved avslutning av fisket." Les hele forskriften hos Fiskeridirektoratet</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Barentswatch</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Barentswatch</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Fiskeriaktivitet (passive redskaper)</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">PNG</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Kyst og fiskeri</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">fiskeri</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">bruksdata</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">infoMapAccessService</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">BarentsWatch</ns2:subject>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:relation xmlns:ns2="http://purl.org/dc/elements/1.1/">043a019d-c620-4b48-9d41-c5d82b7fa818</ns2:relation>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">3eabdcaa-e18b-4247-815d-48e3f9305995</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC WMS</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">service</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2017-09-28</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2018-02-27</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Sirkumpolært bakgrunnskart med landområder, sjøområder, kystkonturer, isbreer og riksgrenser fra Vmap0.</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Sirkumpolært bakgrunnskart med landområder, sjøområder, kystkonturer, isbreer og riksgrenser fra Vmap0.</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Sea regions</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Kystlinje</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">license</ns2:rights>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC WMS</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Kyst og fiskeri</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Sirkumpolært</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Arctic</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Bakgrunnskart</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">havarealverktøy</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">infoMapAccessService</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">landområder</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">sjøområder</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">kystkonturer</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">isbreer</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">riksgrenser</ns2:subject>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:relation xmlns:ns2="http://purl.org/dc/elements/1.1/">043a019d-c620-4b48-9d41-c5d82b7fa818</ns2:relation>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">6e392cd5-e491-46b5-93e8-f63506e5cc55</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC WMS</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">service</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2017-09-28</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2018-02-27</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Sirkumpolært bakgrunnskart med landområder, sjøområder, kystkonturer, isbreer og riksgrenser fra Vmap0.</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Sirkumpolært bakgrunnskart med landområder, sjøområder, kystkonturer, isbreer og riksgrenser fra Vmap0.</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Sea regions</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Kystlinje</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">license</ns2:rights>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC WMS</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Kyst og fiskeri</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Sirkumpolært</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Arctic</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Bakgrunnskart</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">havarealverktøy</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">infoMapAccessService</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">landområder</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">sjøområder</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">kystkonturer</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">isbreer</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">riksgrenser</ns2:subject>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:relation xmlns:ns2="http://purl.org/dc/elements/1.1/">043a019d-c620-4b48-9d41-c5d82b7fa818</ns2:relation>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">8f1a7a13-095e-43f8-8e97-81ed57be40ad</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC WMS</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">service</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">2017-09-28</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2018-02-27</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Sirkumpolært bakgrunnskart med landområder, sjøområder, kystkonturer, isbreer og riksgrenser fra Vmap0.</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Sirkumpolært bakgrunnskart med landområder, sjøområder, kystkonturer, isbreer og riksgrenser fra Vmap0.</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Sea regions</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartverket</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Nasjonale grenser</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">license</ns2:rights>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC WMS</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Basis geodata</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Sirkumpolært</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Arctic</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Bakgrunnskart</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">havarealverktøy</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">infoMapAccessService</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">landområder</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">sjøområder</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">kystkonturer</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">isbreer</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">riksgrenser</ns2:subject>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:relation xmlns:ns2="http://purl.org/dc/elements/1.1/">f2231766-e5f2-4076-b7f8-b45a02bf7221</ns2:relation>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/">Ingen prosseshistorie tilgjenglig.</ns2:source>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">3c160b56-99fd-4a27-81fa-c4f87f7a1d65</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC:WMS</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">service</ns2:type>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2018-08-31</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Kartet viser utbredelsen til haakjerring. Håkjerring (Somniosus microcephalus) er en stor hai i håfamilien som kan bli på størrelse med de største hvithaier. Det er den haisort i verden som holder til lengst nord i arktiske farvann, særlig i havene mellom Grønland og Island, på 200–600 m dyp</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartet viser utbredelsen til haakjerring. Håkjerring (Somniosus microcephalus) er en stor hai i håfamilien som kan bli på størrelse med de største hvithaier. Det er den haisort i verden som holder til lengst nord i arktiske farvann, særlig i havene mellom Grønland og Island, på 200–600 m dyp</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Barentswatch</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Håkjerring WMS</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC:WMS</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Norge digitalt</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Kyst og fiskeri</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Barentshavet</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Norskehavet</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Nordsjøen</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Skagerrak</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Økosystem</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Fisk</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Artsutbredelse</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Art</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Utbredelse</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Håkjerring</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Greenland shark</ns2:subject>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:relation xmlns:ns2="http://purl.org/dc/elements/1.1/">bc2f1af6-0f71-476c-872b-c795c4ee3de7</ns2:relation>
+      <ns2:language xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/">Ingen prosseshistorie tilgjenglig.</ns2:source>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">20631d30-23be-4c83-98db-dd25d63dc716</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">Webapplikasjon</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">software</ns2:type>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2018-08-31</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">GeodataHI kartapplikasjonen viser noen av havforskningsinstituttet sine kartdata for: Habitater og biotoper, Artsfordeling fisk, Artsfordeling sjøpattedyr, Artsfordeling andre arter og Oseaongrafiske geografiske forhold.</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">GeodataHI kartapplikasjonen viser noen av havforskningsinstituttet sine kartdata for: Habitater og biotoper, Artsfordeling fisk, Artsfordeling sjøpattedyr, Artsfordeling andre arter og Oseaongrafiske geografiske forhold.</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Kyst og fiskeri</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">GeodataHI - Geodata Havforskningsinstituttet</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">Webapplikasjon</ns2:format>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:publisher>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Artsutbredelse fisk og sjøpattedyr</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Artsutbredelse fisk</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Artsutbredelse sjøpattedyr</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Artsutbredelse andre arter</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Habitater og biotoper</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Oceanografiske geografiske forhold</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">environment</ns2:subject>
+      <ns2:BoundingBox xmlns:ns2="http://www.opengis.net/ows" crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ns2:LowerCorner>80.0 15.0</ns2:LowerCorner>
+        <ns2:UpperCorner>35.0 80.0</ns2:UpperCorner>
+      </ns2:BoundingBox>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:relation xmlns:ns2="http://purl.org/dc/elements/1.1/">d135ac5c-1ce8-4852-aaa0-42e28d489e9d</ns2:relation>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/">Ingen prosseshistorie tilgjenglig.</ns2:source>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">333aeb7c-a2e2-4c35-becc-62a0ad065166</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC:WMS</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">service</ns2:type>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2018-08-31</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Kartet viser utbredelsen av spekkhoggere. Navn: Orcinus orca. Familie: Delphinidae. Andre navn: Staurhval, killer whale, orca (engelsk). Leveområde: I alle verdenshav. Spesielt kjent hos oss er forekomstene som har vært knyttet til sildas overvintring i Vestfjorden. Finnes for øvrig langs kysten vår, i Nordsjøen, Barentshavet og i Norskehavet.</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartet viser utbredelsen av spekkhoggere. Navn: Orcinus orca. Familie: Delphinidae. Andre navn: Staurhval, killer whale, orca (engelsk). Leveområde: I alle verdenshav. Spesielt kjent hos oss er forekomstene som har vært knyttet til sildas overvintring i Vestfjorden. Finnes for øvrig langs kysten vår, i Nordsjøen, Barentshavet og i Norskehavet.</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Barentswatch</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Spekkhogger WMS</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC:WMS</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Norge digitalt</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Kyst og fiskeri</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Barentshavet</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Norskehavet</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Nordsjøen</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Skagerrak</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Sjøpattedyr</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Økosystem</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Artsutbredelse</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Art</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Utbredelse</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Killer whale</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Spekkhogger</ns2:subject>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:relation xmlns:ns2="http://purl.org/dc/elements/1.1/">d135ac5c-1ce8-4852-aaa0-42e28d489e9d</ns2:relation>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/">Ingen prosseshistorie tilgjenglig.</ns2:source>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">748f6e4b-384e-4820-b1cb-38c2635a4b61</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC:WMS</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">service</ns2:type>
+      <ns2:modified xmlns:ns2="http://purl.org/dc/terms/">0001-01-01</ns2:modified>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2020-12-14</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Kartet viser utbredelsen til grindhval. Grindhval (Globicephala melas) tilhører delfinfamilien (Delphinidae) og er således en tannhval. Grindhvaler ser ut til å trives best på dypt vann. Arten har en sirkumantarktisk utbredelse på den sørlige halvkule men arten finnes også i tempererte og polare strøk av Nordatlanteren, samt i den vestlige halvparten av Middelhavet og i Svartehavet. Tidligere var arten også å finne vest i det nordlige Stillehavet.</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartet viser utbredelsen til grindhval. Grindhval (Globicephala melas) tilhører delfinfamilien (Delphinidae) og er således en tannhval. Grindhvaler ser ut til å trives best på dypt vann. Arten har en sirkumantarktisk utbredelse på den sørlige halvkule men arten finnes også i tempererte og polare strøk av Nordatlanteren, samt i den vestlige halvparten av Middelhavet og i Svartehavet. Tidligere var arten også å finne vest i det nordlige Stillehavet.</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Barentswatch</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Grindhval WMS</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC:WMS</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Norge digitalt</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Kyst og fiskeri</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Barentshavet</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Norskehavet</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Nordsjøen</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Skagerrak</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Sjøpattedyr</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Økosystem</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Fisk</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Artsutbredelse</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Art</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Utbredelse</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Grindhval</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Pilot whale</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">infoMapAccessService</ns2:subject>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:relation xmlns:ns2="http://purl.org/dc/elements/1.1/">d135ac5c-1ce8-4852-aaa0-42e28d489e9d</ns2:relation>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/">Ingen prosseshistorie tilgjenglig.</ns2:source>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">8c44acbf-9577-4aeb-b796-0cd196c76721</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC:WMS</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">service</ns2:type>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2018-08-31</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Kartet viser utbredelsen til knølhval.
+Latinsk: Megaptera novaeangliae
+Familie: Balaenopteridae
+Leveområde: Alle verdenshav. I våre farvann opptrer den i Norskehavet og i Barentshavet.</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartet viser utbredelsen til knølhval.
+Latinsk: Megaptera novaeangliae
+Familie: Balaenopteridae
+Leveområde: Alle verdenshav. I våre farvann opptrer den i Norskehavet og i Barentshavet.</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Barentswatch</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Knølhval WMS</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC:WMS</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Norge digitalt</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Kyst og fiskeri</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Barentshavet</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Norskehavet</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Sjøpattedyr</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Økosystem</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Artsutbredelse</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Art</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Utbredelse</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Humpback whale</ns2:subject>
+    </csw:Record>
+    <csw:Record>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/">otherRestrictions</ns2:rights>
+      <ns2:relation xmlns:ns2="http://purl.org/dc/elements/1.1/">d135ac5c-1ce8-4852-aaa0-42e28d489e9d</ns2:relation>
+      <ns2:source xmlns:ns2="http://purl.org/dc/elements/1.1/">Ingen prosseshistorie tilgjenglig.</ns2:source>
+      <ns2:identifier xmlns:ns2="http://purl.org/dc/elements/1.1/">48feaf52-79aa-4a73-b4ab-c5c8704c592e</ns2:identifier>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC:WMS</ns2:format>
+      <ns2:type xmlns:ns2="http://purl.org/dc/elements/1.1/">service</ns2:type>
+      <ns2:date xmlns:ns2="http://purl.org/dc/elements/1.1/">2018-08-31</ns2:date>
+      <ns2:publisher xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:publisher>
+      <ns2:abstract xmlns:ns2="http://purl.org/dc/terms/">Kartet viser utbredelsen av finnhval. Navn: Balaenoptera physalus. Familie: Balaenopteridae. Leveområde: Alle verdenshav. I våre farvann er den spesielt knyttet til eggakanten fra Nord-Norge og opp til Spitsbergen.Vanlig langs norskekysten</ns2:abstract>
+      <ns2:description xmlns:ns2="http://purl.org/dc/elements/1.1/">Kartet viser utbredelsen av finnhval. Navn: Balaenoptera physalus. Familie: Balaenopteridae. Leveområde: Alle verdenshav. I våre farvann er den spesielt knyttet til eggakanten fra Nord-Norge og opp til Spitsbergen.Vanlig langs norskekysten</ns2:description>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Barentswatch</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:title xmlns:ns2="http://purl.org/dc/elements/1.1/">Finnhval WMS</ns2:title>
+      <ns2:rights xmlns:ns2="http://purl.org/dc/elements/1.1/"/>
+      <ns2:format xmlns:ns2="http://purl.org/dc/elements/1.1/">OGC:WMS</ns2:format>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Norge digitalt</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Kyst og fiskeri</ns2:subject>
+      <ns2:creator xmlns:ns2="http://purl.org/dc/elements/1.1/">Havforskningsinstituttet</ns2:creator>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Barentshavet</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Norskehavet</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Nordsjøen</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Skagerrak</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Sjøpattedyr</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Økosystem</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Fisk</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Artsutbredelse</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Art</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Utbredelse</ns2:subject>
+      <ns2:subject xmlns:ns2="http://purl.org/dc/elements/1.1/">Fin whale</ns2:subject>
+    </csw:Record>
+  </csw:SearchResults>
+</csw:GetRecordsResponse>

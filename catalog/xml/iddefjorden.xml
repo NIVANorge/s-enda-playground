@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:GetRecordsResponse xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd">
+  <csw:SearchStatus timestamp="2021-09-21T13:47:11" />
+  <csw:SearchResults numberOfRecordsMatched="2" numberOfRecordsReturned="2" elementSet="full" nextRecord="0">
+    <csw:Record xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>94952df5-ada3-4e31-b446-29c0621cc37b</dc:identifier>
+      <dc:date>2021-08-12T13:34:50</dc:date>
+      <dc:title>Iddefjorden Sediment chemistry 1977-2015</dc:title>
+      <dc:subject>OCEANS &gt; MARINE SEDIMENTS &gt; SEDIMENT CHEMISTRY</dc:subject>
+      <dc:subject />
+      <dc:subject />
+      <dc:subject>oceans</dc:subject>
+      <dct:abstract>Industrial recipient data collected in Iddefjorden in the period 1977-2015. Sediment chemistry parameters: Al, As, CB101, CB105, CB118, CB138, CB153, CB156, CB180, CB209, CB28, CB52, Cd, Cr, Cu, DDD, DDE, HCHA, HCHG, Hg, Korn&lt;63µm, Li, Ni, Pb, PCB7, TOC, TOC63, WHO(2005)-PCB, TEQ, Zn</dct:abstract>
+      <dc:description>Industrial recipient data collected in Iddefjorden in the period 1977-2015. Sediment chemistry parameters: Al, As, CB101, CB105, CB118, CB138, CB153, CB156, CB180, CB209, CB28, CB52, Cd, Cr, Cu, DDD, DDE, HCHA, HCHG, Hg, Korn&lt;63µm, Li, Ni, Pb, PCB7, TOC, TOC63, WHO(2005)-PCB, TEQ, Zn</dc:description>
+      <dc:rights>license</dc:rights>
+      <dc:rights>otherRestictions</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source />
+      <ows:BoundingBox crs="urn:ogc:def:crs:::WGS 1984">
+        <ows:LowerCorner>11.44666 59.01166</ows:LowerCorner>
+        <ows:UpperCorner>11.14666 59.11955993</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dct:URI protocol="WWW:LINK-1.0-http--link" name="CSV-fil">https://aquamonitor.niva.no/nmdc/archives/lwjcvhp/Iddefjorden_Sediment.csv</dc:URI>
+    </csw:Record>
+    <csw:Record xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>073c2e3a-4af8-447f-bbd6-81e2dec5442f</dc:identifier>
+      <dc:date>2021-08-12T13:36:07</dc:date>
+      <dc:title>Iddefjorden Nutrients 1947-2016</dc:title>
+      <dc:subject>OCEANS&gt;OCEAN CHEMISTRY&gt;NUTRIENTS</dc:subject>
+      <dc:subject />
+      <dc:subject />
+      <dc:subject>oceans</dc:subject>
+      <dct:abstract>Industrial recipient data collected in Iddefjorden in the period 1974-2016. Nutrient parameters: KlfA, NH4-N, Nitrat+nitritt, NO2-N, NO3-N, TOC, TOTN, TOTP, SiO2, TOC, TOTN, TOTP</dct:abstract>
+      <dc:description>Industrial recipient data collected in Iddefjorden in the period 1974-2016. Nutrient parameters: KlfA, NH4-N, Nitrat+nitritt, NO2-N, NO3-N, TOC, TOTN, TOTP, SiO2, TOC, TOTN, TOTP</dc:description>
+      <dc:rights>license</dc:rights>
+      <dc:rights>otherRestictions</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source />
+      <ows:BoundingBox crs="urn:ogc:def:crs:::WGS 1984">
+        <ows:LowerCorner>11.44666 59.01166</ows:LowerCorner>
+        <ows:UpperCorner>11.14666 59.11955993</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="CSV-file">https://aquamonitor.niva.no/nmdc/archives/hiehrkk/Iddefjorden_nutrients_Water.csv</dc:URI>
+    </csw:Record>
+  </csw:SearchResults>
+</csw:GetRecordsResponse>

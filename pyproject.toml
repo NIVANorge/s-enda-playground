@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "csw-playground"
+version = "0.1.0"
+description = ""
+authors = [""]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.10"
+requests = "^2.25.1"
+ipykernel = "^6.3.1"
+OWSLib = "^0.25.0"
+lxml = "^4.6.3"
+xsdata = {extras = ["lxml", "soap"], version = "^21.9"}
+geopandas = "^0.9.0"
+matplotlib = "^3.4.3"
+pygeos = "^0.10.2"
+xarray = "^0.20.1"
+dask = {extras = ["diagnostics"], version = "^2021.11.1"}
+zarr = "^2.10.2"
+gcsfs = "^2021.11.0"
+cf-python = "^3.11.0"
+xarray-dataclasses = "^0.8.0"
+pooch = "^1.5.2"
+attrs = "^21.4.0"
+toolz = "^0.11.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+black = "^21.6b0"
+isort = "^5.9.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

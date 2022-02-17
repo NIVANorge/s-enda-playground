@@ -1,0 +1,255 @@
+<csw:GetRecordsResponse xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml" xmlns:ows="http://www.opengis.net/ows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0.2" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd">
+  <csw:SearchStatus timestamp="2021-10-01T10:51:20Z"/>
+  <csw:SearchResults numberOfRecordsMatched="12473" numberOfRecordsReturned="10" nextRecord="11" recordSchema="http://www.opengis.net/cat/csw/2.0.2" elementSet="full">
+    <csw:Record>
+      <dc:identifier>eca180be-02b3-4e5a-a362-83faabe0b9b4</dc:identifier>
+      <dc:title>Direct Broadcast data processed in satellite swath to L1C.</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Earth Science &gt; Atmosphere &gt; Atmospheric radiation</dc:subject>
+      <dc:subject>Government Agencies-non-US &gt; Norway &gt; NO/MET &gt; Norwegian Meteorological Institute</dc:subject>
+      <dc:subject>Geographic Region &gt; Northern Hemisphere</dc:subject>
+      <dc:subject>Meteorological geographical features</dc:subject>
+      <dc:subject>Atmospheric conditions</dc:subject>
+      <dc:subject>Oceanographic geographical features</dc:subject>
+      <dc:subject>Weather and climate</dc:subject>
+      <dc:subject scheme="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopicCategoryCode">climatologyMeteorologyAtmosphere</dc:subject>
+      <dct:references scheme="OPENDAP:OPENDAP">https://thredds.met.no/thredds/dodsC/remotesensingsatellite/polar-swath/2021/06/01/aqua-modis-hkm-20210601011121-20210601012455.nc</dct:references>
+      <dct:references scheme="OGC:WMS">https://thredds.met.no/thredds/wms/remotesensingsatellite/polar-swath/2021/06/01/aqua-modis-hkm-20210601011121-20210601012455.nc?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities?SERVICE=WMS&amp;REQUEST=GetCapabilities</dct:references>
+      <dct:references scheme="WWW:DOWNLOAD-1.0-http--download">https://thredds.met.no/thredds/fileServer/remotesensingsatellite/polar-swath/2021/06/01/aqua-modis-hkm-20210601011121-20210601012455.nc</dct:references>
+      <dct:modified>2021-06-01</dct:modified>
+      <dct:abstract>Direct Broadcast data received at MET NORWAY Oslo. Processed by standard processing software to geolocated and calibrated values in satellite swath in received instrument resolution.</dct:abstract>
+      <dc:date>2021-06-01</dc:date>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dct:spatial scheme="http://www.opengis.net/def/crs">EPSG:4326</dct:spatial>
+      <ows:BoundingBox crs="urn:x-ogc:def:crs:EPSG:6.11:4326" dimensions="2">
+        <ows:LowerCorner>34.47 -13.1</ows:LowerCorner>
+        <ows:UpperCorner>82.66 74.36</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+    <csw:Record>
+      <dc:identifier>c152959e-0b9e-42ff-9142-a12bc4c7c102</dc:identifier>
+      <dc:title>Direct Broadcast data processed in satellite swath to L1C.</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Earth Science &gt; Atmosphere &gt; Atmospheric radiation</dc:subject>
+      <dc:subject>Government Agencies-non-US &gt; Norway &gt; NO/MET &gt; Norwegian Meteorological Institute</dc:subject>
+      <dc:subject>Geographic Region &gt; Northern Hemisphere</dc:subject>
+      <dc:subject>Meteorological geographical features</dc:subject>
+      <dc:subject>Atmospheric conditions</dc:subject>
+      <dc:subject>Oceanographic geographical features</dc:subject>
+      <dc:subject>Weather and climate</dc:subject>
+      <dc:subject scheme="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopicCategoryCode">climatologyMeteorologyAtmosphere</dc:subject>
+      <dct:references scheme="OPENDAP:OPENDAP">https://thredds.met.no/thredds/dodsC/remotesensingsatellite/polar-swath/2020/05/05/noaa19-avhrr-20200505060928-20200505062238.nc</dct:references>
+      <dct:references scheme="OGC:WMS">https://thredds.met.no/thredds/wms/remotesensingsatellite/polar-swath/2020/05/05/noaa19-avhrr-20200505060928-20200505062238.nc?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities?SERVICE=WMS&amp;REQUEST=GetCapabilities</dct:references>
+      <dct:references scheme="WWW:DOWNLOAD-1.0-http--download">https://thredds.met.no/thredds/fileServer/remotesensingsatellite/polar-swath/2020/05/05/noaa19-avhrr-20200505060928-20200505062238.nc</dct:references>
+      <dct:modified>2020-05-07</dct:modified>
+      <dct:abstract>Direct Broadcast data received at MET NORWAY Oslo. Processed by standard processing software to geolocated and calibrated values in satellite swath in received instrument resolution.</dct:abstract>
+      <dc:date>2020-05-07</dc:date>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dct:spatial scheme="http://www.opengis.net/def/crs">EPSG:4326</dct:spatial>
+      <ows:BoundingBox crs="urn:x-ogc:def:crs:EPSG:6.11:4326" dimensions="2">
+        <ows:LowerCorner>34.04 -48.1</ows:LowerCorner>
+        <ows:UpperCorner>84.89 71.96</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+    <csw:Record>
+      <dc:identifier>8cc1b9ce-c427-4b64-9e49-2b0b076ee263</dc:identifier>
+      <dc:title>Direct Broadcast data processed in satellite swath to L1C.</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Earth Science &gt; Atmosphere &gt; Atmospheric radiation</dc:subject>
+      <dc:subject>Government Agencies-non-US &gt; Norway &gt; NO/MET &gt; Norwegian Meteorological Institute</dc:subject>
+      <dc:subject>Geographic Region &gt; Northern Hemisphere</dc:subject>
+      <dc:subject>Meteorological geographical features</dc:subject>
+      <dc:subject>Atmospheric conditions</dc:subject>
+      <dc:subject>Oceanographic geographical features</dc:subject>
+      <dc:subject>Weather and climate</dc:subject>
+      <dc:subject scheme="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopicCategoryCode">climatologyMeteorologyAtmosphere</dc:subject>
+      <dct:references scheme="OPENDAP:OPENDAP">https://thredds.met.no/thredds/dodsC/remotesensingsatellite/polar-swath/2020/05/12/metopb-avhrr-20200512190838-20200512192120.nc</dct:references>
+      <dct:references scheme="OGC:WMS">https://thredds.met.no/thredds/wms/remotesensingsatellite/polar-swath/2020/05/12/metopb-avhrr-20200512190838-20200512192120.nc?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities?SERVICE=WMS&amp;REQUEST=GetCapabilities</dct:references>
+      <dct:references scheme="WWW:DOWNLOAD-1.0-http--download">https://thredds.met.no/thredds/fileServer/remotesensingsatellite/polar-swath/2020/05/12/metopb-avhrr-20200512190838-20200512192120.nc</dct:references>
+      <dct:modified>2020-05-12</dct:modified>
+      <dct:abstract>Direct Broadcast data received at MET NORWAY Oslo. Processed by standard processing software to geolocated and calibrated values in satellite swath in received instrument resolution.</dct:abstract>
+      <dc:date>2020-05-12</dc:date>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dct:spatial scheme="http://www.opengis.net/def/crs">EPSG:4326</dct:spatial>
+      <ows:BoundingBox crs="urn:x-ogc:def:crs:EPSG:6.11:4326" dimensions="2">
+        <ows:LowerCorner>35.37 -45.02</ows:LowerCorner>
+        <ows:UpperCorner>85.32 75.71</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+    <csw:Record>
+      <dc:identifier>c222f6bf-d2f3-474d-9a77-b551a2739e6e</dc:identifier>
+      <dc:title>Direct Broadcast data processed in satellite swath to L1C.</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Earth Science &gt; Atmosphere &gt; Atmospheric radiation</dc:subject>
+      <dc:subject>Government Agencies-non-US &gt; Norway &gt; NO/MET &gt; Norwegian Meteorological Institute</dc:subject>
+      <dc:subject>Geographic Region &gt; Northern Hemisphere</dc:subject>
+      <dc:subject>Meteorological geographical features</dc:subject>
+      <dc:subject>Atmospheric conditions</dc:subject>
+      <dc:subject>Oceanographic geographical features</dc:subject>
+      <dc:subject>Weather and climate</dc:subject>
+      <dc:subject scheme="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopicCategoryCode">climatologyMeteorologyAtmosphere</dc:subject>
+      <dct:references scheme="OPENDAP:OPENDAP">https://thredds.met.no/thredds/dodsC/remotesensingsatellite/polar-swath/2021/06/02/metopb-avhrr-20210602192137-20210602193458.nc</dct:references>
+      <dct:references scheme="OGC:WMS">https://thredds.met.no/thredds/wms/remotesensingsatellite/polar-swath/2021/06/02/metopb-avhrr-20210602192137-20210602193458.nc?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities?SERVICE=WMS&amp;REQUEST=GetCapabilities</dct:references>
+      <dct:references scheme="WWW:DOWNLOAD-1.0-http--download">https://thredds.met.no/thredds/fileServer/remotesensingsatellite/polar-swath/2021/06/02/metopb-avhrr-20210602192137-20210602193458.nc</dct:references>
+      <dct:modified>2021-06-02</dct:modified>
+      <dct:abstract>Direct Broadcast data received at MET NORWAY Oslo. Processed by standard processing software to geolocated and calibrated values in satellite swath in received instrument resolution.</dct:abstract>
+      <dc:date>2021-06-02</dc:date>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dct:spatial scheme="http://www.opengis.net/def/crs">EPSG:4326</dct:spatial>
+      <ows:BoundingBox crs="urn:x-ogc:def:crs:EPSG:6.11:4326" dimensions="2">
+        <ows:LowerCorner>33.27 -48.55</ows:LowerCorner>
+        <ows:UpperCorner>85.37 72.87</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+    <csw:Record>
+      <dc:identifier>84131dce-9a84-4b96-8d28-7ec71055d9fd</dc:identifier>
+      <dc:title>Direct Broadcast data processed in satellite swath to L1C.</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Earth Science &gt; Atmosphere &gt; Atmospheric radiation</dc:subject>
+      <dc:subject>Government Agencies-non-US &gt; Norway &gt; NO/MET &gt; Norwegian Meteorological Institute</dc:subject>
+      <dc:subject>Geographic Region &gt; Northern Hemisphere</dc:subject>
+      <dc:subject>Meteorological geographical features</dc:subject>
+      <dc:subject>Atmospheric conditions</dc:subject>
+      <dc:subject>Oceanographic geographical features</dc:subject>
+      <dc:subject>Weather and climate</dc:subject>
+      <dc:subject scheme="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopicCategoryCode">climatologyMeteorologyAtmosphere</dc:subject>
+      <dct:references scheme="OPENDAP:OPENDAP">https://thredds.met.no/thredds/dodsC/remotesensingsatellite/polar-swath/2020/05/20/fy3d-mersi2-1k-20200520111233-20200520112557.nc</dct:references>
+      <dct:references scheme="OGC:WMS">https://thredds.met.no/thredds/wms/remotesensingsatellite/polar-swath/2020/05/20/fy3d-mersi2-1k-20200520111233-20200520112557.nc?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities?SERVICE=WMS&amp;REQUEST=GetCapabilities</dct:references>
+      <dct:references scheme="WWW:DOWNLOAD-1.0-http--download">https://thredds.met.no/thredds/fileServer/remotesensingsatellite/polar-swath/2020/05/20/fy3d-mersi2-1k-20200520111233-20200520112557.nc</dct:references>
+      <dct:modified>2020-05-20</dct:modified>
+      <dct:abstract>Direct Broadcast data received at MET NORWAY Oslo. Processed by standard processing software to geolocated and calibrated values in satellite swath in received instrument resolution.</dct:abstract>
+      <dc:date>2020-05-20</dc:date>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dct:spatial scheme="http://www.opengis.net/def/crs">EPSG:4326</dct:spatial>
+      <ows:BoundingBox crs="urn:x-ogc:def:crs:EPSG:6.11:4326" dimensions="2">
+        <ows:LowerCorner>33.91 -47.1</ows:LowerCorner>
+        <ows:UpperCorner>85.48 75.14</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+    <csw:Record>
+      <dc:identifier>74e777af-516f-4dda-a1d9-324ac1be45de</dc:identifier>
+      <dc:title>Direct Broadcast data processed in satellite swath to L1C.</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Earth Science &gt; Atmosphere &gt; Atmospheric radiation</dc:subject>
+      <dc:subject>Government Agencies-non-US &gt; Norway &gt; NO/MET &gt; Norwegian Meteorological Institute</dc:subject>
+      <dc:subject>Geographic Region &gt; Northern Hemisphere</dc:subject>
+      <dc:subject>Meteorological geographical features</dc:subject>
+      <dc:subject>Atmospheric conditions</dc:subject>
+      <dc:subject>Oceanographic geographical features</dc:subject>
+      <dc:subject>Weather and climate</dc:subject>
+      <dc:subject scheme="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopicCategoryCode">climatologyMeteorologyAtmosphere</dc:subject>
+      <dct:references scheme="OPENDAP:OPENDAP">https://thredds.met.no/thredds/dodsC/remotesensingsatellite/polar-swath/2021/01/13/metopb-avhrr-20210113191814-20210113193138.nc</dct:references>
+      <dct:references scheme="OGC:WMS">https://thredds.met.no/thredds/wms/remotesensingsatellite/polar-swath/2021/01/13/metopb-avhrr-20210113191814-20210113193138.nc?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities?SERVICE=WMS&amp;REQUEST=GetCapabilities</dct:references>
+      <dct:references scheme="WWW:DOWNLOAD-1.0-http--download">https://thredds.met.no/thredds/fileServer/remotesensingsatellite/polar-swath/2021/01/13/metopb-avhrr-20210113191814-20210113193138.nc</dct:references>
+      <dct:modified>2021-01-13</dct:modified>
+      <dct:abstract>Direct Broadcast data received at MET NORWAY Oslo. Processed by standard processing software to geolocated and calibrated values in satellite swath in received instrument resolution.</dct:abstract>
+      <dc:date>2021-01-13</dc:date>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dct:spatial scheme="http://www.opengis.net/def/crs">EPSG:4326</dct:spatial>
+      <ows:BoundingBox crs="urn:x-ogc:def:crs:EPSG:6.11:4326" dimensions="2">
+        <ows:LowerCorner>33.46 -48.58</ows:LowerCorner>
+        <ows:UpperCorner>85.69 75.55</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+    <csw:Record>
+      <dc:identifier>33728316-8f97-4ae3-8a7f-06ae8b6cd674</dc:identifier>
+      <dc:title>Direct Broadcast data processed in satellite swath to L1C.</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Earth Science &gt; Atmosphere &gt; Atmospheric radiation</dc:subject>
+      <dc:subject>Government Agencies-non-US &gt; Norway &gt; NO/MET &gt; Norwegian Meteorological Institute</dc:subject>
+      <dc:subject>Geographic Region &gt; Northern Hemisphere</dc:subject>
+      <dc:subject>Meteorological geographical features</dc:subject>
+      <dc:subject>Atmospheric conditions</dc:subject>
+      <dc:subject>Oceanographic geographical features</dc:subject>
+      <dc:subject>Weather and climate</dc:subject>
+      <dc:subject scheme="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopicCategoryCode">climatologyMeteorologyAtmosphere</dc:subject>
+      <dct:references scheme="OPENDAP:OPENDAP">https://thredds.met.no/thredds/dodsC/remotesensingsatellite/polar-swath/2021/04/14/aqua-modis-1km-20210414011129-20210414012455.nc</dct:references>
+      <dct:references scheme="OGC:WMS">https://thredds.met.no/thredds/wms/remotesensingsatellite/polar-swath/2021/04/14/aqua-modis-1km-20210414011129-20210414012455.nc?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities?SERVICE=WMS&amp;REQUEST=GetCapabilities</dct:references>
+      <dct:references scheme="WWW:DOWNLOAD-1.0-http--download">https://thredds.met.no/thredds/fileServer/remotesensingsatellite/polar-swath/2021/04/14/aqua-modis-1km-20210414011129-20210414012455.nc</dct:references>
+      <dct:modified>2021-04-14</dct:modified>
+      <dct:abstract>Direct Broadcast data received at MET NORWAY Oslo. Processed by standard processing software to geolocated and calibrated values in satellite swath in received instrument resolution.</dct:abstract>
+      <dc:date>2021-04-14</dc:date>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dct:spatial scheme="http://www.opengis.net/def/crs">EPSG:4326</dct:spatial>
+      <ows:BoundingBox crs="urn:x-ogc:def:crs:EPSG:6.11:4326" dimensions="2">
+        <ows:LowerCorner>34.59 -12.66</ows:LowerCorner>
+        <ows:UpperCorner>82.51 73.89</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+    <csw:Record>
+      <dc:identifier>710a843a-fabe-4fe2-bc8a-22afddf06118</dc:identifier>
+      <dc:title>Direct Broadcast data processed in satellite swath to L1C.</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Earth Science &gt; Atmosphere &gt; Atmospheric radiation</dc:subject>
+      <dc:subject>Government Agencies-non-US &gt; Norway &gt; NO/MET &gt; Norwegian Meteorological Institute</dc:subject>
+      <dc:subject>Geographic Region &gt; Northern Hemisphere</dc:subject>
+      <dc:subject>Meteorological geographical features</dc:subject>
+      <dc:subject>Atmospheric conditions</dc:subject>
+      <dc:subject>Oceanographic geographical features</dc:subject>
+      <dc:subject>Weather and climate</dc:subject>
+      <dc:subject scheme="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopicCategoryCode">climatologyMeteorologyAtmosphere</dc:subject>
+      <dct:references scheme="OPENDAP:OPENDAP">https://thredds.met.no/thredds/dodsC/remotesensingsatellite/polar-swath/2020/05/05/noaa18-avhrr-20200505093214-20200505094530.nc</dct:references>
+      <dct:references scheme="OGC:WMS">https://thredds.met.no/thredds/wms/remotesensingsatellite/polar-swath/2020/05/05/noaa18-avhrr-20200505093214-20200505094530.nc?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities?SERVICE=WMS&amp;REQUEST=GetCapabilities</dct:references>
+      <dct:references scheme="WWW:DOWNLOAD-1.0-http--download">https://thredds.met.no/thredds/fileServer/remotesensingsatellite/polar-swath/2020/05/05/noaa18-avhrr-20200505093214-20200505094530.nc</dct:references>
+      <dct:modified>2020-05-07</dct:modified>
+      <dct:abstract>Direct Broadcast data received at MET NORWAY Oslo. Processed by standard processing software to geolocated and calibrated values in satellite swath in received instrument resolution.</dct:abstract>
+      <dc:date>2020-05-07</dc:date>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dct:spatial scheme="http://www.opengis.net/def/crs">EPSG:4326</dct:spatial>
+      <ows:BoundingBox crs="urn:x-ogc:def:crs:EPSG:6.11:4326" dimensions="2">
+        <ows:LowerCorner>33.45 -48.05</ows:LowerCorner>
+        <ows:UpperCorner>84.82 72.06</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+    <csw:Record>
+      <dc:identifier>808f7754-c074-44ea-8ff2-1477260f3cd5</dc:identifier>
+      <dc:title>Direct Broadcast data processed in satellite swath to L1C.</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Earth Science &gt; Atmosphere &gt; Atmospheric radiation</dc:subject>
+      <dc:subject>Government Agencies-non-US &gt; Norway &gt; NO/MET &gt; Norwegian Meteorological Institute</dc:subject>
+      <dc:subject>Geographic Region &gt; Northern Hemisphere</dc:subject>
+      <dc:subject>Meteorological geographical features</dc:subject>
+      <dc:subject>Atmospheric conditions</dc:subject>
+      <dc:subject>Oceanographic geographical features</dc:subject>
+      <dc:subject>Weather and climate</dc:subject>
+      <dc:subject scheme="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopicCategoryCode">climatologyMeteorologyAtmosphere</dc:subject>
+      <dct:references scheme="OPENDAP:OPENDAP">https://thredds.met.no/thredds/dodsC/remotesensingsatellite/polar-swath/2020/08/21/metopb-avhrr-20200821191750-20200821193111.nc</dct:references>
+      <dct:references scheme="OGC:WMS">https://thredds.met.no/thredds/wms/remotesensingsatellite/polar-swath/2020/08/21/metopb-avhrr-20200821191750-20200821193111.nc?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities?SERVICE=WMS&amp;REQUEST=GetCapabilities</dct:references>
+      <dct:references scheme="WWW:DOWNLOAD-1.0-http--download">https://thredds.met.no/thredds/fileServer/remotesensingsatellite/polar-swath/2020/08/21/metopb-avhrr-20200821191750-20200821193111.nc</dct:references>
+      <dct:modified>2020-08-21</dct:modified>
+      <dct:abstract>Direct Broadcast data received at MET NORWAY Oslo. Processed by standard processing software to geolocated and calibrated values in satellite swath in received instrument resolution.</dct:abstract>
+      <dc:date>2020-08-21</dc:date>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dct:spatial scheme="http://www.opengis.net/def/crs">EPSG:4326</dct:spatial>
+      <ows:BoundingBox crs="urn:x-ogc:def:crs:EPSG:6.11:4326" dimensions="2">
+        <ows:LowerCorner>33.5 -48.35</ows:LowerCorner>
+        <ows:UpperCorner>85.64 75.47</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+    <csw:Record>
+      <dc:identifier>a38f0c64-eba2-438a-8392-cfa79d63f27a</dc:identifier>
+      <dc:title>Direct Broadcast data processed in satellite swath to L1C.</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Earth Science &gt; Atmosphere &gt; Atmospheric radiation</dc:subject>
+      <dc:subject>Government Agencies-non-US &gt; Norway &gt; NO/MET &gt; Norwegian Meteorological Institute</dc:subject>
+      <dc:subject>Geographic Region &gt; Northern Hemisphere</dc:subject>
+      <dc:subject>Meteorological geographical features</dc:subject>
+      <dc:subject>Atmospheric conditions</dc:subject>
+      <dc:subject>Oceanographic geographical features</dc:subject>
+      <dc:subject>Weather and climate</dc:subject>
+      <dc:subject scheme="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopicCategoryCode">climatologyMeteorologyAtmosphere</dc:subject>
+      <dct:references scheme="OPENDAP:OPENDAP">https://thredds.met.no/thredds/dodsC/remotesensingsatellite/polar-swath/2020/11/28/noaa19-avhrr-20201128155451-20201128160718.nc</dct:references>
+      <dct:references scheme="OGC:WMS">https://thredds.met.no/thredds/wms/remotesensingsatellite/polar-swath/2020/11/28/noaa19-avhrr-20201128155451-20201128160718.nc?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities?SERVICE=WMS&amp;REQUEST=GetCapabilities</dct:references>
+      <dct:references scheme="WWW:DOWNLOAD-1.0-http--download">https://thredds.met.no/thredds/fileServer/remotesensingsatellite/polar-swath/2020/11/28/noaa19-avhrr-20201128155451-20201128160718.nc</dct:references>
+      <dct:modified>2020-11-28</dct:modified>
+      <dct:abstract>Direct Broadcast data received at MET NORWAY Oslo. Processed by standard processing software to geolocated and calibrated values in satellite swath in received instrument resolution.</dct:abstract>
+      <dc:date>2020-11-28</dc:date>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dct:spatial scheme="http://www.opengis.net/def/crs">EPSG:4326</dct:spatial>
+      <ows:BoundingBox crs="urn:x-ogc:def:crs:EPSG:6.11:4326" dimensions="2">
+        <ows:LowerCorner>36.14 -43.38</ows:LowerCorner>
+        <ows:UpperCorner>84.72 75.13</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+  </csw:SearchResults>
+</csw:GetRecordsResponse>
