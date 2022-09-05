@@ -18,9 +18,9 @@ poetry install
 
 it can be practical to use `poetry config virtualenvs.in-project true`.
 
-ERDDAP
+Thredds
 ------
 
 ``` bash
-http://localhost:8080/erddap/tabledap/datasets_bfaf_84b3_3aa5.htmlTable?time,longitude,latitude,sea_water_temperature
+https://thredds.t.niva.no/thredds/ncss/point/datasets/timeseries.nc?var=conductivity&var=salinity&north=59.951&west=10.750&east=10.751&south=59.950&time_start=1999-10-01T00:00:00Z&time_end=1999-10-05T00:00:00Z&timeStride=1&accept=csv
 ```
